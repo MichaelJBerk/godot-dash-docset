@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AudioStreamGenerator" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_audiostreamgenerator.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: AudioStream&lt; Resource&lt; RefCounted&lt; Object An audio stream with utilities for procedural sound generation. Description: AudioStreamGenerator is a type of audio stream that does not play ba..." property="og:description"/>
+<meta content="Inherits: AudioStream&lt; Resource&lt; RefCounted&lt; Object An audio stream with utilities for procedural sound generation. Description: AudioStreamGenerator is a type of audio stream that does not play ba..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AudioStreamGenerator — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_audiostreamgenerator.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_audiostreamgenerator.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_audiostreamgenerator.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_audiostreamgenerator.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_audiostreamgenerator.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_audiostreamgenerator.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_audiostreamgenerator.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_audiostreamgenerator.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_audiostreamgenerator.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_audiostreamgenerator.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_audiostreamgenerator.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_audiostreamgenerator.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_audiostreamgenerator.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_audiostreamgenerator.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_audiostreamgenerator.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_audiostreamgenerator.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_audiostreammicrophone.html" rel="next" title="AudioStreamMicrophone"/>
+<link href="class_audiostream.html" rel="prev" title="AudioStream"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_audiostreamgenerator" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AudioStreamGenerator</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="audiostreamgenerator">
+<span id="class-audiostreamgenerator"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AudioStreamGenerator¶"></a>AudioStreamGenerator<a class="headerlink" href="#audiostreamgenerator" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_audiostream.html#class-audiostream"><span class="std std-ref">AudioStream</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>An audio stream with utilities for procedural sound generation.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>AudioStreamGenerator</strong> is a type of audio stream that does not play back sounds on its own; instead, it expects a script to generate audio data for it. See also <a class="reference internal" href="class_audiostreamgeneratorplayback.html#class-audiostreamgeneratorplayback"><span class="std std-ref">AudioStreamGeneratorPlayback</span></a>.</p>
+<p>Here's a sample on how to use it to generate a sine wave:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">playback</span><span class="w"> </span><span class="c1"># Will hold the AudioStreamGeneratorPlayback.</span>
+<span class="nd">@onready</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">sample_hz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">$</span><span class="n">AudioStreamPlayer</span><span class="o">.</span><span class="n">stream</span><span class="o">.</span><span class="n">mix_rate</span>
+<span class="k">var</span><span class="w"> </span><span class="n">pulse_hz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">440.0</span><span class="w"> </span><span class="c1"># The frequency of the sound wave.</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="o">$</span><span class="n">AudioStreamPlayer</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+<span class="w">    </span><span class="n">playback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">$</span><span class="n">AudioStreamPlayer</span><span class="o">.</span><span class="n">get_stream_playback</span><span class="p">()</span>
+<span class="w">    </span><span class="n">fill_buffer</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">fill_buffer</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">increment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pulse_hz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">sample_hz</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">frames_available</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">playback</span><span class="o">.</span><span class="n">get_frames_available</span><span class="p">()</span>
+
+<span class="w">    </span><span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">range</span><span class="p">(</span><span class="n">frames_available</span><span class="p">):</span>
+<span class="w">        </span><span class="n">playback</span><span class="o">.</span><span class="n">push_frame</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="o">.</span><span class="n">ONE</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">sin</span><span class="p">(</span><span class="n">phase</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="bp">TAU</span><span class="p">))</span>
+<span class="w">        </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">fmod</span><span class="p">(</span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">increment</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="na">[Export]</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">AudioStreamPlayer</span><span class="w"> </span><span class="n">Player</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="k">private</span><span class="w"> </span><span class="n">AudioStreamGeneratorPlayback</span><span class="w"> </span><span class="n">_playback</span><span class="p">;</span><span class="w"> </span><span class="c1">// Will hold the AudioStreamGeneratorPlayback.</span>
+<span class="k">private</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_sampleHz</span><span class="p">;</span>
+<span class="k">private</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">_pulseHz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">440.0f</span><span class="p">;</span><span class="w"> </span><span class="c1">// The frequency of the sound wave.</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Player</span><span class="p">.</span><span class="n">Stream</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">AudioStreamGenerator</span><span class="w"> </span><span class="n">generator</span><span class="p">)</span><span class="w"> </span><span class="c1">// Type as a generator to access MixRate.</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_sampleHz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">generator</span><span class="p">.</span><span class="n">MixRate</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Player</span><span class="p">.</span><span class="n">Play</span><span class="p">();</span>
+<span class="w">        </span><span class="n">_playback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">AudioStreamGeneratorPlayback</span><span class="p">)</span><span class="n">Player</span><span class="p">.</span><span class="n">GetStreamPlayback</span><span class="p">();</span>
+<span class="w">        </span><span class="n">FillBuffer</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">FillBuffer</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">increment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_pulseHz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">_sampleHz</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">framesAvailable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_playback</span><span class="p">.</span><span class="n">GetFramesAvailable</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">framesAvailable</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_playback</span><span class="p">.</span><span class="n">PushFrame</span><span class="p">(</span><span class="n">Vector2</span><span class="p">.</span><span class="n">One</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">Mathf</span><span class="p">.</span><span class="n">Sin</span><span class="p">(</span><span class="n">phase</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Tau</span><span class="p">));</span>
+<span class="w">        </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">PosMod</span><span class="p">(</span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">increment</span><span class="p">,</span><span class="w"> </span><span class="m">1.0</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>In the example above, the "AudioStreamPlayer" node must use an <strong>AudioStreamGenerator</strong> as its stream. The <code class="docutils literal notranslate"><span class="pre">fill_buffer</span></code> function provides audio data for approximating a sine wave.</p>
+<p>See also <a class="reference internal" href="class_audioeffectspectrumanalyzer.html#class-audioeffectspectrumanalyzer"><span class="std std-ref">AudioEffectSpectrumAnalyzer</span></a> for performing real-time audio spectrum analysis.</p>
+<p><strong>Note:</strong> Due to performance constraints, this class is best used from C# or from a compiled language via GDExtension. If you still want to use this class from GDScript, consider using a lower <a class="reference internal" href="#class-audiostreamgenerator-property-mix-rate"><span class="std std-ref">mix_rate</span></a> such as 11,025 Hz or 22,050 Hz.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/526">Audio Generator Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-audiostreamgenerator-property-buffer-length"><span class="std std-ref">buffer_length</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.5</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-audiostreamgenerator-property-mix-rate"><span class="std std-ref">mix_rate</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">44100.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-audiostreamgenerator-property-buffer-length"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>buffer_length</strong> = <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_buffer_length" name="//apple_ref/cpp/Property/set_buffer_length"></a>set_buffer_length</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_buffer_length" name="//apple_ref/cpp/Property/get_buffer_length"></a>get_buffer_length</strong>()</p></li>
+</ul>
+<p>The length of the buffer to generate (in seconds). Lower values result in less latency, but require the script to generate audio data faster, resulting in increased CPU usage and more risk for audio cracking if the CPU can't keep up.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-audiostreamgenerator-property-mix-rate"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>mix_rate</strong> = <code class="docutils literal notranslate"><span class="pre">44100.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mix_rate" name="//apple_ref/cpp/Property/set_mix_rate"></a>set_mix_rate</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_mix_rate" name="//apple_ref/cpp/Property/get_mix_rate"></a>get_mix_rate</strong>()</p></li>
+</ul>
+<p>The sample rate to use (in Hz). Higher values are more demanding for the CPU to generate, but result in better quality.</p>
+<p>In games, common sample rates in use are <code class="docutils literal notranslate"><span class="pre">11025</span></code>, <code class="docutils literal notranslate"><span class="pre">16000</span></code>, <code class="docutils literal notranslate"><span class="pre">22050</span></code>, <code class="docutils literal notranslate"><span class="pre">32000</span></code>, <code class="docutils literal notranslate"><span class="pre">44100</span></code>, and <code class="docutils literal notranslate"><span class="pre">48000</span></code>.</p>
+<p>According to the <a class="reference external" href="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem">Nyquist-Shannon sampling theorem</a>, there is no quality difference to human hearing when going past 40,000 Hz (since most humans can only hear up to ~20,000 Hz, often less). If you are generating lower-pitched sounds such as voices, lower sample rates such as <code class="docutils literal notranslate"><span class="pre">32000</span></code> or <code class="docutils literal notranslate"><span class="pre">22050</span></code> may be usable with no loss in quality.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_audiostream.html" rel="prev" title="AudioStream"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_audiostreammicrophone.html" rel="next" title="AudioStreamMicrophone">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

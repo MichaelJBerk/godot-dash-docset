@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ResourceImporterWAV" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_resourceimporterwav.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: ResourceImporter&lt; RefCounted&lt; Object Imports a WAV audio file for playback. Description: WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It..." property="og:description"/>
+<meta content="Inherits: ResourceImporter&lt; RefCounted&lt; Object Imports a WAV audio file for playback. Description: WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ResourceImporterWAV — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceimporterwav.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_resourceimporterwav.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_resourceimporterwav.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_resourceimporterwav.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_resourceimporterwav.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_resourceimporterwav.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_resourceimporterwav.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_resourceimporterwav.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_resourceimporterwav.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_resourceimporterwav.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_resourceimporterwav.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_resourceimporterwav.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_resourceimporterwav.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_resourceimporterwav.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceimporterwav.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceimporterwav.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_resourceloader.html" rel="next" title="ResourceLoader"/>
+<link href="class_resourceimportertextureatlas.html" rel="prev" title="ResourceImporterTextureAtlas"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_resourceimporterwav" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ResourceImporterWAV</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="resourceimporterwav">
+<span id="class-resourceimporterwav"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ResourceImporterWAV¶"></a>ResourceImporterWAV<a class="headerlink" href="#resourceimporterwav" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resourceimporter.html#class-resourceimporter"><span class="std std-ref">ResourceImporter</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Imports a WAV audio file for playback.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end deviceS.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/assets_pipeline/importing_audio_samples.html"><span class="doc">Importing audio samples</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-compress-mode"><span class="std std-ref">compress/mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-edit-loop-begin"><span class="std std-ref">edit/loop_begin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-edit-loop-end"><span class="std std-ref">edit/loop_end</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-edit-loop-mode"><span class="std std-ref">edit/loop_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-edit-normalize"><span class="std std-ref">edit/normalize</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-edit-trim"><span class="std std-ref">edit/trim</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-force-8-bit"><span class="std std-ref">force/8_bit</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-force-max-rate"><span class="std std-ref">force/max_rate</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-force-max-rate-hz"><span class="std std-ref">force/max_rate_hz</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">44100</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceimporterwav-property-force-mono"><span class="std std-ref">force/mono</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-resourceimporterwav-property-compress-mode"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>compress/mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The compression mode to use on import.</p>
+<p><strong>Disabled:</strong> Imports audio data without any compression. This results in the highest possible quality.</p>
+<p><strong>RAM (Ima-ADPCM):</strong> Performs fast lossy compression on import. Low CPU cost, but quality is noticeably decreased compared to Ogg Vorbis or even MP3.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-edit-loop-begin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>edit/loop_begin</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The begin loop point to use when <a class="reference internal" href="#class-resourceimporterwav-property-edit-loop-mode"><span class="std std-ref">edit/loop_mode</span></a> is <strong>Forward</strong>, <strong>Ping-Pong</strong> or <strong>Backward</strong>. This is set in seconds after the beginning of the audio file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-edit-loop-end"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>edit/loop_end</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>The end loop point to use when <a class="reference internal" href="#class-resourceimporterwav-property-edit-loop-mode"><span class="std std-ref">edit/loop_mode</span></a> is <strong>Forward</strong>, <strong>Ping-Pong</strong> or <strong>Backward</strong>. This is set in seconds after the beginning of the audio file. A value of <code class="docutils literal notranslate"><span class="pre">-1</span></code> uses the end of the audio file as the end loop point.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-edit-loop-mode"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>edit/loop_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Controls how audio should loop. This is automatically read from the WAV metadata on import.</p>
+<p><strong>Disabled:</strong> Don't loop audio, even if metadata indicates the file should be played back looping.</p>
+<p><strong>Forward:</strong> Standard audio looping.</p>
+<p><strong>Ping-Pong:</strong> Play audio forward until it's done playing, then play it backward and repeat. This is similar to mirrored texture repeat, but for audio.</p>
+<p><strong>Backward:</strong> Play audio in reverse and loop back to the end when done playing.</p>
+<p><strong>Note:</strong> In <a class="reference internal" href="class_audiostreamplayer.html#class-audiostreamplayer"><span class="std std-ref">AudioStreamPlayer</span></a>, the <a class="reference internal" href="class_audiostreamplayer.html#class-audiostreamplayer-signal-finished"><span class="std std-ref">AudioStreamPlayer.finished</span></a> signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-edit-normalize"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>edit/normalize</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, normalize the audio volume so that its peak volume is equal to 0 dB. When enabled, normalization will make audio sound louder depending on its original peak volume.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-edit-trim"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>edit/trim</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, automatically trim the beginning and end of the audio if it's lower than -50 dB after normalization (see <a class="reference internal" href="#class-resourceimporterwav-property-edit-normalize"><span class="std std-ref">edit/normalize</span></a>). This prevents having files with silence at the beginning or end, which increases their size unnecessarily and adds latency to the moment they are played back. A fade-in/fade-out period of 500 samples is also used during trimming to avoid audible pops.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-force-8-bit"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>force/8_bit</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, forces the imported audio to use 8-bit quantization if the source file is 16-bit or higher.</p>
+<p>Enabling this is generally not recommended, as 8-bit quantization decreases audio quality significantly. If you need smaller file sizes, consider using Ogg Vorbis or MP3 audio instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-force-max-rate"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>force/max_rate</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>If set to a value greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in <a class="reference internal" href="#class-resourceimporterwav-property-force-max-rate-hz"><span class="std std-ref">force/max_rate_hz</span></a>.</p>
+<p>This can decrease file size noticeably on certain sounds, without impacting quality depending on the actual sound's contents. See <a class="reference external" href="../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices">Best practices</a> for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-force-max-rate-hz"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>force/max_rate_hz</strong> = <code class="docutils literal notranslate"><span class="pre">44100</span></code></p>
+<p>The frequency to limit the imported audio sample to (in Hz). Only effective if <a class="reference internal" href="#class-resourceimporterwav-property-force-max-rate"><span class="std std-ref">force/max_rate</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resourceimporterwav-property-force-mono"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>force/mono</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, forces the imported audio to be mono if the source file is stereo. This decreases the file size by 50% by merging the two channels into one.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_resourceimportertextureatlas.html" rel="prev" title="ResourceImporterTextureAtlas"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_resourceloader.html" rel="next" title="ResourceLoader">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="LinkButton" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_linkbutton.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: BaseButton&lt; Control&lt; CanvasItem&lt; Node&lt; Object A button that represents a link. Description: A button that represents a link. This type of button is primarily used for interactions that ca..." property="og:description"/>
+<meta content="Inherits: BaseButton&lt; Control&lt; CanvasItem&lt; Node&lt; Object A button that represents a link. Description: A button that represents a link. This type of button is primarily used for interactions that ca..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) LinkButton — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_linkbutton.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_linkbutton.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_linkbutton.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_linkbutton.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_linkbutton.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_linkbutton.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_linkbutton.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_linkbutton.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_linkbutton.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_linkbutton.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_linkbutton.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_linkbutton.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_linkbutton.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_linkbutton.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_linkbutton.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_linkbutton.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_margincontainer.html" rel="next" title="MarginContainer"/>
+<link href="class_lineedit.html" rel="prev" title="LineEdit"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_linkbutton" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">LinkButton</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="linkbutton">
+<span id="class-linkbutton"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/LinkButton¶"></a>LinkButton<a class="headerlink" href="#linkbutton" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_basebutton.html#class-basebutton"><span class="std std-ref">BaseButton</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A button that represents a link.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A button that represents a link. This type of button is primarily used for interactions that cause a context change (like linking to a web page).</p>
+<p>See also <a class="reference internal" href="class_basebutton.html#class-basebutton"><span class="std std-ref">BaseButton</span></a> which contains common properties and methods associated with this node.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-focusmode"><span class="std std-ref">FocusMode</span></a></p></td>
+<td><p>focus_mode</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-focus-mode"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-language"><span class="std std-ref">language</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-cursorshape"><span class="std std-ref">CursorShape</span></a></p></td>
+<td><p>mouse_default_cursor_shape</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-mouse-default-cursor-shape"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-structured-text-bidi-override"><span class="std std-ref">structured_text_bidi_override</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-structured-text-bidi-override-options"><span class="std std-ref">structured_text_bidi_override_options</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-text"><span class="std std-ref">text</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-text-direction"><span class="std std-ref">text_direction</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-underline"><span class="std std-ref">underline</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-property-uri"><span class="std std-ref">uri</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-color"><span class="std std-ref">font_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-disabled-color"><span class="std std-ref">font_disabled_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-focus-color"><span class="std std-ref">font_focus_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-hover-color"><span class="std std-ref">font_hover_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-hover-pressed-color"><span class="std std-ref">font_hover_pressed_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-outline-color"><span class="std std-ref">font_outline_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-color-font-pressed-color"><span class="std std-ref">font_pressed_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-constant-underline-spacing"><span class="std std-ref">underline_spacing</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-font-font"><span class="std std-ref">font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-font-size-font-size"><span class="std std-ref">font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-linkbutton-theme-style-focus"><span class="std std-ref">focus</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-linkbutton-underlinemode">enum <strong><a class="dashAnchor" id="enumerations-UnderlineMode" name="//apple_ref/cpp/Enum/UnderlineMode"></a>UnderlineMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-linkbutton-constant-underline-mode-always"><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> <strong><a class="dashAnchor" id="enumerations-UNDERLINE_MODE_ALWAYS" name="//apple_ref/cpp/Enum/UNDERLINE_MODE_ALWAYS"></a>UNDERLINE_MODE_ALWAYS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The LinkButton will always show an underline at the bottom of its text.</p>
+<p class="classref-enumeration-constant" id="class-linkbutton-constant-underline-mode-on-hover"><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> <strong><a class="dashAnchor" id="enumerations-UNDERLINE_MODE_ON_HOVER" name="//apple_ref/cpp/Enum/UNDERLINE_MODE_ON_HOVER"></a>UNDERLINE_MODE_ON_HOVER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The LinkButton will show an underline at the bottom of its text when the mouse cursor is over it.</p>
+<p class="classref-enumeration-constant" id="class-linkbutton-constant-underline-mode-never"><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> <strong><a class="dashAnchor" id="enumerations-UNDERLINE_MODE_NEVER" name="//apple_ref/cpp/Enum/UNDERLINE_MODE_NEVER"></a>UNDERLINE_MODE_NEVER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The LinkButton will never show an underline at the bottom of its text.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-linkbutton-property-language"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>language</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_language" name="//apple_ref/cpp/Property/set_language"></a>set_language</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_language" name="//apple_ref/cpp/Property/get_language"></a>get_language</strong>()</p></li>
+</ul>
+<p>Language code used for line-breaking and text shaping algorithms, if left empty current locale is used instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-structured-text-bidi-override"><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong>structured_text_bidi_override</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override" name="//apple_ref/cpp/Property/set_structured_text_bidi_override"></a>set_structured_text_bidi_override</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override" name="//apple_ref/cpp/Property/get_structured_text_bidi_override"></a>get_structured_text_bidi_override</strong>()</p></li>
+</ul>
+<p>Set BiDi algorithm override for the structured text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-structured-text-bidi-override-options"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>structured_text_bidi_override_options</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/set_structured_text_bidi_override_options"></a>set_structured_text_bidi_override_options</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/get_structured_text_bidi_override_options"></a>get_structured_text_bidi_override_options</strong>()</p></li>
+</ul>
+<p>Set additional options for BiDi override.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>text</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text" name="//apple_ref/cpp/Property/set_text"></a>set_text</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_text" name="//apple_ref/cpp/Property/get_text"></a>get_text</strong>()</p></li>
+</ul>
+<p>The button's text that will be displayed inside the button's area.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-text-direction"><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong>text_direction</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text_direction" name="//apple_ref/cpp/Property/set_text_direction"></a>set_text_direction</strong>(value: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong><a class="dashAnchor" id="properties-get_text_direction" name="//apple_ref/cpp/Property/get_text_direction"></a>get_text_direction</strong>()</p></li>
+</ul>
+<p>Base text writing direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-underline"><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> <strong>underline</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_underline_mode" name="//apple_ref/cpp/Property/set_underline_mode"></a>set_underline_mode</strong>(value: <a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> <strong><a class="dashAnchor" id="properties-get_underline_mode" name="//apple_ref/cpp/Property/get_underline_mode"></a>get_underline_mode</strong>()</p></li>
+</ul>
+<p>The underline mode to use for the text. See <a class="reference internal" href="#enum-linkbutton-underlinemode"><span class="std std-ref">UnderlineMode</span></a> for the available modes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-linkbutton-property-uri"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>uri</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_uri" name="//apple_ref/cpp/Property/set_uri"></a>set_uri</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_uri" name="//apple_ref/cpp/Property/get_uri"></a>get_uri</strong>()</p></li>
+</ul>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URI</a> for this <strong>LinkButton</strong>. If set to a valid URI, pressing the button opens the URI using the operating system's default program for the protocol (via <a class="reference internal" href="class_os.html#class-os-method-shell-open"><span class="std std-ref">OS.shell_open</span></a>). HTTP and HTTPS URLs open the default web browser.</p>
+<p><strong>Examples:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://godotengine.org"</span><span class="w">  </span><span class="c1"># Opens the URL in the default web browser.</span>
+<span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"C:\SomeFolder"</span><span class="w">  </span><span class="c1"># Opens the file explorer at the given path.</span>
+<span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"C:\SomeImage.png"</span><span class="w">  </span><span class="c1"># Opens the given image in the default viewing app.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://godotengine.org"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Opens the URL in the default web browser.</span>
+<span class="n">Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"C:\SomeFolder"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Opens the file explorer at the given path.</span>
+<span class="n">Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"C:\SomeImage.png"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Opens the given image in the default viewing app.</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">1)</span></code></p>
+<p>Default text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the <strong>LinkButton</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-disabled-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_disabled_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the <strong>LinkButton</strong> is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-focus-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_focus_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the <strong>LinkButton</strong> is focused. Only replaces the normal text color of the button. Disabled, hovered, and pressed states take precedence over this color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-hover-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_hover_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the <strong>LinkButton</strong> is being hovered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-hover-pressed-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_hover_pressed_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the <strong>LinkButton</strong> is being hovered and pressed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-outline-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_outline_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>The tint of text outline of the <strong>LinkButton</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-color-font-pressed-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_pressed_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the <strong>LinkButton</strong> is being pressed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-constant-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The size of the text outline.</p>
+<p><strong>Note:</strong> If using a font with <a class="reference internal" href="class_fontfile.html#class-fontfile-property-multichannel-signed-distance-field"><span class="std std-ref">FontFile.multichannel_signed_distance_field</span></a> enabled, its <a class="reference internal" href="class_fontfile.html#class-fontfile-property-msdf-pixel-range"><span class="std std-ref">FontFile.msdf_pixel_range</span></a> must be set to at least <em>twice</em> the value of <a class="reference internal" href="#class-linkbutton-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a> for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-constant-underline-spacing"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>underline_spacing</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The vertical space between the baseline of text and the underline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-font-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>font</strong></p>
+<p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> of the <strong>LinkButton</strong>'s text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-font-size-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>font_size</strong></p>
+<p>Font size of the <strong>LinkButton</strong>'s text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-linkbutton-theme-style-focus"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>focus</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used when the <strong>LinkButton</strong> is focused. The <a class="reference internal" href="#class-linkbutton-theme-style-focus"><span class="std std-ref">focus</span></a> <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> is displayed <em>over</em> the base <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a>, so a partially transparent <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> should be used to ensure the base <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> remains visible. A <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a <a class="reference internal" href="class_styleboxempty.html#class-styleboxempty"><span class="std std-ref">StyleBoxEmpty</span></a> resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_lineedit.html" rel="prev" title="LineEdit"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_margincontainer.html" rel="next" title="MarginContainer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

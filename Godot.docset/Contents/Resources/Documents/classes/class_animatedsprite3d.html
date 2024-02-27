@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AnimatedSprite3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_animatedsprite3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: SpriteBase3D&lt; GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object 2D sprite node in 3D world, that can use multiple 2D textures for animation. Description: AnimatedSprite3D is simi..." property="og:description"/>
+<meta content="Inherits: SpriteBase3D&lt; GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object 2D sprite node in 3D world, that can use multiple 2D textures for animation. Description: AnimatedSprite3D is simi..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AnimatedSprite3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animatedsprite3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_animatedsprite3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_animatedsprite3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_animatedsprite3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_animatedsprite3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_animatedsprite3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_animatedsprite3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_animatedsprite3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_animatedsprite3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_animatedsprite3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_animatedsprite3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_animatedsprite3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_animatedsprite3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_animatedsprite3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animatedsprite3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animatedsprite3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_animationmixer.html" rel="next" title="AnimationMixer"/>
+<link href="class_animatedsprite2d.html" rel="prev" title="AnimatedSprite2D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_animatedsprite3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AnimatedSprite3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="animatedsprite3d">
+<span id="class-animatedsprite3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AnimatedSprite3D¶"></a>AnimatedSprite3D<a class="headerlink" href="#animatedsprite3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_spritebase3d.html#class-spritebase3d"><span class="std std-ref">SpriteBase3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_geometryinstance3d.html#class-geometryinstance3d"><span class="std std-ref">GeometryInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>2D sprite node in 3D world, that can use multiple 2D textures for animation.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>AnimatedSprite3D</strong> is similar to the <a class="reference internal" href="class_sprite3d.html#class-sprite3d"><span class="std std-ref">Sprite3D</span></a> node, except it carries multiple textures as animation <a class="reference internal" href="#class-animatedsprite3d-property-sprite-frames"><span class="std std-ref">sprite_frames</span></a>. Animations are created using a <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> resource, which allows you to import image files (or a folder containing said files) to provide the animation frames for the sprite. The <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> resource can be configured in the editor via the SpriteFrames bottom panel.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/2d/2d_sprite_animation.html"><span class="doc">2D Sprite animation (also applies to 3D)</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-animation"><span class="std std-ref">animation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&amp;"default"</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-autoplay"><span class="std std-ref">autoplay</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-speed-scale"><span class="std std-ref">speed_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-property-sprite-frames"><span class="std std-ref">sprite_frames</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-get-playing-speed"><span class="std std-ref">get_playing_speed</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-is-playing"><span class="std std-ref">is_playing</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-pause"><span class="std std-ref">pause</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-play"><span class="std std-ref">play</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> = &amp;"", custom_speed: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0, from_end: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-play-backwards"><span class="std std-ref">play_backwards</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> = &amp;"")</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-set-frame-and-progress"><span class="std std-ref">set_frame_and_progress</span></a>(frame: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, progress: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animatedsprite3d-method-stop"><span class="std std-ref">stop</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-animatedsprite3d-signal-animation-changed"><strong>animation_changed</strong>()</p>
+<p>Emitted when <a class="reference internal" href="#class-animatedsprite3d-property-animation"><span class="std std-ref">animation</span></a> changes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animatedsprite3d-signal-animation-finished"><strong>animation_finished</strong>()</p>
+<p>Emitted when the animation reaches the end, or the start if it is played in reverse. When the animation finishes, it pauses the playback.</p>
+<p><strong>Note:</strong> This signal is not emitted if an animation is looping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animatedsprite3d-signal-animation-looped"><strong>animation_looped</strong>()</p>
+<p>Emitted when the animation loops.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animatedsprite3d-signal-frame-changed"><strong>frame_changed</strong>()</p>
+<p>Emitted when <a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a> changes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animatedsprite3d-signal-sprite-frames-changed"><strong>sprite_frames_changed</strong>()</p>
+<p>Emitted when <a class="reference internal" href="#class-animatedsprite3d-property-sprite-frames"><span class="std std-ref">sprite_frames</span></a> changes.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-animatedsprite3d-property-animation"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>animation</strong> = <code class="docutils literal notranslate"><span class="pre">&amp;"default"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_animation" name="//apple_ref/cpp/Property/set_animation"></a>set_animation</strong>(value: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong><a class="dashAnchor" id="properties-get_animation" name="//apple_ref/cpp/Property/get_animation"></a>get_animation</strong>()</p></li>
+</ul>
+<p>The current animation from the <a class="reference internal" href="#class-animatedsprite3d-property-sprite-frames"><span class="std std-ref">sprite_frames</span></a> resource. If this value is changed, the <a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a> counter and the <a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a> are reset.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animatedsprite3d-property-autoplay"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>autoplay</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autoplay" name="//apple_ref/cpp/Property/set_autoplay"></a>set_autoplay</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_autoplay" name="//apple_ref/cpp/Property/get_autoplay"></a>get_autoplay</strong>()</p></li>
+</ul>
+<p>The key of the animation to play when the scene loads.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animatedsprite3d-property-frame"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>frame</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_frame" name="//apple_ref/cpp/Property/set_frame"></a>set_frame</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_frame" name="//apple_ref/cpp/Property/get_frame"></a>get_frame</strong>()</p></li>
+</ul>
+<p>The displayed animation frame's index. Setting this property also resets <a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a>. If this is not desired, use <a class="reference internal" href="#class-animatedsprite3d-method-set-frame-and-progress"><span class="std std-ref">set_frame_and_progress</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animatedsprite3d-property-frame-progress"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>frame_progress</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_frame_progress" name="//apple_ref/cpp/Property/set_frame_progress"></a>set_frame_progress</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_frame_progress" name="//apple_ref/cpp/Property/get_frame_progress"></a>get_frame_progress</strong>()</p></li>
+</ul>
+<p>The progress value between <code class="docutils literal notranslate"><span class="pre">0.0</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span></code> until the current frame transitions to the next frame. If the animation is playing backwards, the value transitions from <code class="docutils literal notranslate"><span class="pre">1.0</span></code> to <code class="docutils literal notranslate"><span class="pre">0.0</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animatedsprite3d-property-speed-scale"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>speed_scale</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_speed_scale" name="//apple_ref/cpp/Property/set_speed_scale"></a>set_speed_scale</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_speed_scale" name="//apple_ref/cpp/Property/get_speed_scale"></a>get_speed_scale</strong>()</p></li>
+</ul>
+<p>The speed scaling ratio. For example, if this value is <code class="docutils literal notranslate"><span class="pre">1</span></code>, then the animation plays at normal speed. If it's <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, then it plays at half speed. If it's <code class="docutils literal notranslate"><span class="pre">2</span></code>, then it plays at double speed.</p>
+<p>If set to a negative value, the animation is played in reverse. If set to <code class="docutils literal notranslate"><span class="pre">0</span></code>, the animation will not advance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animatedsprite3d-property-sprite-frames"><a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> <strong>sprite_frames</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sprite_frames" name="//apple_ref/cpp/Property/set_sprite_frames"></a>set_sprite_frames</strong>(value: <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> <strong><a class="dashAnchor" id="properties-get_sprite_frames" name="//apple_ref/cpp/Property/get_sprite_frames"></a>get_sprite_frames</strong>()</p></li>
+</ul>
+<p>The <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> resource containing the animation(s). Allows you the option to load, edit, clear, make unique and save the states of the <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a> resource.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-animatedsprite3d-method-get-playing-speed"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_playing_speed</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the actual playing speed of current animation or <code class="docutils literal notranslate"><span class="pre">0</span></code> if not playing. This speed is the <a class="reference internal" href="#class-animatedsprite3d-property-speed-scale"><span class="std std-ref">speed_scale</span></a> property multiplied by <code class="docutils literal notranslate"><span class="pre">custom_speed</span></code> argument specified when calling the <a class="reference internal" href="#class-animatedsprite3d-method-play"><span class="std std-ref">play</span></a> method.</p>
+<p>Returns a negative value if the current animation is playing backwards.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-is-playing"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_playing</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if an animation is currently playing (even if <a class="reference internal" href="#class-animatedsprite3d-property-speed-scale"><span class="std std-ref">speed_scale</span></a> and/or <code class="docutils literal notranslate"><span class="pre">custom_speed</span></code> are <code class="docutils literal notranslate"><span class="pre">0</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-pause"><abbr title="No return value.">void</abbr> <strong>pause</strong>()</p>
+<p>Pauses the currently playing animation. The <a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a> and <a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a> will be kept and calling <a class="reference internal" href="#class-animatedsprite3d-method-play"><span class="std std-ref">play</span></a> or <a class="reference internal" href="#class-animatedsprite3d-method-play-backwards"><span class="std std-ref">play_backwards</span></a> without arguments will resume the animation from the current playback position.</p>
+<p>See also <a class="reference internal" href="#class-animatedsprite3d-method-stop"><span class="std std-ref">stop</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-play"><abbr title="No return value.">void</abbr> <strong>play</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> = &amp;"", custom_speed: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0, from_end: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Plays the animation with key <code class="docutils literal notranslate"><span class="pre">name</span></code>. If <code class="docutils literal notranslate"><span class="pre">custom_speed</span></code> is negative and <code class="docutils literal notranslate"><span class="pre">from_end</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, the animation will play backwards (which is equivalent to calling <a class="reference internal" href="#class-animatedsprite3d-method-play-backwards"><span class="std std-ref">play_backwards</span></a>).</p>
+<p>If this method is called with that same animation <code class="docutils literal notranslate"><span class="pre">name</span></code>, or with no <code class="docutils literal notranslate"><span class="pre">name</span></code> parameter, the assigned animation will resume playing if it was paused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-play-backwards"><abbr title="No return value.">void</abbr> <strong>play_backwards</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> = &amp;"")</p>
+<p>Plays the animation with key <code class="docutils literal notranslate"><span class="pre">name</span></code> in reverse.</p>
+<p>This method is a shorthand for <a class="reference internal" href="#class-animatedsprite3d-method-play"><span class="std std-ref">play</span></a> with <code class="docutils literal notranslate"><span class="pre">custom_speed</span> <span class="pre">=</span> <span class="pre">-1.0</span></code> and <code class="docutils literal notranslate"><span class="pre">from_end</span> <span class="pre">=</span> <span class="pre">true</span></code>, so see its description for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-set-frame-and-progress"><abbr title="No return value.">void</abbr> <strong>set_frame_and_progress</strong>(frame: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, progress: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>The setter of <a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a> resets the <a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a> to <code class="docutils literal notranslate"><span class="pre">0.0</span></code> implicitly, but this method avoids that.</p>
+<p>This is useful when you want to carry over the current <a class="reference internal" href="#class-animatedsprite3d-property-frame-progress"><span class="std std-ref">frame_progress</span></a> to another <a class="reference internal" href="#class-animatedsprite3d-property-frame"><span class="std std-ref">frame</span></a>.</p>
+<p><strong>Example:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change the animation with keeping the frame index and progress.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">current_frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animated_sprite</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">current_progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animated_sprite</span><span class="o">.</span><span class="n">get_frame_progress</span><span class="p">()</span>
+<span class="n">animated_sprite</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="s2">"walk_another_skin"</span><span class="p">)</span>
+<span class="n">animated_sprite</span><span class="o">.</span><span class="n">set_frame_and_progress</span><span class="p">(</span><span class="n">current_frame</span><span class="p">,</span><span class="w"> </span><span class="n">current_progress</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animatedsprite3d-method-stop"><abbr title="No return value.">void</abbr> <strong>stop</strong>()</p>
+<p>Stops the currently playing animation. The animation position is reset to <code class="docutils literal notranslate"><span class="pre">0</span></code> and the <code class="docutils literal notranslate"><span class="pre">custom_speed</span></code> is reset to <code class="docutils literal notranslate"><span class="pre">1.0</span></code>. See also <a class="reference internal" href="#class-animatedsprite3d-method-pause"><span class="std std-ref">pause</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_animatedsprite2d.html" rel="prev" title="AnimatedSprite2D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_animationmixer.html" rel="next" title="AnimationMixer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

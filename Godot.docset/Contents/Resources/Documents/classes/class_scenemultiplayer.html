@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="SceneMultiplayer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_scenemultiplayer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: MultiplayerAPI&lt; RefCounted&lt; Object High-level multiplayer API implementation. Description: This class is the default implementation of MultiplayerAPI, used to provide multiplayer function..." property="og:description"/>
+<meta content="Inherits: MultiplayerAPI&lt; RefCounted&lt; Object High-level multiplayer API implementation. Description: This class is the default implementation of MultiplayerAPI, used to provide multiplayer function..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) SceneMultiplayer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenemultiplayer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_scenemultiplayer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_scenemultiplayer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_scenemultiplayer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_scenemultiplayer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_scenemultiplayer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_scenemultiplayer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_scenemultiplayer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_scenemultiplayer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_scenemultiplayer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_scenemultiplayer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_scenemultiplayer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_scenemultiplayer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_scenemultiplayer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenemultiplayer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenemultiplayer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_scenestate.html" rel="next" title="SceneState"/>
+<link href="class_resourceuid.html" rel="prev" title="ResourceUID"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_scenemultiplayer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">SceneMultiplayer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="scenemultiplayer">
+<span id="class-scenemultiplayer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/SceneMultiplayer¶"></a>SceneMultiplayer<a class="headerlink" href="#scenemultiplayer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>High-level multiplayer API implementation.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class is the default implementation of <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a>, used to provide multiplayer functionalities in Godot Engine.</p>
+<p>This implementation supports RPCs via <a class="reference internal" href="class_node.html#class-node-method-rpc"><span class="std std-ref">Node.rpc</span></a> and <a class="reference internal" href="class_node.html#class-node-method-rpc-id"><span class="std std-ref">Node.rpc_id</span></a> and requires <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-method-rpc"><span class="std std-ref">MultiplayerAPI.rpc</span></a> to be passed a <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> (it will fail for other object types).</p>
+<p>This implementation additionally provide <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> replication via the <a class="reference internal" href="class_multiplayerspawner.html#class-multiplayerspawner"><span class="std std-ref">MultiplayerSpawner</span></a> and <a class="reference internal" href="class_multiplayersynchronizer.html#class-multiplayersynchronizer"><span class="std std-ref">MultiplayerSynchronizer</span></a> nodes, and the <a class="reference internal" href="class_scenereplicationconfig.html#class-scenereplicationconfig"><span class="std std-ref">SceneReplicationConfig</span></a> resource.</p>
+<p><strong>Note:</strong> The high-level multiplayer API protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.</p>
+<p><strong>Note:</strong> When exporting to Android, make sure to enable the <code class="docutils literal notranslate"><span class="pre">INTERNET</span></code> permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-allow-object-decoding"><span class="std std-ref">allow_object_decoding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-auth-callback"><span class="std std-ref">auth_callback</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Callable()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-auth-timeout"><span class="std std-ref">auth_timeout</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-max-delta-packet-size"><span class="std std-ref">max_delta_packet_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">65535</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-max-sync-packet-size"><span class="std std-ref">max_sync_packet_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1350</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-refuse-new-connections"><span class="std std-ref">refuse_new_connections</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-root-path"><span class="std std-ref">root_path</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NodePath("")</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-property-server-relay"><span class="std std-ref">server_relay</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-complete-auth"><span class="std std-ref">complete_auth</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-disconnect-peer"><span class="std std-ref">disconnect_peer</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-get-authenticating-peers"><span class="std std-ref">get_authenticating_peers</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-send-auth"><span class="std std-ref">send_auth</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenemultiplayer-method-send-bytes"><span class="std std-ref">send_bytes</span></a>(bytes: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, mode: <a class="reference internal" href="class_multiplayerpeer.html#enum-multiplayerpeer-transfermode"><span class="std std-ref">TransferMode</span></a> = 2, channel: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-scenemultiplayer-signal-peer-authenticating"><strong>peer_authenticating</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a> connects to a new peer and a valid <a class="reference internal" href="#class-scenemultiplayer-property-auth-callback"><span class="std std-ref">auth_callback</span></a> is set. In this case, the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-signal-peer-connected"><span class="std std-ref">MultiplayerAPI.peer_connected</span></a> will not be emitted until <a class="reference internal" href="#class-scenemultiplayer-method-complete-auth"><span class="std std-ref">complete_auth</span></a> is called with given peer <code class="docutils literal notranslate"><span class="pre">id</span></code>. While in this state, the peer will not be included in the list returned by <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-method-get-peers"><span class="std std-ref">MultiplayerAPI.get_peers</span></a> (but in the one returned by <a class="reference internal" href="#class-scenemultiplayer-method-get-authenticating-peers"><span class="std std-ref">get_authenticating_peers</span></a>), and only authentication data will be sent or received. See <a class="reference internal" href="#class-scenemultiplayer-method-send-auth"><span class="std std-ref">send_auth</span></a> for sending authentication data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-scenemultiplayer-signal-peer-authentication-failed"><strong>peer_authentication_failed</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a> disconnects from a peer for which authentication had not yet completed. See <a class="reference internal" href="#class-scenemultiplayer-signal-peer-authenticating"><span class="std std-ref">peer_authenticating</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-scenemultiplayer-signal-peer-packet"><strong>peer_packet</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, packet: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a> receives a <code class="docutils literal notranslate"><span class="pre">packet</span></code> with custom data (see <a class="reference internal" href="#class-scenemultiplayer-method-send-bytes"><span class="std std-ref">send_bytes</span></a>). ID is the peer ID of the peer that sent the packet.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-scenemultiplayer-property-allow-object-decoding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_object_decoding</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_object_decoding" name="//apple_ref/cpp/Property/set_allow_object_decoding"></a>set_allow_object_decoding</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_object_decoding_allowed" name="//apple_ref/cpp/Property/is_object_decoding_allowed"></a>is_object_decoding_allowed</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the MultiplayerAPI will allow encoding and decoding of object during RPCs.</p>
+<p><strong>Warning:</strong> Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threat such as remote code execution.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-auth-callback"><a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> <strong>auth_callback</strong> = <code class="docutils literal notranslate"><span class="pre">Callable()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auth_callback" name="//apple_ref/cpp/Property/set_auth_callback"></a>set_auth_callback</strong>(value: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> <strong><a class="dashAnchor" id="properties-get_auth_callback" name="//apple_ref/cpp/Property/get_auth_callback"></a>get_auth_callback</strong>()</p></li>
+</ul>
+<p>The callback to execute when when receiving authentication data sent via <a class="reference internal" href="#class-scenemultiplayer-method-send-auth"><span class="std std-ref">send_auth</span></a>. If the <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> is empty (default), peers will be automatically accepted as soon as they connect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-auth-timeout"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>auth_timeout</strong> = <code class="docutils literal notranslate"><span class="pre">3.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auth_timeout" name="//apple_ref/cpp/Property/set_auth_timeout"></a>set_auth_timeout</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_auth_timeout" name="//apple_ref/cpp/Property/get_auth_timeout"></a>get_auth_timeout</strong>()</p></li>
+</ul>
+<p>If set to a value greater than <code class="docutils literal notranslate"><span class="pre">0.0</span></code>, the maximum amount of time peers can stay in the authenticating state, after which the authentication will automatically fail. See the <a class="reference internal" href="#class-scenemultiplayer-signal-peer-authenticating"><span class="std std-ref">peer_authenticating</span></a> and <a class="reference internal" href="#class-scenemultiplayer-signal-peer-authentication-failed"><span class="std std-ref">peer_authentication_failed</span></a> signals.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-max-delta-packet-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_delta_packet_size</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_delta_packet_size" name="//apple_ref/cpp/Property/set_max_delta_packet_size"></a>set_max_delta_packet_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_delta_packet_size" name="//apple_ref/cpp/Property/get_max_delta_packet_size"></a>get_max_delta_packet_size</strong>()</p></li>
+</ul>
+<p>Maximum size of each delta packet. Higher values increase the chance of receiving full updates in a single frame, but also the chance of causing networking congestion (higher latency, disconnections). See <a class="reference internal" href="class_multiplayersynchronizer.html#class-multiplayersynchronizer"><span class="std std-ref">MultiplayerSynchronizer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-max-sync-packet-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_sync_packet_size</strong> = <code class="docutils literal notranslate"><span class="pre">1350</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_sync_packet_size" name="//apple_ref/cpp/Property/set_max_sync_packet_size"></a>set_max_sync_packet_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_sync_packet_size" name="//apple_ref/cpp/Property/get_max_sync_packet_size"></a>get_max_sync_packet_size</strong>()</p></li>
+</ul>
+<p>Maximum size of each synchronization packet. Higher values increase the chance of receiving full updates in a single frame, but also the chance of packet loss. See <a class="reference internal" href="class_multiplayersynchronizer.html#class-multiplayersynchronizer"><span class="std std-ref">MultiplayerSynchronizer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-refuse-new-connections"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>refuse_new_connections</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_refuse_new_connections" name="//apple_ref/cpp/Property/set_refuse_new_connections"></a>set_refuse_new_connections</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_refusing_new_connections" name="//apple_ref/cpp/Property/is_refusing_new_connections"></a>is_refusing_new_connections</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the MultiplayerAPI's <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a> refuses new incoming connections.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-root-path"><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong>root_path</strong> = <code class="docutils literal notranslate"><span class="pre">NodePath("")</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_root_path" name="//apple_ref/cpp/Property/set_root_path"></a>set_root_path</strong>(value: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong><a class="dashAnchor" id="properties-get_root_path" name="//apple_ref/cpp/Property/get_root_path"></a>get_root_path</strong>()</p></li>
+</ul>
+<p>The root path to use for RPCs and replication. Instead of an absolute path, a relative path will be used to find the node upon which the RPC should be executed.</p>
+<p>This effectively allows to have different branches of the scene tree to be managed by different MultiplayerAPI, allowing for example to run both client and server in the same scene.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scenemultiplayer-property-server-relay"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>server_relay</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_server_relay_enabled" name="//apple_ref/cpp/Property/set_server_relay_enabled"></a>set_server_relay_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_server_relay_enabled" name="//apple_ref/cpp/Property/is_server_relay_enabled"></a>is_server_relay_enabled</strong>()</p></li>
+</ul>
+<p>Enable or disable the server feature that notifies clients of other peers' connection/disconnection, and relays messages between them. When this option is <code class="docutils literal notranslate"><span class="pre">false</span></code>, clients won't be automatically notified of other peers and won't be able to send them packets through the server.</p>
+<p><strong>Note:</strong> Changing this option while other peers are connected may lead to unexpected behaviors.</p>
+<p><strong>Note:</strong> Support for this feature may depend on the current <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> configuration. See <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-is-server-relay-supported"><span class="std std-ref">MultiplayerPeer.is_server_relay_supported</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-scenemultiplayer-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clears the current SceneMultiplayer network state (you shouldn't call this unless you know what you are doing).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenemultiplayer-method-complete-auth"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>complete_auth</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Mark the authentication step as completed for the remote peer identified by <code class="docutils literal notranslate"><span class="pre">id</span></code>. The <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-signal-peer-connected"><span class="std std-ref">MultiplayerAPI.peer_connected</span></a> signal will be emitted for this peer once the remote side also completes the authentication. No further authentication messages are expected to be received from this peer.</p>
+<p>If a peer disconnects before completing authentication, either due to a network issue, the <a class="reference internal" href="#class-scenemultiplayer-property-auth-timeout"><span class="std std-ref">auth_timeout</span></a> expiring, or manually calling <a class="reference internal" href="#class-scenemultiplayer-method-disconnect-peer"><span class="std std-ref">disconnect_peer</span></a>, the <a class="reference internal" href="#class-scenemultiplayer-signal-peer-authentication-failed"><span class="std std-ref">peer_authentication_failed</span></a> signal will be emitted instead of <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-signal-peer-disconnected"><span class="std std-ref">MultiplayerAPI.peer_disconnected</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenemultiplayer-method-disconnect-peer"><abbr title="No return value.">void</abbr> <strong>disconnect_peer</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Disconnects the peer identified by <code class="docutils literal notranslate"><span class="pre">id</span></code>, removing it from the list of connected peers, and closing the underlying connection with it.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenemultiplayer-method-get-authenticating-peers"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_authenticating_peers</strong>()</p>
+<p>Returns the IDs of the peers currently trying to authenticate with this <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenemultiplayer-method-send-auth"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>send_auth</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Sends the specified <code class="docutils literal notranslate"><span class="pre">data</span></code> to the remote peer identified by <code class="docutils literal notranslate"><span class="pre">id</span></code> as part of an authentication message. This can be used to authenticate peers, and control when <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-signal-peer-connected"><span class="std std-ref">MultiplayerAPI.peer_connected</span></a> is emitted (and the remote peer accepted as one of the connected peers).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenemultiplayer-method-send-bytes"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>send_bytes</strong>(bytes: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, mode: <a class="reference internal" href="class_multiplayerpeer.html#enum-multiplayerpeer-transfermode"><span class="std std-ref">TransferMode</span></a> = 2, channel: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Sends the given raw <code class="docutils literal notranslate"><span class="pre">bytes</span></code> to a specific peer identified by <code class="docutils literal notranslate"><span class="pre">id</span></code> (see <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-set-target-peer"><span class="std std-ref">MultiplayerPeer.set_target_peer</span></a>). Default ID is <code class="docutils literal notranslate"><span class="pre">0</span></code>, i.e. broadcast to all peers.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_resourceuid.html" rel="prev" title="ResourceUID"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_scenestate.html" rel="next" title="SceneState">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

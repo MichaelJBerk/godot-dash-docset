@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="PhysicsServer3DRenderingServerHandler" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_physicsserver3drenderingserverhandler.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object A class used to provide PhysicsServer3DExtension._soft_body_update_rendering_server with a rendering handler for soft bodies. Methods:,, void,_set_aabb(aabb: AABB) virtual,, void,_..." property="og:description"/>
+<meta content="Inherits: Object A class used to provide PhysicsServer3DExtension._soft_body_update_rendering_server with a rendering handler for soft bodies. Methods:,, void,_set_aabb(aabb: AABB) virtual,, void,_..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) PhysicsServer3DRenderingServerHandler — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsserver3drenderingserverhandler.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsserver3drenderingserverhandler.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_physicsshapequeryparameters2d.html" rel="next" title="PhysicsShapeQueryParameters2D"/>
+<link href="class_physicsserver3dmanager.html" rel="prev" title="PhysicsServer3DManager"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_physicsserver3drenderingserverhandler" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">PhysicsServer3DRenderingServerHandler</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="physicsserver3drenderingserverhandler">
+<span id="class-physicsserver3drenderingserverhandler"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/PhysicsServer3DRenderingServerHandler¶"></a>PhysicsServer3DRenderingServerHandler<a class="headerlink" href="#physicsserver3drenderingserverhandler" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A class used to provide <a class="reference internal" href="class_physicsserver3dextension.html#class-physicsserver3dextension-private-method-soft-body-update-rendering-server"><span class="std std-ref">PhysicsServer3DExtension._soft_body_update_rendering_server</span></a> with a rendering handler for soft bodies.</p>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-private-method-set-aabb"><span class="std std-ref">_set_aabb</span></a>(aabb: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-private-method-set-normal"><span class="std std-ref">_set_normal</span></a>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-private-method-set-vertex"><span class="std std-ref">_set_vertex</span></a>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, vertex: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-method-set-aabb"><span class="std std-ref">set_aabb</span></a>(aabb: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-method-set-normal"><span class="std std-ref">set_normal</span></a>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsserver3drenderingserverhandler-method-set-vertex"><span class="std std-ref">set_vertex</span></a>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, vertex: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-private-method-set-aabb"><abbr title="No return value.">void</abbr> <strong>_set_aabb</strong>(aabb: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called by the <a class="reference internal" href="class_physicsserver3d.html#class-physicsserver3d"><span class="std std-ref">PhysicsServer3D</span></a> to set the bounding box for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-private-method-set-normal"><abbr title="No return value.">void</abbr> <strong>_set_normal</strong>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called by the <a class="reference internal" href="class_physicsserver3d.html#class-physicsserver3d"><span class="std std-ref">PhysicsServer3D</span></a> to set the normal for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a> vertex at the index specified by <code class="docutils literal notranslate"><span class="pre">vertex_id</span></code>.</p>
+<p><strong>Note:</strong> The <code class="docutils literal notranslate"><span class="pre">normal</span></code> parameter used to be of type <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">void*</span></code> prior to Godot 4.2.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-private-method-set-vertex"><abbr title="No return value.">void</abbr> <strong>_set_vertex</strong>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, vertex: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called by the <a class="reference internal" href="class_physicsserver3d.html#class-physicsserver3d"><span class="std std-ref">PhysicsServer3D</span></a> to set the position for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a> vertex at the index specified by <code class="docutils literal notranslate"><span class="pre">vertex_id</span></code>.</p>
+<p><strong>Note:</strong> The <code class="docutils literal notranslate"><span class="pre">vertex</span></code> parameter used to be of type <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">void*</span></code> prior to Godot 4.2.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-method-set-aabb"><abbr title="No return value.">void</abbr> <strong>set_aabb</strong>(aabb: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>)</p>
+<p>Sets the bounding box for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-method-set-normal"><abbr title="No return value.">void</abbr> <strong>set_normal</strong>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Sets the normal for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a> vertex at the index specified by <code class="docutils literal notranslate"><span class="pre">vertex_id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsserver3drenderingserverhandler-method-set-vertex"><abbr title="No return value.">void</abbr> <strong>set_vertex</strong>(vertex_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, vertex: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Sets the position for the <a class="reference internal" href="class_softbody3d.html#class-softbody3d"><span class="std std-ref">SoftBody3D</span></a> vertex at the index specified by <code class="docutils literal notranslate"><span class="pre">vertex_id</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_physicsserver3dmanager.html" rel="prev" title="PhysicsServer3DManager"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_physicsshapequeryparameters2d.html" rel="next" title="PhysicsShapeQueryParameters2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

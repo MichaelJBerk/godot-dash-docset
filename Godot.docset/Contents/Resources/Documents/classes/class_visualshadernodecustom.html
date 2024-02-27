@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="VisualShaderNodeCustom" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_visualshadernodecustom.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: VisualShaderNode&lt; Resource&lt; RefCounted&lt; Object Virtual class to define custom VisualShaderNode s for use in the Visual Shader Editor. Description: By inheriting this class you can create ..." property="og:description"/>
+<meta content="Inherits: VisualShaderNode&lt; Resource&lt; RefCounted&lt; Object Virtual class to define custom VisualShaderNode s for use in the Visual Shader Editor. Description: By inheriting this class you can create ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) VisualShaderNodeCustom — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodecustom.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_visualshadernodecustom.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_visualshadernodecustom.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_visualshadernodecustom.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_visualshadernodecustom.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_visualshadernodecustom.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_visualshadernodecustom.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_visualshadernodecustom.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_visualshadernodecustom.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_visualshadernodecustom.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_visualshadernodecustom.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_visualshadernodecustom.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_visualshadernodecustom.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_visualshadernodecustom.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodecustom.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodecustom.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_visualshadernodederivativefunc.html" rel="next" title="VisualShaderNodeDerivativeFunc"/>
+<link href="class_visualshadernodecurvexyztexture.html" rel="prev" title="VisualShaderNodeCurveXYZTexture"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_visualshadernodecustom" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">VisualShaderNodeCustom</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="visualshadernodecustom">
+<span id="class-visualshadernodecustom"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/VisualShaderNodeCustom¶"></a>VisualShaderNodeCustom<a class="headerlink" href="#visualshadernodecustom" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Virtual class to define custom <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>s for use in the Visual Shader Editor.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>By inheriting this class you can create a custom <a class="reference internal" href="class_visualshader.html#class-visualshader"><span class="std std-ref">VisualShader</span></a> script addon which will be automatically added to the Visual Shader Editor. The <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>'s behavior is defined by overriding the provided virtual methods.</p>
+<p>In order for the node to be registered as an editor addon, you must use the <code class="docutils literal notranslate"><span class="pre">@tool</span></code> annotation and provide a <code class="docutils literal notranslate"><span class="pre">class_name</span></code> for your custom script. For example:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@tool</span>
+<span class="k">extends</span><span class="w"> </span><span class="n">VisualShaderNodeCustom</span>
+<span class="k">class_name</span><span class="w"> </span><span class="n">VisualShaderNodeNoise</span>
+</pre></div>
+</div>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/plugins/editor/visual_shader_plugins.html"><span class="doc">Visual Shader plugins</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-category"><span class="std std-ref">_get_category</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-code"><span class="std std-ref">_get_code</span></a>(input_vars: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], output_vars: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-default-input-port"><span class="std std-ref">_get_default_input_port</span></a>(type: <a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-description"><span class="std std-ref">_get_description</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-func-code"><span class="std std-ref">_get_func_code</span></a>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-global-code"><span class="std std-ref">_get_global_code</span></a>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-input-port-count"><span class="std std-ref">_get_input_port_count</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-input-port-default-value"><span class="std std-ref">_get_input_port_default_value</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-input-port-name"><span class="std std-ref">_get_input_port_name</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-input-port-type"><span class="std std-ref">_get_input_port_type</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-name"><span class="std std-ref">_get_name</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-output-port-count"><span class="std std-ref">_get_output_port_count</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-output-port-name"><span class="std std-ref">_get_output_port_name</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-output-port-type"><span class="std std-ref">_get_output_port_type</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-property-count"><span class="std std-ref">_get_property_count</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-property-default-index"><span class="std std-ref">_get_property_default_index</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-property-name"><span class="std std-ref">_get_property_name</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-property-options"><span class="std std-ref">_get_property_options</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-get-return-icon-type"><span class="std std-ref">_get_return_icon_type</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-is-available"><span class="std std-ref">_is_available</span></a>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-private-method-is-highend"><span class="std std-ref">_is_highend</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodecustom-method-get-option-index"><span class="std std-ref">get_option_index</span></a>(option: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-category"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_category</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the path to the associated custom node in the Visual Shader Editor's members dialog. The path may look like <code class="docutils literal notranslate"><span class="pre">"MyGame/MyFunctions/Noise"</span></code>.</p>
+<p>Defining this method is <strong>optional</strong>. If not overridden, the node will be filed under the "Addons" category.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-code"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_code</strong>(input_vars: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], output_vars: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the actual shader code of the associated custom node. The shader code should be returned as a string, which can have multiple lines (the <code class="docutils literal notranslate"><span class="pre">"""</span></code> multiline string construct can be used for convenience).</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">input_vars</span></code> and <code class="docutils literal notranslate"><span class="pre">output_vars</span></code> arrays contain the string names of the various input and output variables, as defined by <code class="docutils literal notranslate"><span class="pre">_get_input_*</span></code> and <code class="docutils literal notranslate"><span class="pre">_get_output_*</span></code> virtual methods in this class.</p>
+<p>The output ports can be assigned values in the shader code. For example, <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">output_vars[0]</span> <span class="pre">+</span> <span class="pre">"</span> <span class="pre">=</span> <span class="pre">"</span> <span class="pre">+</span> <span class="pre">input_vars[0]</span> <span class="pre">+</span> <span class="pre">";"</span></code>.</p>
+<p>You can customize the generated code based on the shader <code class="docutils literal notranslate"><span class="pre">mode</span></code> (see <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>) and/or <code class="docutils literal notranslate"><span class="pre">type</span></code> (see <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>).</p>
+<p>Defining this method is <strong>required</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-default-input-port"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_default_input_port</strong>(type: <a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the input port which should be connected by default when this node is created as a result of dragging a connection from an existing node to the empty space on the graph.</p>
+<p>Defining this method is <strong>optional</strong>. If not overridden, the connection will be created to the first valid port.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_description</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the description of the associated custom node in the Visual Shader Editor's members dialog.</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-func-code"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_func_code</strong>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to add a shader code to the beginning of each shader function (once). The shader code should be returned as a string, which can have multiple lines (the <code class="docutils literal notranslate"><span class="pre">"""</span></code> multiline string construct can be used for convenience).</p>
+<p>If there are multiple custom nodes of different types which use this feature the order of each insertion is undefined.</p>
+<p>You can customize the generated code based on the shader <code class="docutils literal notranslate"><span class="pre">mode</span></code> (see <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>) and/or <code class="docutils literal notranslate"><span class="pre">type</span></code> (see <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>).</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-global-code"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_global_code</strong>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to add shader code on top of the global shader, to define your own standard library of reusable methods, varyings, constants, uniforms, etc. The shader code should be returned as a string, which can have multiple lines (the <code class="docutils literal notranslate"><span class="pre">"""</span></code> multiline string construct can be used for convenience).</p>
+<p>Be careful with this functionality as it can cause name conflicts with other custom nodes, so be sure to give the defined entities unique names.</p>
+<p>You can customize the generated code based on the shader <code class="docutils literal notranslate"><span class="pre">mode</span></code> (see <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>).</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-input-port-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_input_port_count</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the number of input ports of the associated custom node.</p>
+<p>Defining this method is <strong>required</strong>. If not overridden, the node has no input ports.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-input-port-default-value"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_input_port_default_value</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the default value for the specified input port. Prefer use this over <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode-method-set-input-port-default-value"><span class="std std-ref">VisualShaderNode.set_input_port_default_value</span></a>.</p>
+<p>Defining this method is <strong>required</strong>. If not overridden, the node has no default values for their input ports.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-input-port-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_input_port_name</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the names of input ports of the associated custom node. The names are used both for the input slots in the editor and as identifiers in the shader code, and are passed in the <code class="docutils literal notranslate"><span class="pre">input_vars</span></code> array in <a class="reference internal" href="#class-visualshadernodecustom-private-method-get-code"><span class="std std-ref">_get_code</span></a>.</p>
+<p>Defining this method is <strong>optional</strong>, but recommended. If not overridden, input ports are named as <code class="docutils literal notranslate"><span class="pre">"in"</span> <span class="pre">+</span> <span class="pre">str(port)</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-input-port-type"><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a> <strong>_get_input_port_type</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the returned type of each input port of the associated custom node (see <a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a> for possible types).</p>
+<p>Defining this method is <strong>optional</strong>, but recommended. If not overridden, input ports will return the <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode-constant-port-type-scalar"><span class="std std-ref">VisualShaderNode.PORT_TYPE_SCALAR</span></a> type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_name</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the name of the associated custom node in the Visual Shader Editor's members dialog and graph.</p>
+<p>Defining this method is <strong>optional</strong>, but recommended. If not overridden, the node will be named as "Unnamed".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-output-port-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_output_port_count</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the number of output ports of the associated custom node.</p>
+<p>Defining this method is <strong>required</strong>. If not overridden, the node has no output ports.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-output-port-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_output_port_name</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the names of output ports of the associated custom node. The names are used both for the output slots in the editor and as identifiers in the shader code, and are passed in the <code class="docutils literal notranslate"><span class="pre">output_vars</span></code> array in <a class="reference internal" href="#class-visualshadernodecustom-private-method-get-code"><span class="std std-ref">_get_code</span></a>.</p>
+<p>Defining this method is <strong>optional</strong>, but recommended. If not overridden, output ports are named as <code class="docutils literal notranslate"><span class="pre">"out"</span> <span class="pre">+</span> <span class="pre">str(port)</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-output-port-type"><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a> <strong>_get_output_port_type</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the returned type of each output port of the associated custom node (see <a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a> for possible types).</p>
+<p>Defining this method is <strong>optional</strong>, but recommended. If not overridden, output ports will return the <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode-constant-port-type-scalar"><span class="std std-ref">VisualShaderNode.PORT_TYPE_SCALAR</span></a> type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-property-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_property_count</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the number of the properties.</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-property-default-index"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_property_default_index</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the default index of the property of the associated custom node.</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-property-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_property_name</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the names of the property of the associated custom node.</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-property-options"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>_get_property_options</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the options inside the drop-down list property of the associated custom node.</p>
+<p>Defining this method is <strong>optional</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-get-return-icon-type"><a class="reference internal" href="class_visualshadernode.html#enum-visualshadernode-porttype"><span class="std std-ref">PortType</span></a> <strong>_get_return_icon_type</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define the return icon of the associated custom node in the Visual Shader Editor's members dialog.</p>
+<p>Defining this method is <strong>optional</strong>. If not overridden, no return icon is shown.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-is-available"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_available</strong>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>, type: <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to prevent the node to be visible in the member dialog for the certain <code class="docutils literal notranslate"><span class="pre">mode</span></code> (see <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>) and/or <code class="docutils literal notranslate"><span class="pre">type</span></code> (see <a class="reference internal" href="class_visualshader.html#enum-visualshader-type"><span class="std std-ref">Type</span></a>).</p>
+<p>Defining this method is <strong>optional</strong>. If not overridden, it's <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-private-method-is-highend"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_highend</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to enable high-end mark in the Visual Shader Editor's members dialog.</p>
+<p>Defining this method is <strong>optional</strong>. If not overridden, it's <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshadernodecustom-method-get-option-index"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_option_index</strong>(option: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the selected index of the drop-down list option within a graph. You may use this function to define the specific behavior in the <a class="reference internal" href="#class-visualshadernodecustom-private-method-get-code"><span class="std std-ref">_get_code</span></a> or <a class="reference internal" href="#class-visualshadernodecustom-private-method-get-global-code"><span class="std std-ref">_get_global_code</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_visualshadernodecurvexyztexture.html" rel="prev" title="VisualShaderNodeCurveXYZTexture"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_visualshadernodederivativefunc.html" rel="next" title="VisualShaderNodeDerivativeFunc">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorExportPlatformAndroid" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorexportplatformandroid.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for Android. Tutorials: Exporting for Android, Gradle builds for Android, Android plugins documentation index. Properties:,, String, apk_..." property="og:description"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for Android. Tutorials: Exporting for Android, Gradle builds for Android, Android plugins documentation index. Properties:,, String, apk_..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorExportPlatformAndroid — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformandroid.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorexportplatformandroid.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorexportplatformandroid.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorexportplatformandroid.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorexportplatformandroid.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorexportplatformandroid.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorexportplatformandroid.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorexportplatformandroid.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorexportplatformandroid.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorexportplatformandroid.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorexportplatformandroid.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorexportplatformandroid.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorexportplatformandroid.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorexportplatformandroid.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformandroid.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformandroid.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorexportplatformios.html" rel="next" title="EditorExportPlatformIOS"/>
+<link href="class_editorexportplatform.html" rel="prev" title="EditorExportPlatform"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorexportplatformandroid" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorExportPlatformAndroid</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorexportplatformandroid">
+<span id="class-editorexportplatformandroid"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformAndroid¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformAndroid¶"></a>EditorExportPlatformAndroid<a class="headerlink" href="#editorexportplatformandroid" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_editorexportplatform.html#class-editorexportplatform"><span class="std std-ref">EditorExportPlatform</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Exporter for Android.</p>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/export/exporting_for_android.html"><span class="doc">Exporting for Android</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/export/android_gradle_build.html"><span class="doc">Gradle builds for Android</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/platform/index.html"><span class="doc">Android plugins documentation index</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-apk-expansion-salt"><span class="std std-ref">apk_expansion/SALT</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-apk-expansion-enable"><span class="std std-ref">apk_expansion/enable</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-apk-expansion-public-key"><span class="std std-ref">apk_expansion/public_key</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-architectures-arm64-v8a"><span class="std std-ref">architectures/arm64-v8a</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-architectures-armeabi-v7a"><span class="std std-ref">architectures/armeabi-v7a</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-architectures-x86"><span class="std std-ref">architectures/x86</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-architectures-x86-64"><span class="std std-ref">architectures/x86_64</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-command-line-extra-args"><span class="std std-ref">command_line/extra_args</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-custom-template-debug"><span class="std std-ref">custom_template/debug</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-custom-template-release"><span class="std std-ref">custom_template/release</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-android-source-template"><span class="std std-ref">gradle_build/android_source_template</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-compress-native-libraries"><span class="std std-ref">gradle_build/compress_native_libraries</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-export-format"><span class="std std-ref">gradle_build/export_format</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-gradle-build-directory"><span class="std std-ref">gradle_build/gradle_build_directory</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-min-sdk"><span class="std std-ref">gradle_build/min_sdk</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-target-sdk"><span class="std std-ref">gradle_build/target_sdk</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-use-gradle-build"><span class="std std-ref">gradle_build/use_gradle_build</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-graphics-opengl-debug"><span class="std std-ref">graphics/opengl_debug</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-debug"><span class="std std-ref">keystore/debug</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-debug-password"><span class="std std-ref">keystore/debug_password</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-debug-user"><span class="std std-ref">keystore/debug_user</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-release"><span class="std std-ref">keystore/release</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-release-password"><span class="std std-ref">keystore/release_password</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-release-user"><span class="std std-ref">keystore/release_user</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-launcher-icons-adaptive-background-432x432"><span class="std std-ref">launcher_icons/adaptive_background_432x432</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-launcher-icons-adaptive-foreground-432x432"><span class="std std-ref">launcher_icons/adaptive_foreground_432x432</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-launcher-icons-main-192x192"><span class="std std-ref">launcher_icons/main_192x192</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-app-category"><span class="std std-ref">package/app_category</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-exclude-from-recents"><span class="std std-ref">package/exclude_from_recents</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-name"><span class="std std-ref">package/name</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-retain-data-on-uninstall"><span class="std std-ref">package/retain_data_on_uninstall</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-show-as-launcher-app"><span class="std std-ref">package/show_as_launcher_app</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-show-in-android-tv"><span class="std std-ref">package/show_in_android_tv</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-show-in-app-library"><span class="std std-ref">package/show_in_app_library</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-signed"><span class="std std-ref">package/signed</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-package-unique-name"><span class="std std-ref">package/unique_name</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-checkin-properties"><span class="std std-ref">permissions/access_checkin_properties</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-coarse-location"><span class="std std-ref">permissions/access_coarse_location</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-fine-location"><span class="std std-ref">permissions/access_fine_location</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-location-extra-commands"><span class="std std-ref">permissions/access_location_extra_commands</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-mock-location"><span class="std std-ref">permissions/access_mock_location</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-network-state"><span class="std std-ref">permissions/access_network_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-surface-flinger"><span class="std std-ref">permissions/access_surface_flinger</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-access-wifi-state"><span class="std std-ref">permissions/access_wifi_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-account-manager"><span class="std std-ref">permissions/account_manager</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-add-voicemail"><span class="std std-ref">permissions/add_voicemail</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-authenticate-accounts"><span class="std std-ref">permissions/authenticate_accounts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-battery-stats"><span class="std std-ref">permissions/battery_stats</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-accessibility-service"><span class="std std-ref">permissions/bind_accessibility_service</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-appwidget"><span class="std std-ref">permissions/bind_appwidget</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-device-admin"><span class="std std-ref">permissions/bind_device_admin</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-input-method"><span class="std std-ref">permissions/bind_input_method</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-nfc-service"><span class="std std-ref">permissions/bind_nfc_service</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-notification-listener-service"><span class="std std-ref">permissions/bind_notification_listener_service</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-print-service"><span class="std std-ref">permissions/bind_print_service</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-remoteviews"><span class="std std-ref">permissions/bind_remoteviews</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-text-service"><span class="std std-ref">permissions/bind_text_service</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-vpn-service"><span class="std std-ref">permissions/bind_vpn_service</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bind-wallpaper"><span class="std std-ref">permissions/bind_wallpaper</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bluetooth"><span class="std std-ref">permissions/bluetooth</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bluetooth-admin"><span class="std std-ref">permissions/bluetooth_admin</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-bluetooth-privileged"><span class="std std-ref">permissions/bluetooth_privileged</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-brick"><span class="std std-ref">permissions/brick</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-broadcast-package-removed"><span class="std std-ref">permissions/broadcast_package_removed</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-broadcast-sms"><span class="std std-ref">permissions/broadcast_sms</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-broadcast-sticky"><span class="std std-ref">permissions/broadcast_sticky</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-broadcast-wap-push"><span class="std std-ref">permissions/broadcast_wap_push</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-call-phone"><span class="std std-ref">permissions/call_phone</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-call-privileged"><span class="std std-ref">permissions/call_privileged</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-camera"><span class="std std-ref">permissions/camera</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-capture-audio-output"><span class="std std-ref">permissions/capture_audio_output</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-capture-secure-video-output"><span class="std std-ref">permissions/capture_secure_video_output</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-capture-video-output"><span class="std std-ref">permissions/capture_video_output</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-change-component-enabled-state"><span class="std std-ref">permissions/change_component_enabled_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-change-configuration"><span class="std std-ref">permissions/change_configuration</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-change-network-state"><span class="std std-ref">permissions/change_network_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-change-wifi-multicast-state"><span class="std std-ref">permissions/change_wifi_multicast_state</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-change-wifi-state"><span class="std std-ref">permissions/change_wifi_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-clear-app-cache"><span class="std std-ref">permissions/clear_app_cache</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-clear-app-user-data"><span class="std std-ref">permissions/clear_app_user_data</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-control-location-updates"><span class="std std-ref">permissions/control_location_updates</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-custom-permissions"><span class="std std-ref">permissions/custom_permissions</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-delete-cache-files"><span class="std std-ref">permissions/delete_cache_files</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-delete-packages"><span class="std std-ref">permissions/delete_packages</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-device-power"><span class="std std-ref">permissions/device_power</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-diagnostic"><span class="std std-ref">permissions/diagnostic</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-disable-keyguard"><span class="std std-ref">permissions/disable_keyguard</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-dump"><span class="std std-ref">permissions/dump</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-expand-status-bar"><span class="std std-ref">permissions/expand_status_bar</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-factory-test"><span class="std std-ref">permissions/factory_test</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-flashlight"><span class="std std-ref">permissions/flashlight</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-force-back"><span class="std std-ref">permissions/force_back</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-get-accounts"><span class="std std-ref">permissions/get_accounts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-get-package-size"><span class="std std-ref">permissions/get_package_size</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-get-tasks"><span class="std std-ref">permissions/get_tasks</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-get-top-activity-info"><span class="std std-ref">permissions/get_top_activity_info</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-global-search"><span class="std std-ref">permissions/global_search</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-hardware-test"><span class="std std-ref">permissions/hardware_test</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-inject-events"><span class="std std-ref">permissions/inject_events</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-install-location-provider"><span class="std std-ref">permissions/install_location_provider</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-install-packages"><span class="std std-ref">permissions/install_packages</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-install-shortcut"><span class="std std-ref">permissions/install_shortcut</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-internal-system-window"><span class="std std-ref">permissions/internal_system_window</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-internet"><span class="std std-ref">permissions/internet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-kill-background-processes"><span class="std std-ref">permissions/kill_background_processes</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-location-hardware"><span class="std std-ref">permissions/location_hardware</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-manage-accounts"><span class="std std-ref">permissions/manage_accounts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-manage-app-tokens"><span class="std std-ref">permissions/manage_app_tokens</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-manage-documents"><span class="std std-ref">permissions/manage_documents</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-manage-external-storage"><span class="std std-ref">permissions/manage_external_storage</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-master-clear"><span class="std std-ref">permissions/master_clear</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-media-content-control"><span class="std std-ref">permissions/media_content_control</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-modify-audio-settings"><span class="std std-ref">permissions/modify_audio_settings</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-modify-phone-state"><span class="std std-ref">permissions/modify_phone_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-mount-format-filesystems"><span class="std std-ref">permissions/mount_format_filesystems</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-mount-unmount-filesystems"><span class="std std-ref">permissions/mount_unmount_filesystems</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-nfc"><span class="std std-ref">permissions/nfc</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-persistent-activity"><span class="std std-ref">permissions/persistent_activity</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-process-outgoing-calls"><span class="std std-ref">permissions/process_outgoing_calls</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-calendar"><span class="std std-ref">permissions/read_calendar</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-call-log"><span class="std std-ref">permissions/read_call_log</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-contacts"><span class="std std-ref">permissions/read_contacts</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-external-storage"><span class="std std-ref">permissions/read_external_storage</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-frame-buffer"><span class="std std-ref">permissions/read_frame_buffer</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-history-bookmarks"><span class="std std-ref">permissions/read_history_bookmarks</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-input-state"><span class="std std-ref">permissions/read_input_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-logs"><span class="std std-ref">permissions/read_logs</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-phone-state"><span class="std std-ref">permissions/read_phone_state</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-profile"><span class="std std-ref">permissions/read_profile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-sms"><span class="std std-ref">permissions/read_sms</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-social-stream"><span class="std std-ref">permissions/read_social_stream</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-sync-settings"><span class="std std-ref">permissions/read_sync_settings</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-sync-stats"><span class="std std-ref">permissions/read_sync_stats</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-read-user-dictionary"><span class="std std-ref">permissions/read_user_dictionary</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-reboot"><span class="std std-ref">permissions/reboot</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-receive-boot-completed"><span class="std std-ref">permissions/receive_boot_completed</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-receive-mms"><span class="std std-ref">permissions/receive_mms</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-receive-sms"><span class="std std-ref">permissions/receive_sms</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-receive-wap-push"><span class="std std-ref">permissions/receive_wap_push</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-record-audio"><span class="std std-ref">permissions/record_audio</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-reorder-tasks"><span class="std std-ref">permissions/reorder_tasks</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-restart-packages"><span class="std std-ref">permissions/restart_packages</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-send-respond-via-message"><span class="std std-ref">permissions/send_respond_via_message</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-send-sms"><span class="std std-ref">permissions/send_sms</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-activity-watcher"><span class="std std-ref">permissions/set_activity_watcher</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-alarm"><span class="std std-ref">permissions/set_alarm</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-always-finish"><span class="std std-ref">permissions/set_always_finish</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-animation-scale"><span class="std std-ref">permissions/set_animation_scale</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-debug-app"><span class="std std-ref">permissions/set_debug_app</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-orientation"><span class="std std-ref">permissions/set_orientation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-pointer-speed"><span class="std std-ref">permissions/set_pointer_speed</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-preferred-applications"><span class="std std-ref">permissions/set_preferred_applications</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-process-limit"><span class="std std-ref">permissions/set_process_limit</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-time"><span class="std std-ref">permissions/set_time</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-time-zone"><span class="std std-ref">permissions/set_time_zone</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-wallpaper"><span class="std std-ref">permissions/set_wallpaper</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-set-wallpaper-hints"><span class="std std-ref">permissions/set_wallpaper_hints</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-signal-persistent-processes"><span class="std std-ref">permissions/signal_persistent_processes</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-status-bar"><span class="std std-ref">permissions/status_bar</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-subscribed-feeds-read"><span class="std std-ref">permissions/subscribed_feeds_read</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-subscribed-feeds-write"><span class="std std-ref">permissions/subscribed_feeds_write</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-system-alert-window"><span class="std std-ref">permissions/system_alert_window</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-transmit-ir"><span class="std std-ref">permissions/transmit_ir</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-uninstall-shortcut"><span class="std std-ref">permissions/uninstall_shortcut</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-update-device-stats"><span class="std std-ref">permissions/update_device_stats</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-use-credentials"><span class="std std-ref">permissions/use_credentials</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-use-sip"><span class="std std-ref">permissions/use_sip</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-vibrate"><span class="std std-ref">permissions/vibrate</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-wake-lock"><span class="std std-ref">permissions/wake_lock</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-apn-settings"><span class="std std-ref">permissions/write_apn_settings</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-calendar"><span class="std std-ref">permissions/write_calendar</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-call-log"><span class="std std-ref">permissions/write_call_log</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-contacts"><span class="std std-ref">permissions/write_contacts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-external-storage"><span class="std std-ref">permissions/write_external_storage</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-gservices"><span class="std std-ref">permissions/write_gservices</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-history-bookmarks"><span class="std std-ref">permissions/write_history_bookmarks</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-profile"><span class="std std-ref">permissions/write_profile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-secure-settings"><span class="std std-ref">permissions/write_secure_settings</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-settings"><span class="std std-ref">permissions/write_settings</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-sms"><span class="std std-ref">permissions/write_sms</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-social-stream"><span class="std std-ref">permissions/write_social_stream</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-sync-settings"><span class="std std-ref">permissions/write_sync_settings</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-permissions-write-user-dictionary"><span class="std std-ref">permissions/write_user_dictionary</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-screen-immersive-mode"><span class="std std-ref">screen/immersive_mode</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-screen-support-large"><span class="std std-ref">screen/support_large</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-screen-support-normal"><span class="std std-ref">screen/support_normal</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-screen-support-small"><span class="std std-ref">screen/support_small</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-screen-support-xlarge"><span class="std std-ref">screen/support_xlarge</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-user-data-backup-allow"><span class="std std-ref">user_data_backup/allow</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-version-code"><span class="std std-ref">version/code</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-version-name"><span class="std std-ref">version/name</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformandroid-property-xr-features-xr-mode"><span class="std std-ref">xr_features/xr_mode</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-editorexportplatformandroid-property-apk-expansion-salt"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>apk_expansion/SALT</strong></p>
+<p>Array of random bytes that the licensing Policy uses to create an <a class="reference external" href="https://developer.android.com/google/play/licensing/adding-licensing#impl-Obfuscator">Obfuscator</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-apk-expansion-enable"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>apk_expansion/enable</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, project resources are stored in the separate APK expansion file, instead APK.</p>
+<p><strong>Note:</strong> APK expansion should be enabled to use PCK encryption.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-apk-expansion-public-key"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>apk_expansion/public_key</strong></p>
+<p>Base64 encoded RSA public key for your publisher account, available from the profile page on the "Play Console".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-architectures-arm64-v8a"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>architectures/arm64-v8a</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">arm64</span></code> binaries are included into exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-architectures-armeabi-v7a"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>architectures/armeabi-v7a</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">arm32</span></code> binaries are included into exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-architectures-x86"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>architectures/x86</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">x86_32</span></code> binaries are included into exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-architectures-x86-64"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>architectures/x86_64</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> binaries are included into exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-command-line-extra-args"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>command_line/extra_args</strong></p>
+<p>A list of additional command line arguments, exported project will receive when started.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-custom-template-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/debug</strong></p>
+<p>Path to an APK file to use as a custom export template for debug exports. If left empty, default template is used.</p>
+<p><strong>Note:</strong> This is only used if <a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-use-gradle-build"><span class="std std-ref">gradle_build/use_gradle_build</span></a> is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-custom-template-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/release</strong></p>
+<p>Path to an APK file to use as a custom export template for release exports. If left empty, default template is used.</p>
+<p><strong>Note:</strong> This is only used if <a class="reference internal" href="#class-editorexportplatformandroid-property-gradle-build-use-gradle-build"><span class="std std-ref">gradle_build/use_gradle_build</span></a> is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-android-source-template"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>gradle_build/android_source_template</strong></p>
+<p>Path to a ZIP file holding the source for the export template used in a Gradle build. If left empty, the default template is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-compress-native-libraries"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gradle_build/compress_native_libraries</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, native libraries are compressed when performing a Gradle build.</p>
+<p><strong>Note:</strong> Although your binary may be smaller, your application may load slower because the native libraries are not loaded directly from the binary at runtime.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-export-format"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>gradle_build/export_format</strong></p>
+<p>Export format for Gradle build.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-gradle-build-directory"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>gradle_build/gradle_build_directory</strong></p>
+<p>Path to the Gradle build directory. If left empty, then <code class="docutils literal notranslate"><span class="pre">res://android</span></code> will be used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-min-sdk"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>gradle_build/min_sdk</strong></p>
+<p>Minimal Android SDK version for Gradle build.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-target-sdk"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>gradle_build/target_sdk</strong></p>
+<p>Target Android SDK version for Gradle build.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-gradle-build-use-gradle-build"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gradle_build/use_gradle_build</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, Gradle build is used instead of pre-built APK.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-graphics-opengl-debug"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>graphics/opengl_debug</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, OpenGL ES debug context will be created (additional runtime checking, validation, and logging).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/debug</strong></p>
+<p>Path of the debug keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_DEBUG_PATH</span></code>.</p>
+<p>Fallbacks to <code class="docutils literal notranslate"><span class="pre">EditorSettings.export/android/debug_keystore</span></code> if empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-debug-password"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/debug_password</strong></p>
+<p>Password for the debug keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD</span></code>.</p>
+<p>Fallbacks to <code class="docutils literal notranslate"><span class="pre">EditorSettings.export/android/debug_keystore_pass</span></code> if both it and <a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-debug"><span class="std std-ref">keystore/debug</span></a> are empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-debug-user"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/debug_user</strong></p>
+<p>User name for the debug keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_DEBUG_USER</span></code>.</p>
+<p>Fallbacks to <code class="docutils literal notranslate"><span class="pre">EditorSettings.export/android/debug_keystore_user</span></code> if both it and <a class="reference internal" href="#class-editorexportplatformandroid-property-keystore-debug"><span class="std std-ref">keystore/debug</span></a> are empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/release</strong></p>
+<p>Path of the release keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_RELEASE_PATH</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-release-password"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/release_password</strong></p>
+<p>Password for the release keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-keystore-release-user"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>keystore/release_user</strong></p>
+<p>User name for the release keystore file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_ANDROID_KEYSTORE_RELEASE_USER</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-launcher-icons-adaptive-background-432x432"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>launcher_icons/adaptive_background_432x432</strong></p>
+<p>Background layer of the application adaptive icon file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-launcher-icons-adaptive-foreground-432x432"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>launcher_icons/adaptive_foreground_432x432</strong></p>
+<p>Foreground layer of the application adaptive icon file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-launcher-icons-main-192x192"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>launcher_icons/main_192x192</strong></p>
+<p>Application icon file. If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-app-category"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>package/app_category</strong></p>
+<p>Application category for the Play Store.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-exclude-from-recents"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/exclude_from_recents</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, task initiated by main activity will be excluded from the list of recently used applications.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>package/name</strong></p>
+<p>Name of the application.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-retain-data-on-uninstall"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/retain_data_on_uninstall</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, when the user uninstalls an app, a prompt to keep the app's data will be shown.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-show-as-launcher-app"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/show_as_launcher_app</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the user will be able to set this app as the system launcher in Android preferences.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-show-in-android-tv"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/show_in_android_tv</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, this app will show in Android TV launcher UI.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-show-in-app-library"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/show_in_app_library</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, this app will show in the device's app library.</p>
+<p><strong>Note:</strong> This is <code class="docutils literal notranslate"><span class="pre">true</span></code> by default.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-signed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>package/signed</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, package signing is enabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-package-unique-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>package/unique_name</strong></p>
+<p>Unique application identifier in a reverse-DNS format. The reverse DNS format should preferably match a domain name you control, but this is not strictly required. For instance, if you own <code class="docutils literal notranslate"><span class="pre">example.com</span></code>, your package unique name should preferably be of the form <code class="docutils literal notranslate"><span class="pre">com.example.mygame</span></code>. This identifier can only contain lowercase alphanumeric characters (<code class="docutils literal notranslate"><span class="pre">a-z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code>), underscores (<code class="docutils literal notranslate"><span class="pre">_</span></code>), and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>). Each component of the reverse DNS format must start with a letter: for instance, <code class="docutils literal notranslate"><span class="pre">com.example.8game</span></code> is not valid.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">$genname</span></code> is present in the value, it will be replaced by the project name converted to lowercase. If there are invalid characters in the project name, they will be stripped. If all characters in the project name are stripped, <code class="docutils literal notranslate"><span class="pre">$genname</span></code> is replaced by <code class="docutils literal notranslate"><span class="pre">noname</span></code>.</p>
+<p><strong>Note:</strong> Changing the package name will cause the package to be considered as a new package, with its own installation and data paths. The new package won't be usable to update existing installations.</p>
+<p><strong>Note:</strong> When publishing to Google Play, the package name must be <em>globally</em> unique. This means no other apps published on Google Play must be using the same package name as yours. Otherwise, you'll be prevented from publishing your app on Google Play.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-checkin-properties"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_checkin_properties</strong></p>
+<p>Allows read/write access to the "properties" table in the checkin database. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_CHECKIN_PROPERTIES">ACCESS_CHECKIN_PROPERTIES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-coarse-location"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_coarse_location</strong></p>
+<p>Allows access to the approximate location information. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-fine-location"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_fine_location</strong></p>
+<p>Allows access to the precise location information. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_FINE_LOCATION">ACCESS_FINE_LOCATION</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-location-extra-commands"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_location_extra_commands</strong></p>
+<p>Allows access to the extra location provider commands. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_LOCATION_EXTRA_COMMANDS">ACCESS_LOCATION_EXTRA_COMMANDS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-mock-location"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_mock_location</strong></p>
+<p>Allows an application to create mock location providers for testing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-network-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_network_state</strong></p>
+<p>Allows access to the information about networks. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_NETWORK_STATE">ACCESS_NETWORK_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-surface-flinger"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_surface_flinger</strong></p>
+<p>Allows an application to use SurfaceFlinger's low level features.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-access-wifi-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/access_wifi_state</strong></p>
+<p>Allows access to the information about Wi-Fi networks. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCESS_WIFI_STATE">ACCESS_WIFI_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-account-manager"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/account_manager</strong></p>
+<p>Allows applications to call into AccountAuthenticators. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ACCOUNT_MANAGER">ACCOUNT_MANAGER</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-add-voicemail"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/add_voicemail</strong></p>
+<p>Allows an application to add voicemails into the system. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#ADD_VOICEMAIL">ADD_VOICEMAIL</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-authenticate-accounts"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/authenticate_accounts</strong></p>
+<p>Allows an application to act as an AccountAuthenticator for the AccountManager.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-battery-stats"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/battery_stats</strong></p>
+<p>Allows an application to collect battery statistics. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BATTERY_STATS">BATTERY_STATS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-accessibility-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_accessibility_service</strong></p>
+<p>Must be required by an AccessibilityService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_ACCESSIBILITY_SERVICE">BIND_ACCESSIBILITY_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-appwidget"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_appwidget</strong></p>
+<p>Allows an application to tell the AppWidget service which application can access AppWidget's data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_APPWIDGET">BIND_APPWIDGET</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-device-admin"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_device_admin</strong></p>
+<p>Must be required by device administration receiver, to ensure that only the system can interact with it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_DEVICE_ADMIN">BIND_DEVICE_ADMIN</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-input-method"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_input_method</strong></p>
+<p>Must be required by an InputMethodService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_INPUT_METHOD">BIND_INPUT_METHOD</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-nfc-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_nfc_service</strong></p>
+<p>Must be required by a HostApduService or OffHostApduService to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_NFC_SERVICE">BIND_NFC_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-notification-listener-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_notification_listener_service</strong></p>
+<p>Must be required by a NotificationListenerService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_NOTIFICATION_LISTENER_SERVICE">BIND_NOTIFICATION_LISTENER_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-print-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_print_service</strong></p>
+<p>Must be required by a PrintService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_PRINT_SERVICE">BIND_PRINT_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-remoteviews"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_remoteviews</strong></p>
+<p>Must be required by a RemoteViewsService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_REMOTEVIEWS">BIND_REMOTEVIEWS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-text-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_text_service</strong></p>
+<p>Must be required by a TextService (e.g. SpellCheckerService) to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_TEXT_SERVICE">BIND_TEXT_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-vpn-service"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_vpn_service</strong></p>
+<p>Must be required by a VpnService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_VPN_SERVICE">BIND_VPN_SERVICE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bind-wallpaper"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bind_wallpaper</strong></p>
+<p>Must be required by a WallpaperService, to ensure that only the system can bind to it. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BIND_WALLPAPER">BIND_WALLPAPER</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bluetooth"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bluetooth</strong></p>
+<p>Allows applications to connect to paired bluetooth devices. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH">BLUETOOTH</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bluetooth-admin"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bluetooth_admin</strong></p>
+<p>Allows applications to discover and pair bluetooth devices. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_ADMIN">BLUETOOTH_ADMIN</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-bluetooth-privileged"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/bluetooth_privileged</strong></p>
+<p>Allows applications to pair bluetooth devices without user interaction, and to allow or disallow phonebook access or message access. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_PRIVILEGED">BLUETOOTH_PRIVILEGED</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-brick"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/brick</strong></p>
+<p>Required to be able to disable the device (very dangerous!).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-broadcast-package-removed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/broadcast_package_removed</strong></p>
+<p>Allows an application to broadcast a notification that an application package has been removed. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BROADCAST_PACKAGE_REMOVED">BROADCAST_PACKAGE_REMOVED</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-broadcast-sms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/broadcast_sms</strong></p>
+<p>Allows an application to broadcast an SMS receipt notification. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BROADCAST_SMS">BROADCAST_SMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-broadcast-sticky"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/broadcast_sticky</strong></p>
+<p>Allows an application to broadcast sticky intents. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BROADCAST_STICKY">BROADCAST_STICKY</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-broadcast-wap-push"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/broadcast_wap_push</strong></p>
+<p>Allows an application to broadcast a WAP PUSH receipt notification. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#BROADCAST_WAP_PUSH">BROADCAST_WAP_PUSH</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-call-phone"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/call_phone</strong></p>
+<p>Allows an application to initiate a phone call without going through the Dialer user interface. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CALL_PHONE">CALL_PHONE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-call-privileged"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/call_privileged</strong></p>
+<p>Allows an application to call any phone number, including emergency numbers, without going through the Dialer user interface. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CALL_PRIVILEGED">CALL_PRIVILEGED</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-camera"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/camera</strong></p>
+<p>Required to be able to access the camera device. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CAMERA">CAMERA</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-capture-audio-output"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/capture_audio_output</strong></p>
+<p>Allows an application to capture audio output. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CAPTURE_AUDIO_OUTPUT">CAPTURE_AUDIO_OUTPUT</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-capture-secure-video-output"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/capture_secure_video_output</strong></p>
+<p>Allows an application to capture secure video output.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-capture-video-output"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/capture_video_output</strong></p>
+<p>Allows an application to capture video output.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-change-component-enabled-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/change_component_enabled_state</strong></p>
+<p>Allows an application to change whether an application component (other than its own) is enabled or not. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CHANGE_COMPONENT_ENABLED_STATE">CHANGE_COMPONENT_ENABLED_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-change-configuration"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/change_configuration</strong></p>
+<p>Allows an application to modify the current configuration, such as locale. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CHANGE_CONFIGURATION">CHANGE_CONFIGURATION</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-change-network-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/change_network_state</strong></p>
+<p>Allows applications to change network connectivity state. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CHANGE_NETWORK_STATE">CHANGE_NETWORK_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-change-wifi-multicast-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/change_wifi_multicast_state</strong></p>
+<p>Allows applications to enter Wi-Fi Multicast mode. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_MULTICAST_STATE">CHANGE_WIFI_MULTICAST_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-change-wifi-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/change_wifi_state</strong></p>
+<p>Allows applications to change Wi-Fi connectivity state. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_STATE">CHANGE_WIFI_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-clear-app-cache"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/clear_app_cache</strong></p>
+<p>Allows an application to clear the caches of all installed applications on the device. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CLEAR_APP_CACHE">CLEAR_APP_CACHE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-clear-app-user-data"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/clear_app_user_data</strong></p>
+<p>Allows an application to clear user data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-control-location-updates"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/control_location_updates</strong></p>
+<p>Allows enabling/disabling location update notifications from the radio. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#CONTROL_LOCATION_UPDATES">CONTROL_LOCATION_UPDATES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-custom-permissions"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>permissions/custom_permissions</strong></p>
+<p>Array of custom permission strings.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-delete-cache-files"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/delete_cache_files</strong></p>
+<p><strong>Deprecated:</strong> This property may be changed or removed in future versions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-delete-packages"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/delete_packages</strong></p>
+<p>Allows an application to delete packages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#DELETE_PACKAGES">DELETE_PACKAGES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-device-power"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/device_power</strong></p>
+<p>Allows low-level access to power management.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-diagnostic"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/diagnostic</strong></p>
+<p>Allows applications to RW to diagnostic resources. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#DIAGNOSTIC">DIAGNOSTIC</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-disable-keyguard"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/disable_keyguard</strong></p>
+<p>Allows applications to disable the keyguard if it is not secure. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#DISABLE_KEYGUARD">DISABLE_KEYGUARD</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-dump"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/dump</strong></p>
+<p>Allows an application to retrieve state dump information from system services. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#DUMP">DUMP</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-expand-status-bar"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/expand_status_bar</strong></p>
+<p>Allows an application to expand or collapse the status bar. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#EXPAND_STATUS_BAR">EXPAND_STATUS_BAR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-factory-test"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/factory_test</strong></p>
+<p>Run as a manufacturer test application, running as the root user. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#FACTORY_TEST">FACTORY_TEST</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-flashlight"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/flashlight</strong></p>
+<p>Allows access to the flashlight.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-force-back"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/force_back</strong></p>
+<p>Allows an application to force a BACK operation on whatever is the top activity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-get-accounts"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/get_accounts</strong></p>
+<p>Allows access to the list of accounts in the Accounts Service. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#GET_ACCOUNTS">GET_ACCOUNTS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-get-package-size"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/get_package_size</strong></p>
+<p>Allows an application to find out the space used by any package. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#GET_PACKAGE_SIZE">GET_PACKAGE_SIZE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-get-tasks"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/get_tasks</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 21.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-get-top-activity-info"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/get_top_activity_info</strong></p>
+<p>Allows an application to retrieve private information about the current top activity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-global-search"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/global_search</strong></p>
+<p>Used on content providers to allow the global search system to access their data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#GLOBAL_SEARCH">GLOBAL_SEARCH</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-hardware-test"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/hardware_test</strong></p>
+<p>Allows access to hardware peripherals.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-inject-events"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/inject_events</strong></p>
+<p>Allows an application to inject user events (keys, touch, trackball) into the event stream and deliver them to ANY window.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-install-location-provider"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/install_location_provider</strong></p>
+<p>Allows an application to install a location provider into the Location Manager. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#INSTALL_LOCATION_PROVIDER">INSTALL_LOCATION_PROVIDER</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-install-packages"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/install_packages</strong></p>
+<p>Allows an application to install packages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#INSTALL_PACKAGES">INSTALL_PACKAGES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-install-shortcut"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/install_shortcut</strong></p>
+<p>Allows an application to install a shortcut in Launcher. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#INSTALL_SHORTCUT">INSTALL_SHORTCUT</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-internal-system-window"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/internal_system_window</strong></p>
+<p>Allows an application to open windows that are for use by parts of the system user interface.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-internet"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/internet</strong></p>
+<p>Allows applications to open network sockets. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#INTERNET">INTERNET</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-kill-background-processes"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/kill_background_processes</strong></p>
+<p>Allows an application to call ActivityManager.killBackgroundProcesses(String). See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#KILL_BACKGROUND_PROCESSES">KILL_BACKGROUND_PROCESSES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-location-hardware"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/location_hardware</strong></p>
+<p>Allows an application to use location features in hardware, such as the geofencing api. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#LOCATION_HARDWARE">LOCATION_HARDWARE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-manage-accounts"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/manage_accounts</strong></p>
+<p>Allows an application to manage the list of accounts in the AccountManager.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-manage-app-tokens"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/manage_app_tokens</strong></p>
+<p>Allows an application to manage (create, destroy, Z-order) application tokens in the window manager.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-manage-documents"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/manage_documents</strong></p>
+<p>Allows an application to manage access to documents, usually as part of a document picker. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MANAGE_DOCUMENTS">MANAGE_DOCUMENTS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-manage-external-storage"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/manage_external_storage</strong></p>
+<p>Allows an application a broad access to external storage in scoped storage. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MANAGE_EXTERNAL_STORAGE">MANAGE_EXTERNAL_STORAGE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-master-clear"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/master_clear</strong></p>
+<p>See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MASTER_CLEAR">MASTER_CLEAR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-media-content-control"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/media_content_control</strong></p>
+<p>Allows an application to know what content is playing and control its playback. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MEDIA_CONTENT_CONTROL">MEDIA_CONTENT_CONTROL</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-modify-audio-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/modify_audio_settings</strong></p>
+<p>Allows an application to modify global audio settings. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MODIFY_AUDIO_SETTINGS">MODIFY_AUDIO_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-modify-phone-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/modify_phone_state</strong></p>
+<p>Allows modification of the telephony state - power on, mmi, etc. Does not include placing calls. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MODIFY_PHONE_STATE">MODIFY_PHONE_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-mount-format-filesystems"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/mount_format_filesystems</strong></p>
+<p>Allows formatting file systems for removable storage. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MOUNT_FORMAT_FILESYSTEMS">MOUNT_FORMAT_FILESYSTEMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-mount-unmount-filesystems"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/mount_unmount_filesystems</strong></p>
+<p>Allows mounting and unmounting file systems for removable storage. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#MOUNT_UNMOUNT_FILESYSTEMS">MOUNT_UNMOUNT_FILESYSTEMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-nfc"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/nfc</strong></p>
+<p>Allows applications to perform I/O operations over NFC. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#NFC">NFC</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-persistent-activity"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/persistent_activity</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 15.</p>
+<p>Allow an application to make its activities persistent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-process-outgoing-calls"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/process_outgoing_calls</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 29.</p>
+<p>Allows an application to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#PROCESS_OUTGOING_CALLS">PROCESS_OUTGOING_CALLS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-calendar"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_calendar</strong></p>
+<p>Allows an application to read the user's calendar data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_CALENDAR">READ_CALENDAR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-call-log"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_call_log</strong></p>
+<p>Allows an application to read the user's call log. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_CALL_LOG">READ_CALL_LOG</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-contacts"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_contacts</strong></p>
+<p>Allows an application to read the user's contacts data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_CONTACTS">READ_CONTACTS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-external-storage"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_external_storage</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 33.</p>
+<p>Allows an application to read from external storage. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE">READ_EXTERNAL_STORAGE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-frame-buffer"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_frame_buffer</strong></p>
+<p>Allows an application to take screen shots and more generally get access to the frame buffer data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-history-bookmarks"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_history_bookmarks</strong></p>
+<p>Allows an application to read (but not write) the user's browsing history and bookmarks.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-input-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_input_state</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 16.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-logs"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_logs</strong></p>
+<p>Allows an application to read the low-level system log files. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_LOGS">READ_LOGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-phone-state"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_phone_state</strong></p>
+<p>Allows read only access to phone state. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_PHONE_STATE">READ_PHONE_STATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-profile"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_profile</strong></p>
+<p>Allows an application to read the user's personal profile data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-sms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_sms</strong></p>
+<p>Allows an application to read SMS messages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_SMS">READ_SMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-social-stream"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_social_stream</strong></p>
+<p>Allows an application to read from the user's social stream.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-sync-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_sync_settings</strong></p>
+<p>Allows applications to read the sync settings. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_SETTINGS">READ_SYNC_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-sync-stats"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_sync_stats</strong></p>
+<p>Allows applications to read the sync stats. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_STATS">READ_SYNC_STATS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-read-user-dictionary"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/read_user_dictionary</strong></p>
+<p>Allows an application to read the user dictionary.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-reboot"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/reboot</strong></p>
+<p>Required to be able to reboot the device. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#REBOOT">REBOOT</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-receive-boot-completed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/receive_boot_completed</strong></p>
+<p>Allows an application to receive the Intent.ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#RECEIVE_BOOT_COMPLETED">RECEIVE_BOOT_COMPLETED</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-receive-mms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/receive_mms</strong></p>
+<p>Allows an application to monitor incoming MMS messages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#RECEIVE_MMS">RECEIVE_MMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-receive-sms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/receive_sms</strong></p>
+<p>Allows an application to receive SMS messages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#RECEIVE_SMS">RECEIVE_SMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-receive-wap-push"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/receive_wap_push</strong></p>
+<p>Allows an application to receive WAP push messages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#RECEIVE_WAP_PUSH">RECEIVE_WAP_PUSH</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-record-audio"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/record_audio</strong></p>
+<p>Allows an application to record audio. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#RECORD_AUDIO">RECORD_AUDIO</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-reorder-tasks"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/reorder_tasks</strong></p>
+<p>Allows an application to change the Z-order of tasks. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#REORDER_TASKS">REORDER_TASKS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-restart-packages"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/restart_packages</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 15.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-send-respond-via-message"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/send_respond_via_message</strong></p>
+<p>Allows an application (Phone) to send a request to other applications to handle the respond-via-message action during incoming calls. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SEND_RESPOND_VIA_MESSAGE">SEND_RESPOND_VIA_MESSAGE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-send-sms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/send_sms</strong></p>
+<p>Allows an application to send SMS messages. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SEND_SMS">SEND_SMS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-activity-watcher"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_activity_watcher</strong></p>
+<p>Allows an application to watch and control how activities are started globally in the system.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-alarm"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_alarm</strong></p>
+<p>Allows an application to broadcast an Intent to set an alarm for the user. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_ALARM">SET_ALARM</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-always-finish"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_always_finish</strong></p>
+<p>Allows an application to control whether activities are immediately finished when put in the background. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_ALWAYS_FINISH">SET_ALWAYS_FINISH</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-animation-scale"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_animation_scale</strong></p>
+<p>Allows to modify the global animation scaling factor. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_ANIMATION_SCALE">SET_ANIMATION_SCALE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-debug-app"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_debug_app</strong></p>
+<p>Configure an application for debugging. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_DEBUG_APP">SET_DEBUG_APP</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-orientation"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_orientation</strong></p>
+<p>Allows low-level access to setting the orientation (actually rotation) of the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-pointer-speed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_pointer_speed</strong></p>
+<p>Allows low-level access to setting the pointer speed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-preferred-applications"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_preferred_applications</strong></p>
+<p><strong>Deprecated:</strong> Deprecated in API level 15.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-process-limit"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_process_limit</strong></p>
+<p>Allows an application to set the maximum number of (not needed) application processes that can be running. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_PROCESS_LIMIT">SET_PROCESS_LIMIT</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-time"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_time</strong></p>
+<p>Allows applications to set the system time directly. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_TIME">SET_TIME</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-time-zone"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_time_zone</strong></p>
+<p>Allows applications to set the system time zone directly. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_TIME_ZONE">SET_TIME_ZONE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-wallpaper"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_wallpaper</strong></p>
+<p>Allows applications to set the wallpaper. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER">SET_WALLPAPER</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-set-wallpaper-hints"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/set_wallpaper_hints</strong></p>
+<p>Allows applications to set the wallpaper hints. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER_HINTS">SET_WALLPAPER_HINTS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-signal-persistent-processes"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/signal_persistent_processes</strong></p>
+<p>Allow an application to request that a signal be sent to all persistent processes. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SIGNAL_PERSISTENT_PROCESSES">SIGNAL_PERSISTENT_PROCESSES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-status-bar"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/status_bar</strong></p>
+<p>Allows an application to open, close, or disable the status bar and its icons. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#STATUS_BAR">STATUS_BAR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-subscribed-feeds-read"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/subscribed_feeds_read</strong></p>
+<p>Allows an application to allow access the subscribed feeds ContentProvider.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-subscribed-feeds-write"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/subscribed_feeds_write</strong></p>
+<p><strong>Deprecated:</strong> This property may be changed or removed in future versions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-system-alert-window"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/system_alert_window</strong></p>
+<p>Allows an app to create windows using the type WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY, shown on top of all other apps. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#SYSTEM_ALERT_WINDOW">SYSTEM_ALERT_WINDOW</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-transmit-ir"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/transmit_ir</strong></p>
+<p>Allows using the device's IR transmitter, if available. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#TRANSMIT_IR">TRANSMIT_IR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-uninstall-shortcut"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/uninstall_shortcut</strong></p>
+<p><strong>Deprecated:</strong> This property may be changed or removed in future versions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-update-device-stats"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/update_device_stats</strong></p>
+<p>Allows an application to update device statistics. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#UPDATE_DEVICE_STATS">UPDATE_DEVICE_STATS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-use-credentials"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/use_credentials</strong></p>
+<p>Allows an application to request authtokens from the AccountManager.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-use-sip"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/use_sip</strong></p>
+<p>Allows an application to use SIP service. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#USE_SIP">USE_SIP</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-vibrate"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/vibrate</strong></p>
+<p>Allows access to the vibrator. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#VIBRATE">VIBRATE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-wake-lock"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/wake_lock</strong></p>
+<p>Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WAKE_LOCK">WAKE_LOCK</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-apn-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_apn_settings</strong></p>
+<p>Allows applications to write the apn settings and read sensitive fields of an existing apn settings like user and password. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_APN_SETTINGS">WRITE_APN_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-calendar"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_calendar</strong></p>
+<p>Allows an application to write the user's calendar data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_CALENDAR">WRITE_CALENDAR</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-call-log"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_call_log</strong></p>
+<p>Allows an application to write (but not read) the user's call log data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_CALL_LOG">WRITE_CALL_LOG</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-contacts"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_contacts</strong></p>
+<p>Allows an application to write the user's contacts data. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_CONTACTS">WRITE_CONTACTS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-external-storage"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_external_storage</strong></p>
+<p>Allows an application to write to external storage. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_EXTERNAL_STORAGE">WRITE_EXTERNAL_STORAGE</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-gservices"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_gservices</strong></p>
+<p>Allows an application to modify the Google service map. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_GSERVICES">WRITE_GSERVICES</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-history-bookmarks"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_history_bookmarks</strong></p>
+<p>Allows an application to write (but not read) the user's browsing history and bookmarks.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-profile"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_profile</strong></p>
+<p>Allows an application to write (but not read) the user's personal profile data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-secure-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_secure_settings</strong></p>
+<p>Allows an application to read or write the secure system settings. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_SECURE_SETTINGS">WRITE_SECURE_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_settings</strong></p>
+<p>Allows an application to read or write the system settings. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_SETTINGS">WRITE_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-sms"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_sms</strong></p>
+<p>Allows an application to write SMS messages.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-social-stream"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_social_stream</strong></p>
+<p>Allows an application to write (but not read) the user's social stream data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-sync-settings"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_sync_settings</strong></p>
+<p>Allows applications to write the sync settings. See <a class="reference external" href="https://developer.android.com/reference/android/Manifest.permission#WRITE_SYNC_SETTINGS">WRITE_SYNC_SETTINGS</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-permissions-write-user-dictionary"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>permissions/write_user_dictionary</strong></p>
+<p>Allows an application to write to the user dictionary.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-screen-immersive-mode"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>screen/immersive_mode</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, hides navigation and status bar.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-screen-support-large"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>screen/support_large</strong></p>
+<p>Indicates whether the application supports larger screen form-factors.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-screen-support-normal"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>screen/support_normal</strong></p>
+<p>Indicates whether an application supports the "normal" screen form-factors.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-screen-support-small"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>screen/support_small</strong></p>
+<p>Indicates whether the application supports smaller screen form-factors.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-screen-support-xlarge"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>screen/support_xlarge</strong></p>
+<p>Indicates whether the application supports extra large screen form-factors.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-user-data-backup-allow"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>user_data_backup/allow</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, allows the application to participate in the backup and restore infrastructure.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-version-code"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>version/code</strong></p>
+<p>Machine-readable application version. This must be incremented for every new release pushed to the Play Store.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-version-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>version/name</strong></p>
+<p>Application version visible to the user. Falls back to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-version"><span class="std std-ref">ProjectSettings.application/config/version</span></a> if left empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformandroid-property-xr-features-xr-mode"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>xr_features/xr_mode</strong></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorexportplatform.html" rel="prev" title="EditorExportPlatform"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorexportplatformios.html" rel="next" title="EditorExportPlatformIOS">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GPUParticlesCollisionHeightField3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gpuparticlescollisionheightfield3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: GPUParticlesCollision3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object A real-time heightmap-shaped 3D particle collision shape affecting GPUParticles3D nodes. Description: A real-time heightmap..." property="og:description"/>
+<meta content="Inherits: GPUParticlesCollision3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object A real-time heightmap-shaped 3D particle collision shape affecting GPUParticles3D nodes. Description: A real-time heightmap..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GPUParticlesCollisionHeightField3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gpuparticlescollisionheightfield3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gpuparticlescollisionheightfield3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gpuparticlescollisionsdf3d.html" rel="next" title="GPUParticlesCollisionSDF3D"/>
+<link href="class_gpuparticlescollisionbox3d.html" rel="prev" title="GPUParticlesCollisionBox3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gpuparticlescollisionheightfield3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GPUParticlesCollisionHeightField3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gpuparticlescollisionheightfield3d">
+<span id="class-gpuparticlescollisionheightfield3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GPUParticlesCollisionHeightField3D¶"></a>GPUParticlesCollisionHeightField3D<a class="headerlink" href="#gpuparticlescollisionheightfield3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_gpuparticlescollision3d.html#class-gpuparticlescollision3d"><span class="std std-ref">GPUParticlesCollision3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A real-time heightmap-shaped 3D particle collision shape affecting <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a> nodes.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A real-time heightmap-shaped 3D particle collision shape affecting <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a> nodes.</p>
+<p>Heightmap shapes allow for efficiently representing collisions for convex and concave objects with a single "floor" (such as terrain). This is less flexible than <a class="reference internal" href="class_gpuparticlescollisionsdf3d.html#class-gpuparticlescollisionsdf3d"><span class="std std-ref">GPUParticlesCollisionSDF3D</span></a>, but it doesn't require a baking step.</p>
+<p><strong>GPUParticlesCollisionHeightField3D</strong> can also be regenerated in real-time when it is moved, when the camera moves, or even continuously. This makes <strong>GPUParticlesCollisionHeightField3D</strong> a good choice for weather effects such as rain and snow and games with highly dynamic geometry. However, this class is limited since heightmaps cannot represent overhangs (e.g. indoors or caves).</p>
+<p><strong>Note:</strong> <a class="reference internal" href="class_particleprocessmaterial.html#class-particleprocessmaterial-property-collision-mode"><span class="std std-ref">ParticleProcessMaterial.collision_mode</span></a> must be <code class="docutils literal notranslate"><span class="pre">true</span></code> on the <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a>'s process material for collision to work.</p>
+<p><strong>Note:</strong> Particle collision only affects <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a>, not <a class="reference internal" href="class_cpuparticles3d.html#class-cpuparticles3d"><span class="std std-ref">CPUParticles3D</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-follow-camera-enabled"><span class="std std-ref">follow_camera_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-resolution"><span class="std std-ref">resolution</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-size"><span class="std std-ref">size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-update-mode"><span class="std std-ref">update_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-gpuparticlescollisionheightfield3d-resolution">enum <strong><a class="dashAnchor" id="enumerations-Resolution" name="//apple_ref/cpp/Enum/Resolution"></a>Resolution</strong>:</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-256"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_256" name="//apple_ref/cpp/Enum/RESOLUTION_256"></a>RESOLUTION_256</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Generate a 256×256 heightmap. Intended for small-scale scenes, or larger scenes with no distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-512"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_512" name="//apple_ref/cpp/Enum/RESOLUTION_512"></a>RESOLUTION_512</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Generate a 512×512 heightmap. Intended for medium-scale scenes, or larger scenes with no distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-1024"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_1024" name="//apple_ref/cpp/Enum/RESOLUTION_1024"></a>RESOLUTION_1024</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Generate a 1024×1024 heightmap. Intended for large scenes with distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-2048"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_2048" name="//apple_ref/cpp/Enum/RESOLUTION_2048"></a>RESOLUTION_2048</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Generate a 2048×2048 heightmap. Intended for very large scenes with distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-4096"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_4096" name="//apple_ref/cpp/Enum/RESOLUTION_4096"></a>RESOLUTION_4096</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Generate a 4096×4096 heightmap. Intended for huge scenes with distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-8192"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_8192" name="//apple_ref/cpp/Enum/RESOLUTION_8192"></a>RESOLUTION_8192</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Generate a 8192×8192 heightmap. Intended for gigantic scenes with distant particles.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-resolution-max"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="enumerations-RESOLUTION_MAX" name="//apple_ref/cpp/Enum/RESOLUTION_MAX"></a>RESOLUTION_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-gpuparticlescollisionheightfield3d-updatemode">enum <strong><a class="dashAnchor" id="enumerations-UpdateMode" name="//apple_ref/cpp/Enum/UpdateMode"></a>UpdateMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-update-mode-when-moved"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_MODE_WHEN_MOVED" name="//apple_ref/cpp/Enum/UPDATE_MODE_WHEN_MOVED"></a>UPDATE_MODE_WHEN_MOVED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Only update the heightmap when the <strong><a class="dashAnchor" id="enumerations-GPUParticlesCollisionHeightField3D" name="//apple_ref/cpp/Enum/GPUParticlesCollisionHeightField3D"></a>GPUParticlesCollisionHeightField3D</strong> node is moved, or when the camera moves if <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-follow-camera-enabled"><span class="std std-ref">follow_camera_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>. An update can be forced by slightly moving the <strong><a class="dashAnchor" id="enumerations-GPUParticlesCollisionHeightField3D" name="//apple_ref/cpp/Enum/GPUParticlesCollisionHeightField3D"></a>GPUParticlesCollisionHeightField3D</strong> in any direction, or by calling <a class="reference internal" href="class_renderingserver.html#class-renderingserver-method-particles-collision-height-field-update"><span class="std std-ref">RenderingServer.particles_collision_height_field_update</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-gpuparticlescollisionheightfield3d-constant-update-mode-always"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_MODE_ALWAYS" name="//apple_ref/cpp/Enum/UPDATE_MODE_ALWAYS"></a>UPDATE_MODE_ALWAYS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Update the heightmap every frame. This has a significant performance cost. This update should only be used when geometry that particles can collide with changes significantly during gameplay.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gpuparticlescollisionheightfield3d-property-follow-camera-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>follow_camera_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_follow_camera_enabled" name="//apple_ref/cpp/Property/set_follow_camera_enabled"></a>set_follow_camera_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_follow_camera_enabled" name="//apple_ref/cpp/Property/is_follow_camera_enabled"></a>is_follow_camera_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>GPUParticlesCollisionHeightField3D</strong> will follow the current camera in global space. The <strong>GPUParticlesCollisionHeightField3D</strong> does not need to be a child of the <a class="reference internal" href="class_camera3d.html#class-camera3d"><span class="std std-ref">Camera3D</span></a> node for this to work.</p>
+<p>Following the camera has a performance cost, as it will force the heightmap to update whenever the camera moves. Consider lowering <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-resolution"><span class="std std-ref">resolution</span></a> to improve performance if <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-follow-camera-enabled"><span class="std std-ref">follow_camera_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gpuparticlescollisionheightfield3d-property-resolution"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong>resolution</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_resolution" name="//apple_ref/cpp/Property/set_resolution"></a>set_resolution</strong>(value: <a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-resolution"><span class="std std-ref">Resolution</span></a> <strong><a class="dashAnchor" id="properties-get_resolution" name="//apple_ref/cpp/Property/get_resolution"></a>get_resolution</strong>()</p></li>
+</ul>
+<p>Higher resolutions can represent small details more accurately in large scenes, at the cost of lower performance. If <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-update-mode"><span class="std std-ref">update_mode</span></a> is <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-constant-update-mode-always"><span class="std std-ref">UPDATE_MODE_ALWAYS</span></a>, consider using the lowest resolution possible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gpuparticlescollisionheightfield3d-property-size"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>size</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_size" name="//apple_ref/cpp/Property/set_size"></a>set_size</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_size" name="//apple_ref/cpp/Property/get_size"></a>get_size</strong>()</p></li>
+</ul>
+<p>The collision heightmap's size in 3D units. To improve heightmap quality, <a class="reference internal" href="#class-gpuparticlescollisionheightfield3d-property-size"><span class="std std-ref">size</span></a> should be set as small as possible while covering the parts of the scene you need.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gpuparticlescollisionheightfield3d-property-update-mode"><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a> <strong>update_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_update_mode" name="//apple_ref/cpp/Property/set_update_mode"></a>set_update_mode</strong>(value: <a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-gpuparticlescollisionheightfield3d-updatemode"><span class="std std-ref">UpdateMode</span></a> <strong><a class="dashAnchor" id="properties-get_update_mode" name="//apple_ref/cpp/Property/get_update_mode"></a>get_update_mode</strong>()</p></li>
+</ul>
+<p>The update policy to use for the generated heightmap.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gpuparticlescollisionbox3d.html" rel="prev" title="GPUParticlesCollisionBox3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gpuparticlescollisionsdf3d.html" rel="next" title="GPUParticlesCollisionSDF3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

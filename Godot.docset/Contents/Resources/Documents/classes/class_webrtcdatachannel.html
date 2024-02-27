@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="WebRTCDataChannel" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_webrtcdatachannel.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: PacketPeer&lt; RefCounted&lt; Object Inherited By: WebRTCDataChannelExtension There is currently no description for this class. Please help us by contributing one! Properties:,,, WriteMode, wri..." property="og:description"/>
+<meta content="Inherits: PacketPeer&lt; RefCounted&lt; Object Inherited By: WebRTCDataChannelExtension There is currently no description for this class. Please help us by contributing one! Properties:,,, WriteMode, wri..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) WebRTCDataChannel — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcdatachannel.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_webrtcdatachannel.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_webrtcdatachannel.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_webrtcdatachannel.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_webrtcdatachannel.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_webrtcdatachannel.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_webrtcdatachannel.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_webrtcdatachannel.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_webrtcdatachannel.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_webrtcdatachannel.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_webrtcdatachannel.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_webrtcdatachannel.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_webrtcdatachannel.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_webrtcdatachannel.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcdatachannel.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcdatachannel.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_webrtcdatachannelextension.html" rel="next" title="WebRTCDataChannelExtension"/>
+<link href="class_weakref.html" rel="prev" title="WeakRef"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_webrtcdatachannel" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">WebRTCDataChannel</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="webrtcdatachannel">
+<span id="class-webrtcdatachannel"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/WebRTCDataChannel¶"></a>WebRTCDataChannel<a class="headerlink" href="#webrtcdatachannel" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_webrtcdatachannelextension.html#class-webrtcdatachannelextension"><span class="std std-ref">WebRTCDataChannelExtension</span></a></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this class. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-property-write-mode"><span class="std std-ref">write_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-close"><span class="std std-ref">close</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-buffered-amount"><span class="std std-ref">get_buffered_amount</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-id"><span class="std std-ref">get_id</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-label"><span class="std std-ref">get_label</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-max-packet-life-time"><span class="std std-ref">get_max_packet_life_time</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-max-retransmits"><span class="std std-ref">get_max_retransmits</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-protocol"><span class="std std-ref">get_protocol</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-get-ready-state"><span class="std std-ref">get_ready_state</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-is-negotiated"><span class="std std-ref">is_negotiated</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-is-ordered"><span class="std std-ref">is_ordered</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-poll"><span class="std std-ref">poll</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcdatachannel-method-was-string-packet"><span class="std std-ref">was_string_packet</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-webrtcdatachannel-writemode">enum <strong><a class="dashAnchor" id="enumerations-WriteMode" name="//apple_ref/cpp/Enum/WriteMode"></a>WriteMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-write-mode-text"><a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a> <strong><a class="dashAnchor" id="enumerations-WRITE_MODE_TEXT" name="//apple_ref/cpp/Enum/WRITE_MODE_TEXT"></a>WRITE_MODE_TEXT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Tells the channel to send data over this channel as text. An external peer (non-Godot) would receive this as a string.</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-write-mode-binary"><a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a> <strong><a class="dashAnchor" id="enumerations-WRITE_MODE_BINARY" name="//apple_ref/cpp/Enum/WRITE_MODE_BINARY"></a>WRITE_MODE_BINARY</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Tells the channel to send data over this channel as binary. An external peer (non-Godot) would receive this as array buffer or blob.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-webrtcdatachannel-channelstate">enum <strong><a class="dashAnchor" id="enumerations-ChannelState" name="//apple_ref/cpp/Enum/ChannelState"></a>ChannelState</strong>:</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-state-connecting"><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CONNECTING" name="//apple_ref/cpp/Enum/STATE_CONNECTING"></a>STATE_CONNECTING</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The channel was created, but it's still trying to connect.</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-state-open"><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_OPEN" name="//apple_ref/cpp/Enum/STATE_OPEN"></a>STATE_OPEN</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The channel is currently open, and data can flow over it.</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-state-closing"><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CLOSING" name="//apple_ref/cpp/Enum/STATE_CLOSING"></a>STATE_CLOSING</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The channel is being closed, no new messages will be accepted, but those already in queue will be flushed.</p>
+<p class="classref-enumeration-constant" id="class-webrtcdatachannel-constant-state-closed"><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CLOSED" name="//apple_ref/cpp/Enum/STATE_CLOSED"></a>STATE_CLOSED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The channel was closed, or connection failed.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-webrtcdatachannel-property-write-mode"><a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a> <strong>write_mode</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_write_mode" name="//apple_ref/cpp/Property/set_write_mode"></a>set_write_mode</strong>(value: <a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-webrtcdatachannel-writemode"><span class="std std-ref">WriteMode</span></a> <strong><a class="dashAnchor" id="properties-get_write_mode" name="//apple_ref/cpp/Property/get_write_mode"></a>get_write_mode</strong>()</p></li>
+</ul>
+<p>The transfer mode to use when sending outgoing packet. Either text or binary.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-webrtcdatachannel-method-close"><abbr title="No return value.">void</abbr> <strong>close</strong>()</p>
+<p>Closes this data channel, notifying the other peer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-buffered-amount"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_buffered_amount</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of bytes currently queued to be sent over this channel.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_id</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the ID assigned to this channel during creation (or auto-assigned during negotiation).</p>
+<p>If the channel is not negotiated out-of-band the ID will only be available after the connection is established (will return <code class="docutils literal notranslate"><span class="pre">65535</span></code> until then).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-label"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_label</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the label assigned to this channel during creation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-max-packet-life-time"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_max_packet_life_time</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <code class="docutils literal notranslate"><span class="pre">maxPacketLifeTime</span></code> value assigned to this channel during creation.</p>
+<p>Will be <code class="docutils literal notranslate"><span class="pre">65535</span></code> if not specified.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-max-retransmits"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_max_retransmits</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <code class="docutils literal notranslate"><span class="pre">maxRetransmits</span></code> value assigned to this channel during creation.</p>
+<p>Will be <code class="docutils literal notranslate"><span class="pre">65535</span></code> if not specified.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-protocol"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_protocol</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the sub-protocol assigned to this channel during creation. An empty string if not specified.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-get-ready-state"><a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a> <strong>get_ready_state</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current state of this channel, see <a class="reference internal" href="#enum-webrtcdatachannel-channelstate"><span class="std std-ref">ChannelState</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-is-negotiated"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_negotiated</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this channel was created with out-of-band configuration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-is-ordered"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_ordered</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this channel was created with ordering enabled (default).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-poll"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>poll</strong>()</p>
+<p>Reserved, but not used for now.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcdatachannel-method-was-string-packet"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>was_string_packet</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the last received packet was transferred as text. See <a class="reference internal" href="#class-webrtcdatachannel-property-write-mode"><span class="std std-ref">write_mode</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_weakref.html" rel="prev" title="WeakRef"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_webrtcdatachannelextension.html" rel="next" title="WebRTCDataChannelExtension">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

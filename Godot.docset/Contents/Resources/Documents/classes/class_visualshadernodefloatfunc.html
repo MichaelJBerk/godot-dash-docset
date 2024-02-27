@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="VisualShaderNodeFloatFunc" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_visualshadernodefloatfunc.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: VisualShaderNode&lt; Resource&lt; RefCounted&lt; Object A scalar floating-point function to be used within the visual shader graph. Description: Accept a floating-point scalar ( x) to the input po..." property="og:description"/>
+<meta content="Inherits: VisualShaderNode&lt; Resource&lt; RefCounted&lt; Object A scalar floating-point function to be used within the visual shader graph. Description: Accept a floating-point scalar ( x) to the input po..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) VisualShaderNodeFloatFunc — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodefloatfunc.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_visualshadernodefloatfunc.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_visualshadernodefloatfunc.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_visualshadernodefloatfunc.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_visualshadernodefloatfunc.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_visualshadernodefloatfunc.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_visualshadernodefloatfunc.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_visualshadernodefloatfunc.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_visualshadernodefloatfunc.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_visualshadernodefloatfunc.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_visualshadernodefloatfunc.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_visualshadernodefloatfunc.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_visualshadernodefloatfunc.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_visualshadernodefloatfunc.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodefloatfunc.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshadernodefloatfunc.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_visualshadernodefloatop.html" rel="next" title="VisualShaderNodeFloatOp"/>
+<link href="class_visualshadernodefloatconstant.html" rel="prev" title="VisualShaderNodeFloatConstant"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_visualshadernodefloatfunc" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">VisualShaderNodeFloatFunc</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="visualshadernodefloatfunc">
+<span id="class-visualshadernodefloatfunc"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/VisualShaderNodeFloatFunc¶"></a>VisualShaderNodeFloatFunc<a class="headerlink" href="#visualshadernodefloatfunc" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A scalar floating-point function to be used within the visual shader graph.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Accept a floating-point scalar (<code class="docutils literal notranslate"><span class="pre">x</span></code>) to the input port and transform it according to <a class="reference internal" href="#class-visualshadernodefloatfunc-property-function"><span class="std std-ref">function</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshadernodefloatfunc-property-function"><span class="std std-ref">function</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">13</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-visualshadernodefloatfunc-function">enum <strong><a class="dashAnchor" id="enumerations-Function" name="//apple_ref/cpp/Enum/Function"></a>Function</strong>:</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-sin"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_SIN" name="//apple_ref/cpp/Enum/FUNC_SIN"></a>FUNC_SIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Returns the sine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">sin(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-cos"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_COS" name="//apple_ref/cpp/Enum/FUNC_COS"></a>FUNC_COS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Returns the cosine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">cos(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-tan"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_TAN" name="//apple_ref/cpp/Enum/FUNC_TAN"></a>FUNC_TAN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Returns the tangent of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">tan(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-asin"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ASIN" name="//apple_ref/cpp/Enum/FUNC_ASIN"></a>FUNC_ASIN</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Returns the arc-sine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">asin(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-acos"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ACOS" name="//apple_ref/cpp/Enum/FUNC_ACOS"></a>FUNC_ACOS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Returns the arc-cosine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">acos(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-atan"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ATAN" name="//apple_ref/cpp/Enum/FUNC_ATAN"></a>FUNC_ATAN</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Returns the arc-tangent of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">atan(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-sinh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_SINH" name="//apple_ref/cpp/Enum/FUNC_SINH"></a>FUNC_SINH</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Returns the hyperbolic sine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">sinh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-cosh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_COSH" name="//apple_ref/cpp/Enum/FUNC_COSH"></a>FUNC_COSH</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Returns the hyperbolic cosine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">cosh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-tanh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_TANH" name="//apple_ref/cpp/Enum/FUNC_TANH"></a>FUNC_TANH</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Returns the hyperbolic tangent of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">tanh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-log"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_LOG" name="//apple_ref/cpp/Enum/FUNC_LOG"></a>FUNC_LOG</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>Returns the natural logarithm of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">log(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-exp"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_EXP" name="//apple_ref/cpp/Enum/FUNC_EXP"></a>FUNC_EXP</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>Returns the natural exponentiation of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">exp(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-sqrt"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_SQRT" name="//apple_ref/cpp/Enum/FUNC_SQRT"></a>FUNC_SQRT</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p>Returns the square root of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-abs"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ABS" name="//apple_ref/cpp/Enum/FUNC_ABS"></a>FUNC_ABS</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>Returns the absolute value of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-sign"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_SIGN" name="//apple_ref/cpp/Enum/FUNC_SIGN"></a>FUNC_SIGN</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p>Extracts the sign of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">sign(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-floor"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_FLOOR" name="//apple_ref/cpp/Enum/FUNC_FLOOR"></a>FUNC_FLOOR</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p>Finds the nearest integer less than or equal to the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">floor(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-round"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ROUND" name="//apple_ref/cpp/Enum/FUNC_ROUND"></a>FUNC_ROUND</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p>Finds the nearest integer to the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">round(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-ceil"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_CEIL" name="//apple_ref/cpp/Enum/FUNC_CEIL"></a>FUNC_CEIL</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>Finds the nearest integer that is greater than or equal to the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">ceil(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-fract"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_FRACT" name="//apple_ref/cpp/Enum/FUNC_FRACT"></a>FUNC_FRACT</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p>Computes the fractional part of the argument. Translates to <code class="docutils literal notranslate"><span class="pre">fract(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-saturate"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_SATURATE" name="//apple_ref/cpp/Enum/FUNC_SATURATE"></a>FUNC_SATURATE</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p>Clamps the value between <code class="docutils literal notranslate"><span class="pre">0.0</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span></code> using <code class="docutils literal notranslate"><span class="pre">min(max(x,</span> <span class="pre">0.0),</span> <span class="pre">1.0)</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-negate"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_NEGATE" name="//apple_ref/cpp/Enum/FUNC_NEGATE"></a>FUNC_NEGATE</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p>Negates the <code class="docutils literal notranslate"><span class="pre">x</span></code> using <code class="docutils literal notranslate"><span class="pre">-(x)</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-acosh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ACOSH" name="//apple_ref/cpp/Enum/FUNC_ACOSH"></a>FUNC_ACOSH</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p>Returns the arc-hyperbolic-cosine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">acosh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-asinh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ASINH" name="//apple_ref/cpp/Enum/FUNC_ASINH"></a>FUNC_ASINH</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p>Returns the arc-hyperbolic-sine of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">asinh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-atanh"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ATANH" name="//apple_ref/cpp/Enum/FUNC_ATANH"></a>FUNC_ATANH</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p>Returns the arc-hyperbolic-tangent of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">atanh(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-degrees"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_DEGREES" name="//apple_ref/cpp/Enum/FUNC_DEGREES"></a>FUNC_DEGREES</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p>Convert a quantity in radians to degrees. Translates to <code class="docutils literal notranslate"><span class="pre">degrees(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-exp2"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_EXP2" name="//apple_ref/cpp/Enum/FUNC_EXP2"></a>FUNC_EXP2</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p>Returns 2 raised by the power of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">exp2(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-inverse-sqrt"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_INVERSE_SQRT" name="//apple_ref/cpp/Enum/FUNC_INVERSE_SQRT"></a>FUNC_INVERSE_SQRT</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p>Returns the inverse of the square root of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">inversesqrt(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-log2"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_LOG2" name="//apple_ref/cpp/Enum/FUNC_LOG2"></a>FUNC_LOG2</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p>Returns the base 2 logarithm of the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">log2(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-radians"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_RADIANS" name="//apple_ref/cpp/Enum/FUNC_RADIANS"></a>FUNC_RADIANS</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p>Convert a quantity in degrees to radians. Translates to <code class="docutils literal notranslate"><span class="pre">radians(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-reciprocal"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_RECIPROCAL" name="//apple_ref/cpp/Enum/FUNC_RECIPROCAL"></a>FUNC_RECIPROCAL</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p>Finds reciprocal value of dividing 1 by <code class="docutils literal notranslate"><span class="pre">x</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">x</span></code>).</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-roundeven"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ROUNDEVEN" name="//apple_ref/cpp/Enum/FUNC_ROUNDEVEN"></a>FUNC_ROUNDEVEN</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p>Finds the nearest even integer to the parameter. Translates to <code class="docutils literal notranslate"><span class="pre">roundEven(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-trunc"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_TRUNC" name="//apple_ref/cpp/Enum/FUNC_TRUNC"></a>FUNC_TRUNC</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p>Returns a value equal to the nearest integer to <code class="docutils literal notranslate"><span class="pre">x</span></code> whose absolute value is not larger than the absolute value of <code class="docutils literal notranslate"><span class="pre">x</span></code>. Translates to <code class="docutils literal notranslate"><span class="pre">trunc(x)</span></code> in the Godot Shader Language.</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-oneminus"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_ONEMINUS" name="//apple_ref/cpp/Enum/FUNC_ONEMINUS"></a>FUNC_ONEMINUS</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p>Subtracts scalar <code class="docutils literal notranslate"><span class="pre">x</span></code> from 1 (i.e. <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">x</span></code>).</p>
+<p class="classref-enumeration-constant" id="class-visualshadernodefloatfunc-constant-func-max"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="enumerations-FUNC_MAX" name="//apple_ref/cpp/Enum/FUNC_MAX"></a>FUNC_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> enum.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-visualshadernodefloatfunc-property-function"><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong>function</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_function" name="//apple_ref/cpp/Property/set_function"></a>set_function</strong>(value: <a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> <strong><a class="dashAnchor" id="properties-get_function" name="//apple_ref/cpp/Property/get_function"></a>get_function</strong>()</p></li>
+</ul>
+<p>A function to be applied to the scalar. See <a class="reference internal" href="#enum-visualshadernodefloatfunc-function"><span class="std std-ref">Function</span></a> for options.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_visualshadernodefloatconstant.html" rel="prev" title="VisualShaderNodeFloatConstant"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_visualshadernodefloatop.html" rel="next" title="VisualShaderNodeFloatOp">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

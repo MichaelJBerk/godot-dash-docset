@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Crypto" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_crypto.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Provides access to advanced cryptographic functionalities. Description: The Crypto class provides access to advanced cryptographic functionalities. Currently, this incl..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Provides access to advanced cryptographic functionalities. Description: The Crypto class provides access to advanced cryptographic functionalities. Currently, this incl..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Crypto — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_crypto.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_crypto.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_crypto.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_crypto.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_crypto.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_crypto.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_crypto.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_crypto.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_crypto.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_crypto.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_crypto.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_crypto.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_crypto.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_crypto.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_crypto.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_crypto.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_diraccess.html" rel="next" title="DirAccess"/>
+<link href="class_configfile.html" rel="prev" title="ConfigFile"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_crypto" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Crypto</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="crypto">
+<span id="class-crypto"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Crypto¶"></a>Crypto<a class="headerlink" href="#crypto" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides access to advanced cryptographic functionalities.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The Crypto class provides access to advanced cryptographic functionalities.</p>
+<p>Currently, this includes asymmetric key encryption/decryption, signing/verification, and generating cryptographically secure random bytes, RSA keys, HMAC digests, and self-signed <a class="reference internal" href="class_x509certificate.html#class-x509certificate"><span class="std std-ref">X509Certificate</span></a>s.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">crypto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Crypto</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CryptoKey</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X509Certificate</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="c1"># Generate new RSA key.</span>
+<span class="w">    </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">generate_rsa</span><span class="p">(</span><span class="mi">4096</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Generate new self-signed certificate with the given key.</span>
+<span class="w">    </span><span class="n">cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">generate_self_signed_certificate</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="s2">"CN=mydomain.com,O=My Game Company,C=IT"</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Save key and certificate in the user folder.</span>
+<span class="w">    </span><span class="n">key</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"user://generated.key"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">cert</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"user://generated.crt"</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Encryption</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Some data"</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="c1"># Decryption</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">encrypted</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Signing</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">HashingContext</span><span class="o">.</span><span class="n">HASH_SHA256</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">sha256_buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Verifying</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">verified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">verify</span><span class="p">(</span><span class="n">HashingContext</span><span class="o">.</span><span class="n">HASH_SHA256</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">sha256_buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">signature</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Checks</span>
+<span class="w">    </span><span class="nb">assert</span><span class="p">(</span><span class="n">verified</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">assert</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">decrypted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">Godot</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">System.Diagnostics</span><span class="p">;</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyNode</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Node</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">Crypto</span><span class="w"> </span><span class="n">_crypto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Crypto</span><span class="p">();</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">CryptoKey</span><span class="w"> </span><span class="n">_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CryptoKey</span><span class="p">();</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">X509Certificate</span><span class="w"> </span><span class="n">_cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">X509Certificate</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Generate new RSA key.</span>
+<span class="w">        </span><span class="n">_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">GenerateRsa</span><span class="p">(</span><span class="m">4096</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Generate new self-signed certificate with the given key.</span>
+<span class="w">        </span><span class="n">_cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">GenerateSelfSignedCertificate</span><span class="p">(</span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="s">"CN=mydomain.com,O=My Game Company,C=IT"</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Save key and certificate in the user folder.</span>
+<span class="w">        </span><span class="n">_key</span><span class="p">.</span><span class="n">Save</span><span class="p">(</span><span class="s">"user://generated.key"</span><span class="p">);</span>
+<span class="w">        </span><span class="n">_cert</span><span class="p">.</span><span class="n">Save</span><span class="p">(</span><span class="s">"user://generated.crt"</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Encryption</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Some data"</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">Encrypt</span><span class="p">(</span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="c1">// Decryption</span>
+<span class="w">        </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">Decrypt</span><span class="p">(</span><span class="n">_key</span><span class="p">,</span><span class="w"> </span><span class="n">encrypted</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Signing</span>
+<span class="w">        </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">Sign</span><span class="p">(</span><span class="n">HashingContext</span><span class="p">.</span><span class="n">HashType</span><span class="p">.</span><span class="n">Sha256</span><span class="p">,</span><span class="w"> </span><span class="n">Data</span><span class="p">.</span><span class="n">Sha256Buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">_key</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Verifying</span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">verified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_crypto</span><span class="p">.</span><span class="n">Verify</span><span class="p">(</span><span class="n">HashingContext</span><span class="p">.</span><span class="n">HashType</span><span class="p">.</span><span class="n">Sha256</span><span class="p">,</span><span class="w"> </span><span class="n">Data</span><span class="p">.</span><span class="n">Sha256Buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">signature</span><span class="p">,</span><span class="w"> </span><span class="n">_key</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Checks</span>
+<span class="w">        </span><span class="n">Debug</span><span class="p">.</span><span class="n">Assert</span><span class="p">(</span><span class="n">verified</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Debug</span><span class="p">.</span><span class="n">Assert</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">decrypted</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-constant-time-compare"><span class="std std-ref">constant_time_compare</span></a>(trusted: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, received: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-decrypt"><span class="std std-ref">decrypt</span></a>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, ciphertext: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-encrypt"><span class="std std-ref">encrypt</span></a>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, plaintext: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-generate-random-bytes"><span class="std std-ref">generate_random_bytes</span></a>(size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-generate-rsa"><span class="std std-ref">generate_rsa</span></a>(size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_x509certificate.html#class-x509certificate"><span class="std std-ref">X509Certificate</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-generate-self-signed-certificate"><span class="std std-ref">generate_self_signed_certificate</span></a>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, issuer_name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "CN=myserver,O=myorganisation,C=IT", not_before: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "20140101000000", not_after: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "20340101000000")</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-hmac-digest"><span class="std std-ref">hmac_digest</span></a>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, key: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, msg: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-sign"><span class="std std-ref">sign</span></a>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, hash: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-crypto-method-verify"><span class="std std-ref">verify</span></a>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, hash: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, signature: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-crypto-method-constant-time-compare"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>constant_time_compare</strong>(trusted: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, received: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Compares two <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>s for equality without leaking timing information in order to prevent timing attacks.</p>
+<p>See <a class="reference external" href="https://paragonie.com/blog/2015/11/preventing-timing-attacks-on-string-comparison-with-double-hmac-strategy">this blog post</a> for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-decrypt"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>decrypt</strong>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, ciphertext: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Decrypt the given <code class="docutils literal notranslate"><span class="pre">ciphertext</span></code> with the provided private <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+<p><strong>Note:</strong> The maximum size of accepted ciphertext is limited by the key size.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-encrypt"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>encrypt</strong>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, plaintext: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Encrypt the given <code class="docutils literal notranslate"><span class="pre">plaintext</span></code> with the provided public <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+<p><strong>Note:</strong> The maximum size of accepted plaintext is limited by the key size.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-generate-random-bytes"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>generate_random_bytes</strong>(size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Generates a <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> of cryptographically secure random bytes with given <code class="docutils literal notranslate"><span class="pre">size</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-generate-rsa"><a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a> <strong>generate_rsa</strong>(size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Generates an RSA <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a> that can be used for creating self-signed certificates and passed to <a class="reference internal" href="class_streampeertls.html#class-streampeertls-method-accept-stream"><span class="std std-ref">StreamPeerTLS.accept_stream</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-generate-self-signed-certificate"><a class="reference internal" href="class_x509certificate.html#class-x509certificate"><span class="std std-ref">X509Certificate</span></a> <strong>generate_self_signed_certificate</strong>(key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, issuer_name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "CN=myserver,O=myorganisation,C=IT", not_before: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "20140101000000", not_after: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "20340101000000")</p>
+<p>Generates a self-signed <a class="reference internal" href="class_x509certificate.html#class-x509certificate"><span class="std std-ref">X509Certificate</span></a> from the given <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a> and <code class="docutils literal notranslate"><span class="pre">issuer_name</span></code>. The certificate validity will be defined by <code class="docutils literal notranslate"><span class="pre">not_before</span></code> and <code class="docutils literal notranslate"><span class="pre">not_after</span></code> (first valid date and last valid date). The <code class="docutils literal notranslate"><span class="pre">issuer_name</span></code> must contain at least "CN=" (common name, i.e. the domain name), "O=" (organization, i.e. your company name), "C=" (country, i.e. 2 lettered ISO-3166 code of the country the organization is based in).</p>
+<p>A small example to generate an RSA key and a X509 self-signed certificate.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">crypto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Crypto</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="c1"># Generate 4096 bits RSA key.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">generate_rsa</span><span class="p">(</span><span class="mi">4096</span><span class="p">)</span>
+<span class="c1"># Generate self-signed certificate using the given key.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="o">.</span><span class="n">generate_self_signed_certificate</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="s2">"CN=example.com,O=A Game Company,C=IT"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">crypto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Crypto</span><span class="p">();</span>
+<span class="c1">// Generate 4096 bits RSA key.</span>
+<span class="n">CryptoKey</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="p">.</span><span class="n">GenerateRsa</span><span class="p">(</span><span class="m">4096</span><span class="p">);</span>
+<span class="c1">// Generate self-signed certificate using the given key.</span>
+<span class="n">X509Certificate</span><span class="w"> </span><span class="n">cert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">crypto</span><span class="p">.</span><span class="n">GenerateSelfSignedCertificate</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="s">"CN=mydomain.com,O=My Game Company,C=IT"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-hmac-digest"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>hmac_digest</strong>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, key: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, msg: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Generates an <a class="reference external" href="https://en.wikipedia.org/wiki/HMAC">HMAC</a> digest of <code class="docutils literal notranslate"><span class="pre">msg</span></code> using <code class="docutils literal notranslate"><span class="pre">key</span></code>. The <code class="docutils literal notranslate"><span class="pre">hash_type</span></code> parameter is the hashing algorithm that is used for the inner and outer hashes.</p>
+<p>Currently, only <a class="reference internal" href="class_hashingcontext.html#class-hashingcontext-constant-hash-sha256"><span class="std std-ref">HashingContext.HASH_SHA256</span></a> and <a class="reference internal" href="class_hashingcontext.html#class-hashingcontext-constant-hash-sha1"><span class="std std-ref">HashingContext.HASH_SHA1</span></a> are supported.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-sign"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>sign</strong>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, hash: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>)</p>
+<p>Sign a given <code class="docutils literal notranslate"><span class="pre">hash</span></code> of type <code class="docutils literal notranslate"><span class="pre">hash_type</span></code> with the provided private <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-crypto-method-verify"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>verify</strong>(hash_type: <a class="reference internal" href="class_hashingcontext.html#enum-hashingcontext-hashtype"><span class="std std-ref">HashType</span></a>, hash: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, signature: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, key: <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>)</p>
+<p>Verify that a given <code class="docutils literal notranslate"><span class="pre">signature</span></code> for <code class="docutils literal notranslate"><span class="pre">hash</span></code> of type <code class="docutils literal notranslate"><span class="pre">hash_type</span></code> against the provided public <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_configfile.html" rel="prev" title="ConfigFile"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_diraccess.html" rel="next" title="DirAccess">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorScenePostImportPlugin" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorscenepostimportplugin.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Plugin to control and modifying the process of importing a scene. Description: This plugin type exists to modify the process of importing scenes, allowing to change the..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Plugin to control and modifying the process of importing a scene. Description: This plugin type exists to modify the process of importing scenes, allowing to change the..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorScenePostImportPlugin — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorscenepostimportplugin.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorscenepostimportplugin.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorscenepostimportplugin.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorscenepostimportplugin.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorscenepostimportplugin.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorscenepostimportplugin.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorscenepostimportplugin.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorscenepostimportplugin.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorscenepostimportplugin.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorscenepostimportplugin.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorscenepostimportplugin.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorscenepostimportplugin.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorscenepostimportplugin.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorscenepostimportplugin.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorscenepostimportplugin.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorscenepostimportplugin.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorscript.html" rel="next" title="EditorScript"/>
+<link href="class_editorscenepostimport.html" rel="prev" title="EditorScenePostImport"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorscenepostimportplugin" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorScenePostImportPlugin</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorscenepostimportplugin">
+<span id="class-editorscenepostimportplugin"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorScenePostImportPlugin¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorScenePostImportPlugin¶"></a>EditorScenePostImportPlugin<a class="headerlink" href="#editorscenepostimportplugin" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Plugin to control and modifying the process of importing a scene.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This plugin type exists to modify the process of importing scenes, allowing to change the content as well as add importer options at every stage of the process.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-import-options"><span class="std std-ref">_get_import_options</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-internal-import-options"><span class="std std-ref">_get_internal_import_options</span></a>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-internal-option-update-view-required"><span class="std std-ref">_get_internal_option_update_view_required</span></a>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-internal-option-visibility"><span class="std std-ref">_get_internal_option_visibility</span></a>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, for_animation: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-option-visibility"><span class="std std-ref">_get_option_visibility</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, for_animation: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-internal-process"><span class="std std-ref">_internal_process</span></a>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, base_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, resource: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-post-process"><span class="std std-ref">_post_process</span></a>(scene: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-private-method-pre-process"><span class="std std-ref">_pre_process</span></a>(scene: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option"><span class="std std-ref">add_import_option</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option-advanced"><span class="std std-ref">add_import_option_advanced</span></a>(type: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-variant-type"><span class="std std-ref">Variant.Type</span></a>, name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, default_value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, hint: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-propertyhint"><span class="std std-ref">PropertyHint</span></a> = 0, hint_string: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", usage_flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorscenepostimportplugin-method-get-option-value"><span class="std std-ref">get_option_value</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-editorscenepostimportplugin-internalimportcategory">enum <strong><a class="dashAnchor" id="enumerations-InternalImportCategory" name="//apple_ref/cpp/Enum/InternalImportCategory"></a><a class="dashAnchor" id="enumerations-InternalImportCategory" name="//apple_ref/cpp/Enum/InternalImportCategory"></a>InternalImportCategory</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-node"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_NODE"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_NODE"></a>INTERNAL_IMPORT_CATEGORY_NODE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-mesh-3d-node"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE"></a>INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-mesh"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MESH" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MESH"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MESH" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MESH"></a>INTERNAL_IMPORT_CATEGORY_MESH</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-material"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MATERIAL" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MATERIAL"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MATERIAL" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MATERIAL"></a>INTERNAL_IMPORT_CATEGORY_MATERIAL</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-animation"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_ANIMATION" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_ANIMATION"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_ANIMATION" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_ANIMATION"></a>INTERNAL_IMPORT_CATEGORY_ANIMATION</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-animation-node"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE"></a>INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-skeleton-3d-node"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE"></a>INTERNAL_IMPORT_CATEGORY_SKELETON_3D_NODE</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<p class="classref-enumeration-constant" id="class-editorscenepostimportplugin-constant-internal-import-category-max"><a class="reference internal" href="#enum-editorscenepostimportplugin-internalimportcategory"><span class="std std-ref">InternalImportCategory</span></a> <strong><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MAX" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MAX"></a><a class="dashAnchor" id="enumerations-INTERNAL_IMPORT_CATEGORY_MAX" name="//apple_ref/cpp/Enum/INTERNAL_IMPORT_CATEGORY_MAX"></a>INTERNAL_IMPORT_CATEGORY_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this enum. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-get-import-options"><abbr title="No return value.">void</abbr> <strong>_get_import_options</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override to add general import options. These will appear in the main import dock on the editor. Add options via <a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option"><span class="std std-ref">add_import_option</span></a> and <a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option-advanced"><span class="std std-ref">add_import_option_advanced</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-get-internal-import-options"><abbr title="No return value.">void</abbr> <strong>_get_internal_import_options</strong>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override to add internal import options. These will appear in the 3D scene import dialog. Add options via <a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option"><span class="std std-ref">add_import_option</span></a> and <a class="reference internal" href="#class-editorscenepostimportplugin-method-add-import-option-advanced"><span class="std std-ref">add_import_option_advanced</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-get-internal-option-update-view-required"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_internal_option_update_view_required</strong>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Return true whether updating the 3D view of the import dialog needs to be updated if an option has changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-get-internal-option-visibility"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_internal_option_visibility</strong>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, for_animation: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Return true or false whether a given option should be visible. Return null to ignore.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-get-option-visibility"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_option_visibility</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, for_animation: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, option: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Return true or false whether a given option should be visible. Return null to ignore.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-internal-process"><abbr title="No return value.">void</abbr> <strong>_internal_process</strong>(category: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, base_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, resource: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Process a specific node or resource for a given category.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-post-process"><abbr title="No return value.">void</abbr> <strong>_post_process</strong>(scene: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Post process the scene. This function is called after the final scene has been configured.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-private-method-pre-process"><abbr title="No return value.">void</abbr> <strong>_pre_process</strong>(scene: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Pre Process the scene. This function is called right after the scene format loader loaded the scene and no changes have been made.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-method-add-import-option"><abbr title="No return value.">void</abbr> <strong>add_import_option</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Add a specific import option (name and default value only). This function can only be called from <a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-import-options"><span class="std std-ref">_get_import_options</span></a> and <a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-internal-import-options"><span class="std std-ref">_get_internal_import_options</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-method-add-import-option-advanced"><abbr title="No return value.">void</abbr> <strong>add_import_option_advanced</strong>(type: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-variant-type"><span class="std std-ref">Variant.Type</span></a>, name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, default_value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, hint: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-propertyhint"><span class="std std-ref">PropertyHint</span></a> = 0, hint_string: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", usage_flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 6)</p>
+<p>Add a specific import option. This function can only be called from <a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-import-options"><span class="std std-ref">_get_import_options</span></a> and <a class="reference internal" href="#class-editorscenepostimportplugin-private-method-get-internal-import-options"><span class="std std-ref">_get_internal_import_options</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorscenepostimportplugin-method-get-option-value"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_option_value</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Query the value of an option. This function can only be called from those querying visibility, or processing.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorscenepostimport.html" rel="prev" title="EditorScenePostImport"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorscript.html" rel="next" title="EditorScript">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

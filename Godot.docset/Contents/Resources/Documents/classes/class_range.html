@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Range" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_range.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: EditorSpinSlider, ProgressBar, ScrollBar, Slider, SpinBox, TextureProgressBar Abstract base class for controls that represent a number with..." property="og:description"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: EditorSpinSlider, ProgressBar, ScrollBar, Slider, SpinBox, TextureProgressBar Abstract base class for controls that represent a number with..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Range — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_range.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_range.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_range.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_range.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_range.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_range.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_range.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_range.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_range.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_range.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_range.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_range.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_range.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_range.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_range.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_range.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_raycast2d.html" rel="next" title="RayCast2D"/>
+<link href="class_progressbar.html" rel="prev" title="ProgressBar"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_range" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Range</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="range">
+<span id="class-range"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Range¶"></a>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_editorspinslider.html#class-editorspinslider"><span class="std std-ref">EditorSpinSlider</span></a>, <a class="reference internal" href="class_progressbar.html#class-progressbar"><span class="std std-ref">ProgressBar</span></a>, <a class="reference internal" href="class_scrollbar.html#class-scrollbar"><span class="std std-ref">ScrollBar</span></a>, <a class="reference internal" href="class_slider.html#class-slider"><span class="std std-ref">Slider</span></a>, <a class="reference internal" href="class_spinbox.html#class-spinbox"><span class="std std-ref">SpinBox</span></a>, <a class="reference internal" href="class_textureprogressbar.html#class-textureprogressbar"><span class="std std-ref">TextureProgressBar</span></a></p>
+<p>Abstract base class for controls that represent a number within a range.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Range is an abstract base class for controls that represent a number within a range, using a configured <a class="reference internal" href="#class-range-property-step"><span class="std std-ref">step</span></a> and <a class="reference internal" href="#class-range-property-page"><span class="std std-ref">page</span></a> size. See e.g. <a class="reference internal" href="class_scrollbar.html#class-scrollbar"><span class="std std-ref">ScrollBar</span></a> and <a class="reference internal" href="class_slider.html#class-slider"><span class="std std-ref">Slider</span></a> for examples of higher-level nodes using Range.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-allow-greater"><span class="std std-ref">allow_greater</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-allow-lesser"><span class="std std-ref">allow_lesser</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-exp-edit"><span class="std std-ref">exp_edit</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-max-value"><span class="std std-ref">max_value</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">100.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-page"><span class="std std-ref">page</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-ratio"><span class="std std-ref">ratio</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-rounded"><span class="std std-ref">rounded</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_control.html#enum-control-sizeflags"><span class="std std-ref">SizeFlags</span></a>]</p></td>
+<td><p>size_flags_vertical</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-size-flags-vertical"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-step"><span class="std std-ref">step</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.01</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-range-private-method-value-changed"><span class="std std-ref">_value_changed</span></a>(new_value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-range-method-set-value-no-signal"><span class="std std-ref">set_value_no_signal</span></a>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-range-method-share"><span class="std std-ref">share</span></a>(with: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-range-method-unshare"><span class="std std-ref">unshare</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-range-signal-changed"><strong>changed</strong>()</p>
+<p>Emitted when <a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a>, <a class="reference internal" href="#class-range-property-max-value"><span class="std std-ref">max_value</span></a>, <a class="reference internal" href="#class-range-property-page"><span class="std std-ref">page</span></a>, or <a class="reference internal" href="#class-range-property-step"><span class="std std-ref">step</span></a> change.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-range-signal-value-changed"><strong>value_changed</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Emitted when <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> changes. When used on a <a class="reference internal" href="class_slider.html#class-slider"><span class="std std-ref">Slider</span></a>, this is called continuously while dragging (potentially every frame). If you are performing an expensive operation in a function connected to <a class="reference internal" href="#class-range-signal-value-changed"><span class="std std-ref">value_changed</span></a>, consider using a <em>debouncing</em> <a class="reference internal" href="class_timer.html#class-timer"><span class="std std-ref">Timer</span></a> to call the function less often.</p>
+<p><strong>Note:</strong> Unlike signals such as <a class="reference internal" href="class_lineedit.html#class-lineedit-signal-text-changed"><span class="std std-ref">LineEdit.text_changed</span></a>, <a class="reference internal" href="#class-range-signal-value-changed"><span class="std std-ref">value_changed</span></a> is also emitted when <code class="docutils literal notranslate"><span class="pre">value</span></code> is set directly via code.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-range-property-allow-greater"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_greater</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_greater" name="//apple_ref/cpp/Property/set_allow_greater"></a>set_allow_greater</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_greater_allowed" name="//apple_ref/cpp/Property/is_greater_allowed"></a>is_greater_allowed</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> may be greater than <a class="reference internal" href="#class-range-property-max-value"><span class="std std-ref">max_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-allow-lesser"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_lesser</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_lesser" name="//apple_ref/cpp/Property/set_allow_lesser"></a>set_allow_lesser</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_lesser_allowed" name="//apple_ref/cpp/Property/is_lesser_allowed"></a>is_lesser_allowed</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> may be less than <a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-exp-edit"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>exp_edit</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_exp_ratio" name="//apple_ref/cpp/Property/set_exp_ratio"></a>set_exp_ratio</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_ratio_exp" name="//apple_ref/cpp/Property/is_ratio_exp"></a>is_ratio_exp</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, and <a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a> is greater than 0, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> will be represented exponentially rather than linearly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-max-value"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>max_value</strong> = <code class="docutils literal notranslate"><span class="pre">100.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max" name="//apple_ref/cpp/Property/set_max"></a>set_max</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_max" name="//apple_ref/cpp/Property/get_max"></a>get_max</strong>()</p></li>
+</ul>
+<p>Maximum value. Range is clamped if <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> is greater than <a class="reference internal" href="#class-range-property-max-value"><span class="std std-ref">max_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-min-value"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>min_value</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_min" name="//apple_ref/cpp/Property/set_min"></a>set_min</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_min" name="//apple_ref/cpp/Property/get_min"></a>get_min</strong>()</p></li>
+</ul>
+<p>Minimum value. Range is clamped if <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> is less than <a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-page"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>page</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_page" name="//apple_ref/cpp/Property/set_page"></a>set_page</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_page" name="//apple_ref/cpp/Property/get_page"></a>get_page</strong>()</p></li>
+</ul>
+<p>Page size. Used mainly for <a class="reference internal" href="class_scrollbar.html#class-scrollbar"><span class="std std-ref">ScrollBar</span></a>. ScrollBar's length is its size multiplied by <a class="reference internal" href="#class-range-property-page"><span class="std std-ref">page</span></a> over the difference between <a class="reference internal" href="#class-range-property-min-value"><span class="std std-ref">min_value</span></a> and <a class="reference internal" href="#class-range-property-max-value"><span class="std std-ref">max_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-ratio"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>ratio</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_as_ratio" name="//apple_ref/cpp/Property/set_as_ratio"></a>set_as_ratio</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_as_ratio" name="//apple_ref/cpp/Property/get_as_ratio"></a>get_as_ratio</strong>()</p></li>
+</ul>
+<p>The value mapped between 0 and 1.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-rounded"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>rounded</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_rounded_values" name="//apple_ref/cpp/Property/set_use_rounded_values"></a>set_use_rounded_values</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_using_rounded_values" name="//apple_ref/cpp/Property/is_using_rounded_values"></a>is_using_rounded_values</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> will always be rounded to the nearest integer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-step"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>step</strong> = <code class="docutils literal notranslate"><span class="pre">0.01</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_step" name="//apple_ref/cpp/Property/set_step"></a>set_step</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_step" name="//apple_ref/cpp/Property/get_step"></a>get_step</strong>()</p></li>
+</ul>
+<p>If greater than 0, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> will always be rounded to a multiple of this property's value. If <a class="reference internal" href="#class-range-property-rounded"><span class="std std-ref">rounded</span></a> is also <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-range-property-value"><span class="std std-ref">value</span></a> will first be rounded to a multiple of this property's value, then rounded to the nearest integer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-range-property-value"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>value</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_value" name="//apple_ref/cpp/Property/set_value"></a>set_value</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_value" name="//apple_ref/cpp/Property/get_value"></a>get_value</strong>()</p></li>
+</ul>
+<p>Range's current value. Changing this property (even via code) will trigger <a class="reference internal" href="#class-range-signal-value-changed"><span class="std std-ref">value_changed</span></a> signal. Use <a class="reference internal" href="#class-range-method-set-value-no-signal"><span class="std std-ref">set_value_no_signal</span></a> if you want to avoid it.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-range-private-method-value-changed"><abbr title="No return value.">void</abbr> <strong>_value_changed</strong>(new_value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the <strong>Range</strong>'s value is changed (following the same conditions as <a class="reference internal" href="#class-range-signal-value-changed"><span class="std std-ref">value_changed</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-range-method-set-value-no-signal"><abbr title="No return value.">void</abbr> <strong>set_value_no_signal</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the <strong>Range</strong>'s current value to the specified <code class="docutils literal notranslate"><span class="pre">value</span></code>, without emitting the <a class="reference internal" href="#class-range-signal-value-changed"><span class="std std-ref">value_changed</span></a> signal.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-range-method-share"><abbr title="No return value.">void</abbr> <strong>share</strong>(with: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p>Binds two <strong>Range</strong>s together along with any ranges previously grouped with either of them. When any of range's member variables change, it will share the new value with all other ranges in its group.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-range-method-unshare"><abbr title="No return value.">void</abbr> <strong>unshare</strong>()</p>
+<p>Stops the <strong>Range</strong> from sharing its member variables with any other.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_progressbar.html" rel="prev" title="ProgressBar"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_raycast2d.html" rel="next" title="RayCast2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

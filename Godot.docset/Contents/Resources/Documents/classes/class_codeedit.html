@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="CodeEdit" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_codeedit.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: TextEdit&lt; Control&lt; CanvasItem&lt; Node&lt; Object A multiline text editor designed for editing code. Description: CodeEdit is a specialized TextEdit designed for editing plain text code files. ..." property="og:description"/>
+<meta content="Inherits: TextEdit&lt; Control&lt; CanvasItem&lt; Node&lt; Object A multiline text editor designed for editing code. Description: CodeEdit is a specialized TextEdit designed for editing plain text code files. ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) CodeEdit — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codeedit.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_codeedit.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_codeedit.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_codeedit.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_codeedit.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_codeedit.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_codeedit.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_codeedit.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_codeedit.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_codeedit.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_codeedit.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_codeedit.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_codeedit.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_codeedit.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codeedit.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codeedit.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_collisionobject2d.html" rel="next" title="CollisionObject2D"/>
+<link href="class_checkbutton.html" rel="prev" title="CheckButton"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_codeedit" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">CodeEdit</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="codeedit">
+<span id="class-codeedit"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/CodeEdit¶"></a>CodeEdit<a class="headerlink" href="#codeedit" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_textedit.html#class-textedit"><span class="std std-ref">TextEdit</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A multiline text editor designed for editing code.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>CodeEdit is a specialized <a class="reference internal" href="class_textedit.html#class-textedit"><span class="std std-ref">TextEdit</span></a> designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.</p>
+<p><strong>Note:</strong> Regardless of locale, <strong>CodeEdit</strong> will by default always use left-to-right text direction to correctly display source code.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-auto-brace-completion-enabled"><span class="std std-ref">auto_brace_completion_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-auto-brace-completion-highlight-matching"><span class="std std-ref">auto_brace_completion_highlight_matching</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-auto-brace-completion-pairs"><span class="std std-ref">auto_brace_completion_pairs</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">"\"":</span> <span class="pre">"\"",</span> <span class="pre">"'":</span> <span class="pre">"'",</span> <span class="pre">"(":</span> <span class="pre">")",</span> <span class="pre">"[":</span> <span class="pre">"]",</span> <span class="pre">"{":</span> <span class="pre">"}"</span> <span class="pre">}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-code-completion-enabled"><span class="std std-ref">code_completion_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-code-completion-prefixes"><span class="std std-ref">code_completion_prefixes</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-delimiter-comments"><span class="std std-ref">delimiter_comments</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-delimiter-strings"><span class="std std-ref">delimiter_strings</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">["'</span> <span class="pre">'",</span> <span class="pre">"\"</span> <span class="pre">\""]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-draw-bookmarks"><span class="std std-ref">gutters_draw_bookmarks</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-draw-breakpoints-gutter"><span class="std std-ref">gutters_draw_breakpoints_gutter</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-draw-executing-lines"><span class="std std-ref">gutters_draw_executing_lines</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-draw-fold-gutter"><span class="std std-ref">gutters_draw_fold_gutter</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-draw-line-numbers"><span class="std std-ref">gutters_draw_line_numbers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-gutters-zero-pad-line-numbers"><span class="std std-ref">gutters_zero_pad_line_numbers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-indent-automatic"><span class="std std-ref">indent_automatic</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-indent-automatic-prefixes"><span class="std std-ref">indent_automatic_prefixes</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[":",</span> <span class="pre">"{",</span> <span class="pre">"[",</span> <span class="pre">"("]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-indent-size"><span class="std std-ref">indent_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-indent-use-spaces"><span class="std std-ref">indent_use_spaces</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_control.html#enum-control-layoutdirection"><span class="std std-ref">LayoutDirection</span></a></p></td>
+<td><p>layout_direction</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-layout-direction"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-line-folding"><span class="std std-ref">line_folding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-line-length-guidelines"><span class="std std-ref">line_length_guidelines</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-property-symbol-lookup-on-click"><span class="std std-ref">symbol_lookup_on_click</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a></p></td>
+<td><p>text_direction</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code> (overrides <a class="reference internal" href="class_textedit.html#class-textedit-property-text-direction"><span class="std std-ref">TextEdit</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-private-method-confirm-code-completion"><span class="std std-ref">_confirm_code_completion</span></a>(replace: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-private-method-filter-code-completion-candidates"><span class="std std-ref">_filter_code_completion_candidates</span></a>(candidates: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-private-method-request-code-completion"><span class="std std-ref">_request_code_completion</span></a>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-add-auto-brace-completion-pair"><span class="std std-ref">add_auto_brace_completion_pair</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-add-code-completion-option"><span class="std std-ref">add_code_completion_option</span></a>(type: <a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a>, display_text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, insert_text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, text_color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), icon: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> = null, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null, location: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1024)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-add-comment-delimiter"><span class="std std-ref">add_comment_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-add-string-delimiter"><span class="std std-ref">add_string_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-can-fold-line"><span class="std std-ref">can_fold_line</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-cancel-code-completion"><span class="std std-ref">cancel_code_completion</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-clear-bookmarked-lines"><span class="std std-ref">clear_bookmarked_lines</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-clear-breakpointed-lines"><span class="std std-ref">clear_breakpointed_lines</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-clear-comment-delimiters"><span class="std std-ref">clear_comment_delimiters</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-clear-executing-lines"><span class="std std-ref">clear_executing_lines</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-clear-string-delimiters"><span class="std std-ref">clear_string_delimiters</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-confirm-code-completion"><span class="std std-ref">confirm_code_completion</span></a>(replace: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-convert-indent"><span class="std std-ref">convert_indent</span></a>(from_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, to_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-create-code-region"><span class="std std-ref">create_code_region</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-do-indent"><span class="std std-ref">do_indent</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-duplicate-lines"><span class="std std-ref">duplicate_lines</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-fold-all-lines"><span class="std std-ref">fold_all_lines</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-fold-line"><span class="std std-ref">fold_line</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-auto-brace-completion-close-key"><span class="std std-ref">get_auto_brace_completion_close_key</span></a>(open_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-bookmarked-lines"><span class="std std-ref">get_bookmarked_lines</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-breakpointed-lines"><span class="std std-ref">get_breakpointed_lines</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-code-completion-option"><span class="std std-ref">get_code_completion_option</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-code-completion-options"><span class="std std-ref">get_code_completion_options</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-code-completion-selected-index"><span class="std std-ref">get_code_completion_selected_index</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-code-region-end-tag"><span class="std std-ref">get_code_region_end_tag</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-code-region-start-tag"><span class="std std-ref">get_code_region_start_tag</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-delimiter-end-key"><span class="std std-ref">get_delimiter_end_key</span></a>(delimiter_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-delimiter-end-position"><span class="std std-ref">get_delimiter_end_position</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-delimiter-start-key"><span class="std std-ref">get_delimiter_start_key</span></a>(delimiter_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-delimiter-start-position"><span class="std std-ref">get_delimiter_start_position</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-executing-lines"><span class="std std-ref">get_executing_lines</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-folded-lines"><span class="std std-ref">get_folded_lines</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-text-for-code-completion"><span class="std std-ref">get_text_for_code_completion</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-text-for-symbol-lookup"><span class="std std-ref">get_text_for_symbol_lookup</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-get-text-with-cursor-char"><span class="std std-ref">get_text_with_cursor_char</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-has-auto-brace-completion-close-key"><span class="std std-ref">has_auto_brace_completion_close_key</span></a>(close_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-has-auto-brace-completion-open-key"><span class="std std-ref">has_auto_brace_completion_open_key</span></a>(open_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-has-comment-delimiter"><span class="std std-ref">has_comment_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-has-string-delimiter"><span class="std std-ref">has_string_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-indent-lines"><span class="std std-ref">indent_lines</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-in-comment"><span class="std std-ref">is_in_comment</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-in-string"><span class="std std-ref">is_in_string</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-bookmarked"><span class="std std-ref">is_line_bookmarked</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-breakpointed"><span class="std std-ref">is_line_breakpointed</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-code-region-end"><span class="std std-ref">is_line_code_region_end</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-code-region-start"><span class="std std-ref">is_line_code_region_start</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-executing"><span class="std std-ref">is_line_executing</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-is-line-folded"><span class="std std-ref">is_line_folded</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-remove-comment-delimiter"><span class="std std-ref">remove_comment_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-remove-string-delimiter"><span class="std std-ref">remove_string_delimiter</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-request-code-completion"><span class="std std-ref">request_code_completion</span></a>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-code-completion-selected-index"><span class="std std-ref">set_code_completion_selected_index</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-code-hint"><span class="std std-ref">set_code_hint</span></a>(code_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-code-hint-draw-below"><span class="std std-ref">set_code_hint_draw_below</span></a>(draw_below: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-code-region-tags"><span class="std std-ref">set_code_region_tags</span></a>(start: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "region", end: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "endregion")</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-line-as-bookmarked"><span class="std std-ref">set_line_as_bookmarked</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bookmarked: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-line-as-breakpoint"><span class="std std-ref">set_line_as_breakpoint</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, breakpointed: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-line-as-executing"><span class="std std-ref">set_line_as_executing</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, executing: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-set-symbol-lookup-word-as-valid"><span class="std std-ref">set_symbol_lookup_word_as_valid</span></a>(valid: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-toggle-foldable-line"><span class="std std-ref">toggle_foldable_line</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-unfold-all-lines"><span class="std std-ref">unfold_all_lines</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-unfold-line"><span class="std std-ref">unfold_line</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-unindent-lines"><span class="std std-ref">unindent_lines</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-method-update-code-completion-options"><span class="std std-ref">update_code_completion_options</span></a>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-bookmark-color"><span class="std std-ref">bookmark_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.5,</span> <span class="pre">0.64,</span> <span class="pre">1,</span> <span class="pre">0.8)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-brace-mismatch-color"><span class="std std-ref">brace_mismatch_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-breakpoint-color"><span class="std std-ref">breakpoint_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.9,</span> <span class="pre">0.29,</span> <span class="pre">0.3,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-code-folding-color"><span class="std std-ref">code_folding_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.8)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-completion-background-color"><span class="std std-ref">completion_background_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.17,</span> <span class="pre">0.16,</span> <span class="pre">0.2,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-completion-existing-color"><span class="std std-ref">completion_existing_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.87,</span> <span class="pre">0.87,</span> <span class="pre">0.87,</span> <span class="pre">0.13)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-completion-scroll-color"><span class="std std-ref">completion_scroll_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0.29)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-completion-scroll-hovered-color"><span class="std std-ref">completion_scroll_hovered_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0.4)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-completion-selected-color"><span class="std std-ref">completion_selected_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.26,</span> <span class="pre">0.26,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-executing-line-color"><span class="std std-ref">executing_line_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.98,</span> <span class="pre">0.89,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-folded-code-region-color"><span class="std std-ref">folded_code_region_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.68,</span> <span class="pre">0.46,</span> <span class="pre">0.77,</span> <span class="pre">0.2)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-line-length-guideline-color"><span class="std std-ref">line_length_guideline_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.3,</span> <span class="pre">0.5,</span> <span class="pre">0.8,</span> <span class="pre">0.1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-color-line-number-color"><span class="std std-ref">line_number_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.67,</span> <span class="pre">0.67,</span> <span class="pre">0.67,</span> <span class="pre">0.4)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-constant-completion-lines"><span class="std std-ref">completion_lines</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">7</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-constant-completion-max-width"><span class="std std-ref">completion_max_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">50</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-constant-completion-scroll-width"><span class="std std-ref">completion_scroll_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">6</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-bookmark"><span class="std std-ref">bookmark</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-breakpoint"><span class="std std-ref">breakpoint</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-can-fold"><span class="std std-ref">can_fold</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-can-fold-code-region"><span class="std std-ref">can_fold_code_region</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-executing-line"><span class="std std-ref">executing_line</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-folded"><span class="std std-ref">folded</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-folded-code-region"><span class="std std-ref">folded_code_region</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-icon-folded-eol-icon"><span class="std std-ref">folded_eol_icon</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codeedit-theme-style-completion"><span class="std std-ref">completion</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-codeedit-signal-breakpoint-toggled"><strong>breakpoint_toggled</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when a breakpoint is added or removed from a line. If the line is moved via backspace a removed is emitted at the old line.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-codeedit-signal-code-completion-requested"><strong>code_completion_requested</strong>()</p>
+<p>Emitted when the user requests code completion.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-codeedit-signal-symbol-lookup"><strong>symbol_lookup</strong>(symbol: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when the user has clicked on a valid symbol.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-codeedit-signal-symbol-validate"><strong>symbol_validate</strong>(symbol: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Emitted when the user hovers over a symbol. The symbol should be validated and responded to, by calling <a class="reference internal" href="#class-codeedit-method-set-symbol-lookup-word-as-valid"><span class="std std-ref">set_symbol_lookup_word_as_valid</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-codeedit-codecompletionkind">enum <strong><a class="dashAnchor" id="enumerations-CodeCompletionKind" name="//apple_ref/cpp/Enum/CodeCompletionKind"></a>CodeCompletionKind</strong>:</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-class"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_CLASS" name="//apple_ref/cpp/Enum/KIND_CLASS"></a>KIND_CLASS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Marks the option as a class.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-function"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_FUNCTION" name="//apple_ref/cpp/Enum/KIND_FUNCTION"></a>KIND_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Marks the option as a function.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-signal"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_SIGNAL" name="//apple_ref/cpp/Enum/KIND_SIGNAL"></a>KIND_SIGNAL</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Marks the option as a Godot signal.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-variable"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_VARIABLE" name="//apple_ref/cpp/Enum/KIND_VARIABLE"></a>KIND_VARIABLE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Marks the option as a variable.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-member"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_MEMBER" name="//apple_ref/cpp/Enum/KIND_MEMBER"></a>KIND_MEMBER</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Marks the option as a member.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-enum"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_ENUM" name="//apple_ref/cpp/Enum/KIND_ENUM"></a>KIND_ENUM</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Marks the option as an enum entry.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-constant"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_CONSTANT" name="//apple_ref/cpp/Enum/KIND_CONSTANT"></a>KIND_CONSTANT</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Marks the option as a constant.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-node-path"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_NODE_PATH" name="//apple_ref/cpp/Enum/KIND_NODE_PATH"></a>KIND_NODE_PATH</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Marks the option as a Godot node path.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-file-path"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_FILE_PATH" name="//apple_ref/cpp/Enum/KIND_FILE_PATH"></a>KIND_FILE_PATH</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Marks the option as a file path.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-kind-plain-text"><a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a> <strong><a class="dashAnchor" id="enumerations-KIND_PLAIN_TEXT" name="//apple_ref/cpp/Enum/KIND_PLAIN_TEXT"></a>KIND_PLAIN_TEXT</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>Marks the option as unclassified or plain text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-codeedit-codecompletionlocation">enum <strong><a class="dashAnchor" id="enumerations-CodeCompletionLocation" name="//apple_ref/cpp/Enum/CodeCompletionLocation"></a>CodeCompletionLocation</strong>:</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-location-local"><a class="reference internal" href="#enum-codeedit-codecompletionlocation"><span class="std std-ref">CodeCompletionLocation</span></a> <strong><a class="dashAnchor" id="enumerations-LOCATION_LOCAL" name="//apple_ref/cpp/Enum/LOCATION_LOCAL"></a>LOCATION_LOCAL</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The option is local to the location of the code completion query - e.g. a local variable. Subsequent value of location represent options from the outer class, the exact value represent how far they are (in terms of inner classes).</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-location-parent-mask"><a class="reference internal" href="#enum-codeedit-codecompletionlocation"><span class="std std-ref">CodeCompletionLocation</span></a> <strong><a class="dashAnchor" id="enumerations-LOCATION_PARENT_MASK" name="//apple_ref/cpp/Enum/LOCATION_PARENT_MASK"></a>LOCATION_PARENT_MASK</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p>The option is from the containing class or a parent class, relative to the location of the code completion query. Perform a bitwise OR with the class depth (e.g. 0 for the local class, 1 for the parent, 2 for the grandparent, etc) to store the depth of an option in the class or a parent class.</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-location-other-user-code"><a class="reference internal" href="#enum-codeedit-codecompletionlocation"><span class="std std-ref">CodeCompletionLocation</span></a> <strong><a class="dashAnchor" id="enumerations-LOCATION_OTHER_USER_CODE" name="//apple_ref/cpp/Enum/LOCATION_OTHER_USER_CODE"></a>LOCATION_OTHER_USER_CODE</strong> = <code class="docutils literal notranslate"><span class="pre">512</span></code></p>
+<p>The option is from user code which is not local and not in a derived class (e.g. Autoload Singletons).</p>
+<p class="classref-enumeration-constant" id="class-codeedit-constant-location-other"><a class="reference internal" href="#enum-codeedit-codecompletionlocation"><span class="std std-ref">CodeCompletionLocation</span></a> <strong><a class="dashAnchor" id="enumerations-LOCATION_OTHER" name="//apple_ref/cpp/Enum/LOCATION_OTHER"></a>LOCATION_OTHER</strong> = <code class="docutils literal notranslate"><span class="pre">1024</span></code></p>
+<p>The option is from other engine code, not covered by the other enum constants - e.g. built-in classes.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-codeedit-property-auto-brace-completion-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>auto_brace_completion_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auto_brace_completion_enabled" name="//apple_ref/cpp/Property/set_auto_brace_completion_enabled"></a>set_auto_brace_completion_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_auto_brace_completion_enabled" name="//apple_ref/cpp/Property/is_auto_brace_completion_enabled"></a>is_auto_brace_completion_enabled</strong>()</p></li>
+</ul>
+<p>Sets whether brace pairs should be autocompleted.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-auto-brace-completion-highlight-matching"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>auto_brace_completion_highlight_matching</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_highlight_matching_braces_enabled" name="//apple_ref/cpp/Property/set_highlight_matching_braces_enabled"></a>set_highlight_matching_braces_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_highlight_matching_braces_enabled" name="//apple_ref/cpp/Property/is_highlight_matching_braces_enabled"></a>is_highlight_matching_braces_enabled</strong>()</p></li>
+</ul>
+<p>Highlight mismatching brace pairs.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-auto-brace-completion-pairs"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>auto_brace_completion_pairs</strong> = <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">"\"":</span> <span class="pre">"\"",</span> <span class="pre">"'":</span> <span class="pre">"'",</span> <span class="pre">"(":</span> <span class="pre">")",</span> <span class="pre">"[":</span> <span class="pre">"]",</span> <span class="pre">"{":</span> <span class="pre">"}"</span> <span class="pre">}</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auto_brace_completion_pairs" name="//apple_ref/cpp/Property/set_auto_brace_completion_pairs"></a>set_auto_brace_completion_pairs</strong>(value: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong><a class="dashAnchor" id="properties-get_auto_brace_completion_pairs" name="//apple_ref/cpp/Property/get_auto_brace_completion_pairs"></a>get_auto_brace_completion_pairs</strong>()</p></li>
+</ul>
+<p>Sets the brace pairs to be autocompleted.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-code-completion-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>code_completion_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_code_completion_enabled" name="//apple_ref/cpp/Property/set_code_completion_enabled"></a>set_code_completion_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_code_completion_enabled" name="//apple_ref/cpp/Property/is_code_completion_enabled"></a>is_code_completion_enabled</strong>()</p></li>
+</ul>
+<p>Sets whether code completion is allowed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-code-completion-prefixes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>code_completion_prefixes</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_code_completion_prefixes" name="//apple_ref/cpp/Property/set_code_completion_prefixes"></a>set_code_completion_prefixes</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong><a class="dashAnchor" id="properties-get_code_completion_prefixes" name="//apple_ref/cpp/Property/get_code_completion_prefixes"></a>get_code_completion_prefixes</strong>()</p></li>
+</ul>
+<p>Sets prefixes that will trigger code completion.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-delimiter-comments"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>delimiter_comments</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_comment_delimiters" name="//apple_ref/cpp/Property/set_comment_delimiters"></a>set_comment_delimiters</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong><a class="dashAnchor" id="properties-get_comment_delimiters" name="//apple_ref/cpp/Property/get_comment_delimiters"></a>get_comment_delimiters</strong>()</p></li>
+</ul>
+<p>Sets the comment delimiters. All existing comment delimiters will be removed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-delimiter-strings"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>delimiter_strings</strong> = <code class="docutils literal notranslate"><span class="pre">["'</span> <span class="pre">'",</span> <span class="pre">"\"</span> <span class="pre">\""]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_string_delimiters" name="//apple_ref/cpp/Property/set_string_delimiters"></a>set_string_delimiters</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong><a class="dashAnchor" id="properties-get_string_delimiters" name="//apple_ref/cpp/Property/get_string_delimiters"></a>get_string_delimiters</strong>()</p></li>
+</ul>
+<p>Sets the string delimiters. All existing string delimiters will be removed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-draw-bookmarks"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_draw_bookmarks</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_bookmarks_gutter" name="//apple_ref/cpp/Property/set_draw_bookmarks_gutter"></a>set_draw_bookmarks_gutter</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drawing_bookmarks_gutter" name="//apple_ref/cpp/Property/is_drawing_bookmarks_gutter"></a>is_drawing_bookmarks_gutter</strong>()</p></li>
+</ul>
+<p>Sets if bookmarked should be drawn in the gutter. This gutter is shared with breakpoints and executing lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-draw-breakpoints-gutter"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_draw_breakpoints_gutter</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_breakpoints_gutter" name="//apple_ref/cpp/Property/set_draw_breakpoints_gutter"></a>set_draw_breakpoints_gutter</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drawing_breakpoints_gutter" name="//apple_ref/cpp/Property/is_drawing_breakpoints_gutter"></a>is_drawing_breakpoints_gutter</strong>()</p></li>
+</ul>
+<p>Sets if breakpoints should be drawn in the gutter. This gutter is shared with bookmarks and executing lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-draw-executing-lines"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_draw_executing_lines</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_executing_lines_gutter" name="//apple_ref/cpp/Property/set_draw_executing_lines_gutter"></a>set_draw_executing_lines_gutter</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drawing_executing_lines_gutter" name="//apple_ref/cpp/Property/is_drawing_executing_lines_gutter"></a>is_drawing_executing_lines_gutter</strong>()</p></li>
+</ul>
+<p>Sets if executing lines should be marked in the gutter. This gutter is shared with breakpoints and bookmarks lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-draw-fold-gutter"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_draw_fold_gutter</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_fold_gutter" name="//apple_ref/cpp/Property/set_draw_fold_gutter"></a>set_draw_fold_gutter</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drawing_fold_gutter" name="//apple_ref/cpp/Property/is_drawing_fold_gutter"></a>is_drawing_fold_gutter</strong>()</p></li>
+</ul>
+<p>Sets if foldable lines icons should be drawn in the gutter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-draw-line-numbers"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_draw_line_numbers</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_line_numbers" name="//apple_ref/cpp/Property/set_draw_line_numbers"></a>set_draw_line_numbers</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_draw_line_numbers_enabled" name="//apple_ref/cpp/Property/is_draw_line_numbers_enabled"></a>is_draw_line_numbers_enabled</strong>()</p></li>
+</ul>
+<p>Sets if line numbers should be drawn in the gutter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-gutters-zero-pad-line-numbers"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>gutters_zero_pad_line_numbers</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_line_numbers_zero_padded" name="//apple_ref/cpp/Property/set_line_numbers_zero_padded"></a>set_line_numbers_zero_padded</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_line_numbers_zero_padded" name="//apple_ref/cpp/Property/is_line_numbers_zero_padded"></a>is_line_numbers_zero_padded</strong>()</p></li>
+</ul>
+<p>Sets if line numbers drawn in the gutter are zero padded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-indent-automatic"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>indent_automatic</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auto_indent_enabled" name="//apple_ref/cpp/Property/set_auto_indent_enabled"></a>set_auto_indent_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_auto_indent_enabled" name="//apple_ref/cpp/Property/is_auto_indent_enabled"></a>is_auto_indent_enabled</strong>()</p></li>
+</ul>
+<p>Sets whether automatic indent are enabled, this will add an extra indent if a prefix or brace is found.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-indent-automatic-prefixes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>indent_automatic_prefixes</strong> = <code class="docutils literal notranslate"><span class="pre">[":",</span> <span class="pre">"{",</span> <span class="pre">"[",</span> <span class="pre">"("]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auto_indent_prefixes" name="//apple_ref/cpp/Property/set_auto_indent_prefixes"></a>set_auto_indent_prefixes</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong><a class="dashAnchor" id="properties-get_auto_indent_prefixes" name="//apple_ref/cpp/Property/get_auto_indent_prefixes"></a>get_auto_indent_prefixes</strong>()</p></li>
+</ul>
+<p>Prefixes to trigger an automatic indent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-indent-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>indent_size</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_indent_size" name="//apple_ref/cpp/Property/set_indent_size"></a>set_indent_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_indent_size" name="//apple_ref/cpp/Property/get_indent_size"></a>get_indent_size</strong>()</p></li>
+</ul>
+<p>Size of the tabulation indent (one <kbd class="kbd docutils literal notranslate">Tab</kbd> press) in characters. If <a class="reference internal" href="#class-codeedit-property-indent-use-spaces"><span class="std std-ref">indent_use_spaces</span></a> is enabled the number of spaces to use.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-indent-use-spaces"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>indent_use_spaces</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_indent_using_spaces" name="//apple_ref/cpp/Property/set_indent_using_spaces"></a>set_indent_using_spaces</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_indent_using_spaces" name="//apple_ref/cpp/Property/is_indent_using_spaces"></a>is_indent_using_spaces</strong>()</p></li>
+</ul>
+<p>Use spaces instead of tabs for indentation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-line-folding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>line_folding</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_line_folding_enabled" name="//apple_ref/cpp/Property/set_line_folding_enabled"></a>set_line_folding_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_line_folding_enabled" name="//apple_ref/cpp/Property/is_line_folding_enabled"></a>is_line_folding_enabled</strong>()</p></li>
+</ul>
+<p>Sets whether line folding is allowed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-line-length-guidelines"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>] <strong>line_length_guidelines</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_line_length_guidelines" name="//apple_ref/cpp/Property/set_line_length_guidelines"></a>set_line_length_guidelines</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>] <strong><a class="dashAnchor" id="properties-get_line_length_guidelines" name="//apple_ref/cpp/Property/get_line_length_guidelines"></a>get_line_length_guidelines</strong>()</p></li>
+</ul>
+<p>Draws vertical lines at the provided columns. The first entry is considered a main hard guideline and is draw more prominently.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codeedit-property-symbol-lookup-on-click"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>symbol_lookup_on_click</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_symbol_lookup_on_click_enabled" name="//apple_ref/cpp/Property/set_symbol_lookup_on_click_enabled"></a>set_symbol_lookup_on_click_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_symbol_lookup_on_click_enabled" name="//apple_ref/cpp/Property/is_symbol_lookup_on_click_enabled"></a>is_symbol_lookup_on_click_enabled</strong>()</p></li>
+</ul>
+<p>Set when a validated word from <a class="reference internal" href="#class-codeedit-signal-symbol-validate"><span class="std std-ref">symbol_validate</span></a> is clicked, the <a class="reference internal" href="#class-codeedit-signal-symbol-lookup"><span class="std std-ref">symbol_lookup</span></a> should be emitted.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-codeedit-private-method-confirm-code-completion"><abbr title="No return value.">void</abbr> <strong>_confirm_code_completion</strong>(replace: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override this method to define how the selected entry should be inserted. If <code class="docutils literal notranslate"><span class="pre">replace</span></code> is true, any existing text should be replaced.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-private-method-filter-code-completion-candidates"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>_filter_code_completion_candidates</strong>(candidates: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Override this method to define what items in <code class="docutils literal notranslate"><span class="pre">candidates</span></code> should be displayed.</p>
+<p>Both <code class="docutils literal notranslate"><span class="pre">candidates</span></code> and the return is a <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> of <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>, see <a class="reference internal" href="#class-codeedit-method-get-code-completion-option"><span class="std std-ref">get_code_completion_option</span></a> for <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> content.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-private-method-request-code-completion"><abbr title="No return value.">void</abbr> <strong>_request_code_completion</strong>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override this method to define what happens when the user requests code completion. If <code class="docutils literal notranslate"><span class="pre">force</span></code> is true, any checks should be bypassed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-add-auto-brace-completion-pair"><abbr title="No return value.">void</abbr> <strong>add_auto_brace_completion_pair</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Adds a brace pair.</p>
+<p>Both the start and end keys must be symbols. Only the start key has to be unique.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-add-code-completion-option"><abbr title="No return value.">void</abbr> <strong>add_code_completion_option</strong>(type: <a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a>, display_text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, insert_text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, text_color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), icon: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> = null, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null, location: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1024)</p>
+<p>Submits an item to the queue of potential candidates for the autocomplete menu. Call <a class="reference internal" href="#class-codeedit-method-update-code-completion-options"><span class="std std-ref">update_code_completion_options</span></a> to update the list.</p>
+<p><code class="docutils literal notranslate"><span class="pre">location</span></code> indicates location of the option relative to the location of the code completion query. See <a class="reference internal" href="#enum-codeedit-codecompletionlocation"><span class="std std-ref">CodeCompletionLocation</span></a> for how to set this value.</p>
+<p><strong>Note:</strong> This list will replace all current candidates.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-add-comment-delimiter"><abbr title="No return value.">void</abbr> <strong>add_comment_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Adds a comment delimiter.</p>
+<p>Both the start and end keys must be symbols. Only the start key has to be unique.</p>
+<p><code class="docutils literal notranslate"><span class="pre">line_only</span></code> denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-add-string-delimiter"><abbr title="No return value.">void</abbr> <strong>add_string_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Adds a string delimiter.</p>
+<p>Both the start and end keys must be symbols. Only the start key has to be unique.</p>
+<p><code class="docutils literal notranslate"><span class="pre">line_only</span></code> denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-can-fold-line"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>can_fold_line</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns if the given line is foldable, that is, it has indented lines right below it or a comment / string block.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-cancel-code-completion"><abbr title="No return value.">void</abbr> <strong>cancel_code_completion</strong>()</p>
+<p>Cancels the autocomplete menu.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-clear-bookmarked-lines"><abbr title="No return value.">void</abbr> <strong>clear_bookmarked_lines</strong>()</p>
+<p>Clears all bookmarked lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-clear-breakpointed-lines"><abbr title="No return value.">void</abbr> <strong>clear_breakpointed_lines</strong>()</p>
+<p>Clears all breakpointed lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-clear-comment-delimiters"><abbr title="No return value.">void</abbr> <strong>clear_comment_delimiters</strong>()</p>
+<p>Removes all comment delimiters.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-clear-executing-lines"><abbr title="No return value.">void</abbr> <strong>clear_executing_lines</strong>()</p>
+<p>Clears all executed lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-clear-string-delimiters"><abbr title="No return value.">void</abbr> <strong>clear_string_delimiters</strong>()</p>
+<p>Removes all string delimiters.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-confirm-code-completion"><abbr title="No return value.">void</abbr> <strong>confirm_code_completion</strong>(replace: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Inserts the selected entry into the text. If <code class="docutils literal notranslate"><span class="pre">replace</span></code> is true, any existing text is replaced rather than merged.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-convert-indent"><abbr title="No return value.">void</abbr> <strong>convert_indent</strong>(from_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, to_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Converts the indents of lines between <code class="docutils literal notranslate"><span class="pre">from_line</span></code> and <code class="docutils literal notranslate"><span class="pre">to_line</span></code> to tabs or spaces as set by <a class="reference internal" href="#class-codeedit-property-indent-use-spaces"><span class="std std-ref">indent_use_spaces</span></a>.</p>
+<p>Values of <code class="docutils literal notranslate"><span class="pre">-1</span></code> convert the entire text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-create-code-region"><abbr title="No return value.">void</abbr> <strong>create_code_region</strong>()</p>
+<p>Creates a new code region with the selection. At least one single line comment delimiter have to be defined (see <a class="reference internal" href="#class-codeedit-method-add-comment-delimiter"><span class="std std-ref">add_comment_delimiter</span></a>).</p>
+<p>A code region is a part of code that is highlighted when folded and can help organize your script.</p>
+<p>Code region start and end tags can be customized (see <a class="reference internal" href="#class-codeedit-method-set-code-region-tags"><span class="std std-ref">set_code_region_tags</span></a>).</p>
+<p>Code regions are delimited using start and end tags (respectively <code class="docutils literal notranslate"><span class="pre">region</span></code> and <code class="docutils literal notranslate"><span class="pre">endregion</span></code> by default) preceded by one line comment delimiter. (eg. <code class="docutils literal notranslate"><span class="pre">#region</span></code> and <code class="docutils literal notranslate"><span class="pre">#endregion</span></code>)</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-do-indent"><abbr title="No return value.">void</abbr> <strong>do_indent</strong>()</p>
+<p>Perform an indent as if the user activated the "ui_text_indent" action.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-duplicate-lines"><abbr title="No return value.">void</abbr> <strong>duplicate_lines</strong>()</p>
+<p>Duplicates all lines currently selected with any caret. Duplicates the entire line beneath the current one no matter where the caret is within the line.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-fold-all-lines"><abbr title="No return value.">void</abbr> <strong>fold_all_lines</strong>()</p>
+<p>Folds all lines that are possible to be folded (see <a class="reference internal" href="#class-codeedit-method-can-fold-line"><span class="std std-ref">can_fold_line</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-fold-line"><abbr title="No return value.">void</abbr> <strong>fold_line</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Folds the given line, if possible (see <a class="reference internal" href="#class-codeedit-method-can-fold-line"><span class="std std-ref">can_fold_line</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-auto-brace-completion-close-key"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_auto_brace_completion_close_key</strong>(open_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the matching auto brace close key for <code class="docutils literal notranslate"><span class="pre">open_key</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-bookmarked-lines"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_bookmarked_lines</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets all bookmarked lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-breakpointed-lines"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_breakpointed_lines</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets all breakpointed lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-code-completion-option"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_code_completion_option</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the completion option at <code class="docutils literal notranslate"><span class="pre">index</span></code>. The return <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> has the following key-values:</p>
+<p><code class="docutils literal notranslate"><span class="pre">kind</span></code>: <a class="reference internal" href="#enum-codeedit-codecompletionkind"><span class="std std-ref">CodeCompletionKind</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">display_text</span></code>: Text that is shown on the autocomplete menu.</p>
+<p><code class="docutils literal notranslate"><span class="pre">insert_text</span></code>: Text that is to be inserted when this item is selected.</p>
+<p><code class="docutils literal notranslate"><span class="pre">font_color</span></code>: Color of the text on the autocomplete menu.</p>
+<p><code class="docutils literal notranslate"><span class="pre">icon</span></code>: Icon to draw on the autocomplete menu.</p>
+<p><code class="docutils literal notranslate"><span class="pre">default_value</span></code>: Value of the symbol.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-code-completion-options"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>get_code_completion_options</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets all completion options, see <a class="reference internal" href="#class-codeedit-method-get-code-completion-option"><span class="std std-ref">get_code_completion_option</span></a> for return content.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-code-completion-selected-index"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_code_completion_selected_index</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the index of the current selected completion option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-code-region-end-tag"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_code_region_end_tag</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the code region end tag (without comment delimiter).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-code-region-start-tag"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_code_region_start_tag</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the code region start tag (without comment delimiter).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-delimiter-end-key"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_delimiter_end_key</strong>(delimiter_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the end key for a string or comment region index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-delimiter-end-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_delimiter_end_position</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">line</span></code> <code class="docutils literal notranslate"><span class="pre">column</span></code> is in a string or comment, returns the end position of the region. If not or no end could be found, both <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> values will be <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-delimiter-start-key"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_delimiter_start_key</strong>(delimiter_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the start key for a string or comment region index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-delimiter-start-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_delimiter_start_position</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">line</span></code> <code class="docutils literal notranslate"><span class="pre">column</span></code> is in a string or comment, returns the start position of the region. If not or no start could be found, both <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> values will be <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-executing-lines"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_executing_lines</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets all executing lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-folded-lines"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>] <strong>get_folded_lines</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns all lines that are current folded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-text-for-code-completion"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_text_for_code_completion</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the full text with char <code class="docutils literal notranslate"><span class="pre">0xFFFF</span></code> at the caret location.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-text-for-symbol-lookup"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_text_for_symbol_lookup</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the full text with char <code class="docutils literal notranslate"><span class="pre">0xFFFF</span></code> at the cursor location.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-get-text-with-cursor-char"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_text_with_cursor_char</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the full text with char <code class="docutils literal notranslate"><span class="pre">0xFFFF</span></code> at the specified location.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-has-auto-brace-completion-close-key"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_auto_brace_completion_close_key</strong>(close_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if close key <code class="docutils literal notranslate"><span class="pre">close_key</span></code> exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-has-auto-brace-completion-open-key"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_auto_brace_completion_open_key</strong>(open_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if open key <code class="docutils literal notranslate"><span class="pre">open_key</span></code> exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-has-comment-delimiter"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_comment_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if comment <code class="docutils literal notranslate"><span class="pre">start_key</span></code> exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-has-string-delimiter"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_string_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if string <code class="docutils literal notranslate"><span class="pre">start_key</span></code> exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-indent-lines"><abbr title="No return value.">void</abbr> <strong>indent_lines</strong>()</p>
+<p>Indents selected lines, or in the case of no selection the caret line by one.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-in-comment"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>is_in_comment</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns delimiter index if <code class="docutils literal notranslate"><span class="pre">line</span></code> <code class="docutils literal notranslate"><span class="pre">column</span></code> is in a comment. If <code class="docutils literal notranslate"><span class="pre">column</span></code> is not provided, will return delimiter index if the entire <code class="docutils literal notranslate"><span class="pre">line</span></code> is a comment. Otherwise <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-in-string"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>is_in_string</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the delimiter index if <code class="docutils literal notranslate"><span class="pre">line</span></code> <code class="docutils literal notranslate"><span class="pre">column</span></code> is in a string. If <code class="docutils literal notranslate"><span class="pre">column</span></code> is not provided, will return the delimiter index if the entire <code class="docutils literal notranslate"><span class="pre">line</span></code> is a string. Otherwise <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-bookmarked"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_bookmarked</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is bookmarked or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-breakpointed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_breakpointed</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is breakpointed or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-code-region-end"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_code_region_end</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is a code region end.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-code-region-start"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_code_region_start</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is a code region start.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-executing"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_executing</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is marked as executing or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-is-line-folded"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_line_folded</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the line at the specified index is folded or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-remove-comment-delimiter"><abbr title="No return value.">void</abbr> <strong>remove_comment_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes the comment delimiter with <code class="docutils literal notranslate"><span class="pre">start_key</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-remove-string-delimiter"><abbr title="No return value.">void</abbr> <strong>remove_string_delimiter</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes the string delimiter with <code class="docutils literal notranslate"><span class="pre">start_key</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-request-code-completion"><abbr title="No return value.">void</abbr> <strong>request_code_completion</strong>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Emits <a class="reference internal" href="#class-codeedit-signal-code-completion-requested"><span class="std std-ref">code_completion_requested</span></a>, if <code class="docutils literal notranslate"><span class="pre">force</span></code> is true will bypass all checks. Otherwise will check that the caret is in a word or in front of a prefix. Will ignore the request if all current options are of type file path, node path or signal.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-code-completion-selected-index"><abbr title="No return value.">void</abbr> <strong>set_code_completion_selected_index</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Sets the current selected completion option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-code-hint"><abbr title="No return value.">void</abbr> <strong>set_code_hint</strong>(code_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Sets the code hint text. Pass an empty string to clear.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-code-hint-draw-below"><abbr title="No return value.">void</abbr> <strong>set_code_hint_draw_below</strong>(draw_below: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets if the code hint should draw below the text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-code-region-tags"><abbr title="No return value.">void</abbr> <strong>set_code_region_tags</strong>(start: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "region", end: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "endregion")</p>
+<p>Sets the code region start and end tags (without comment delimiter).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-line-as-bookmarked"><abbr title="No return value.">void</abbr> <strong>set_line_as_bookmarked</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bookmarked: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets the line as bookmarked.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-line-as-breakpoint"><abbr title="No return value.">void</abbr> <strong>set_line_as_breakpoint</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, breakpointed: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets the line as breakpointed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-line-as-executing"><abbr title="No return value.">void</abbr> <strong>set_line_as_executing</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, executing: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets the line as executing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-set-symbol-lookup-word-as-valid"><abbr title="No return value.">void</abbr> <strong>set_symbol_lookup_word_as_valid</strong>(valid: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets the symbol emitted by <a class="reference internal" href="#class-codeedit-signal-symbol-validate"><span class="std std-ref">symbol_validate</span></a> as a valid lookup.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-toggle-foldable-line"><abbr title="No return value.">void</abbr> <strong>toggle_foldable_line</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Toggle the folding of the code block at the given line.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-unfold-all-lines"><abbr title="No return value.">void</abbr> <strong>unfold_all_lines</strong>()</p>
+<p>Unfolds all lines, folded or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-unfold-line"><abbr title="No return value.">void</abbr> <strong>unfold_line</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Unfolds all lines that were previously folded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-unindent-lines"><abbr title="No return value.">void</abbr> <strong>unindent_lines</strong>()</p>
+<p>Unindents selected lines, or in the case of no selection the caret line by one. Same as performing "ui_text_unindent" action.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codeedit-method-update-code-completion-options"><abbr title="No return value.">void</abbr> <strong>update_code_completion_options</strong>(force: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Submits all completion options added with <a class="reference internal" href="#class-codeedit-method-add-code-completion-option"><span class="std std-ref">add_code_completion_option</span></a>. Will try to force the autocomplete menu to popup, if <code class="docutils literal notranslate"><span class="pre">force</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p><strong>Note:</strong> This will replace all current candidates.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-bookmark-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>bookmark_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.5,</span> <span class="pre">0.64,</span> <span class="pre">1,</span> <span class="pre">0.8)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the bookmark icon for bookmarked lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-brace-mismatch-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>brace_mismatch_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">1)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the text to highlight mismatched braces.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-breakpoint-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>breakpoint_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.9,</span> <span class="pre">0.29,</span> <span class="pre">0.3,</span> <span class="pre">1)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the breakpoint icon for bookmarked lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-code-folding-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>code_folding_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.8)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for all icons related to line folding.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-completion-background-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>completion_background_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.17,</span> <span class="pre">0.16,</span> <span class="pre">0.2,</span> <span class="pre">1)</span></code></p>
+<p>Sets the background <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for the code completion popup.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-completion-existing-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>completion_existing_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.87,</span> <span class="pre">0.87,</span> <span class="pre">0.87,</span> <span class="pre">0.13)</span></code></p>
+<p>Background highlight <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for matching text in code completion options.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-completion-scroll-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>completion_scroll_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0.29)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the scrollbar in the code completion popup.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-completion-scroll-hovered-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>completion_scroll_hovered_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0.4)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the scrollbar in the code completion popup when hovered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-completion-selected-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>completion_selected_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.26,</span> <span class="pre">0.26,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p>
+<p>Background highlight <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for the current selected option item in the code completion popup.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-executing-line-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>executing_line_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.98,</span> <span class="pre">0.89,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the executing icon for executing lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-folded-code-region-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>folded_code_region_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.68,</span> <span class="pre">0.46,</span> <span class="pre">0.77,</span> <span class="pre">0.2)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of background line highlight for folded code region.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-line-length-guideline-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>line_length_guideline_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.3,</span> <span class="pre">0.5,</span> <span class="pre">0.8,</span> <span class="pre">0.1)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the main line length guideline, secondary guidelines will have 50% alpha applied.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-color-line-number-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>line_number_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.67,</span> <span class="pre">0.67,</span> <span class="pre">0.67,</span> <span class="pre">0.4)</span></code></p>
+<p>Sets the <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of line numbers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-constant-completion-lines"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>completion_lines</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Max number of options to display in the code completion popup at any one time.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-constant-completion-max-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>completion_max_width</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<p>Max width of options in the code completion popup. Options longer than this will be cut off.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-constant-completion-scroll-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>completion_scroll_width</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Width of the scrollbar in the code completion popup.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-bookmark"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>bookmark</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the bookmark gutter for bookmarked lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-breakpoint"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>breakpoint</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the breakpoint gutter for breakpointed lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-can-fold"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>can_fold</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the line folding gutter when a line can be folded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-can-fold-code-region"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>can_fold_code_region</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the line folding gutter when a code region can be folded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-executing-line"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>executing_line</strong></p>
+<p>Icon to draw in the executing gutter for executing lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-folded"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>folded</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the line folding gutter when a line is folded and can be unfolded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-folded-code-region"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>folded_code_region</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw in the line folding gutter when a code region is folded and can be unfolded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-icon-folded-eol-icon"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>folded_eol_icon</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> to draw at the end of a folded line.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-codeedit-theme-style-completion"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>completion</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for the code completion popup.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_checkbutton.html" rel="prev" title="CheckButton"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_collisionobject2d.html" rel="next" title="CollisionObject2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

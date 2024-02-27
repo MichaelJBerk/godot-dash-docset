@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Camera2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_camera2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object Camera node for 2D scenes. Description: Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easie..." property="og:description"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object Camera node for 2D scenes. Description: Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easie..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Camera2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_camera2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_camera2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_camera2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_camera2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_camera2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_camera2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_camera2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_camera2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_camera2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_camera2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_camera2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_camera2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_camera2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_camera2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_camera2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_camera2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_camera3d.html" rel="next" title="Camera3D"/>
+<link href="class_button.html" rel="prev" title="Button"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_camera2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Camera2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="camera2d">
+<span id="class-camera2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Camera2D¶"></a>Camera2D<a class="headerlink" href="#camera2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Camera node for 2D scenes.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a>-based nodes.</p>
+<p>Cameras register themselves in the nearest <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a> node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the camera will register in the global viewport.</p>
+<p>This node is intended to be a simple helper to get things going quickly, but more functionality may be desired to change how the camera works. To make your own custom camera node, inherit it from <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> and change the transform of the canvas by setting <a class="reference internal" href="class_viewport.html#class-viewport-property-canvas-transform"><span class="std std-ref">Viewport.canvas_transform</span></a> in <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a> (you can obtain the current <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a> by using <a class="reference internal" href="class_node.html#class-node-method-get-viewport"><span class="std std-ref">Node.get_viewport</span></a>).</p>
+<p>Note that the <strong>Camera2D</strong> node's <code class="docutils literal notranslate"><span class="pre">position</span></code> doesn't represent the actual position of the screen, which may differ due to applied smoothing or limits. You can use <a class="reference internal" href="#class-camera2d-method-get-screen-center-position"><span class="std std-ref">get_screen_center_position</span></a> to get the real position.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/120">2D Platformer Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/112">2D Isometric Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/110">2D HDR Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-anchor-mode"><span class="std std-ref">anchor_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-custom-viewport"><span class="std std-ref">custom_viewport</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-bottom-margin"><span class="std std-ref">drag_bottom_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-horizontal-enabled"><span class="std std-ref">drag_horizontal_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-horizontal-offset"><span class="std std-ref">drag_horizontal_offset</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-left-margin"><span class="std std-ref">drag_left_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-right-margin"><span class="std std-ref">drag_right_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-top-margin"><span class="std std-ref">drag_top_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-vertical-enabled"><span class="std std-ref">drag_vertical_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-drag-vertical-offset"><span class="std std-ref">drag_vertical_offset</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-editor-draw-drag-margin"><span class="std std-ref">editor_draw_drag_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-editor-draw-limits"><span class="std std-ref">editor_draw_limits</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-editor-draw-screen"><span class="std std-ref">editor_draw_screen</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-enabled"><span class="std std-ref">enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-ignore-rotation"><span class="std std-ref">ignore_rotation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-limit-bottom"><span class="std std-ref">limit_bottom</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10000000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-limit-left"><span class="std std-ref">limit_left</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-10000000</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-limit-right"><span class="std std-ref">limit_right</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10000000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-limit-smoothed"><span class="std std-ref">limit_smoothed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-limit-top"><span class="std std-ref">limit_top</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-10000000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-offset"><span class="std std-ref">offset</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-position-smoothing-enabled"><span class="std std-ref">position_smoothing_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-position-smoothing-speed"><span class="std std-ref">position_smoothing_speed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-process-callback"><span class="std std-ref">process_callback</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-rotation-smoothing-enabled"><span class="std std-ref">rotation_smoothing_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-rotation-smoothing-speed"><span class="std std-ref">rotation_smoothing_speed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-property-zoom"><span class="std std-ref">zoom</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-align"><span class="std std-ref">align</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-force-update-scroll"><span class="std std-ref">force_update_scroll</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-get-drag-margin"><span class="std std-ref">get_drag_margin</span></a>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-get-limit"><span class="std std-ref">get_limit</span></a>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-get-screen-center-position"><span class="std std-ref">get_screen_center_position</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-get-target-position"><span class="std std-ref">get_target_position</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-is-current"><span class="std std-ref">is_current</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-make-current"><span class="std std-ref">make_current</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-reset-smoothing"><span class="std std-ref">reset_smoothing</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-set-drag-margin"><span class="std std-ref">set_drag_margin</span></a>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-camera2d-method-set-limit"><span class="std std-ref">set_limit</span></a>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-camera2d-anchormode">enum <strong><a class="dashAnchor" id="enumerations-AnchorMode" name="//apple_ref/cpp/Enum/AnchorMode"></a>AnchorMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-camera2d-constant-anchor-mode-fixed-top-left"><a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a> <strong><a class="dashAnchor" id="enumerations-ANCHOR_MODE_FIXED_TOP_LEFT" name="//apple_ref/cpp/Enum/ANCHOR_MODE_FIXED_TOP_LEFT"></a>ANCHOR_MODE_FIXED_TOP_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The camera's position is fixed so that the top-left corner is always at the origin.</p>
+<p class="classref-enumeration-constant" id="class-camera2d-constant-anchor-mode-drag-center"><a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a> <strong><a class="dashAnchor" id="enumerations-ANCHOR_MODE_DRAG_CENTER" name="//apple_ref/cpp/Enum/ANCHOR_MODE_DRAG_CENTER"></a>ANCHOR_MODE_DRAG_CENTER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The camera's position takes into account vertical/horizontal offsets and the screen size.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-camera2d-camera2dprocesscallback">enum <strong><a class="dashAnchor" id="enumerations-Camera2DProcessCallback" name="//apple_ref/cpp/Enum/Camera2DProcessCallback"></a>Camera2DProcessCallback</strong>:</p>
+<p class="classref-enumeration-constant" id="class-camera2d-constant-camera2d-process-physics"><a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a> <strong><a class="dashAnchor" id="enumerations-CAMERA2D_PROCESS_PHYSICS" name="//apple_ref/cpp/Enum/CAMERA2D_PROCESS_PHYSICS"></a>CAMERA2D_PROCESS_PHYSICS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The camera updates during physics frames (see <a class="reference internal" href="class_node.html#class-node-constant-notification-internal-physics-process"><span class="std std-ref">Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS</span></a>).</p>
+<p class="classref-enumeration-constant" id="class-camera2d-constant-camera2d-process-idle"><a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a> <strong><a class="dashAnchor" id="enumerations-CAMERA2D_PROCESS_IDLE" name="//apple_ref/cpp/Enum/CAMERA2D_PROCESS_IDLE"></a>CAMERA2D_PROCESS_IDLE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The camera updates during process frames (see <a class="reference internal" href="class_node.html#class-node-constant-notification-internal-process"><span class="std std-ref">Node.NOTIFICATION_INTERNAL_PROCESS</span></a>).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-camera2d-property-anchor-mode"><a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a> <strong>anchor_mode</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_anchor_mode" name="//apple_ref/cpp/Property/set_anchor_mode"></a>set_anchor_mode</strong>(value: <a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a> <strong><a class="dashAnchor" id="properties-get_anchor_mode" name="//apple_ref/cpp/Property/get_anchor_mode"></a>get_anchor_mode</strong>()</p></li>
+</ul>
+<p>The Camera2D's anchor point. See <a class="reference internal" href="#enum-camera2d-anchormode"><span class="std std-ref">AnchorMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-custom-viewport"><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>custom_viewport</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_custom_viewport" name="//apple_ref/cpp/Property/set_custom_viewport"></a>set_custom_viewport</strong>(value: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong><a class="dashAnchor" id="properties-get_custom_viewport" name="//apple_ref/cpp/Property/get_custom_viewport"></a>get_custom_viewport</strong>()</p></li>
+</ul>
+<p>The custom <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a> node attached to the <strong>Camera2D</strong>. If <code class="docutils literal notranslate"><span class="pre">null</span></code> or not a <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a>, uses the default viewport instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-bottom-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_bottom_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.2</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_margin" name="//apple_ref/cpp/Property/set_drag_margin"></a>set_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_margin" name="//apple_ref/cpp/Property/get_drag_margin"></a>get_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Bottom margin needed to drag the camera. A value of <code class="docutils literal notranslate"><span class="pre">1</span></code> makes the camera move only when reaching the bottom edge of the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-horizontal-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>drag_horizontal_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_horizontal_enabled" name="//apple_ref/cpp/Property/set_drag_horizontal_enabled"></a>set_drag_horizontal_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drag_horizontal_enabled" name="//apple_ref/cpp/Property/is_drag_horizontal_enabled"></a>is_drag_horizontal_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera only moves when reaching the horizontal (left and right) drag margins. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, the camera moves horizontally regardless of margins.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-horizontal-offset"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_horizontal_offset</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_horizontal_offset" name="//apple_ref/cpp/Property/set_drag_horizontal_offset"></a>set_drag_horizontal_offset</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_horizontal_offset" name="//apple_ref/cpp/Property/get_drag_horizontal_offset"></a>get_drag_horizontal_offset</strong>()</p></li>
+</ul>
+<p>The relative horizontal drag offset of the camera between the right (<code class="docutils literal notranslate"><span class="pre">-1</span></code>) and left (<code class="docutils literal notranslate"><span class="pre">1</span></code>) drag margins.</p>
+<p><strong>Note:</strong> Used to set the initial horizontal drag offset; determine the current offset; or force the current offset. It's not automatically updated when <a class="reference internal" href="#class-camera2d-property-drag-horizontal-enabled"><span class="std std-ref">drag_horizontal_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code> or the drag margins are changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-left-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_left_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.2</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_margin" name="//apple_ref/cpp/Property/set_drag_margin"></a>set_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_margin" name="//apple_ref/cpp/Property/get_drag_margin"></a>get_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Left margin needed to drag the camera. A value of <code class="docutils literal notranslate"><span class="pre">1</span></code> makes the camera move only when reaching the left edge of the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-right-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_right_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.2</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_margin" name="//apple_ref/cpp/Property/set_drag_margin"></a>set_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_margin" name="//apple_ref/cpp/Property/get_drag_margin"></a>get_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Right margin needed to drag the camera. A value of <code class="docutils literal notranslate"><span class="pre">1</span></code> makes the camera move only when reaching the right edge of the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-top-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_top_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.2</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_margin" name="//apple_ref/cpp/Property/set_drag_margin"></a>set_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_margin" name="//apple_ref/cpp/Property/get_drag_margin"></a>get_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Top margin needed to drag the camera. A value of <code class="docutils literal notranslate"><span class="pre">1</span></code> makes the camera move only when reaching the top edge of the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-vertical-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>drag_vertical_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_vertical_enabled" name="//apple_ref/cpp/Property/set_drag_vertical_enabled"></a>set_drag_vertical_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drag_vertical_enabled" name="//apple_ref/cpp/Property/is_drag_vertical_enabled"></a>is_drag_vertical_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera only moves when reaching the vertical (top and bottom) drag margins. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, the camera moves vertically regardless of the drag margins.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-drag-vertical-offset"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>drag_vertical_offset</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_vertical_offset" name="//apple_ref/cpp/Property/set_drag_vertical_offset"></a>set_drag_vertical_offset</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_drag_vertical_offset" name="//apple_ref/cpp/Property/get_drag_vertical_offset"></a>get_drag_vertical_offset</strong>()</p></li>
+</ul>
+<p>The relative vertical drag offset of the camera between the bottom (<code class="docutils literal notranslate"><span class="pre">-1</span></code>) and top (<code class="docutils literal notranslate"><span class="pre">1</span></code>) drag margins.</p>
+<p><strong>Note:</strong> Used to set the initial vertical drag offset; determine the current offset; or force the current offset. It's not automatically updated when <a class="reference internal" href="#class-camera2d-property-drag-vertical-enabled"><span class="std std-ref">drag_vertical_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code> or the drag margins are changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-editor-draw-drag-margin"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>editor_draw_drag_margin</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_margin_drawing_enabled" name="//apple_ref/cpp/Property/set_margin_drawing_enabled"></a>set_margin_drawing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_margin_drawing_enabled" name="//apple_ref/cpp/Property/is_margin_drawing_enabled"></a>is_margin_drawing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, draws the camera's drag margin rectangle in the editor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-editor-draw-limits"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>editor_draw_limits</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit_drawing_enabled" name="//apple_ref/cpp/Property/set_limit_drawing_enabled"></a>set_limit_drawing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_limit_drawing_enabled" name="//apple_ref/cpp/Property/is_limit_drawing_enabled"></a>is_limit_drawing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, draws the camera's limits rectangle in the editor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-editor-draw-screen"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>editor_draw_screen</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_screen_drawing_enabled" name="//apple_ref/cpp/Property/set_screen_drawing_enabled"></a>set_screen_drawing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_screen_drawing_enabled" name="//apple_ref/cpp/Property/is_screen_drawing_enabled"></a>is_screen_drawing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, draws the camera's screen rectangle in the editor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_enabled" name="//apple_ref/cpp/Property/set_enabled"></a>set_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_enabled" name="//apple_ref/cpp/Property/is_enabled"></a>is_enabled</strong>()</p></li>
+</ul>
+<p>Controls whether the camera can be active or not. If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>Camera2D</strong> will become the main camera when it enters the scene tree and there is no active camera currently (see <a class="reference internal" href="class_viewport.html#class-viewport-method-get-camera-2d"><span class="std std-ref">Viewport.get_camera_2d</span></a>).</p>
+<p>When the camera is currently active and <a class="reference internal" href="#class-camera2d-property-enabled"><span class="std std-ref">enabled</span></a> is set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, the next enabled <strong>Camera2D</strong> in the scene tree will become active.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-ignore-rotation"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>ignore_rotation</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ignore_rotation" name="//apple_ref/cpp/Property/set_ignore_rotation"></a>set_ignore_rotation</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_ignoring_rotation" name="//apple_ref/cpp/Property/is_ignoring_rotation"></a>is_ignoring_rotation</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera's rendered view is not affected by its <a class="reference internal" href="class_node2d.html#class-node2d-property-rotation"><span class="std std-ref">Node2D.rotation</span></a> and <a class="reference internal" href="class_node2d.html#class-node2d-property-global-rotation"><span class="std std-ref">Node2D.global_rotation</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-limit-bottom"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>limit_bottom</strong> = <code class="docutils literal notranslate"><span class="pre">10000000</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit" name="//apple_ref/cpp/Property/set_limit"></a>set_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_limit" name="//apple_ref/cpp/Property/get_limit"></a>get_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Bottom scroll limit in pixels. The camera stops moving when reaching this value, but <a class="reference internal" href="#class-camera2d-property-offset"><span class="std std-ref">offset</span></a> can push the view past the limit.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-limit-left"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>limit_left</strong> = <code class="docutils literal notranslate"><span class="pre">-10000000</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit" name="//apple_ref/cpp/Property/set_limit"></a>set_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_limit" name="//apple_ref/cpp/Property/get_limit"></a>get_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Left scroll limit in pixels. The camera stops moving when reaching this value, but <a class="reference internal" href="#class-camera2d-property-offset"><span class="std std-ref">offset</span></a> can push the view past the limit.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-limit-right"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>limit_right</strong> = <code class="docutils literal notranslate"><span class="pre">10000000</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit" name="//apple_ref/cpp/Property/set_limit"></a>set_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_limit" name="//apple_ref/cpp/Property/get_limit"></a>get_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Right scroll limit in pixels. The camera stops moving when reaching this value, but <a class="reference internal" href="#class-camera2d-property-offset"><span class="std std-ref">offset</span></a> can push the view past the limit.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-limit-smoothed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>limit_smoothed</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit_smoothing_enabled" name="//apple_ref/cpp/Property/set_limit_smoothing_enabled"></a>set_limit_smoothing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_limit_smoothing_enabled" name="//apple_ref/cpp/Property/is_limit_smoothing_enabled"></a>is_limit_smoothing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera smoothly stops when reaches its limits.</p>
+<p>This property has no effect if <a class="reference internal" href="#class-camera2d-property-position-smoothing-enabled"><span class="std std-ref">position_smoothing_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p><strong>Note:</strong> To immediately update the camera's position to be within limits without smoothing, even with this setting enabled, invoke <a class="reference internal" href="#class-camera2d-method-reset-smoothing"><span class="std std-ref">reset_smoothing</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-limit-top"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>limit_top</strong> = <code class="docutils literal notranslate"><span class="pre">-10000000</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_limit" name="//apple_ref/cpp/Property/set_limit"></a>set_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_limit" name="//apple_ref/cpp/Property/get_limit"></a>get_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Top scroll limit in pixels. The camera stops moving when reaching this value, but <a class="reference internal" href="#class-camera2d-property-offset"><span class="std std-ref">offset</span></a> can push the view past the limit.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-offset"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>offset</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_offset" name="//apple_ref/cpp/Property/set_offset"></a>set_offset</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_offset" name="//apple_ref/cpp/Property/get_offset"></a>get_offset</strong>()</p></li>
+</ul>
+<p>The camera's relative offset. Useful for looking around or camera shake animations. The offsetted camera can go past the limits defined in <a class="reference internal" href="#class-camera2d-property-limit-top"><span class="std std-ref">limit_top</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-bottom"><span class="std std-ref">limit_bottom</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-left"><span class="std std-ref">limit_left</span></a> and <a class="reference internal" href="#class-camera2d-property-limit-right"><span class="std std-ref">limit_right</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-position-smoothing-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>position_smoothing_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_position_smoothing_enabled" name="//apple_ref/cpp/Property/set_position_smoothing_enabled"></a>set_position_smoothing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_position_smoothing_enabled" name="//apple_ref/cpp/Property/is_position_smoothing_enabled"></a>is_position_smoothing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera's view smoothly moves towards its target position at <a class="reference internal" href="#class-camera2d-property-position-smoothing-speed"><span class="std std-ref">position_smoothing_speed</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-position-smoothing-speed"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>position_smoothing_speed</strong> = <code class="docutils literal notranslate"><span class="pre">5.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_position_smoothing_speed" name="//apple_ref/cpp/Property/set_position_smoothing_speed"></a>set_position_smoothing_speed</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_position_smoothing_speed" name="//apple_ref/cpp/Property/get_position_smoothing_speed"></a>get_position_smoothing_speed</strong>()</p></li>
+</ul>
+<p>Speed in pixels per second of the camera's smoothing effect when <a class="reference internal" href="#class-camera2d-property-position-smoothing-enabled"><span class="std std-ref">position_smoothing_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-process-callback"><a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a> <strong>process_callback</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_process_callback" name="//apple_ref/cpp/Property/set_process_callback"></a>set_process_callback</strong>(value: <a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a> <strong><a class="dashAnchor" id="properties-get_process_callback" name="//apple_ref/cpp/Property/get_process_callback"></a>get_process_callback</strong>()</p></li>
+</ul>
+<p>The camera's process callback. See <a class="reference internal" href="#enum-camera2d-camera2dprocesscallback"><span class="std std-ref">Camera2DProcessCallback</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-rotation-smoothing-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>rotation_smoothing_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_rotation_smoothing_enabled" name="//apple_ref/cpp/Property/set_rotation_smoothing_enabled"></a>set_rotation_smoothing_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_rotation_smoothing_enabled" name="//apple_ref/cpp/Property/is_rotation_smoothing_enabled"></a>is_rotation_smoothing_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the camera's view smoothly rotates, via asymptotic smoothing, to align with its target rotation at <a class="reference internal" href="#class-camera2d-property-rotation-smoothing-speed"><span class="std std-ref">rotation_smoothing_speed</span></a>.</p>
+<p><strong>Note:</strong> This property has no effect if <a class="reference internal" href="#class-camera2d-property-ignore-rotation"><span class="std std-ref">ignore_rotation</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-rotation-smoothing-speed"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>rotation_smoothing_speed</strong> = <code class="docutils literal notranslate"><span class="pre">5.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_rotation_smoothing_speed" name="//apple_ref/cpp/Property/set_rotation_smoothing_speed"></a>set_rotation_smoothing_speed</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_rotation_smoothing_speed" name="//apple_ref/cpp/Property/get_rotation_smoothing_speed"></a>get_rotation_smoothing_speed</strong>()</p></li>
+</ul>
+<p>The angular, asymptotic speed of the camera's rotation smoothing effect when <a class="reference internal" href="#class-camera2d-property-rotation-smoothing-enabled"><span class="std std-ref">rotation_smoothing_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-camera2d-property-zoom"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>zoom</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_zoom" name="//apple_ref/cpp/Property/set_zoom"></a>set_zoom</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_zoom" name="//apple_ref/cpp/Property/get_zoom"></a>get_zoom</strong>()</p></li>
+</ul>
+<p>The camera's zoom. A zoom of <code class="docutils literal notranslate"><span class="pre">Vector(2,</span> <span class="pre">2)</span></code> doubles the size seen in the viewport. A zoom of <code class="docutils literal notranslate"><span class="pre">Vector(0.5,</span> <span class="pre">0.5)</span></code> halves the size seen in the viewport.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="class_fontfile.html#class-fontfile-property-oversampling"><span class="std std-ref">FontFile.oversampling</span></a> does <em>not</em> take <strong>Camera2D</strong> zoom into account. This means that zooming in/out will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated unless the font is part of a <a class="reference internal" href="class_canvaslayer.html#class-canvaslayer"><span class="std std-ref">CanvasLayer</span></a> that makes it ignore camera zoom. To ensure text remains crisp regardless of zoom, you can enable MSDF font rendering by enabling <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-gui-theme-default-font-multichannel-signed-distance-field"><span class="std std-ref">ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field</span></a> (applies to the default project font only), or enabling <strong>Multichannel Signed Distance Field</strong> in the import options of a DynamicFont for custom fonts. On system fonts, <a class="reference internal" href="class_systemfont.html#class-systemfont-property-multichannel-signed-distance-field"><span class="std std-ref">SystemFont.multichannel_signed_distance_field</span></a> can be enabled in the inspector.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-camera2d-method-align"><abbr title="No return value.">void</abbr> <strong>align</strong>()</p>
+<p>Aligns the camera to the tracked node.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-force-update-scroll"><abbr title="No return value.">void</abbr> <strong>force_update_scroll</strong>()</p>
+<p>Forces the camera to update scroll immediately.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-get-drag-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the specified <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>'s margin. See also <a class="reference internal" href="#class-camera2d-property-drag-bottom-margin"><span class="std std-ref">drag_bottom_margin</span></a>, <a class="reference internal" href="#class-camera2d-property-drag-top-margin"><span class="std std-ref">drag_top_margin</span></a>, <a class="reference internal" href="#class-camera2d-property-drag-left-margin"><span class="std std-ref">drag_left_margin</span></a>, and <a class="reference internal" href="#class-camera2d-property-drag-right-margin"><span class="std std-ref">drag_right_margin</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-get-limit"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the camera limit for the specified <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>. See also <a class="reference internal" href="#class-camera2d-property-limit-bottom"><span class="std std-ref">limit_bottom</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-top"><span class="std std-ref">limit_top</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-left"><span class="std std-ref">limit_left</span></a>, and <a class="reference internal" href="#class-camera2d-property-limit-right"><span class="std std-ref">limit_right</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-get-screen-center-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_screen_center_position</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the center of the screen from this camera's point of view, in global coordinates.</p>
+<p><strong>Note:</strong> The exact targeted position of the camera may be different. See <a class="reference internal" href="#class-camera2d-method-get-target-position"><span class="std std-ref">get_target_position</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-get-target-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_target_position</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns this camera's target position, in global coordinates.</p>
+<p><strong>Note:</strong> The returned value is not the same as <a class="reference internal" href="class_node2d.html#class-node2d-property-global-position"><span class="std std-ref">Node2D.global_position</span></a>, as it is affected by the drag properties. It is also not the same as the current position if <a class="reference internal" href="#class-camera2d-property-position-smoothing-enabled"><span class="std std-ref">position_smoothing_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code> (see <a class="reference internal" href="#class-camera2d-method-get-screen-center-position"><span class="std std-ref">get_screen_center_position</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-is-current"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_current</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this <strong>Camera2D</strong> is the active camera (see <a class="reference internal" href="class_viewport.html#class-viewport-method-get-camera-2d"><span class="std std-ref">Viewport.get_camera_2d</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-make-current"><abbr title="No return value.">void</abbr> <strong>make_current</strong>()</p>
+<p>Forces this <strong>Camera2D</strong> to become the current active one. <a class="reference internal" href="#class-camera2d-property-enabled"><span class="std std-ref">enabled</span></a> must be <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-reset-smoothing"><abbr title="No return value.">void</abbr> <strong>reset_smoothing</strong>()</p>
+<p>Sets the camera's position immediately to its current smoothing destination.</p>
+<p>This method has no effect if <a class="reference internal" href="#class-camera2d-property-position-smoothing-enabled"><span class="std std-ref">position_smoothing_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-set-drag-margin"><abbr title="No return value.">void</abbr> <strong>set_drag_margin</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, drag_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the specified <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>'s margin. See also <a class="reference internal" href="#class-camera2d-property-drag-bottom-margin"><span class="std std-ref">drag_bottom_margin</span></a>, <a class="reference internal" href="#class-camera2d-property-drag-top-margin"><span class="std std-ref">drag_top_margin</span></a>, <a class="reference internal" href="#class-camera2d-property-drag-left-margin"><span class="std std-ref">drag_left_margin</span></a>, and <a class="reference internal" href="#class-camera2d-property-drag-right-margin"><span class="std std-ref">drag_right_margin</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-camera2d-method-set-limit"><abbr title="No return value.">void</abbr> <strong>set_limit</strong>(margin: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>, limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Sets the camera limit for the specified <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a>. See also <a class="reference internal" href="#class-camera2d-property-limit-bottom"><span class="std std-ref">limit_bottom</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-top"><span class="std std-ref">limit_top</span></a>, <a class="reference internal" href="#class-camera2d-property-limit-left"><span class="std std-ref">limit_left</span></a>, and <a class="reference internal" href="#class-camera2d-property-limit-right"><span class="std std-ref">limit_right</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_button.html" rel="prev" title="Button"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_camera3d.html" rel="next" title="Camera3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

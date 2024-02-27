@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="RefCounted" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_refcounted.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object Inherited By: AESContext, AStar2D, AStar3D, AStarGrid2D, AudioEffectInstance, AudioStreamPlayback, CameraFeed, CharFXTransform, ConfigFile, Crypto, DirAccess, DTLSServer, EditorDeb..." property="og:description"/>
+<meta content="Inherits: Object Inherited By: AESContext, AStar2D, AStar3D, AStarGrid2D, AudioEffectInstance, AudioStreamPlayback, CameraFeed, CharFXTransform, ConfigFile, Crypto, DirAccess, DTLSServer, EditorDeb..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) RefCounted — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_refcounted.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_refcounted.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_refcounted.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_refcounted.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_refcounted.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_refcounted.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_refcounted.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_refcounted.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_refcounted.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_refcounted.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_refcounted.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_refcounted.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_refcounted.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_refcounted.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_refcounted.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_refcounted.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_regex.html" rel="next" title="RegEx"/>
+<link href="class_rdvertexattribute.html" rel="prev" title="RDVertexAttribute"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_refcounted" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">RefCounted</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="refcounted">
+<span id="class-refcounted"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/RefCounted¶"></a>RefCounted<a class="headerlink" href="#refcounted" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_aescontext.html#class-aescontext"><span class="std std-ref">AESContext</span></a>, <a class="reference internal" href="class_astar2d.html#class-astar2d"><span class="std std-ref">AStar2D</span></a>, <a class="reference internal" href="class_astar3d.html#class-astar3d"><span class="std std-ref">AStar3D</span></a>, <a class="reference internal" href="class_astargrid2d.html#class-astargrid2d"><span class="std std-ref">AStarGrid2D</span></a>, <a class="reference internal" href="class_audioeffectinstance.html#class-audioeffectinstance"><span class="std std-ref">AudioEffectInstance</span></a>, <a class="reference internal" href="class_audiostreamplayback.html#class-audiostreamplayback"><span class="std std-ref">AudioStreamPlayback</span></a>, <a class="reference internal" href="class_camerafeed.html#class-camerafeed"><span class="std std-ref">CameraFeed</span></a>, <a class="reference internal" href="class_charfxtransform.html#class-charfxtransform"><span class="std std-ref">CharFXTransform</span></a>, <a class="reference internal" href="class_configfile.html#class-configfile"><span class="std std-ref">ConfigFile</span></a>, <a class="reference internal" href="class_crypto.html#class-crypto"><span class="std std-ref">Crypto</span></a>, <a class="reference internal" href="class_diraccess.html#class-diraccess"><span class="std std-ref">DirAccess</span></a>, <a class="reference internal" href="class_dtlsserver.html#class-dtlsserver"><span class="std std-ref">DTLSServer</span></a>, <a class="reference internal" href="class_editordebuggerplugin.html#class-editordebuggerplugin"><span class="std std-ref">EditorDebuggerPlugin</span></a>, <a class="reference internal" href="class_editordebuggersession.html#class-editordebuggersession"><span class="std std-ref">EditorDebuggerSession</span></a>, <a class="reference internal" href="class_editorexportplatform.html#class-editorexportplatform"><span class="std std-ref">EditorExportPlatform</span></a>, <a class="reference internal" href="class_editorexportplugin.html#class-editorexportplugin"><span class="std std-ref">EditorExportPlugin</span></a>, <a class="reference internal" href="class_editorfeatureprofile.html#class-editorfeatureprofile"><span class="std std-ref">EditorFeatureProfile</span></a>, <a class="reference internal" href="class_editorfilesystemimportformatsupportquery.html#class-editorfilesystemimportformatsupportquery"><span class="std std-ref">EditorFileSystemImportFormatSupportQuery</span></a>, <a class="reference internal" href="class_editorinspectorplugin.html#class-editorinspectorplugin"><span class="std std-ref">EditorInspectorPlugin</span></a>, <a class="reference internal" href="class_editorresourceconversionplugin.html#class-editorresourceconversionplugin"><span class="std std-ref">EditorResourceConversionPlugin</span></a>, <a class="reference internal" href="class_editorresourcepreviewgenerator.html#class-editorresourcepreviewgenerator"><span class="std std-ref">EditorResourcePreviewGenerator</span></a>, <a class="reference internal" href="class_editorresourcetooltipplugin.html#class-editorresourcetooltipplugin"><span class="std std-ref">EditorResourceTooltipPlugin</span></a>, <a class="reference internal" href="class_editorsceneformatimporter.html#class-editorsceneformatimporter"><span class="std std-ref">EditorSceneFormatImporter</span></a>, <a class="reference internal" href="class_editorscenepostimport.html#class-editorscenepostimport"><span class="std std-ref">EditorScenePostImport</span></a>, <a class="reference internal" href="class_editorscenepostimportplugin.html#class-editorscenepostimportplugin"><span class="std std-ref">EditorScenePostImportPlugin</span></a>, <a class="reference internal" href="class_editorscript.html#class-editorscript"><span class="std std-ref">EditorScript</span></a>, <a class="reference internal" href="class_editortranslationparserplugin.html#class-editortranslationparserplugin"><span class="std std-ref">EditorTranslationParserPlugin</span></a>, <a class="reference internal" href="class_encodedobjectasid.html#class-encodedobjectasid"><span class="std std-ref">EncodedObjectAsID</span></a>, <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a>, <a class="reference internal" href="class_engineprofiler.html#class-engineprofiler"><span class="std std-ref">EngineProfiler</span></a>, <a class="reference internal" href="class_expression.html#class-expression"><span class="std std-ref">Expression</span></a>, <a class="reference internal" href="class_fileaccess.html#class-fileaccess"><span class="std std-ref">FileAccess</span></a>, <a class="reference internal" href="class_hashingcontext.html#class-hashingcontext"><span class="std std-ref">HashingContext</span></a>, <a class="reference internal" href="class_hmaccontext.html#class-hmaccontext"><span class="std std-ref">HMACContext</span></a>, <a class="reference internal" href="class_httpclient.html#class-httpclient"><span class="std std-ref">HTTPClient</span></a>, <a class="reference internal" href="class_imageformatloader.html#class-imageformatloader"><span class="std std-ref">ImageFormatLoader</span></a>, <a class="reference internal" href="class_javaclass.html#class-javaclass"><span class="std std-ref">JavaClass</span></a>, <a class="reference internal" href="class_javascriptobject.html#class-javascriptobject"><span class="std std-ref">JavaScriptObject</span></a>, <a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a>, <a class="reference internal" href="class_kinematiccollision3d.html#class-kinematiccollision3d"><span class="std std-ref">KinematicCollision3D</span></a>, <a class="reference internal" href="class_lightmapper.html#class-lightmapper"><span class="std std-ref">Lightmapper</span></a>, <a class="reference internal" href="class_meshconvexdecompositionsettings.html#class-meshconvexdecompositionsettings"><span class="std std-ref">MeshConvexDecompositionSettings</span></a>, <a class="reference internal" href="class_meshdatatool.html#class-meshdatatool"><span class="std std-ref">MeshDataTool</span></a>, <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a>, <a class="reference internal" href="class_mutex.html#class-mutex"><span class="std std-ref">Mutex</span></a>, <a class="reference internal" href="class_navigationpathqueryparameters2d.html#class-navigationpathqueryparameters2d"><span class="std std-ref">NavigationPathQueryParameters2D</span></a>, <a class="reference internal" href="class_navigationpathqueryparameters3d.html#class-navigationpathqueryparameters3d"><span class="std std-ref">NavigationPathQueryParameters3D</span></a>, <a class="reference internal" href="class_navigationpathqueryresult2d.html#class-navigationpathqueryresult2d"><span class="std std-ref">NavigationPathQueryResult2D</span></a>, <a class="reference internal" href="class_navigationpathqueryresult3d.html#class-navigationpathqueryresult3d"><span class="std std-ref">NavigationPathQueryResult3D</span></a>, <a class="reference internal" href="class_node3dgizmo.html#class-node3dgizmo"><span class="std std-ref">Node3DGizmo</span></a>, <a class="reference internal" href="class_oggpacketsequenceplayback.html#class-oggpacketsequenceplayback"><span class="std std-ref">OggPacketSequencePlayback</span></a>, <a class="reference internal" href="class_openxrapiextension.html#class-openxrapiextension"><span class="std std-ref">OpenXRAPIExtension</span></a>, <a class="reference internal" href="class_packeddatacontainerref.html#class-packeddatacontainerref"><span class="std std-ref">PackedDataContainerRef</span></a>, <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a>, <a class="reference internal" href="class_pckpacker.html#class-pckpacker"><span class="std std-ref">PCKPacker</span></a>, <a class="reference internal" href="class_physicspointqueryparameters2d.html#class-physicspointqueryparameters2d"><span class="std std-ref">PhysicsPointQueryParameters2D</span></a>, <a class="reference internal" href="class_physicspointqueryparameters3d.html#class-physicspointqueryparameters3d"><span class="std std-ref">PhysicsPointQueryParameters3D</span></a>, <a class="reference internal" href="class_physicsrayqueryparameters2d.html#class-physicsrayqueryparameters2d"><span class="std std-ref">PhysicsRayQueryParameters2D</span></a>, <a class="reference internal" href="class_physicsrayqueryparameters3d.html#class-physicsrayqueryparameters3d"><span class="std std-ref">PhysicsRayQueryParameters3D</span></a>, <a class="reference internal" href="class_physicsshapequeryparameters2d.html#class-physicsshapequeryparameters2d"><span class="std std-ref">PhysicsShapeQueryParameters2D</span></a>, <a class="reference internal" href="class_physicsshapequeryparameters3d.html#class-physicsshapequeryparameters3d"><span class="std std-ref">PhysicsShapeQueryParameters3D</span></a>, <a class="reference internal" href="class_physicstestmotionparameters2d.html#class-physicstestmotionparameters2d"><span class="std std-ref">PhysicsTestMotionParameters2D</span></a>, <a class="reference internal" href="class_physicstestmotionparameters3d.html#class-physicstestmotionparameters3d"><span class="std std-ref">PhysicsTestMotionParameters3D</span></a>, <a class="reference internal" href="class_physicstestmotionresult2d.html#class-physicstestmotionresult2d"><span class="std std-ref">PhysicsTestMotionResult2D</span></a>, <a class="reference internal" href="class_physicstestmotionresult3d.html#class-physicstestmotionresult3d"><span class="std std-ref">PhysicsTestMotionResult3D</span></a>, <a class="reference internal" href="class_randomnumbergenerator.html#class-randomnumbergenerator"><span class="std std-ref">RandomNumberGenerator</span></a>, <a class="reference internal" href="class_rdattachmentformat.html#class-rdattachmentformat"><span class="std std-ref">RDAttachmentFormat</span></a>, <a class="reference internal" href="class_rdframebufferpass.html#class-rdframebufferpass"><span class="std std-ref">RDFramebufferPass</span></a>, <a class="reference internal" href="class_rdpipelinecolorblendstate.html#class-rdpipelinecolorblendstate"><span class="std std-ref">RDPipelineColorBlendState</span></a>, <a class="reference internal" href="class_rdpipelinecolorblendstateattachment.html#class-rdpipelinecolorblendstateattachment"><span class="std std-ref">RDPipelineColorBlendStateAttachment</span></a>, <a class="reference internal" href="class_rdpipelinedepthstencilstate.html#class-rdpipelinedepthstencilstate"><span class="std std-ref">RDPipelineDepthStencilState</span></a>, <a class="reference internal" href="class_rdpipelinemultisamplestate.html#class-rdpipelinemultisamplestate"><span class="std std-ref">RDPipelineMultisampleState</span></a>, <a class="reference internal" href="class_rdpipelinerasterizationstate.html#class-rdpipelinerasterizationstate"><span class="std std-ref">RDPipelineRasterizationState</span></a>, <a class="reference internal" href="class_rdpipelinespecializationconstant.html#class-rdpipelinespecializationconstant"><span class="std std-ref">RDPipelineSpecializationConstant</span></a>, <a class="reference internal" href="class_rdsamplerstate.html#class-rdsamplerstate"><span class="std std-ref">RDSamplerState</span></a>, <a class="reference internal" href="class_rdshadersource.html#class-rdshadersource"><span class="std std-ref">RDShaderSource</span></a>, <a class="reference internal" href="class_rdtextureformat.html#class-rdtextureformat"><span class="std std-ref">RDTextureFormat</span></a>, <a class="reference internal" href="class_rdtextureview.html#class-rdtextureview"><span class="std std-ref">RDTextureView</span></a>, <a class="reference internal" href="class_rduniform.html#class-rduniform"><span class="std std-ref">RDUniform</span></a>, <a class="reference internal" href="class_rdvertexattribute.html#class-rdvertexattribute"><span class="std std-ref">RDVertexAttribute</span></a>, <a class="reference internal" href="class_regex.html#class-regex"><span class="std std-ref">RegEx</span></a>, <a class="reference internal" href="class_regexmatch.html#class-regexmatch"><span class="std std-ref">RegExMatch</span></a>, <a class="reference internal" href="class_renderscenebuffers.html#class-renderscenebuffers"><span class="std std-ref">RenderSceneBuffers</span></a>, <a class="reference internal" href="class_renderscenebuffersconfiguration.html#class-renderscenebuffersconfiguration"><span class="std std-ref">RenderSceneBuffersConfiguration</span></a>, <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a>, <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>, <a class="reference internal" href="class_resourceformatsaver.html#class-resourceformatsaver"><span class="std std-ref">ResourceFormatSaver</span></a>, <a class="reference internal" href="class_resourceimporter.html#class-resourceimporter"><span class="std std-ref">ResourceImporter</span></a>, <a class="reference internal" href="class_scenestate.html#class-scenestate"><span class="std std-ref">SceneState</span></a>, <a class="reference internal" href="class_scenetreetimer.html#class-scenetreetimer"><span class="std std-ref">SceneTreeTimer</span></a>, <a class="reference internal" href="class_semaphore.html#class-semaphore"><span class="std std-ref">Semaphore</span></a>, <a class="reference internal" href="class_skinreference.html#class-skinreference"><span class="std std-ref">SkinReference</span></a>, <a class="reference internal" href="class_streampeer.html#class-streampeer"><span class="std std-ref">StreamPeer</span></a>, <a class="reference internal" href="class_surfacetool.html#class-surfacetool"><span class="std std-ref">SurfaceTool</span></a>, <a class="reference internal" href="class_tcpserver.html#class-tcpserver"><span class="std std-ref">TCPServer</span></a>, <a class="reference internal" href="class_textline.html#class-textline"><span class="std std-ref">TextLine</span></a>, <a class="reference internal" href="class_textparagraph.html#class-textparagraph"><span class="std std-ref">TextParagraph</span></a>, <a class="reference internal" href="class_textserver.html#class-textserver"><span class="std std-ref">TextServer</span></a>, <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a>, <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a>, <a class="reference internal" href="class_trianglemesh.html#class-trianglemesh"><span class="std std-ref">TriangleMesh</span></a>, <a class="reference internal" href="class_tween.html#class-tween"><span class="std std-ref">Tween</span></a>, <a class="reference internal" href="class_tweener.html#class-tweener"><span class="std std-ref">Tweener</span></a>, <a class="reference internal" href="class_udpserver.html#class-udpserver"><span class="std std-ref">UDPServer</span></a>, <a class="reference internal" href="class_upnp.html#class-upnp"><span class="std std-ref">UPNP</span></a>, <a class="reference internal" href="class_upnpdevice.html#class-upnpdevice"><span class="std std-ref">UPNPDevice</span></a>, <a class="reference internal" href="class_weakref.html#class-weakref"><span class="std std-ref">WeakRef</span></a>, <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a>, <a class="reference internal" href="class_xmlparser.html#class-xmlparser"><span class="std std-ref">XMLParser</span></a>, <a class="reference internal" href="class_xrfacetracker.html#class-xrfacetracker"><span class="std std-ref">XRFaceTracker</span></a>, <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker"><span class="std std-ref">XRHandTracker</span></a>, <a class="reference internal" href="class_xrinterface.html#class-xrinterface"><span class="std std-ref">XRInterface</span></a>, <a class="reference internal" href="class_xrpose.html#class-xrpose"><span class="std std-ref">XRPose</span></a>, <a class="reference internal" href="class_xrpositionaltracker.html#class-xrpositionaltracker"><span class="std std-ref">XRPositionalTracker</span></a>, <a class="reference internal" href="class_zippacker.html#class-zippacker"><span class="std std-ref">ZIPPacker</span></a>, <a class="reference internal" href="class_zipreader.html#class-zipreader"><span class="std std-ref">ZIPReader</span></a></p>
+<p>Base class for reference-counted objects.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base class for any object that keeps a reference count. <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> and many other helper objects inherit this class.</p>
+<p>Unlike other <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> types, <strong>RefCounted</strong>s keep an internal reference counter so that they are automatically released when no longer in use, and only then. <strong>RefCounted</strong>s therefore do not need to be freed manually with <a class="reference internal" href="class_object.html#class-object-method-free"><span class="std std-ref">Object.free</span></a>.</p>
+<p><strong>RefCounted</strong> instances caught in a cyclic reference will <strong>not</strong> be freed automatically. For example, if a node holds a reference to instance <code class="docutils literal notranslate"><span class="pre">A</span></code>, which directly or indirectly holds a reference back to <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">A</span></code>'s reference count will be 2. Destruction of the node will leave <code class="docutils literal notranslate"><span class="pre">A</span></code> dangling with a reference count of 1, and there will be a memory leak. To prevent this, one of the references in the cycle can be made weak with <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-weakref"><span class="std std-ref">@GlobalScope.weakref</span></a>.</p>
+<p>In the vast majority of use cases, instantiating and using <strong>RefCounted</strong>-derived types is all you need to do. The methods provided in this class are only for advanced users, and can cause issues if misused.</p>
+<p><strong>Note:</strong> In C#, reference-counted objects will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free reference-counted objects that are no longer in use. This means that unused ones will linger on for a while before being removed.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/best_practices/node_alternatives.html"><span class="doc">When and how to avoid using nodes for everything</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-refcounted-method-get-reference-count"><span class="std std-ref">get_reference_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-refcounted-method-init-ref"><span class="std std-ref">init_ref</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-refcounted-method-reference"><span class="std std-ref">reference</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-refcounted-method-unreference"><span class="std std-ref">unreference</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-refcounted-method-get-reference-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_reference_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current reference count.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-refcounted-method-init-ref"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>init_ref</strong>()</p>
+<p>Initializes the internal reference counter. Use this only if you really know what you are doing.</p>
+<p>Returns whether the initialization was successful.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-refcounted-method-reference"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>reference</strong>()</p>
+<p>Increments the internal reference counter. Use this only if you really know what you are doing.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the increment was successful, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-refcounted-method-unreference"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>unreference</strong>()</p>
+<p>Decrements the internal reference counter. Use this only if you really know what you are doing.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the object should be freed after the decrement, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_rdvertexattribute.html" rel="prev" title="RDVertexAttribute"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_regex.html" rel="next" title="RegEx">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

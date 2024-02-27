@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Tree" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_tree.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control used to show a set of internal TreeItem s in a hierarchical structure. Description: A control used to show a set of internal TreeItem s in a hi..." property="og:description"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control used to show a set of internal TreeItem s in a hierarchical structure. Description: A control used to show a set of internal TreeItem s in a hi..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Tree — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_tree.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_tree.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_tree.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_tree.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_tree.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_tree.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_tree.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_tree.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_tree.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_tree.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_tree.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_tree.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_tree.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_tree.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_tree.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_tree.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_vboxcontainer.html" rel="next" title="VBoxContainer"/>
+<link href="class_touchscreenbutton.html" rel="prev" title="TouchScreenButton"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_tree" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Tree</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="tree">
+<span id="class-tree"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Tree¶"></a>Tree<a class="headerlink" href="#tree" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A control used to show a set of internal <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>s in a hierarchical structure.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A control used to show a set of internal <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>s in a hierarchical structure. The tree items can be selected, expanded and collapsed. The tree can have multiple columns with custom controls like <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a>s, buttons and popups. It can be useful for structured displays and interactions.</p>
+<p>Trees are built via code, using <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> objects to create the structure. They have a single root, but multiple roots can be simulated with <a class="reference internal" href="#class-tree-property-hide-root"><span class="std std-ref">hide_root</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Tree</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="o">.</span><span class="n">create_item</span><span class="p">()</span>
+<span class="w">    </span><span class="n">tree</span><span class="o">.</span><span class="n">hide_root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">true</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">child1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="o">.</span><span class="n">create_item</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">child2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="o">.</span><span class="n">create_item</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">subchild1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="o">.</span><span class="n">create_item</span><span class="p">(</span><span class="n">child1</span><span class="p">)</span>
+<span class="w">    </span><span class="n">subchild1</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"Subchild1"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Tree</span><span class="p">();</span>
+<span class="w">    </span><span class="n">TreeItem</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="p">.</span><span class="n">CreateItem</span><span class="p">();</span>
+<span class="w">    </span><span class="n">tree</span><span class="p">.</span><span class="n">HideRoot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="w">    </span><span class="n">TreeItem</span><span class="w"> </span><span class="n">child1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="p">.</span><span class="n">CreateItem</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TreeItem</span><span class="w"> </span><span class="n">child2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="p">.</span><span class="n">CreateItem</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TreeItem</span><span class="w"> </span><span class="n">subchild1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree</span><span class="p">.</span><span class="n">CreateItem</span><span class="p">(</span><span class="n">child1</span><span class="p">);</span>
+<span class="w">    </span><span class="n">subchild1</span><span class="p">.</span><span class="n">SetText</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="s">"Subchild1"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>To iterate over all the <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> objects in a <strong>Tree</strong> object, use <a class="reference internal" href="class_treeitem.html#class-treeitem-method-get-next"><span class="std std-ref">TreeItem.get_next</span></a> and <a class="reference internal" href="class_treeitem.html#class-treeitem-method-get-first-child"><span class="std std-ref">TreeItem.get_first_child</span></a> after getting the root through <a class="reference internal" href="#class-tree-method-get-root"><span class="std std-ref">get_root</span></a>. You can use <a class="reference internal" href="class_object.html#class-object-method-free"><span class="std std-ref">Object.free</span></a> on a <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> to remove it from the <strong>Tree</strong>.</p>
+<p><strong>Incremental search:</strong> Like <a class="reference internal" href="class_itemlist.html#class-itemlist"><span class="std std-ref">ItemList</span></a> and <a class="reference internal" href="class_popupmenu.html#class-popupmenu"><span class="std std-ref">PopupMenu</span></a>, <strong>Tree</strong> supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-gui-timers-incremental-search-max-interval-msec"><span class="std std-ref">ProjectSettings.gui/timers/incremental_search_max_interval_msec</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-allow-reselect"><span class="std std-ref">allow_reselect</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-allow-rmb-select"><span class="std std-ref">allow_rmb_select</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-allow-search"><span class="std std-ref">allow_search</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p>clip_contents</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-clip-contents"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-column-titles-visible"><span class="std std-ref">column_titles_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-columns"><span class="std std-ref">columns</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-drop-mode-flags"><span class="std std-ref">drop_mode_flags</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-enable-recursive-folding"><span class="std std-ref">enable_recursive_folding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-focusmode"><span class="std std-ref">FocusMode</span></a></p></td>
+<td><p>focus_mode</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-focus-mode"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-hide-folding"><span class="std std-ref">hide_folding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-hide-root"><span class="std std-ref">hide_root</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-scroll-horizontal-enabled"><span class="std std-ref">scroll_horizontal_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-scroll-vertical-enabled"><span class="std std-ref">scroll_vertical_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-property-select-mode"><span class="std std-ref">select_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-create-item"><span class="std std-ref">create_item</span></a>(parent: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> = null, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-deselect-all"><span class="std std-ref">deselect_all</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-edit-selected"><span class="std std-ref">edit_selected</span></a>(force_edit: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-ensure-cursor-is-visible"><span class="std std-ref">ensure_cursor_is_visible</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-button-id-at-position"><span class="std std-ref">get_button_id_at_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-at-position"><span class="std std-ref">get_column_at_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-expand-ratio"><span class="std std-ref">get_column_expand_ratio</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-title"><span class="std std-ref">get_column_title</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-title-alignment"><span class="std std-ref">get_column_title_alignment</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-title-direction"><span class="std std-ref">get_column_title_direction</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-title-language"><span class="std std-ref">get_column_title_language</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-column-width"><span class="std std-ref">get_column_width</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-custom-popup-rect"><span class="std std-ref">get_custom_popup_rect</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-drop-section-at-position"><span class="std std-ref">get_drop_section_at_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-edited"><span class="std std-ref">get_edited</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-edited-column"><span class="std std-ref">get_edited_column</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-item-area-rect"><span class="std std-ref">get_item_area_rect</span></a>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-item-at-position"><span class="std std-ref">get_item_at_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-next-selected"><span class="std std-ref">get_next_selected</span></a>(from: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-pressed-button"><span class="std std-ref">get_pressed_button</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-root"><span class="std std-ref">get_root</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-scroll"><span class="std std-ref">get_scroll</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-selected"><span class="std std-ref">get_selected</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-get-selected-column"><span class="std std-ref">get_selected_column</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-is-column-clipping-content"><span class="std std-ref">is_column_clipping_content</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-is-column-expanding"><span class="std std-ref">is_column_expanding</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-scroll-to-item"><span class="std std-ref">scroll_to_item</span></a>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, center_on_item: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-clip-content"><span class="std std-ref">set_column_clip_content</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-custom-minimum-width"><span class="std std-ref">set_column_custom_minimum_width</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, min_width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-expand"><span class="std std-ref">set_column_expand</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, expand: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-expand-ratio"><span class="std std-ref">set_column_expand_ratio</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, ratio: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-title"><span class="std std-ref">set_column_title</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, title: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-title-alignment"><span class="std std-ref">set_column_title_alignment</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, title_alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-title-direction"><span class="std std-ref">set_column_title_direction</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, direction: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-column-title-language"><span class="std std-ref">set_column_title_language</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-tree-method-set-selected"><span class="std std-ref">set_selected</span></a>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-children-hl-line-color"><span class="std std-ref">children_hl_line_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-custom-button-font-highlight"><span class="std std-ref">custom_button_font_highlight</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-drop-position-color"><span class="std std-ref">drop_position_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-font-color"><span class="std std-ref">font_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-font-disabled-color"><span class="std std-ref">font_disabled_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.5)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-font-outline-color"><span class="std std-ref">font_outline_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-font-selected-color"><span class="std std-ref">font_selected_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-guide-color"><span class="std std-ref">guide_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.25)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-parent-hl-line-color"><span class="std std-ref">parent_hl_line_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-relationship-line-color"><span class="std std-ref">relationship_line_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-color-title-button-color"><span class="std std-ref">title_button_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-button-margin"><span class="std std-ref">button_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-children-hl-line-width"><span class="std std-ref">children_hl_line_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-draw-guides"><span class="std std-ref">draw_guides</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-draw-relationship-lines"><span class="std std-ref">draw_relationship_lines</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-h-separation"><span class="std std-ref">h_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-icon-max-width"><span class="std std-ref">icon_max_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-inner-item-margin-bottom"><span class="std std-ref">inner_item_margin_bottom</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-inner-item-margin-left"><span class="std std-ref">inner_item_margin_left</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-inner-item-margin-right"><span class="std std-ref">inner_item_margin_right</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-inner-item-margin-top"><span class="std std-ref">inner_item_margin_top</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-item-margin"><span class="std std-ref">item_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">16</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-parent-hl-line-margin"><span class="std std-ref">parent_hl_line_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-parent-hl-line-width"><span class="std std-ref">parent_hl_line_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-relationship-line-width"><span class="std std-ref">relationship_line_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scroll-border"><span class="std std-ref">scroll_border</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scroll-speed"><span class="std std-ref">scroll_speed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">12</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-h-separation"><span class="std std-ref">scrollbar_h_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-margin-bottom"><span class="std std-ref">scrollbar_margin_bottom</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-margin-left"><span class="std std-ref">scrollbar_margin_left</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-margin-right"><span class="std std-ref">scrollbar_margin_right</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-margin-top"><span class="std std-ref">scrollbar_margin_top</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-scrollbar-v-separation"><span class="std std-ref">scrollbar_v_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-constant-v-separation"><span class="std std-ref">v_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-font-font"><span class="std std-ref">font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-font-title-button-font"><span class="std std-ref">title_button_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-font-size-font-size"><span class="std std-ref">font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-font-size-title-button-font-size"><span class="std std-ref">title_button_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-arrow"><span class="std std-ref">arrow</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-arrow-collapsed"><span class="std std-ref">arrow_collapsed</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-arrow-collapsed-mirrored"><span class="std std-ref">arrow_collapsed_mirrored</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-checked"><span class="std std-ref">checked</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-checked-disabled"><span class="std std-ref">checked_disabled</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-indeterminate"><span class="std std-ref">indeterminate</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-indeterminate-disabled"><span class="std std-ref">indeterminate_disabled</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-select-arrow"><span class="std std-ref">select_arrow</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-unchecked"><span class="std std-ref">unchecked</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-unchecked-disabled"><span class="std std-ref">unchecked_disabled</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-icon-updown"><span class="std std-ref">updown</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-button-pressed"><span class="std std-ref">button_pressed</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-cursor"><span class="std std-ref">cursor</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-cursor-unfocused"><span class="std std-ref">cursor_unfocused</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-custom-button"><span class="std std-ref">custom_button</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-custom-button-hover"><span class="std std-ref">custom_button_hover</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-custom-button-pressed"><span class="std std-ref">custom_button_pressed</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-focus"><span class="std std-ref">focus</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-panel"><span class="std std-ref">panel</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-selected"><span class="std std-ref">selected</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-selected-focus"><span class="std std-ref">selected_focus</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-title-button-hover"><span class="std std-ref">title_button_hover</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-title-button-normal"><span class="std std-ref">title_button_normal</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-tree-theme-style-title-button-pressed"><span class="std std-ref">title_button_pressed</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-tree-signal-button-clicked"><strong>button_clicked</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, mouse_button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when a button on the tree was pressed (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-add-button"><span class="std std-ref">TreeItem.add_button</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-cell-selected"><strong>cell_selected</strong>()</p>
+<p>Emitted when a cell is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-check-propagated-to-item"><strong>check_propagated_to_item</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when <a class="reference internal" href="class_treeitem.html#class-treeitem-method-propagate-check"><span class="std std-ref">TreeItem.propagate_check</span></a> is called. Connect to this signal to process the items that are affected when <a class="reference internal" href="class_treeitem.html#class-treeitem-method-propagate-check"><span class="std std-ref">TreeItem.propagate_check</span></a> is invoked. The order that the items affected will be processed is as follows: the item that invoked the method, children of that item, and finally parents of that item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-column-title-clicked"><strong>column_title_clicked</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, mouse_button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when a column's title is clicked with either <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-mouse-button-left"><span class="std std-ref">@GlobalScope.MOUSE_BUTTON_LEFT</span></a> or <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-mouse-button-right"><span class="std std-ref">@GlobalScope.MOUSE_BUTTON_RIGHT</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-custom-item-clicked"><strong>custom_item_clicked</strong>(mouse_button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when an item with <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> is clicked with a mouse button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-custom-popup-edited"><strong>custom_popup_edited</strong>(arrow_clicked: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Emitted when a cell with the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> is clicked to be edited.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-empty-clicked"><strong>empty_clicked</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, mouse_button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when a mouse button is clicked in the empty space of the tree.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-activated"><strong>item_activated</strong>()</p>
+<p>Emitted when an item is double-clicked, or selected with a <code class="docutils literal notranslate"><span class="pre">ui_accept</span></code> input event (e.g. using <kbd class="kbd docutils literal notranslate">Enter</kbd> or <kbd class="kbd docutils literal notranslate">Space</kbd> on the keyboard).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-collapsed"><strong>item_collapsed</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>)</p>
+<p>Emitted when an item is collapsed by a click on the folding arrow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-edited"><strong>item_edited</strong>()</p>
+<p>Emitted when an item is edited.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-icon-double-clicked"><strong>item_icon_double_clicked</strong>()</p>
+<p>Emitted when an item's icon is double-clicked. For a signal that emits when any part of the item is double-clicked, see <a class="reference internal" href="#class-tree-signal-item-activated"><span class="std std-ref">item_activated</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-mouse-selected"><strong>item_mouse_selected</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, mouse_button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when an item is selected with a mouse button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-item-selected"><strong>item_selected</strong>()</p>
+<p>Emitted when an item is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-multi-selected"><strong>multi_selected</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, selected: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Emitted instead of <a class="reference internal" href="#class-tree-signal-item-selected"><span class="std std-ref">item_selected</span></a> if <a class="reference internal" href="#class-tree-property-select-mode"><span class="std std-ref">select_mode</span></a> is set to <a class="reference internal" href="#class-tree-constant-select-multi"><span class="std std-ref">SELECT_MULTI</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-tree-signal-nothing-selected"><strong>nothing_selected</strong>()</p>
+<p>Emitted when a left mouse button click does not select any item.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-tree-selectmode">enum <strong><a class="dashAnchor" id="enumerations-SelectMode" name="//apple_ref/cpp/Enum/SelectMode"></a>SelectMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-select-single"><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> <strong><a class="dashAnchor" id="enumerations-SELECT_SINGLE" name="//apple_ref/cpp/Enum/SELECT_SINGLE"></a>SELECT_SINGLE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Allows selection of a single cell at a time. From the perspective of items, only a single item is allowed to be selected. And there is only one column selected in the selected item.</p>
+<p>The focus cursor is always hidden in this mode, but it is positioned at the current selection, making the currently selected item the currently focused item.</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-select-row"><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> <strong><a class="dashAnchor" id="enumerations-SELECT_ROW" name="//apple_ref/cpp/Enum/SELECT_ROW"></a>SELECT_ROW</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Allows selection of a single row at a time. From the perspective of items, only a single items is allowed to be selected. And all the columns are selected in the selected item.</p>
+<p>The focus cursor is always hidden in this mode, but it is positioned at the first column of the current selection, making the currently selected item the currently focused item.</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-select-multi"><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> <strong><a class="dashAnchor" id="enumerations-SELECT_MULTI" name="//apple_ref/cpp/Enum/SELECT_MULTI"></a>SELECT_MULTI</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Allows selection of multiple cells at the same time. From the perspective of items, multiple items are allowed to be selected. And there can be multiple columns selected in each selected item.</p>
+<p>The focus cursor is visible in this mode, the item or column under the cursor is not necessarily selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-tree-dropmodeflags">enum <strong><a class="dashAnchor" id="enumerations-DropModeFlags" name="//apple_ref/cpp/Enum/DropModeFlags"></a>DropModeFlags</strong>:</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-drop-mode-disabled"><a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> <strong><a class="dashAnchor" id="enumerations-DROP_MODE_DISABLED" name="//apple_ref/cpp/Enum/DROP_MODE_DISABLED"></a>DROP_MODE_DISABLED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Disables all drop sections, but still allows to detect the "on item" drop section by <a class="reference internal" href="#class-tree-method-get-drop-section-at-position"><span class="std std-ref">get_drop_section_at_position</span></a>.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> This is the default flag, it has no effect when combined with other flags.</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-drop-mode-on-item"><a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> <strong><a class="dashAnchor" id="enumerations-DROP_MODE_ON_ITEM" name="//apple_ref/cpp/Enum/DROP_MODE_ON_ITEM"></a>DROP_MODE_ON_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Enables the "on item" drop section. This drop section covers the entire item.</p>
+<p>When combined with <a class="reference internal" href="#class-tree-constant-drop-mode-inbetween"><span class="std std-ref">DROP_MODE_INBETWEEN</span></a>, this drop section halves the height and stays centered vertically.</p>
+<p class="classref-enumeration-constant" id="class-tree-constant-drop-mode-inbetween"><a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> <strong><a class="dashAnchor" id="enumerations-DROP_MODE_INBETWEEN" name="//apple_ref/cpp/Enum/DROP_MODE_INBETWEEN"></a>DROP_MODE_INBETWEEN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, and the "below item" drop section covers the bottom half.</p>
+<p>When combined with <a class="reference internal" href="#class-tree-constant-drop-mode-on-item"><span class="std std-ref">DROP_MODE_ON_ITEM</span></a>, these drop sections halves the height and stays on top / bottom accordingly.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-tree-property-allow-reselect"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_reselect</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_reselect" name="//apple_ref/cpp/Property/set_allow_reselect"></a>set_allow_reselect</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_allow_reselect" name="//apple_ref/cpp/Property/get_allow_reselect"></a>get_allow_reselect</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the currently selected cell may be selected again.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-allow-rmb-select"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_rmb_select</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_rmb_select" name="//apple_ref/cpp/Property/set_allow_rmb_select"></a>set_allow_rmb_select</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_allow_rmb_select" name="//apple_ref/cpp/Property/get_allow_rmb_select"></a>get_allow_rmb_select</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, a right mouse button click can select items.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-allow-search"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>allow_search</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_allow_search" name="//apple_ref/cpp/Property/set_allow_search"></a>set_allow_search</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_allow_search" name="//apple_ref/cpp/Property/get_allow_search"></a>get_allow_search</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, allows navigating the <strong>Tree</strong> with letter keys through incremental search.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-column-titles-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>column_titles_visible</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_column_titles_visible" name="//apple_ref/cpp/Property/set_column_titles_visible"></a>set_column_titles_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-are_column_titles_visible" name="//apple_ref/cpp/Property/are_column_titles_visible"></a>are_column_titles_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, column titles are visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-columns"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>columns</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_columns" name="//apple_ref/cpp/Property/set_columns"></a>set_columns</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_columns" name="//apple_ref/cpp/Property/get_columns"></a>get_columns</strong>()</p></li>
+</ul>
+<p>The number of columns.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-drop-mode-flags"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>drop_mode_flags</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drop_mode_flags" name="//apple_ref/cpp/Property/set_drop_mode_flags"></a>set_drop_mode_flags</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_drop_mode_flags" name="//apple_ref/cpp/Property/get_drop_mode_flags"></a>get_drop_mode_flags</strong>()</p></li>
+</ul>
+<p>The drop mode as an OR combination of flags. See <a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> constants. Once dropping is done, reverts to <a class="reference internal" href="#class-tree-constant-drop-mode-disabled"><span class="std std-ref">DROP_MODE_DISABLED</span></a>. Setting this during <a class="reference internal" href="class_control.html#class-control-private-method-can-drop-data"><span class="std std-ref">Control._can_drop_data</span></a> is recommended.</p>
+<p>This controls the drop sections, i.e. the decision and drawing of possible drop locations based on the mouse position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-enable-recursive-folding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>enable_recursive_folding</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_enable_recursive_folding" name="//apple_ref/cpp/Property/set_enable_recursive_folding"></a>set_enable_recursive_folding</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_recursive_folding_enabled" name="//apple_ref/cpp/Property/is_recursive_folding_enabled"></a>is_recursive_folding_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, recursive folding is enabled for this <strong>Tree</strong>. Holding down <kbd class="kbd docutils literal notranslate">Shift</kbd> while clicking the fold arrow or using <code class="docutils literal notranslate"><span class="pre">ui_right</span></code>/<code class="docutils literal notranslate"><span class="pre">ui_left</span></code> shortcuts collapses or uncollapses the <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and all its descendants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-hide-folding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>hide_folding</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_hide_folding" name="//apple_ref/cpp/Property/set_hide_folding"></a>set_hide_folding</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_folding_hidden" name="//apple_ref/cpp/Property/is_folding_hidden"></a>is_folding_hidden</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the folding arrow is hidden.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-hide-root"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>hide_root</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_hide_root" name="//apple_ref/cpp/Property/set_hide_root"></a>set_hide_root</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_root_hidden" name="//apple_ref/cpp/Property/is_root_hidden"></a>is_root_hidden</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the tree's root is hidden.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-scroll-horizontal-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>scroll_horizontal_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_h_scroll_enabled" name="//apple_ref/cpp/Property/set_h_scroll_enabled"></a>set_h_scroll_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_h_scroll_enabled" name="//apple_ref/cpp/Property/is_h_scroll_enabled"></a>is_h_scroll_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, enables horizontal scrolling.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-scroll-vertical-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>scroll_vertical_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_v_scroll_enabled" name="//apple_ref/cpp/Property/set_v_scroll_enabled"></a>set_v_scroll_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_v_scroll_enabled" name="//apple_ref/cpp/Property/is_v_scroll_enabled"></a>is_v_scroll_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, enables vertical scrolling.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-tree-property-select-mode"><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> <strong>select_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_select_mode" name="//apple_ref/cpp/Property/set_select_mode"></a>set_select_mode</strong>(value: <a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> <strong><a class="dashAnchor" id="properties-get_select_mode" name="//apple_ref/cpp/Property/get_select_mode"></a>get_select_mode</strong>()</p></li>
+</ul>
+<p>Allows single or multiple selection. See the <a class="reference internal" href="#enum-tree-selectmode"><span class="std std-ref">SelectMode</span></a> constants.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-tree-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clears the tree. This removes all items.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-create-item"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>create_item</strong>(parent: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> = null, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Creates an item in the tree and adds it as a child of <code class="docutils literal notranslate"><span class="pre">parent</span></code>, which can be either a valid <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> or <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">parent</span></code> is <code class="docutils literal notranslate"><span class="pre">null</span></code>, the root item will be the parent, or the new item will be the root itself if the tree is empty.</p>
+<p>The new item will be the <code class="docutils literal notranslate"><span class="pre">index</span></code>-th child of parent, or it will be the last child if there are not enough siblings.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-deselect-all"><abbr title="No return value.">void</abbr> <strong>deselect_all</strong>()</p>
+<p>Deselects all tree items (rows and columns). In <a class="reference internal" href="#class-tree-constant-select-multi"><span class="std std-ref">SELECT_MULTI</span></a> mode also removes selection cursor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-edit-selected"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>edit_selected</strong>(force_edit: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Edits the selected tree item as if it was clicked.</p>
+<p>Either the item must be set editable with <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a> or <code class="docutils literal notranslate"><span class="pre">force_edit</span></code> must be <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the item could be edited. Fails if no item is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-ensure-cursor-is-visible"><abbr title="No return value.">void</abbr> <strong>ensure_cursor_is_visible</strong>()</p>
+<p>Makes the currently focused cell visible.</p>
+<p>This will scroll the tree if necessary. In <a class="reference internal" href="#class-tree-constant-select-row"><span class="std std-ref">SELECT_ROW</span></a> mode, this will not do horizontal scrolling, as all the cells in the selected row is focused logically.</p>
+<p><strong>Note:</strong> Despite the name of this method, the focus cursor itself is only visible in <a class="reference internal" href="#class-tree-constant-select-multi"><span class="std std-ref">SELECT_MULTI</span></a> mode.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-button-id-at-position"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_button_id_at_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the button ID at <code class="docutils literal notranslate"><span class="pre">position</span></code>, or -1 if no button is there.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-at-position"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_column_at_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the column index at <code class="docutils literal notranslate"><span class="pre">position</span></code>, or -1 if no item is there.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-expand-ratio"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_column_expand_ratio</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the expand ratio assigned to the column.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-title"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_column_title</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the column's title.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-title-alignment"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> <strong>get_column_title_alignment</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the column title alignment.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-title-direction"><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong>get_column_title_direction</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns column title base writing direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-title-language"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_column_title_language</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns column title language code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-column-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_column_width</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the column's width in pixels.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-custom-popup-rect"><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>get_custom_popup_rect</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the rectangle for custom popups. Helper to create custom cell controls that display a popup. See <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-cell-mode"><span class="std std-ref">TreeItem.set_cell_mode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-drop-section-at-position"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_drop_section_at_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the drop section at <code class="docutils literal notranslate"><span class="pre">position</span></code>, or -100 if no item is there.</p>
+<p>Values -1, 0, or 1 will be returned for the "above item", "on item", and "below item" drop sections, respectively. See <a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> for a description of each drop section.</p>
+<p>To get the item which the returned drop section is relative to, use <a class="reference internal" href="#class-tree-method-get-item-at-position"><span class="std std-ref">get_item_at_position</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-edited"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>get_edited</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the currently edited item. Can be used with <a class="reference internal" href="#class-tree-signal-item-edited"><span class="std std-ref">item_edited</span></a> to get the item that was modified.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="o">$</span><span class="n">Tree</span><span class="o">.</span><span class="n">item_edited</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">on_Tree_item_edited</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">on_Tree_item_edited</span><span class="p">():</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="o">$</span><span class="n">Tree</span><span class="o">.</span><span class="n">get_edited</span><span class="p">())</span><span class="w"> </span><span class="c1"># This item just got edited (e.g. checked).</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">GetNode</span><span class="o">&lt;</span><span class="n">Tree</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Tree"</span><span class="p">).</span><span class="n">ItemEdited</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">OnTreeItemEdited</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnTreeItemEdited</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">GetNode</span><span class="o">&lt;</span><span class="n">Tree</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Tree"</span><span class="p">).</span><span class="n">GetEdited</span><span class="p">());</span><span class="w"> </span><span class="c1">// This item just got edited (e.g. checked).</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-edited-column"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_edited_column</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the column for the currently edited item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-item-area-rect"><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>get_item_area_rect</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, button_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the rectangle area for the specified <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>. If <code class="docutils literal notranslate"><span class="pre">column</span></code> is specified, only get the position and size of that column, otherwise get the rectangle containing all columns. If a button index is specified, the rectangle of that button will be returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-item-at-position"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>get_item_at_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the tree item at the specified position (relative to the tree origin position).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-next-selected"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>get_next_selected</strong>(from: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>)</p>
+<p>Returns the next selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> after the given one, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if the end is reached.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">from</span></code> is <code class="docutils literal notranslate"><span class="pre">null</span></code>, this returns the first selected item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-pressed-button"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_pressed_button</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the last pressed button's index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-root"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>get_root</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the tree's root item, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if the tree is empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-scroll"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_scroll</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current scrolling position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-selected"><a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> <strong>get_selected</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the currently focused item, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if no item is focused.</p>
+<p>In <a class="reference internal" href="#class-tree-constant-select-row"><span class="std std-ref">SELECT_ROW</span></a> and <a class="reference internal" href="#class-tree-constant-select-single"><span class="std std-ref">SELECT_SINGLE</span></a> modes, the focused item is same as the selected item. In <a class="reference internal" href="#class-tree-constant-select-multi"><span class="std std-ref">SELECT_MULTI</span></a> mode, the focused item is the item under the focus cursor, not necessarily selected.</p>
+<p>To get the currently selected item(s), use <a class="reference internal" href="#class-tree-method-get-next-selected"><span class="std std-ref">get_next_selected</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-get-selected-column"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_selected_column</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the currently focused column, or -1 if no column is focused.</p>
+<p>In <a class="reference internal" href="#class-tree-constant-select-single"><span class="std std-ref">SELECT_SINGLE</span></a> mode, the focused column is the selected column. In <a class="reference internal" href="#class-tree-constant-select-row"><span class="std std-ref">SELECT_ROW</span></a> mode, the focused column is always 0 if any item is selected. In <a class="reference internal" href="#class-tree-constant-select-multi"><span class="std std-ref">SELECT_MULTI</span></a> mode, the focused column is the column under the focus cursor, and there are not necessarily any column selected.</p>
+<p>To tell whether a column of an item is selected, use <a class="reference internal" href="class_treeitem.html#class-treeitem-method-is-selected"><span class="std std-ref">TreeItem.is_selected</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-is-column-clipping-content"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_column_clipping_content</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the column has enabled clipping (see <a class="reference internal" href="#class-tree-method-set-column-clip-content"><span class="std std-ref">set_column_clip_content</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-is-column-expanding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_column_expanding</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the column has enabled expanding (see <a class="reference internal" href="#class-tree-method-set-column-expand"><span class="std std-ref">set_column_expand</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-scroll-to-item"><abbr title="No return value.">void</abbr> <strong>scroll_to_item</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, center_on_item: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Causes the <strong>Tree</strong> to jump to the specified <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-clip-content"><abbr title="No return value.">void</abbr> <strong>set_column_clip_content</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Allows to enable clipping for column's content, making the content size ignored.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-custom-minimum-width"><abbr title="No return value.">void</abbr> <strong>set_column_custom_minimum_width</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, min_width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Overrides the calculated minimum width of a column. It can be set to <code class="docutils literal notranslate"><span class="pre">0</span></code> to restore the default behavior. Columns that have the "Expand" flag will use their "min_width" in a similar fashion to <a class="reference internal" href="class_control.html#class-control-property-size-flags-stretch-ratio"><span class="std std-ref">Control.size_flags_stretch_ratio</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-expand"><abbr title="No return value.">void</abbr> <strong>set_column_expand</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, expand: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the column will have the "Expand" flag of <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>. Columns that have the "Expand" flag will use their expand ratio in a similar fashion to <a class="reference internal" href="class_control.html#class-control-property-size-flags-stretch-ratio"><span class="std std-ref">Control.size_flags_stretch_ratio</span></a> (see <a class="reference internal" href="#class-tree-method-set-column-expand-ratio"><span class="std std-ref">set_column_expand_ratio</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-expand-ratio"><abbr title="No return value.">void</abbr> <strong>set_column_expand_ratio</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, ratio: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Sets the relative expand ratio for a column. See <a class="reference internal" href="#class-tree-method-set-column-expand"><span class="std std-ref">set_column_expand</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-title"><abbr title="No return value.">void</abbr> <strong>set_column_title</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, title: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Sets the title of a column.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-title-alignment"><abbr title="No return value.">void</abbr> <strong>set_column_title_alignment</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, title_alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>)</p>
+<p>Sets the column title alignment. Note that <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-horizontal-alignment-fill"><span class="std std-ref">@GlobalScope.HORIZONTAL_ALIGNMENT_FILL</span></a> is not supported for column titles.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-title-direction"><abbr title="No return value.">void</abbr> <strong>set_column_title_direction</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, direction: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a>)</p>
+<p>Sets column title base writing direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-column-title-language"><abbr title="No return value.">void</abbr> <strong>set_column_title_language</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Sets language code of column title used for line-breaking and text shaping algorithms, if left empty current locale is used instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-tree-method-set-selected"><abbr title="No return value.">void</abbr> <strong>set_selected</strong>(item: <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a>, column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Selects the specified <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and column.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-tree-theme-color-children-hl-line-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>children_hl_line_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p>
+<p>The <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the relationship lines between the selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and its children.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-custom-button-font-highlight"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>custom_button_font_highlight</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.95,</span> <span class="pre">0.95,</span> <span class="pre">0.95,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for a <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> mode cell when it's hovered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-drop-position-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>drop_position_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used to draw possible drop locations. See <a class="reference internal" href="#enum-tree-dropmodeflags"><span class="std std-ref">DropModeFlags</span></a> constants for further description of drop locations.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-font-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">1)</span></code></p>
+<p>Default text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-font-disabled-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_disabled_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.5)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> for a <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell when it's non-editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-font-outline-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_outline_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>The tint of text outline of the item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-font-selected-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_selected_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>Text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> used when the item is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-guide-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>guide_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.25)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the guideline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-parent-hl-line-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>parent_hl_line_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p>
+<p>The <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the relationship lines between the selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and its parents.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-relationship-line-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>relationship_line_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.27,</span> <span class="pre">0.27,</span> <span class="pre">0.27,</span> <span class="pre">1)</span></code></p>
+<p>The default <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the relationship lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-color-title-button-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>title_button_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.875,</span> <span class="pre">0.875,</span> <span class="pre">0.875,</span> <span class="pre">1)</span></code></p>
+<p>Default text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the title button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-button-margin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>button_margin</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The horizontal space between each button in a cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-children-hl-line-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>children_hl_line_width</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The width of the relationship lines between the selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and its children.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-draw-guides"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>draw_guides</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Draws the guidelines if not zero, this acts as a boolean. The guideline is a horizontal line drawn at the bottom of each item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-draw-relationship-lines"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>draw_relationship_lines</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Draws the relationship lines if not zero, this acts as a boolean. Relationship lines are drawn at the start of child items to show hierarchy.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-h-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>h_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The horizontal space between item cells. This is also used as the margin at the start of an item when folding is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-icon-max-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>icon_max_width</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The maximum allowed width of the icon in item's cells. This limit is applied on top of the default size of the icon, but before the value set with <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-icon-max-width"><span class="std std-ref">TreeItem.set_icon_max_width</span></a>. The height is adjusted according to the icon's ratio.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-inner-item-margin-bottom"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inner_item_margin_bottom</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The inner bottom margin of an item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-inner-item-margin-left"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inner_item_margin_left</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The inner left margin of an item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-inner-item-margin-right"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inner_item_margin_right</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The inner right margin of an item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-inner-item-margin-top"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inner_item_margin_top</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The inner top margin of an item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-item-margin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>item_margin</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>The horizontal margin at the start of an item. This is used when folding is enabled for the item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The size of the text outline.</p>
+<p><strong>Note:</strong> If using a font with <a class="reference internal" href="class_fontfile.html#class-fontfile-property-multichannel-signed-distance-field"><span class="std std-ref">FontFile.multichannel_signed_distance_field</span></a> enabled, its <a class="reference internal" href="class_fontfile.html#class-fontfile-property-msdf-pixel-range"><span class="std std-ref">FontFile.msdf_pixel_range</span></a> must be set to at least <em>twice</em> the value of <a class="reference internal" href="#class-tree-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a> for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-parent-hl-line-margin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>parent_hl_line_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The space between the parent relationship lines for the selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and the relationship lines to its siblings that are not selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-parent-hl-line-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>parent_hl_line_width</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The width of the relationship lines between the selected <a class="reference internal" href="class_treeitem.html#class-treeitem"><span class="std std-ref">TreeItem</span></a> and its parents.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-relationship-line-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>relationship_line_width</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The default width of the relationship lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scroll-border"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scroll_border</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The maximum distance between the mouse cursor and the control's border to trigger border scrolling when dragging.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scroll-speed"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scroll_speed</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>The speed of border scrolling.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-h-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_h_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The horizontal separation of tree content and scrollbar.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-margin-bottom"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_margin_bottom</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>The bottom margin of the scrollbars. When negative, uses <a class="reference internal" href="#class-tree-theme-style-panel"><span class="std std-ref">panel</span></a> bottom margin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-margin-left"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_margin_left</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>The left margin of the horizontal scrollbar. When negative, uses <a class="reference internal" href="#class-tree-theme-style-panel"><span class="std std-ref">panel</span></a> left margin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-margin-right"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_margin_right</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>The right margin of the scrollbars. When negative, uses <a class="reference internal" href="#class-tree-theme-style-panel"><span class="std std-ref">panel</span></a> right margin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-margin-top"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_margin_top</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>The top margin of the vertical scrollbar. When negative, uses <a class="reference internal" href="#class-tree-theme-style-panel"><span class="std std-ref">panel</span></a> top margin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-scrollbar-v-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scrollbar_v_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The vertical separation of tree content and scrollbar.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-constant-v-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>v_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The vertical padding inside each item, i.e. the distance between the item's content and top/bottom border.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-font-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>font</strong></p>
+<p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> of the item's text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-font-title-button-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>title_button_font</strong></p>
+<p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> of the title button's text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-font-size-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>font_size</strong></p>
+<p>Font size of the item's text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-font-size-title-button-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>title_button_font_size</strong></p>
+<p>Font size of the title button's text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-arrow"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>arrow</strong></p>
+<p>The arrow icon used when a foldable item is not collapsed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-arrow-collapsed"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>arrow_collapsed</strong></p>
+<p>The arrow icon used when a foldable item is collapsed (for left-to-right layouts).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-arrow-collapsed-mirrored"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>arrow_collapsed_mirrored</strong></p>
+<p>The arrow icon used when a foldable item is collapsed (for right-to-left layouts).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-checked"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>checked</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is checked and editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-checked-disabled"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>checked_disabled</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is checked and non-editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-indeterminate"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>indeterminate</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is indeterminate and editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-indeterminate-disabled"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>indeterminate_disabled</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is indeterminate and non-editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-select-arrow"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>select_arrow</strong></p>
+<p>The arrow icon to display for the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-range"><span class="std std-ref">TreeItem.CELL_MODE_RANGE</span></a> mode cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-unchecked"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>unchecked</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is unchecked and editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-unchecked-disabled"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>unchecked_disabled</strong></p>
+<p>The check icon to display when the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-check"><span class="std std-ref">TreeItem.CELL_MODE_CHECK</span></a> mode cell is unchecked and non-editable (see <a class="reference internal" href="class_treeitem.html#class-treeitem-method-set-editable"><span class="std std-ref">TreeItem.set_editable</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-icon-updown"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>updown</strong></p>
+<p>The updown arrow icon to display for the <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-range"><span class="std std-ref">TreeItem.CELL_MODE_RANGE</span></a> mode cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-button-pressed"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>button_pressed</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used when a button in the tree is pressed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-cursor"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>cursor</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used for the cursor, when the <strong>Tree</strong> is being focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-cursor-unfocused"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>cursor_unfocused</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used for the cursor, when the <strong>Tree</strong> is not being focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-custom-button"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>custom_button</strong></p>
+<p>Default <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for a <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> mode cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-custom-button-hover"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>custom_button_hover</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for a <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> mode cell when it's hovered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-custom-button-pressed"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>custom_button_pressed</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for a <a class="reference internal" href="class_treeitem.html#class-treeitem-constant-cell-mode-custom"><span class="std std-ref">TreeItem.CELL_MODE_CUSTOM</span></a> mode cell when it's pressed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-focus"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>focus</strong></p>
+<p>The focused style for the <strong>Tree</strong>, drawn on top of everything.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-panel"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>panel</strong></p>
+<p>The background style for the <strong>Tree</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-selected"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>selected</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for the selected items, used when the <strong>Tree</strong> is not being focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-selected-focus"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>selected_focus</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for the selected items, used when the <strong>Tree</strong> is being focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-title-button-hover"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>title_button_hover</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used when the title button is being hovered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-title-button-normal"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>title_button_normal</strong></p>
+<p>Default <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for the title button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-tree-theme-style-title-button-pressed"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>title_button_pressed</strong></p>
+<p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> used when the title button is being pressed.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_touchscreenbutton.html" rel="prev" title="TouchScreenButton"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_vboxcontainer.html" rel="next" title="VBoxContainer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

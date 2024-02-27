@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="WebSocketMultiplayerPeer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_websocketmultiplayerpeer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object Base class for WebSocket server and client. Description: Base class for WebSocket server and client, allowing them to be used as multiplaye..." property="og:description"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object Base class for WebSocket server and client. Description: Base class for WebSocket server and client, allowing them to be used as multiplaye..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) WebSocketMultiplayerPeer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketmultiplayerpeer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_websocketmultiplayerpeer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_websocketmultiplayerpeer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_websocketmultiplayerpeer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_websocketmultiplayerpeer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_websocketmultiplayerpeer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_websocketmultiplayerpeer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_websocketmultiplayerpeer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_websocketmultiplayerpeer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_websocketmultiplayerpeer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_websocketmultiplayerpeer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_websocketmultiplayerpeer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_websocketmultiplayerpeer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_websocketmultiplayerpeer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketmultiplayerpeer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketmultiplayerpeer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_websocketpeer.html" rel="next" title="WebSocketPeer"/>
+<link href="class_webrtcpeerconnectionextension.html" rel="prev" title="WebRTCPeerConnectionExtension"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_websocketmultiplayerpeer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">WebSocketMultiplayerPeer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="websocketmultiplayerpeer">
+<span id="class-websocketmultiplayerpeer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/WebSocketMultiplayerPeer¶"></a>WebSocketMultiplayerPeer<a class="headerlink" href="#websocketmultiplayerpeer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Base class for WebSocket server and client.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base class for WebSocket server and client, allowing them to be used as multiplayer peer for the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a>.</p>
+<p><strong>Note:</strong> When exporting to Android, make sure to enable the <code class="docutils literal notranslate"><span class="pre">INTERNET</span></code> permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-handshake-headers"><span class="std std-ref">handshake_headers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-handshake-timeout"><span class="std std-ref">handshake_timeout</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-inbound-buffer-size"><span class="std std-ref">inbound_buffer_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">65535</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-max-queued-packets"><span class="std std-ref">max_queued_packets</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2048</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-outbound-buffer-size"><span class="std std-ref">outbound_buffer_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">65535</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-property-supported-protocols"><span class="std std-ref">supported_protocols</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a>(url: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, tls_client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-method-create-server"><span class="std std-ref">create_server</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bind_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "*", tls_server_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_websocketpeer.html#class-websocketpeer"><span class="std std-ref">WebSocketPeer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-method-get-peer"><span class="std std-ref">get_peer</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-method-get-peer-address"><span class="std std-ref">get_peer_address</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketmultiplayerpeer-method-get-peer-port"><span class="std std-ref">get_peer_port</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-handshake-headers"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>handshake_headers</strong> = <code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_handshake_headers" name="//apple_ref/cpp/Property/set_handshake_headers"></a>set_handshake_headers</strong>(value: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong><a class="dashAnchor" id="properties-get_handshake_headers" name="//apple_ref/cpp/Property/get_handshake_headers"></a>get_handshake_headers</strong>()</p></li>
+</ul>
+<p>The extra headers to use during handshake. See <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer-property-handshake-headers"><span class="std std-ref">WebSocketPeer.handshake_headers</span></a> for more details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-handshake-timeout"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>handshake_timeout</strong> = <code class="docutils literal notranslate"><span class="pre">3.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_handshake_timeout" name="//apple_ref/cpp/Property/set_handshake_timeout"></a>set_handshake_timeout</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_handshake_timeout" name="//apple_ref/cpp/Property/get_handshake_timeout"></a>get_handshake_timeout</strong>()</p></li>
+</ul>
+<p>The maximum time each peer can stay in a connecting state before being dropped.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-inbound-buffer-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inbound_buffer_size</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_inbound_buffer_size" name="//apple_ref/cpp/Property/set_inbound_buffer_size"></a>set_inbound_buffer_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_inbound_buffer_size" name="//apple_ref/cpp/Property/get_inbound_buffer_size"></a>get_inbound_buffer_size</strong>()</p></li>
+</ul>
+<p>The inbound buffer size for connected peers. See <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer-property-inbound-buffer-size"><span class="std std-ref">WebSocketPeer.inbound_buffer_size</span></a> for more details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-max-queued-packets"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_queued_packets</strong> = <code class="docutils literal notranslate"><span class="pre">2048</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_queued_packets" name="//apple_ref/cpp/Property/set_max_queued_packets"></a>set_max_queued_packets</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_queued_packets" name="//apple_ref/cpp/Property/get_max_queued_packets"></a>get_max_queued_packets</strong>()</p></li>
+</ul>
+<p>The maximum number of queued packets for connected peers. See <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer-property-max-queued-packets"><span class="std std-ref">WebSocketPeer.max_queued_packets</span></a> for more details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-outbound-buffer-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outbound_buffer_size</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_outbound_buffer_size" name="//apple_ref/cpp/Property/set_outbound_buffer_size"></a>set_outbound_buffer_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_outbound_buffer_size" name="//apple_ref/cpp/Property/get_outbound_buffer_size"></a>get_outbound_buffer_size</strong>()</p></li>
+</ul>
+<p>The outbound buffer size for connected peers. See <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer-property-outbound-buffer-size"><span class="std std-ref">WebSocketPeer.outbound_buffer_size</span></a> for more details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketmultiplayerpeer-property-supported-protocols"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>supported_protocols</strong> = <code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_supported_protocols" name="//apple_ref/cpp/Property/set_supported_protocols"></a>set_supported_protocols</strong>(value: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong><a class="dashAnchor" id="properties-get_supported_protocols" name="//apple_ref/cpp/Property/get_supported_protocols"></a>get_supported_protocols</strong>()</p></li>
+</ul>
+<p>The supported WebSocket sub-protocols. See <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer-property-supported-protocols"><span class="std std-ref">WebSocketPeer.supported_protocols</span></a> for more details.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-websocketmultiplayerpeer-method-create-client"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_client</strong>(url: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, tls_client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p>
+<p>Starts a new multiplayer client connecting to the given <code class="docutils literal notranslate"><span class="pre">url</span></code>. TLS certificates will be verified against the hostname when connecting using the <code class="docutils literal notranslate"><span class="pre">wss://</span></code> protocol. You can pass the optional <code class="docutils literal notranslate"><span class="pre">tls_client_options</span></code> parameter to customize the trusted certification authorities, or disable the common name verification. See <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client"><span class="std std-ref">TLSOptions.client</span></a> and <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client-unsafe"><span class="std std-ref">TLSOptions.client_unsafe</span></a>.</p>
+<p><strong>Note:</strong> It is recommended to specify the scheme part of the URL, i.e. the <code class="docutils literal notranslate"><span class="pre">url</span></code> should start with either <code class="docutils literal notranslate"><span class="pre">ws://</span></code> or <code class="docutils literal notranslate"><span class="pre">wss://</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketmultiplayerpeer-method-create-server"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_server</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bind_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "*", tls_server_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p>
+<p>Starts a new multiplayer server listening on the given <code class="docutils literal notranslate"><span class="pre">port</span></code>. You can optionally specify a <code class="docutils literal notranslate"><span class="pre">bind_address</span></code>, and provide valid <code class="docutils literal notranslate"><span class="pre">tls_server_options</span></code> to use TLS. See <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-server"><span class="std std-ref">TLSOptions.server</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketmultiplayerpeer-method-get-peer"><a class="reference internal" href="class_websocketpeer.html#class-websocketpeer"><span class="std std-ref">WebSocketPeer</span></a> <strong>get_peer</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer"><span class="std std-ref">WebSocketPeer</span></a> associated to the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketmultiplayerpeer-method-get-peer-address"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_peer_address</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the IP address of the given peer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketmultiplayerpeer-method-get-peer-port"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_peer_port</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the remote port of the given peer.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_webrtcpeerconnectionextension.html" rel="prev" title="WebRTCPeerConnectionExtension"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_websocketpeer.html" rel="next" title="WebSocketPeer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

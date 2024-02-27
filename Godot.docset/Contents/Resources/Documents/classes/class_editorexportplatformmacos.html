@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorExportPlatformMacOS" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorexportplatformmacos.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for macOS. Tutorials: Exporting for macOS, Running Godot apps on macOS. Properties:,, String, application/additional_plist_content,, Stri..." property="og:description"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for macOS. Tutorials: Exporting for macOS, Running Godot apps on macOS. Properties:,, String, application/additional_plist_content,, Stri..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorExportPlatformMacOS — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformmacos.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorexportplatformmacos.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorexportplatformmacos.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorexportplatformmacos.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorexportplatformmacos.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorexportplatformmacos.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorexportplatformmacos.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorexportplatformmacos.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorexportplatformmacos.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorexportplatformmacos.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorexportplatformmacos.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorexportplatformmacos.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorexportplatformmacos.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorexportplatformmacos.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformmacos.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformmacos.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorexportplatformpc.html" rel="next" title="EditorExportPlatformPC"/>
+<link href="class_editorexportplatformlinuxbsd.html" rel="prev" title="EditorExportPlatformLinuxBSD"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorexportplatformmacos" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorExportPlatformMacOS</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorexportplatformmacos">
+<span id="class-editorexportplatformmacos"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformMacOS¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformMacOS¶"></a>EditorExportPlatformMacOS<a class="headerlink" href="#editorexportplatformmacos" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_editorexportplatform.html#class-editorexportplatform"><span class="std std-ref">EditorExportPlatform</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Exporter for macOS.</p>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/export/exporting_for_macos.html"><span class="doc">Exporting for macOS</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/export/running_on_macos.html"><span class="doc">Running Godot apps on macOS</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-additional-plist-content"><span class="std std-ref">application/additional_plist_content</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-app-category"><span class="std std-ref">application/app_category</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-bundle-identifier"><span class="std std-ref">application/bundle_identifier</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-copyright"><span class="std std-ref">application/copyright</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-copyright-localized"><span class="std std-ref">application/copyright_localized</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-export-angle"><span class="std std-ref">application/export_angle</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-icon"><span class="std std-ref">application/icon</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-icon-interpolation"><span class="std std-ref">application/icon_interpolation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-min-macos-version"><span class="std std-ref">application/min_macos_version</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-short-version"><span class="std std-ref">application/short_version</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-signature"><span class="std std-ref">application/signature</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-application-version"><span class="std std-ref">application/version</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-binary-format-architecture"><span class="std std-ref">binary_format/architecture</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-apple-team-id"><span class="std std-ref">codesign/apple_team_id</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-certificate-file"><span class="std std-ref">codesign/certificate_file</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-certificate-password"><span class="std std-ref">codesign/certificate_password</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-codesign"><span class="std std-ref">codesign/codesign</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-custom-options"><span class="std std-ref">codesign/custom_options</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-address-book"><span class="std std-ref">codesign/entitlements/address_book</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-allow-dyld-environment-variables"><span class="std std-ref">codesign/entitlements/allow_dyld_environment_variables</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-allow-jit-code-execution"><span class="std std-ref">codesign/entitlements/allow_jit_code_execution</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-allow-unsigned-executable-memory"><span class="std std-ref">codesign/entitlements/allow_unsigned_executable_memory</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-device-bluetooth"><span class="std std-ref">codesign/entitlements/app_sandbox/device_bluetooth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-device-usb"><span class="std std-ref">codesign/entitlements/app_sandbox/device_usb</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-enabled"><span class="std std-ref">codesign/entitlements/app_sandbox/enabled</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-downloads"><span class="std std-ref">codesign/entitlements/app_sandbox/files_downloads</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-movies"><span class="std std-ref">codesign/entitlements/app_sandbox/files_movies</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-music"><span class="std std-ref">codesign/entitlements/app_sandbox/files_music</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-pictures"><span class="std std-ref">codesign/entitlements/app_sandbox/files_pictures</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-user-selected"><span class="std std-ref">codesign/entitlements/app_sandbox/files_user_selected</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-helper-executables"><span class="std std-ref">codesign/entitlements/app_sandbox/helper_executables</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-network-client"><span class="std std-ref">codesign/entitlements/app_sandbox/network_client</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-network-server"><span class="std std-ref">codesign/entitlements/app_sandbox/network_server</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-apple-events"><span class="std std-ref">codesign/entitlements/apple_events</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-audio-input"><span class="std std-ref">codesign/entitlements/audio_input</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-calendars"><span class="std std-ref">codesign/entitlements/calendars</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-camera"><span class="std std-ref">codesign/entitlements/camera</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-custom-file"><span class="std std-ref">codesign/entitlements/custom_file</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-debugging"><span class="std std-ref">codesign/entitlements/debugging</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-disable-library-validation"><span class="std std-ref">codesign/entitlements/disable_library_validation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-location"><span class="std std-ref">codesign/entitlements/location</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-entitlements-photos-library"><span class="std std-ref">codesign/entitlements/photos_library</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-identity"><span class="std std-ref">codesign/identity</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-installer-identity"><span class="std std-ref">codesign/installer_identity</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-codesign-provisioning-profile"><span class="std std-ref">codesign/provisioning_profile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-custom-template-debug"><span class="std std-ref">custom_template/debug</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-custom-template-release"><span class="std std-ref">custom_template/release</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-debug-export-console-wrapper"><span class="std std-ref">debug/export_console_wrapper</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-display-high-res"><span class="std std-ref">display/high_res</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-export-distribution-type"><span class="std std-ref">export/distribution_type</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-api-key"><span class="std std-ref">notarization/api_key</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-api-key-id"><span class="std std-ref">notarization/api_key_id</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-api-uuid"><span class="std std-ref">notarization/api_uuid</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-apple-id-name"><span class="std std-ref">notarization/apple_id_name</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-apple-id-password"><span class="std std-ref">notarization/apple_id_password</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-notarization-notarization"><span class="std std-ref">notarization/notarization</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-address-book-usage-description"><span class="std std-ref">privacy/address_book_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-address-book-usage-description-localized"><span class="std std-ref">privacy/address_book_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-calendar-usage-description"><span class="std std-ref">privacy/calendar_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-calendar-usage-description-localized"><span class="std std-ref">privacy/calendar_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-camera-usage-description"><span class="std std-ref">privacy/camera_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-camera-usage-description-localized"><span class="std std-ref">privacy/camera_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-desktop-folder-usage-description"><span class="std std-ref">privacy/desktop_folder_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-desktop-folder-usage-description-localized"><span class="std std-ref">privacy/desktop_folder_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-documents-folder-usage-description"><span class="std std-ref">privacy/documents_folder_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-documents-folder-usage-description-localized"><span class="std std-ref">privacy/documents_folder_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-downloads-folder-usage-description"><span class="std std-ref">privacy/downloads_folder_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-downloads-folder-usage-description-localized"><span class="std std-ref">privacy/downloads_folder_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-location-usage-description"><span class="std std-ref">privacy/location_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-location-usage-description-localized"><span class="std std-ref">privacy/location_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-microphone-usage-description"><span class="std std-ref">privacy/microphone_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-microphone-usage-description-localized"><span class="std std-ref">privacy/microphone_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-network-volumes-usage-description"><span class="std std-ref">privacy/network_volumes_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-network-volumes-usage-description-localized"><span class="std std-ref">privacy/network_volumes_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-photos-library-usage-description"><span class="std std-ref">privacy/photos_library_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-photos-library-usage-description-localized"><span class="std std-ref">privacy/photos_library_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-removable-volumes-usage-description"><span class="std std-ref">privacy/removable_volumes_usage_description</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-removable-volumes-usage-description-localized"><span class="std std-ref">privacy/removable_volumes_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-cleanup-script"><span class="std std-ref">ssh_remote_deploy/cleanup_script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-enabled"><span class="std std-ref">ssh_remote_deploy/enabled</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-extra-args-scp"><span class="std std-ref">ssh_remote_deploy/extra_args_scp</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-extra-args-ssh"><span class="std std-ref">ssh_remote_deploy/extra_args_ssh</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-host"><span class="std std-ref">ssh_remote_deploy/host</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-port"><span class="std std-ref">ssh_remote_deploy/port</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-ssh-remote-deploy-run-script"><span class="std std-ref">ssh_remote_deploy/run_script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-platform-build"><span class="std std-ref">xcode/platform_build</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-sdk-build"><span class="std std-ref">xcode/sdk_build</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-sdk-name"><span class="std std-ref">xcode/sdk_name</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-sdk-version"><span class="std std-ref">xcode/sdk_version</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-xcode-build"><span class="std std-ref">xcode/xcode_build</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformmacos-property-xcode-xcode-version"><span class="std std-ref">xcode/xcode_version</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-additional-plist-content"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/additional_plist_content</strong></p>
+<p>Additional data added to the root <code class="docutils literal notranslate"><span class="pre">&lt;dict&gt;</span></code> section of the <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/information_property_list">Info.plist</a> file. The value should be an XML section with pairs of key-value elements, e.g.:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">key_name</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">value</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-app-category"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/app_category</strong></p>
+<p>Application category for the App Store.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-bundle-identifier"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/bundle_identifier</strong></p>
+<p>Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (<code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code>), hyphens (<code class="docutils literal notranslate"><span class="pre">-</span></code>), and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-copyright"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/copyright</strong></p>
+<p>Copyright notice for the bundle visible to the user (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-copyright-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>application/copyright_localized</strong></p>
+<p>Copyright notice for the bundle visible to the user (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-export-angle"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/export_angle</strong></p>
+<p>If set to <code class="docutils literal notranslate"><span class="pre">1</span></code>, ANGLE libraries are exported with the exported application. If set to <code class="docutils literal notranslate"><span class="pre">0</span></code>, ANGLE libraries are exported only if <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-rendering-gl-compatibility-driver"><span class="std std-ref">ProjectSettings.rendering/gl_compatibility/driver</span></a> is set to <code class="docutils literal notranslate"><span class="pre">"opengl3_angle"</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-icon"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/icon</strong></p>
+<p>Application icon file. If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-macos-native-icon"><span class="std std-ref">ProjectSettings.application/config/macos_native_icon</span></a>, and then to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-icon-interpolation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/icon_interpolation</strong></p>
+<p>Interpolation method used to resize application icon.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-min-macos-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/min_macos_version</strong></p>
+<p>Minimum version of macOS required for this application to run in the <code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> or <code class="docutils literal notranslate"><span class="pre">major.minor</span></code> format, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-short-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/short_version</strong></p>
+<p>Application version visible to the user, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>). Falls back to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-version"><span class="std std-ref">ProjectSettings.application/config/version</span></a> if left empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-signature"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/signature</strong></p>
+<p>A four-character creator code that is specific to the bundle. Optional.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-application-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/version</strong></p>
+<p>Machine-readable application version, in the <code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> format, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>). This must be incremented on every new release pushed to the App Store.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-binary-format-architecture"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>binary_format/architecture</strong></p>
+<p>Application executable architecture.</p>
+<p>Supported architectures: <code class="docutils literal notranslate"><span class="pre">x86_64</span></code>, <code class="docutils literal notranslate"><span class="pre">arm64</span></code>, and <code class="docutils literal notranslate"><span class="pre">universal</span></code> (<code class="docutils literal notranslate"><span class="pre">x86_64</span> <span class="pre">+</span> <span class="pre">arm64</span></code>).</p>
+<p>Official export templates include <code class="docutils literal notranslate"><span class="pre">universal</span></code> binaries only.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-apple-team-id"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/apple_team_id</strong></p>
+<p>Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See <a class="reference external" href="https://developer.apple.com/help/account/manage-your-team/locate-your-team-id">Locate your Team ID</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-certificate-file"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/certificate_file</strong></p>
+<p>PKCS #12 certificate file used to sign <code class="docutils literal notranslate"><span class="pre">.app</span></code> bundle.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_CODESIGN_CERTIFICATE_FILE</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-certificate-password"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/certificate_password</strong></p>
+<p>Password for the certificate file used to sign <code class="docutils literal notranslate"><span class="pre">.app</span></code> bundle.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-codesign"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/codesign</strong></p>
+<p>Tool to use for code signing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-custom-options"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>codesign/custom_options</strong></p>
+<p>Array of the additional command line arguments passed to the code signing tool.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-address-book"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/address_book</strong></p>
+<p>Enable to allow access to contacts in the user's address book, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-address-book-usage-description"><span class="std std-ref">privacy/address_book_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook">com.apple.security.personal-information.addressbook</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-allow-dyld-environment-variables"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/allow_dyld_environment_variables</strong></p>
+<p>Allows app to use dynamic linker environment variables to inject code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables">com.apple.security.cs.allow-dyld-environment-variables</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-allow-jit-code-execution"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/allow_jit_code_execution</strong></p>
+<p>Allows creating writable and executable memory for JIT code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit">com.apple.security.cs.allow-jit</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-allow-unsigned-executable-memory"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/allow_unsigned_executable_memory</strong></p>
+<p>Allows creating writable and executable memory without JIT restrictions. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory">com.apple.security.cs.allow-unsigned-executable-memory</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-device-bluetooth"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/app_sandbox/device_bluetooth</strong></p>
+<p>Enable to allow app to interact with Bluetooth devices. This entitlement is required to use wireless controllers. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth">com.apple.security.device.bluetooth</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-device-usb"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/app_sandbox/device_usb</strong></p>
+<p>Enable to allow app to interact with USB devices. This entitlement is required to use wired controllers. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb">com.apple.security.device.usb</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/app_sandbox/enabled</strong></p>
+<p>Enables App Sandbox. The App Sandbox restricts access to user data, networking, and devices. Sandboxed apps can't access most of the file system, can't use custom file dialogs and execute binaries outside the .app bundle. See <a class="reference external" href="https://developer.apple.com/documentation/security/app_sandbox">App Sandbox</a>.</p>
+<p><strong>Note:</strong> To distribute an app through the App Store, you must enable the App Sandbox.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-downloads"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/entitlements/app_sandbox/files_downloads</strong></p>
+<p>Allows read or write access to the user's "Downloads" folder. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_downloads_read-write">com.apple.security.files.downloads.read-write</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-movies"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/entitlements/app_sandbox/files_movies</strong></p>
+<p>Allows read or write access to the user's "Movies" folder. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_movies_read-write">com.apple.security.files.movies.read-write</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-music"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/entitlements/app_sandbox/files_music</strong></p>
+<p>Allows read or write access to the user's "Music" folder. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write">com.apple.security.files.music.read-write</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-pictures"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/entitlements/app_sandbox/files_pictures</strong></p>
+<p>Allows read or write access to the user's "Pictures" folder. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_pictures_read-write">com.apple.security.files.pictures.read-write</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-files-user-selected"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>codesign/entitlements/app_sandbox/files_user_selected</strong></p>
+<p>Allows read or write access to the locations the user has selected using a native file dialog. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_user-selected_read-write">com.apple.security.files.user-selected.read-write</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-helper-executables"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>codesign/entitlements/app_sandbox/helper_executables</strong></p>
+<p>List of helper executables to embedded to the app bundle. Sandboxed app are limited to execute only these executable. See <a class="reference external" href="https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app">Embedding a command-line tool in a sandboxed app</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-network-client"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/app_sandbox/network_client</strong></p>
+<p>Enable to allow app to establish outgoing network connections. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_client">com.apple.security.network.client</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-app-sandbox-network-server"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/app_sandbox/network_server</strong></p>
+<p>Enable to allow app to listen for incoming network connections. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_server">com.apple.security.network.server</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-apple-events"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/apple_events</strong></p>
+<p>Enable to allow app to send Apple events to other apps. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events">com.apple.security.automation.apple-events</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-audio-input"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/audio_input</strong></p>
+<p>Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-microphone-usage-description"><span class="std std-ref">privacy/microphone_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input">com.apple.security.device.audio-input</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-calendars"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/calendars</strong></p>
+<p>Enable to allow access to the user's calendar, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-calendar-usage-description"><span class="std std-ref">privacy/calendar_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars">com.apple.security.personal-information.calendars</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-camera"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/camera</strong></p>
+<p>Enable if you need to use the camera, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-camera-usage-description"><span class="std std-ref">privacy/camera_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera">com.apple.security.device.camera</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-custom-file"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/entitlements/custom_file</strong></p>
+<p>Custom entitlements <code class="docutils literal notranslate"><span class="pre">.plist</span></code> file, if specified the rest of entitlements in the export config are ignored.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-debugging"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/debugging</strong></p>
+<p>You can temporarily enable this entitlement to use native debugger (GDB, LLDB) with the exported app. This entitlement should be disabled for production export. See <a class="reference external" href="https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app">Embedding a command-line tool in a sandboxed app</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-disable-library-validation"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/disable_library_validation</strong></p>
+<p>Allows app to load arbitrary libraries and frameworks (not signed with the same Team ID as the main executable or by Apple). Enable it if you are using GDExtension add-ons or ad-hoc signing, or want to support user-provided external add-ons. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation">com.apple.security.cs.disable-library-validation</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-location"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/location</strong></p>
+<p>Enable if you need to use location information from Location Services, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-location-usage-description"><span class="std std-ref">privacy/location_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location">com.apple.security.personal-information.location</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-entitlements-photos-library"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>codesign/entitlements/photos_library</strong></p>
+<p>Enable to allow access to the user's Photos library, if it's enabled you should also provide usage message in the <a class="reference internal" href="#class-editorexportplatformmacos-property-privacy-photos-library-usage-description"><span class="std std-ref">privacy/photos_library_usage_description</span></a> option. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library">com.apple.security.personal-information.photos-library</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-identity"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/identity</strong></p>
+<p>The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign <code class="docutils literal notranslate"><span class="pre">.app</span></code> bundle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-installer-identity"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/installer_identity</strong></p>
+<p>The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign <code class="docutils literal notranslate"><span class="pre">.pkg</span></code> installer package for App Store distribution, use <code class="docutils literal notranslate"><span class="pre">3rd</span> <span class="pre">Party</span> <span class="pre">Mac</span> <span class="pre">Developer</span> <span class="pre">Installer:</span> <span class="pre">Name.</span></code> identity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-codesign-provisioning-profile"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>codesign/provisioning_profile</strong></p>
+<p>Provisioning profile file downloaded from Apple developer account dashboard. See <a class="reference external" href="https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles">Edit, download, or delete provisioning profiles</a>.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-custom-template-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/debug</strong></p>
+<p>Path to the custom export template. If left empty, default template is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-custom-template-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/release</strong></p>
+<p>Path to the custom export template. If left empty, default template is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-debug-export-console-wrapper"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>debug/export_console_wrapper</strong></p>
+<p>If enabled, a wrapper that can be used to run the application with console output is created alongside the exported application.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-display-high-res"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>display/high_res</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the application is rendered at native display resolution, otherwise it is always rendered at loDPI resolution and upscaled by OS when required.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-export-distribution-type"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>export/distribution_type</strong></p>
+<p>Application distribution target.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-api-key"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>notarization/api_key</strong></p>
+<p>Apple App Store Connect API issuer key file.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_NOTARIZATION_API_KEY</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-api-key-id"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>notarization/api_key_id</strong></p>
+<p>Apple App Store Connect API issuer key ID.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_NOTARIZATION_API_KEY_ID</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-api-uuid"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>notarization/api_uuid</strong></p>
+<p>Apple App Store Connect API issuer UUID.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_NOTARIZATION_API_UUID</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-apple-id-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>notarization/apple_id_name</strong></p>
+<p>Apple ID account name (email address).</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-apple-id-password"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>notarization/apple_id_password</strong></p>
+<p>Apple ID app-specific password.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-notarization-notarization"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>notarization/notarization</strong></p>
+<p>Tool to use for notarization.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-address-book-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/address_book_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's contacts (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-address-book-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/address_book_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's contacts (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-calendar-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/calendar_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's calendar data (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-calendar-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/calendar_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's calendar data (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-camera-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/camera_usage_description</strong></p>
+<p>A message displayed when requesting access to the device's camera (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-camera-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/camera_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the device's camera (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-desktop-folder-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/desktop_folder_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's "Desktop" folder (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-desktop-folder-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/desktop_folder_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's "Desktop" folder (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-documents-folder-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/documents_folder_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's "Documents" folder (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-documents-folder-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/documents_folder_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's "Documents" folder (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-downloads-folder-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/downloads_folder_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's "Downloads" folder (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-downloads-folder-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/downloads_folder_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's "Downloads" folder (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-location-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/location_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's location information (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-location-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/location_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's location information (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-microphone-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/microphone_usage_description</strong></p>
+<p>A message displayed when requesting access to the device's microphone (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-microphone-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/microphone_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the device's microphone (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-network-volumes-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/network_volumes_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's network drives (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-network-volumes-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/network_volumes_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's network drives (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-photos-library-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/photos_library_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's photo library (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-photos-library-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/photos_library_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's photo library (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-removable-volumes-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/removable_volumes_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's removable drives (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-privacy-removable-volumes-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/removable_volumes_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's removable drives (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-cleanup-script"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/cleanup_script</strong></p>
+<p>Script code to execute on the remote host when app is finished.</p>
+<p>The following variables can be used in the script:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{temp_dir}</span></code> - Path of temporary folder on the remote, used to upload app and scripts to.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{archive_name}</span></code> - Name of the ZIP containing uploaded application.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{exe_name}</span></code> - Name of application executable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{cmd_args}</span></code> - Array of the command line argument for the application.</p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>ssh_remote_deploy/enabled</strong></p>
+<p>Enables remote deploy using SSH/SCP.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-extra-args-scp"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/extra_args_scp</strong></p>
+<p>Array of the additional command line arguments passed to the SCP.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-extra-args-ssh"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/extra_args_ssh</strong></p>
+<p>Array of the additional command line arguments passed to the SSH.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-host"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/host</strong></p>
+<p>Remote host SSH user name and address, in <code class="docutils literal notranslate"><span class="pre">user@address</span></code> format.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-port"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/port</strong></p>
+<p>Remote host SSH port number.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-ssh-remote-deploy-run-script"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ssh_remote_deploy/run_script</strong></p>
+<p>Script code to execute on the remote host when running the app.</p>
+<p>The following variables can be used in the script:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{temp_dir}</span></code> - Path of temporary folder on the remote, used to upload app and scripts to.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{archive_name}</span></code> - Name of the ZIP containing uploaded application.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{exe_name}</span></code> - Name of application executable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{cmd_args}</span></code> - Array of the command line argument for the application.</p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-platform-build"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/platform_build</strong></p>
+<p>macOS build number used to build application executable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-sdk-build"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/sdk_build</strong></p>
+<p>macOS SDK build number used to build application executable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-sdk-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/sdk_name</strong></p>
+<p>macOS SDK name used to build application executable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-sdk-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/sdk_version</strong></p>
+<p>macOS SDK version used to build application executable in the <code class="docutils literal notranslate"><span class="pre">major.minor</span></code> format.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-xcode-build"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/xcode_build</strong></p>
+<p>Xcode build number used to build application executable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformmacos-property-xcode-xcode-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>xcode/xcode_version</strong></p>
+<p>Xcode version used to build application executable.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorexportplatformlinuxbsd.html" rel="prev" title="EditorExportPlatformLinuxBSD"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorexportplatformpc.html" rel="next" title="EditorExportPlatformPC">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

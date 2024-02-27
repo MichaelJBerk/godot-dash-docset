@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="NavigationMeshGenerator" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_navigationmeshgenerator.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Deprecated: This class may be changed or removed in future versions. Inherits: Object Helper class for creating and clearing navigation meshes. Description: This class is responsible for creating a..." property="og:description"/>
+<meta content="Deprecated: This class may be changed or removed in future versions. Inherits: Object Helper class for creating and clearing navigation meshes. Description: This class is responsible for creating a..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) NavigationMeshGenerator — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationmeshgenerator.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_navigationmeshgenerator.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_navigationmeshgenerator.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_navigationmeshgenerator.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_navigationmeshgenerator.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_navigationmeshgenerator.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_navigationmeshgenerator.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_navigationmeshgenerator.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_navigationmeshgenerator.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_navigationmeshgenerator.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_navigationmeshgenerator.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_navigationmeshgenerator.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_navigationmeshgenerator.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_navigationmeshgenerator.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationmeshgenerator.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationmeshgenerator.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_navigationpathqueryparameters2d.html" rel="next" title="NavigationPathQueryParameters2D"/>
+<link href="class_mutex.html" rel="prev" title="Mutex"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_navigationmeshgenerator" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">NavigationMeshGenerator</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="navigationmeshgenerator">
+<span id="class-navigationmeshgenerator"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/NavigationMeshGenerator¶"></a>NavigationMeshGenerator<a class="headerlink" href="#navigationmeshgenerator" title="Permalink to this headline">¶</a></h1>
+<p><strong>Deprecated:</strong> This class may be changed or removed in future versions.</p>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Helper class for creating and clearing navigation meshes.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class is responsible for creating and clearing 3D navigation meshes used as <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a> resources inside <a class="reference internal" href="class_navigationregion3d.html#class-navigationregion3d"><span class="std std-ref">NavigationRegion3D</span></a>. The <strong>NavigationMeshGenerator</strong> has very limited to no use for 2D as the navigation mesh baking process expects 3D node types and 3D source geometry to parse.</p>
+<p>The entire navigation mesh baking is best done in a separate thread as the voxelization, collision tests and mesh optimization steps involved are very performance and time hungry operations.</p>
+<p>Navigation mesh baking happens in multiple steps and the result depends on 3D source geometry and properties of the <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a> resource. In the first step, starting from a root node and depending on <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a> properties all valid 3D source geometry nodes are collected from the <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a>. Second, all collected nodes are parsed for their relevant 3D geometry data and a combined 3D mesh is build. Due to the many different types of parsable objects, from normal <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a>s to <a class="reference internal" href="class_csgshape3d.html#class-csgshape3d"><span class="std std-ref">CSGShape3D</span></a>s or various <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a>s, some operations to collect geometry data can trigger <a class="reference internal" href="class_renderingserver.html#class-renderingserver"><span class="std std-ref">RenderingServer</span></a> and <a class="reference internal" href="class_physicsserver3d.html#class-physicsserver3d"><span class="std std-ref">PhysicsServer3D</span></a> synchronizations. Server synchronization can have a negative effect on baking time or framerate as it often involves <a class="reference internal" href="class_mutex.html#class-mutex"><span class="std std-ref">Mutex</span></a> locking for thread security. Many parsable objects and the continuous synchronization with other threaded Servers can increase the baking time significantly. On the other hand only a few but very large and complex objects will take some time to prepare for the Servers which can noticeably stall the next frame render. As a general rule the total number of parsable objects and their individual size and complexity should be balanced to avoid framerate issues or very long baking times. The combined mesh is then passed to the Recast Navigation Object to test the source geometry for walkable terrain suitable to <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a> agent properties by creating a voxel world around the meshes bounding area.</p>
+<p>The finalized navigation mesh is then returned and stored inside the <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a> for use as a resource inside <a class="reference internal" href="class_navigationregion3d.html#class-navigationregion3d"><span class="std std-ref">NavigationRegion3D</span></a> nodes.</p>
+<p><strong>Note:</strong> Using meshes to not only define walkable surfaces but also obstruct navigation baking does not always work. The navigation baking has no concept of what is a geometry "inside" when dealing with mesh source geometry and this is intentional. Depending on current baking parameters, as soon as the obstructing mesh is large enough to fit a navigation mesh area inside, the baking will generate navigation mesh areas that are inside the obstructing source geometry mesh.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/navigation/navigation_using_navigationmeshes.html"><span class="doc">Using NavigationMeshes</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationmeshgenerator-method-bake"><span class="std std-ref">bake</span></a>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, root_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationmeshgenerator-method-bake-from-source-geometry-data"><span class="std std-ref">bake_from_source_geometry_data</span></a>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, source_geometry_data: <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a>, callback: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> = Callable())</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationmeshgenerator-method-clear"><span class="std std-ref">clear</span></a>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationmeshgenerator-method-parse-source-geometry-data"><span class="std std-ref">parse_source_geometry_data</span></a>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, source_geometry_data: <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a>, root_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, callback: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> = Callable())</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-navigationmeshgenerator-method-bake"><abbr title="No return value.">void</abbr> <strong>bake</strong>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, root_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p><strong>Deprecated:</strong> This method is deprecated due to core threading changes. To upgrade existing code, first create a <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a> resource. Use this resource with <a class="reference internal" href="#class-navigationmeshgenerator-method-parse-source-geometry-data"><span class="std std-ref">parse_source_geometry_data</span></a> to parse the <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> for nodes that should contribute to the navigation mesh baking. The <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> parsing needs to happen on the main thread. After the parsing is finished use the resource with <a class="reference internal" href="#class-navigationmeshgenerator-method-bake-from-source-geometry-data"><span class="std std-ref">bake_from_source_geometry_data</span></a> to bake a navigation mesh.</p>
+<p>Bakes the <code class="docutils literal notranslate"><span class="pre">navigation_mesh</span></code> with source geometry collected starting from the <code class="docutils literal notranslate"><span class="pre">root_node</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationmeshgenerator-method-bake-from-source-geometry-data"><abbr title="No return value.">void</abbr> <strong>bake_from_source_geometry_data</strong>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, source_geometry_data: <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a>, callback: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> = Callable())</p>
+<p>Bakes the provided <code class="docutils literal notranslate"><span class="pre">navigation_mesh</span></code> with the data from the provided <code class="docutils literal notranslate"><span class="pre">source_geometry_data</span></code>. After the process is finished the optional <code class="docutils literal notranslate"><span class="pre">callback</span></code> will be called.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationmeshgenerator-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>)</p>
+<p>Removes all polygons and vertices from the provided <code class="docutils literal notranslate"><span class="pre">navigation_mesh</span></code> resource.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationmeshgenerator-method-parse-source-geometry-data"><abbr title="No return value.">void</abbr> <strong>parse_source_geometry_data</strong>(navigation_mesh: <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, source_geometry_data: <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a>, root_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, callback: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a> = Callable())</p>
+<p>Parses the <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> for source geometry according to the properties of <code class="docutils literal notranslate"><span class="pre">navigation_mesh</span></code>. Updates the provided <code class="docutils literal notranslate"><span class="pre">source_geometry_data</span></code> resource with the resulting data. The resource can then be used to bake a navigation mesh with <a class="reference internal" href="#class-navigationmeshgenerator-method-bake-from-source-geometry-data"><span class="std std-ref">bake_from_source_geometry_data</span></a>. After the process is finished the optional <code class="docutils literal notranslate"><span class="pre">callback</span></code> will be called.</p>
+<p><strong>Note:</strong> This function needs to run on the main thread or with a deferred call as the SceneTree is not thread-safe.</p>
+<p><strong>Performance:</strong> While convenient, reading data arrays from <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> resources can affect the frame rate negatively. The data needs to be received from the GPU, stalling the <a class="reference internal" href="class_renderingserver.html#class-renderingserver"><span class="std std-ref">RenderingServer</span></a> in the process. For performance prefer the use of e.g. collision shapes or creating the data arrays entirely in code.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_mutex.html" rel="prev" title="Mutex"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_navigationpathqueryparameters2d.html" rel="next" title="NavigationPathQueryParameters2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

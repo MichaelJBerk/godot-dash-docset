@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="RichTextLabel" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_richtextlabel.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control for displaying text that can contain different font styles, images, and basic formatting. Description: A control for displaying text that can c..." property="og:description"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control for displaying text that can contain different font styles, images, and basic formatting. Description: A control for displaying text that can c..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) RichTextLabel — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_richtextlabel.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_richtextlabel.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_richtextlabel.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_richtextlabel.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_richtextlabel.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_richtextlabel.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_richtextlabel.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_richtextlabel.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_richtextlabel.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_richtextlabel.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_richtextlabel.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_richtextlabel.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_richtextlabel.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_rigidbody2d.html" rel="next" title="RigidBody2D"/>
+<link href="class_resourcepreloader.html" rel="prev" title="ResourcePreloader"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_richtextlabel" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">RichTextLabel</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="richtextlabel">
+<span id="class-richtextlabel"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/RichTextLabel¶"></a>RichTextLabel<a class="headerlink" href="#richtextlabel" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A control for displaying text that can contain different font styles, images, and basic formatting.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A control for displaying text that can contain custom fonts, images, and basic formatting. <strong>RichTextLabel</strong> manages these as an internal tag stack. It also adapts itself to given width/heights.</p>
+<p><strong>Note:</strong> Assignments to <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a> clear the tag stack and reconstruct it from the property's contents. Any edits made to <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a> will erase previous edits made from other manual sources such as <a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a> and the <code class="docutils literal notranslate"><span class="pre">push_*</span></code> / <a class="reference internal" href="#class-richtextlabel-method-pop"><span class="std std-ref">pop</span></a> methods.</p>
+<p><strong>Note:</strong> RichTextLabel doesn't support entangled BBCode tags. For example, instead of using <code class="docutils literal notranslate"><span class="pre">[b]bold[i]bold</span> <span class="pre">italic[/b]italic[/i]</span></code>, use <code class="docutils literal notranslate"><span class="pre">[b]bold[i]bold</span> <span class="pre">italic[/i][/b][i]italic[/i]</span></code>.</p>
+<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">push_*/pop_*</span></code> functions won't affect BBCode.</p>
+<p><strong>Note:</strong> Unlike <a class="reference internal" href="class_label.html#class-label"><span class="std std-ref">Label</span></a>, <strong>RichTextLabel</strong> doesn't have a <em>property</em> to horizontally align text to the center. Instead, enable <a class="reference internal" href="#class-richtextlabel-property-bbcode-enabled"><span class="std std-ref">bbcode_enabled</span></a> and surround the text in a <code class="docutils literal notranslate"><span class="pre">[center]</span></code> tag as follows: <code class="docutils literal notranslate"><span class="pre">[center]Example[/center]</span></code>. There is currently no built-in way to vertically align text either, but this can be emulated by relying on anchors/containers and the <a class="reference internal" href="#class-richtextlabel-property-fit-content"><span class="std std-ref">fit_content</span></a> property.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/ui/bbcode_in_richtextlabel.html"><span class="doc">BBCode in RichTextLabel</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/132">GUI Rich Text/BBcode Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/677">OS Test Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-autowrap-mode"><span class="std std-ref">autowrap_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-bbcode-enabled"><span class="std std-ref">bbcode_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p>clip_contents</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-clip-contents"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-context-menu-enabled"><span class="std std-ref">context_menu_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-custom-effects"><span class="std std-ref">custom_effects</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-deselect-on-focus-loss-enabled"><span class="std std-ref">deselect_on_focus_loss_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-drag-and-drop-selection-enabled"><span class="std std-ref">drag_and_drop_selection_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-fit-content"><span class="std std-ref">fit_content</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-hint-underlined"><span class="std std-ref">hint_underlined</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-language"><span class="std std-ref">language</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-meta-underlined"><span class="std std-ref">meta_underlined</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-progress-bar-delay"><span class="std std-ref">progress_bar_delay</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-scroll-active"><span class="std std-ref">scroll_active</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-scroll-following"><span class="std std-ref">scroll_following</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-selection-enabled"><span class="std std-ref">selection_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-shortcut-keys-enabled"><span class="std std-ref">shortcut_keys_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-structured-text-bidi-override"><span class="std std-ref">structured_text_bidi_override</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-structured-text-bidi-override-options"><span class="std std-ref">structured_text_bidi_override_options</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-tab-size"><span class="std std-ref">tab_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-text-direction"><span class="std std-ref">text_direction</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-visible-characters"><span class="std std-ref">visible_characters</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-visible-characters-behavior"><span class="std std-ref">visible_characters_behavior</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-add-image"><span class="std std-ref">add_image</span></a>(image: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>, width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 5, region: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null, pad: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, tooltip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", size_in_percent: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-add-text"><span class="std std-ref">add_text</span></a>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a>(bbcode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-deselect"><span class="std std-ref">deselect</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-character-line"><span class="std std-ref">get_character_line</span></a>(character: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-character-paragraph"><span class="std std-ref">get_character_paragraph</span></a>(character: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-content-height"><span class="std std-ref">get_content_height</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-content-width"><span class="std std-ref">get_content_width</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-line-count"><span class="std std-ref">get_line_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-line-offset"><span class="std std-ref">get_line_offset</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_popupmenu.html#class-popupmenu"><span class="std std-ref">PopupMenu</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-menu"><span class="std std-ref">get_menu</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-paragraph-count"><span class="std std-ref">get_paragraph_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-paragraph-offset"><span class="std std-ref">get_paragraph_offset</span></a>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-parsed-text"><span class="std std-ref">get_parsed_text</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-selected-text"><span class="std std-ref">get_selected_text</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-selection-from"><span class="std std-ref">get_selection_from</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-selection-to"><span class="std std-ref">get_selection_to</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-total-character-count"><span class="std std-ref">get_total_character_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vscrollbar.html#class-vscrollbar"><span class="std std-ref">VScrollBar</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-v-scroll-bar"><span class="std std-ref">get_v_scroll_bar</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-visible-line-count"><span class="std std-ref">get_visible_line_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-get-visible-paragraph-count"><span class="std std-ref">get_visible_paragraph_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-install-effect"><span class="std std-ref">install_effect</span></a>(effect: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-is-menu-visible"><span class="std std-ref">is_menu_visible</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-menu-option"><span class="std std-ref">menu_option</span></a>(option: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-newline"><span class="std std-ref">newline</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-parse-bbcode"><span class="std std-ref">parse_bbcode</span></a>(bbcode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-parse-expressions-for-values"><span class="std std-ref">parse_expressions_for_values</span></a>(expressions: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-pop"><span class="std std-ref">pop</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-pop-all"><span class="std std-ref">pop_all</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-pop-context"><span class="std std-ref">pop_context</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-bgcolor"><span class="std std-ref">push_bgcolor</span></a>(bgcolor: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-bold"><span class="std std-ref">push_bold</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-bold-italics"><span class="std std-ref">push_bold_italics</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-cell"><span class="std std-ref">push_cell</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-color"><span class="std std-ref">push_color</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-context"><span class="std std-ref">push_context</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-customfx"><span class="std std-ref">push_customfx</span></a>(effect: <a class="reference internal" href="class_richtexteffect.html#class-richtexteffect"><span class="std std-ref">RichTextEffect</span></a>, env: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-dropcap"><span class="std std-ref">push_dropcap</span></a>(string: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, font: <a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a>, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, dropcap_margins: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), outline_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, outline_color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(0, 0, 0, 0))</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-fgcolor"><span class="std std-ref">push_fgcolor</span></a>(fgcolor: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-font"><span class="std std-ref">push_font</span></a>(font: <a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-font-size"><span class="std std-ref">push_font_size</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-hint"><span class="std std-ref">push_hint</span></a>(description: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-indent"><span class="std std-ref">push_indent</span></a>(level: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-italics"><span class="std std-ref">push_italics</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-language"><span class="std std-ref">push_language</span></a>(language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-list"><span class="std std-ref">push_list</span></a>(level: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, type: <a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a>, capitalize: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, bullet: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "•")</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-meta"><span class="std std-ref">push_meta</span></a>(data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-mono"><span class="std std-ref">push_mono</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-normal"><span class="std std-ref">push_normal</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-outline-color"><span class="std std-ref">push_outline_color</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-outline-size"><span class="std std-ref">push_outline_size</span></a>(outline_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-paragraph"><span class="std std-ref">push_paragraph</span></a>(alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>, base_direction: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> = 0, language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", st_parser: <a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> = 0, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 163, tab_stops: <a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> = PackedFloat32Array())</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-strikethrough"><span class="std std-ref">push_strikethrough</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-table"><span class="std std-ref">push_table</span></a>(columns: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 0, align_to_row: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-push-underline"><span class="std std-ref">push_underline</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-remove-paragraph"><span class="std std-ref">remove_paragraph</span></a>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-scroll-to-line"><span class="std std-ref">scroll_to_line</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-scroll-to-paragraph"><span class="std std-ref">scroll_to_paragraph</span></a>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-scroll-to-selection"><span class="std std-ref">scroll_to_selection</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-select-all"><span class="std std-ref">select_all</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-set-cell-border-color"><span class="std std-ref">set_cell_border_color</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-set-cell-padding"><span class="std std-ref">set_cell_padding</span></a>(padding: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-set-cell-row-background-color"><span class="std std-ref">set_cell_row_background_color</span></a>(odd_row_bg: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>, even_row_bg: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-set-cell-size-override"><span class="std std-ref">set_cell_size_override</span></a>(min_size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, max_size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-set-table-column-expand"><span class="std std-ref">set_table_column_expand</span></a>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, expand: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, ratio: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, mask: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a>], image: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>, width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 5, region: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), pad: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, tooltip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", size_in_percent: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-default-color"><span class="std std-ref">default_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-font-outline-color"><span class="std std-ref">font_outline_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-font-selected-color"><span class="std std-ref">font_selected_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-font-shadow-color"><span class="std std-ref">font_shadow_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-selection-color"><span class="std std-ref">selection_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.1,</span> <span class="pre">0.1,</span> <span class="pre">1,</span> <span class="pre">0.8)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-table-border"><span class="std std-ref">table_border</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-table-even-row-bg"><span class="std std-ref">table_even_row_bg</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-color-table-odd-row-bg"><span class="std std-ref">table_odd_row_bg</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-line-separation"><span class="std std-ref">line_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-shadow-offset-x"><span class="std std-ref">shadow_offset_x</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-shadow-offset-y"><span class="std std-ref">shadow_offset_y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-shadow-outline-size"><span class="std std-ref">shadow_outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-table-h-separation"><span class="std std-ref">table_h_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-table-v-separation"><span class="std std-ref">table_v_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-text-highlight-h-padding"><span class="std std-ref">text_highlight_h_padding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-constant-text-highlight-v-padding"><span class="std std-ref">text_highlight_v_padding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-bold-font"><span class="std std-ref">bold_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-bold-italics-font"><span class="std std-ref">bold_italics_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-italics-font"><span class="std std-ref">italics_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-mono-font"><span class="std std-ref">mono_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-normal-font"><span class="std std-ref">normal_font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-size-bold-font-size"><span class="std std-ref">bold_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-size-bold-italics-font-size"><span class="std std-ref">bold_italics_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-size-italics-font-size"><span class="std std-ref">italics_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-size-mono-font-size"><span class="std std-ref">mono_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-font-size-normal-font-size"><span class="std std-ref">normal_font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-style-focus"><span class="std std-ref">focus</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-richtextlabel-theme-style-normal"><span class="std std-ref">normal</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-richtextlabel-signal-finished"><strong>finished</strong>()</p>
+<p>Triggered when the document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-richtextlabel-signal-meta-clicked"><strong>meta_clicked</strong>(meta: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Triggered when the user clicks on content between meta tags. If the meta is defined in text, e.g. <code class="docutils literal notranslate"><span class="pre">[url={"data"="hi"}]hi[/url]</span></code>, then the parameter for this signal will be a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> type. If a particular type or an object is desired, the <a class="reference internal" href="#class-richtextlabel-method-push-meta"><span class="std std-ref">push_meta</span></a> method must be used to manually insert the data into the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-richtextlabel-signal-meta-hover-ended"><strong>meta_hover_ended</strong>(meta: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Triggers when the mouse exits a meta tag.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-richtextlabel-signal-meta-hover-started"><strong>meta_hover_started</strong>(meta: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Triggers when the mouse enters a meta tag.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-richtextlabel-listtype">enum <strong><a class="dashAnchor" id="enumerations-ListType" name="//apple_ref/cpp/Enum/ListType"></a>ListType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-list-numbers"><a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a> <strong><a class="dashAnchor" id="enumerations-LIST_NUMBERS" name="//apple_ref/cpp/Enum/LIST_NUMBERS"></a>LIST_NUMBERS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Each list item has a number marker.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-list-letters"><a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a> <strong><a class="dashAnchor" id="enumerations-LIST_LETTERS" name="//apple_ref/cpp/Enum/LIST_LETTERS"></a>LIST_LETTERS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Each list item has a letter marker.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-list-roman"><a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a> <strong><a class="dashAnchor" id="enumerations-LIST_ROMAN" name="//apple_ref/cpp/Enum/LIST_ROMAN"></a>LIST_ROMAN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Each list item has a roman number marker.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-list-dots"><a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a> <strong><a class="dashAnchor" id="enumerations-LIST_DOTS" name="//apple_ref/cpp/Enum/LIST_DOTS"></a>LIST_DOTS</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Each list item has a filled circle marker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-richtextlabel-menuitems">enum <strong><a class="dashAnchor" id="enumerations-MenuItems" name="//apple_ref/cpp/Enum/MenuItems"></a>MenuItems</strong>:</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-menu-copy"><a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a> <strong><a class="dashAnchor" id="enumerations-MENU_COPY" name="//apple_ref/cpp/Enum/MENU_COPY"></a>MENU_COPY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Copies the selected text.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-menu-select-all"><a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a> <strong><a class="dashAnchor" id="enumerations-MENU_SELECT_ALL" name="//apple_ref/cpp/Enum/MENU_SELECT_ALL"></a>MENU_SELECT_ALL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Selects the whole <strong><a class="dashAnchor" id="enumerations-RichTextLabel" name="//apple_ref/cpp/Enum/RichTextLabel"></a>RichTextLabel</strong> text.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-menu-max"><a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a> <strong><a class="dashAnchor" id="enumerations-MENU_MAX" name="//apple_ref/cpp/Enum/MENU_MAX"></a>MENU_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-richtextlabel-imageupdatemask">flags <strong><a class="dashAnchor" id="enumerations-ImageUpdateMask" name="//apple_ref/cpp/Enum/ImageUpdateMask"></a>ImageUpdateMask</strong>:</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-texture"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_TEXTURE" name="//apple_ref/cpp/Enum/UPDATE_TEXTURE"></a>UPDATE_TEXTURE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image texture.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-size"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_SIZE" name="//apple_ref/cpp/Enum/UPDATE_SIZE"></a>UPDATE_SIZE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image size.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-color"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_COLOR" name="//apple_ref/cpp/Enum/UPDATE_COLOR"></a>UPDATE_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image color.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-alignment"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_ALIGNMENT" name="//apple_ref/cpp/Enum/UPDATE_ALIGNMENT"></a>UPDATE_ALIGNMENT</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image inline alignment.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-region"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_REGION" name="//apple_ref/cpp/Enum/UPDATE_REGION"></a>UPDATE_REGION</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image texture region.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-pad"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_PAD" name="//apple_ref/cpp/Enum/UPDATE_PAD"></a>UPDATE_PAD</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image padding.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-tooltip"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_TOOLTIP" name="//apple_ref/cpp/Enum/UPDATE_TOOLTIP"></a>UPDATE_TOOLTIP</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image tooltip.</p>
+<p class="classref-enumeration-constant" id="class-richtextlabel-constant-update-width-in-percent"><a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a> <strong><a class="dashAnchor" id="enumerations-UPDATE_WIDTH_IN_PERCENT" name="//apple_ref/cpp/Enum/UPDATE_WIDTH_IN_PERCENT"></a>UPDATE_WIDTH_IN_PERCENT</strong> = <code class="docutils literal notranslate"><span class="pre">128</span></code></p>
+<p>If this bit is set, <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a> changes image width from/to percents.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-richtextlabel-property-autowrap-mode"><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a> <strong>autowrap_mode</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autowrap_mode" name="//apple_ref/cpp/Property/set_autowrap_mode"></a>set_autowrap_mode</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a> <strong><a class="dashAnchor" id="properties-get_autowrap_mode" name="//apple_ref/cpp/Property/get_autowrap_mode"></a>get_autowrap_mode</strong>()</p></li>
+</ul>
+<p>If set to something other than <a class="reference internal" href="class_textserver.html#class-textserver-constant-autowrap-off"><span class="std std-ref">TextServer.AUTOWRAP_OFF</span></a>, the text gets wrapped inside the node's bounding rectangle. To see how each mode behaves, see <a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-bbcode-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>bbcode_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_bbcode" name="//apple_ref/cpp/Property/set_use_bbcode"></a>set_use_bbcode</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_using_bbcode" name="//apple_ref/cpp/Property/is_using_bbcode"></a>is_using_bbcode</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the label uses BBCode formatting.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-context-menu-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>context_menu_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_context_menu_enabled" name="//apple_ref/cpp/Property/set_context_menu_enabled"></a>set_context_menu_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_context_menu_enabled" name="//apple_ref/cpp/Property/is_context_menu_enabled"></a>is_context_menu_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, a right-click displays the context menu.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-custom-effects"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>custom_effects</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_effects" name="//apple_ref/cpp/Property/set_effects"></a>set_effects</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong><a class="dashAnchor" id="properties-get_effects" name="//apple_ref/cpp/Property/get_effects"></a>get_effects</strong>()</p></li>
+</ul>
+<p>The currently installed custom effects. This is an array of <a class="reference internal" href="class_richtexteffect.html#class-richtexteffect"><span class="std std-ref">RichTextEffect</span></a>s.</p>
+<p>To add a custom effect, it's more convenient to use <a class="reference internal" href="#class-richtextlabel-method-install-effect"><span class="std std-ref">install_effect</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-deselect-on-focus-loss-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>deselect_on_focus_loss_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_deselect_on_focus_loss_enabled" name="//apple_ref/cpp/Property/set_deselect_on_focus_loss_enabled"></a>set_deselect_on_focus_loss_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_deselect_on_focus_loss_enabled" name="//apple_ref/cpp/Property/is_deselect_on_focus_loss_enabled"></a>is_deselect_on_focus_loss_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the selected text will be deselected when focus is lost.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-drag-and-drop-selection-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>drag_and_drop_selection_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_drag_and_drop_selection_enabled" name="//apple_ref/cpp/Property/set_drag_and_drop_selection_enabled"></a>set_drag_and_drop_selection_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_drag_and_drop_selection_enabled" name="//apple_ref/cpp/Property/is_drag_and_drop_selection_enabled"></a>is_drag_and_drop_selection_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, allow drag and drop of selected text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-fit-content"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>fit_content</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fit_content" name="//apple_ref/cpp/Property/set_fit_content"></a>set_fit_content</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_fit_content_enabled" name="//apple_ref/cpp/Property/is_fit_content_enabled"></a>is_fit_content_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the label's minimum size will be automatically updated to fit its content, matching the behavior of <a class="reference internal" href="class_label.html#class-label"><span class="std std-ref">Label</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-hint-underlined"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>hint_underlined</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_hint_underline" name="//apple_ref/cpp/Property/set_hint_underline"></a>set_hint_underline</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_hint_underlined" name="//apple_ref/cpp/Property/is_hint_underlined"></a>is_hint_underlined</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the label underlines hint tags such as <code class="docutils literal notranslate"><span class="pre">[hint=description]{text}[/hint]</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-language"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>language</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_language" name="//apple_ref/cpp/Property/set_language"></a>set_language</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_language" name="//apple_ref/cpp/Property/get_language"></a>get_language</strong>()</p></li>
+</ul>
+<p>Language code used for line-breaking and text shaping algorithms, if left empty current locale is used instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-meta-underlined"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>meta_underlined</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_meta_underline" name="//apple_ref/cpp/Property/set_meta_underline"></a>set_meta_underline</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_meta_underlined" name="//apple_ref/cpp/Property/is_meta_underlined"></a>is_meta_underlined</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the label underlines meta tags such as <code class="docutils literal notranslate"><span class="pre">[url]{text}[/url]</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-progress-bar-delay"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>progress_bar_delay</strong> = <code class="docutils literal notranslate"><span class="pre">1000</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_progress_bar_delay" name="//apple_ref/cpp/Property/set_progress_bar_delay"></a>set_progress_bar_delay</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_progress_bar_delay" name="//apple_ref/cpp/Property/get_progress_bar_delay"></a>get_progress_bar_delay</strong>()</p></li>
+</ul>
+<p>The delay after which the loading progress bar is displayed, in milliseconds. Set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to disable progress bar entirely.</p>
+<p><strong>Note:</strong> Progress bar is displayed only if <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-scroll-active"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>scroll_active</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scroll_active" name="//apple_ref/cpp/Property/set_scroll_active"></a>set_scroll_active</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_scroll_active" name="//apple_ref/cpp/Property/is_scroll_active"></a>is_scroll_active</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the scrollbar is visible. Setting this to <code class="docutils literal notranslate"><span class="pre">false</span></code> does not block scrolling completely. See <a class="reference internal" href="#class-richtextlabel-method-scroll-to-line"><span class="std std-ref">scroll_to_line</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-scroll-following"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>scroll_following</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scroll_follow" name="//apple_ref/cpp/Property/set_scroll_follow"></a>set_scroll_follow</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_scroll_following" name="//apple_ref/cpp/Property/is_scroll_following"></a>is_scroll_following</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the window scrolls down to display new content automatically.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-selection-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>selection_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_selection_enabled" name="//apple_ref/cpp/Property/set_selection_enabled"></a>set_selection_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_selection_enabled" name="//apple_ref/cpp/Property/is_selection_enabled"></a>is_selection_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the label allows text selection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-shortcut-keys-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>shortcut_keys_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_shortcut_keys_enabled" name="//apple_ref/cpp/Property/set_shortcut_keys_enabled"></a>set_shortcut_keys_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_shortcut_keys_enabled" name="//apple_ref/cpp/Property/is_shortcut_keys_enabled"></a>is_shortcut_keys_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, shortcut keys for context menu items are enabled, even if the context menu is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-structured-text-bidi-override"><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong>structured_text_bidi_override</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override" name="//apple_ref/cpp/Property/set_structured_text_bidi_override"></a>set_structured_text_bidi_override</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override" name="//apple_ref/cpp/Property/get_structured_text_bidi_override"></a>get_structured_text_bidi_override</strong>()</p></li>
+</ul>
+<p>Set BiDi algorithm override for the structured text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-structured-text-bidi-override-options"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>structured_text_bidi_override_options</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/set_structured_text_bidi_override_options"></a>set_structured_text_bidi_override_options</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/get_structured_text_bidi_override_options"></a>get_structured_text_bidi_override_options</strong>()</p></li>
+</ul>
+<p>Set additional options for BiDi override.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-tab-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>tab_size</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_tab_size" name="//apple_ref/cpp/Property/set_tab_size"></a>set_tab_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_tab_size" name="//apple_ref/cpp/Property/get_tab_size"></a>get_tab_size</strong>()</p></li>
+</ul>
+<p>The number of spaces associated with a single tab length. Does not affect <code class="docutils literal notranslate"><span class="pre">\t</span></code> in text tags, only indent tags.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>text</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text" name="//apple_ref/cpp/Property/set_text"></a>set_text</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_text" name="//apple_ref/cpp/Property/get_text"></a>get_text</strong>()</p></li>
+</ul>
+<p>The label's text in BBCode format. Is not representative of manual modifications to the internal tag stack. Erases changes made by other methods when edited.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-bbcode-enabled"><span class="std std-ref">bbcode_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, it is unadvised to use the <code class="docutils literal notranslate"><span class="pre">+=</span></code> operator with <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a> (e.g. <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">+=</span> <span class="pre">"some</span> <span class="pre">string"</span></code>) as it replaces the whole text and can cause slowdowns. It will also erase all BBCode that was added to stack using <code class="docutils literal notranslate"><span class="pre">push_*</span></code> methods. Use <a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a> for adding text instead, unless you absolutely need to close a tag that was opened in an earlier method call.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-text-direction"><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong>text_direction</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text_direction" name="//apple_ref/cpp/Property/set_text_direction"></a>set_text_direction</strong>(value: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong><a class="dashAnchor" id="properties-get_text_direction" name="//apple_ref/cpp/Property/get_text_direction"></a>get_text_direction</strong>()</p></li>
+</ul>
+<p>Base text writing direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-threaded"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>threaded</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_threaded" name="//apple_ref/cpp/Property/set_threaded"></a>set_threaded</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_threaded" name="//apple_ref/cpp/Property/is_threaded"></a>is_threaded</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, text processing is done in a background thread.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-visible-characters"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>visible_characters</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_characters" name="//apple_ref/cpp/Property/set_visible_characters"></a>set_visible_characters</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_visible_characters" name="//apple_ref/cpp/Property/get_visible_characters"></a>get_visible_characters</strong>()</p></li>
+</ul>
+<p>The number of characters to display. If set to <code class="docutils literal notranslate"><span class="pre">-1</span></code>, all characters are displayed. This can be useful when animating the text appearing in a dialog box.</p>
+<p><strong>Note:</strong> Setting this property updates <a class="reference internal" href="#class-richtextlabel-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a> accordingly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-visible-characters-behavior"><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> <strong>visible_characters_behavior</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_characters_behavior" name="//apple_ref/cpp/Property/set_visible_characters_behavior"></a>set_visible_characters_behavior</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> <strong><a class="dashAnchor" id="properties-get_visible_characters_behavior" name="//apple_ref/cpp/Property/get_visible_characters_behavior"></a>get_visible_characters_behavior</strong>()</p></li>
+</ul>
+<p>Sets the clipping behavior when <a class="reference internal" href="#class-richtextlabel-property-visible-characters"><span class="std std-ref">visible_characters</span></a> or <a class="reference internal" href="#class-richtextlabel-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a> is set. See <a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> for more info.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-richtextlabel-property-visible-ratio"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visible_ratio</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_ratio" name="//apple_ref/cpp/Property/set_visible_ratio"></a>set_visible_ratio</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visible_ratio" name="//apple_ref/cpp/Property/get_visible_ratio"></a>get_visible_ratio</strong>()</p></li>
+</ul>
+<p>The fraction of characters to display, relative to the total number of characters (see <a class="reference internal" href="#class-richtextlabel-method-get-total-character-count"><span class="std std-ref">get_total_character_count</span></a>). If set to <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, all characters are displayed. If set to <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.</p>
+<p><strong>Note:</strong> Setting this property updates <a class="reference internal" href="#class-richtextlabel-property-visible-characters"><span class="std std-ref">visible_characters</span></a> accordingly.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-richtextlabel-method-add-image"><abbr title="No return value.">void</abbr> <strong>add_image</strong>(image: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>, width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 5, region: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null, pad: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, tooltip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", size_in_percent: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Adds an image's opening and closing tags to the tag stack, optionally providing a <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> to resize the image, a <code class="docutils literal notranslate"><span class="pre">color</span></code> to tint the image and a <code class="docutils literal notranslate"><span class="pre">region</span></code> to only use parts of the image.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">width</span></code> or <code class="docutils literal notranslate"><span class="pre">height</span></code> is set to 0, the image size will be adjusted in order to keep the original aspect ratio.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> are not set, but <code class="docutils literal notranslate"><span class="pre">region</span></code> is, the region's rect will be used.</p>
+<p><code class="docutils literal notranslate"><span class="pre">key</span></code> is an optional identifier, that can be used to modify the image via <a class="reference internal" href="#class-richtextlabel-method-update-image"><span class="std std-ref">update_image</span></a>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">pad</span></code> is set, and the image is smaller than the size specified by <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code>, the image padding is added to match the size instead of upscaling.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">size_in_percent</span></code> is set, <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> values are percentages of the control width instead of pixels.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-add-text"><abbr title="No return value.">void</abbr> <strong>add_text</strong>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Adds raw non-BBCode-parsed text to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-append-text"><abbr title="No return value.">void</abbr> <strong>append_text</strong>(bbcode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Parses <code class="docutils literal notranslate"><span class="pre">bbcode</span></code> and adds tags to the tag stack as needed.</p>
+<p><strong>Note:</strong> Using this method, you can't close a tag that was opened in a previous <a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a> call. This is done to improve performance, especially when updating large RichTextLabels since rebuilding the whole BBCode every time would be slower. If you absolutely need to close a tag in a future method call, append the <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a> instead of using <a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clears the tag stack.</p>
+<p><strong>Note:</strong> This method will not modify <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a>, but setting <a class="reference internal" href="#class-richtextlabel-property-text"><span class="std std-ref">text</span></a> to an empty string also clears the stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-deselect"><abbr title="No return value.">void</abbr> <strong>deselect</strong>()</p>
+<p>Clears the current selection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-character-line"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_character_line</strong>(character: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the line number of the character position provided.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-character-paragraph"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_character_paragraph</strong>(character: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the paragraph number of the character position provided.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-content-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_content_height</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the height of the content.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-content-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_content_width</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the width of the content.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-line-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_line_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of lines in the text. Wrapped text is counted as multiple lines.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-line-offset"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_line_offset</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the vertical offset of the line found at the provided index.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-menu"><a class="reference internal" href="class_popupmenu.html#class-popupmenu"><span class="std std-ref">PopupMenu</span></a> <strong>get_menu</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_popupmenu.html#class-popupmenu"><span class="std std-ref">PopupMenu</span></a> of this <strong>RichTextLabel</strong>. By default, this menu is displayed when right-clicking on the <strong>RichTextLabel</strong>.</p>
+<p>You can add custom menu items or remove standard ones. Make sure your IDs don't conflict with the standard ones (see <a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a>). For example:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">menu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_menu</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Remove "Select All" item.</span>
+<span class="w">    </span><span class="n">menu</span><span class="o">.</span><span class="n">remove_item</span><span class="p">(</span><span class="n">MENU_SELECT_ALL</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Add custom items.</span>
+<span class="w">    </span><span class="n">menu</span><span class="o">.</span><span class="n">add_separator</span><span class="p">()</span>
+<span class="w">    </span><span class="n">menu</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="s2">"Duplicate Text"</span><span class="p">,</span><span class="w"> </span><span class="n">MENU_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="c1"># Connect callback.</span>
+<span class="w">    </span><span class="n">menu</span><span class="o">.</span><span class="n">id_pressed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_on_item_pressed</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_on_item_pressed</span><span class="p">(</span><span class="n">id</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">MENU_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">add_text</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">get_parsed_text</span><span class="p">())</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">menu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetMenu</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// Remove "Select All" item.</span>
+<span class="w">    </span><span class="n">menu</span><span class="p">.</span><span class="n">RemoveItem</span><span class="p">(</span><span class="n">RichTextLabel</span><span class="p">.</span><span class="n">MenuItems</span><span class="p">.</span><span class="n">SelectAll</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Add custom items.</span>
+<span class="w">    </span><span class="n">menu</span><span class="p">.</span><span class="n">AddSeparator</span><span class="p">();</span>
+<span class="w">    </span><span class="n">menu</span><span class="p">.</span><span class="n">AddItem</span><span class="p">(</span><span class="s">"Duplicate Text"</span><span class="p">,</span><span class="w"> </span><span class="n">RichTextLabel</span><span class="p">.</span><span class="n">MenuItems</span><span class="p">.</span><span class="n">Max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Add event handler.</span>
+<span class="w">    </span><span class="n">menu</span><span class="p">.</span><span class="n">IdPressed</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">OnItemPressed</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnItemPressed</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">id</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TextEdit</span><span class="p">.</span><span class="n">MenuItems</span><span class="p">.</span><span class="n">Max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">AddText</span><span class="p">(</span><span class="s">"\n"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">GetParsedText</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their <a class="reference internal" href="class_window.html#class-window-property-visible"><span class="std std-ref">Window.visible</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-paragraph-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_paragraph_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of paragraphs (newlines or <code class="docutils literal notranslate"><span class="pre">p</span></code> tags in the tag stack's text tags). Considers wrapped text as one paragraph.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-paragraph-offset"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_paragraph_offset</strong>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the vertical offset of the paragraph found at the provided index.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-parsed-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_parsed_text</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the text without BBCode mark-up.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-selected-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_selected_text</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current selection text. Does not include BBCodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-selection-from"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_selection_from</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current selection first character index if a selection is active, <code class="docutils literal notranslate"><span class="pre">-1</span></code> otherwise. Does not include BBCodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-selection-to"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_selection_to</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current selection last character index if a selection is active, <code class="docutils literal notranslate"><span class="pre">-1</span></code> otherwise. Does not include BBCodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-total-character-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_total_character_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of characters from text tags. Does not include BBCodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-v-scroll-bar"><a class="reference internal" href="class_vscrollbar.html#class-vscrollbar"><span class="std std-ref">VScrollBar</span></a> <strong>get_v_scroll_bar</strong>()</p>
+<p>Returns the vertical scrollbar.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-visible"><span class="std std-ref">CanvasItem.visible</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-visible-line-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_visible_line_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of visible lines.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-get-visible-paragraph-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_visible_paragraph_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of visible paragraphs. A paragraph is considered visible if at least one of its lines is visible.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, this method returns a value for the loaded part of the document. Use <a class="reference internal" href="#class-richtextlabel-method-is-ready"><span class="std std-ref">is_ready</span></a> or <a class="reference internal" href="#class-richtextlabel-signal-finished"><span class="std std-ref">finished</span></a> to determine whether document is fully loaded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-install-effect"><abbr title="No return value.">void</abbr> <strong>install_effect</strong>(effect: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Installs a custom effect. This can also be done in the RichTextLabel inspector using the <a class="reference internal" href="#class-richtextlabel-property-custom-effects"><span class="std std-ref">custom_effects</span></a> property. <code class="docutils literal notranslate"><span class="pre">effect</span></code> should be a valid <a class="reference internal" href="class_richtexteffect.html#class-richtexteffect"><span class="std std-ref">RichTextEffect</span></a>.</p>
+<p>Example RichTextEffect:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># effect.gd</span>
+<span class="k">class_name</span><span class="w"> </span><span class="n">MyCustomEffect</span>
+<span class="k">extends</span><span class="w"> </span><span class="n">RichTextEffect</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">bbcode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"my_custom_effect"</span>
+
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Registering the above effect in RichTextLabel from script:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># rich_text_label.gd</span>
+<span class="k">extends</span><span class="w"> </span><span class="n">RichTextLabel</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">install_effect</span><span class="p">(</span><span class="n">MyCustomEffect</span><span class="o">.</span><span class="n">new</span><span class="p">())</span>
+
+<span class="w">    </span><span class="c1"># Alternatively, if not using `class_name` in the script that extends RichTextEffect:</span>
+<span class="w">    </span><span class="n">install_effect</span><span class="p">(</span><span class="nb">preload</span><span class="p">(</span><span class="s2">"res://effect.gd"</span><span class="p">)</span><span class="o">.</span><span class="n">new</span><span class="p">())</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-is-menu-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_menu_visible</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether the menu is visible. Use this instead of <code class="docutils literal notranslate"><span class="pre">get_menu().visible</span></code> to improve performance (so the creation of the menu is avoided).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-is-ready"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_ready</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>If <a class="reference internal" href="#class-richtextlabel-property-threaded"><span class="std std-ref">threaded</span></a> is enabled, returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the background thread has finished text processing, otherwise always return <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-menu-option"><abbr title="No return value.">void</abbr> <strong>menu_option</strong>(option: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Executes a given action as defined in the <a class="reference internal" href="#enum-richtextlabel-menuitems"><span class="std std-ref">MenuItems</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-newline"><abbr title="No return value.">void</abbr> <strong>newline</strong>()</p>
+<p>Adds a newline tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-parse-bbcode"><abbr title="No return value.">void</abbr> <strong>parse_bbcode</strong>(bbcode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>The assignment version of <a class="reference internal" href="#class-richtextlabel-method-append-text"><span class="std std-ref">append_text</span></a>. Clears the tag stack and inserts the new content.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-parse-expressions-for-values"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>parse_expressions_for_values</strong>(expressions: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p>
+<p>Parses BBCode parameter <code class="docutils literal notranslate"><span class="pre">expressions</span></code> into a dictionary.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-pop"><abbr title="No return value.">void</abbr> <strong>pop</strong>()</p>
+<p>Terminates the current tag. Use after <code class="docutils literal notranslate"><span class="pre">push_*</span></code> methods to close BBCodes manually. Does not need to follow <code class="docutils literal notranslate"><span class="pre">add_*</span></code> methods.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-pop-all"><abbr title="No return value.">void</abbr> <strong>pop_all</strong>()</p>
+<p>Terminates all tags opened by <code class="docutils literal notranslate"><span class="pre">push_*</span></code> methods.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-pop-context"><abbr title="No return value.">void</abbr> <strong>pop_context</strong>()</p>
+<p>Terminates tags opened after the last <a class="reference internal" href="#class-richtextlabel-method-push-context"><span class="std std-ref">push_context</span></a> call (including context marker), or all tags if there's no context marker on the stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-bgcolor"><abbr title="No return value.">void</abbr> <strong>push_bgcolor</strong>(bgcolor: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[bgcolor]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-bold"><abbr title="No return value.">void</abbr> <strong>push_bold</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag with a bold font to the tag stack. This is the same as adding a <code class="docutils literal notranslate"><span class="pre">[b]</span></code> tag if not currently in a <code class="docutils literal notranslate"><span class="pre">[i]</span></code> tag.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-bold-italics"><abbr title="No return value.">void</abbr> <strong>push_bold_italics</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag with a bold italics font to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-cell"><abbr title="No return value.">void</abbr> <strong>push_cell</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[cell]</span></code> tag to the tag stack. Must be inside a <code class="docutils literal notranslate"><span class="pre">[table]</span></code> tag. See <a class="reference internal" href="#class-richtextlabel-method-push-table"><span class="std std-ref">push_table</span></a> for details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-color"><abbr title="No return value.">void</abbr> <strong>push_color</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[color]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-context"><abbr title="No return value.">void</abbr> <strong>push_context</strong>()</p>
+<p>Adds a context marker to the tag stack. See <a class="reference internal" href="#class-richtextlabel-method-pop-context"><span class="std std-ref">pop_context</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-customfx"><abbr title="No return value.">void</abbr> <strong>push_customfx</strong>(effect: <a class="reference internal" href="class_richtexteffect.html#class-richtexteffect"><span class="std std-ref">RichTextEffect</span></a>, env: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p>
+<p>Adds a custom effect tag to the tag stack. The effect does not need to be in <a class="reference internal" href="#class-richtextlabel-property-custom-effects"><span class="std std-ref">custom_effects</span></a>. The environment is directly passed to the effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-dropcap"><abbr title="No return value.">void</abbr> <strong>push_dropcap</strong>(string: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, font: <a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a>, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, dropcap_margins: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), outline_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, outline_color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(0, 0, 0, 0))</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[dropcap]</span></code> tag to the tag stack. Drop cap (dropped capital) is a decorative element at the beginning of a paragraph that is larger than the rest of the text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-fgcolor"><abbr title="No return value.">void</abbr> <strong>push_fgcolor</strong>(fgcolor: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[fgcolor]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-font"><abbr title="No return value.">void</abbr> <strong>push_font</strong>(font: <a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag to the tag stack. Overrides default fonts for its duration.</p>
+<p>Passing <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">font_size</span></code> will use the existing default font size.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-font-size"><abbr title="No return value.">void</abbr> <strong>push_font_size</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font_size]</span></code> tag to the tag stack. Overrides default font size for its duration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-hint"><abbr title="No return value.">void</abbr> <strong>push_hint</strong>(description: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[hint]</span></code> tag to the tag stack. Same as BBCode <code class="docutils literal notranslate"><span class="pre">[hint=something]{text}[/hint]</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-indent"><abbr title="No return value.">void</abbr> <strong>push_indent</strong>(level: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Adds an <code class="docutils literal notranslate"><span class="pre">[indent]</span></code> tag to the tag stack. Multiplies <code class="docutils literal notranslate"><span class="pre">level</span></code> by current <a class="reference internal" href="#class-richtextlabel-property-tab-size"><span class="std std-ref">tab_size</span></a> to determine new margin length.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-italics"><abbr title="No return value.">void</abbr> <strong>push_italics</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag with an italics font to the tag stack. This is the same as adding an <code class="docutils literal notranslate"><span class="pre">[i]</span></code> tag if not currently in a <code class="docutils literal notranslate"><span class="pre">[b]</span></code> tag.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-language"><abbr title="No return value.">void</abbr> <strong>push_language</strong>(language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Adds language code used for text shaping algorithm and Open-Type font features.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-list"><abbr title="No return value.">void</abbr> <strong>push_list</strong>(level: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, type: <a class="reference internal" href="#enum-richtextlabel-listtype"><span class="std std-ref">ListType</span></a>, capitalize: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, bullet: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "•")</p>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">[ol]</span></code> or <code class="docutils literal notranslate"><span class="pre">[ul]</span></code> tag to the tag stack. Multiplies <code class="docutils literal notranslate"><span class="pre">level</span></code> by current <a class="reference internal" href="#class-richtextlabel-property-tab-size"><span class="std std-ref">tab_size</span></a> to determine new margin length.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-meta"><abbr title="No return value.">void</abbr> <strong>push_meta</strong>(data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Adds a meta tag to the tag stack. Similar to the BBCode <code class="docutils literal notranslate"><span class="pre">[url=something]{text}[/url]</span></code>, but supports non-<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> metadata types.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-mono"><abbr title="No return value.">void</abbr> <strong>push_mono</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag with a monospace font to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-normal"><abbr title="No return value.">void</abbr> <strong>push_normal</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[font]</span></code> tag with a normal font to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-outline-color"><abbr title="No return value.">void</abbr> <strong>push_outline_color</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[outline_color]</span></code> tag to the tag stack. Adds text outline for its duration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-outline-size"><abbr title="No return value.">void</abbr> <strong>push_outline_size</strong>(outline_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[outline_size]</span></code> tag to the tag stack. Overrides default text outline size for its duration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-paragraph"><abbr title="No return value.">void</abbr> <strong>push_paragraph</strong>(alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>, base_direction: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> = 0, language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", st_parser: <a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> = 0, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 163, tab_stops: <a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> = PackedFloat32Array())</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[p]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-strikethrough"><abbr title="No return value.">void</abbr> <strong>push_strikethrough</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[s]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-table"><abbr title="No return value.">void</abbr> <strong>push_table</strong>(columns: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 0, align_to_row: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[table=columns,inline_align]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-push-underline"><abbr title="No return value.">void</abbr> <strong>push_underline</strong>()</p>
+<p>Adds a <code class="docutils literal notranslate"><span class="pre">[u]</span></code> tag to the tag stack.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-remove-paragraph"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>remove_paragraph</strong>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes a paragraph of content from the label. Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the paragraph exists.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">paragraph</span></code> argument is the index of the paragraph to remove, it can take values in the interval <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">get_paragraph_count()</span> <span class="pre">-</span> <span class="pre">1]</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-scroll-to-line"><abbr title="No return value.">void</abbr> <strong>scroll_to_line</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Scrolls the window's top line to match <code class="docutils literal notranslate"><span class="pre">line</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-scroll-to-paragraph"><abbr title="No return value.">void</abbr> <strong>scroll_to_paragraph</strong>(paragraph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Scrolls the window's top line to match first line of the <code class="docutils literal notranslate"><span class="pre">paragraph</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-scroll-to-selection"><abbr title="No return value.">void</abbr> <strong>scroll_to_selection</strong>()</p>
+<p>Scrolls to the beginning of the current selection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-select-all"><abbr title="No return value.">void</abbr> <strong>select_all</strong>()</p>
+<p>Select all the text.</p>
+<p>If <a class="reference internal" href="#class-richtextlabel-property-selection-enabled"><span class="std std-ref">selection_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, no selection will occur.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-set-cell-border-color"><abbr title="No return value.">void</abbr> <strong>set_cell_border_color</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets color of a table cell border.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-set-cell-padding"><abbr title="No return value.">void</abbr> <strong>set_cell_padding</strong>(padding: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a>)</p>
+<p>Sets inner padding of a table cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-set-cell-row-background-color"><abbr title="No return value.">void</abbr> <strong>set_cell_row_background_color</strong>(odd_row_bg: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>, even_row_bg: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets color of a table cell. Separate colors for alternating rows can be specified.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-set-cell-size-override"><abbr title="No return value.">void</abbr> <strong>set_cell_size_override</strong>(min_size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, max_size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Sets minimum and maximum size overrides for a table cell.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-set-table-column-expand"><abbr title="No return value.">void</abbr> <strong>set_table_column_expand</strong>(column: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, expand: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, ratio: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1)</p>
+<p>Edits the selected column's expansion options. If <code class="docutils literal notranslate"><span class="pre">expand</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, the column expands in proportion to its expansion ratio versus the other columns' ratios.</p>
+<p>For example, 2 columns with ratios 3 and 4 plus 70 pixels in available width would expand 30 and 40 pixels, respectively.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">expand</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, the column will not contribute to the total ratio.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-richtextlabel-method-update-image"><abbr title="No return value.">void</abbr> <strong>update_image</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, mask: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="#enum-richtextlabel-imageupdatemask"><span class="std std-ref">ImageUpdateMask</span></a>], image: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>, width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), inline_align: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-inlinealignment"><span class="std std-ref">InlineAlignment</span></a> = 5, region: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> = Rect2(0, 0, 0, 0), pad: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, tooltip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", size_in_percent: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Updates the existing images with the key <code class="docutils literal notranslate"><span class="pre">key</span></code>. Only properties specified by <code class="docutils literal notranslate"><span class="pre">mask</span></code> bits are updated. See <a class="reference internal" href="#class-richtextlabel-method-add-image"><span class="std std-ref">add_image</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-default-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>default_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>The default text color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-font-outline-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_outline_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>The default tint of text outline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-font-selected-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_selected_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The color of selected text, used when <a class="reference internal" href="#class-richtextlabel-property-selection-enabled"><span class="std std-ref">selection_enabled</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>. If equal to <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code>, it will be ignored.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-font-shadow-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_shadow_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The color of the font's shadow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-selection-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>selection_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.1,</span> <span class="pre">0.1,</span> <span class="pre">1,</span> <span class="pre">0.8)</span></code></p>
+<p>The color of the selection box.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-table-border"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>table_border</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The default cell border color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-table-even-row-bg"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>table_even_row_bg</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The default background color for even rows.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-color-table-odd-row-bg"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>table_odd_row_bg</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The default background color for odd rows.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-line-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>line_separation</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The vertical space between lines.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The size of the text outline.</p>
+<p><strong>Note:</strong> If using a font with <a class="reference internal" href="class_fontfile.html#class-fontfile-property-multichannel-signed-distance-field"><span class="std std-ref">FontFile.multichannel_signed_distance_field</span></a> enabled, its <a class="reference internal" href="class_fontfile.html#class-fontfile-property-msdf-pixel-range"><span class="std std-ref">FontFile.msdf_pixel_range</span></a> must be set to at least <em>twice</em> the value of <a class="reference internal" href="#class-richtextlabel-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a> for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-shadow-offset-x"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_offset_x</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The horizontal offset of the font's shadow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-shadow-offset-y"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_offset_y</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The vertical offset of the font's shadow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-shadow-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The size of the shadow outline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-table-h-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>table_h_separation</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The horizontal separation of elements in a table.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-table-v-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>table_v_separation</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The vertical separation of elements in a table.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-text-highlight-h-padding"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>text_highlight_h_padding</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The horizontal padding around boxes drawn by the <code class="docutils literal notranslate"><span class="pre">[fgcolor]</span></code> and <code class="docutils literal notranslate"><span class="pre">[bgcolor]</span></code> tags. This does not affect the appearance of text selection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-constant-text-highlight-v-padding"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>text_highlight_v_padding</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The vertical padding around boxes drawn by the <code class="docutils literal notranslate"><span class="pre">[fgcolor]</span></code> and <code class="docutils literal notranslate"><span class="pre">[bgcolor]</span></code> tags. This does not affect the appearance of text selection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-bold-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>bold_font</strong></p>
+<p>The font used for bold text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-bold-italics-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>bold_italics_font</strong></p>
+<p>The font used for bold italics text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-italics-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>italics_font</strong></p>
+<p>The font used for italics text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-mono-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>mono_font</strong></p>
+<p>The font used for monospace text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-normal-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>normal_font</strong></p>
+<p>The default text font.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-size-bold-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>bold_font_size</strong></p>
+<p>The font size used for bold text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-size-bold-italics-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>bold_italics_font_size</strong></p>
+<p>The font size used for bold italics text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-size-italics-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>italics_font_size</strong></p>
+<p>The font size used for italics text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-size-mono-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>mono_font_size</strong></p>
+<p>The font size used for monospace text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-font-size-normal-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>normal_font_size</strong></p>
+<p>The default text font size.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-style-focus"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>focus</strong></p>
+<p>The background used when the <strong>RichTextLabel</strong> is focused. The <a class="reference internal" href="#class-richtextlabel-theme-style-focus"><span class="std std-ref">focus</span></a> <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> is displayed <em>over</em> the base <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a>, so a partially transparent <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> should be used to ensure the base <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> remains visible. A <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a <a class="reference internal" href="class_styleboxempty.html#class-styleboxempty"><span class="std std-ref">StyleBoxEmpty</span></a> resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-richtextlabel-theme-style-normal"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>normal</strong></p>
+<p>The normal background for the <strong>RichTextLabel</strong>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_resourcepreloader.html" rel="prev" title="ResourcePreloader"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_rigidbody2d.html" rel="next" title="RigidBody2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

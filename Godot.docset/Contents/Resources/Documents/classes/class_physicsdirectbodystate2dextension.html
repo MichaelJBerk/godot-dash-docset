@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="PhysicsDirectBodyState2DExtension" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_physicsdirectbodystate2dextension.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: PhysicsDirectBodyState2D&lt; Object Provides virtual methods that can be overridden to create custom PhysicsDirectBodyState2D implementations. Description: This class extends PhysicsDirectBo..." property="og:description"/>
+<meta content="Inherits: PhysicsDirectBodyState2D&lt; Object Provides virtual methods that can be overridden to create custom PhysicsDirectBodyState2D implementations. Description: This class extends PhysicsDirectBo..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) PhysicsDirectBodyState2DExtension — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsdirectbodystate2dextension.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsdirectbodystate2dextension.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_physicsdirectbodystate3d.html" rel="next" title="PhysicsDirectBodyState3D"/>
+<link href="class_physicsdirectbodystate2d.html" rel="prev" title="PhysicsDirectBodyState2D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_physicsdirectbodystate2dextension" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">PhysicsDirectBodyState2DExtension</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="physicsdirectbodystate2dextension">
+<span id="class-physicsdirectbodystate2dextension"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/PhysicsDirectBodyState2DExtension¶"></a>PhysicsDirectBodyState2DExtension<a class="headerlink" href="#physicsdirectbodystate2dextension" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_physicsdirectbodystate2d.html#class-physicsdirectbodystate2d"><span class="std std-ref">PhysicsDirectBodyState2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides virtual methods that can be overridden to create custom <a class="reference internal" href="class_physicsdirectbodystate2d.html#class-physicsdirectbodystate2d"><span class="std std-ref">PhysicsDirectBodyState2D</span></a> implementations.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class extends <a class="reference internal" href="class_physicsdirectbodystate2d.html#class-physicsdirectbodystate2d"><span class="std std-ref">PhysicsDirectBodyState2D</span></a> by providing additional virtual methods that can be overridden. When these methods are overridden, they will be called instead of the internal methods of the physics server.</p>
+<p>Intended for use with GDExtension to create custom implementations of <a class="reference internal" href="class_physicsdirectbodystate2d.html#class-physicsdirectbodystate2d"><span class="std std-ref">PhysicsDirectBodyState2D</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-add-constant-central-force"><span class="std std-ref">_add_constant_central_force</span></a>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-add-constant-force"><span class="std std-ref">_add_constant_force</span></a>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-add-constant-torque"><span class="std std-ref">_add_constant_torque</span></a>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-central-force"><span class="std std-ref">_apply_central_force</span></a>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-central-impulse"><span class="std std-ref">_apply_central_impulse</span></a>(impulse: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-force"><span class="std std-ref">_apply_force</span></a>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-impulse"><span class="std std-ref">_apply_impulse</span></a>(impulse: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-torque"><span class="std std-ref">_apply_torque</span></a>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-apply-torque-impulse"><span class="std std-ref">_apply_torque_impulse</span></a>(impulse: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-angular-velocity"><span class="std std-ref">_get_angular_velocity</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-center-of-mass"><span class="std std-ref">_get_center_of_mass</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-center-of-mass-local"><span class="std std-ref">_get_center_of_mass_local</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-constant-force"><span class="std std-ref">_get_constant_force</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-constant-torque"><span class="std std-ref">_get_constant_torque</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider"><span class="std std-ref">_get_contact_collider</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider-id"><span class="std std-ref">_get_contact_collider_id</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider-object"><span class="std std-ref">_get_contact_collider_object</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider-position"><span class="std std-ref">_get_contact_collider_position</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider-shape"><span class="std std-ref">_get_contact_collider_shape</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-collider-velocity-at-position"><span class="std std-ref">_get_contact_collider_velocity_at_position</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-count"><span class="std std-ref">_get_contact_count</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-impulse"><span class="std std-ref">_get_contact_impulse</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-local-normal"><span class="std std-ref">_get_contact_local_normal</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-local-position"><span class="std std-ref">_get_contact_local_position</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-local-shape"><span class="std std-ref">_get_contact_local_shape</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-contact-local-velocity-at-position"><span class="std std-ref">_get_contact_local_velocity_at_position</span></a>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-inverse-inertia"><span class="std std-ref">_get_inverse_inertia</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-inverse-mass"><span class="std std-ref">_get_inverse_mass</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-linear-velocity"><span class="std std-ref">_get_linear_velocity</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_physicsdirectspacestate2d.html#class-physicsdirectspacestate2d"><span class="std std-ref">PhysicsDirectSpaceState2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-space-state"><span class="std std-ref">_get_space_state</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-step"><span class="std std-ref">_get_step</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-total-angular-damp"><span class="std std-ref">_get_total_angular_damp</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-total-gravity"><span class="std std-ref">_get_total_gravity</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-total-linear-damp"><span class="std std-ref">_get_total_linear_damp</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-transform"><span class="std std-ref">_get_transform</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-get-velocity-at-local-position"><span class="std std-ref">_get_velocity_at_local_position</span></a>(local_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-integrate-forces"><span class="std std-ref">_integrate_forces</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-is-sleeping"><span class="std std-ref">_is_sleeping</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-angular-velocity"><span class="std std-ref">_set_angular_velocity</span></a>(velocity: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-constant-force"><span class="std std-ref">_set_constant_force</span></a>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-constant-torque"><span class="std std-ref">_set_constant_torque</span></a>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-linear-velocity"><span class="std std-ref">_set_linear_velocity</span></a>(velocity: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-sleep-state"><span class="std std-ref">_set_sleep_state</span></a>(enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsdirectbodystate2dextension-private-method-set-transform"><span class="std std-ref">_set_transform</span></a>(transform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-add-constant-central-force"><abbr title="No return value.">void</abbr> <strong>_add_constant_central_force</strong>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-add-constant-force"><abbr title="No return value.">void</abbr> <strong>_add_constant_force</strong>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-add-constant-torque"><abbr title="No return value.">void</abbr> <strong>_add_constant_torque</strong>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-central-force"><abbr title="No return value.">void</abbr> <strong>_apply_central_force</strong>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-central-impulse"><abbr title="No return value.">void</abbr> <strong>_apply_central_impulse</strong>(impulse: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-force"><abbr title="No return value.">void</abbr> <strong>_apply_force</strong>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-impulse"><abbr title="No return value.">void</abbr> <strong>_apply_impulse</strong>(impulse: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-torque"><abbr title="No return value.">void</abbr> <strong>_apply_torque</strong>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-apply-torque-impulse"><abbr title="No return value.">void</abbr> <strong>_apply_torque_impulse</strong>(impulse: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-angular-velocity"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_angular_velocity</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-center-of-mass"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_center_of_mass</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-center-of-mass-local"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_center_of_mass_local</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-constant-force"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_constant_force</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-constant-torque"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_constant_torque</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>_get_contact_collider</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_contact_collider_id</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider-object"><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> <strong>_get_contact_collider_object</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_collider_position</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider-shape"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_contact_collider_shape</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-collider-velocity-at-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_collider_velocity_at_position</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_contact_count</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-impulse"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_impulse</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-local-normal"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_local_normal</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-local-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_local_position</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-local-shape"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_contact_local_shape</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-contact-local-velocity-at-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_contact_local_velocity_at_position</strong>(contact_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-inverse-inertia"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_inverse_inertia</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-inverse-mass"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_inverse_mass</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-linear-velocity"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_linear_velocity</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-space-state"><a class="reference internal" href="class_physicsdirectspacestate2d.html#class-physicsdirectspacestate2d"><span class="std std-ref">PhysicsDirectSpaceState2D</span></a> <strong>_get_space_state</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-step"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_step</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-total-angular-damp"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_total_angular_damp</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-total-gravity"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_total_gravity</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-total-linear-damp"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_get_total_linear_damp</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-transform"><a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>_get_transform</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-get-velocity-at-local-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>_get_velocity_at_local_position</strong>(local_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-integrate-forces"><abbr title="No return value.">void</abbr> <strong>_integrate_forces</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-is-sleeping"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_sleeping</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-angular-velocity"><abbr title="No return value.">void</abbr> <strong>_set_angular_velocity</strong>(velocity: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-constant-force"><abbr title="No return value.">void</abbr> <strong>_set_constant_force</strong>(force: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-constant-torque"><abbr title="No return value.">void</abbr> <strong>_set_constant_torque</strong>(torque: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-linear-velocity"><abbr title="No return value.">void</abbr> <strong>_set_linear_velocity</strong>(velocity: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-sleep-state"><abbr title="No return value.">void</abbr> <strong>_set_sleep_state</strong>(enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsdirectbodystate2dextension-private-method-set-transform"><abbr title="No return value.">void</abbr> <strong>_set_transform</strong>(transform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_physicsdirectbodystate2d.html" rel="prev" title="PhysicsDirectBodyState2D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_physicsdirectbodystate3d.html" rel="next" title="PhysicsDirectBodyState3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AESContext" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_aescontext.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Provides access to AES encryption/decryption of raw data. Description: This class holds the context information required for encryption and decryption operations with A..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Provides access to AES encryption/decryption of raw data. Description: This class holds the context information required for encryption and decryption operations with A..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AESContext — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_aescontext.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_aescontext.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_aescontext.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_aescontext.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_aescontext.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_aescontext.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_aescontext.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_aescontext.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_aescontext.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_aescontext.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_aescontext.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_aescontext.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_aescontext.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_aescontext.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_aescontext.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_aescontext.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_astar2d.html" rel="next" title="AStar2D"/>
+<link href="class_object.html" rel="prev" title="Object"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_aescontext" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AESContext</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="aescontext">
+<span id="class-aescontext"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AESContext¶"></a>AESContext<a class="headerlink" href="#aescontext" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides access to AES encryption/decryption of raw data.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class holds the context information required for encryption and decryption operations with AES (Advanced Encryption Standard). Both AES-ECB and AES-CBC modes are supported.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">aes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AESContext</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"My secret key!!!"</span><span class="w"> </span><span class="c1"># Key must be either 16 or 32 bytes.</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"My secret text!!"</span><span class="w"> </span><span class="c1"># Data size must be multiple of 16 bytes, apply padding if needed.</span>
+<span class="w">    </span><span class="c1"># Encrypt ECB</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">AESContext</span><span class="o">.</span><span class="n">MODE_ECB_ENCRYPT</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aes</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Decrypt ECB</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">AESContext</span><span class="o">.</span><span class="n">MODE_ECB_DECRYPT</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aes</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">encrypted</span><span class="p">)</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Check ECB</span>
+<span class="w">    </span><span class="nb">assert</span><span class="p">(</span><span class="n">decrypted</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">iv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"My secret iv!!!!"</span><span class="w"> </span><span class="c1"># IV must be of exactly 16 bytes.</span>
+<span class="w">    </span><span class="c1"># Encrypt CBC</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">AESContext</span><span class="o">.</span><span class="n">MODE_CBC_ENCRYPT</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">iv</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aes</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Decrypt CBC</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">AESContext</span><span class="o">.</span><span class="n">MODE_CBC_DECRYPT</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">iv</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+<span class="w">    </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aes</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">encrypted</span><span class="p">)</span>
+<span class="w">    </span><span class="n">aes</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Check CBC</span>
+<span class="w">    </span><span class="nb">assert</span><span class="p">(</span><span class="n">decrypted</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">data</span><span class="o">.</span><span class="n">to_utf8_buffer</span><span class="p">())</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">Godot</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">System.Diagnostics</span><span class="p">;</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyNode</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Node</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">AesContext</span><span class="w"> </span><span class="n">_aes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AesContext</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"My secret key!!!"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Key must be either 16 or 32 bytes.</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"My secret text!!"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Data size must be multiple of 16 bytes, apply padding if needed.</span>
+<span class="w">        </span><span class="c1">// Encrypt ECB</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">AesContext</span><span class="p">.</span><span class="n">Mode</span><span class="p">.</span><span class="n">EcbEncrypt</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_aes</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Finish</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Decrypt ECB</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">AesContext</span><span class="p">.</span><span class="n">Mode</span><span class="p">.</span><span class="n">EcbDecrypt</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_aes</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">encrypted</span><span class="p">);</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Finish</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Check ECB</span>
+<span class="w">        </span><span class="n">Debug</span><span class="p">.</span><span class="n">Assert</span><span class="p">(</span><span class="n">decrypted</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">iv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"My secret iv!!!!"</span><span class="p">;</span><span class="w"> </span><span class="c1">// IV must be of exactly 16 bytes.</span>
+<span class="w">        </span><span class="c1">// Encrypt CBC</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">AesContext</span><span class="p">.</span><span class="n">Mode</span><span class="p">.</span><span class="n">EcbEncrypt</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">iv</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="n">encrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_aes</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Finish</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Decrypt CBC</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">AesContext</span><span class="p">.</span><span class="n">Mode</span><span class="p">.</span><span class="n">EcbDecrypt</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">(),</span><span class="w"> </span><span class="n">iv</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">        </span><span class="n">decrypted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_aes</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">encrypted</span><span class="p">);</span>
+<span class="w">        </span><span class="n">_aes</span><span class="p">.</span><span class="n">Finish</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Check CBC</span>
+<span class="w">        </span><span class="n">Debug</span><span class="p">.</span><span class="n">Assert</span><span class="p">(</span><span class="n">decrypted</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">ToUtf8Buffer</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-aescontext-method-finish"><span class="std std-ref">finish</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-aescontext-method-get-iv-state"><span class="std std-ref">get_iv_state</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-aescontext-method-start"><span class="std std-ref">start</span></a>(mode: <a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a>, key: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, iv: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> = PackedByteArray())</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-aescontext-method-update"><span class="std std-ref">update</span></a>(src: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-aescontext-mode">enum <strong><a class="dashAnchor" id="enumerations-Mode" name="//apple_ref/cpp/Enum/Mode"></a>Mode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-aescontext-constant-mode-ecb-encrypt"><a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_ECB_ENCRYPT" name="//apple_ref/cpp/Enum/MODE_ECB_ENCRYPT"></a>MODE_ECB_ENCRYPT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>AES electronic codebook encryption mode.</p>
+<p class="classref-enumeration-constant" id="class-aescontext-constant-mode-ecb-decrypt"><a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_ECB_DECRYPT" name="//apple_ref/cpp/Enum/MODE_ECB_DECRYPT"></a>MODE_ECB_DECRYPT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>AES electronic codebook decryption mode.</p>
+<p class="classref-enumeration-constant" id="class-aescontext-constant-mode-cbc-encrypt"><a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_CBC_ENCRYPT" name="//apple_ref/cpp/Enum/MODE_CBC_ENCRYPT"></a>MODE_CBC_ENCRYPT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>AES cipher blocker chaining encryption mode.</p>
+<p class="classref-enumeration-constant" id="class-aescontext-constant-mode-cbc-decrypt"><a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_CBC_DECRYPT" name="//apple_ref/cpp/Enum/MODE_CBC_DECRYPT"></a>MODE_CBC_DECRYPT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>AES cipher blocker chaining decryption mode.</p>
+<p class="classref-enumeration-constant" id="class-aescontext-constant-mode-max"><a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_MAX" name="//apple_ref/cpp/Enum/MODE_MAX"></a>MODE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Maximum value for the mode enum.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-aescontext-method-finish"><abbr title="No return value.">void</abbr> <strong>finish</strong>()</p>
+<p>Close this AES context so it can be started again. See <a class="reference internal" href="#class-aescontext-method-start"><span class="std std-ref">start</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-aescontext-method-get-iv-state"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>get_iv_state</strong>()</p>
+<p>Get the current IV state for this context (IV gets updated when calling <a class="reference internal" href="#class-aescontext-method-update"><span class="std std-ref">update</span></a>). You normally don't need this function.</p>
+<p><strong>Note:</strong> This function only makes sense when the context is started with <a class="reference internal" href="#class-aescontext-constant-mode-cbc-encrypt"><span class="std std-ref">MODE_CBC_ENCRYPT</span></a> or <a class="reference internal" href="#class-aescontext-constant-mode-cbc-decrypt"><span class="std std-ref">MODE_CBC_DECRYPT</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-aescontext-method-start"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>start</strong>(mode: <a class="reference internal" href="#enum-aescontext-mode"><span class="std std-ref">Mode</span></a>, key: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, iv: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> = PackedByteArray())</p>
+<p>Start the AES context in the given <code class="docutils literal notranslate"><span class="pre">mode</span></code>. A <code class="docutils literal notranslate"><span class="pre">key</span></code> of either 16 or 32 bytes must always be provided, while an <code class="docutils literal notranslate"><span class="pre">iv</span></code> (initialization vector) of exactly 16 bytes, is only needed when <code class="docutils literal notranslate"><span class="pre">mode</span></code> is either <a class="reference internal" href="#class-aescontext-constant-mode-cbc-encrypt"><span class="std std-ref">MODE_CBC_ENCRYPT</span></a> or <a class="reference internal" href="#class-aescontext-constant-mode-cbc-decrypt"><span class="std std-ref">MODE_CBC_DECRYPT</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-aescontext-method-update"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>update</strong>(src: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Run the desired operation for this AES context. Will return a <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> containing the result of encrypting (or decrypting) the given <code class="docutils literal notranslate"><span class="pre">src</span></code>. See <a class="reference internal" href="#class-aescontext-method-start"><span class="std std-ref">start</span></a> for mode of operation.</p>
+<p><strong>Note:</strong> The size of <code class="docutils literal notranslate"><span class="pre">src</span></code> must be a multiple of 16. Apply some padding if needed.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_object.html" rel="prev" title="Object"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_astar2d.html" rel="next" title="AStar2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

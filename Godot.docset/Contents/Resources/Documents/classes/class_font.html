@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Font" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_font.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FontFile, FontVariation, SystemFont Abstract base class for fonts and font variations. Description: Abstract base class for different font types..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FontFile, FontVariation, SystemFont Abstract base class for fonts and font variations. Description: Abstract base class for different font types..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Font — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_font.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_font.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_font.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_font.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_font.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_font.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_font.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_font.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_font.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_font.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_font.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_font.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_font.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_font.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_font.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_font.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_fontfile.html" rel="next" title="FontFile"/>
+<link href="class_fogmaterial.html" rel="prev" title="FogMaterial"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_font" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Font</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="font">
+<span id="class-font"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Font¶"></a>Font<a class="headerlink" href="#font" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_fontfile.html#class-fontfile"><span class="std std-ref">FontFile</span></a>, <a class="reference internal" href="class_fontvariation.html#class-fontvariation"><span class="std std-ref">FontVariation</span></a>, <a class="reference internal" href="class_systemfont.html#class-systemfont"><span class="std std-ref">SystemFont</span></a></p>
+<p>Abstract base class for fonts and font variations.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Abstract base class for different font types. It has methods for drawing text and font character introspection.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-font"><span class="std std-ref">Font</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-font-property-fallbacks"><span class="std std-ref">fallbacks</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-char"><span class="std std-ref">draw_char</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-char-outline"><span class="std std-ref">draw_char_outline</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-multiline-string"><span class="std std-ref">draw_multiline_string</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-multiline-string-outline"><span class="std std-ref">draw_multiline_string_outline</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-string"><span class="std std-ref">draw_string</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-font-method-draw-string-outline"><span class="std std-ref">draw_string_outline</span></a>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-find-variation"><span class="std std-ref">find_variation</span></a>(variation_coordinates: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>, face_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, strength: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.0, transform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a> = Transform2D(1, 0, 0, 1, 0, 0), spacing_top: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_bottom: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_space: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_glyph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, baseline_offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-ascent"><span class="std std-ref">get_ascent</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-char-size"><span class="std std-ref">get_char_size</span></a>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-descent"><span class="std std-ref">get_descent</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-face-count"><span class="std std-ref">get_face_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-font-name"><span class="std std-ref">get_font_name</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-font-stretch"><span class="std std-ref">get_font_stretch</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-fontstyle"><span class="std std-ref">FontStyle</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-font-style"><span class="std std-ref">get_font_style</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-font-style-name"><span class="std std-ref">get_font_style_name</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-font-weight"><span class="std std-ref">get_font_weight</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-height"><span class="std std-ref">get_height</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-multiline-string-size"><span class="std std-ref">get_multiline_string_size</span></a>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-opentype-features"><span class="std std-ref">get_opentype_features</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-ot-name-strings"><span class="std std-ref">get_ot_name_strings</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-rids"><span class="std std-ref">get_rids</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-spacing"><span class="std std-ref">get_spacing</span></a>(spacing: <a class="reference internal" href="class_textserver.html#enum-textserver-spacingtype"><span class="std std-ref">SpacingType</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-string-size"><span class="std std-ref">get_string_size</span></a>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-supported-chars"><span class="std std-ref">get_supported_chars</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-supported-feature-list"><span class="std std-ref">get_supported_feature_list</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-supported-variation-list"><span class="std std-ref">get_supported_variation_list</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-underline-position"><span class="std std-ref">get_underline_position</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-get-underline-thickness"><span class="std std-ref">get_underline_thickness</span></a>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-has-char"><span class="std std-ref">has_char</span></a>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-is-language-supported"><span class="std std-ref">is_language_supported</span></a>(language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-font-method-is-script-supported"><span class="std std-ref">is_script_supported</span></a>(script: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-font-method-set-cache-capacity"><span class="std std-ref">set_cache_capacity</span></a>(single_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, multi_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-font-property-fallbacks"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-font"><span class="std std-ref">Font</span></a>] <strong>fallbacks</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fallbacks" name="//apple_ref/cpp/Property/set_fallbacks"></a>set_fallbacks</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-font"><span class="std std-ref">Font</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-font"><span class="std std-ref">Font</span></a>] <strong><a class="dashAnchor" id="properties-get_fallbacks" name="//apple_ref/cpp/Property/get_fallbacks"></a>get_fallbacks</strong>()</p></li>
+</ul>
+<p>Array of fallback <strong>Font</strong>s to use as a substitute if a glyph is not found in this current <strong>Font</strong>.</p>
+<p>If this array is empty in a <a class="reference internal" href="class_fontvariation.html#class-fontvariation"><span class="std std-ref">FontVariation</span></a>, the <a class="reference internal" href="class_fontvariation.html#class-fontvariation-property-base-font"><span class="std std-ref">FontVariation.base_font</span></a>'s fallbacks are used instead.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-font-method-draw-char"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>draw_char</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Draw a single Unicode character <code class="docutils literal notranslate"><span class="pre">char</span></code> into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p><strong>Note:</strong> Do not use this function to draw strings character by character, use <a class="reference internal" href="#class-font-method-draw-string"><span class="std std-ref">draw_string</span></a> or <a class="reference internal" href="class_textline.html#class-textline"><span class="std std-ref">TextLine</span></a> instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-draw-char-outline"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>draw_char_outline</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Draw a single Unicode character <code class="docutils literal notranslate"><span class="pre">char</span></code> outline into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color and <code class="docutils literal notranslate"><span class="pre">size</span></code> outline size. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p><strong>Note:</strong> Do not use this function to draw strings character by character, use <a class="reference internal" href="#class-font-method-draw-string"><span class="std std-ref">draw_string</span></a> or <a class="reference internal" href="class_textline.html#class-textline"><span class="std std-ref">TextLine</span></a> instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-draw-multiline-string"><abbr title="No return value.">void</abbr> <strong>draw_multiline_string</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Breaks <code class="docutils literal notranslate"><span class="pre">text</span></code> into lines using rules specified by <code class="docutils literal notranslate"><span class="pre">brk_flags</span></code> and draws it into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color, optionally clipping the width and aligning horizontally. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline of the first line, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p>See also <a class="reference internal" href="class_canvasitem.html#class-canvasitem-method-draw-multiline-string"><span class="std std-ref">CanvasItem.draw_multiline_string</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-draw-multiline-string-outline"><abbr title="No return value.">void</abbr> <strong>draw_multiline_string_outline</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Breaks <code class="docutils literal notranslate"><span class="pre">text</span></code> to the lines using rules specified by <code class="docutils literal notranslate"><span class="pre">brk_flags</span></code> and draws text outline into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color and <code class="docutils literal notranslate"><span class="pre">size</span></code> outline size, optionally clipping the width and aligning horizontally. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline of the first line, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p>See also <a class="reference internal" href="class_canvasitem.html#class-canvasitem-method-draw-multiline-string-outline"><span class="std std-ref">CanvasItem.draw_multiline_string_outline</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-draw-string"><abbr title="No return value.">void</abbr> <strong>draw_string</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Draw <code class="docutils literal notranslate"><span class="pre">text</span></code> into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color, optionally clipping the width and aligning horizontally. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p>See also <a class="reference internal" href="class_canvasitem.html#class-canvasitem-method-draw-string"><span class="std std-ref">CanvasItem.draw_string</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-draw-string-outline"><abbr title="No return value.">void</abbr> <strong>draw_string_outline</strong>(canvas_item: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1, modulate: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> = Color(1, 1, 1, 1), justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Draw <code class="docutils literal notranslate"><span class="pre">text</span></code> outline into a canvas item using the font, at a given position, with <code class="docutils literal notranslate"><span class="pre">modulate</span></code> color and <code class="docutils literal notranslate"><span class="pre">size</span></code> outline size, optionally clipping the width and aligning horizontally. <code class="docutils literal notranslate"><span class="pre">pos</span></code> specifies the baseline, not the top. To draw from the top, <em>ascent</em> must be added to the Y axis.</p>
+<p>See also <a class="reference internal" href="class_canvasitem.html#class-canvasitem-method-draw-string-outline"><span class="std std-ref">CanvasItem.draw_string_outline</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-find-variation"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>find_variation</strong>(variation_coordinates: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>, face_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, strength: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.0, transform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a> = Transform2D(1, 0, 0, 1, 0, 0), spacing_top: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_bottom: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_space: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, spacing_glyph: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, baseline_offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <a class="reference internal" href="class_textserver.html#class-textserver"><span class="std std-ref">TextServer</span></a> RID of the font cache for specific variation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-ascent"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_ascent</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the average font ascent (number of pixels above the baseline).</p>
+<p><strong>Note:</strong> Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-char-size"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_char_size</strong>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the size of a character. Does not take kerning into account.</p>
+<p><strong>Note:</strong> Do not use this function to calculate width of the string character by character, use <a class="reference internal" href="#class-font-method-get-string-size"><span class="std std-ref">get_string_size</span></a> or <a class="reference internal" href="class_textline.html#class-textline"><span class="std std-ref">TextLine</span></a> instead. The height returned is the font height (see also <a class="reference internal" href="#class-font-method-get-height"><span class="std std-ref">get_height</span></a>) and has no relation to the glyph height.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-descent"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_descent</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the average font descent (number of pixels below the baseline).</p>
+<p><strong>Note:</strong> Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-face-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_face_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns number of faces in the TrueType / OpenType collection.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-font-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_font_name</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns font family name.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-font-stretch"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_font_stretch</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns font stretch amount, compared to a normal width. A percentage value between <code class="docutils literal notranslate"><span class="pre">50%</span></code> and <code class="docutils literal notranslate"><span class="pre">200%</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-font-style"><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-fontstyle"><span class="std std-ref">FontStyle</span></a>] <strong>get_font_style</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns font style flags, see <a class="reference internal" href="class_textserver.html#enum-textserver-fontstyle"><span class="std std-ref">FontStyle</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-font-style-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_font_style_name</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns font style name.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-font-weight"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_font_weight</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns weight (boldness) of the font. A value in the <code class="docutils literal notranslate"><span class="pre">100...999</span></code> range, normal font weight is <code class="docutils literal notranslate"><span class="pre">400</span></code>, bold font weight is <code class="docutils literal notranslate"><span class="pre">700</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-height"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_height</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total average font height (ascent plus descent) in pixels.</p>
+<p><strong>Note:</strong> Real height of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the height of empty line).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-multiline-string-size"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_multiline_string_size</strong>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, max_lines: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1, brk_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-linebreakflag"><span class="std std-ref">LineBreakFlag</span></a>] = 3, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the size of a bounding box of a string broken into the lines, taking kerning and advance into account.</p>
+<p>See also <a class="reference internal" href="#class-font-method-draw-multiline-string"><span class="std std-ref">draw_multiline_string</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-opentype-features"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_opentype_features</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a set of OpenType feature tags. More info: <a class="reference external" href="https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags">OpenType feature tags</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-ot-name-strings"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_ot_name_strings</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> with OpenType font name strings (localized font names, version, description, license information, sample text, etc.).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-rids"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>] <strong>get_rids</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> of valid <strong>Font</strong> <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>s, which can be passed to the <a class="reference internal" href="class_textserver.html#class-textserver"><span class="std std-ref">TextServer</span></a> methods.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-spacing"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_spacing</strong>(spacing: <a class="reference internal" href="class_textserver.html#enum-textserver-spacingtype"><span class="std std-ref">SpacingType</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the spacing for the given <code class="docutils literal notranslate"><span class="pre">type</span></code> (see <a class="reference internal" href="class_textserver.html#enum-textserver-spacingtype"><span class="std std-ref">SpacingType</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-string-size"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_string_size</strong>(text: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, alignment: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> = 0, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = -1, font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16, justification_flags: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] = 3, direction: <a class="reference internal" href="class_textserver.html#enum-textserver-direction"><span class="std std-ref">Direction</span></a> = 0, orientation: <a class="reference internal" href="class_textserver.html#enum-textserver-orientation"><span class="std std-ref">Orientation</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the size of a bounding box of a single-line string, taking kerning, advance and subpixel positioning into account. See also <a class="reference internal" href="#class-font-method-get-multiline-string-size"><span class="std std-ref">get_multiline_string_size</span></a> and <a class="reference internal" href="#class-font-method-draw-string"><span class="std std-ref">draw_string</span></a>.</p>
+<p>For example, to get the string size as displayed by a single-line Label, use:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">string_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">$</span><span class="n">Label</span><span class="o">.</span><span class="n">get_theme_font</span><span class="p">(</span><span class="s2">"font"</span><span class="p">)</span><span class="o">.</span><span class="n">get_string_size</span><span class="p">(</span><span class="o">$</span><span class="n">Label</span><span class="o">.</span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">HORIZONTAL_ALIGNMENT_LEFT</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">$</span><span class="n">Label</span><span class="o">.</span><span class="n">get_theme_font_size</span><span class="p">(</span><span class="s2">"font_size"</span><span class="p">))</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">Label</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetNode</span><span class="o">&lt;</span><span class="n">Label</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"Label"</span><span class="p">);</span>
+<span class="n">Vector2</span><span class="w"> </span><span class="n">stringSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">label</span><span class="p">.</span><span class="n">GetThemeFont</span><span class="p">(</span><span class="s">"font"</span><span class="p">).</span><span class="n">GetStringSize</span><span class="p">(</span><span class="n">label</span><span class="p">.</span><span class="n">Text</span><span class="p">,</span><span class="w"> </span><span class="n">HorizontalAlignment</span><span class="p">.</span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="p">.</span><span class="n">GetThemeFontSize</span><span class="p">(</span><span class="s">"font_size"</span><span class="p">));</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> Since kerning, advance and subpixel positioning are taken into account by <a class="reference internal" href="#class-font-method-get-string-size"><span class="std std-ref">get_string_size</span></a>, using separate <a class="reference internal" href="#class-font-method-get-string-size"><span class="std std-ref">get_string_size</span></a> calls on substrings of a string then adding the results together will return a different result compared to using a single <a class="reference internal" href="#class-font-method-get-string-size"><span class="std std-ref">get_string_size</span></a> call on the full string.</p>
+<p><strong>Note:</strong> Real height of the string is context-dependent and can be significantly different from the value returned by <a class="reference internal" href="#class-font-method-get-height"><span class="std std-ref">get_height</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-supported-chars"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_supported_chars</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a string containing all the characters available in the font.</p>
+<p>If a given character is included in more than one font data source, it appears only once in the returned string.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-supported-feature-list"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_supported_feature_list</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns list of OpenType features supported by font.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-supported-variation-list"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_supported_variation_list</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns list of supported <a class="reference external" href="https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg">variation coordinates</a>, each coordinate is returned as <code class="docutils literal notranslate"><span class="pre">tag:</span> <span class="pre">Vector3i(min_value,max_value,default_value)</span></code>.</p>
+<p>Font variations allow for continuous change of glyph characteristics along some given design axis, such as weight, width or slant.</p>
+<p>To print available variation axes of a variable font:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">fv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FontVariation</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">fv</span><span class="o">.</span><span class="n">set_base_font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">load</span><span class="p">(</span><span class="s2">"res://RobotoFlex.ttf"</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">variation_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fv</span><span class="o">.</span><span class="n">get_supported_variation_list</span><span class="p">()</span>
+<span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">variation_list</span><span class="p">:</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TextServerManager</span><span class="o">.</span><span class="n">get_primary_interface</span><span class="p">()</span><span class="o">.</span><span class="n">tag_to_name</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">variation_list</span><span class="p">[</span><span class="n">tag</span><span class="p">]</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"variation axis: </span><span class="si">%s</span><span class="s2"> (</span><span class="si">%d</span><span class="s2">)</span><span class="se">\n\t</span><span class="s2">min, max, default: </span><span class="si">%s</span><span class="s2">"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">[</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> To set and get variation coordinates of a <a class="reference internal" href="class_fontvariation.html#class-fontvariation"><span class="std std-ref">FontVariation</span></a>, use <a class="reference internal" href="class_fontvariation.html#class-fontvariation-property-variation-opentype"><span class="std std-ref">FontVariation.variation_opentype</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-underline-position"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_underline_position</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns average pixel offset of the underline below the baseline.</p>
+<p><strong>Note:</strong> Real underline position of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-get-underline-thickness"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_underline_thickness</strong>(font_size: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 16) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns average thickness of the underline.</p>
+<p><strong>Note:</strong> Real underline thickness of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-has-char"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_char</strong>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if a Unicode <code class="docutils literal notranslate"><span class="pre">char</span></code> is available in the font.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-is-language-supported"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_language_supported</strong>(language: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code>, if font supports given language (<a class="reference external" href="https://en.wikipedia.org/wiki/ISO_639-1">ISO 639</a> code).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-is-script-supported"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_script_supported</strong>(script: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code>, if font supports given script (<a class="reference external" href="https://en.wikipedia.org/wiki/ISO_15924">ISO 15924</a> code).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-font-method-set-cache-capacity"><abbr title="No return value.">void</abbr> <strong>set_cache_capacity</strong>(single_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, multi_line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Sets LRU cache capacity for <code class="docutils literal notranslate"><span class="pre">draw_*</span></code> methods.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_fogmaterial.html" rel="prev" title="FogMaterial"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_fontfile.html" rel="next" title="FontFile">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

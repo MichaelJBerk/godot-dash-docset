@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="WebSocketPeer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_websocketpeer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: PacketPeer&lt; RefCounted&lt; Object A WebSocket connection. Description: This class represents WebSocket connection, and can be used as a WebSocket client (RFC 6455-compliant) or as a remote p..." property="og:description"/>
+<meta content="Inherits: PacketPeer&lt; RefCounted&lt; Object A WebSocket connection. Description: This class represents WebSocket connection, and can be used as a WebSocket client (RFC 6455-compliant) or as a remote p..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) WebSocketPeer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketpeer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_websocketpeer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_websocketpeer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_websocketpeer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_websocketpeer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_websocketpeer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_websocketpeer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_websocketpeer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_websocketpeer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_websocketpeer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_websocketpeer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_websocketpeer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_websocketpeer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_websocketpeer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketpeer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_websocketpeer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_webxrinterface.html" rel="next" title="WebXRInterface"/>
+<link href="class_websocketmultiplayerpeer.html" rel="prev" title="WebSocketMultiplayerPeer"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_websocketpeer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">WebSocketPeer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="websocketpeer">
+<span id="class-websocketpeer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/WebSocketPeer¶"></a>WebSocketPeer<a class="headerlink" href="#websocketpeer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A WebSocket connection.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class represents WebSocket connection, and can be used as a WebSocket client (RFC 6455-compliant) or as a remote peer of a WebSocket server.</p>
+<p>You can send WebSocket binary frames using <a class="reference internal" href="class_packetpeer.html#class-packetpeer-method-put-packet"><span class="std std-ref">PacketPeer.put_packet</span></a>, and WebSocket text frames using <a class="reference internal" href="#class-websocketpeer-method-send"><span class="std std-ref">send</span></a> (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via <a class="reference internal" href="#class-websocketpeer-method-was-string-packet"><span class="std std-ref">was_string_packet</span></a>.</p>
+<p>To start a WebSocket client, first call <a class="reference internal" href="#class-websocketpeer-method-connect-to-url"><span class="std std-ref">connect_to_url</span></a>, then regularly call <a class="reference internal" href="#class-websocketpeer-method-poll"><span class="std std-ref">poll</span></a> (e.g. during <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> process). You can query the socket state via <a class="reference internal" href="#class-websocketpeer-method-get-ready-state"><span class="std std-ref">get_ready_state</span></a>, get the number of pending packets using <a class="reference internal" href="class_packetpeer.html#class-packetpeer-method-get-available-packet-count"><span class="std std-ref">PacketPeer.get_available_packet_count</span></a>, and retrieve them via <a class="reference internal" href="class_packetpeer.html#class-packetpeer-method-get-packet"><span class="std std-ref">PacketPeer.get_packet</span></a>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WebSocketPeer</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">socket</span><span class="o">.</span><span class="n">connect_to_url</span><span class="p">(</span><span class="s2">"wss://example.com"</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="n">socket</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">socket</span><span class="o">.</span><span class="n">get_ready_state</span><span class="p">()</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WebSocketPeer</span><span class="o">.</span><span class="n">STATE_OPEN</span><span class="p">:</span>
+<span class="w">        </span><span class="k k-ControlFlow">while</span><span class="w"> </span><span class="n">socket</span><span class="o">.</span><span class="n">get_available_packet_count</span><span class="p">():</span>
+<span class="w">            </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Packet: "</span><span class="p">,</span><span class="w"> </span><span class="n">socket</span><span class="o">.</span><span class="n">get_packet</span><span class="p">())</span>
+<span class="w">    </span><span class="k k-ControlFlow">elif</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WebSocketPeer</span><span class="o">.</span><span class="n">STATE_CLOSING</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># Keep polling to achieve proper close.</span>
+<span class="w">        </span><span class="k k-ControlFlow">pass</span>
+<span class="w">    </span><span class="k k-ControlFlow">elif</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WebSocketPeer</span><span class="o">.</span><span class="n">STATE_CLOSED</span><span class="p">:</span>
+<span class="w">        </span><span class="k">var</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">socket</span><span class="o">.</span><span class="n">get_close_code</span><span class="p">()</span>
+<span class="w">        </span><span class="k">var</span><span class="w"> </span><span class="n">reason</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">socket</span><span class="o">.</span><span class="n">get_close_reason</span><span class="p">()</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">"WebSocket closed with code: </span><span class="si">%d</span><span class="s2">, reason </span><span class="si">%s</span><span class="s2">. Clean: </span><span class="si">%s</span><span class="s2">"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">[</span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">reason</span><span class="p">,</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="w">        </span><span class="n">set_process</span><span class="p">(</span><span class="bp">false</span><span class="p">)</span><span class="w"> </span><span class="c1"># Stop processing.</span>
+</pre></div>
+</div>
+</div></div>
+<p>To use the peer as part of a WebSocket server refer to <a class="reference internal" href="#class-websocketpeer-method-accept-stream"><span class="std std-ref">accept_stream</span></a> and the online tutorial.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-property-handshake-headers"><span class="std std-ref">handshake_headers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-property-inbound-buffer-size"><span class="std std-ref">inbound_buffer_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">65535</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-property-max-queued-packets"><span class="std std-ref">max_queued_packets</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2048</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-property-outbound-buffer-size"><span class="std std-ref">outbound_buffer_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">65535</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-property-supported-protocols"><span class="std std-ref">supported_protocols</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-accept-stream"><span class="std std-ref">accept_stream</span></a>(stream: <a class="reference internal" href="class_streampeer.html#class-streampeer"><span class="std std-ref">StreamPeer</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-close"><span class="std std-ref">close</span></a>(code: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1000, reason: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-connect-to-url"><span class="std std-ref">connect_to_url</span></a>(url: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, tls_client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-close-code"><span class="std std-ref">get_close_code</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-close-reason"><span class="std std-ref">get_close_reason</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-connected-host"><span class="std std-ref">get_connected_host</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-connected-port"><span class="std std-ref">get_connected_port</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-current-outbound-buffered-amount"><span class="std std-ref">get_current_outbound_buffered_amount</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-ready-state"><span class="std std-ref">get_ready_state</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-requested-url"><span class="std std-ref">get_requested_url</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-get-selected-protocol"><span class="std std-ref">get_selected_protocol</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-poll"><span class="std std-ref">poll</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-send"><span class="std std-ref">send</span></a>(message: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, write_mode: <a class="reference internal" href="#enum-websocketpeer-writemode"><span class="std std-ref">WriteMode</span></a> = 1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-send-text"><span class="std std-ref">send_text</span></a>(message: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-set-no-delay"><span class="std std-ref">set_no_delay</span></a>(enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-websocketpeer-method-was-string-packet"><span class="std std-ref">was_string_packet</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-websocketpeer-writemode">enum <strong><a class="dashAnchor" id="enumerations-WriteMode" name="//apple_ref/cpp/Enum/WriteMode"></a>WriteMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-write-mode-text"><a class="reference internal" href="#enum-websocketpeer-writemode"><span class="std std-ref">WriteMode</span></a> <strong><a class="dashAnchor" id="enumerations-WRITE_MODE_TEXT" name="//apple_ref/cpp/Enum/WRITE_MODE_TEXT"></a>WRITE_MODE_TEXT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Specifies that WebSockets messages should be transferred as text payload (only valid UTF-8 is allowed).</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-write-mode-binary"><a class="reference internal" href="#enum-websocketpeer-writemode"><span class="std std-ref">WriteMode</span></a> <strong><a class="dashAnchor" id="enumerations-WRITE_MODE_BINARY" name="//apple_ref/cpp/Enum/WRITE_MODE_BINARY"></a>WRITE_MODE_BINARY</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Specifies that WebSockets messages should be transferred as binary payload (any byte combination is allowed).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-websocketpeer-state">enum <strong><a class="dashAnchor" id="enumerations-State" name="//apple_ref/cpp/Enum/State"></a>State</strong>:</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-state-connecting"><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CONNECTING" name="//apple_ref/cpp/Enum/STATE_CONNECTING"></a>STATE_CONNECTING</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Socket has been created. The connection is not yet open.</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-state-open"><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_OPEN" name="//apple_ref/cpp/Enum/STATE_OPEN"></a>STATE_OPEN</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The connection is open and ready to communicate.</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-state-closing"><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CLOSING" name="//apple_ref/cpp/Enum/STATE_CLOSING"></a>STATE_CLOSING</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The connection is in the process of closing. This means a close request has been sent to the remote peer but confirmation has not been received.</p>
+<p class="classref-enumeration-constant" id="class-websocketpeer-constant-state-closed"><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a> <strong><a class="dashAnchor" id="enumerations-STATE_CLOSED" name="//apple_ref/cpp/Enum/STATE_CLOSED"></a>STATE_CLOSED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The connection is closed or couldn't be opened.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-websocketpeer-property-handshake-headers"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>handshake_headers</strong> = <code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_handshake_headers" name="//apple_ref/cpp/Property/set_handshake_headers"></a>set_handshake_headers</strong>(value: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong><a class="dashAnchor" id="properties-get_handshake_headers" name="//apple_ref/cpp/Property/get_handshake_headers"></a>get_handshake_headers</strong>()</p></li>
+</ul>
+<p>The extra HTTP headers to be sent during the WebSocket handshake.</p>
+<p><strong>Note:</strong> Not supported in Web exports due to browsers' restrictions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketpeer-property-inbound-buffer-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>inbound_buffer_size</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_inbound_buffer_size" name="//apple_ref/cpp/Property/set_inbound_buffer_size"></a>set_inbound_buffer_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_inbound_buffer_size" name="//apple_ref/cpp/Property/get_inbound_buffer_size"></a>get_inbound_buffer_size</strong>()</p></li>
+</ul>
+<p>The size of the input buffer in bytes (roughly the maximum amount of memory that will be allocated for the inbound packets).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketpeer-property-max-queued-packets"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_queued_packets</strong> = <code class="docutils literal notranslate"><span class="pre">2048</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_queued_packets" name="//apple_ref/cpp/Property/set_max_queued_packets"></a>set_max_queued_packets</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_queued_packets" name="//apple_ref/cpp/Property/get_max_queued_packets"></a>get_max_queued_packets</strong>()</p></li>
+</ul>
+<p>The maximum amount of packets that will be allowed in the queues (both inbound and outbound).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketpeer-property-outbound-buffer-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outbound_buffer_size</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_outbound_buffer_size" name="//apple_ref/cpp/Property/set_outbound_buffer_size"></a>set_outbound_buffer_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_outbound_buffer_size" name="//apple_ref/cpp/Property/get_outbound_buffer_size"></a>get_outbound_buffer_size</strong>()</p></li>
+</ul>
+<p>The size of the input buffer in bytes (roughly the maximum amount of memory that will be allocated for the outbound packets).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-websocketpeer-property-supported-protocols"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>supported_protocols</strong> = <code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_supported_protocols" name="//apple_ref/cpp/Property/set_supported_protocols"></a>set_supported_protocols</strong>(value: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong><a class="dashAnchor" id="properties-get_supported_protocols" name="//apple_ref/cpp/Property/get_supported_protocols"></a>get_supported_protocols</strong>()</p></li>
+</ul>
+<p>The WebSocket sub-protocols allowed during the WebSocket handshake.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-websocketpeer-method-accept-stream"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>accept_stream</strong>(stream: <a class="reference internal" href="class_streampeer.html#class-streampeer"><span class="std std-ref">StreamPeer</span></a>)</p>
+<p>Accepts a peer connection performing the HTTP handshake as a WebSocket server. The <code class="docutils literal notranslate"><span class="pre">stream</span></code> must be a valid TCP stream retrieved via <a class="reference internal" href="class_tcpserver.html#class-tcpserver-method-take-connection"><span class="std std-ref">TCPServer.take_connection</span></a>, or a TLS stream accepted via <a class="reference internal" href="class_streampeertls.html#class-streampeertls-method-accept-stream"><span class="std std-ref">StreamPeerTLS.accept_stream</span></a>.</p>
+<p><strong>Note:</strong> Not supported in Web exports due to browsers' restrictions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-close"><abbr title="No return value.">void</abbr> <strong>close</strong>(code: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1000, reason: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Closes this WebSocket connection. <code class="docutils literal notranslate"><span class="pre">code</span></code> is the status code for the closure (see RFC 6455 section 7.4 for a list of valid status codes). <code class="docutils literal notranslate"><span class="pre">reason</span></code> is the human readable reason for closing the connection (can be any UTF-8 string that's smaller than 123 bytes). If <code class="docutils literal notranslate"><span class="pre">code</span></code> is negative, the connection will be closed immediately without notifying the remote peer.</p>
+<p><strong>Note:</strong> To achieve a clean close, you will need to keep polling until <a class="reference internal" href="#class-websocketpeer-constant-state-closed"><span class="std std-ref">STATE_CLOSED</span></a> is reached.</p>
+<p><strong>Note:</strong> The Web export might not support all status codes. Please refer to browser-specific documentation for more details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-connect-to-url"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>connect_to_url</strong>(url: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, tls_client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p>
+<p>Connects to the given URL. TLS certificates will be verified against the hostname when connecting using the <code class="docutils literal notranslate"><span class="pre">wss://</span></code> protocol. You can pass the optional <code class="docutils literal notranslate"><span class="pre">tls_client_options</span></code> parameter to customize the trusted certification authorities, or disable the common name verification. See <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client"><span class="std std-ref">TLSOptions.client</span></a> and <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client-unsafe"><span class="std std-ref">TLSOptions.client_unsafe</span></a>.</p>
+<p><strong>Note:</strong> To avoid mixed content warnings or errors in Web, you may have to use a <code class="docutils literal notranslate"><span class="pre">url</span></code> that starts with <code class="docutils literal notranslate"><span class="pre">wss://</span></code> (secure) instead of <code class="docutils literal notranslate"><span class="pre">ws://</span></code>. When doing so, make sure to use the fully qualified domain name that matches the one defined in the server's TLS certificate. Do not connect directly via the IP address for <code class="docutils literal notranslate"><span class="pre">wss://</span></code> connections, as it won't match with the TLS certificate.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-close-code"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_close_code</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the received WebSocket close frame status code, or <code class="docutils literal notranslate"><span class="pre">-1</span></code> when the connection was not cleanly closed. Only call this method when <a class="reference internal" href="#class-websocketpeer-method-get-ready-state"><span class="std std-ref">get_ready_state</span></a> returns <a class="reference internal" href="#class-websocketpeer-constant-state-closed"><span class="std std-ref">STATE_CLOSED</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-close-reason"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_close_reason</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the received WebSocket close frame status reason string. Only call this method when <a class="reference internal" href="#class-websocketpeer-method-get-ready-state"><span class="std std-ref">get_ready_state</span></a> returns <a class="reference internal" href="#class-websocketpeer-constant-state-closed"><span class="std std-ref">STATE_CLOSED</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-connected-host"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_connected_host</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the IP address of the connected peer.</p>
+<p><strong>Note:</strong> Not available in the Web export.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-connected-port"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_connected_port</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the remote port of the connected peer.</p>
+<p><strong>Note:</strong> Not available in the Web export.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-current-outbound-buffered-amount"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_current_outbound_buffered_amount</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current amount of data in the outbound websocket buffer. <strong>Note:</strong> Web exports use WebSocket.bufferedAmount, while other platforms use an internal buffer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-ready-state"><a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a> <strong>get_ready_state</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the ready state of the connection. See <a class="reference internal" href="#enum-websocketpeer-state"><span class="std std-ref">State</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-requested-url"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_requested_url</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the URL requested by this peer. The URL is derived from the <code class="docutils literal notranslate"><span class="pre">url</span></code> passed to <a class="reference internal" href="#class-websocketpeer-method-connect-to-url"><span class="std std-ref">connect_to_url</span></a> or from the HTTP headers when acting as server (i.e. when using <a class="reference internal" href="#class-websocketpeer-method-accept-stream"><span class="std std-ref">accept_stream</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-get-selected-protocol"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_selected_protocol</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the selected WebSocket sub-protocol for this connection or an empty string if the sub-protocol has not been selected yet.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-poll"><abbr title="No return value.">void</abbr> <strong>poll</strong>()</p>
+<p>Updates the connection state and receive incoming packets. Call this function regularly to keep it in a clean state.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-send"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>send</strong>(message: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, write_mode: <a class="reference internal" href="#enum-websocketpeer-writemode"><span class="std std-ref">WriteMode</span></a> = 1)</p>
+<p>Sends the given <code class="docutils literal notranslate"><span class="pre">message</span></code> using the desired <code class="docutils literal notranslate"><span class="pre">write_mode</span></code>. When sending a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, prefer using <a class="reference internal" href="#class-websocketpeer-method-send-text"><span class="std std-ref">send_text</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-send-text"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>send_text</strong>(message: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Sends the given <code class="docutils literal notranslate"><span class="pre">message</span></code> using WebSocket text mode. Prefer this method over <a class="reference internal" href="class_packetpeer.html#class-packetpeer-method-put-packet"><span class="std std-ref">PacketPeer.put_packet</span></a> when interacting with third-party text-based API (e.g. when using <a class="reference internal" href="class_json.html#class-json"><span class="std std-ref">JSON</span></a> formatted messages).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-set-no-delay"><abbr title="No return value.">void</abbr> <strong>set_no_delay</strong>(enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Disable Nagle's algorithm on the underling TCP socket (default). See <a class="reference internal" href="class_streampeertcp.html#class-streampeertcp-method-set-no-delay"><span class="std std-ref">StreamPeerTCP.set_no_delay</span></a> for more information.</p>
+<p><strong>Note:</strong> Not available in the Web export.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-websocketpeer-method-was-string-packet"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>was_string_packet</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the last received packet was sent as a text payload. See <a class="reference internal" href="#enum-websocketpeer-writemode"><span class="std std-ref">WriteMode</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_websocketmultiplayerpeer.html" rel="prev" title="WebSocketMultiplayerPeer"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_webxrinterface.html" rel="next" title="WebXRInterface">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

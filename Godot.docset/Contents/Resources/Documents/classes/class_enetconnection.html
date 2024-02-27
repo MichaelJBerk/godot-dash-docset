@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ENetConnection" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_enetconnection.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object A wrapper class for an ENetHost. Description: ENet's purpose is to provide a relatively thin, simple and robust network communication layer on top of UDP (User Datagram..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object A wrapper class for an ENetHost. Description: ENet's purpose is to provide a relatively thin, simple and robust network communication layer on top of UDP (User Datagram..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ENetConnection — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetconnection.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_enetconnection.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_enetconnection.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_enetconnection.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_enetconnection.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_enetconnection.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_enetconnection.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_enetconnection.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_enetconnection.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_enetconnection.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_enetconnection.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_enetconnection.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_enetconnection.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_enetconnection.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetconnection.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetconnection.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_enetmultiplayerpeer.html" rel="next" title="ENetMultiplayerPeer"/>
+<link href="class_encodedobjectasid.html" rel="prev" title="EncodedObjectAsID"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_enetconnection" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ENetConnection</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="enetconnection">
+<span id="class-enetconnection"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ENetConnection¶"></a>ENetConnection<a class="headerlink" href="#enetconnection" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A wrapper class for an <a class="reference external" href="http://enet.bespin.org/group__host.html">ENetHost</a>.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>ENet's purpose is to provide a relatively thin, simple and robust network communication layer on top of UDP (User Datagram Protocol).</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://enet.bespin.org/usergroup0.html">API documentation on the ENet website</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-bandwidth-limit"><span class="std std-ref">bandwidth_limit</span></a>(in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-broadcast"><span class="std std-ref">broadcast</span></a>(channel: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, packet: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-channel-limit"><span class="std std-ref">channel_limit</span></a>(limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-compress"><span class="std std-ref">compress</span></a>(mode: <a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-connect-to-host"><span class="std std-ref">connect_to_host</span></a>(address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, data: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-create-host"><span class="std std-ref">create_host</span></a>(max_peers: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-create-host-bound"><span class="std std-ref">create_host_bound</span></a>(bind_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, bind_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, max_peers: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-destroy"><span class="std std-ref">destroy</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-dtls-client-setup"><span class="std std-ref">dtls_client_setup</span></a>(hostname: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-dtls-server-setup"><span class="std std-ref">dtls_server_setup</span></a>(server_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-flush"><span class="std std-ref">flush</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-get-local-port"><span class="std std-ref">get_local_port</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-get-max-channels"><span class="std std-ref">get_max_channels</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-get-peers"><span class="std std-ref">get_peers</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-pop-statistic"><span class="std std-ref">pop_statistic</span></a>(statistic: <a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-refuse-new-connections"><span class="std std-ref">refuse_new_connections</span></a>(refuse: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-service"><span class="std std-ref">service</span></a>(timeout: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetconnection-method-socket-send"><span class="std std-ref">socket_send</span></a>(destination_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, destination_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, packet: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-enetconnection-compressionmode">enum <strong><a class="dashAnchor" id="enumerations-CompressionMode" name="//apple_ref/cpp/Enum/CompressionMode"></a>CompressionMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-compress-none"><a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_NONE" name="//apple_ref/cpp/Enum/COMPRESS_NONE"></a>COMPRESS_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No compression. This uses the most bandwidth, but has the upside of requiring the fewest CPU resources. This option may also be used to make network debugging using tools like Wireshark easier.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-compress-range-coder"><a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_RANGE_CODER" name="//apple_ref/cpp/Enum/COMPRESS_RANGE_CODER"></a>COMPRESS_RANGE_CODER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>ENet's built-in range encoding. Works well on small packets, but is not the most efficient algorithm on packets larger than 4 KB.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-compress-fastlz"><a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_FASTLZ" name="//apple_ref/cpp/Enum/COMPRESS_FASTLZ"></a>COMPRESS_FASTLZ</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p><a class="reference external" href="https://fastlz.org/">FastLZ</a> compression. This option uses less CPU resources compared to <a class="reference internal" href="#class-enetconnection-constant-compress-zlib"><span class="std std-ref">COMPRESS_ZLIB</span></a>, at the expense of using more bandwidth.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-compress-zlib"><a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_ZLIB" name="//apple_ref/cpp/Enum/COMPRESS_ZLIB"></a>COMPRESS_ZLIB</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p><a class="reference external" href="https://www.zlib.net/">Zlib</a> compression. This option uses less bandwidth compared to <a class="reference internal" href="#class-enetconnection-constant-compress-fastlz"><span class="std std-ref">COMPRESS_FASTLZ</span></a>, at the expense of using more CPU resources.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-compress-zstd"><a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_ZSTD" name="//apple_ref/cpp/Enum/COMPRESS_ZSTD"></a>COMPRESS_ZSTD</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p><a class="reference external" href="https://facebook.github.io/zstd/">Zstandard</a> compression. Note that this algorithm is not very efficient on packets smaller than 4 KB. Therefore, it's recommended to use other compression algorithms in most cases.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-enetconnection-eventtype">enum <strong><a class="dashAnchor" id="enumerations-EventType" name="//apple_ref/cpp/Enum/EventType"></a>EventType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-event-error"><a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a> <strong><a class="dashAnchor" id="enumerations-EVENT_ERROR" name="//apple_ref/cpp/Enum/EVENT_ERROR"></a>EVENT_ERROR</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>An error occurred during <a class="reference internal" href="#class-enetconnection-method-service"><span class="std std-ref">service</span></a>. You will likely need to <a class="reference internal" href="#class-enetconnection-method-destroy"><span class="std std-ref">destroy</span></a> the host and recreate it.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-event-none"><a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a> <strong><a class="dashAnchor" id="enumerations-EVENT_NONE" name="//apple_ref/cpp/Enum/EVENT_NONE"></a>EVENT_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No event occurred within the specified time limit.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-event-connect"><a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a> <strong><a class="dashAnchor" id="enumerations-EVENT_CONNECT" name="//apple_ref/cpp/Enum/EVENT_CONNECT"></a>EVENT_CONNECT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>A connection request initiated by enet_host_connect has completed. The array will contain the peer which successfully connected.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-event-disconnect"><a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a> <strong><a class="dashAnchor" id="enumerations-EVENT_DISCONNECT" name="//apple_ref/cpp/Enum/EVENT_DISCONNECT"></a>EVENT_DISCONNECT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>A peer has disconnected. This event is generated on a successful completion of a disconnect initiated by <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer-method-peer-disconnect"><span class="std std-ref">ENetPacketPeer.peer_disconnect</span></a>, if a peer has timed out, or if a connection request initialized by <a class="reference internal" href="#class-enetconnection-method-connect-to-host"><span class="std std-ref">connect_to_host</span></a> has timed out. The array will contain the peer which disconnected. The data field contains user supplied data describing the disconnection, or 0, if none is available.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-event-receive"><a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a> <strong><a class="dashAnchor" id="enumerations-EVENT_RECEIVE" name="//apple_ref/cpp/Enum/EVENT_RECEIVE"></a>EVENT_RECEIVE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>A packet has been received from a peer. The array will contain the peer which sent the packet and the channel number upon which the packet was received. The received packet will be queued to the associated <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-enetconnection-hoststatistic">enum <strong><a class="dashAnchor" id="enumerations-HostStatistic" name="//apple_ref/cpp/Enum/HostStatistic"></a>HostStatistic</strong>:</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-host-total-sent-data"><a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a> <strong><a class="dashAnchor" id="enumerations-HOST_TOTAL_SENT_DATA" name="//apple_ref/cpp/Enum/HOST_TOTAL_SENT_DATA"></a>HOST_TOTAL_SENT_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Total data sent.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-host-total-sent-packets"><a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a> <strong><a class="dashAnchor" id="enumerations-HOST_TOTAL_SENT_PACKETS" name="//apple_ref/cpp/Enum/HOST_TOTAL_SENT_PACKETS"></a>HOST_TOTAL_SENT_PACKETS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Total UDP packets sent.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-host-total-received-data"><a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a> <strong><a class="dashAnchor" id="enumerations-HOST_TOTAL_RECEIVED_DATA" name="//apple_ref/cpp/Enum/HOST_TOTAL_RECEIVED_DATA"></a>HOST_TOTAL_RECEIVED_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Total data received.</p>
+<p class="classref-enumeration-constant" id="class-enetconnection-constant-host-total-received-packets"><a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a> <strong><a class="dashAnchor" id="enumerations-HOST_TOTAL_RECEIVED_PACKETS" name="//apple_ref/cpp/Enum/HOST_TOTAL_RECEIVED_PACKETS"></a>HOST_TOTAL_RECEIVED_PACKETS</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Total UDP packets received.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-enetconnection-method-bandwidth-limit"><abbr title="No return value.">void</abbr> <strong>bandwidth_limit</strong>(in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Adjusts the bandwidth limits of a host.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-broadcast"><abbr title="No return value.">void</abbr> <strong>broadcast</strong>(channel: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, packet: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Queues a <code class="docutils literal notranslate"><span class="pre">packet</span></code> to be sent to all peers associated with the host over the specified <code class="docutils literal notranslate"><span class="pre">channel</span></code>. See <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a> <code class="docutils literal notranslate"><span class="pre">FLAG_*</span></code> constants for available packet flags.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-channel-limit"><abbr title="No return value.">void</abbr> <strong>channel_limit</strong>(limit: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Limits the maximum allowed channels of future incoming connections.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-compress"><abbr title="No return value.">void</abbr> <strong>compress</strong>(mode: <a class="reference internal" href="#enum-enetconnection-compressionmode"><span class="std std-ref">CompressionMode</span></a>)</p>
+<p>Sets the compression method used for network packets. These have different tradeoffs of compression speed versus bandwidth, you may need to test which one works best for your use case if you use compression at all.</p>
+<p><strong>Note:</strong> Most games' network design involve sending many small packets frequently (smaller than 4 KB each). If in doubt, it is recommended to keep the default compression algorithm as it works best on these small packets.</p>
+<p><strong>Note:</strong> The compression mode must be set to the same value on both the server and all its clients. Clients will fail to connect if the compression mode set on the client differs from the one set on the server.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-connect-to-host"><a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a> <strong>connect_to_host</strong>(address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, data: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Initiates a connection to a foreign <code class="docutils literal notranslate"><span class="pre">address</span></code> using the specified <code class="docutils literal notranslate"><span class="pre">port</span></code> and allocating the requested <code class="docutils literal notranslate"><span class="pre">channels</span></code>. Optional <code class="docutils literal notranslate"><span class="pre">data</span></code> can be passed during connection in the form of a 32 bit integer.</p>
+<p><strong>Note:</strong> You must call either <a class="reference internal" href="#class-enetconnection-method-create-host"><span class="std std-ref">create_host</span></a> or <a class="reference internal" href="#class-enetconnection-method-create-host-bound"><span class="std std-ref">create_host_bound</span></a> before calling this method.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-create-host"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_host</strong>(max_peers: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Create an ENetHost that will allow up to <code class="docutils literal notranslate"><span class="pre">max_peers</span></code> connected peers, each allocating up to <code class="docutils literal notranslate"><span class="pre">max_channels</span></code> channels, optionally limiting bandwidth to <code class="docutils literal notranslate"><span class="pre">in_bandwidth</span></code> and <code class="docutils literal notranslate"><span class="pre">out_bandwidth</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-create-host-bound"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_host_bound</strong>(bind_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, bind_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, max_peers: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Create an ENetHost like <a class="reference internal" href="#class-enetconnection-method-create-host"><span class="std std-ref">create_host</span></a> which is also bound to the given <code class="docutils literal notranslate"><span class="pre">bind_address</span></code> and <code class="docutils literal notranslate"><span class="pre">bind_port</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-destroy"><abbr title="No return value.">void</abbr> <strong>destroy</strong>()</p>
+<p>Destroys the host and all resources associated with it.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-dtls-client-setup"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>dtls_client_setup</strong>(hostname: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, client_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a> = null)</p>
+<p>Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet clients. Call this before <a class="reference internal" href="#class-enetconnection-method-connect-to-host"><span class="std std-ref">connect_to_host</span></a> to have ENet connect using DTLS validating the server certificate against <code class="docutils literal notranslate"><span class="pre">hostname</span></code>. You can pass the optional <code class="docutils literal notranslate"><span class="pre">client_options</span></code> parameter to customize the trusted certification authorities, or disable the common name verification. See <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client"><span class="std std-ref">TLSOptions.client</span></a> and <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-client-unsafe"><span class="std std-ref">TLSOptions.client_unsafe</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-dtls-server-setup"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>dtls_server_setup</strong>(server_options: <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions"><span class="std std-ref">TLSOptions</span></a>)</p>
+<p>Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet servers. Call this right after <a class="reference internal" href="#class-enetconnection-method-create-host-bound"><span class="std std-ref">create_host_bound</span></a> to have ENet expect peers to connect using DTLS. See <a class="reference internal" href="class_tlsoptions.html#class-tlsoptions-method-server"><span class="std std-ref">TLSOptions.server</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-flush"><abbr title="No return value.">void</abbr> <strong>flush</strong>()</p>
+<p>Sends any queued packets on the host specified to its designated peers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-get-local-port"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_local_port</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the local port to which this peer is bound.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-get-max-channels"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_max_channels</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the maximum number of channels allowed for connected peers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-get-peers"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a>] <strong>get_peers</strong>()</p>
+<p>Returns the list of peers associated with this host.</p>
+<p><strong>Note:</strong> This list might include some peers that are not fully connected or are still being disconnected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-pop-statistic"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>pop_statistic</strong>(statistic: <a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a>)</p>
+<p>Returns and resets host statistics. See <a class="reference internal" href="#enum-enetconnection-hoststatistic"><span class="std std-ref">HostStatistic</span></a> for more info.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-refuse-new-connections"><abbr title="No return value.">void</abbr> <strong>refuse_new_connections</strong>(refuse: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Configures the DTLS server to automatically drop new connections.</p>
+<p><strong>Note:</strong> This method is only relevant after calling <a class="reference internal" href="#class-enetconnection-method-dtls-server-setup"><span class="std std-ref">dtls_server_setup</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-service"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>service</strong>(timeout: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Waits for events on the host specified and shuttles packets between the host and its peers. The returned <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> will have 4 elements. An <a class="reference internal" href="#enum-enetconnection-eventtype"><span class="std std-ref">EventType</span></a>, the <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a> which generated the event, the event associated data (if any), the event associated channel (if any). If the generated event is <a class="reference internal" href="#class-enetconnection-constant-event-receive"><span class="std std-ref">EVENT_RECEIVE</span></a>, the received packet will be queued to the associated <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a>.</p>
+<p>Call this function regularly to handle connections, disconnections, and to receive new packets.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetconnection-method-socket-send"><abbr title="No return value.">void</abbr> <strong>socket_send</strong>(destination_address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, destination_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, packet: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Sends a <code class="docutils literal notranslate"><span class="pre">packet</span></code> toward a destination from the address and port currently bound by this ENetConnection instance.</p>
+<p>This is useful as it serves to establish entries in NAT routing tables on all devices between this bound instance and the public facing internet, allowing a prospective client's connection packets to be routed backward through the NAT device(s) between the public internet and this host.</p>
+<p>This requires forward knowledge of a prospective client's address and communication port as seen by the public internet - after any NAT devices have handled their connection request. This information can be obtained by a <a class="reference external" href="https://en.wikipedia.org/wiki/STUN">STUN</a> service, and must be handed off to your host by an entity that is not the prospective client. This will never work for a client behind a Symmetric NAT due to the nature of the Symmetric NAT routing algorithm, as their IP and Port cannot be known beforehand.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_encodedobjectasid.html" rel="prev" title="EncodedObjectAsID"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_enetmultiplayerpeer.html" rel="next" title="ENetMultiplayerPeer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

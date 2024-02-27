@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ScriptExtension" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_scriptextension.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Script&lt; Resource&lt; RefCounted&lt; Object There is currently no description for this class. Please help us by contributing one! Methods:,, bool,_can_instantiate() virtual const,, bool,_editor_..." property="og:description"/>
+<meta content="Inherits: Script&lt; Resource&lt; RefCounted&lt; Object There is currently no description for this class. Please help us by contributing one! Methods:,, bool,_can_instantiate() virtual const,, bool,_editor_..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ScriptExtension — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scriptextension.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_scriptextension.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_scriptextension.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_scriptextension.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_scriptextension.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_scriptextension.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_scriptextension.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_scriptextension.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_scriptextension.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_scriptextension.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_scriptextension.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_scriptextension.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_scriptextension.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_scriptextension.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scriptextension.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scriptextension.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_segmentshape2d.html" rel="next" title="SegmentShape2D"/>
+<link href="class_script.html" rel="prev" title="Script"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_scriptextension" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ScriptExtension</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="scriptextension">
+<span id="class-scriptextension"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ScriptExtension¶"></a>ScriptExtension<a class="headerlink" href="#scriptextension" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this class. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-can-instantiate"><span class="std std-ref">_can_instantiate</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-editor-can-reload-from-file"><span class="std std-ref">_editor_can_reload_from_file</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-base-script"><span class="std std-ref">_get_base_script</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-class-icon-path"><span class="std std-ref">_get_class_icon_path</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-constants"><span class="std std-ref">_get_constants</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-documentation"><span class="std std-ref">_get_documentation</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-global-name"><span class="std std-ref">_get_global_name</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-instance-base-type"><span class="std std-ref">_get_instance_base_type</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-language"><span class="std std-ref">_get_language</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-member-line"><span class="std std-ref">_get_member_line</span></a>(member: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-members"><span class="std std-ref">_get_members</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-method-info"><span class="std std-ref">_get_method_info</span></a>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-property-default-value"><span class="std std-ref">_get_property_default_value</span></a>(property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-rpc-config"><span class="std std-ref">_get_rpc_config</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-script-method-list"><span class="std std-ref">_get_script_method_list</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-script-property-list"><span class="std std-ref">_get_script_property_list</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-script-signal-list"><span class="std std-ref">_get_script_signal_list</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-get-source-code"><span class="std std-ref">_get_source_code</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-has-method"><span class="std std-ref">_has_method</span></a>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-has-property-default-value"><span class="std std-ref">_has_property_default_value</span></a>(property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-has-script-signal"><span class="std std-ref">_has_script_signal</span></a>(signal: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-has-source-code"><span class="std std-ref">_has_source_code</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-has-static-method"><span class="std std-ref">_has_static_method</span></a>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-inherits-script"><span class="std std-ref">_inherits_script</span></a>(script: <a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">void*</span></code></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-instance-create"><span class="std std-ref">_instance_create</span></a>(for_object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-instance-has"><span class="std std-ref">_instance_has</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-is-abstract"><span class="std std-ref">_is_abstract</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-is-placeholder-fallback-enabled"><span class="std std-ref">_is_placeholder_fallback_enabled</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-is-tool"><span class="std std-ref">_is_tool</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-is-valid"><span class="std std-ref">_is_valid</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-placeholder-erased"><span class="std std-ref">_placeholder_erased</span></a>(placeholder: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">void*</span></code></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-placeholder-instance-create"><span class="std std-ref">_placeholder_instance_create</span></a>(for_object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-reload"><span class="std std-ref">_reload</span></a>(keep_state: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-set-source-code"><span class="std std-ref">_set_source_code</span></a>(code: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scriptextension-private-method-update-exports"><span class="std std-ref">_update_exports</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-scriptextension-private-method-can-instantiate"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_can_instantiate</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-editor-can-reload-from-file"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_editor_can_reload_from_file</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-base-script"><a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a> <strong>_get_base_script</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-class-icon-path"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_class_icon_path</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-constants"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>_get_constants</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-documentation"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>_get_documentation</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-global-name"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>_get_global_name</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-instance-base-type"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>_get_instance_base_type</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-language"><a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a> <strong>_get_language</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-member-line"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_member_line</strong>(member: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-members"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>] <strong>_get_members</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-method-info"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>_get_method_info</strong>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-property-default-value"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_property_default_value</strong>(property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-rpc-config"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_get_rpc_config</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-script-method-list"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>_get_script_method_list</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-script-property-list"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>_get_script_property_list</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-script-signal-list"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>_get_script_signal_list</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-get-source-code"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>_get_source_code</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-has-method"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_method</strong>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-has-property-default-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_property_default_value</strong>(property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-has-script-signal"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_script_signal</strong>(signal: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-has-source-code"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_source_code</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-has-static-method"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_static_method</strong>(method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-inherits-script"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_inherits_script</strong>(script: <a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-instance-create"><code class="docutils literal notranslate"><span class="pre">void*</span></code> <strong>_instance_create</strong>(for_object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-instance-has"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_instance_has</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-is-abstract"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_abstract</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the script is an abstract script. An abstract script does not have a constructor and cannot be instantiated.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-is-placeholder-fallback-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_placeholder_fallback_enabled</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-is-tool"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_tool</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-is-valid"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_is_valid</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-placeholder-erased"><abbr title="No return value.">void</abbr> <strong>_placeholder_erased</strong>(placeholder: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-placeholder-instance-create"><code class="docutils literal notranslate"><span class="pre">void*</span></code> <strong>_placeholder_instance_create</strong>(for_object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-reload"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>_reload</strong>(keep_state: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-set-source-code"><abbr title="No return value.">void</abbr> <strong>_set_source_code</strong>(code: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scriptextension-private-method-update-exports"><abbr title="No return value.">void</abbr> <strong>_update_exports</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_script.html" rel="prev" title="Script"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_segmentshape2d.html" rel="next" title="SegmentShape2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="text" name="keywords"/>
+<meta content="Label" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_label.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control for displaying plain text. Description: A control for displaying plain text. It gives you control over the horizontal and vertical alignment an..." property="og:description"/>
+<meta content="Inherits: Control&lt; CanvasItem&lt; Node&lt; Object A control for displaying plain text. Description: A control for displaying plain text. It gives you control over the horizontal and vertical alignment an..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Label — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_label.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_label.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_label.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_label.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_label.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_label.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_label.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_label.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_label.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_label.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_label.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_label.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_label.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_label.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_label.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_label.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_label3d.html" rel="next" title="Label3D"/>
+<link href="class_joint3d.html" rel="prev" title="Joint3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_label" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Label</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="label">
+<span id="class-label"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Label¶"></a>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A control for displaying plain text.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use <a class="reference internal" href="class_richtextlabel.html#class-richtextlabel"><span class="std std-ref">RichTextLabel</span></a> instead.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/515">2D Dodge The Creeps Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-autowrap-mode"><span class="std std-ref">autowrap_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-clip-text"><span class="std std-ref">clip_text</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-ellipsis-char"><span class="std std-ref">ellipsis_char</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"…"</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-horizontal-alignment"><span class="std std-ref">horizontal_alignment</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-label-property-justification-flags"><span class="std std-ref">justification_flags</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">163</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-label-settings"><span class="std std-ref">label_settings</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-language"><span class="std std-ref">language</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-lines-skipped"><span class="std std-ref">lines_skipped</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-max-lines-visible"><span class="std std-ref">max_lines_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_control.html#enum-control-mousefilter"><span class="std std-ref">MouseFilter</span></a></p></td>
+<td><p>mouse_filter</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-mouse-filter"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_control.html#enum-control-sizeflags"><span class="std std-ref">SizeFlags</span></a>]</p></td>
+<td><p>size_flags_vertical</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-size-flags-vertical"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-structured-text-bidi-override"><span class="std std-ref">structured_text_bidi_override</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-structured-text-bidi-override-options"><span class="std std-ref">structured_text_bidi_override_options</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-tab-stops"><span class="std std-ref">tab_stops</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedFloat32Array()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-text"><span class="std std-ref">text</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-text-direction"><span class="std std-ref">text_direction</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-overrunbehavior"><span class="std std-ref">OverrunBehavior</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-text-overrun-behavior"><span class="std std-ref">text_overrun_behavior</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-uppercase"><span class="std std-ref">uppercase</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-verticalalignment"><span class="std std-ref">VerticalAlignment</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-vertical-alignment"><span class="std std-ref">vertical_alignment</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-visible-characters"><span class="std std-ref">visible_characters</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-visible-characters-behavior"><span class="std std-ref">visible_characters_behavior</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-method-get-character-bounds"><span class="std std-ref">get_character_bounds</span></a>(pos: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-method-get-line-count"><span class="std std-ref">get_line_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-method-get-line-height"><span class="std std-ref">get_line_height</span></a>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-method-get-total-character-count"><span class="std std-ref">get_total_character_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-method-get-visible-line-count"><span class="std std-ref">get_visible_line_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-color-font-color"><span class="std std-ref">font_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-color-font-outline-color"><span class="std std-ref">font_outline_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-color-font-shadow-color"><span class="std std-ref">font_shadow_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-constant-line-spacing"><span class="std std-ref">line_spacing</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-constant-shadow-offset-x"><span class="std std-ref">shadow_offset_x</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-constant-shadow-offset-y"><span class="std std-ref">shadow_offset_y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-constant-shadow-outline-size"><span class="std std-ref">shadow_outline_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-font-font"><span class="std std-ref">font</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-font-size-font-size"><span class="std std-ref">font_size</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-label-theme-style-normal"><span class="std std-ref">normal</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-label-property-autowrap-mode"><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a> <strong>autowrap_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autowrap_mode" name="//apple_ref/cpp/Property/set_autowrap_mode"></a>set_autowrap_mode</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a> <strong><a class="dashAnchor" id="properties-get_autowrap_mode" name="//apple_ref/cpp/Property/get_autowrap_mode"></a>get_autowrap_mode</strong>()</p></li>
+</ul>
+<p>If set to something other than <a class="reference internal" href="class_textserver.html#class-textserver-constant-autowrap-off"><span class="std std-ref">TextServer.AUTOWRAP_OFF</span></a>, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see <a class="reference internal" href="class_textserver.html#enum-textserver-autowrapmode"><span class="std std-ref">AutowrapMode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-clip-text"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>clip_text</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_clip_text" name="//apple_ref/cpp/Property/set_clip_text"></a>set_clip_text</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_clipping_text" name="//apple_ref/cpp/Property/is_clipping_text"></a>is_clipping_text</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the Label only shows the text that fits inside its bounding rectangle and will clip text horizontally.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-ellipsis-char"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>ellipsis_char</strong> = <code class="docutils literal notranslate"><span class="pre">"…"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ellipsis_char" name="//apple_ref/cpp/Property/set_ellipsis_char"></a>set_ellipsis_char</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_ellipsis_char" name="//apple_ref/cpp/Property/get_ellipsis_char"></a>get_ellipsis_char</strong>()</p></li>
+</ul>
+<p>Ellipsis character used for text clipping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-horizontal-alignment"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> <strong>horizontal_alignment</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_horizontal_alignment" name="//apple_ref/cpp/Property/set_horizontal_alignment"></a>set_horizontal_alignment</strong>(value: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> <strong><a class="dashAnchor" id="properties-get_horizontal_alignment" name="//apple_ref/cpp/Property/get_horizontal_alignment"></a>get_horizontal_alignment</strong>()</p></li>
+</ul>
+<p>Controls the text's horizontal alignment. Supports left, center, right, and fill, or justify. Set it to one of the <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-justification-flags"><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] <strong>justification_flags</strong> = <code class="docutils literal notranslate"><span class="pre">163</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_justification_flags" name="//apple_ref/cpp/Property/set_justification_flags"></a>set_justification_flags</strong>(value: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>])</p></li>
+<li><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>] <strong><a class="dashAnchor" id="properties-get_justification_flags" name="//apple_ref/cpp/Property/get_justification_flags"></a>get_justification_flags</strong>()</p></li>
+</ul>
+<p>Line fill alignment rules. For more info see <a class="reference internal" href="class_textserver.html#enum-textserver-justificationflag"><span class="std std-ref">JustificationFlag</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-label-settings"><a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a> <strong>label_settings</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_label_settings" name="//apple_ref/cpp/Property/set_label_settings"></a>set_label_settings</strong>(value: <a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a> <strong><a class="dashAnchor" id="properties-get_label_settings" name="//apple_ref/cpp/Property/get_label_settings"></a>get_label_settings</strong>()</p></li>
+</ul>
+<p>A <a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a> resource that can be shared between multiple <strong>Label</strong> nodes. Takes priority over theme properties.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-language"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>language</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_language" name="//apple_ref/cpp/Property/set_language"></a>set_language</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_language" name="//apple_ref/cpp/Property/get_language"></a>get_language</strong>()</p></li>
+</ul>
+<p>Language code used for line-breaking and text shaping algorithms, if left empty current locale is used instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-lines-skipped"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>lines_skipped</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lines_skipped" name="//apple_ref/cpp/Property/set_lines_skipped"></a>set_lines_skipped</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_lines_skipped" name="//apple_ref/cpp/Property/get_lines_skipped"></a>get_lines_skipped</strong>()</p></li>
+</ul>
+<p>The number of the lines ignored and not displayed from the start of the <a class="reference internal" href="#class-label-property-text"><span class="std std-ref">text</span></a> value.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-max-lines-visible"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_lines_visible</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_lines_visible" name="//apple_ref/cpp/Property/set_max_lines_visible"></a>set_max_lines_visible</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_lines_visible" name="//apple_ref/cpp/Property/get_max_lines_visible"></a>get_max_lines_visible</strong>()</p></li>
+</ul>
+<p>Limits the lines of text the node shows on screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-structured-text-bidi-override"><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong>structured_text_bidi_override</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override" name="//apple_ref/cpp/Property/set_structured_text_bidi_override"></a>set_structured_text_bidi_override</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-structuredtextparser"><span class="std std-ref">StructuredTextParser</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override" name="//apple_ref/cpp/Property/get_structured_text_bidi_override"></a>get_structured_text_bidi_override</strong>()</p></li>
+</ul>
+<p>Set BiDi algorithm override for the structured text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-structured-text-bidi-override-options"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>structured_text_bidi_override_options</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/set_structured_text_bidi_override_options"></a>set_structured_text_bidi_override_options</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong><a class="dashAnchor" id="properties-get_structured_text_bidi_override_options" name="//apple_ref/cpp/Property/get_structured_text_bidi_override_options"></a>get_structured_text_bidi_override_options</strong>()</p></li>
+</ul>
+<p>Set additional options for BiDi override.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-tab-stops"><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> <strong>tab_stops</strong> = <code class="docutils literal notranslate"><span class="pre">PackedFloat32Array()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_tab_stops" name="//apple_ref/cpp/Property/set_tab_stops"></a>set_tab_stops</strong>(value: <a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> <strong><a class="dashAnchor" id="properties-get_tab_stops" name="//apple_ref/cpp/Property/get_tab_stops"></a>get_tab_stops</strong>()</p></li>
+</ul>
+<p>Aligns text to the given tab-stops.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>text</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text" name="//apple_ref/cpp/Property/set_text"></a>set_text</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_text" name="//apple_ref/cpp/Property/get_text"></a>get_text</strong>()</p></li>
+</ul>
+<p>The text to display on screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-text-direction"><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong>text_direction</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text_direction" name="//apple_ref/cpp/Property/set_text_direction"></a>set_text_direction</strong>(value: <a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_control.html#enum-control-textdirection"><span class="std std-ref">TextDirection</span></a> <strong><a class="dashAnchor" id="properties-get_text_direction" name="//apple_ref/cpp/Property/get_text_direction"></a>get_text_direction</strong>()</p></li>
+</ul>
+<p>Base text writing direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-text-overrun-behavior"><a class="reference internal" href="class_textserver.html#enum-textserver-overrunbehavior"><span class="std std-ref">OverrunBehavior</span></a> <strong>text_overrun_behavior</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_text_overrun_behavior" name="//apple_ref/cpp/Property/set_text_overrun_behavior"></a>set_text_overrun_behavior</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-overrunbehavior"><span class="std std-ref">OverrunBehavior</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-overrunbehavior"><span class="std std-ref">OverrunBehavior</span></a> <strong><a class="dashAnchor" id="properties-get_text_overrun_behavior" name="//apple_ref/cpp/Property/get_text_overrun_behavior"></a>get_text_overrun_behavior</strong>()</p></li>
+</ul>
+<p>Sets the clipping behavior when the text exceeds the node's bounding rectangle. See <a class="reference internal" href="class_textserver.html#enum-textserver-overrunbehavior"><span class="std std-ref">OverrunBehavior</span></a> for a description of all modes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-uppercase"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>uppercase</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_uppercase" name="//apple_ref/cpp/Property/set_uppercase"></a>set_uppercase</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_uppercase" name="//apple_ref/cpp/Property/is_uppercase"></a>is_uppercase</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, all the text displays as UPPERCASE.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-vertical-alignment"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-verticalalignment"><span class="std std-ref">VerticalAlignment</span></a> <strong>vertical_alignment</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_vertical_alignment" name="//apple_ref/cpp/Property/set_vertical_alignment"></a>set_vertical_alignment</strong>(value: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-verticalalignment"><span class="std std-ref">VerticalAlignment</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-verticalalignment"><span class="std std-ref">VerticalAlignment</span></a> <strong><a class="dashAnchor" id="properties-get_vertical_alignment" name="//apple_ref/cpp/Property/get_vertical_alignment"></a>get_vertical_alignment</strong>()</p></li>
+</ul>
+<p>Controls the text's vertical alignment. Supports top, center, bottom, and fill. Set it to one of the <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-verticalalignment"><span class="std std-ref">VerticalAlignment</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-visible-characters"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>visible_characters</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_characters" name="//apple_ref/cpp/Property/set_visible_characters"></a>set_visible_characters</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_visible_characters" name="//apple_ref/cpp/Property/get_visible_characters"></a>get_visible_characters</strong>()</p></li>
+</ul>
+<p>The number of characters to display. If set to <code class="docutils literal notranslate"><span class="pre">-1</span></code>, all characters are displayed. This can be useful when animating the text appearing in a dialog box.</p>
+<p><strong>Note:</strong> Setting this property updates <a class="reference internal" href="#class-label-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a> accordingly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-visible-characters-behavior"><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> <strong>visible_characters_behavior</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_characters_behavior" name="//apple_ref/cpp/Property/set_visible_characters_behavior"></a>set_visible_characters_behavior</strong>(value: <a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> <strong><a class="dashAnchor" id="properties-get_visible_characters_behavior" name="//apple_ref/cpp/Property/get_visible_characters_behavior"></a>get_visible_characters_behavior</strong>()</p></li>
+</ul>
+<p>Sets the clipping behavior when <a class="reference internal" href="#class-label-property-visible-characters"><span class="std std-ref">visible_characters</span></a> or <a class="reference internal" href="#class-label-property-visible-ratio"><span class="std std-ref">visible_ratio</span></a> is set. See <a class="reference internal" href="class_textserver.html#enum-textserver-visiblecharactersbehavior"><span class="std std-ref">VisibleCharactersBehavior</span></a> for more info.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-label-property-visible-ratio"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visible_ratio</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visible_ratio" name="//apple_ref/cpp/Property/set_visible_ratio"></a>set_visible_ratio</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visible_ratio" name="//apple_ref/cpp/Property/get_visible_ratio"></a>get_visible_ratio</strong>()</p></li>
+</ul>
+<p>The fraction of characters to display, relative to the total number of characters (see <a class="reference internal" href="#class-label-method-get-total-character-count"><span class="std std-ref">get_total_character_count</span></a>). If set to <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, all characters are displayed. If set to <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.</p>
+<p><strong>Note:</strong> Setting this property updates <a class="reference internal" href="#class-label-property-visible-characters"><span class="std std-ref">visible_characters</span></a> accordingly.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-label-method-get-character-bounds"><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>get_character_bounds</strong>(pos: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the bounding rectangle of the character at position <code class="docutils literal notranslate"><span class="pre">pos</span></code>. If the character is a non-visual character or <code class="docutils literal notranslate"><span class="pre">pos</span></code> is outside the valid range, an empty <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> is returned. If the character is a part of a composite grapheme, the bounding rectangle of the whole grapheme is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-label-method-get-line-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_line_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of lines of text the Label has.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-label-method-get-line-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_line_height</strong>(line: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the height of the line <code class="docutils literal notranslate"><span class="pre">line</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">line</span></code> is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code>, returns the biggest line height.</p>
+<p>If there are no lines, returns font size in pixels.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-label-method-get-total-character-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_total_character_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of printable characters in the text (excluding spaces and newlines).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-label-method-get-visible-line-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_visible_line_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of lines shown. Useful if the <strong>Label</strong>'s height cannot currently display all lines.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-label-theme-color-font-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>Default text <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the <strong>Label</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-color-font-outline-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_outline_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<p>The color of text outline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-color-font-shadow-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>font_shadow_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the text's shadow effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-constant-line-spacing"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>line_spacing</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Vertical space between lines in multiline <strong>Label</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-constant-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Text outline size.</p>
+<p><strong>Note:</strong> If using a font with <a class="reference internal" href="class_fontfile.html#class-fontfile-property-multichannel-signed-distance-field"><span class="std std-ref">FontFile.multichannel_signed_distance_field</span></a> enabled, its <a class="reference internal" href="class_fontfile.html#class-fontfile-property-msdf-pixel-range"><span class="std std-ref">FontFile.msdf_pixel_range</span></a> must be set to at least <em>twice</em> the value of <a class="reference internal" href="#class-label-theme-constant-outline-size"><span class="std std-ref">outline_size</span></a> for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.</p>
+<p><strong>Note:</strong> Using a value that is larger than half the font size is not recommended, as the font outline may fail to be fully closed in this case.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-constant-shadow-offset-x"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_offset_x</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The horizontal offset of the text's shadow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-constant-shadow-offset-y"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_offset_y</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The vertical offset of the text's shadow.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-constant-shadow-outline-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_outline_size</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The size of the shadow outline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-font-font"><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> <strong>font</strong></p>
+<p><a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a> used for the <strong>Label</strong>'s text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-font-size-font-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>font_size</strong></p>
+<p>Font size of the <strong>Label</strong>'s text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-label-theme-style-normal"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>normal</strong></p>
+<p>Background <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> for the <strong>Label</strong>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_joint3d.html" rel="prev" title="Joint3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_label3d.html" rel="next" title="Label3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

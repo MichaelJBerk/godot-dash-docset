@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="WebRTCMultiplayerPeer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_webrtcmultiplayerpeer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object A simple interface to create a peer-to-peer mesh network composed of WebRTCPeerConnection that is compatible with the MultiplayerAPI. Descr..." property="og:description"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object A simple interface to create a peer-to-peer mesh network composed of WebRTCPeerConnection that is compatible with the MultiplayerAPI. Descr..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) WebRTCMultiplayerPeer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcmultiplayerpeer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webrtcmultiplayerpeer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_webrtcpeerconnection.html" rel="next" title="WebRTCPeerConnection"/>
+<link href="class_webrtcdatachannelextension.html" rel="prev" title="WebRTCDataChannelExtension"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_webrtcmultiplayerpeer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">WebRTCMultiplayerPeer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="webrtcmultiplayerpeer">
+<span id="class-webrtcmultiplayerpeer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/WebRTCMultiplayerPeer¶"></a>WebRTCMultiplayerPeer<a class="headerlink" href="#webrtcmultiplayerpeer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A simple interface to create a peer-to-peer mesh network composed of <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a> that is compatible with the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a>.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class constructs a full mesh of <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a> (one connection for each peer) that can be used as a <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a>.</p>
+<p>You can add each <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a> via <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-add-peer"><span class="std std-ref">add_peer</span></a> or remove them via <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-remove-peer"><span class="std std-ref">remove_peer</span></a>. Peers must be added in <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection-constant-state-new"><span class="std std-ref">WebRTCPeerConnection.STATE_NEW</span></a> state to allow it to create the appropriate channels. This class will not create offers nor set descriptions, it will only poll them, and notify connections and disconnections.</p>
+<p>When creating the peer via <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a> or <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-create-server"><span class="std std-ref">create_server</span></a> the <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-is-server-relay-supported"><span class="std std-ref">MultiplayerPeer.is_server_relay_supported</span></a> method will return <code class="docutils literal notranslate"><span class="pre">true</span></code> enabling peer exchange and packet relaying when supported by the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> implementation.</p>
+<p><strong>Note:</strong> When exporting to Android, make sure to enable the <code class="docutils literal notranslate"><span class="pre">INTERNET</span></code> permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-add-peer"><span class="std std-ref">add_peer</span></a>(peer: <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a>, peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, unreliable_lifetime: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-create-mesh"><span class="std std-ref">create_mesh</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-create-server"><span class="std std-ref">create_server</span></a>(channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-get-peer"><span class="std std-ref">get_peer</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-get-peers"><span class="std std-ref">get_peers</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-has-peer"><span class="std std-ref">has_peer</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-webrtcmultiplayerpeer-method-remove-peer"><span class="std std-ref">remove_peer</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-add-peer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>add_peer</strong>(peer: <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a>, peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, unreliable_lifetime: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 1)</p>
+<p>Add a new peer to the mesh with the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code>. The <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a> must be in state <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection-constant-state-new"><span class="std std-ref">WebRTCPeerConnection.STATE_NEW</span></a>.</p>
+<p>Three channels will be created for reliable, unreliable, and ordered transport. The value of <code class="docutils literal notranslate"><span class="pre">unreliable_lifetime</span></code> will be passed to the <code class="docutils literal notranslate"><span class="pre">"maxPacketLifetime"</span></code> option when creating unreliable and ordered channels (see <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection-method-create-data-channel"><span class="std std-ref">WebRTCPeerConnection.create_data_channel</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-create-client"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_client</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p>
+<p>Initialize the multiplayer peer as a client with the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> (must be between 2 and 2147483647). In this mode, you should only call <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-add-peer"><span class="std std-ref">add_peer</span></a> once and with <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> of <code class="docutils literal notranslate"><span class="pre">1</span></code>. This mode enables <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-is-server-relay-supported"><span class="std std-ref">MultiplayerPeer.is_server_relay_supported</span></a>, allowing the upper <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> layer to perform peer exchange and packet relaying.</p>
+<p>You can optionally specify a <code class="docutils literal notranslate"><span class="pre">channels_config</span></code> array of <a class="reference internal" href="class_multiplayerpeer.html#enum-multiplayerpeer-transfermode"><span class="std std-ref">TransferMode</span></a> which will be used to create extra channels (WebRTC only supports one transfer mode per channel).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-create-mesh"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_mesh</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p>
+<p>Initialize the multiplayer peer as a mesh (i.e. all peers connect to each other) with the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> (must be between 1 and 2147483647).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-create-server"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_server</strong>(channels_config: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p>
+<p>Initialize the multiplayer peer as a server (with unique ID of <code class="docutils literal notranslate"><span class="pre">1</span></code>). This mode enables <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-is-server-relay-supported"><span class="std std-ref">MultiplayerPeer.is_server_relay_supported</span></a>, allowing the upper <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> layer to perform peer exchange and packet relaying.</p>
+<p>You can optionally specify a <code class="docutils literal notranslate"><span class="pre">channels_config</span></code> array of <a class="reference internal" href="class_multiplayerpeer.html#enum-multiplayerpeer-transfermode"><span class="std std-ref">TransferMode</span></a> which will be used to create extra channels (WebRTC only supports one transfer mode per channel).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-get-peer"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_peer</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns a dictionary representation of the peer with given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> with three keys. <code class="docutils literal notranslate"><span class="pre">"connection"</span></code> containing the <a class="reference internal" href="class_webrtcpeerconnection.html#class-webrtcpeerconnection"><span class="std std-ref">WebRTCPeerConnection</span></a> to this peer, <code class="docutils literal notranslate"><span class="pre">"channels"</span></code> an array of three <a class="reference internal" href="class_webrtcdatachannel.html#class-webrtcdatachannel"><span class="std std-ref">WebRTCDataChannel</span></a>, and <code class="docutils literal notranslate"><span class="pre">"connected"</span></code> a boolean representing if the peer connection is currently connected (all three channels are open).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-get-peers"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_peers</strong>()</p>
+<p>Returns a dictionary which keys are the peer ids and values the peer representation as in <a class="reference internal" href="#class-webrtcmultiplayerpeer-method-get-peer"><span class="std std-ref">get_peer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-has-peer"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_peer</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> is in the peers map (it might not be connected though).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webrtcmultiplayerpeer-method-remove-peer"><abbr title="No return value.">void</abbr> <strong>remove_peer</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Remove the peer with given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> from the mesh. If the peer was connected, and <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-signal-peer-connected"><span class="std std-ref">MultiplayerPeer.peer_connected</span></a> was emitted for it, then <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-signal-peer-disconnected"><span class="std std-ref">MultiplayerPeer.peer_disconnected</span></a> will be emitted.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_webrtcdatachannelextension.html" rel="prev" title="WebRTCDataChannelExtension"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_webrtcpeerconnection.html" rel="next" title="WebRTCPeerConnection">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

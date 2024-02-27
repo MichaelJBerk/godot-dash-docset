@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="SceneReplicationConfig" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_scenereplicationconfig.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Configuration for properties to synchronize with a MultiplayerSynchronizer. Methods:,, void, add_property(path: NodePath, index: int= -1),, Array[ NodePath], ..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Configuration for properties to synchronize with a MultiplayerSynchronizer. Methods:,, void, add_property(path: NodePath, index: int= -1),, Array[ NodePath], ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) SceneReplicationConfig — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenereplicationconfig.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_scenereplicationconfig.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_scenereplicationconfig.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_scenereplicationconfig.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_scenereplicationconfig.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_scenereplicationconfig.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_scenereplicationconfig.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_scenereplicationconfig.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_scenereplicationconfig.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_scenereplicationconfig.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_scenereplicationconfig.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_scenereplicationconfig.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_scenereplicationconfig.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_scenereplicationconfig.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenereplicationconfig.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scenereplicationconfig.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_script.html" rel="next" title="Script"/>
+<link href="class_richtexteffect.html" rel="prev" title="RichTextEffect"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_scenereplicationconfig" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">SceneReplicationConfig</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="scenereplicationconfig">
+<span id="class-scenereplicationconfig"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/SceneReplicationConfig¶"></a>SceneReplicationConfig<a class="headerlink" href="#scenereplicationconfig" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Configuration for properties to synchronize with a <a class="reference internal" href="class_multiplayersynchronizer.html#class-multiplayersynchronizer"><span class="std std-ref">MultiplayerSynchronizer</span></a>.</p>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-add-property"><span class="std std-ref">add_property</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-get-properties"><span class="std std-ref">get_properties</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-has-property"><span class="std std-ref">has_property</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-get-index"><span class="std std-ref">property_get_index</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-get-replication-mode"><span class="std std-ref">property_get_replication_mode</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-get-spawn"><span class="std std-ref">property_get_spawn</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-get-sync"><span class="std std-ref">property_get_sync</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-get-watch"><span class="std std-ref">property_get_watch</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-set-replication-mode"><span class="std std-ref">property_set_replication_mode</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, mode: <a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-set-spawn"><span class="std std-ref">property_set_spawn</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-set-sync"><span class="std std-ref">property_set_sync</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-property-set-watch"><span class="std std-ref">property_set_watch</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scenereplicationconfig-method-remove-property"><span class="std std-ref">remove_property</span></a>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-scenereplicationconfig-replicationmode">enum <strong><a class="dashAnchor" id="enumerations-ReplicationMode" name="//apple_ref/cpp/Enum/ReplicationMode"></a>ReplicationMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-scenereplicationconfig-constant-replication-mode-never"><a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a> <strong><a class="dashAnchor" id="enumerations-REPLICATION_MODE_NEVER" name="//apple_ref/cpp/Enum/REPLICATION_MODE_NEVER"></a>REPLICATION_MODE_NEVER</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Do not keep the given property synchronized.</p>
+<p class="classref-enumeration-constant" id="class-scenereplicationconfig-constant-replication-mode-always"><a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a> <strong><a class="dashAnchor" id="enumerations-REPLICATION_MODE_ALWAYS" name="//apple_ref/cpp/Enum/REPLICATION_MODE_ALWAYS"></a>REPLICATION_MODE_ALWAYS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Replicate the given property on process by constantly sending updates using unreliable transfer mode.</p>
+<p class="classref-enumeration-constant" id="class-scenereplicationconfig-constant-replication-mode-on-change"><a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a> <strong><a class="dashAnchor" id="enumerations-REPLICATION_MODE_ON_CHANGE" name="//apple_ref/cpp/Enum/REPLICATION_MODE_ON_CHANGE"></a>REPLICATION_MODE_ON_CHANGE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Replicate the given property on process by sending updates using reliable transfer mode when its value changes.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-scenereplicationconfig-method-add-property"><abbr title="No return value.">void</abbr> <strong>add_property</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Adds the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> to the list of the properties being synchronized, optionally passing an <code class="docutils literal notranslate"><span class="pre">index</span></code>.</p>
+<p><strong>Note:</strong> For details on restrictions and limitations on property synchronization, see <a class="reference internal" href="class_multiplayersynchronizer.html#class-multiplayersynchronizer"><span class="std std-ref">MultiplayerSynchronizer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-get-properties"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>] <strong>get_properties</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a list of synchronized property <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>s.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-has-property"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_property</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured for synchronization.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-get-index"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>property_get_index</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Finds the index of the given <code class="docutils literal notranslate"><span class="pre">path</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-get-replication-mode"><a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a> <strong>property_get_replication_mode</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p>
+<p>Returns the replication mode for the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code>. See <a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-get-spawn"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>property_get_spawn</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be synchronized on spawn.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-get-sync"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>property_get_sync</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="#class-scenereplicationconfig-method-property-get-replication-mode"><span class="std std-ref">property_get_replication_mode</span></a> instead.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be synchronized on process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-get-watch"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>property_get_watch</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="#class-scenereplicationconfig-method-property-get-replication-mode"><span class="std std-ref">property_get_replication_mode</span></a> instead.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be reliably synchronized when changes are detected on process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-set-replication-mode"><abbr title="No return value.">void</abbr> <strong>property_set_replication_mode</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, mode: <a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a>)</p>
+<p>Sets the synchronization mode for the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code>. See <a class="reference internal" href="#enum-scenereplicationconfig-replicationmode"><span class="std std-ref">ReplicationMode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-set-spawn"><abbr title="No return value.">void</abbr> <strong>property_set_spawn</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets whether the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be synchronized on spawn.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-set-sync"><abbr title="No return value.">void</abbr> <strong>property_set_sync</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="#class-scenereplicationconfig-method-property-set-replication-mode"><span class="std std-ref">property_set_replication_mode</span></a> with <a class="reference internal" href="#class-scenereplicationconfig-constant-replication-mode-always"><span class="std std-ref">REPLICATION_MODE_ALWAYS</span></a> instead.</p>
+<p>Sets whether the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be synchronized on process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-property-set-watch"><abbr title="No return value.">void</abbr> <strong>property_set_watch</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>, enabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="#class-scenereplicationconfig-method-property-set-replication-mode"><span class="std std-ref">property_set_replication_mode</span></a> with <a class="reference internal" href="#class-scenereplicationconfig-constant-replication-mode-on-change"><span class="std std-ref">REPLICATION_MODE_ON_CHANGE</span></a> instead.</p>
+<p>Sets whether the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> is configured to be reliably synchronized when changes are detected on process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scenereplicationconfig-method-remove-property"><abbr title="No return value.">void</abbr> <strong>remove_property</strong>(path: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p>
+<p>Removes the property identified by the given <code class="docutils literal notranslate"><span class="pre">path</span></code> from the configuration.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_richtexteffect.html" rel="prev" title="RichTextEffect"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_script.html" rel="next" title="Script">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

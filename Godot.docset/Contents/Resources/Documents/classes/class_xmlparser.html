@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="XMLParser" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_xmlparser.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Provides a low-level interface for creating parsers for XML files. Description: Provides a low-level interface for creating parsers for XML files. This class can serve ..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Provides a low-level interface for creating parsers for XML files. Description: Provides a low-level interface for creating parsers for XML files. This class can serve ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) XMLParser — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_xmlparser.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_xmlparser.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_xmlparser.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_xmlparser.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_xmlparser.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_xmlparser.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_xmlparser.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_xmlparser.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_xmlparser.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_xmlparser.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_xmlparser.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_xmlparser.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_xmlparser.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_xmlparser.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_xmlparser.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_xmlparser.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_xrfacetracker.html" rel="next" title="XRFaceTracker"/>
+<link href="class_workerthreadpool.html" rel="prev" title="WorkerThreadPool"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_xmlparser" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">XMLParser</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="xmlparser">
+<span id="class-xmlparser"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/XMLParser¶"></a>XMLParser<a class="headerlink" href="#xmlparser" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides a low-level interface for creating parsers for XML files.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Provides a low-level interface for creating parsers for <a class="reference external" href="https://en.wikipedia.org/wiki/XML">XML</a> files. This class can serve as base to make custom XML parsers.</p>
+<p>To parse XML, you must open a file with the <a class="reference internal" href="#class-xmlparser-method-open"><span class="std std-ref">open</span></a> method or a buffer with the <a class="reference internal" href="#class-xmlparser-method-open-buffer"><span class="std std-ref">open_buffer</span></a> method. Then, the <a class="reference internal" href="#class-xmlparser-method-read"><span class="std std-ref">read</span></a> method must be called to parse the next nodes. Most of the methods take into consideration the currently parsed node.</p>
+<p>Here is an example of using <strong>XMLParser</strong> to parse a SVG file (which is based on XML), printing each element and its attributes as a dictionary:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">parser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">XMLParser</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"path/to/file.svg"</span><span class="p">)</span>
+<span class="k k-ControlFlow">while</span><span class="w"> </span><span class="n">parser</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">ERR_FILE_EOF</span><span class="p">:</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">parser</span><span class="o">.</span><span class="n">get_node_type</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XMLParser</span><span class="o">.</span><span class="n">NODE_ELEMENT</span><span class="p">:</span>
+<span class="w">        </span><span class="k">var</span><span class="w"> </span><span class="n">node_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parser</span><span class="o">.</span><span class="n">get_node_name</span><span class="p">()</span>
+<span class="w">        </span><span class="k">var</span><span class="w"> </span><span class="n">attributes_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">        </span><span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">range</span><span class="p">(</span><span class="n">parser</span><span class="o">.</span><span class="n">get_attribute_count</span><span class="p">()):</span>
+<span class="w">            </span><span class="n">attributes_dict</span><span class="p">[</span><span class="n">parser</span><span class="o">.</span><span class="n">get_attribute_name</span><span class="p">(</span><span class="n">idx</span><span class="p">)]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parser</span><span class="o">.</span><span class="n">get_attribute_value</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">"The "</span><span class="p">,</span><span class="w"> </span><span class="n">node_name</span><span class="p">,</span><span class="w"> </span><span class="s2">" element has the following attributes: "</span><span class="p">,</span><span class="w"> </span><span class="n">attributes_dict</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">parser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XmlParser</span><span class="p">();</span>
+<span class="n">parser</span><span class="p">.</span><span class="n">Open</span><span class="p">(</span><span class="s">"path/to/file.svg"</span><span class="p">);</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">parser</span><span class="p">.</span><span class="n">Read</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">Error</span><span class="p">.</span><span class="n">FileEof</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">parser</span><span class="p">.</span><span class="n">GetNodeType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XmlParser</span><span class="p">.</span><span class="n">NodeType</span><span class="p">.</span><span class="n">Element</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">nodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parser</span><span class="p">.</span><span class="n">GetNodeName</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">attributesDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">parser</span><span class="p">.</span><span class="n">GetAttributeCount</span><span class="p">();</span><span class="w"> </span><span class="n">idx</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">attributesDict</span><span class="p">[</span><span class="n">parser</span><span class="p">.</span><span class="n">GetAttributeName</span><span class="p">(</span><span class="n">idx</span><span class="p">)]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parser</span><span class="p">.</span><span class="n">GetAttributeValue</span><span class="p">(</span><span class="n">idx</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"The {nodeName} element has the following attributes: {attributesDict}"</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-attribute-count"><span class="std std-ref">get_attribute_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-attribute-name"><span class="std std-ref">get_attribute_name</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-attribute-value"><span class="std std-ref">get_attribute_value</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-current-line"><span class="std std-ref">get_current_line</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-named-attribute-value"><span class="std std-ref">get_named_attribute_value</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-named-attribute-value-safe"><span class="std std-ref">get_named_attribute_value_safe</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-node-data"><span class="std std-ref">get_node_data</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-node-name"><span class="std std-ref">get_node_name</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-node-offset"><span class="std std-ref">get_node_offset</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-get-node-type"><span class="std std-ref">get_node_type</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-has-attribute"><span class="std std-ref">has_attribute</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-is-empty"><span class="std std-ref">is_empty</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-open"><span class="std std-ref">open</span></a>(file: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-open-buffer"><span class="std std-ref">open_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-read"><span class="std std-ref">read</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-seek"><span class="std std-ref">seek</span></a>(position: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-xmlparser-method-skip-section"><span class="std std-ref">skip_section</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-xmlparser-nodetype">enum <strong><a class="dashAnchor" id="enumerations-NodeType" name="//apple_ref/cpp/Enum/NodeType"></a>NodeType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-none"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_NONE" name="//apple_ref/cpp/Enum/NODE_NONE"></a>NODE_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>There's no node (no file or buffer opened).</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-element"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_ELEMENT" name="//apple_ref/cpp/Enum/NODE_ELEMENT"></a>NODE_ELEMENT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>An element node type, also known as a tag, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-element-end"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_ELEMENT_END" name="//apple_ref/cpp/Enum/NODE_ELEMENT_END"></a>NODE_ELEMENT_END</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>An end of element node type, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;/title&gt;</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-text"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_TEXT" name="//apple_ref/cpp/Enum/NODE_TEXT"></a>NODE_TEXT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>A text node type, i.e. text that is not inside an element. This includes whitespace.</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-comment"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_COMMENT" name="//apple_ref/cpp/Enum/NODE_COMMENT"></a>NODE_COMMENT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>A comment node type, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;!--A</span> <span class="pre">comment--&gt;</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-cdata"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_CDATA" name="//apple_ref/cpp/Enum/NODE_CDATA"></a>NODE_CDATA</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>A node type for CDATA (Character Data) sections, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;![CDATA[CDATA</span> <span class="pre">section]]&gt;</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-xmlparser-constant-node-unknown"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong><a class="dashAnchor" id="enumerations-NODE_UNKNOWN" name="//apple_ref/cpp/Enum/NODE_UNKNOWN"></a>NODE_UNKNOWN</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>An unknown node type.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-xmlparser-method-get-attribute-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_attribute_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of attributes in the currently parsed element.</p>
+<p><strong>Note:</strong> If this method is used while the currently parsed node is not <a class="reference internal" href="#class-xmlparser-constant-node-element"><span class="std std-ref">NODE_ELEMENT</span></a> or <a class="reference internal" href="#class-xmlparser-constant-node-element-end"><span class="std std-ref">NODE_ELEMENT_END</span></a>, this count will not be updated and will still reflect the last element.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-attribute-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_attribute_name</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the name of an attribute of the currently parsed element, specified by the <code class="docutils literal notranslate"><span class="pre">idx</span></code> index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-attribute-value"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_attribute_value</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the value of an attribute of the currently parsed element, specified by the <code class="docutils literal notranslate"><span class="pre">idx</span></code> index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-current-line"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_current_line</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current line in the parsed file, counting from 0.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-named-attribute-value"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_named_attribute_value</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the value of an attribute of the currently parsed element, specified by its <code class="docutils literal notranslate"><span class="pre">name</span></code>. This method will raise an error if the element has no such attribute.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-named-attribute-value-safe"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_named_attribute_value_safe</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the value of an attribute of the currently parsed element, specified by its <code class="docutils literal notranslate"><span class="pre">name</span></code>. This method will return an empty string if the element has no such attribute.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-node-data"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_node_data</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the contents of a text node. This method will raise an error if the current parsed node is of any other type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-node-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_node_name</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the name of an element node. This method will raise an error if the currently parsed node is not of <a class="reference internal" href="#class-xmlparser-constant-node-element"><span class="std std-ref">NODE_ELEMENT</span></a> or <a class="reference internal" href="#class-xmlparser-constant-node-element-end"><span class="std std-ref">NODE_ELEMENT_END</span></a> type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-node-offset"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_node_offset</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the byte offset of the currently parsed node since the beginning of the file or buffer. This is usually equivalent to the number of characters before the read position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-get-node-type"><a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> <strong>get_node_type</strong>()</p>
+<p>Returns the type of the current node. Compare with <a class="reference internal" href="#enum-xmlparser-nodetype"><span class="std std-ref">NodeType</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-has-attribute"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_attribute</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the currently parsed element has an attribute with the <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-is-empty"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_empty</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the currently parsed element is empty, e.g. <code class="docutils literal notranslate"><span class="pre">&lt;element</span> <span class="pre">/&gt;</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-open"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>open</strong>(file: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Opens an XML <code class="docutils literal notranslate"><span class="pre">file</span></code> for parsing. This method returns an error code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-open-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>open_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Opens an XML raw <code class="docutils literal notranslate"><span class="pre">buffer</span></code> for parsing. This method returns an error code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-read"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>read</strong>()</p>
+<p>Parses the next node in the file. This method returns an error code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-seek"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>seek</strong>(position: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Moves the buffer cursor to a certain offset (since the beginning) and reads the next node there. This method returns an error code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-xmlparser-method-skip-section"><abbr title="No return value.">void</abbr> <strong>skip_section</strong>()</p>
+<p>Skips the current section. If the currently parsed node contains more inner nodes, they will be ignored and the cursor will go to the closing of the current element.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_workerthreadpool.html" rel="prev" title="WorkerThreadPool"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_xrfacetracker.html" rel="next" title="XRFaceTracker">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

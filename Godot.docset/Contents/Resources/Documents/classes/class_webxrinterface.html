@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="WebXRInterface" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_webxrinterface.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: XRInterface&lt; RefCounted&lt; Object XR interface using WebXR. Description: WebXR is an open standard that allows creating VR and AR applications that run in the web browser. As such, this int..." property="og:description"/>
+<meta content="Inherits: XRInterface&lt; RefCounted&lt; Object XR interface using WebXR. Description: WebXR is an open standard that allows creating VR and AR applications that run in the web browser. As such, this int..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) WebXRInterface — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webxrinterface.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_webxrinterface.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_webxrinterface.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_webxrinterface.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_webxrinterface.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_webxrinterface.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_webxrinterface.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_webxrinterface.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_webxrinterface.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_webxrinterface.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_webxrinterface.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_webxrinterface.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_webxrinterface.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_webxrinterface.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webxrinterface.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_webxrinterface.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_workerthreadpool.html" rel="next" title="WorkerThreadPool"/>
+<link href="class_websocketpeer.html" rel="prev" title="WebSocketPeer"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_webxrinterface" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">WebXRInterface</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="webxrinterface">
+<span id="class-webxrinterface"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/WebXRInterface¶"></a>WebXRInterface<a class="headerlink" href="#webxrinterface" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_xrinterface.html#class-xrinterface"><span class="std std-ref">XRInterface</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>XR interface using WebXR.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>WebXR is an open standard that allows creating VR and AR applications that run in the web browser.</p>
+<p>As such, this interface is only available when running in Web exports.</p>
+<p>WebXR supports a wide range of devices, from the very capable (like Valve Index, HTC Vive, Oculus Rift and Quest) down to the much less capable (like Google Cardboard, Oculus Go, GearVR, or plain smartphones).</p>
+<p>Since WebXR is based on JavaScript, it makes extensive use of callbacks, which means that <strong>WebXRInterface</strong> is forced to use signals, where other XR interfaces would instead use functions that return a result immediately. This makes <strong>WebXRInterface</strong> quite a bit more complicated to initialize than other XR interfaces.</p>
+<p>Here's the minimum code required to start an immersive VR session:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node3D</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">webxr_interface</span>
+<span class="k">var</span><span class="w"> </span><span class="n">vr_supported</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">false</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="c1"># We assume this node has a button as a child.</span>
+<span class="w">    </span><span class="c1"># This button is for the user to consent to entering immersive VR mode.</span>
+<span class="w">    </span><span class="o">$</span><span class="n">Button</span><span class="o">.</span><span class="n">pressed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_on_button_pressed</span><span class="p">)</span>
+
+<span class="w">    </span><span class="n">webxr_interface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">XRServer</span><span class="o">.</span><span class="n">find_interface</span><span class="p">(</span><span class="s2">"WebXR"</span><span class="p">)</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">webxr_interface</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># WebXR uses a lot of asynchronous callbacks, so we connect to various</span>
+<span class="w">        </span><span class="c1"># signals in order to receive them.</span>
+<span class="w">        </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">session_supported</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_webxr_session_supported</span><span class="p">)</span>
+<span class="w">        </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">session_started</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_webxr_session_started</span><span class="p">)</span>
+<span class="w">        </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">session_ended</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_webxr_session_ended</span><span class="p">)</span>
+<span class="w">        </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">session_failed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_webxr_session_failed</span><span class="p">)</span>
+
+<span class="w">        </span><span class="c1"># This returns immediately - our _webxr_session_supported() method</span>
+<span class="w">        </span><span class="c1"># (which we connected to the "session_supported" signal above) will</span>
+<span class="w">        </span><span class="c1"># be called sometime later to let us know if it's supported or not.</span>
+<span class="w">        </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">is_session_supported</span><span class="p">(</span><span class="s2">"immersive-vr"</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_webxr_session_supported</span><span class="p">(</span><span class="n">session_mode</span><span class="p">,</span><span class="w"> </span><span class="n">supported</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">session_mode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'immersive-vr'</span><span class="p">:</span>
+<span class="w">        </span><span class="n">vr_supported</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supported</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_on_button_pressed</span><span class="p">():</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">vr_supported</span><span class="p">:</span>
+<span class="w">        </span><span class="n">OS</span><span class="o">.</span><span class="n">alert</span><span class="p">(</span><span class="s2">"Your browser doesn't support VR"</span><span class="p">)</span>
+<span class="w">        </span><span class="k k-ControlFlow">return</span>
+
+<span class="w">    </span><span class="c1"># We want an immersive VR session, as opposed to AR ('immersive-ar') or a</span>
+<span class="w">    </span><span class="c1"># simple 3DoF viewer ('viewer').</span>
+<span class="w">    </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">session_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'immersive-vr'</span>
+<span class="w">    </span><span class="c1"># 'bounded-floor' is room scale, 'local-floor' is a standing or sitting</span>
+<span class="w">    </span><span class="c1"># experience (it puts you 1.6m above the ground if you have 3DoF headset),</span>
+<span class="w">    </span><span class="c1"># whereas as 'local' puts you down at the XROrigin.</span>
+<span class="w">    </span><span class="c1"># This list means it'll first try to request 'bounded-floor', then</span>
+<span class="w">    </span><span class="c1"># fallback on 'local-floor' and ultimately 'local', if nothing else is</span>
+<span class="w">    </span><span class="c1"># supported.</span>
+<span class="w">    </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">requested_reference_space_types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'bounded-floor, local-floor, local'</span>
+<span class="w">    </span><span class="c1"># In order to use 'local-floor' or 'bounded-floor' we must also</span>
+<span class="w">    </span><span class="c1"># mark the features as required or optional.</span>
+<span class="w">    </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">required_features</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'local-floor'</span>
+<span class="w">    </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">optional_features</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'bounded-floor'</span>
+
+<span class="w">    </span><span class="c1"># This will return false if we're unable to even request the session,</span>
+<span class="w">    </span><span class="c1"># however, it can still fail asynchronously later in the process, so we</span>
+<span class="w">    </span><span class="c1"># only know if it's really succeeded or failed when our</span>
+<span class="w">    </span><span class="c1"># _webxr_session_started() or _webxr_session_failed() methods are called.</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">initialize</span><span class="p">():</span>
+<span class="w">        </span><span class="n">OS</span><span class="o">.</span><span class="n">alert</span><span class="p">(</span><span class="s2">"Failed to initialize"</span><span class="p">)</span>
+<span class="w">        </span><span class="k k-ControlFlow">return</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_webxr_session_started</span><span class="p">():</span>
+<span class="w">    </span><span class="o">$</span><span class="n">Button</span><span class="o">.</span><span class="n">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">false</span>
+<span class="w">    </span><span class="c1"># This tells Godot to start rendering to the headset.</span>
+<span class="w">    </span><span class="n">get_viewport</span><span class="p">()</span><span class="o">.</span><span class="n">use_xr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">true</span>
+<span class="w">    </span><span class="c1"># This will be the reference space type you ultimately got, out of the</span>
+<span class="w">    </span><span class="c1"># types that you requested above. This is useful if you want the game to</span>
+<span class="w">    </span><span class="c1"># work a little differently in 'bounded-floor' versus 'local-floor'.</span>
+<span class="w">    </span><span class="nb">print</span><span class="w"> </span><span class="p">(</span><span class="s2">"Reference space type: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">webxr_interface</span><span class="o">.</span><span class="n">reference_space_type</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_webxr_session_ended</span><span class="p">():</span>
+<span class="w">    </span><span class="o">$</span><span class="n">Button</span><span class="o">.</span><span class="n">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">true</span>
+<span class="w">    </span><span class="c1"># If the user exits immersive mode, then we tell Godot to render to the web</span>
+<span class="w">    </span><span class="c1"># page again.</span>
+<span class="w">    </span><span class="n">get_viewport</span><span class="p">()</span><span class="o">.</span><span class="n">use_xr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">false</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_webxr_session_failed</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<span class="w">    </span><span class="n">OS</span><span class="o">.</span><span class="n">alert</span><span class="p">(</span><span class="s2">"Failed to initialize: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There are a couple ways to handle "controller" input:</p>
+<ul class="simple">
+<li><p>Using <a class="reference internal" href="class_xrcontroller3d.html#class-xrcontroller3d"><span class="std std-ref">XRController3D</span></a> nodes and their <a class="reference internal" href="class_xrcontroller3d.html#class-xrcontroller3d-signal-button-pressed"><span class="std std-ref">XRController3D.button_pressed</span></a> and <a class="reference internal" href="class_xrcontroller3d.html#class-xrcontroller3d-signal-button-released"><span class="std std-ref">XRController3D.button_released</span></a> signals. This is how controllers are typically handled in XR apps in Godot, however, this will only work with advanced VR controllers like the Oculus Touch or Index controllers, for example.</p></li>
+<li><p>Using the <a class="reference internal" href="#class-webxrinterface-signal-select"><span class="std std-ref">select</span></a>, <a class="reference internal" href="#class-webxrinterface-signal-squeeze"><span class="std std-ref">squeeze</span></a> and related signals. This method will work for both advanced VR controllers, and non-traditional input sources like a tap on the screen, a spoken voice command or a button press on the device itself.</p></li>
+</ul>
+<p>You can use both methods to allow your game or app to support a wider or narrower set of devices and input methods, or to allow more advanced interactions with more advanced devices.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4">How to make a VR game for WebXR with Godot 4</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-enabled-features"><span class="std std-ref">enabled_features</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-reference-space-type"><span class="std std-ref">reference_space_type</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-requested-reference-space-types"><span class="std std-ref">requested_reference_space_types</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-session-mode"><span class="std std-ref">session_mode</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-property-visibility-state"><span class="std std-ref">visibility_state</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-get-available-display-refresh-rates"><span class="std std-ref">get_available_display_refresh_rates</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-get-display-refresh-rate"><span class="std std-ref">get_display_refresh_rate</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_xrpositionaltracker.html#class-xrpositionaltracker"><span class="std std-ref">XRPositionalTracker</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-is-input-source-active"><span class="std std-ref">is_input_source_active</span></a>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-is-session-supported"><span class="std std-ref">is_session_supported</span></a>(session_mode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-webxrinterface-method-set-display-refresh-rate"><span class="std std-ref">set_display_refresh_rate</span></a>(refresh_rate: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-webxrinterface-signal-display-refresh-rate-changed"><strong>display_refresh_rate_changed</strong>()</p>
+<p>Emitted after the display's refresh rate has changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-reference-space-reset"><strong>reference_space_reset</strong>()</p>
+<p>Emitted to indicate that the reference space has been reset or reconfigured.</p>
+<p>When (or whether) this is emitted depends on the user's browser or device, but may include when the user has changed the dimensions of their play space (which you may be able to access via <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-get-play-area"><span class="std std-ref">XRInterface.get_play_area</span></a>) or pressed/held a button to recenter their position.</p>
+<p>See <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event">WebXR's XRReferenceSpace reset event</a> for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-select"><strong>select</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted after one of the input sources has finished its "primary action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-selectend"><strong>selectend</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when one of the input sources has finished its "primary action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-selectstart"><strong>selectstart</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when one of the input source has started its "primary action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-session-ended"><strong>session_ended</strong>()</p>
+<p>Emitted when the user ends the WebXR session (which can be done using UI from the browser or device).</p>
+<p>At this point, you should do <code class="docutils literal notranslate"><span class="pre">get_viewport().use_xr</span> <span class="pre">=</span> <span class="pre">false</span></code> to instruct Godot to resume rendering to the screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-session-failed"><strong>session_failed</strong>(message: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Emitted by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> if the session fails to start.</p>
+<p><code class="docutils literal notranslate"><span class="pre">message</span></code> may optionally contain an error message from WebXR, or an empty string if no message is available.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-session-started"><strong>session_started</strong>()</p>
+<p>Emitted by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> if the session is successfully started.</p>
+<p>At this point, it's safe to do <code class="docutils literal notranslate"><span class="pre">get_viewport().use_xr</span> <span class="pre">=</span> <span class="pre">true</span></code> to instruct Godot to start rendering to the XR device.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-session-supported"><strong>session_supported</strong>(session_mode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, supported: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Emitted by <a class="reference internal" href="#class-webxrinterface-method-is-session-supported"><span class="std std-ref">is_session_supported</span></a> to indicate if the given <code class="docutils literal notranslate"><span class="pre">session_mode</span></code> is supported or not.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-squeeze"><strong>squeeze</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted after one of the input sources has finished its "primary squeeze action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-squeezeend"><strong>squeezeend</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when one of the input sources has finished its "primary squeeze action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-squeezestart"><strong>squeezestart</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when one of the input sources has started its "primary squeeze action".</p>
+<p>Use <a class="reference internal" href="#class-webxrinterface-method-get-input-source-tracker"><span class="std std-ref">get_input_source_tracker</span></a> and <a class="reference internal" href="#class-webxrinterface-method-get-input-source-target-ray-mode"><span class="std std-ref">get_input_source_target_ray_mode</span></a> to get more information about the input source.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-webxrinterface-signal-visibility-state-changed"><strong>visibility_state_changed</strong>()</p>
+<p>Emitted when <a class="reference internal" href="#class-webxrinterface-property-visibility-state"><span class="std std-ref">visibility_state</span></a> has changed.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-webxrinterface-targetraymode">enum <strong><a class="dashAnchor" id="enumerations-TargetRayMode" name="//apple_ref/cpp/Enum/TargetRayMode"></a>TargetRayMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-webxrinterface-constant-target-ray-mode-unknown"><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a> <strong><a class="dashAnchor" id="enumerations-TARGET_RAY_MODE_UNKNOWN" name="//apple_ref/cpp/Enum/TARGET_RAY_MODE_UNKNOWN"></a>TARGET_RAY_MODE_UNKNOWN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>We don't know the the target ray mode.</p>
+<p class="classref-enumeration-constant" id="class-webxrinterface-constant-target-ray-mode-gaze"><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a> <strong><a class="dashAnchor" id="enumerations-TARGET_RAY_MODE_GAZE" name="//apple_ref/cpp/Enum/TARGET_RAY_MODE_GAZE"></a>TARGET_RAY_MODE_GAZE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Target ray originates at the viewer's eyes and points in the direction they are looking.</p>
+<p class="classref-enumeration-constant" id="class-webxrinterface-constant-target-ray-mode-tracked-pointer"><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a> <strong><a class="dashAnchor" id="enumerations-TARGET_RAY_MODE_TRACKED_POINTER" name="//apple_ref/cpp/Enum/TARGET_RAY_MODE_TRACKED_POINTER"></a>TARGET_RAY_MODE_TRACKED_POINTER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Target ray from a handheld pointer, most likely a VR touch controller.</p>
+<p class="classref-enumeration-constant" id="class-webxrinterface-constant-target-ray-mode-screen"><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a> <strong><a class="dashAnchor" id="enumerations-TARGET_RAY_MODE_SCREEN" name="//apple_ref/cpp/Enum/TARGET_RAY_MODE_SCREEN"></a>TARGET_RAY_MODE_SCREEN</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Target ray from touch screen, mouse or other tactile input device.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-webxrinterface-property-enabled-features"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>enabled_features</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_enabled_features" name="//apple_ref/cpp/Property/get_enabled_features"></a>get_enabled_features</strong>()</p></li>
+</ul>
+<p>A comma-separated list of features that were successfully enabled by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>This may include features requested by setting <a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a> and <a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-optional-features"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>optional_features</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_optional_features" name="//apple_ref/cpp/Property/set_optional_features"></a>set_optional_features</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_optional_features" name="//apple_ref/cpp/Property/get_optional_features"></a>get_optional_features</strong>()</p></li>
+</ul>
+<p>A comma-seperated list of optional features used by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.</p>
+<p>This doesn't have any effect on the interface when already initialized.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType">WebXR's XRReferenceSpaceType</a>. If you want to use a particular reference space type, it must be listed in either <a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a> or <a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-reference-space-type"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>reference_space_type</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_reference_space_type" name="//apple_ref/cpp/Property/get_reference_space_type"></a>get_reference_space_type</strong>()</p></li>
+</ul>
+<p>The reference space type (from the list of requested types set in the <a class="reference internal" href="#class-webxrinterface-property-requested-reference-space-types"><span class="std std-ref">requested_reference_space_types</span></a> property), that was ultimately used by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType">WebXR's XRReferenceSpaceType</a>. If you want to use a particular reference space type, it must be listed in either <a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a> or <a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-requested-reference-space-types"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>requested_reference_space_types</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_requested_reference_space_types" name="//apple_ref/cpp/Property/set_requested_reference_space_types"></a>set_requested_reference_space_types</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_requested_reference_space_types" name="//apple_ref/cpp/Property/get_requested_reference_space_types"></a>get_requested_reference_space_types</strong>()</p></li>
+</ul>
+<p>A comma-seperated list of reference space types used by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>The reference space types are requested in order, and the first one supported by the users device or browser will be used. The <a class="reference internal" href="#class-webxrinterface-property-reference-space-type"><span class="std std-ref">reference_space_type</span></a> property contains the reference space type that was ultimately selected.</p>
+<p>This doesn't have any effect on the interface when already initialized.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType">WebXR's XRReferenceSpaceType</a>. If you want to use a particular reference space type, it must be listed in either <a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a> or <a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-required-features"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>required_features</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_required_features" name="//apple_ref/cpp/Property/set_required_features"></a>set_required_features</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_required_features" name="//apple_ref/cpp/Property/get_required_features"></a>get_required_features</strong>()</p></li>
+</ul>
+<p>A comma-seperated list of required features used by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>If a user's browser or device doesn't support one of the given features, initialization will fail and <a class="reference internal" href="#class-webxrinterface-signal-session-failed"><span class="std std-ref">session_failed</span></a> will be emitted.</p>
+<p>This doesn't have any effect on the interface when already initialized.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType">WebXR's XRReferenceSpaceType</a>. If you want to use a particular reference space type, it must be listed in either <a class="reference internal" href="#class-webxrinterface-property-required-features"><span class="std std-ref">required_features</span></a> or <a class="reference internal" href="#class-webxrinterface-property-optional-features"><span class="std std-ref">optional_features</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-session-mode"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>session_mode</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_session_mode" name="//apple_ref/cpp/Property/set_session_mode"></a>set_session_mode</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_session_mode" name="//apple_ref/cpp/Property/get_session_mode"></a>get_session_mode</strong>()</p></li>
+</ul>
+<p>The session mode used by <a class="reference internal" href="class_xrinterface.html#class-xrinterface-method-initialize"><span class="std std-ref">XRInterface.initialize</span></a> when setting up the WebXR session.</p>
+<p>This doesn't have any effect on the interface when already initialized.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode">WebXR's XRSessionMode</a>, including: <code class="docutils literal notranslate"><span class="pre">"immersive-vr"</span></code>, <code class="docutils literal notranslate"><span class="pre">"immersive-ar"</span></code>, and <code class="docutils literal notranslate"><span class="pre">"inline"</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-webxrinterface-property-visibility-state"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>visibility_state</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_state" name="//apple_ref/cpp/Property/get_visibility_state"></a>get_visibility_state</strong>()</p></li>
+</ul>
+<p>Indicates if the WebXR session's imagery is visible to the user.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRVisibilityState">WebXR's XRVisibilityState</a>, including <code class="docutils literal notranslate"><span class="pre">"hidden"</span></code>, <code class="docutils literal notranslate"><span class="pre">"visible"</span></code>, and <code class="docutils literal notranslate"><span class="pre">"visible-blurred"</span></code>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-webxrinterface-method-get-available-display-refresh-rates"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_available_display_refresh_rates</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns display refresh rates supported by the current HMD. Only returned if this feature is supported by the web browser and after the interface has been initialized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-get-display-refresh-rate"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_display_refresh_rate</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It may not report an accurate value until after using <a class="reference internal" href="#class-webxrinterface-method-set-display-refresh-rate"><span class="std std-ref">set_display_refresh_rate</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-get-input-source-target-ray-mode"><a class="reference internal" href="#enum-webxrinterface-targetraymode"><span class="std std-ref">TargetRayMode</span></a> <strong>get_input_source_target_ray_mode</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the target ray mode for the given <code class="docutils literal notranslate"><span class="pre">input_source_id</span></code>.</p>
+<p>This can help interpret the input coming from that input source. See <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode">XRInputSource.targetRayMode</a> for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-get-input-source-tracker"><a class="reference internal" href="class_xrpositionaltracker.html#class-xrpositionaltracker"><span class="std std-ref">XRPositionalTracker</span></a> <strong>get_input_source_tracker</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets an <a class="reference internal" href="class_xrpositionaltracker.html#class-xrpositionaltracker"><span class="std std-ref">XRPositionalTracker</span></a> for the given <code class="docutils literal notranslate"><span class="pre">input_source_id</span></code>.</p>
+<p>In the context of WebXR, an input source can be an advanced VR controller like the Oculus Touch or Index controllers, or even a tap on the screen, a spoken voice command or a button press on the device itself. When a non-traditional input source is used, interpret the position and orientation of the <a class="reference internal" href="class_xrpositionaltracker.html#class-xrpositionaltracker"><span class="std std-ref">XRPositionalTracker</span></a> as a ray pointing at the object the user wishes to interact with.</p>
+<p>Use this method to get information about the input source that triggered one of these signals:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-selectstart"><span class="std std-ref">selectstart</span></a></p></li>
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-select"><span class="std std-ref">select</span></a></p></li>
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-selectend"><span class="std std-ref">selectend</span></a></p></li>
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-squeezestart"><span class="std std-ref">squeezestart</span></a></p></li>
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-squeeze"><span class="std std-ref">squeeze</span></a></p></li>
+<li><p><a class="reference internal" href="#class-webxrinterface-signal-squeezestart"><span class="std std-ref">squeezestart</span></a></p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-is-input-source-active"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_input_source_active</strong>(input_source_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if there is an active input source with the given <code class="docutils literal notranslate"><span class="pre">input_source_id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-is-session-supported"><abbr title="No return value.">void</abbr> <strong>is_session_supported</strong>(session_mode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Checks if the given <code class="docutils literal notranslate"><span class="pre">session_mode</span></code> is supported by the user's browser.</p>
+<p>Possible values come from <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode">WebXR's XRSessionMode</a>, including: <code class="docutils literal notranslate"><span class="pre">"immersive-vr"</span></code>, <code class="docutils literal notranslate"><span class="pre">"immersive-ar"</span></code>, and <code class="docutils literal notranslate"><span class="pre">"inline"</span></code>.</p>
+<p>This method returns nothing, instead it emits the <a class="reference internal" href="#class-webxrinterface-signal-session-supported"><span class="std std-ref">session_supported</span></a> signal with the result.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-webxrinterface-method-set-display-refresh-rate"><abbr title="No return value.">void</abbr> <strong>set_display_refresh_rate</strong>(refresh_rate: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It won't take effect right away until after <a class="reference internal" href="#class-webxrinterface-signal-display-refresh-rate-changed"><span class="std std-ref">display_refresh_rate_changed</span></a> is emitted.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_websocketpeer.html" rel="prev" title="WebSocketPeer"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_workerthreadpool.html" rel="next" title="WorkerThreadPool">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

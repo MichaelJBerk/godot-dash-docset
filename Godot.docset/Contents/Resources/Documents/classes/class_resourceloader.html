@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ResourceLoader" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_resourceloader.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object A singleton for loading resource files. Description: A singleton used to load resource files from the filesystem. It uses the many ResourceFormatLoader classes registered in the en..." property="og:description"/>
+<meta content="Inherits: Object A singleton for loading resource files. Description: A singleton used to load resource files from the filesystem. It uses the many ResourceFormatLoader classes registered in the en..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ResourceLoader — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceloader.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_resourceloader.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_resourceloader.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_resourceloader.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_resourceloader.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_resourceloader.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_resourceloader.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_resourceloader.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_resourceloader.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_resourceloader.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_resourceloader.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_resourceloader.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_resourceloader.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_resourceloader.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceloader.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resourceloader.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_resourcesaver.html" rel="next" title="ResourceSaver"/>
+<link href="class_resourceimporterwav.html" rel="prev" title="ResourceImporterWAV"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_resourceloader" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ResourceLoader</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="resourceloader">
+<span id="class-resourceloader"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ResourceLoader¶"></a>ResourceLoader<a class="headerlink" href="#resourceloader" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A singleton for loading resource files.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A singleton used to load resource files from the filesystem.</p>
+<p>It uses the many <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a> classes registered in the engine (either built-in or from a plugin) to load files into memory and convert them to a format that can be used by the engine.</p>
+<p><strong>Note:</strong> You have to import the files into the engine first to load them using <a class="reference internal" href="#class-resourceloader-method-load"><span class="std std-ref">load</span></a>. If you want to load <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>s at run-time, you may use <a class="reference internal" href="class_image.html#class-image-method-load"><span class="std std-ref">Image.load</span></a>. If you want to import audio files, you can use the snippet described in <a class="reference internal" href="class_audiostreammp3.html#class-audiostreammp3-property-data"><span class="std std-ref">AudioStreamMP3.data</span></a>.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/677">OS Test Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-add-resource-format-loader"><span class="std std-ref">add_resource_format_loader</span></a>(format_loader: <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>, at_front: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-exists"><span class="std std-ref">exists</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-get-dependencies"><span class="std std-ref">get_dependencies</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-get-recognized-extensions-for-type"><span class="std std-ref">get_recognized_extensions_for_type</span></a>(type: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-get-resource-uid"><span class="std std-ref">get_resource_uid</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-has-cached"><span class="std std-ref">has_cached</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-load"><span class="std std-ref">load</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", cache_mode: <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> = 1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-load-threaded-get"><span class="std std-ref">load_threaded_get</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-load-threaded-get-status"><span class="std std-ref">load_threaded_get_status</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, progress: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-load-threaded-request"><span class="std std-ref">load_threaded_request</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", use_sub_threads: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, cache_mode: <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> = 1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-remove-resource-format-loader"><span class="std std-ref">remove_resource_format_loader</span></a>(format_loader: <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resourceloader-method-set-abort-on-missing-resources"><span class="std std-ref">set_abort_on_missing_resources</span></a>(abort: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-resourceloader-threadloadstatus">enum <strong><a class="dashAnchor" id="enumerations-ThreadLoadStatus" name="//apple_ref/cpp/Enum/ThreadLoadStatus"></a>ThreadLoadStatus</strong>:</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-thread-load-invalid-resource"><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> <strong><a class="dashAnchor" id="enumerations-THREAD_LOAD_INVALID_RESOURCE" name="//apple_ref/cpp/Enum/THREAD_LOAD_INVALID_RESOURCE"></a>THREAD_LOAD_INVALID_RESOURCE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The resource is invalid, or has not been loaded with <a class="reference internal" href="#class-resourceloader-method-load-threaded-request"><span class="std std-ref">load_threaded_request</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-thread-load-in-progress"><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> <strong><a class="dashAnchor" id="enumerations-THREAD_LOAD_IN_PROGRESS" name="//apple_ref/cpp/Enum/THREAD_LOAD_IN_PROGRESS"></a>THREAD_LOAD_IN_PROGRESS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The resource is still being loaded.</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-thread-load-failed"><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> <strong><a class="dashAnchor" id="enumerations-THREAD_LOAD_FAILED" name="//apple_ref/cpp/Enum/THREAD_LOAD_FAILED"></a>THREAD_LOAD_FAILED</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Some error occurred during loading and it failed.</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-thread-load-loaded"><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> <strong><a class="dashAnchor" id="enumerations-THREAD_LOAD_LOADED" name="//apple_ref/cpp/Enum/THREAD_LOAD_LOADED"></a>THREAD_LOAD_LOADED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The resource was loaded successfully and can be accessed via <a class="reference internal" href="#class-resourceloader-method-load-threaded-get"><span class="std std-ref">load_threaded_get</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-resourceloader-cachemode">enum <strong><a class="dashAnchor" id="enumerations-CacheMode" name="//apple_ref/cpp/Enum/CacheMode"></a>CacheMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-cache-mode-ignore"><a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> <strong><a class="dashAnchor" id="enumerations-CACHE_MODE_IGNORE" name="//apple_ref/cpp/Enum/CACHE_MODE_IGNORE"></a>CACHE_MODE_IGNORE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The resource is always loaded from disk, even if a cache entry exists for its path, and the newly loaded copy will not be cached. Instances loaded with this mode will exist independently.</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-cache-mode-reuse"><a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> <strong><a class="dashAnchor" id="enumerations-CACHE_MODE_REUSE" name="//apple_ref/cpp/Enum/CACHE_MODE_REUSE"></a>CACHE_MODE_REUSE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>If a resource is cached, returns the cached reference. Otherwise it's loaded from disk.</p>
+<p class="classref-enumeration-constant" id="class-resourceloader-constant-cache-mode-replace"><a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> <strong><a class="dashAnchor" id="enumerations-CACHE_MODE_REPLACE" name="//apple_ref/cpp/Enum/CACHE_MODE_REPLACE"></a>CACHE_MODE_REPLACE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The resource is always loaded from disk, even if a cache entry exists for its path. The cached entry will be replaced by the newly loaded copy.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-resourceloader-method-add-resource-format-loader"><abbr title="No return value.">void</abbr> <strong>add_resource_format_loader</strong>(format_loader: <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>, at_front: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Registers a new <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>. The ResourceLoader will use the ResourceFormatLoader as described in <a class="reference internal" href="#class-resourceloader-method-load"><span class="std std-ref">load</span></a>.</p>
+<p>This method is performed implicitly for ResourceFormatLoaders written in GDScript (see <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a> for more information).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-exists"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>exists</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Returns whether a recognized resource exists for the given <code class="docutils literal notranslate"><span class="pre">path</span></code>.</p>
+<p>An optional <code class="docutils literal notranslate"><span class="pre">type_hint</span></code> can be used to further specify the <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> type that should be handled by the <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>. Anything that inherits from <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> can be used as a type hint, for example <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>.</p>
+<p><strong>Note:</strong> If you use <a class="reference internal" href="class_resource.html#class-resource-method-take-over-path"><span class="std std-ref">Resource.take_over_path</span></a>, this method will return <code class="docutils literal notranslate"><span class="pre">true</span></code> for the taken path even if the resource wasn't saved (i.e. exists only in resource cache).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-get-dependencies"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>get_dependencies</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns the dependencies for the resource at the given <code class="docutils literal notranslate"><span class="pre">path</span></code>.</p>
+<p><strong>Note:</strong> The dependencies are returned with slices separated by <code class="docutils literal notranslate"><span class="pre">::</span></code>. You can use <a class="reference internal" href="class_string.html#class-string-method-get-slice"><span class="std std-ref">String.get_slice</span></a> to get their components.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">dep</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">ResourceLoader</span><span class="o">.</span><span class="n">get_dependencies</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">dep</span><span class="o">.</span><span class="n">get_slice</span><span class="p">(</span><span class="s2">"::"</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"> </span><span class="c1"># Prints UID.</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">dep</span><span class="o">.</span><span class="n">get_slice</span><span class="p">(</span><span class="s2">"::"</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="c1"># Prints path.</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-get-recognized-extensions-for-type"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>get_recognized_extensions_for_type</strong>(type: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns the list of recognized extensions for a resource type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-get-resource-uid"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_resource_uid</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns the ID associated with a given resource path, or <code class="docutils literal notranslate"><span class="pre">-1</span></code> when no such ID exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-has-cached"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_cached</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns whether a cached resource is available for the given <code class="docutils literal notranslate"><span class="pre">path</span></code>.</p>
+<p>Once a resource has been loaded by the engine, it is cached in memory for faster access, and future calls to the <a class="reference internal" href="#class-resourceloader-method-load"><span class="std std-ref">load</span></a> method will use the cached version. The cached resource can be overridden by using <a class="reference internal" href="class_resource.html#class-resource-method-take-over-path"><span class="std std-ref">Resource.take_over_path</span></a> on a new resource for that same path.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-load"><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>load</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", cache_mode: <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> = 1)</p>
+<p>Loads a resource at the given <code class="docutils literal notranslate"><span class="pre">path</span></code>, caching the result for further access.</p>
+<p>The registered <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>s are queried sequentially to find the first one which can handle the file's extension, and then attempt loading. If loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
+<p>An optional <code class="docutils literal notranslate"><span class="pre">type_hint</span></code> can be used to further specify the <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> type that should be handled by the <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>. Anything that inherits from <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> can be used as a type hint, for example <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">cache_mode</span></code> property defines whether and how the cache should be used or updated when loading the resource. See <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> for details.</p>
+<p>Returns an empty resource if no <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a> could handle the file.</p>
+<p>GDScript has a simplified <a class="reference internal" href="class_%40gdscript.html#class-gdscript-method-load"><span class="std std-ref">@GDScript.load</span></a> built-in method which can be used in most situations, leaving the use of <strong>ResourceLoader</strong> for more advanced scenarios.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-editor-export-convert-text-resources-to-binary"><span class="std std-ref">ProjectSettings.editor/export/convert_text_resources_to_binary</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="class_%40gdscript.html#class-gdscript-method-load"><span class="std std-ref">@GDScript.load</span></a> will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-editor-export-convert-text-resources-to-binary"><span class="std std-ref">ProjectSettings.editor/export/convert_text_resources_to_binary</span></a> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-load-threaded-get"><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>load_threaded_get</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns the resource loaded by <a class="reference internal" href="#class-resourceloader-method-load-threaded-request"><span class="std std-ref">load_threaded_request</span></a>.</p>
+<p>If this is called before the loading thread is done (i.e. <a class="reference internal" href="#class-resourceloader-method-load-threaded-get-status"><span class="std std-ref">load_threaded_get_status</span></a> is not <a class="reference internal" href="#class-resourceloader-constant-thread-load-loaded"><span class="std std-ref">THREAD_LOAD_LOADED</span></a>), the calling thread will be blocked until the resource has finished loading.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-load-threaded-get-status"><a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> <strong>load_threaded_get_status</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, progress: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p>
+<p>Returns the status of a threaded loading operation started with <a class="reference internal" href="#class-resourceloader-method-load-threaded-request"><span class="std std-ref">load_threaded_request</span></a> for the resource at <code class="docutils literal notranslate"><span class="pre">path</span></code>. See <a class="reference internal" href="#enum-resourceloader-threadloadstatus"><span class="std std-ref">ThreadLoadStatus</span></a> for possible return values.</p>
+<p>An array variable can optionally be passed via <code class="docutils literal notranslate"><span class="pre">progress</span></code>, and will return a one-element array containing the percentage of completion of the threaded loading.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-load-threaded-request"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_threaded_request</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, type_hint: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", use_sub_threads: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, cache_mode: <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> = 1)</p>
+<p>Loads the resource using threads. If <code class="docutils literal notranslate"><span class="pre">use_sub_threads</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, multiple threads will be used to load the resource, which makes loading faster, but may affect the main thread (and thus cause game slowdowns).</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">cache_mode</span></code> property defines whether and how the cache should be used or updated when loading the resource. See <a class="reference internal" href="#enum-resourceloader-cachemode"><span class="std std-ref">CacheMode</span></a> for details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-remove-resource-format-loader"><abbr title="No return value.">void</abbr> <strong>remove_resource_format_loader</strong>(format_loader: <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>)</p>
+<p>Unregisters the given <a class="reference internal" href="class_resourceformatloader.html#class-resourceformatloader"><span class="std std-ref">ResourceFormatLoader</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resourceloader-method-set-abort-on-missing-resources"><abbr title="No return value.">void</abbr> <strong>set_abort_on_missing_resources</strong>(abort: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Changes the behavior on missing sub-resources. The default behavior is to abort loading.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_resourceimporterwav.html" rel="prev" title="ResourceImporterWAV"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_resourcesaver.html" rel="next" title="ResourceSaver">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

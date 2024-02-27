@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Engine" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_engine.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object Provides access to engine properties. Description: The Engine singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and..." property="og:description"/>
+<meta content="Inherits: Object Provides access to engine properties. Description: The Engine singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Engine — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_engine.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_engine.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_engine.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_engine.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_engine.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_engine.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_engine.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_engine.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_engine.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_engine.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_engine.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_engine.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_engine.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_engine.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_engine.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_engine.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_enginedebugger.html" rel="next" title="EngineDebugger"/>
+<link href="class_enetpacketpeer.html" rel="prev" title="ENetPacketPeer"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_engine" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Engine</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="engine">
+<span id="class-engine"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Engine¶"></a>Engine<a class="headerlink" href="#engine" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides access to engine properties.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Engine</strong> singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-max-fps"><span class="std std-ref">max_fps</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-max-physics-steps-per-frame"><span class="std std-ref">max_physics_steps_per_frame</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-physics-jitter-fix"><span class="std std-ref">physics_jitter_fix</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.5</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">60</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-print-error-messages"><span class="std std-ref">print_error_messages</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-property-time-scale"><span class="std std-ref">time_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-architecture-name"><span class="std std-ref">get_architecture_name</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-author-info"><span class="std std-ref">get_author_info</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-copyright-info"><span class="std std-ref">get_copyright_info</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-donor-info"><span class="std std-ref">get_donor_info</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-frames-drawn"><span class="std std-ref">get_frames_drawn</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-frames-per-second"><span class="std std-ref">get_frames_per_second</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-license-info"><span class="std std-ref">get_license_info</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-license-text"><span class="std std-ref">get_license_text</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_mainloop.html#class-mainloop"><span class="std std-ref">MainLoop</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-main-loop"><span class="std std-ref">get_main_loop</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-physics-frames"><span class="std std-ref">get_physics_frames</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-physics-interpolation-fraction"><span class="std std-ref">get_physics_interpolation_fraction</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-process-frames"><span class="std std-ref">get_process_frames</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-script-language"><span class="std std-ref">get_script_language</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-script-language-count"><span class="std std-ref">get_script_language_count</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-singleton"><span class="std std-ref">get_singleton</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-singleton-list"><span class="std std-ref">get_singleton_list</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-version-info"><span class="std std-ref">get_version_info</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-get-write-movie-path"><span class="std std-ref">get_write_movie_path</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-has-singleton"><span class="std std-ref">has_singleton</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-is-editor-hint"><span class="std std-ref">is_editor_hint</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-is-in-physics-frame"><span class="std std-ref">is_in_physics_frame</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-register-script-language"><span class="std std-ref">register_script_language</span></a>(language: <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-register-singleton"><span class="std std-ref">register_singleton</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, instance: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-unregister-script-language"><span class="std std-ref">unregister_script_language</span></a>(language: <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-engine-method-unregister-singleton"><span class="std std-ref">unregister_singleton</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-engine-property-max-fps"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_fps</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_fps" name="//apple_ref/cpp/Property/set_max_fps"></a>set_max_fps</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_fps" name="//apple_ref/cpp/Property/get_max_fps"></a>get_max_fps</strong>()</p></li>
+</ul>
+<p>The maximum number of frames per second that can be rendered. A value of <code class="docutils literal notranslate"><span class="pre">0</span></code> means "no limit". The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project logic and rendering.</p>
+<p>Limiting the FPS can be useful to reduce system power consumption, which reduces heat and noise emissions (and improves battery life on mobile devices).</p>
+<p>If <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-display-window-vsync-vsync-mode"><span class="std std-ref">ProjectSettings.display/window/vsync/vsync_mode</span></a> is <code class="docutils literal notranslate"><span class="pre">Enabled</span></code> or <code class="docutils literal notranslate"><span class="pre">Adaptive</span></code>, it takes precedence and the forced FPS number cannot exceed the monitor's refresh rate.</p>
+<p>If <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-display-window-vsync-vsync-mode"><span class="std std-ref">ProjectSettings.display/window/vsync/vsync_mode</span></a> is <code class="docutils literal notranslate"><span class="pre">Enabled</span></code>, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using a FPS limit a few frames lower than the monitor's refresh rate will <a class="reference external" href="https://blurbusters.com/howto-low-lag-vsync-on/">reduce input lag while avoiding tearing</a>.</p>
+<p>If <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-display-window-vsync-vsync-mode"><span class="std std-ref">ProjectSettings.display/window/vsync/vsync_mode</span></a> is <code class="docutils literal notranslate"><span class="pre">Disabled</span></code>, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.</p>
+<p>See also <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a> and <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-run-max-fps"><span class="std std-ref">ProjectSettings.application/run/max_fps</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-engine-property-max-physics-steps-per-frame"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>max_physics_steps_per_frame</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_physics_steps_per_frame" name="//apple_ref/cpp/Property/set_max_physics_steps_per_frame"></a>set_max_physics_steps_per_frame</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_max_physics_steps_per_frame" name="//apple_ref/cpp/Property/get_max_physics_steps_per_frame"></a>get_max_physics_steps_per_frame</strong>()</p></li>
+</ul>
+<p>Controls the maximum number of physics steps that can be simulated each rendered frame. The default value is tuned to avoid "spiral of death" situations where expensive physics simulations trigger more expensive simulations indefinitely. However, the game will appear to slow down if the rendering FPS is less than <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">max_physics_steps_per_frame</span></code> of <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a>. This occurs even if <code class="docutils literal notranslate"><span class="pre">delta</span></code> is consistently used in physics calculations. To avoid this, increase <a class="reference internal" href="#class-engine-property-max-physics-steps-per-frame"><span class="std std-ref">max_physics_steps_per_frame</span></a> if you have increased <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a> significantly above its default value.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-engine-property-physics-jitter-fix"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>physics_jitter_fix</strong> = <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_physics_jitter_fix" name="//apple_ref/cpp/Property/set_physics_jitter_fix"></a>set_physics_jitter_fix</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_physics_jitter_fix" name="//apple_ref/cpp/Property/get_physics_jitter_fix"></a>get_physics_jitter_fix</strong>()</p></li>
+</ul>
+<p>Controls how much physics ticks are synchronized with real time. For 0 or less, the ticks are synchronized. Such values are recommended for network games, where clock synchronization matters. Higher values cause higher deviation of the in-game clock and real clock but smooth out framerate jitters. The default value of 0.5 should be good enough for most; values above 2 could cause the game to react to dropped frames with a noticeable delay and are not recommended.</p>
+<p><strong>Note:</strong> For best results, when using a custom physics interpolation solution, the physics jitter fix should be disabled by setting <a class="reference internal" href="#class-engine-property-physics-jitter-fix"><span class="std std-ref">physics_jitter_fix</span></a> to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-engine-property-physics-ticks-per-second"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>physics_ticks_per_second</strong> = <code class="docutils literal notranslate"><span class="pre">60</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_physics_ticks_per_second" name="//apple_ref/cpp/Property/set_physics_ticks_per_second"></a>set_physics_ticks_per_second</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_physics_ticks_per_second" name="//apple_ref/cpp/Property/get_physics_ticks_per_second"></a>get_physics_ticks_per_second</strong>()</p></li>
+</ul>
+<p>The number of fixed iterations per second. This controls how often physics simulation and <a class="reference internal" href="class_node.html#class-node-private-method-physics-process"><span class="std std-ref">Node._physics_process</span></a> methods are run. This value should generally always be set to <code class="docutils literal notranslate"><span class="pre">60</span></code> or above, as Godot doesn't interpolate the physics step. As a result, values lower than <code class="docutils literal notranslate"><span class="pre">60</span></code> will look stuttery. This value can be increased to make input more reactive or work around collision tunneling issues, but keep in mind doing so will increase CPU usage. See also <a class="reference internal" href="#class-engine-property-max-fps"><span class="std std-ref">max_fps</span></a> and <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-physics-common-physics-ticks-per-second"><span class="std std-ref">ProjectSettings.physics/common/physics_ticks_per_second</span></a>.</p>
+<p><strong>Note:</strong> Only <a class="reference internal" href="#class-engine-property-max-physics-steps-per-frame"><span class="std std-ref">max_physics_steps_per_frame</span></a> physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if <code class="docutils literal notranslate"><span class="pre">delta</span></code> is used consistently in physics calculations). Therefore, it is recommended to also increase <a class="reference internal" href="#class-engine-property-max-physics-steps-per-frame"><span class="std std-ref">max_physics_steps_per_frame</span></a> if increasing <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a> significantly above its default value.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-engine-property-print-error-messages"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>print_error_messages</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_print_error_messages" name="//apple_ref/cpp/Property/set_print_error_messages"></a>set_print_error_messages</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_printing_error_messages" name="//apple_ref/cpp/Property/is_printing_error_messages"></a>is_printing_error_messages</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">false</span></code>, stops printing error and warning messages to the console and editor Output log. This can be used to hide error and warning messages during unit test suite runs. This property is equivalent to the <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-run-disable-stderr"><span class="std std-ref">ProjectSettings.application/run/disable_stderr</span></a> project setting.</p>
+<p><strong>Warning:</strong> If you set this to <code class="docutils literal notranslate"><span class="pre">false</span></code> anywhere in the project, important error messages may be hidden even if they are emitted from other scripts. If this is set to <code class="docutils literal notranslate"><span class="pre">false</span></code> in a <code class="docutils literal notranslate"><span class="pre">@tool</span></code> script, this will also impact the editor itself. Do <em>not</em> report bugs before ensuring error messages are enabled (as they are by default).</p>
+<p><strong>Note:</strong> This property does not impact the editor's Errors tab when running a project from the editor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-engine-property-time-scale"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>time_scale</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_time_scale" name="//apple_ref/cpp/Property/set_time_scale"></a>set_time_scale</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_time_scale" name="//apple_ref/cpp/Property/get_time_scale"></a>get_time_scale</strong>()</p></li>
+</ul>
+<p>Controls how fast or slow the in-game clock ticks versus the real life one. It defaults to 1.0. A value of 2.0 means the game moves twice as fast as real life, whilst a value of 0.5 means the game moves at half the regular speed. This also affects <a class="reference internal" href="class_timer.html#class-timer"><span class="std std-ref">Timer</span></a> and <a class="reference internal" href="class_scenetreetimer.html#class-scenetreetimer"><span class="std std-ref">SceneTreeTimer</span></a> (see <a class="reference internal" href="class_scenetree.html#class-scenetree-method-create-timer"><span class="std std-ref">SceneTree.create_timer</span></a> for how to control this).</p>
+<p><strong>Note:</strong> This does not affect audio playback speed. Use <a class="reference internal" href="class_audioserver.html#class-audioserver-property-playback-speed-scale"><span class="std std-ref">AudioServer.playback_speed_scale</span></a> to adjust audio playback speed independently of <a class="reference internal" href="#class-engine-property-time-scale"><span class="std std-ref">time_scale</span></a>.</p>
+<p><strong>Note:</strong> This does not automatically adjust <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a>, which means that with time scales above 1.0, physics simulation may become less precise (as each physics tick will stretch over a larger period of engine time). If you're using <a class="reference internal" href="#class-engine-property-time-scale"><span class="std std-ref">time_scale</span></a> to speed up simulation by a large factor, consider increasing <a class="reference internal" href="#class-engine-property-physics-ticks-per-second"><span class="std std-ref">physics_ticks_per_second</span></a> as well to improve physics reliability.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-engine-method-get-architecture-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_architecture_name</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the name of the CPU architecture the Godot binary was built for. Possible return values are <code class="docutils literal notranslate"><span class="pre">x86_64</span></code>, <code class="docutils literal notranslate"><span class="pre">x86_32</span></code>, <code class="docutils literal notranslate"><span class="pre">arm64</span></code>, <code class="docutils literal notranslate"><span class="pre">arm32</span></code>, <code class="docutils literal notranslate"><span class="pre">rv64</span></code>, <code class="docutils literal notranslate"><span class="pre">riscv</span></code>, <code class="docutils literal notranslate"><span class="pre">ppc64</span></code>, <code class="docutils literal notranslate"><span class="pre">ppc</span></code>, <code class="docutils literal notranslate"><span class="pre">wasm64</span></code> and <code class="docutils literal notranslate"><span class="pre">wasm32</span></code>.</p>
+<p>To detect whether the current CPU architecture is 64-bit, you can use the fact that all 64-bit architecture names have <code class="docutils literal notranslate"><span class="pre">64</span></code> in their name:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="s2">"64"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">Engine</span><span class="o">.</span><span class="n">get_architecture_name</span><span class="p">():</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Running a 64-bit build of Godot."</span><span class="p">)</span>
+<span class="k k-ControlFlow">else</span><span class="p">:</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Running a 32-bit build of Godot."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">GetArchitectureName</span><span class="p">().</span><span class="n">Contains</span><span class="p">(</span><span class="s">"64"</span><span class="p">))</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">"Running a 64-bit build of Godot."</span><span class="p">);</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">"Running a 32-bit build of Godot."</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-engine-method-get-architecture-name"><span class="std std-ref">get_architecture_name</span></a> does <em>not</em> return the name of the host CPU architecture. For example, if running an x86_32 Godot binary on a x86_64 system, the returned value will be <code class="docutils literal notranslate"><span class="pre">x86_32</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-author-info"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_author_info</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns engine author information in a Dictionary.</p>
+<p><code class="docutils literal notranslate"><span class="pre">lead_developers</span></code>    - Array of Strings, lead developer names</p>
+<p><code class="docutils literal notranslate"><span class="pre">founders</span></code>           - Array of Strings, founder names</p>
+<p><code class="docutils literal notranslate"><span class="pre">project_managers</span></code>   - Array of Strings, project manager names</p>
+<p><code class="docutils literal notranslate"><span class="pre">developers</span></code>         - Array of Strings, developer names</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-copyright-info"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>get_copyright_info</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an Array of copyright information Dictionaries.</p>
+<p><code class="docutils literal notranslate"><span class="pre">name</span></code>    - String, component name</p>
+<p><code class="docutils literal notranslate"><span class="pre">parts</span></code>   - Array of Dictionaries {<code class="docutils literal notranslate"><span class="pre">files</span></code>, <code class="docutils literal notranslate"><span class="pre">copyright</span></code>, <code class="docutils literal notranslate"><span class="pre">license</span></code>} describing subsections of the component</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-donor-info"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_donor_info</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a Dictionary of Arrays of donor names.</p>
+<p>{<code class="docutils literal notranslate"><span class="pre">platinum_sponsors</span></code>, <code class="docutils literal notranslate"><span class="pre">gold_sponsors</span></code>, <code class="docutils literal notranslate"><span class="pre">silver_sponsors</span></code>, <code class="docutils literal notranslate"><span class="pre">bronze_sponsors</span></code>, <code class="docutils literal notranslate"><span class="pre">mini_sponsors</span></code>, <code class="docutils literal notranslate"><span class="pre">gold_donors</span></code>, <code class="docutils literal notranslate"><span class="pre">silver_donors</span></code>, <code class="docutils literal notranslate"><span class="pre">bronze_donors</span></code>}</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-frames-drawn"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_frames_drawn</strong>()</p>
+<p>Returns the total number of frames drawn. On headless platforms, or if the render loop is disabled with <code class="docutils literal notranslate"><span class="pre">--disable-render-loop</span></code> via command line, <a class="reference internal" href="#class-engine-method-get-frames-drawn"><span class="std std-ref">get_frames_drawn</span></a> always returns <code class="docutils literal notranslate"><span class="pre">0</span></code>. See <a class="reference internal" href="#class-engine-method-get-process-frames"><span class="std std-ref">get_process_frames</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-frames-per-second"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_frames_per_second</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the frames per second of the running game.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-license-info"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_license_info</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns Dictionary of licenses used by Godot and included third party components.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-license-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_license_text</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns Godot license text.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-main-loop"><a class="reference internal" href="class_mainloop.html#class-mainloop"><span class="std std-ref">MainLoop</span></a> <strong>get_main_loop</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the main loop object (see <a class="reference internal" href="class_mainloop.html#class-mainloop"><span class="std std-ref">MainLoop</span></a> and <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-physics-frames"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_physics_frames</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of frames passed since engine initialization which is advanced on each <strong>physics frame</strong>. See also <a class="reference internal" href="#class-engine-method-get-process-frames"><span class="std std-ref">get_process_frames</span></a>.</p>
+<p><a class="reference internal" href="#class-engine-method-get-physics-frames"><span class="std std-ref">get_physics_frames</span></a> can be used to run expensive logic less often without relying on a <a class="reference internal" href="class_timer.html#class-timer"><span class="std std-ref">Timer</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_physics_process</span><span class="p">(</span><span class="n">_delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Engine</span><span class="o">.</span><span class="n">get_physics_frames</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<span class="w">        </span><span class="k k-ControlFlow">pass</span><span class="w">  </span><span class="c1"># Run expensive logic only once every 2 physics frames here.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_PhysicsProcess</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">base</span><span class="p">.</span><span class="n">_PhysicsProcess</span><span class="p">(</span><span class="n">delta</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">GetPhysicsFrames</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Run expensive logic only once every 2 physics frames here.</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-physics-interpolation-fraction"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_physics_interpolation_fraction</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the fraction through the current physics tick we are at the time of rendering the frame. This can be used to implement fixed timestep interpolation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-process-frames"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_process_frames</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total number of frames passed since engine initialization which is advanced on each <strong>process frame</strong>, regardless of whether the render loop is enabled. See also <a class="reference internal" href="#class-engine-method-get-frames-drawn"><span class="std std-ref">get_frames_drawn</span></a> and <a class="reference internal" href="#class-engine-method-get-physics-frames"><span class="std std-ref">get_physics_frames</span></a>.</p>
+<p><a class="reference internal" href="#class-engine-method-get-process-frames"><span class="std std-ref">get_process_frames</span></a> can be used to run expensive logic less often without relying on a <a class="reference internal" href="class_timer.html#class-timer"><span class="std std-ref">Timer</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">_delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Engine</span><span class="o">.</span><span class="n">get_process_frames</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<span class="w">        </span><span class="k k-ControlFlow">pass</span><span class="w">  </span><span class="c1"># Run expensive logic only once every 2 process (render) frames here.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">base</span><span class="p">.</span><span class="n">_Process</span><span class="p">(</span><span class="n">delta</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">GetProcessFrames</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Run expensive logic only once every 2 physics frames here.</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-script-language"><a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a> <strong>get_script_language</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an instance of a <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a> with the given index.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-script-language-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_script_language_count</strong>()</p>
+<p>Returns the number of available script languages. Use with <a class="reference internal" href="#class-engine-method-get-script-language"><span class="std std-ref">get_script_language</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-singleton"><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> <strong>get_singleton</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a global singleton with given <code class="docutils literal notranslate"><span class="pre">name</span></code>. Often used for plugins, e.g. GodotPayments.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-singleton-list"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>get_singleton_list</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a list of available global singletons.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-version-info"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>get_version_info</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current engine version information in a Dictionary.</p>
+<p><code class="docutils literal notranslate"><span class="pre">major</span></code>    - Holds the major version number as an int</p>
+<p><code class="docutils literal notranslate"><span class="pre">minor</span></code>    - Holds the minor version number as an int</p>
+<p><code class="docutils literal notranslate"><span class="pre">patch</span></code>    - Holds the patch version number as an int</p>
+<p><code class="docutils literal notranslate"><span class="pre">hex</span></code>      - Holds the full version number encoded as a hexadecimal int with one byte (2 places) per number (see example below)</p>
+<p><code class="docutils literal notranslate"><span class="pre">status</span></code>   - Holds the status (e.g. "beta", "rc1", "rc2", ... "stable") as a String</p>
+<p><code class="docutils literal notranslate"><span class="pre">build</span></code>    - Holds the build name (e.g. "custom_build") as a String</p>
+<p><code class="docutils literal notranslate"><span class="pre">hash</span></code>     - Holds the full Git commit hash as a String</p>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code>   - <code class="docutils literal notranslate"><span class="pre">major</span></code> + <code class="docutils literal notranslate"><span class="pre">minor</span></code> + <code class="docutils literal notranslate"><span class="pre">patch</span></code> + <code class="docutils literal notranslate"><span class="pre">status</span></code> + <code class="docutils literal notranslate"><span class="pre">build</span></code> in a single String</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">hex</span></code> value is encoded as follows, from left to right: one byte for the major, one byte for the minor, one byte for the patch version. For example, "3.1.12" would be <code class="docutils literal notranslate"><span class="pre">0x03010C</span></code>. <strong>Note:</strong> It's still an int internally, and printing it will give you its decimal representation, which is not particularly meaningful. Use hexadecimal literals for easy version comparisons from code:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-3-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-3-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Engine</span><span class="o">.</span><span class="n">get_version_info</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mh">0x030200</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Do things specific to version 3.2 or later</span>
+<span class="k k-ControlFlow">else</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Do things specific to versions before 3.2</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">Engine</span><span class="p">.</span><span class="n">GetVersionInfo</span><span class="p">()[</span><span class="s">"hex"</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">0</span><span class="n">x030200</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Do things specific to version 3.2 or later</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Do things specific to versions before 3.2</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-get-write-movie-path"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_write_movie_path</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the path to the <a class="reference internal" href="class_moviewriter.html#class-moviewriter"><span class="std std-ref">MovieWriter</span></a>'s output file, or an empty string if the engine wasn't started in Movie Maker mode. This path can be absolute or relative depending on how the user specified it.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-has-singleton"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_singleton</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if a singleton with given <code class="docutils literal notranslate"><span class="pre">name</span></code> exists in global scope.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-is-editor-hint"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_editor_hint</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the script is currently running inside the editor, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. This is useful for <code class="docutils literal notranslate"><span class="pre">@tool</span></code> scripts to conditionally draw editor helpers, or prevent accidentally running "game" code that would affect the scene state while in the editor:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-4-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-4-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-4-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Engine</span><span class="o">.</span><span class="n">is_editor_hint</span><span class="p">():</span>
+<span class="w">    </span><span class="n">draw_gizmos</span><span class="p">()</span>
+<span class="k k-ControlFlow">else</span><span class="p">:</span>
+<span class="w">    </span><span class="n">simulate_physics</span><span class="p">()</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="n">IsEditorHint</span><span class="p">())</span>
+<span class="w">    </span><span class="n">DrawGizmos</span><span class="p">();</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="nf">SimulatePhysics</span><span class="p">();</span>
+</pre></div>
+</div>
+</div></div>
+<p>See <a class="reference internal" href="../tutorials/plugins/running_code_in_the_editor.html"><span class="doc">Running code in the editor</span></a> in the documentation for more information.</p>
+<p><strong>Note:</strong> To detect whether the script is run from an editor <em>build</em> (e.g. when pressing <kbd class="kbd docutils literal notranslate">F5</kbd>), use <a class="reference internal" href="class_os.html#class-os-method-has-feature"><span class="std std-ref">OS.has_feature</span></a> with the <code class="docutils literal notranslate"><span class="pre">"editor"</span></code> argument instead. <code class="docutils literal notranslate"><span class="pre">OS.has_feature("editor")</span></code> will evaluate to <code class="docutils literal notranslate"><span class="pre">true</span></code> both when the code is running in the editor and when running the project from the editor, but it will evaluate to <code class="docutils literal notranslate"><span class="pre">false</span></code> when the code is run from an exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-is-in-physics-frame"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_in_physics_frame</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the game is inside the fixed process and physics phase of the game loop.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-register-script-language"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>register_script_language</strong>(language: <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a>)</p>
+<p>Registers a <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a> instance to be available with <code class="docutils literal notranslate"><span class="pre">ScriptServer</span></code>.</p>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-ok"><span class="std std-ref">@GlobalScope.OK</span></a> on success</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-unavailable"><span class="std std-ref">@GlobalScope.ERR_UNAVAILABLE</span></a> if <code class="docutils literal notranslate"><span class="pre">ScriptServer</span></code> has reached it limit and cannot register any new language</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-already-exists"><span class="std std-ref">@GlobalScope.ERR_ALREADY_EXISTS</span></a> if <code class="docutils literal notranslate"><span class="pre">ScriptServer</span></code> already contains a language with similar extension/name/type</p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-register-singleton"><abbr title="No return value.">void</abbr> <strong>register_singleton</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, instance: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p>
+<p>Registers the given object as a singleton, globally available under <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-unregister-script-language"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>unregister_script_language</strong>(language: <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a>)</p>
+<p>Unregisters the <a class="reference internal" href="class_scriptlanguage.html#class-scriptlanguage"><span class="std std-ref">ScriptLanguage</span></a> instance from <code class="docutils literal notranslate"><span class="pre">ScriptServer</span></code>.</p>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-ok"><span class="std std-ref">@GlobalScope.OK</span></a> on success</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-does-not-exist"><span class="std std-ref">@GlobalScope.ERR_DOES_NOT_EXIST</span></a> if the language is already not registered in <code class="docutils literal notranslate"><span class="pre">ScriptServer</span></code></p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-engine-method-unregister-singleton"><abbr title="No return value.">void</abbr> <strong>unregister_singleton</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Unregisters the singleton registered under <code class="docutils literal notranslate"><span class="pre">name</span></code>. The singleton object is not freed. Only works with user-defined singletons created with <a class="reference internal" href="#class-engine-method-register-singleton"><span class="std std-ref">register_singleton</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_enetpacketpeer.html" rel="prev" title="ENetPacketPeer"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_enginedebugger.html" rel="next" title="EngineDebugger">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

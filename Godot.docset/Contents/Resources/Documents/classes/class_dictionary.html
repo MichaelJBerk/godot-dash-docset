@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Dictionary" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_dictionary.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="A built-in data structure that holds key-value pairs. Description: Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion or..." property="og:description"/>
+<meta content="A built-in data structure that holds key-value pairs. Description: Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion or..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Dictionary — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_dictionary.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_dictionary.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_dictionary.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_dictionary.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_dictionary.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_dictionary.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_dictionary.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_dictionary.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_dictionary.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_dictionary.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_dictionary.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_dictionary.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_dictionary.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_float.html" rel="next" title="float"/>
+<link href="class_color.html" rel="prev" title="Color"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_dictionary" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Dictionary</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="dictionary">
+<span id="class-dictionary"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Dictionary¶"></a>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">¶</a></h1>
+<p>A built-in data structure that holds key-value pairs.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.</p>
+<p>You can define a dictionary by placing a comma-separated list of <code class="docutils literal notranslate"><span class="pre">key:</span> <span class="pre">value</span></code> pairs inside curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p>
+<p>Creating a dictionary:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">my_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="c1"># Creates an empty dictionary.</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">dict_variable_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Another key name"</span>
+<span class="k">var</span><span class="w"> </span><span class="n">dict_variable_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"value2"</span>
+<span class="k">var</span><span class="w"> </span><span class="n">another_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"Some key name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"value1"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">dict_variable_key</span><span class="p">:</span><span class="w"> </span><span class="n">dict_variable_value</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">points_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"White"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="s2">"Yellow"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="s2">"Orange"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">}</span>
+
+<span class="c1"># Alternative Lua-style syntax.</span>
+<span class="c1"># Doesn't require quotes around keys, but only string constants can be used as key names.</span>
+<span class="c1"># Additionally, key names must start with a letter or an underscore.</span>
+<span class="c1"># Here, `some_key` is a string literal, not a variable!</span>
+<span class="n">another_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">some_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">myDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">();</span><span class="w"> </span><span class="c1">// Creates an empty dictionary.</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">pointsDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"White"</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Yellow"</span><span class="p">,</span><span class="w"> </span><span class="m">75</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Orange"</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div></div>
+<p>You can access a dictionary's value by referencing its corresponding key. In the above example, <code class="docutils literal notranslate"><span class="pre">points_dict["White"]</span></code> will return <code class="docutils literal notranslate"><span class="pre">50</span></code>. You can also write <code class="docutils literal notranslate"><span class="pre">points_dict.White</span></code>, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_enum</span><span class="p">(</span><span class="s2">"White"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Yellow"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Orange"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">my_color</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+<span class="k">var</span><span class="w"> </span><span class="n">points_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"White"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="s2">"Yellow"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="s2">"Orange"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">}</span>
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="c1"># We can't use dot syntax here as `my_color` is a variable.</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">points_dict</span><span class="p">[</span><span class="n">my_color</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="na">[Export(PropertyHint.Enum, "White,Yellow,Orange")]</span>
+<span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">MyColor</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="k">private</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="w"> </span><span class="n">_pointsDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"White"</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Yellow"</span><span class="p">,</span><span class="w"> </span><span class="m">75</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Orange"</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">_pointsDict</span><span class="p">[</span><span class="n">MyColor</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>In the above code, <code class="docutils literal notranslate"><span class="pre">points</span></code> will be assigned the value that is paired with the appropriate color selected in <code class="docutils literal notranslate"><span class="pre">my_color</span></code>.</p>
+<p>Dictionaries can contain more complex data:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">my_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"First Array"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="c1"># Assigns an Array to a String key.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">myDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"First Array"</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="p">{</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">}}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div></div>
+<p>To add a key to an existing dictionary, access it like an existing key and assign to it:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-3-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-3-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">points_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"White"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="s2">"Yellow"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="s2">"Orange"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">}</span>
+<span class="n">points_dict</span><span class="p">[</span><span class="s2">"Blue"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">150</span><span class="w"> </span><span class="c1"># Add "Blue" as a key and assign 150 as its value.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">pointsDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"White"</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Yellow"</span><span class="p">,</span><span class="w"> </span><span class="m">75</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"Orange"</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">}</span>
+<span class="p">};</span>
+<span class="n">pointsDict</span><span class="p">[</span><span class="s">"Blue"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">150</span><span class="p">;</span><span class="w"> </span><span class="c1">// Add "Blue" as a key and assign 150 as its value.</span>
+</pre></div>
+</div>
+</div></div>
+<p>Finally, dictionaries can contain different types of keys and values in the same dictionary:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-4-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-4-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-4-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a valid dictionary.</span>
+<span class="c1"># To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.</span>
+<span class="c1"># Indexing styles can be mixed and matched depending on your needs.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">my_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"String Key"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">],</span>
+<span class="w">    </span><span class="mi">7</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"sub_dict"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"sub_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nested value"</span><span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is a valid dictionary.</span>
+<span class="c1">// To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">myDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"String Key"</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="p">{</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">}},</span>
+<span class="w">    </span><span class="p">{</span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="s">"Hello"</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="s">"sub_dict"</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">{{</span><span class="s">"sub_key"</span><span class="p">,</span><span class="w"> </span><span class="s">"Nested value"</span><span class="p">}}}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div></div>
+<p>The keys of a dictionary can be iterated with the <code class="docutils literal notranslate"><span class="pre">for</span></code> keyword:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-5-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-5-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-5-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-5-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-5-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-5-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">groceries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"Orange"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="s2">"Apple"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"Banana"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">}</span>
+<span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">fruit</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">groceries</span><span class="p">:</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">groceries</span><span class="p">[</span><span class="n">fruit</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-5-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-5-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">groceries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">{{</span><span class="s">"Orange"</span><span class="p">,</span><span class="w"> </span><span class="m">20</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="s">"Apple"</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="s">"Banana"</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">}};</span>
+<span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="p">(</span><span class="n">fruit</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">groceries</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// `fruit` is the key, `amount` is the value.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use <a class="reference internal" href="#class-dictionary-method-duplicate"><span class="std std-ref">duplicate</span></a>.</p>
+<p><strong>Note:</strong> Erasing elements while iterating over dictionaries is <strong>not</strong> supported and will result in unpredictable behavior.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are notable differences when using this API with C#. See <a class="reference internal" href="../tutorials/scripting/c_sharp/c_sharp_differences.html#doc-c-sharp-differences"><span class="std std-ref">C# API differences to GDScript</span></a> for more information.</p>
+</div>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="../tutorials/scripting/gdscript/gdscript_basics.html#dictionary">GDScript basics: Dictionary</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/676">3D Voxel Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/677">OS Test Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-constructor-dictionary"><span class="std std-ref">Dictionary</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-constructor-dictionary"><span class="std std-ref">Dictionary</span></a>(from: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-duplicate"><span class="std std-ref">duplicate</span></a>(deep: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-erase"><span class="std std-ref">erase</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-find-key"><span class="std std-ref">find_key</span></a>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-get"><span class="std std-ref">get</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, default: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-get-or-add"><span class="std std-ref">get_or_add</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, default: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-has"><span class="std std-ref">has</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-has-all"><span class="std std-ref">has_all</span></a>(keys: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-hash"><span class="std std-ref">hash</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-is-empty"><span class="std std-ref">is_empty</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-is-read-only"><span class="std std-ref">is_read_only</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-keys"><span class="std std-ref">keys</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-make-read-only"><span class="std std-ref">make_read_only</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-merge"><span class="std std-ref">merge</span></a>(dictionary: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>, overwrite: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-size"><span class="std std-ref">size</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-method-values"><span class="std std-ref">values</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-operator-neq-dictionary"><span class="std std-ref">operator !=</span></a>(right: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-operator-eq-dictionary"><span class="std std-ref">operator ==</span></a>(right: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-dictionary-operator-idx-variant"><span class="std std-ref">operator []</span></a>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-dictionary-constructor-dictionary"><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>Dictionary</strong>()</p>
+<p>Constructs an empty <strong>Dictionary</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>Dictionary</strong>(from: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p>
+<p>Returns the same dictionary as <code class="docutils literal notranslate"><span class="pre">from</span></code>. If you need a copy of the dictionary, use <a class="reference internal" href="#class-dictionary-method-duplicate"><span class="std std-ref">duplicate</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-dictionary-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clears the dictionary, removing all entries from it.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-duplicate"><a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>duplicate</strong>(deep: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Creates and returns a new copy of the dictionary. If <code class="docutils literal notranslate"><span class="pre">deep</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, inner <strong>Dictionary</strong> and <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> keys and values are also copied, recursively.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-erase"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>erase</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Removes the dictionary entry by key, if it exists. Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given <code class="docutils literal notranslate"><span class="pre">key</span></code> existed in the dictionary, otherwise <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p><strong>Note:</strong> Do not erase entries while iterating over the dictionary. You can iterate over the <a class="reference internal" href="#class-dictionary-method-keys"><span class="std std-ref">keys</span></a> array instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-find-key"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>find_key</strong>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Finds and returns the first key whose associated value is equal to <code class="docutils literal notranslate"><span class="pre">value</span></code>, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it is not found.</p>
+<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">null</span></code> is also a valid key. If inside the dictionary, <a class="reference internal" href="#class-dictionary-method-find-key"><span class="std std-ref">find_key</span></a> may give misleading results.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-get"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, default: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the corresponding value for the given <code class="docutils literal notranslate"><span class="pre">key</span></code> in the dictionary. If the <code class="docutils literal notranslate"><span class="pre">key</span></code> does not exist, returns <code class="docutils literal notranslate"><span class="pre">default</span></code>, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if the parameter is omitted.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-get-or-add"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_or_add</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, default: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> = null)</p>
+<p>Gets a value and ensures the key is set. If the <code class="docutils literal notranslate"><span class="pre">key</span></code> exists in the dictionary, this behaves like <a class="reference internal" href="#class-dictionary-method-get"><span class="std std-ref">get</span></a>. Otherwise, the <code class="docutils literal notranslate"><span class="pre">default</span></code> value is inserted into the dictionary and returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-has"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the dictionary contains an entry with the given <code class="docutils literal notranslate"><span class="pre">key</span></code>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-6-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-6-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-6-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-6-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-6-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-6-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">my_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"Godot"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">210</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s2">"Godot"</span><span class="p">))</span><span class="w"> </span><span class="c1"># Prints true</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="mi">210</span><span class="p">))</span><span class="w">     </span><span class="c1"># Prints true</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span><span class="w">       </span><span class="c1"># Prints false</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-6-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-6-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">myDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="s">"Godot"</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="m">210</span><span class="p">,</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">},</span>
+<span class="p">};</span>
+
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">myDict</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="s">"Godot"</span><span class="p">));</span><span class="w"> </span><span class="c1">// Prints true</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">myDict</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="m">210</span><span class="p">));</span><span class="w">     </span><span class="c1">// Prints true</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">myDict</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="m">4</span><span class="p">));</span><span class="w">       </span><span class="c1">// Prints false</span>
+</pre></div>
+</div>
+</div></div>
+<p>In GDScript, this is equivalent to the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="s2">"Godot"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p">{</span><span class="s2">"Godot"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">}:</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"The key is here!"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Will be printed.</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> This method returns <code class="docutils literal notranslate"><span class="pre">true</span></code> as long as the <code class="docutils literal notranslate"><span class="pre">key</span></code> exists, even if its corresponding value is <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-has-all"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_all</strong>(keys: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the dictionary contains all keys in the given <code class="docutils literal notranslate"><span class="pre">keys</span></code> array.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"width"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"height"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">}</span>
+<span class="n">data</span><span class="o">.</span><span class="n">has_all</span><span class="p">([</span><span class="s2">"height"</span><span class="p">,</span><span class="w"> </span><span class="s2">"width"</span><span class="p">])</span><span class="w"> </span><span class="c1"># Returns true</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-hash"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>hash</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a hashed 32-bit integer value representing the dictionary contents.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-7-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-7-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-7-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-7-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-7-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-7-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">dict1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"A"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">}</span>
+<span class="k">var</span><span class="w"> </span><span class="n">dict2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">"A"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="o">.</span><span class="n">hash</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">dict2</span><span class="o">.</span><span class="n">hash</span><span class="p">())</span><span class="w"> </span><span class="c1"># Prints true</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-7-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-7-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">dict1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">{{</span><span class="s">"A"</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="s">"B"</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">}};</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">dict2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span><span class="p">{{</span><span class="s">"A"</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="s">"B"</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">}};</span>
+
+<span class="c1">// Godot.Collections.Dictionary has no Hash() method. Use GD.Hash() instead.</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">GD</span><span class="p">.</span><span class="n">Hash</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">GD</span><span class="p">.</span><span class="n">Hash</span><span class="p">(</span><span class="n">dict2</span><span class="p">));</span><span class="w"> </span><span class="c1">// Prints true</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> Dictionaries with the same entries but in a different order will not have the same hash.</p>
+<p><strong>Note:</strong> Dictionaries with equal hash values are <em>not</em> guaranteed to be the same, because of hash collisions. On the contrary, dictionaries with different hash values are guaranteed to be different.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-is-empty"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_empty</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the dictionary is empty (its size is <code class="docutils literal notranslate"><span class="pre">0</span></code>). See also <a class="reference internal" href="#class-dictionary-method-size"><span class="std std-ref">size</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-is-read-only"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_read_only</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the dictionary is read-only. See <a class="reference internal" href="#class-dictionary-method-make-read-only"><span class="std std-ref">make_read_only</span></a>. Dictionaries are automatically read-only if declared with <code class="docutils literal notranslate"><span class="pre">const</span></code> keyword.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-keys"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>keys</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of keys in the dictionary.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-make-read-only"><abbr title="No return value.">void</abbr> <strong>make_read_only</strong>()</p>
+<p>Makes the dictionary read-only, i.e. disables modification of the dictionary's contents. Does not apply to nested content, e.g. content of nested dictionaries.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-merge"><abbr title="No return value.">void</abbr> <strong>merge</strong>(dictionary: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>, overwrite: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Adds entries from <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> to this dictionary. By default, duplicate keys are not copied over, unless <code class="docutils literal notranslate"><span class="pre">overwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-8-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-8-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-8-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-8-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-8-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-8-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sword"</span><span class="p">,</span><span class="w"> </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">}</span>
+<span class="k">var</span><span class="w"> </span><span class="n">other_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"silver"</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c1"># Overwriting of existing keys is disabled by default.</span>
+<span class="n">dict</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">other_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dict</span><span class="p">)</span><span class="w">  </span><span class="c1"># { "item": "sword", "quantity": 2, "color": "silver" }</span>
+
+<span class="c1"># With overwriting of existing keys enabled.</span>
+<span class="n">dict</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">other_dict</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dict</span><span class="p">)</span><span class="w">  </span><span class="c1"># { "item": "sword", "quantity": 15, "color": "silver" }</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-8-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-8-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="na">["item"]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"sword"</span><span class="p">,</span>
+<span class="w">    </span><span class="na">["quantity"]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="kt">var</span><span class="w"> </span><span class="n">otherDict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Dictionary</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="na">["quantity"]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">15</span><span class="p">,</span>
+<span class="w">    </span><span class="na">["color"]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"silver"</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="c1">// Overwriting of existing keys is disabled by default.</span>
+<span class="n">dict</span><span class="p">.</span><span class="n">Merge</span><span class="p">(</span><span class="n">otherDict</span><span class="p">);</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">dict</span><span class="p">);</span><span class="w"> </span><span class="c1">// { "item": "sword", "quantity": 2, "color": "silver" }</span>
+
+<span class="c1">// With overwriting of existing keys enabled.</span>
+<span class="n">dict</span><span class="p">.</span><span class="n">Merge</span><span class="p">(</span><span class="n">otherDict</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">dict</span><span class="p">);</span><span class="w"> </span><span class="c1">// { "item": "sword", "quantity": 15, "color": "silver" }</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-dictionary-method-merge"><span class="std std-ref">merge</span></a> is <em>not</em> recursive. Nested dictionaries are considered as keys that can be overwritten or not depending on the value of <code class="docutils literal notranslate"><span class="pre">overwrite</span></code>, but they will never be merged together.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>size</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of entries in the dictionary. Empty dictionaries (<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>) always return <code class="docutils literal notranslate"><span class="pre">0</span></code>. See also <a class="reference internal" href="#class-dictionary-method-is-empty"><span class="std std-ref">is_empty</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-dictionary-method-values"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>values</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of values in this dictionary.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="operator-descriptions">
+<h2>Operator Descriptions<a class="headerlink" href="#operator-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-operator" id="class-dictionary-operator-neq-dictionary"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator !=</strong>(right: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the two dictionaries do not contain the same keys and values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-dictionary-operator-eq-dictionary"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator ==</strong>(right: <a class="reference internal" href="#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the two dictionaries contain the same keys and values. The order of the entries does not matter.</p>
+<p><strong>Note:</strong> In C#, by convention, this operator compares by <strong>reference</strong>. If you need to compare by value, iterate over both dictionaries.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-dictionary-operator-idx-variant"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>operator []</strong>(key: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Returns the corresponding value for the given <code class="docutils literal notranslate"><span class="pre">key</span></code> in the dictionary. If the entry does not exist, fails and returns <code class="docutils literal notranslate"><span class="pre">null</span></code>. For safe access, use <a class="reference internal" href="#class-dictionary-method-get"><span class="std std-ref">get</span></a> or <a class="reference internal" href="#class-dictionary-method-has"><span class="std std-ref">has</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_color.html" rel="prev" title="Color"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_float.html" rel="next" title="float">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

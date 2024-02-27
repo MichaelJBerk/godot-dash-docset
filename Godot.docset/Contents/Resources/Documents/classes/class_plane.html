@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Plane" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_plane.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="A plane in Hessian normal form. Description: Represents a normalized plane equation. normal is the normal of the plane (a, b, c normalized), and d is the distance from the origin to the plane (in t..." property="og:description"/>
+<meta content="A plane in Hessian normal form. Description: Represents a normalized plane equation. normal is the normal of the plane (a, b, c normalized), and d is the distance from the origin to the plane (in t..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Plane — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_plane.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_plane.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_plane.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_plane.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_plane.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_plane.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_plane.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_plane.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_plane.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_plane.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_plane.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_plane.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_plane.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_plane.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_plane.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_plane.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_projection.html" rel="next" title="Projection"/>
+<link href="class_packedvector3array.html" rel="prev" title="PackedVector3Array"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_plane" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Plane</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="plane">
+<span id="class-plane"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Plane¶"></a>Plane<a class="headerlink" href="#plane" title="Permalink to this headline">¶</a></h1>
+<p>A plane in Hessian normal form.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Represents a normalized plane equation. <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> is the normal of the plane (a, b, c normalized), and <a class="reference internal" href="#class-plane-property-d"><span class="std std-ref">d</span></a> is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/math/index.html"><span class="doc">Math documentation index</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-property-d"><span class="std std-ref">d</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-property-x"><span class="std std-ref">x</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-property-y"><span class="std std-ref">y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-property-z"><span class="std std-ref">z</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(from: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(a: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, b: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, c: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, d: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, d: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-constructor-plane"><span class="std std-ref">Plane</span></a>(point1: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point2: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point3: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-distance-to"><span class="std std-ref">distance_to</span></a>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-get-center"><span class="std std-ref">get_center</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-has-point"><span class="std std-ref">has_point</span></a>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, tolerance: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1e-05) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-intersect-3"><span class="std std-ref">intersect_3</span></a>(b: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>, c: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-intersects-ray"><span class="std std-ref">intersects_ray</span></a>(from: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, dir: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-intersects-segment"><span class="std std-ref">intersects_segment</span></a>(from: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, to: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a>(to_plane: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-is-finite"><span class="std std-ref">is_finite</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-is-point-over"><span class="std std-ref">is_point_over</span></a>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-normalized"><span class="std std-ref">normalized</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-method-project"><span class="std std-ref">project</span></a>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-operator-neq-plane"><span class="std std-ref">operator !=</span></a>(right: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-operator-mul-transform3d"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-operator-eq-plane"><span class="std std-ref">operator ==</span></a>(right: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-operator-unplus"><span class="std std-ref">operator unary+</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a></p></td>
+<td><p><a class="reference internal" href="#class-plane-operator-unminus"><span class="std std-ref">operator unary-</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-plane-constant-plane-yz"><strong>PLANE_YZ</strong> = <code class="docutils literal notranslate"><span class="pre">Plane(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>A plane that extends in the Y and Z axes (normal vector points +X).</p>
+<p class="classref-constant" id="class-plane-constant-plane-xz"><strong>PLANE_XZ</strong> = <code class="docutils literal notranslate"><span class="pre">Plane(0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>A plane that extends in the X and Z axes (normal vector points +Y).</p>
+<p class="classref-constant" id="class-plane-constant-plane-xy"><strong>PLANE_XY</strong> = <code class="docutils literal notranslate"><span class="pre">Plane(0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0)</span></code></p>
+<p>A plane that extends in the X and Y axes (normal vector points +Z).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-plane-property-d"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>d</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<p>The distance from the origin to the plane, expressed in terms of <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> (according to its direction and magnitude). Actual absolute distance from the origin to the plane can be calculated as <code class="docutils literal notranslate"><span class="pre">abs(d)</span> <span class="pre">/</span> <span class="pre">normal.length()</span></code> (if <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> has zero length then this <strong>Plane</strong> does not represent a valid plane).</p>
+<p>In the scalar equation of the plane <code class="docutils literal notranslate"><span class="pre">ax</span> <span class="pre">+</span> <span class="pre">by</span> <span class="pre">+</span> <span class="pre">cz</span> <span class="pre">=</span> <span class="pre">d</span></code>, this is <code class="docutils literal notranslate"><span class="pre">d</span></code>, while the <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code> coordinates are represented by the <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-plane-property-normal"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>normal</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The normal of the plane, typically a unit vector. Shouldn't be a zero vector as <strong>Plane</strong> with such <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> does not represent a valid plane.</p>
+<p>In the scalar equation of the plane <code class="docutils literal notranslate"><span class="pre">ax</span> <span class="pre">+</span> <span class="pre">by</span> <span class="pre">+</span> <span class="pre">cz</span> <span class="pre">=</span> <span class="pre">d</span></code>, this is the vector <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code>, where <code class="docutils literal notranslate"><span class="pre">d</span></code> is the <a class="reference internal" href="#class-plane-property-d"><span class="std std-ref">d</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-plane-property-x"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>x</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<p>The X component of the plane's <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> vector.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-plane-property-y"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>y</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<p>The Y component of the plane's <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> vector.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-plane-property-z"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>z</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<p>The Z component of the plane's <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> vector.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-plane-constructor-plane"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>()</p>
+<p>Constructs a default-initialized <strong>Plane</strong> with all components set to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(from: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p>
+<p>Constructs a <strong>Plane</strong> as a copy of the given <strong>Plane</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(a: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, b: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, c: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, d: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Creates a plane from the four parameters. The three components of the resulting plane's <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> are <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">c</span></code>, and the plane has a distance of <code class="docutils literal notranslate"><span class="pre">d</span></code> from the origin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Creates a plane from the normal vector. The plane will intersect the origin.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">normal</span></code> of the plane must be a unit vector.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, d: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Creates a plane from the normal vector and the plane's distance from the origin.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">normal</span></code> of the plane must be a unit vector.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(normal: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Creates a plane from the normal vector and a point on the plane.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">normal</span></code> of the plane must be a unit vector.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>Plane</strong>(point1: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point2: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, point3: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Creates a plane from the three points, given in clockwise order.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-plane-method-distance-to"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>distance_to</strong>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the shortest distance from the plane to the position <code class="docutils literal notranslate"><span class="pre">point</span></code>. If the point is above the plane, the distance will be positive. If below, the distance will be negative.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-get-center"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_center</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the center of the plane.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-has-point"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_point</strong>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, tolerance: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1e-05) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">point</span></code> is inside the plane. Comparison uses a custom minimum <code class="docutils literal notranslate"><span class="pre">tolerance</span></code> threshold.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-intersect-3"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>intersect_3</strong>(b: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>, c: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the intersection point of the three planes <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code> and this plane. If no intersection is found, <code class="docutils literal notranslate"><span class="pre">null</span></code> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-intersects-ray"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>intersects_ray</strong>(from: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, dir: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the intersection point of a ray consisting of the position <code class="docutils literal notranslate"><span class="pre">from</span></code> and the direction normal <code class="docutils literal notranslate"><span class="pre">dir</span></code> with this plane. If no intersection is found, <code class="docutils literal notranslate"><span class="pre">null</span></code> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-intersects-segment"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>intersects_segment</strong>(from: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>, to: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the intersection point of a segment from position <code class="docutils literal notranslate"><span class="pre">from</span></code> to position <code class="docutils literal notranslate"><span class="pre">to</span></code> with this plane. If no intersection is found, <code class="docutils literal notranslate"><span class="pre">null</span></code> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-is-equal-approx"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_equal_approx</strong>(to_plane: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this plane and <code class="docutils literal notranslate"><span class="pre">to_plane</span></code> are approximately equal, by running <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-is-equal-approx"><span class="std std-ref">@GlobalScope.is_equal_approx</span></a> on each component.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-is-finite"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_finite</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this plane is finite, by calling <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-is-finite"><span class="std std-ref">@GlobalScope.is_finite</span></a> on each component.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-is-point-over"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_point_over</strong>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">point</span></code> is located above the plane.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-normalized"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>normalized</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the plane, with normalized <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> (so it's a unit vector). Returns <code class="docutils literal notranslate"><span class="pre">Plane(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code> if <a class="reference internal" href="#class-plane-property-normal"><span class="std std-ref">normal</span></a> can't be normalized (it has zero length).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-plane-method-project"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>project</strong>(point: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the orthogonal projection of <code class="docutils literal notranslate"><span class="pre">point</span></code> into a point in the plane.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="operator-descriptions">
+<h2>Operator Descriptions<a class="headerlink" href="#operator-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-operator" id="class-plane-operator-neq-plane"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator !=</strong>(right: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the planes are not equal.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-plane-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-plane-operator-mul-transform3d"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a>)</p>
+<p>Inversely transforms (multiplies) the <strong>Plane</strong> by the given <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> transformation matrix.</p>
+<p><code class="docutils literal notranslate"><span class="pre">plane</span> <span class="pre">*</span> <span class="pre">transform</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">transform.affine_inverse()</span> <span class="pre">*</span> <span class="pre">plane</span></code>. See <a class="reference internal" href="class_transform3d.html#class-transform3d-method-affine-inverse"><span class="std std-ref">Transform3D.affine_inverse</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-plane-operator-eq-plane"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator ==</strong>(right: <a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the planes are exactly equal.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-plane-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-plane-operator-unplus"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>operator unary+</strong>()</p>
+<p>Returns the same value as if the <code class="docutils literal notranslate"><span class="pre">+</span></code> was not there. Unary <code class="docutils literal notranslate"><span class="pre">+</span></code> does nothing, but sometimes it can make your code more readable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-plane-operator-unminus"><a class="reference internal" href="#class-plane"><span class="std std-ref">Plane</span></a> <strong>operator unary-</strong>()</p>
+<p>Returns the negative value of the <strong>Plane</strong>. This is the same as writing <code class="docutils literal notranslate"><span class="pre">Plane(-p.normal,</span> <span class="pre">-p.d)</span></code>. This operation flips the direction of the normal vector and also flips the distance value, resulting in a Plane that is in the same place, but facing the opposite direction.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_packedvector3array.html" rel="prev" title="PackedVector3Array"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_projection.html" rel="next" title="Projection">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

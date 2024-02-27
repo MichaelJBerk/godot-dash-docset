@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ENetMultiplayerPeer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_enetmultiplayerpeer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object A MultiplayerPeer implementation using the ENet library. Description: A MultiplayerPeer implementation that should be passed to Multiplayer..." property="og:description"/>
+<meta content="Inherits: MultiplayerPeer&lt; PacketPeer&lt; RefCounted&lt; Object A MultiplayerPeer implementation using the ENet library. Description: A MultiplayerPeer implementation that should be passed to Multiplayer..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ENetMultiplayerPeer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_enetmultiplayerpeer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_enetmultiplayerpeer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_enetmultiplayerpeer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_enetmultiplayerpeer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_enetmultiplayerpeer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_enetmultiplayerpeer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_enetmultiplayerpeer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_enetmultiplayerpeer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_enetmultiplayerpeer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_enetmultiplayerpeer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_enetmultiplayerpeer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_enetmultiplayerpeer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_enetmultiplayerpeer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_enetpacketpeer.html" rel="next" title="ENetPacketPeer"/>
+<link href="class_enetconnection.html" rel="prev" title="ENetConnection"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_enetmultiplayerpeer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ENetMultiplayerPeer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="enetmultiplayerpeer">
+<span id="class-enetmultiplayerpeer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ENetMultiplayerPeer¶"></a>ENetMultiplayerPeer<a class="headerlink" href="#enetmultiplayerpeer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_packetpeer.html#class-packetpeer"><span class="std std-ref">PacketPeer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A MultiplayerPeer implementation using the <a class="reference external" href="http://enet.bespin.org/index.html">ENet</a> library.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A MultiplayerPeer implementation that should be passed to <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a> after being initialized as either a client, server, or mesh. Events can then be handled by connecting to <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> signals. See <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a> for more information on the ENet library wrapper.</p>
+<p><strong>Note:</strong> ENet only uses UDP, not TCP. When forwarding the server port to make your server accessible on the public Internet, you only need to forward the server port in UDP. You can use the <a class="reference internal" href="class_upnp.html#class-upnp"><span class="std std-ref">UPNP</span></a> class to try to forward the server port automatically when starting the server.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/networking/high_level_multiplayer.html"><span class="doc">High-level multiplayer</span></a></p></li>
+<li><p><a class="reference external" href="http://enet.bespin.org/usergroup0.html">API documentation on the ENet website</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-property-host"><span class="std std-ref">host</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-add-mesh-peer"><span class="std std-ref">add_mesh_peer</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, host: <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a>(address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channel_count: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, local_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-create-mesh"><span class="std std-ref">create_mesh</span></a>(unique_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-create-server"><span class="std std-ref">create_server</span></a>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, max_clients: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-get-peer"><span class="std std-ref">get_peer</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-enetmultiplayerpeer-method-set-bind-ip"><span class="std std-ref">set_bind_ip</span></a>(ip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-enetmultiplayerpeer-property-host"><a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a> <strong>host</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a> <strong><a class="dashAnchor" id="properties-get_host" name="//apple_ref/cpp/Property/get_host"></a>get_host</strong>()</p></li>
+</ul>
+<p>The underlying <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a> created after <a class="reference internal" href="#class-enetmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a> and <a class="reference internal" href="#class-enetmultiplayerpeer-method-create-server"><span class="std std-ref">create_server</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-add-mesh-peer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>add_mesh_peer</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, host: <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a>)</p>
+<p>Add a new remote peer with the given <code class="docutils literal notranslate"><span class="pre">peer_id</span></code> connected to the given <code class="docutils literal notranslate"><span class="pre">host</span></code>.</p>
+<p><strong>Note:</strong> The <code class="docutils literal notranslate"><span class="pre">host</span></code> must have exactly one peer in the <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer-constant-state-connected"><span class="std std-ref">ENetPacketPeer.STATE_CONNECTED</span></a> state.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-create-client"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_client</strong>(address: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, channel_count: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, local_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Create client that connects to a server at <code class="docutils literal notranslate"><span class="pre">address</span></code> using specified <code class="docutils literal notranslate"><span class="pre">port</span></code>. The given address needs to be either a fully qualified domain name (e.g. <code class="docutils literal notranslate"><span class="pre">"www.example.com"</span></code>) or an IP address in IPv4 or IPv6 format (e.g. <code class="docutils literal notranslate"><span class="pre">"192.168.1.1"</span></code>). The <code class="docutils literal notranslate"><span class="pre">port</span></code> is the port the server is listening on. The <code class="docutils literal notranslate"><span class="pre">channel_count</span></code> parameter can be used to specify the number of ENet channels allocated for the connection. The <code class="docutils literal notranslate"><span class="pre">in_bandwidth</span></code> and <code class="docutils literal notranslate"><span class="pre">out_bandwidth</span></code> parameters can be used to limit the incoming and outgoing bandwidth to the given number of bytes per second. The default of 0 means unlimited bandwidth. Note that ENet will strategically drop packets on specific sides of a connection between peers to ensure the peer's bandwidth is not overwhelmed. The bandwidth parameters also determine the window size of a connection which limits the amount of reliable packets that may be in transit at any given time. Returns <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-ok"><span class="std std-ref">@GlobalScope.OK</span></a> if a client was created, <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-already-in-use"><span class="std std-ref">@GlobalScope.ERR_ALREADY_IN_USE</span></a> if this ENetMultiplayerPeer instance already has an open connection (in which case you need to call <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-close"><span class="std std-ref">MultiplayerPeer.close</span></a> first) or <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-cant-create"><span class="std std-ref">@GlobalScope.ERR_CANT_CREATE</span></a> if the client could not be created. If <code class="docutils literal notranslate"><span class="pre">local_port</span></code> is specified, the client will also listen to the given port; this is useful for some NAT traversal techniques.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-create-mesh"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_mesh</strong>(unique_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Initialize this <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> in mesh mode. The provided <code class="docutils literal notranslate"><span class="pre">unique_id</span></code> will be used as the local peer network unique ID once assigned as the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">MultiplayerAPI.multiplayer_peer</span></a>. In the mesh configuration you will need to set up each new peer manually using <a class="reference internal" href="class_enetconnection.html#class-enetconnection"><span class="std std-ref">ENetConnection</span></a> before calling <a class="reference internal" href="#class-enetmultiplayerpeer-method-add-mesh-peer"><span class="std std-ref">add_mesh_peer</span></a>. While this technique is more advanced, it allows for better control over the connection process (e.g. when dealing with NAT punch-through) and for better distribution of the network load (which would otherwise be more taxing on the server).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-create-server"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>create_server</strong>(port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, max_clients: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 32, max_channels: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, in_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, out_bandwidth: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Create server that listens to connections via <code class="docutils literal notranslate"><span class="pre">port</span></code>. The port needs to be an available, unused port between 0 and 65535. Note that ports below 1024 are privileged and may require elevated permissions depending on the platform. To change the interface the server listens on, use <a class="reference internal" href="#class-enetmultiplayerpeer-method-set-bind-ip"><span class="std std-ref">set_bind_ip</span></a>. The default IP is the wildcard <code class="docutils literal notranslate"><span class="pre">"*"</span></code>, which listens on all available interfaces. <code class="docutils literal notranslate"><span class="pre">max_clients</span></code> is the maximum number of clients that are allowed at once, any number up to 4095 may be used, although the achievable number of simultaneous clients may be far lower and depends on the application. For additional details on the bandwidth parameters, see <a class="reference internal" href="#class-enetmultiplayerpeer-method-create-client"><span class="std std-ref">create_client</span></a>. Returns <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-ok"><span class="std std-ref">@GlobalScope.OK</span></a> if a server was created, <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-already-in-use"><span class="std std-ref">@GlobalScope.ERR_ALREADY_IN_USE</span></a> if this ENetMultiplayerPeer instance already has an open connection (in which case you need to call <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-method-close"><span class="std std-ref">MultiplayerPeer.close</span></a> first) or <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-cant-create"><span class="std std-ref">@GlobalScope.ERR_CANT_CREATE</span></a> if the server could not be created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-get-peer"><a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a> <strong>get_peer</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a> associated to the given <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-enetmultiplayerpeer-method-set-bind-ip"><abbr title="No return value.">void</abbr> <strong>set_bind_ip</strong>(ip: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>The IP used when creating a server. This is set to the wildcard <code class="docutils literal notranslate"><span class="pre">"*"</span></code> by default, which binds to all available interfaces. The given IP needs to be in IPv4 or IPv6 address format, for example: <code class="docutils literal notranslate"><span class="pre">"192.168.1.1"</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_enetconnection.html" rel="prev" title="ENetConnection"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_enetpacketpeer.html" rel="next" title="ENetPacketPeer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

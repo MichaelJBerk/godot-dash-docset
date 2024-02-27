@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="RDTextureFormat" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_rdtextureformat.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Texture format (used by RenderingDevice). Description: This object is used by RenderingDevice. Properties:,,, int, array_layers, 1,, int, depth, 1,, DataFormat, format,..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Texture format (used by RenderingDevice). Description: This object is used by RenderingDevice. Properties:,,, int, array_layers, 1,, int, depth, 1,, DataFormat, format,..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) RDTextureFormat — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rdtextureformat.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_rdtextureformat.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_rdtextureformat.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_rdtextureformat.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_rdtextureformat.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_rdtextureformat.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_rdtextureformat.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_rdtextureformat.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_rdtextureformat.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_rdtextureformat.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_rdtextureformat.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_rdtextureformat.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_rdtextureformat.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_rdtextureformat.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rdtextureformat.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rdtextureformat.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_rdtextureview.html" rel="next" title="RDTextureView"/>
+<link href="class_rdshadersource.html" rel="prev" title="RDShaderSource"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_rdtextureformat" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">RDTextureFormat</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="rdtextureformat">
+<span id="class-rdtextureformat"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/RDTextureFormat¶"></a>RDTextureFormat<a class="headerlink" href="#rdtextureformat" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Texture format (used by <a class="reference internal" href="class_renderingdevice.html#class-renderingdevice"><span class="std std-ref">RenderingDevice</span></a>).</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This object is used by <a class="reference internal" href="class_renderingdevice.html#class-renderingdevice"><span class="std std-ref">RenderingDevice</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-array-layers"><span class="std std-ref">array_layers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-depth"><span class="std std-ref">depth</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-format"><span class="std std-ref">format</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-height"><span class="std std-ref">height</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-mipmaps"><span class="std std-ref">mipmaps</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturesamples"><span class="std std-ref">TextureSamples</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-samples"><span class="std std-ref">samples</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturetype"><span class="std std-ref">TextureType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-texture-type"><span class="std std-ref">texture_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-textureusagebits"><span class="std std-ref">TextureUsageBits</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-usage-bits"><span class="std std-ref">usage_bits</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-property-width"><span class="std std-ref">width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-method-add-shareable-format"><span class="std std-ref">add_shareable_format</span></a>(format: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-rdtextureformat-method-remove-shareable-format"><span class="std std-ref">remove_shareable_format</span></a>(format: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-rdtextureformat-property-array-layers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>array_layers</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_array_layers" name="//apple_ref/cpp/Property/set_array_layers"></a>set_array_layers</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_array_layers" name="//apple_ref/cpp/Property/get_array_layers"></a>get_array_layers</strong>()</p></li>
+</ul>
+<p>The number of layers in the texture. Only relevant for 2D texture arrays.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-depth"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>depth</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_depth" name="//apple_ref/cpp/Property/set_depth"></a>set_depth</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_depth" name="//apple_ref/cpp/Property/get_depth"></a>get_depth</strong>()</p></li>
+</ul>
+<p>The texture's depth (in pixels). This is always <code class="docutils literal notranslate"><span class="pre">1</span></code> for 2D textures.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-format"><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a> <strong>format</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_format" name="//apple_ref/cpp/Property/set_format"></a>set_format</strong>(value: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a> <strong><a class="dashAnchor" id="properties-get_format" name="//apple_ref/cpp/Property/get_format"></a>get_format</strong>()</p></li>
+</ul>
+<p>The texture's pixel data format.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>height</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_height" name="//apple_ref/cpp/Property/set_height"></a>set_height</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_height" name="//apple_ref/cpp/Property/get_height"></a>get_height</strong>()</p></li>
+</ul>
+<p>The texture's height (in pixels).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-mipmaps"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>mipmaps</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mipmaps" name="//apple_ref/cpp/Property/set_mipmaps"></a>set_mipmaps</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_mipmaps" name="//apple_ref/cpp/Property/get_mipmaps"></a>get_mipmaps</strong>()</p></li>
+</ul>
+<p>The number of mipmaps available in the texture.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-samples"><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturesamples"><span class="std std-ref">TextureSamples</span></a> <strong>samples</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_samples" name="//apple_ref/cpp/Property/set_samples"></a>set_samples</strong>(value: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturesamples"><span class="std std-ref">TextureSamples</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturesamples"><span class="std std-ref">TextureSamples</span></a> <strong><a class="dashAnchor" id="properties-get_samples" name="//apple_ref/cpp/Property/get_samples"></a>get_samples</strong>()</p></li>
+</ul>
+<p>The number of samples used when sampling the texture.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-texture-type"><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturetype"><span class="std std-ref">TextureType</span></a> <strong>texture_type</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_texture_type" name="//apple_ref/cpp/Property/set_texture_type"></a>set_texture_type</strong>(value: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturetype"><span class="std std-ref">TextureType</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-texturetype"><span class="std std-ref">TextureType</span></a> <strong><a class="dashAnchor" id="properties-get_texture_type" name="//apple_ref/cpp/Property/get_texture_type"></a>get_texture_type</strong>()</p></li>
+</ul>
+<p>The texture type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-usage-bits"><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-textureusagebits"><span class="std std-ref">TextureUsageBits</span></a>] <strong>usage_bits</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_usage_bits" name="//apple_ref/cpp/Property/set_usage_bits"></a>set_usage_bits</strong>(value: <abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-textureusagebits"><span class="std std-ref">TextureUsageBits</span></a>])</p></li>
+<li><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-textureusagebits"><span class="std std-ref">TextureUsageBits</span></a>] <strong><a class="dashAnchor" id="properties-get_usage_bits" name="//apple_ref/cpp/Property/get_usage_bits"></a>get_usage_bits</strong>()</p></li>
+</ul>
+<p>The texture's usage bits, which determine what can be done using the texture.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rdtextureformat-property-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>width</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_width" name="//apple_ref/cpp/Property/set_width"></a>set_width</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_width" name="//apple_ref/cpp/Property/get_width"></a>get_width</strong>()</p></li>
+</ul>
+<p>The texture's width (in pixels).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-rdtextureformat-method-add-shareable-format"><abbr title="No return value.">void</abbr> <strong>add_shareable_format</strong>(format: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a>)</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rdtextureformat-method-remove-shareable-format"><abbr title="No return value.">void</abbr> <strong>remove_shareable_format</strong>(format: <a class="reference internal" href="class_renderingdevice.html#enum-renderingdevice-dataformat"><span class="std std-ref">DataFormat</span></a>)</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_rdshadersource.html" rel="prev" title="RDShaderSource"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_rdtextureview.html" rel="next" title="RDTextureView">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

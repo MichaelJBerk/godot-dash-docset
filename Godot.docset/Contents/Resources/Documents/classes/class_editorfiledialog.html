@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorFileDialog" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorfiledialog.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: ConfirmationDialog&lt; AcceptDialog&lt; Window&lt; Viewport&lt; Node&lt; Object A modified version of FileDialog used by the editor. Description: EditorFileDialog is an enhanced version of FileDialog av..." property="og:description"/>
+<meta content="Inherits: ConfirmationDialog&lt; AcceptDialog&lt; Window&lt; Viewport&lt; Node&lt; Object A modified version of FileDialog used by the editor. Description: EditorFileDialog is an enhanced version of FileDialog av..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorFileDialog — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfiledialog.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorfiledialog.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorfiledialog.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorfiledialog.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorfiledialog.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorfiledialog.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorfiledialog.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorfiledialog.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorfiledialog.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorfiledialog.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorfiledialog.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorfiledialog.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorfiledialog.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorfiledialog.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfiledialog.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfiledialog.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorfilesystem.html" rel="next" title="EditorFileSystem"/>
+<link href="class_editorcommandpalette.html" rel="prev" title="EditorCommandPalette"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorfiledialog" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorFileDialog</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorfiledialog">
+<span id="class-editorfiledialog"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorFileDialog¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorFileDialog¶"></a>EditorFileDialog<a class="headerlink" href="#editorfiledialog" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_confirmationdialog.html#class-confirmationdialog"><span class="std std-ref">ConfirmationDialog</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_acceptdialog.html#class-acceptdialog"><span class="std std-ref">AcceptDialog</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_window.html#class-window"><span class="std std-ref">Window</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_viewport.html#class-viewport"><span class="std std-ref">Viewport</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A modified version of <a class="reference internal" href="class_filedialog.html#class-filedialog"><span class="std std-ref">FileDialog</span></a> used by the editor.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>EditorFileDialog</strong> is an enhanced version of <a class="reference internal" href="class_filedialog.html#class-filedialog"><span class="std std-ref">FileDialog</span></a> available only to editor plugins. Additional features include list of favorited/recent files and the ability to see files as thumbnails grid instead of list.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-access"><span class="std std-ref">access</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-current-dir"><span class="std std-ref">current_dir</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-current-file"><span class="std std-ref">current_file</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-current-path"><span class="std std-ref">current_path</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p>dialog_hide_on_ok</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code> (overrides <a class="reference internal" href="class_acceptdialog.html#class-acceptdialog-property-dialog-hide-on-ok"><span class="std std-ref">AcceptDialog</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-disable-overwrite-warning"><span class="std std-ref">disable_overwrite_warning</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-display-mode"><span class="std std-ref">display_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-file-mode"><span class="std std-ref">file_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-filters"><span class="std std-ref">filters</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-property-show-hidden-files"><span class="std std-ref">show_hidden_files</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p>title</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"Save</span> <span class="pre">a</span> <span class="pre">File"</span></code> (overrides <a class="reference internal" href="class_window.html#class-window-property-title"><span class="std std-ref">Window</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-add-filter"><span class="std std-ref">add_filter</span></a>(filter: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, description: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-add-side-menu"><span class="std std-ref">add_side_menu</span></a>(menu: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>, title: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-clear-filters"><span class="std std-ref">clear_filters</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-get-line-edit"><span class="std std-ref">get_line_edit</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vboxcontainer.html#class-vboxcontainer"><span class="std std-ref">VBoxContainer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-get-vbox"><span class="std std-ref">get_vbox</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfiledialog-method-invalidate"><span class="std std-ref">invalidate</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-editorfiledialog-signal-dir-selected"><strong>dir_selected</strong>(dir: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Emitted when a directory is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-editorfiledialog-signal-file-selected"><strong>file_selected</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Emitted when a file is selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-editorfiledialog-signal-files-selected"><strong>files_selected</strong>(paths: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p>
+<p>Emitted when multiple files are selected.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-editorfiledialog-filemode">enum <strong><a class="dashAnchor" id="enumerations-FileMode" name="//apple_ref/cpp/Enum/FileMode"></a><a class="dashAnchor" id="enumerations-FileMode" name="//apple_ref/cpp/Enum/FileMode"></a>FileMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-file-mode-open-file"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_FILE" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_FILE"></a><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_FILE" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_FILE"></a>FILE_MODE_OPEN_FILE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can select only one file. Accepting the window will open the file.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-file-mode-open-files"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_FILES" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_FILES"></a><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_FILES" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_FILES"></a>FILE_MODE_OPEN_FILES</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can select multiple files. Accepting the window will open all files.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-file-mode-open-dir"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_DIR" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_DIR"></a><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_DIR" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_DIR"></a>FILE_MODE_OPEN_DIR</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can select only one directory. Accepting the window will open the directory.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-file-mode-open-any"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_ANY" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_ANY"></a><a class="dashAnchor" id="enumerations-FILE_MODE_OPEN_ANY" name="//apple_ref/cpp/Enum/FILE_MODE_OPEN_ANY"></a>FILE_MODE_OPEN_ANY</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can select a file or directory. Accepting the window will open it.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-file-mode-save-file"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="enumerations-FILE_MODE_SAVE_FILE" name="//apple_ref/cpp/Enum/FILE_MODE_SAVE_FILE"></a><a class="dashAnchor" id="enumerations-FILE_MODE_SAVE_FILE" name="//apple_ref/cpp/Enum/FILE_MODE_SAVE_FILE"></a>FILE_MODE_SAVE_FILE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can select only one file. Accepting the window will save the file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-editorfiledialog-access">enum <strong><a class="dashAnchor" id="enumerations-Access" name="//apple_ref/cpp/Enum/Access"></a><a class="dashAnchor" id="enumerations-Access" name="//apple_ref/cpp/Enum/Access"></a>Access</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-access-resources"><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a> <strong><a class="dashAnchor" id="enumerations-ACCESS_RESOURCES" name="//apple_ref/cpp/Enum/ACCESS_RESOURCES"></a><a class="dashAnchor" id="enumerations-ACCESS_RESOURCES" name="//apple_ref/cpp/Enum/ACCESS_RESOURCES"></a>ACCESS_RESOURCES</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can only view <code class="docutils literal notranslate"><span class="pre">res://</span></code> directory contents.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-access-userdata"><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a> <strong><a class="dashAnchor" id="enumerations-ACCESS_USERDATA" name="//apple_ref/cpp/Enum/ACCESS_USERDATA"></a><a class="dashAnchor" id="enumerations-ACCESS_USERDATA" name="//apple_ref/cpp/Enum/ACCESS_USERDATA"></a>ACCESS_USERDATA</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can only view <code class="docutils literal notranslate"><span class="pre">user://</span></code> directory contents.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-access-filesystem"><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a> <strong><a class="dashAnchor" id="enumerations-ACCESS_FILESYSTEM" name="//apple_ref/cpp/Enum/ACCESS_FILESYSTEM"></a><a class="dashAnchor" id="enumerations-ACCESS_FILESYSTEM" name="//apple_ref/cpp/Enum/ACCESS_FILESYSTEM"></a>ACCESS_FILESYSTEM</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> can view the entire local file system.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-editorfiledialog-displaymode">enum <strong><a class="dashAnchor" id="enumerations-DisplayMode" name="//apple_ref/cpp/Enum/DisplayMode"></a><a class="dashAnchor" id="enumerations-DisplayMode" name="//apple_ref/cpp/Enum/DisplayMode"></a>DisplayMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-display-thumbnails"><a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a> <strong><a class="dashAnchor" id="enumerations-DISPLAY_THUMBNAILS" name="//apple_ref/cpp/Enum/DISPLAY_THUMBNAILS"></a><a class="dashAnchor" id="enumerations-DISPLAY_THUMBNAILS" name="//apple_ref/cpp/Enum/DISPLAY_THUMBNAILS"></a>DISPLAY_THUMBNAILS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> displays resources as thumbnails.</p>
+<p class="classref-enumeration-constant" id="class-editorfiledialog-constant-display-list"><a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a> <strong><a class="dashAnchor" id="enumerations-DISPLAY_LIST" name="//apple_ref/cpp/Enum/DISPLAY_LIST"></a><a class="dashAnchor" id="enumerations-DISPLAY_LIST" name="//apple_ref/cpp/Enum/DISPLAY_LIST"></a>DISPLAY_LIST</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The <strong><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a><a class="dashAnchor" id="enumerations-EditorFileDialog" name="//apple_ref/cpp/Enum/EditorFileDialog"></a>EditorFileDialog</strong> displays resources as a list of filenames.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-editorfiledialog-property-access"><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a> <strong>access</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_access" name="//apple_ref/cpp/Property/set_access"></a><a class="dashAnchor" id="properties-set_access" name="//apple_ref/cpp/Property/set_access"></a>set_access</strong>(value: <a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-editorfiledialog-access"><span class="std std-ref">Access</span></a> <strong><a class="dashAnchor" id="properties-get_access" name="//apple_ref/cpp/Property/get_access"></a><a class="dashAnchor" id="properties-get_access" name="//apple_ref/cpp/Property/get_access"></a>get_access</strong>()</p></li>
+</ul>
+<p>The location from which the user may select a file, including <code class="docutils literal notranslate"><span class="pre">res://</span></code>, <code class="docutils literal notranslate"><span class="pre">user://</span></code>, and the local file system.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-current-dir"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>current_dir</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_current_dir" name="//apple_ref/cpp/Property/set_current_dir"></a><a class="dashAnchor" id="properties-set_current_dir" name="//apple_ref/cpp/Property/set_current_dir"></a>set_current_dir</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_current_dir" name="//apple_ref/cpp/Property/get_current_dir"></a><a class="dashAnchor" id="properties-get_current_dir" name="//apple_ref/cpp/Property/get_current_dir"></a>get_current_dir</strong>()</p></li>
+</ul>
+<p>The currently occupied directory.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-current-file"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>current_file</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_current_file" name="//apple_ref/cpp/Property/set_current_file"></a><a class="dashAnchor" id="properties-set_current_file" name="//apple_ref/cpp/Property/set_current_file"></a>set_current_file</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_current_file" name="//apple_ref/cpp/Property/get_current_file"></a><a class="dashAnchor" id="properties-get_current_file" name="//apple_ref/cpp/Property/get_current_file"></a>get_current_file</strong>()</p></li>
+</ul>
+<p>The currently selected file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-current-path"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>current_path</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_current_path" name="//apple_ref/cpp/Property/set_current_path"></a><a class="dashAnchor" id="properties-set_current_path" name="//apple_ref/cpp/Property/set_current_path"></a>set_current_path</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_current_path" name="//apple_ref/cpp/Property/get_current_path"></a><a class="dashAnchor" id="properties-get_current_path" name="//apple_ref/cpp/Property/get_current_path"></a>get_current_path</strong>()</p></li>
+</ul>
+<p>The file system path in the address bar.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-disable-overwrite-warning"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>disable_overwrite_warning</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_disable_overwrite_warning" name="//apple_ref/cpp/Property/set_disable_overwrite_warning"></a><a class="dashAnchor" id="properties-set_disable_overwrite_warning" name="//apple_ref/cpp/Property/set_disable_overwrite_warning"></a>set_disable_overwrite_warning</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_overwrite_warning_disabled" name="//apple_ref/cpp/Property/is_overwrite_warning_disabled"></a><a class="dashAnchor" id="properties-is_overwrite_warning_disabled" name="//apple_ref/cpp/Property/is_overwrite_warning_disabled"></a>is_overwrite_warning_disabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>EditorFileDialog</strong> will not warn the user before overwriting files.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-display-mode"><a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a> <strong>display_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_display_mode" name="//apple_ref/cpp/Property/set_display_mode"></a><a class="dashAnchor" id="properties-set_display_mode" name="//apple_ref/cpp/Property/set_display_mode"></a>set_display_mode</strong>(value: <a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-editorfiledialog-displaymode"><span class="std std-ref">DisplayMode</span></a> <strong><a class="dashAnchor" id="properties-get_display_mode" name="//apple_ref/cpp/Property/get_display_mode"></a><a class="dashAnchor" id="properties-get_display_mode" name="//apple_ref/cpp/Property/get_display_mode"></a>get_display_mode</strong>()</p></li>
+</ul>
+<p>The view format in which the <strong>EditorFileDialog</strong> displays resources to the user.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-file-mode"><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong>file_mode</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_file_mode" name="//apple_ref/cpp/Property/set_file_mode"></a><a class="dashAnchor" id="properties-set_file_mode" name="//apple_ref/cpp/Property/set_file_mode"></a>set_file_mode</strong>(value: <a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a> <strong><a class="dashAnchor" id="properties-get_file_mode" name="//apple_ref/cpp/Property/get_file_mode"></a><a class="dashAnchor" id="properties-get_file_mode" name="//apple_ref/cpp/Property/get_file_mode"></a>get_file_mode</strong>()</p></li>
+</ul>
+<p>The dialog's open or save mode, which affects the selection behavior. See <a class="reference internal" href="#enum-editorfiledialog-filemode"><span class="std std-ref">FileMode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-filters"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>filters</strong> = <code class="docutils literal notranslate"><span class="pre">PackedStringArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_filters" name="//apple_ref/cpp/Property/set_filters"></a><a class="dashAnchor" id="properties-set_filters" name="//apple_ref/cpp/Property/set_filters"></a>set_filters</strong>(value: <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong><a class="dashAnchor" id="properties-get_filters" name="//apple_ref/cpp/Property/get_filters"></a><a class="dashAnchor" id="properties-get_filters" name="//apple_ref/cpp/Property/get_filters"></a>get_filters</strong>()</p></li>
+</ul>
+<p>The available file type filters. For example, this shows only <code class="docutils literal notranslate"><span class="pre">.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.gd</span></code> files: <code class="docutils literal notranslate"><span class="pre">set_filters(PackedStringArray(["*.png</span> <span class="pre">;</span> <span class="pre">PNG</span> <span class="pre">Images","*.gd</span> <span class="pre">;</span> <span class="pre">GDScript</span> <span class="pre">Files"]))</span></code>. Multiple file types can also be specified in a single filter. <code class="docutils literal notranslate"><span class="pre">"*.png,</span> <span class="pre">*.jpg,</span> <span class="pre">*.jpeg</span> <span class="pre">;</span> <span class="pre">Supported</span> <span class="pre">Images"</span></code> will show both PNG and JPEG files when selected.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorfiledialog-property-show-hidden-files"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>show_hidden_files</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_show_hidden_files" name="//apple_ref/cpp/Property/set_show_hidden_files"></a><a class="dashAnchor" id="properties-set_show_hidden_files" name="//apple_ref/cpp/Property/set_show_hidden_files"></a>set_show_hidden_files</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_showing_hidden_files" name="//apple_ref/cpp/Property/is_showing_hidden_files"></a><a class="dashAnchor" id="properties-is_showing_hidden_files" name="//apple_ref/cpp/Property/is_showing_hidden_files"></a>is_showing_hidden_files</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, hidden files and directories will be visible in the <strong>EditorFileDialog</strong>. This property is synchronized with <a class="reference internal" href="class_editorsettings.html#class-editorsettings-property-filesystem-file-dialog-show-hidden-files"><span class="std std-ref">EditorSettings.filesystem/file_dialog/show_hidden_files</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editorfiledialog-method-add-filter"><abbr title="No return value.">void</abbr> <strong>add_filter</strong>(filter: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, description: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Adds a comma-delimited file name <code class="docutils literal notranslate"><span class="pre">filter</span></code> option to the <strong>EditorFileDialog</strong> with an optional <code class="docutils literal notranslate"><span class="pre">description</span></code>, which restricts what files can be picked.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">filter</span></code> should be of the form <code class="docutils literal notranslate"><span class="pre">"filename.extension"</span></code>, where filename and extension can be <code class="docutils literal notranslate"><span class="pre">*</span></code> to match any string. Filters starting with <code class="docutils literal notranslate"><span class="pre">.</span></code> (i.e. empty filenames) are not allowed.</p>
+<p>For example, a <code class="docutils literal notranslate"><span class="pre">filter</span></code> of <code class="docutils literal notranslate"><span class="pre">"*.tscn,</span> <span class="pre">*.scn"</span></code> and a <code class="docutils literal notranslate"><span class="pre">description</span></code> of <code class="docutils literal notranslate"><span class="pre">"Scenes"</span></code> results in filter text "Scenes (*.tscn, *.scn)".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfiledialog-method-add-side-menu"><abbr title="No return value.">void</abbr> <strong>add_side_menu</strong>(menu: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>, title: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Adds the given <code class="docutils literal notranslate"><span class="pre">menu</span></code> to the side of the file dialog with the given <code class="docutils literal notranslate"><span class="pre">title</span></code> text on top. Only one side menu is allowed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfiledialog-method-clear-filters"><abbr title="No return value.">void</abbr> <strong>clear_filters</strong>()</p>
+<p>Removes all filters except for "All Files (*)".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfiledialog-method-get-line-edit"><a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> <strong>get_line_edit</strong>()</p>
+<p>Returns the LineEdit for the selected file.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-visible"><span class="std std-ref">CanvasItem.visible</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfiledialog-method-get-vbox"><a class="reference internal" href="class_vboxcontainer.html#class-vboxcontainer"><span class="std std-ref">VBoxContainer</span></a> <strong>get_vbox</strong>()</p>
+<p>Returns the <a class="reference internal" href="class_vboxcontainer.html#class-vboxcontainer"><span class="std std-ref">VBoxContainer</span></a> used to display the file system.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-visible"><span class="std std-ref">CanvasItem.visible</span></a> property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfiledialog-method-invalidate"><abbr title="No return value.">void</abbr> <strong>invalidate</strong>()</p>
+<p>Notify the <strong>EditorFileDialog</strong> that its view of the data is no longer accurate. Updates the view contents on next view update.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorcommandpalette.html" rel="prev" title="EditorCommandPalette"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorfilesystem.html" rel="next" title="EditorFileSystem">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

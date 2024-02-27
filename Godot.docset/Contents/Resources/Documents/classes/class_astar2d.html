@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AStar2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_astar2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object An implementation of A* for finding the shortest path between two vertices on a connected graph in 2D space. Description: An implementation of the A* algorithm, used to..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object An implementation of A* for finding the shortest path between two vertices on a connected graph in 2D space. Description: An implementation of the A* algorithm, used to..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AStar2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_astar2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_astar2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_astar2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_astar2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_astar2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_astar2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_astar2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_astar2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_astar2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_astar2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_astar2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_astar2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_astar2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_astar2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_astar2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_astar2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_astar3d.html" rel="next" title="AStar3D"/>
+<link href="class_aescontext.html" rel="prev" title="AESContext"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_astar2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AStar2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="astar2d">
+<span id="class-astar2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AStar2D¶"></a>AStar2D<a class="headerlink" href="#astar2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>An implementation of A* for finding the shortest path between two vertices on a connected graph in 2D space.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>An implementation of the A* algorithm, used to find the shortest path between two vertices on a connected graph in 2D space.</p>
+<p>See <a class="reference internal" href="class_astar3d.html#class-astar3d"><span class="std std-ref">AStar3D</span></a> for a more thorough explanation on how to use this class. <strong>AStar2D</strong> is a wrapper for <a class="reference internal" href="class_astar3d.html#class-astar3d"><span class="std std-ref">AStar3D</span></a> that enforces 2D coordinates.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-private-method-compute-cost"><span class="std std-ref">_compute_cost</span></a>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-private-method-estimate-cost"><span class="std std-ref">_estimate_cost</span></a>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-add-point"><span class="std std-ref">add_point</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, weight_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-are-points-connected"><span class="std std-ref">are_points_connected</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-connect-points"><span class="std std-ref">connect_points</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-disconnect-points"><span class="std std-ref">disconnect_points</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-available-point-id"><span class="std std-ref">get_available_point_id</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-closest-point"><span class="std std-ref">get_closest_point</span></a>(to_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, include_disabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-closest-position-in-segment"><span class="std std-ref">get_closest_position_in_segment</span></a>(to_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-id-path"><span class="std std-ref">get_id_path</span></a>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-capacity"><span class="std std-ref">get_point_capacity</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-connections"><span class="std std-ref">get_point_connections</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-count"><span class="std std-ref">get_point_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-ids"><span class="std std-ref">get_point_ids</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-path"><span class="std std-ref">get_point_path</span></a>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-position"><span class="std std-ref">get_point_position</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-get-point-weight-scale"><span class="std std-ref">get_point_weight_scale</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-has-point"><span class="std std-ref">has_point</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-is-point-disabled"><span class="std std-ref">is_point_disabled</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-remove-point"><span class="std std-ref">remove_point</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-reserve-space"><span class="std std-ref">reserve_space</span></a>(num_nodes: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-set-point-disabled"><span class="std std-ref">set_point_disabled</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, disabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-set-point-position"><span class="std std-ref">set_point_position</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-astar2d-method-set-point-weight-scale"><span class="std std-ref">set_point_weight_scale</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, weight_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-astar2d-private-method-compute-cost"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_compute_cost</strong>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when computing the cost between two connected points.</p>
+<p>Note that this function is hidden in the default <strong>AStar2D</strong> class.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-private-method-estimate-cost"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>_estimate_cost</strong>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when estimating the cost between a point and the path's ending point.</p>
+<p>Note that this function is hidden in the default <strong>AStar2D</strong> class.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-add-point"><abbr title="No return value.">void</abbr> <strong>add_point</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, weight_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p>
+<p>Adds a new point at the given position with the given identifier. The <code class="docutils literal notranslate"><span class="pre">id</span></code> must be 0 or larger, and the <code class="docutils literal notranslate"><span class="pre">weight_scale</span></code> must be 0.0 or greater.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">weight_scale</span></code> is multiplied by the result of <a class="reference internal" href="#class-astar2d-private-method-compute-cost"><span class="std std-ref">_compute_cost</span></a> when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower <code class="docutils literal notranslate"><span class="pre">weight_scale</span></code>s to form a path.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AStar2D</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="c1"># Adds the point (1, 0) with weight_scale 4 and id 1</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AStar2D</span><span class="p">();</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="m">4</span><span class="p">);</span><span class="w"> </span><span class="c1">// Adds the point (1, 0) with weight_scale 4 and id 1</span>
+</pre></div>
+</div>
+</div></div>
+<p>If there already exists a point for the given <code class="docutils literal notranslate"><span class="pre">id</span></code>, its position and weight scale are updated to the given values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-are-points-connected"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>are_points_connected</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether there is a connection/segment between the given points. If <code class="docutils literal notranslate"><span class="pre">bidirectional</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, returns whether movement from <code class="docutils literal notranslate"><span class="pre">id</span></code> to <code class="docutils literal notranslate"><span class="pre">to_id</span></code> is possible through this segment.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clears all the points and segments.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-connect-points"><abbr title="No return value.">void</abbr> <strong>connect_points</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p>
+<p>Creates a segment between the given points. If <code class="docutils literal notranslate"><span class="pre">bidirectional</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, only movement from <code class="docutils literal notranslate"><span class="pre">id</span></code> to <code class="docutils literal notranslate"><span class="pre">to_id</span></code> is allowed, not the reverse direction.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AStar2D</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AStar2D</span><span class="p">();</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-disconnect-points"><abbr title="No return value.">void</abbr> <strong>disconnect_points</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, bidirectional: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p>
+<p>Deletes the segment between the given points. If <code class="docutils literal notranslate"><span class="pre">bidirectional</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, only movement from <code class="docutils literal notranslate"><span class="pre">id</span></code> to <code class="docutils literal notranslate"><span class="pre">to_id</span></code> is prevented, and a unidirectional segment possibly remains.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-available-point-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_available_point_id</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the next available point ID with no point associated to it.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-closest-point"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_closest_point</strong>(to_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, include_disabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the ID of the closest point to <code class="docutils literal notranslate"><span class="pre">to_position</span></code>, optionally taking disabled points into account. Returns <code class="docutils literal notranslate"><span class="pre">-1</span></code> if there are no points in the points pool.</p>
+<p><strong>Note:</strong> If several points are the closest to <code class="docutils literal notranslate"><span class="pre">to_position</span></code>, the one with the smallest ID will be returned, ensuring a deterministic result.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-closest-position-in-segment"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_closest_position_in_segment</strong>(to_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the closest position to <code class="docutils literal notranslate"><span class="pre">to_position</span></code> that resides inside a segment between two connected points.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AStar2D</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="o">.</span><span class="n">get_closest_position_in_segment</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1"># Returns (0, 3)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AStar2D</span><span class="p">();</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+<span class="n">Vector2</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="p">.</span><span class="n">GetClosestPositionInSegment</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">));</span><span class="w"> </span><span class="c1">// Returns (0, 3)</span>
+</pre></div>
+</div>
+</div></div>
+<p>The result is in the segment that goes from <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">5</span></code>. It's the closest position in the segment to the given point.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-id-path"><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a> <strong>get_id_path</strong>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-3-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-3-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AStar2D</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1"># Default weight is 1</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="o">.</span><span class="n">get_id_path</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns [1, 2, 3]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AStar2D</span><span class="p">();</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="m">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Default weight is 1</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span>
+
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="p">.</span><span class="n">GetIdPath</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns [1, 2, 3]</span>
+</pre></div>
+</div>
+</div></div>
+<p>If you change the 2nd point's weight to 3, then the result will be <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">4,</span> <span class="pre">3]</span></code> instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-capacity"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_point_capacity</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the capacity of the structure backing the points, useful in conjunction with <a class="reference internal" href="#class-astar2d-method-reserve-space"><span class="std std-ref">reserve_space</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-connections"><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a> <strong>get_point_connections</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns an array with the IDs of the points that form the connection with the given point.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-4-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-4-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-4-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AStar2D</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">add_point</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+<span class="n">astar</span><span class="o">.</span><span class="n">connect_points</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">neighbors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="o">.</span><span class="n">get_point_connections</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns [2, 3]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">astar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AStar2D</span><span class="p">();</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">));</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">AddPoint</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span>
+
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+<span class="n">astar</span><span class="p">.</span><span class="n">ConnectPoints</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+
+<span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">neighbors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astar</span><span class="p">.</span><span class="n">GetPointConnections</span><span class="p">(</span><span class="m">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns [2, 3]</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_point_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of points currently in the points pool.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-ids"><a class="reference internal" href="class_packedint64array.html#class-packedint64array"><span class="std std-ref">PackedInt64Array</span></a> <strong>get_point_ids</strong>()</p>
+<p>Returns an array of all point IDs.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-path"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>get_point_path</strong>(from_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.</p>
+<p><strong>Note:</strong> This method is not thread-safe. If called from a <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a>, it will return an empty <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> and will print an error message.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_point_position</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the position of the point associated with the given <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-get-point-weight-scale"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_point_weight_scale</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the weight scale of the point associated with the given <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-has-point"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_point</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether a point associated with the given <code class="docutils literal notranslate"><span class="pre">id</span></code> exists.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-is-point-disabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_point_disabled</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether a point is disabled or not for pathfinding. By default, all points are enabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-remove-point"><abbr title="No return value.">void</abbr> <strong>remove_point</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the point associated with the given <code class="docutils literal notranslate"><span class="pre">id</span></code> from the points pool.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-reserve-space"><abbr title="No return value.">void</abbr> <strong>reserve_space</strong>(num_nodes: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Reserves space internally for <code class="docutils literal notranslate"><span class="pre">num_nodes</span></code> points, useful if you're adding a known large number of points at once, such as points on a grid. New capacity must be greater or equals to old capacity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-set-point-disabled"><abbr title="No return value.">void</abbr> <strong>set_point_disabled</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, disabled: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p>
+<p>Disables or enables the specified point for pathfinding. Useful for making a temporary obstacle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-set-point-position"><abbr title="No return value.">void</abbr> <strong>set_point_position</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Sets the <code class="docutils literal notranslate"><span class="pre">position</span></code> for the point with the given <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-astar2d-method-set-point-weight-scale"><abbr title="No return value.">void</abbr> <strong>set_point_weight_scale</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, weight_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the <code class="docutils literal notranslate"><span class="pre">weight_scale</span></code> for the point with the given <code class="docutils literal notranslate"><span class="pre">id</span></code>. The <code class="docutils literal notranslate"><span class="pre">weight_scale</span></code> is multiplied by the result of <a class="reference internal" href="#class-astar2d-private-method-compute-cost"><span class="std std-ref">_compute_cost</span></a> when determining the overall cost of traveling across a segment from a neighboring point to this point.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_aescontext.html" rel="prev" title="AESContext"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_astar3d.html" rel="next" title="AStar3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

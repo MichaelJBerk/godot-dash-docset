@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GLTFState" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gltfstate.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FBXState Represents all data of a GLTF file. Description: Contains all nodes and resources of a GLTF file. This is used by GLTFDocument as data ..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FBXState Represents all data of a GLTF file. Description: Contains all nodes and resources of a GLTF file. This is used by GLTFDocument as data ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GLTFState — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfstate.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gltfstate.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gltfstate.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gltfstate.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gltfstate.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gltfstate.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gltfstate.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gltfstate.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gltfstate.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gltfstate.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gltfstate.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gltfstate.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gltfstate.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gltfstate.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfstate.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfstate.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gltftexture.html" rel="next" title="GLTFTexture"/>
+<link href="class_gltfspecgloss.html" rel="prev" title="GLTFSpecGloss"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gltfstate" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GLTFState</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gltfstate">
+<span id="class-gltfstate"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GLTFState¶"></a>GLTFState<a class="headerlink" href="#gltfstate" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_fbxstate.html#class-fbxstate"><span class="std std-ref">FBXState</span></a></p>
+<p>Represents all data of a GLTF file.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Contains all nodes and resources of a GLTF file. This is used by <a class="reference internal" href="class_gltfdocument.html#class-gltfdocument"><span class="std std-ref">GLTFDocument</span></a> as data storage, which allows <a class="reference internal" href="class_gltfdocument.html#class-gltfdocument"><span class="std std-ref">GLTFDocument</span></a> and all <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes to remain stateless.</p>
+<p>GLTFState can be populated by <a class="reference internal" href="class_gltfdocument.html#class-gltfdocument"><span class="std std-ref">GLTFDocument</span></a> reading a file or by converting a Godot scene. Then the data can either be used to create a Godot scene or save to a GLTF file. The code that converts to/from a Godot scene can be intercepted at arbitrary points by <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes. This allows for custom data to be stored in the GLTF file or for custom data to be converted to/from Godot nodes.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/io/runtime_file_loading_and_saving.html"><span class="doc">Runtime file loading and saving</span></a></p></li>
+<li><p><a class="reference external" href='https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json"'>GLTF asset header schema</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-base-path"><span class="std std-ref">base_path</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-buffers"><span class="std std-ref">buffers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-copyright"><span class="std std-ref">copyright</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-create-animations"><span class="std std-ref">create_animations</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-filename"><span class="std std-ref">filename</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-glb-data"><span class="std std-ref">glb_data</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedByteArray()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-json"><span class="std std-ref">json</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-major-version"><span class="std std-ref">major_version</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-minor-version"><span class="std std-ref">minor_version</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-root-nodes"><span class="std std-ref">root_nodes</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedInt32Array()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-scene-name"><span class="std std-ref">scene_name</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-property-use-named-skin-binds"><span class="std std-ref">use_named_skin_binds</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-add-used-extension"><span class="std std-ref">add_used_extension</span></a>(extension_name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, required: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-append-data-to-buffers"><span class="std std-ref">append_data_to_buffers</span></a>(data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, deduplication: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfaccessor.html#class-gltfaccessor"><span class="std std-ref">GLTFAccessor</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-accessors"><span class="std std-ref">get_accessors</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-additional-data"><span class="std std-ref">get_additional_data</span></a>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-animation-player"><span class="std std-ref">get_animation_player</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-animation-players-count"><span class="std std-ref">get_animation_players_count</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-animations"><span class="std std-ref">get_animations</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-buffer-views"><span class="std std-ref">get_buffer_views</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-cameras"><span class="std std-ref">get_cameras</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-handle-binary-image"><span class="std std-ref">get_handle_binary_image</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-images"><span class="std std-ref">get_images</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-lights"><span class="std std-ref">get_lights</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-materials"><span class="std std-ref">get_materials</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-meshes"><span class="std std-ref">get_meshes</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-node-index"><span class="std std-ref">get_node_index</span></a>(scene_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-nodes"><span class="std std-ref">get_nodes</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-scene-node"><span class="std std-ref">get_scene_node</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-skeletons"><span class="std std-ref">get_skeletons</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-skins"><span class="std std-ref">get_skins</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexturesampler.html#class-gltftexturesampler"><span class="std std-ref">GLTFTextureSampler</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-texture-samplers"><span class="std std-ref">get_texture_samplers</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexture.html#class-gltftexture"><span class="std std-ref">GLTFTexture</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-textures"><span class="std std-ref">get_textures</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-unique-animation-names"><span class="std std-ref">get_unique_animation_names</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-get-unique-names"><span class="std std-ref">get_unique_names</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-accessors"><span class="std std-ref">set_accessors</span></a>(accessors: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfaccessor.html#class-gltfaccessor"><span class="std std-ref">GLTFAccessor</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-additional-data"><span class="std std-ref">set_additional_data</span></a>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, additional_data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-animations"><span class="std std-ref">set_animations</span></a>(animations: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-buffer-views"><span class="std std-ref">set_buffer_views</span></a>(buffer_views: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-cameras"><span class="std std-ref">set_cameras</span></a>(cameras: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-handle-binary-image"><span class="std std-ref">set_handle_binary_image</span></a>(method: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-images"><span class="std std-ref">set_images</span></a>(images: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-lights"><span class="std std-ref">set_lights</span></a>(lights: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-materials"><span class="std std-ref">set_materials</span></a>(materials: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-meshes"><span class="std std-ref">set_meshes</span></a>(meshes: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-nodes"><span class="std std-ref">set_nodes</span></a>(nodes: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-skeletons"><span class="std std-ref">set_skeletons</span></a>(skeletons: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-skins"><span class="std std-ref">set_skins</span></a>(skins: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-texture-samplers"><span class="std std-ref">set_texture_samplers</span></a>(texture_samplers: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexturesampler.html#class-gltftexturesampler"><span class="std std-ref">GLTFTextureSampler</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-textures"><span class="std std-ref">set_textures</span></a>(textures: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexture.html#class-gltftexture"><span class="std std-ref">GLTFTexture</span></a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-unique-animation-names"><span class="std std-ref">set_unique_animation_names</span></a>(unique_animation_names: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfstate-method-set-unique-names"><span class="std std-ref">set_unique_names</span></a>(unique_names: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-gltfstate-constant-handle-binary-discard-textures"><strong>HANDLE_BINARY_DISCARD_TEXTURES</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Discards all embedded textures and uses untextured materials.</p>
+<p class="classref-constant" id="class-gltfstate-constant-handle-binary-extract-textures"><strong>HANDLE_BINARY_EXTRACT_TEXTURES</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Extracts embedded textures to be reimported and compressed. Editor only. Acts as uncompressed at runtime.</p>
+<p class="classref-constant" id="class-gltfstate-constant-handle-binary-embed-as-basisu"><strong>HANDLE_BINARY_EMBED_AS_BASISU</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Embeds textures VRAM compressed with Basis Universal into the generated scene.</p>
+<p class="classref-constant" id="class-gltfstate-constant-handle-binary-embed-as-uncompressed"><strong>HANDLE_BINARY_EMBED_AS_UNCOMPRESSED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Embeds textures compressed losslessly into the generated scene, matching old behavior.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gltfstate-property-base-path"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>base_path</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_base_path" name="//apple_ref/cpp/Property/set_base_path"></a>set_base_path</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_base_path" name="//apple_ref/cpp/Property/get_base_path"></a>get_base_path</strong>()</p></li>
+</ul>
+<p>The folder path associated with this GLTF data. This is used to find other files the GLTF file references, like images or binary buffers. This will be set during import when appending from a file, and will be set during export when writing to a file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-buffers"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>] <strong>buffers</strong> = <code class="docutils literal notranslate"><span class="pre">[]</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_buffers" name="//apple_ref/cpp/Property/set_buffers"></a>set_buffers</strong>(value: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>])</p></li>
+<li><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>] <strong><a class="dashAnchor" id="properties-get_buffers" name="//apple_ref/cpp/Property/get_buffers"></a>get_buffers</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-copyright"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>copyright</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_copyright" name="//apple_ref/cpp/Property/set_copyright"></a>set_copyright</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_copyright" name="//apple_ref/cpp/Property/get_copyright"></a>get_copyright</strong>()</p></li>
+</ul>
+<p>The copyright string in the asset header of the GLTF file. This is set during import if present and export if non-empty. See the GLTF asset header documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-create-animations"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>create_animations</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_create_animations" name="//apple_ref/cpp/Property/set_create_animations"></a>set_create_animations</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_create_animations" name="//apple_ref/cpp/Property/get_create_animations"></a>get_create_animations</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-filename"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>filename</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_filename" name="//apple_ref/cpp/Property/set_filename"></a>set_filename</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_filename" name="//apple_ref/cpp/Property/get_filename"></a>get_filename</strong>()</p></li>
+</ul>
+<p>The file name associated with this GLTF data. If it ends with <code class="docutils literal notranslate"><span class="pre">.gltf</span></code>, this is text-based GLTF, otherwise this is binary GLB. This will be set during import when appending from a file, and will be set during export when writing to a file. If writing to a buffer, this will be an empty string.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-glb-data"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>glb_data</strong> = <code class="docutils literal notranslate"><span class="pre">PackedByteArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_glb_data" name="//apple_ref/cpp/Property/set_glb_data"></a>set_glb_data</strong>(value: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong><a class="dashAnchor" id="properties-get_glb_data" name="//apple_ref/cpp/Property/get_glb_data"></a>get_glb_data</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-json"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>json</strong> = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_json" name="//apple_ref/cpp/Property/set_json"></a>set_json</strong>(value: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong><a class="dashAnchor" id="properties-get_json" name="//apple_ref/cpp/Property/get_json"></a>get_json</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-major-version"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>major_version</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_major_version" name="//apple_ref/cpp/Property/set_major_version"></a>set_major_version</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_major_version" name="//apple_ref/cpp/Property/get_major_version"></a>get_major_version</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-minor-version"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>minor_version</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_minor_version" name="//apple_ref/cpp/Property/set_minor_version"></a>set_minor_version</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_minor_version" name="//apple_ref/cpp/Property/get_minor_version"></a>get_minor_version</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-root-nodes"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>root_nodes</strong> = <code class="docutils literal notranslate"><span class="pre">PackedInt32Array()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_root_nodes" name="//apple_ref/cpp/Property/set_root_nodes"></a>set_root_nodes</strong>(value: <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong><a class="dashAnchor" id="properties-get_root_nodes" name="//apple_ref/cpp/Property/get_root_nodes"></a>get_root_nodes</strong>()</p></li>
+</ul>
+<p>The root nodes of the GLTF file. Typically, a GLTF file will only have one scene, and therefore one root node. However, a GLTF file may have multiple scenes and therefore multiple root nodes, which will be generated as siblings of each other and as children of the root node of the generated Godot scene.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-scene-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>scene_name</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scene_name" name="//apple_ref/cpp/Property/set_scene_name"></a>set_scene_name</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_scene_name" name="//apple_ref/cpp/Property/get_scene_name"></a>get_scene_name</strong>()</p></li>
+</ul>
+<p>The name of the scene. When importing, if not specified, this will be the file name. When exporting, if specified, the scene name will be saved to the GLTF file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfstate-property-use-named-skin-binds"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>use_named_skin_binds</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_named_skin_binds" name="//apple_ref/cpp/Property/set_use_named_skin_binds"></a>set_use_named_skin_binds</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_use_named_skin_binds" name="//apple_ref/cpp/Property/get_use_named_skin_binds"></a>get_use_named_skin_binds</strong>()</p></li>
+</ul>
+<div class="contribute docutils container">
+<p>There is currently no description for this property. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gltfstate-method-add-used-extension"><abbr title="No return value.">void</abbr> <strong>add_used_extension</strong>(extension_name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, required: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Appends an extension to the list of extensions used by this GLTF file during serialization. If <code class="docutils literal notranslate"><span class="pre">required</span></code> is true, the extension will also be added to the list of required extensions. Do not run this in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension-private-method-export-post"><span class="std std-ref">GLTFDocumentExtension._export_post</span></a>, as that stage is too late to add extensions. The final list is sorted alphabetically.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-append-data-to-buffers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>append_data_to_buffers</strong>(data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, deduplication: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Appends the given byte array data to the buffers and creates a <a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a> for it. The index of the destination <a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a> is returned. If <code class="docutils literal notranslate"><span class="pre">deduplication</span></code> is true, the buffers will first be searched for duplicate data, otherwise new bytes will always be appended.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-accessors"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfaccessor.html#class-gltfaccessor"><span class="std std-ref">GLTFAccessor</span></a>] <strong>get_accessors</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-additional-data"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_additional_data</strong>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Gets additional arbitrary data in this <strong>GLTFState</strong> instance. This can be used to keep per-file state data in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes, which is important because they are stateless.</p>
+<p>The argument should be the <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-animation-player"><a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> <strong>get_animation_player</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> node with the given index. These nodes are only used during the export process when converting Godot <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> nodes to GLTF animations.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-animation-players-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_animation_players_count</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the number of <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> nodes in this <strong>GLTFState</strong>. These nodes are only used during the export process when converting Godot <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> nodes to GLTF animations.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-animations"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>] <strong>get_animations</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>s in the GLTF file. When importing, these will be generated as animations in an <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> node. When exporting, these will be generated from Godot <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> nodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-buffer-views"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a>] <strong>get_buffer_views</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-cameras"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>] <strong>get_cameras</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>s in the GLTF file. These are the cameras that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-camera"><span class="std std-ref">GLTFNode.camera</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-handle-binary-image"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_handle_binary_image</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-images"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>] <strong>get_images</strong>()</p>
+<p>Gets the images of the GLTF file as an array of <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>s. These are the images that the <a class="reference internal" href="class_gltftexture.html#class-gltftexture-property-src-image"><span class="std std-ref">GLTFTexture.src_image</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-lights"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>] <strong>get_lights</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>s in the GLTF file. These are the lights that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-light"><span class="std std-ref">GLTFNode.light</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-materials"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>] <strong>get_materials</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-meshes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>] <strong>get_meshes</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>es in the GLTF file. These are the meshes that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-mesh"><span class="std std-ref">GLTFNode.mesh</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-node-index"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_node_index</strong>(scene_node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p>Returns the index of the <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> corresponding to this Godot scene node. This is the inverse of <a class="reference internal" href="#class-gltfstate-method-get-scene-node"><span class="std std-ref">get_scene_node</span></a>. Useful during the export process.</p>
+<p><strong>Note:</strong> Not every Godot scene node will have a corresponding <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>, and not every <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> will have a scene node generated. If there is no <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> index for this scene node, <code class="docutils literal notranslate"><span class="pre">-1</span></code> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-nodes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>] <strong>get_nodes</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>s in the GLTF file. These are the nodes that <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-children"><span class="std std-ref">GLTFNode.children</span></a> and <a class="reference internal" href="#class-gltfstate-property-root-nodes"><span class="std std-ref">root_nodes</span></a> refer to. This includes nodes that may not be generated in the Godot scene, or nodes that may generate multiple Godot scene nodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-scene-node"><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>get_scene_node</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the Godot scene node that corresponds to the same index as the <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> it was generated from. This is the inverse of <a class="reference internal" href="#class-gltfstate-method-get-node-index"><span class="std std-ref">get_node_index</span></a>. Useful during the import process.</p>
+<p><strong>Note:</strong> Not every <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> will have a scene node generated, and not every generated scene node will have a corresponding <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>. If there is no scene node for this <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a> index, <code class="docutils literal notranslate"><span class="pre">null</span></code> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-skeletons"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>] <strong>get_skeletons</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>s in the GLTF file. These are the skeletons that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-skeleton"><span class="std std-ref">GLTFNode.skeleton</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-skins"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>] <strong>get_skins</strong>()</p>
+<p>Returns an array of all <a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>s in the GLTF file. These are the skins that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-skin"><span class="std std-ref">GLTFNode.skin</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-texture-samplers"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexturesampler.html#class-gltftexturesampler"><span class="std std-ref">GLTFTextureSampler</span></a>] <strong>get_texture_samplers</strong>()</p>
+<p>Retrieves the array of texture samplers that are used by the textures contained in the GLTF.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-textures"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexture.html#class-gltftexture"><span class="std std-ref">GLTFTexture</span></a>] <strong>get_textures</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-unique-animation-names"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>get_unique_animation_names</strong>()</p>
+<p>Returns an array of unique animation names. This is only used during the import process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-get-unique-names"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>] <strong>get_unique_names</strong>()</p>
+<p>Returns an array of unique node names. This is used in both the import process and export process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-accessors"><abbr title="No return value.">void</abbr> <strong>set_accessors</strong>(accessors: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfaccessor.html#class-gltfaccessor"><span class="std std-ref">GLTFAccessor</span></a>])</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-additional-data"><abbr title="No return value.">void</abbr> <strong>set_additional_data</strong>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, additional_data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Sets additional arbitrary data in this <strong>GLTFState</strong> instance. This can be used to keep per-file state data in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes, which is important because they are stateless.</p>
+<p>The first argument should be the <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-animations"><abbr title="No return value.">void</abbr> <strong>set_animations</strong>(animations: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>s in the state. When importing, these will be generated as animations in an <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> node. When exporting, these will be generated from Godot <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> nodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-buffer-views"><abbr title="No return value.">void</abbr> <strong>set_buffer_views</strong>(buffer_views: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a>])</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-cameras"><abbr title="No return value.">void</abbr> <strong>set_cameras</strong>(cameras: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>s in the state. These are the cameras that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-camera"><span class="std std-ref">GLTFNode.camera</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-handle-binary-image"><abbr title="No return value.">void</abbr> <strong>set_handle_binary_image</strong>(method: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-images"><abbr title="No return value.">void</abbr> <strong>set_images</strong>(images: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>])</p>
+<p>Sets the images in the state stored as an array of <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>s. This can be used during export. These are the images that the <a class="reference internal" href="class_gltftexture.html#class-gltftexture-property-src-image"><span class="std std-ref">GLTFTexture.src_image</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-lights"><abbr title="No return value.">void</abbr> <strong>set_lights</strong>(lights: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>s in the state. These are the lights that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-light"><span class="std std-ref">GLTFNode.light</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-materials"><abbr title="No return value.">void</abbr> <strong>set_materials</strong>(materials: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>])</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-meshes"><abbr title="No return value.">void</abbr> <strong>set_meshes</strong>(meshes: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>es in the state. These are the meshes that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-mesh"><span class="std std-ref">GLTFNode.mesh</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-nodes"><abbr title="No return value.">void</abbr> <strong>set_nodes</strong>(nodes: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>s in the state. These are the nodes that <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-children"><span class="std std-ref">GLTFNode.children</span></a> and <a class="reference internal" href="#class-gltfstate-property-root-nodes"><span class="std std-ref">root_nodes</span></a> refer to. Some of the nodes set here may not be generated in the Godot scene, or may generate multiple Godot scene nodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-skeletons"><abbr title="No return value.">void</abbr> <strong>set_skeletons</strong>(skeletons: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>s in the state. These are the skeletons that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-skeleton"><span class="std std-ref">GLTFNode.skeleton</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-skins"><abbr title="No return value.">void</abbr> <strong>set_skins</strong>(skins: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>])</p>
+<p>Sets the <a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>s in the state. These are the skins that the <a class="reference internal" href="class_gltfnode.html#class-gltfnode-property-skin"><span class="std std-ref">GLTFNode.skin</span></a> index refers to.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-texture-samplers"><abbr title="No return value.">void</abbr> <strong>set_texture_samplers</strong>(texture_samplers: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexturesampler.html#class-gltftexturesampler"><span class="std std-ref">GLTFTextureSampler</span></a>])</p>
+<p>Sets the array of texture samplers that are used by the textures contained in the GLTF.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-textures"><abbr title="No return value.">void</abbr> <strong>set_textures</strong>(textures: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_gltftexture.html#class-gltftexture"><span class="std std-ref">GLTFTexture</span></a>])</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method. Please help us by <a class="reference internal" href="../contributing/documentation/updating_the_class_reference.html#doc-updating-the-class-reference"><span class="std std-ref">contributing one</span></a>!</p>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-unique-animation-names"><abbr title="No return value.">void</abbr> <strong>set_unique_animation_names</strong>(unique_animation_names: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p>
+<p>Sets the unique animation names in the state. This is only used during the import process.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfstate-method-set-unique-names"><abbr title="No return value.">void</abbr> <strong>set_unique_names</strong>(unique_names: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>])</p>
+<p>Sets the unique node names in the state. This is used in both the import process and export process.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gltfspecgloss.html" rel="prev" title="GLTFSpecGloss"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gltftexture.html" rel="next" title="GLTFTexture">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

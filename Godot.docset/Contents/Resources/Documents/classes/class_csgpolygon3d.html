@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="CSGPolygon3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_csgpolygon3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: CSGPrimitive3D&lt; CSGShape3D&lt; GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object Extrudes a 2D polygon shape to create a 3D mesh. Description: An array of 2D points is extruded to q..." property="og:description"/>
+<meta content="Inherits: CSGPrimitive3D&lt; CSGShape3D&lt; GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object Extrudes a 2D polygon shape to create a 3D mesh. Description: An array of 2D points is extruded to q..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) CSGPolygon3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgpolygon3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_csgpolygon3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_csgpolygon3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_csgpolygon3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_csgpolygon3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_csgpolygon3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_csgpolygon3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_csgpolygon3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_csgpolygon3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_csgpolygon3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_csgpolygon3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_csgpolygon3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_csgpolygon3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_csgpolygon3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgpolygon3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgpolygon3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_csgprimitive3d.html" rel="next" title="CSGPrimitive3D"/>
+<link href="class_csgmesh3d.html" rel="prev" title="CSGMesh3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_csgpolygon3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">CSGPolygon3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="csgpolygon3d">
+<span id="class-csgpolygon3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/CSGPolygon3D¶"></a>CSGPolygon3D<a class="headerlink" href="#csgpolygon3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_csgprimitive3d.html#class-csgprimitive3d"><span class="std std-ref">CSGPrimitive3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_csgshape3d.html#class-csgshape3d"><span class="std std-ref">CSGShape3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_geometryinstance3d.html#class-geometryinstance3d"><span class="std std-ref">GeometryInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Extrudes a 2D polygon shape to create a 3D mesh.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>An array of 2D points is extruded to quickly and easily create a variety of 3D meshes. See also <a class="reference internal" href="class_csgmesh3d.html#class-csgmesh3d"><span class="std std-ref">CSGMesh3D</span></a> for using 3D meshes as CSG nodes.</p>
+<p><strong>Note:</strong> CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a> with a <a class="reference internal" href="class_primitivemesh.html#class-primitivemesh"><span class="std std-ref">PrimitiveMesh</span></a>. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/3d/csg_tools.html"><span class="doc">Prototyping levels with CSG</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-depth"><span class="std std-ref">depth</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-material"><span class="std std-ref">material</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-continuous-u"><span class="std std-ref">path_continuous_u</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-interval"><span class="std std-ref">path_interval</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-interval-type"><span class="std std-ref">path_interval_type</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-joined"><span class="std std-ref">path_joined</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-local"><span class="std std-ref">path_local</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-node"><span class="std std-ref">path_node</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-rotation"><span class="std std-ref">path_rotation</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-simplify-angle"><span class="std std-ref">path_simplify_angle</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-path-u-distance"><span class="std std-ref">path_u_distance</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedVector2Array(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-smooth-faces"><span class="std std-ref">smooth_faces</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-spin-degrees"><span class="std std-ref">spin_degrees</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgpolygon3d-property-spin-sides"><span class="std std-ref">spin_sides</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-csgpolygon3d-mode">enum <strong><a class="dashAnchor" id="enumerations-Mode" name="//apple_ref/cpp/Enum/Mode"></a>Mode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-mode-depth"><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_DEPTH" name="//apple_ref/cpp/Enum/MODE_DEPTH"></a>MODE_DEPTH</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape is extruded along the negative Z axis.</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-mode-spin"><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_SPIN" name="//apple_ref/cpp/Enum/MODE_SPIN"></a>MODE_SPIN</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape is extruded by rotating it around the Y axis.</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-mode-path"><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_PATH" name="//apple_ref/cpp/Enum/MODE_PATH"></a>MODE_PATH</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape is extruded along the <a class="reference internal" href="class_path3d.html#class-path3d"><span class="std std-ref">Path3D</span></a> specified in <a class="reference internal" href="#class-csgpolygon3d-property-path-node"><span class="std std-ref">path_node</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-csgpolygon3d-pathrotation">enum <strong><a class="dashAnchor" id="enumerations-PathRotation" name="//apple_ref/cpp/Enum/PathRotation"></a>PathRotation</strong>:</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-path-rotation-polygon"><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a> <strong><a class="dashAnchor" id="enumerations-PATH_ROTATION_POLYGON" name="//apple_ref/cpp/Enum/PATH_ROTATION_POLYGON"></a>PATH_ROTATION_POLYGON</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape is not rotated.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> Requires the path Z coordinates to continually decrease to ensure viable shapes.</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-path-rotation-path"><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a> <strong><a class="dashAnchor" id="enumerations-PATH_ROTATION_PATH" name="//apple_ref/cpp/Enum/PATH_ROTATION_PATH"></a>PATH_ROTATION_PATH</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape is rotated along the path, but it is not rotated around the path axis.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> Requires the path Z coordinates to continually decrease to ensure viable shapes.</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-path-rotation-path-follow"><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a> <strong><a class="dashAnchor" id="enumerations-PATH_ROTATION_PATH_FOLLOW" name="//apple_ref/cpp/Enum/PATH_ROTATION_PATH_FOLLOW"></a>PATH_ROTATION_PATH_FOLLOW</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> shape follows the path and its rotations around the path axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-csgpolygon3d-pathintervaltype">enum <strong><a class="dashAnchor" id="enumerations-PathIntervalType" name="//apple_ref/cpp/Enum/PathIntervalType"></a>PathIntervalType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-path-interval-distance"><a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a> <strong><a class="dashAnchor" id="enumerations-PATH_INTERVAL_DISTANCE" name="//apple_ref/cpp/Enum/PATH_INTERVAL_DISTANCE"></a>PATH_INTERVAL_DISTANCE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is set to <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, <a class="reference internal" href="#class-csgpolygon3d-property-path-interval"><span class="std std-ref">path_interval</span></a> will determine the distance, in meters, each interval of the path will extrude.</p>
+<p class="classref-enumeration-constant" id="class-csgpolygon3d-constant-path-interval-subdivide"><a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a> <strong><a class="dashAnchor" id="enumerations-PATH_INTERVAL_SUBDIVIDE" name="//apple_ref/cpp/Enum/PATH_INTERVAL_SUBDIVIDE"></a>PATH_INTERVAL_SUBDIVIDE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is set to <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, <a class="reference internal" href="#class-csgpolygon3d-property-path-interval"><span class="std std-ref">path_interval</span></a> will subdivide the polygons along the path.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-csgpolygon3d-property-depth"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>depth</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_depth" name="//apple_ref/cpp/Property/set_depth"></a>set_depth</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_depth" name="//apple_ref/cpp/Property/get_depth"></a>get_depth</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-depth"><span class="std std-ref">MODE_DEPTH</span></a>, the depth of the extrusion.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-material"><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong>material</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_material" name="//apple_ref/cpp/Property/set_material"></a>set_material</strong>(value: <a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong><a class="dashAnchor" id="properties-get_material" name="//apple_ref/cpp/Property/get_material"></a>get_material</strong>()</p></li>
+</ul>
+<p>Material to use for the resulting mesh. The UV maps the top half of the material to the extruded shape (U along the length of the extrusions and V around the outline of the <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a>), the bottom-left quarter to the front end face, and the bottom-right quarter to the back end face.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-mode"><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a> <strong>mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mode" name="//apple_ref/cpp/Property/set_mode"></a>set_mode</strong>(value: <a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-csgpolygon3d-mode"><span class="std std-ref">Mode</span></a> <strong><a class="dashAnchor" id="properties-get_mode" name="//apple_ref/cpp/Property/get_mode"></a>get_mode</strong>()</p></li>
+</ul>
+<p>The <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> used to extrude the <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-continuous-u"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>path_continuous_u</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_continuous_u" name="//apple_ref/cpp/Property/set_path_continuous_u"></a>set_path_continuous_u</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_path_continuous_u" name="//apple_ref/cpp/Property/is_path_continuous_u"></a>is_path_continuous_u</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, by default, the top half of the <a class="reference internal" href="#class-csgpolygon3d-property-material"><span class="std std-ref">material</span></a> is stretched along the entire length of the extruded shape. If <code class="docutils literal notranslate"><span class="pre">false</span></code> the top half of the material is repeated every step of the extrusion.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-interval"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>path_interval</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_interval" name="//apple_ref/cpp/Property/set_path_interval"></a>set_path_interval</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_path_interval" name="//apple_ref/cpp/Property/get_path_interval"></a>get_path_interval</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, the path interval or ratio of path points to extrusions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-interval-type"><a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a> <strong>path_interval_type</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_interval_type" name="//apple_ref/cpp/Property/set_path_interval_type"></a>set_path_interval_type</strong>(value: <a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-csgpolygon3d-pathintervaltype"><span class="std std-ref">PathIntervalType</span></a> <strong><a class="dashAnchor" id="properties-get_path_interval_type" name="//apple_ref/cpp/Property/get_path_interval_type"></a>get_path_interval_type</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, this will determine if the interval should be by distance (<a class="reference internal" href="#class-csgpolygon3d-constant-path-interval-distance"><span class="std std-ref">PATH_INTERVAL_DISTANCE</span></a>) or subdivision fractions (<a class="reference internal" href="#class-csgpolygon3d-constant-path-interval-subdivide"><span class="std std-ref">PATH_INTERVAL_SUBDIVIDE</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-joined"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>path_joined</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_joined" name="//apple_ref/cpp/Property/set_path_joined"></a>set_path_joined</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_path_joined" name="//apple_ref/cpp/Property/is_path_joined"></a>is_path_joined</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, if <code class="docutils literal notranslate"><span class="pre">true</span></code> the ends of the path are joined, by adding an extrusion between the last and first points of the path.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-local"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>path_local</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_local" name="//apple_ref/cpp/Property/set_path_local"></a>set_path_local</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_path_local" name="//apple_ref/cpp/Property/is_path_local"></a>is_path_local</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, if <code class="docutils literal notranslate"><span class="pre">true</span></code> the <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> of the <strong>CSGPolygon3D</strong> is used as the starting point for the extrusions, not the <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> of the <a class="reference internal" href="#class-csgpolygon3d-property-path-node"><span class="std std-ref">path_node</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-node"><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong>path_node</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_node" name="//apple_ref/cpp/Property/set_path_node"></a>set_path_node</strong>(value: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong><a class="dashAnchor" id="properties-get_path_node" name="//apple_ref/cpp/Property/get_path_node"></a>get_path_node</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, the location of the <a class="reference internal" href="class_path3d.html#class-path3d"><span class="std std-ref">Path3D</span></a> object used to extrude the <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-rotation"><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a> <strong>path_rotation</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_rotation" name="//apple_ref/cpp/Property/set_path_rotation"></a>set_path_rotation</strong>(value: <a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-csgpolygon3d-pathrotation"><span class="std std-ref">PathRotation</span></a> <strong><a class="dashAnchor" id="properties-get_path_rotation" name="//apple_ref/cpp/Property/get_path_rotation"></a>get_path_rotation</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, the path rotation method used to rotate the <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> as it is extruded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-simplify-angle"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>path_simplify_angle</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_simplify_angle" name="//apple_ref/cpp/Property/set_path_simplify_angle"></a>set_path_simplify_angle</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_path_simplify_angle" name="//apple_ref/cpp/Property/get_path_simplify_angle"></a>get_path_simplify_angle</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, extrusions that are less than this angle, will be merged together to reduce polygon count.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-path-u-distance"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>path_u_distance</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path_u_distance" name="//apple_ref/cpp/Property/set_path_u_distance"></a>set_path_u_distance</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_path_u_distance" name="//apple_ref/cpp/Property/get_path_u_distance"></a>get_path_u_distance</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-path"><span class="std std-ref">MODE_PATH</span></a>, this is the distance along the path, in meters, the texture coordinates will tile. When set to 0, texture coordinates will match geometry exactly with no tiling.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-polygon"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>polygon</strong> = <code class="docutils literal notranslate"><span class="pre">PackedVector2Array(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_polygon" name="//apple_ref/cpp/Property/set_polygon"></a>set_polygon</strong>(value: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong><a class="dashAnchor" id="properties-get_polygon" name="//apple_ref/cpp/Property/get_polygon"></a>get_polygon</strong>()</p></li>
+</ul>
+<p>The point array that defines the 2D polygon that is extruded. This can be a convex or concave polygon with 3 or more points. The polygon must <em>not</em> have any intersecting edges. Otherwise, triangulation will fail and no mesh will be generated.</p>
+<p><strong>Note:</strong> If only 1 or 2 points are defined in <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a>, no mesh will be generated.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-smooth-faces"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>smooth_faces</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_smooth_faces" name="//apple_ref/cpp/Property/set_smooth_faces"></a>set_smooth_faces</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_smooth_faces" name="//apple_ref/cpp/Property/get_smooth_faces"></a>get_smooth_faces</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, applies smooth shading to the extrusions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-spin-degrees"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>spin_degrees</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_spin_degrees" name="//apple_ref/cpp/Property/set_spin_degrees"></a>set_spin_degrees</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_spin_degrees" name="//apple_ref/cpp/Property/get_spin_degrees"></a>get_spin_degrees</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-spin"><span class="std std-ref">MODE_SPIN</span></a>, the total number of degrees the <a class="reference internal" href="#class-csgpolygon3d-property-polygon"><span class="std std-ref">polygon</span></a> is rotated when extruding.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgpolygon3d-property-spin-sides"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>spin_sides</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_spin_sides" name="//apple_ref/cpp/Property/set_spin_sides"></a>set_spin_sides</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_spin_sides" name="//apple_ref/cpp/Property/get_spin_sides"></a>get_spin_sides</strong>()</p></li>
+</ul>
+<p>When <a class="reference internal" href="#class-csgpolygon3d-property-mode"><span class="std std-ref">mode</span></a> is <a class="reference internal" href="#class-csgpolygon3d-constant-mode-spin"><span class="std std-ref">MODE_SPIN</span></a>, the number of extrusions made.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_csgmesh3d.html" rel="prev" title="CSGMesh3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_csgprimitive3d.html" rel="next" title="CSGPrimitive3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

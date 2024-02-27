@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="@GDScript" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_%40gdscript.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Built-in GDScript constants, functions, and annotations. Description: A list of GDScript-specific utility functions and annotations accessible from any script. For the list of the global functions ..." property="og:description"/>
+<meta content="Built-in GDScript constants, functions, and annotations. Description: A list of GDScript-specific utility functions and annotations accessible from any script. For the list of the global functions ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) @GDScript — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_@gdscript.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_@gdscript.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_@gdscript.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_@gdscript.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_@gdscript.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_@gdscript.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_@gdscript.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_@gdscript.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_@gdscript.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_@gdscript.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_@gdscript.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_@gdscript.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_@gdscript.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_@gdscript.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_@gdscript.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_@gdscript.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_%40globalscope.html" rel="next" title="@GlobalScope"/>
+<link href="index.html" rel="prev" title="All classes"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_@gdscript" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">@GDScript</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gdscript">
+<span id="class-gdscript"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/@GDScript¶"></a>@GDScript<a class="headerlink" href="#gdscript" title="Permalink to this headline">¶</a></h1>
+<p>Built-in GDScript constants, functions, and annotations.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A list of GDScript-specific utility functions and annotations accessible from any script.</p>
+<p>For the list of the global functions and constants see <a class="reference internal" href="class_%40globalscope.html#class-globalscope"><span class="std std-ref">@GlobalScope</span></a>.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/scripting/gdscript/gdscript_exports.html"><span class="doc">GDScript exports</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-color8"><span class="std std-ref">Color8</span></a>(r8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, g8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, b8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, a8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 255)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-assert"><span class="std std-ref">assert</span></a>(condition: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, message: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-char"><span class="std std-ref">char</span></a>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-convert"><span class="std std-ref">convert</span></a>(what: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, type: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-dict-to-inst"><span class="std std-ref">dict_to_inst</span></a>(dictionary: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-get-stack"><span class="std std-ref">get_stack</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-inst-to-dict"><span class="std std-ref">inst_to_dict</span></a>(instance: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-is-instance-of"><span class="std std-ref">is_instance_of</span></a>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, type: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-len"><span class="std std-ref">len</span></a>(var: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-load"><span class="std std-ref">load</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-preload"><span class="std std-ref">preload</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-print-debug"><span class="std std-ref">print_debug</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-print-stack"><span class="std std-ref">print_stack</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-range"><span class="std std-ref">range</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gdscript-method-type-exists"><span class="std std-ref">type_exists</span></a>(type: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-gdscript-constant-pi"><strong>PI</strong> = <code class="docutils literal notranslate"><span class="pre">3.14159265358979</span></code></p>
+<p>Constant that represents how many times the diameter of a circle fits around its perimeter. This is equivalent to <code class="docutils literal notranslate"><span class="pre">TAU</span> <span class="pre">/</span> <span class="pre">2</span></code>, or 180 degrees in rotations.</p>
+<p class="classref-constant" id="class-gdscript-constant-tau"><strong>TAU</strong> = <code class="docutils literal notranslate"><span class="pre">6.28318530717959</span></code></p>
+<p>The circle constant, the circumference of the unit circle in radians. This is equivalent to <code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">*</span> <span class="pre">2</span></code>, or 360 degrees in rotations.</p>
+<p class="classref-constant" id="class-gdscript-constant-inf"><strong>INF</strong> = <code class="docutils literal notranslate"><span class="pre">inf</span></code></p>
+<p>Positive floating-point infinity. This is the result of floating-point division when the divisor is <code class="docutils literal notranslate"><span class="pre">0.0</span></code>. For negative infinity, use <code class="docutils literal notranslate"><span class="pre">-INF</span></code>. Dividing by <code class="docutils literal notranslate"><span class="pre">-0.0</span></code> will result in negative infinity if the numerator is positive, so dividing by <code class="docutils literal notranslate"><span class="pre">0.0</span></code> is not the same as dividing by <code class="docutils literal notranslate"><span class="pre">-0.0</span></code> (despite <code class="docutils literal notranslate"><span class="pre">0.0</span> <span class="pre">==</span> <span class="pre">-0.0</span></code> returning <code class="docutils literal notranslate"><span class="pre">true</span></code>).</p>
+<p><strong>Warning:</strong> Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by <code class="docutils literal notranslate"><span class="pre">0</span></code> will not result in <a class="reference internal" href="#class-gdscript-constant-inf"><span class="std std-ref">INF</span></a> and will result in a run-time error instead.</p>
+<p class="classref-constant" id="class-gdscript-constant-nan"><strong>NAN</strong> = <code class="docutils literal notranslate"><span class="pre">nan</span></code></p>
+<p>"Not a Number", an invalid floating-point value. <a class="reference internal" href="#class-gdscript-constant-nan"><span class="std std-ref">NAN</span></a> has special properties, including that <code class="docutils literal notranslate"><span class="pre">!=</span></code> always returns <code class="docutils literal notranslate"><span class="pre">true</span></code>, while other comparison operators always return <code class="docutils literal notranslate"><span class="pre">false</span></code>. This is true even when comparing with itself (<code class="docutils literal notranslate"><span class="pre">NAN</span> <span class="pre">==</span> <span class="pre">NAN</span></code> returns <code class="docutils literal notranslate"><span class="pre">false</span></code> and <code class="docutils literal notranslate"><span class="pre">NAN</span> <span class="pre">!=</span> <span class="pre">NAN</span></code> returns <code class="docutils literal notranslate"><span class="pre">true</span></code>). It is returned by some invalid operations, such as dividing floating-point <code class="docutils literal notranslate"><span class="pre">0.0</span></code> by <code class="docutils literal notranslate"><span class="pre">0.0</span></code>.</p>
+<p><strong>Warning:</strong> "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer <code class="docutils literal notranslate"><span class="pre">0</span></code> by <code class="docutils literal notranslate"><span class="pre">0</span></code> will not result in <a class="reference internal" href="#class-gdscript-constant-nan"><span class="std std-ref">NAN</span></a> and will result in a run-time error instead.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section id="annotations">
+<h2>Annotations<a class="headerlink" href="#annotations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-annotation" id="class-gdscript-annotation-export"><strong>@export</strong>()</p>
+<p>Mark the following property as exported (editable in the Inspector dock and saved to disk). To control the type of the exported property, use the type hint notation.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node</span>
+
+<span class="k">enum</span><span class="w"> </span><span class="n">Direction</span><span class="w"> </span><span class="p">{</span><span class="n">LEFT</span><span class="p">,</span><span class="w"> </span><span class="n">RIGHT</span><span class="p">,</span><span class="w"> </span><span class="n">UP</span><span class="p">,</span><span class="w"> </span><span class="n">DOWN</span><span class="p">}</span>
+
+<span class="c1"># Built-in types.</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">int_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">float_number</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+
+<span class="c1"># Enums.</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="n">Variant</span><span class="o">.</span><span class="n">Type</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">format</span><span class="p">:</span><span class="w"> </span><span class="n">Image</span><span class="o">.</span><span class="n">Format</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">direction</span><span class="p">:</span><span class="w"> </span><span class="n">Direction</span>
+
+<span class="c1"># Resources.</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">Image</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">custom_resource</span><span class="p">:</span><span class="w"> </span><span class="n">CustomResource</span>
+
+<span class="c1"># Nodes.</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">node</span><span class="p">:</span><span class="w"> </span><span class="n">Node</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">custom_node</span><span class="p">:</span><span class="w"> </span><span class="n">CustomNode</span>
+
+<span class="c1"># Typed arrays.</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">int_array</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">[</span><span class="nb nb-Type">int</span><span class="p">]</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">direction_array</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">[</span><span class="n">Direction</span><span class="p">]</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">image_array</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">[</span><span class="n">Image</span><span class="p">]</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">node_array</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">[</span><span class="n">Node</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Custom resources and nodes must be registered as global classes using <code class="docutils literal notranslate"><span class="pre">class_name</span></code>.</p>
+<p><strong>Note:</strong> Node export is only supported in <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>-derived classes and has a number of other limitations.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-category"><strong>@export_category</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Define a new category for the following exported properties. This helps to organize properties in the Inspector dock.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-category"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_CATEGORY</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_category</span><span class="p">(</span><span class="s2">"Statistics"</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">hp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.25</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Categories in the Inspector dock's list usually divide properties coming from different classes (Node, Node2D, Sprite, etc.). For better clarity, it's recommended to use <a class="reference internal" href="#class-gdscript-annotation-export-group"><span class="std std-ref">@export_group</span></a> and <a class="reference internal" href="#class-gdscript-annotation-export-subgroup"><span class="std std-ref">@export_subgroup</span></a>, instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-color-no-alpha"><strong>@export_color_no_alpha</strong>()</p>
+<p>Export a <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> property without allowing its transparency (<a class="reference internal" href="class_color.html#class-color-property-a"><span class="std std-ref">Color.a</span></a>) to be edited.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-color-no-alpha"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_color_no_alpha</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">dye_color</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Color</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-dir"><strong>@export_dir</strong>()</p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property as a path to a directory. The path will be limited to the project folder and its subfolders. See <a class="reference internal" href="#class-gdscript-annotation-export-global-dir"><span class="std std-ref">@export_global_dir</span></a> to allow picking from the entire filesystem.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-dir"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_DIR</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_dir</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">sprite_folder_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-enum"><strong>@export_enum</strong>(names: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export an <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> or <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property as an enumerated list of options. If the property is an <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, then the value is stored.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-enum"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_ENUM</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_enum</span><span class="p">(</span><span class="s2">"Warrior"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Magician"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Thief"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_class</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+<span class="nd">@export_enum</span><span class="p">(</span><span class="s2">"Slow:30"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Average:60"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Very Fast:200"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_speed</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+<span class="nd">@export_enum</span><span class="p">(</span><span class="s2">"Rebecca"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Mary"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Leah"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_name</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<p>If you want to set an initial value, you must specify it explicitly:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_enum</span><span class="p">(</span><span class="s2">"Rebecca"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Mary"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Leah"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_name</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Rebecca"</span>
+</pre></div>
+</div>
+<p>If you want to use named GDScript enums, then use <a class="reference internal" href="#class-gdscript-annotation-export"><span class="std std-ref">@export</span></a> instead:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="n">CharacterName</span><span class="w"> </span><span class="p">{</span><span class="n">REBECCA</span><span class="p">,</span><span class="w"> </span><span class="n">MARY</span><span class="p">,</span><span class="w"> </span><span class="n">LEAH</span><span class="p">}</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_name</span><span class="p">:</span><span class="w"> </span><span class="n">CharacterName</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-exp-easing"><strong>@export_exp_easing</strong>(hints: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export a floating-point property with an easing editor widget. Additional hints can be provided to adjust the behavior of the widget. <code class="docutils literal notranslate"><span class="pre">"attenuation"</span></code> flips the curve, which makes it more intuitive for editing attenuation properties. <code class="docutils literal notranslate"><span class="pre">"positive_only"</span></code> limits values to only be greater than or equal to zero.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-exp-easing"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_EXP_EASING</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_exp_easing</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">transition_speed</span>
+<span class="nd">@export_exp_easing</span><span class="p">(</span><span class="s2">"attenuation"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">fading_attenuation</span>
+<span class="nd">@export_exp_easing</span><span class="p">(</span><span class="s2">"positive_only"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">effect_power</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-file"><strong>@export_file</strong>(filter: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property as a path to a file. The path will be limited to the project folder and its subfolders. See <a class="reference internal" href="#class-gdscript-annotation-export-global-file"><span class="std std-ref">@export_global_file</span></a> to allow picking from the entire filesystem.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">filter</span></code> is provided, only matching files will be available for picking.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-file"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_FILE</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_file</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">sound_effect_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+<span class="nd">@export_file</span><span class="p">(</span><span class="s2">"*.txt"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">notes_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags"><strong>@export_flags</strong>(names: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export an integer property as a bit flag field. This allows to store several "checked" or <code class="docutils literal notranslate"><span class="pre">true</span></code> values with one property, and comfortably select them from the Inspector dock.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-flags"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_FLAGS</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags</span><span class="p">(</span><span class="s2">"Fire"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Water"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Earth"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Wind"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">spell_elements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>You can add explicit values using a colon:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags</span><span class="p">(</span><span class="s2">"Self:4"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Allies:8"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Foes:16"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">spell_targets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>You can also combine several flags:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags</span><span class="p">(</span><span class="s2">"Self:4"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Allies:8"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Self and Allies:12"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Foes:16"</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">spell_targets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> A flag value must be at least <code class="docutils literal notranslate"><span class="pre">1</span></code> and at most <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">**</span> <span class="pre">32</span> <span class="pre">-</span> <span class="pre">1</span></code>.</p>
+<p><strong>Note:</strong> Unlike <a class="reference internal" href="#class-gdscript-annotation-export-enum"><span class="std std-ref">@export_enum</span></a>, the previous explicit value is not taken into account. In the following example, A is 16, B is 2, C is 4.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags</span><span class="p">(</span><span class="s2">"A:16"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w"> </span><span class="s2">"C"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">x</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-2d-navigation"><strong>@export_flags_2d_navigation</strong>()</p>
+<p>Export an integer property as a bit flag field for 2D navigation layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-2d-navigation-layer-1"><span class="std std-ref">ProjectSettings.layer_names/2d_navigation/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-2d-navigation"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_2d_navigation</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">navigation_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-2d-physics"><strong>@export_flags_2d_physics</strong>()</p>
+<p>Export an integer property as a bit flag field for 2D physics layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-2d-physics-layer-1"><span class="std std-ref">ProjectSettings.layer_names/2d_physics/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-2d-physics"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_2d_physics</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">physics_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-2d-render"><strong>@export_flags_2d_render</strong>()</p>
+<p>Export an integer property as a bit flag field for 2D render layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-2d-render-layer-1"><span class="std std-ref">ProjectSettings.layer_names/2d_render/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-2d-render"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_2d_render</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">render_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-3d-navigation"><strong>@export_flags_3d_navigation</strong>()</p>
+<p>Export an integer property as a bit flag field for 3D navigation layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-3d-navigation-layer-1"><span class="std std-ref">ProjectSettings.layer_names/3d_navigation/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-3d-navigation"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_3d_navigation</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">navigation_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-3d-physics"><strong>@export_flags_3d_physics</strong>()</p>
+<p>Export an integer property as a bit flag field for 3D physics layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-3d-physics-layer-1"><span class="std std-ref">ProjectSettings.layer_names/3d_physics/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-3d-physics"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_3d_physics</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">physics_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-3d-render"><strong>@export_flags_3d_render</strong>()</p>
+<p>Export an integer property as a bit flag field for 3D render layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-3d-render-layer-1"><span class="std std-ref">ProjectSettings.layer_names/3d_render/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-3d-render"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_flags_3d_render</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">render_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-flags-avoidance"><strong>@export_flags_avoidance</strong>()</p>
+<p>Export an integer property as a bit flag field for navigation avoidance layers. The widget in the Inspector dock will use the layer names defined in <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-layer-names-avoidance-layer-1"><span class="std std-ref">ProjectSettings.layer_names/avoidance/layer_1</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-layers-avoidance"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">@export_flags_avoidance</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">avoidance_layers</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-global-dir"><strong>@export_global_dir</strong>()</p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property as an absolute path to a directory. The path can be picked from the entire filesystem. See <a class="reference internal" href="#class-gdscript-annotation-export-dir"><span class="std std-ref">@export_dir</span></a> to limit it to the project folder and its subfolders.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-global-dir"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_GLOBAL_DIR</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_global_dir</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">sprite_folder_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-global-file"><strong>@export_global_file</strong>(filter: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property as an absolute path to a file. The path can be picked from the entire filesystem. See <a class="reference internal" href="#class-gdscript-annotation-export-file"><span class="std std-ref">@export_file</span></a> to limit it to the project folder and its subfolders.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">filter</span></code> is provided, only matching files will be available for picking.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-global-file"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_GLOBAL_FILE</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_global_file</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">sound_effect_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+<span class="nd">@export_global_file</span><span class="p">(</span><span class="s2">"*.txt"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">notes_path</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-group"><strong>@export_group</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, prefix: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Define a new group for the following exported properties. This helps to organize properties in the Inspector dock. Groups can be added with an optional <code class="docutils literal notranslate"><span class="pre">prefix</span></code>, which would make group to only consider properties that have this prefix. The grouping will break on the first property that doesn't have a prefix. The prefix is also removed from the property's name in the Inspector dock.</p>
+<p>If no <code class="docutils literal notranslate"><span class="pre">prefix</span></code> is provided, then every following property will be added to the group. The group ends when then next group or category is defined. You can also force end a group by using this annotation with empty strings for parameters, <code class="docutils literal notranslate"><span class="pre">@export_group("",</span> <span class="pre">"")</span></code>.</p>
+<p>Groups cannot be nested, use <a class="reference internal" href="#class-gdscript-annotation-export-subgroup"><span class="std std-ref">@export_subgroup</span></a> to add subgroups within groups.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-group"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_GROUP</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_group</span><span class="p">(</span><span class="s2">"Racer Properties"</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">nickname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nick"</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span>
+
+<span class="nd">@export_group</span><span class="p">(</span><span class="s2">"Car Properties"</span><span class="p">,</span><span class="w"> </span><span class="s2">"car_"</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">car_label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Speedy"</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">car_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+
+<span class="nd">@export_group</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">ungrouped_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-multiline"><strong>@export_multiline</strong>()</p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property with a large <a class="reference internal" href="class_textedit.html#class-textedit"><span class="std std-ref">TextEdit</span></a> widget instead of a <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a>. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-multiline-text"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_multiline</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_biography</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-node-path"><strong>@export_node_path</strong>(type: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export a <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> property with a filter for allowed node types.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-node-path-valid-types"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_node_path</span><span class="p">(</span><span class="s2">"Button"</span><span class="p">,</span><span class="w"> </span><span class="s2">"TouchScreenButton"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">some_button</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> The type must be a native class or a globally registered script (using the <code class="docutils literal notranslate"><span class="pre">class_name</span></code> keyword) that inherits <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-placeholder"><strong>@export_placeholder</strong>(placeholder: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Export a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> property with a placeholder text displayed in the editor widget when no value is present.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-placeholder-text"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_placeholder</span><span class="p">(</span><span class="s2">"Name in lowercase"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_id</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-range"><strong>@export_range</strong>(min: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, max: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, step: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0, extra_hints: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "", ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Export an <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> or <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> property as a range value. The range must be defined by <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code>, as well as an optional <code class="docutils literal notranslate"><span class="pre">step</span></code> and a variety of extra hints. The <code class="docutils literal notranslate"><span class="pre">step</span></code> defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code> for integer properties. For floating-point numbers this value depends on your <a class="reference internal" href="class_editorsettings.html#class-editorsettings-property-interface-inspector-default-float-step"><span class="std std-ref">EditorSettings.interface/inspector/default_float_step</span></a> setting.</p>
+<p>If hints <code class="docutils literal notranslate"><span class="pre">"or_greater"</span></code> and <code class="docutils literal notranslate"><span class="pre">"or_less"</span></code> are provided, the editor widget will not cap the value at range boundaries. The <code class="docutils literal notranslate"><span class="pre">"exp"</span></code> hint will make the edited values on range to change exponentially. The <code class="docutils literal notranslate"><span class="pre">"hide_slider"</span></code> hint will hide the slider element of the editor widget.</p>
+<p>Hints also allow to indicate the units for the edited value. Using <code class="docutils literal notranslate"><span class="pre">"radians_as_degrees"</span></code> you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). <code class="docutils literal notranslate"><span class="pre">"degrees"</span></code> allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using <code class="docutils literal notranslate"><span class="pre">"suffix:unit"</span></code>, where "unit" can be any string.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-hint-range"><span class="std std-ref">@GlobalScope.PROPERTY_HINT_RANGE</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">number</span>
+<span class="nd">@export_range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">number</span>
+<span class="nd">@export_range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">number</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span>
+
+<span class="nd">@export_range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"or_greater"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">power_percent</span>
+<span class="nd">@export_range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"or_greater"</span><span class="p">,</span><span class="w"> </span><span class="s2">"or_less"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">health_delta</span>
+
+<span class="nd">@export_range</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span><span class="w"> </span><span class="mi">180</span><span class="p">,</span><span class="w"> </span><span class="mf">0.001</span><span class="p">,</span><span class="w"> </span><span class="s2">"radians_as_degrees"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">angle_radians</span>
+<span class="nd">@export_range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">360</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"degrees"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">angle_degrees</span>
+<span class="nd">@export_range</span><span class="p">(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"suffix:px"</span><span class="p">)</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">target_offset</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-export-subgroup"><strong>@export_subgroup</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, prefix: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Define a new subgroup for the following exported properties. This helps to organize properties in the Inspector dock. Subgroups work exactly like groups, except they need a parent group to exist. See <a class="reference internal" href="#class-gdscript-annotation-export-group"><span class="std std-ref">@export_group</span></a>.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-subgroup"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_SUBGROUP</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export_group</span><span class="p">(</span><span class="s2">"Racer Properties"</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">nickname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nick"</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span>
+
+<span class="nd">@export_subgroup</span><span class="p">(</span><span class="s2">"Car Properties"</span><span class="p">,</span><span class="w"> </span><span class="s2">"car_"</span><span class="p">)</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">car_label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Speedy"</span>
+<span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">car_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Subgroups cannot be nested, they only provide one extra level of depth. Just like the next group ends the previous group, so do the subsequent subgroups.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-icon"><strong>@icon</strong>(icon_path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Add a custom icon to the current script. The icon specified at <code class="docutils literal notranslate"><span class="pre">icon_path</span></code> is displayed in the Scene dock for every node of that class, as well as in various editor dialogs.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@icon</span><span class="p">(</span><span class="s2">"res://path/to/class/icon.svg"</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Only the script can have a custom icon. Inner classes are not supported.</p>
+<p><strong>Note:</strong> As annotations describe their subject, the <a class="reference internal" href="#class-gdscript-annotation-icon"><span class="std std-ref">@icon</span></a> annotation must be placed before the class definition and inheritance.</p>
+<p><strong>Note:</strong> Unlike other annotations, the argument of the <a class="reference internal" href="#class-gdscript-annotation-icon"><span class="std std-ref">@icon</span></a> annotation must be a string literal (constant expressions are not supported).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-onready"><strong>@onready</strong>()</p>
+<p>Mark the following property as assigned when the <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> is ready. Values for these properties are not assigned immediately when the node is initialized (<a class="reference internal" href="class_object.html#class-object-private-method-init"><span class="std std-ref">Object._init</span></a>), and instead are computed and stored right before <a class="reference internal" href="class_node.html#class-node-private-method-ready"><span class="std std-ref">Node._ready</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@onready</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">character_name</span><span class="p">:</span><span class="w"> </span><span class="n">Label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">$</span><span class="n">Label</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-rpc"><strong>@rpc</strong>(mode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "authority", sync: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "call_remote", transfer_mode: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "unreliable", transfer_channel: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Mark the following method for remote procedure calls. See <a class="reference internal" href="../tutorials/networking/high_level_multiplayer.html"><span class="doc">High-level multiplayer</span></a>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">mode</span></code> is set as <code class="docutils literal notranslate"><span class="pre">"any_peer"</span></code>, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and <code class="docutils literal notranslate"><span class="pre">mode</span></code> should be kept as <code class="docutils literal notranslate"><span class="pre">"authority"</span></code>. When configuring functions as RPCs with <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a>, each of these modes respectively corresponds to the <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-constant-rpc-mode-authority"><span class="std std-ref">MultiplayerAPI.RPC_MODE_AUTHORITY</span></a> and <a class="reference internal" href="class_multiplayerapi.html#class-multiplayerapi-constant-rpc-mode-any-peer"><span class="std std-ref">MultiplayerAPI.RPC_MODE_ANY_PEER</span></a> RPC modes. See <a class="reference internal" href="class_multiplayerapi.html#enum-multiplayerapi-rpcmode"><span class="std std-ref">RPCMode</span></a>. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">sync</span></code> is set as <code class="docutils literal notranslate"><span class="pre">"call_remote"</span></code>, the function will only be executed on the remote peer, but not locally. To run this function locally too, set <code class="docutils literal notranslate"><span class="pre">sync</span></code> to <code class="docutils literal notranslate"><span class="pre">"call_local"</span></code>. When configuring functions as RPCs with <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a>, this is equivalent to setting <code class="docutils literal notranslate"><span class="pre">call_local</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">transfer_mode</span></code> accepted values are <code class="docutils literal notranslate"><span class="pre">"unreliable"</span></code>, <code class="docutils literal notranslate"><span class="pre">"unreliable_ordered"</span></code>, or <code class="docutils literal notranslate"><span class="pre">"reliable"</span></code>. It sets the transfer mode of the underlying <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a>. See <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-property-transfer-mode"><span class="std std-ref">MultiplayerPeer.transfer_mode</span></a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">transfer_channel</span></code> defines the channel of the underlying <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a>. See <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer-property-transfer-channel"><span class="std std-ref">MultiplayerPeer.transfer_channel</span></a>.</p>
+<p>The order of <code class="docutils literal notranslate"><span class="pre">mode</span></code>, <code class="docutils literal notranslate"><span class="pre">sync</span></code> and <code class="docutils literal notranslate"><span class="pre">transfer_mode</span></code> does not matter, but values related to the same argument must not be used more than once. <code class="docutils literal notranslate"><span class="pre">transfer_channel</span></code> always has to be the 4th argument (you must specify 3 preceding arguments).</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">func</span><span class="w"> </span><span class="n">fn</span><span class="p">():</span><span class="w"> </span><span class="k k-ControlFlow">pass</span>
+
+<span class="nd">@rpc</span><span class="p">(</span><span class="s2">"any_peer"</span><span class="p">,</span><span class="w"> </span><span class="s2">"unreliable_ordered"</span><span class="p">)</span>
+<span class="k">func</span><span class="w"> </span><span class="n">fn_update_pos</span><span class="p">():</span><span class="w"> </span><span class="k k-ControlFlow">pass</span>
+
+<span class="nd">@rpc</span><span class="p">(</span><span class="s2">"authority"</span><span class="p">,</span><span class="w"> </span><span class="s2">"call_remote"</span><span class="p">,</span><span class="w"> </span><span class="s2">"unreliable"</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1"># Equivalent to @rpc</span>
+<span class="k">func</span><span class="w"> </span><span class="n">fn_default</span><span class="p">():</span><span class="w"> </span><span class="k k-ControlFlow">pass</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-static-unload"><strong>@static_unload</strong>()</p>
+<p>Make a script with static variables to not persist after all references are lost. If the script is loaded again the static variables will revert to their default values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-tool"><strong>@tool</strong>()</p>
+<p>Mark the current script as a tool script, allowing it to be loaded and executed by the editor. See <a class="reference internal" href="../tutorials/plugins/running_code_in_the_editor.html"><span class="doc">Running code in the editor</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@tool</span>
+<span class="k">extends</span><span class="w"> </span><span class="n">Node</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> As annotations describe their subject, the <a class="reference internal" href="#class-gdscript-annotation-tool"><span class="std std-ref">@tool</span></a> annotation must be placed before the class definition and inheritance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-annotation" id="class-gdscript-annotation-warning-ignore"><strong>@warning_ignore</strong>(warning: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Mark the following statement to ignore the specified <code class="docutils literal notranslate"><span class="pre">warning</span></code>. See <a class="reference internal" href="../tutorials/scripting/gdscript/warning_system.html"><span class="doc">GDScript warning system</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">test</span><span class="p">():</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>
+<span class="w">    </span><span class="k k-ControlFlow">return</span>
+<span class="w">    </span><span class="nd">@warning_ignore</span><span class="p">(</span><span class="s2">"unreachable_code"</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"unreachable"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gdscript-method-color8"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>Color8</strong>(r8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, g8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, b8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, a8: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 255)</p>
+<p>Returns a <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> constructed from red (<code class="docutils literal notranslate"><span class="pre">r8</span></code>), green (<code class="docutils literal notranslate"><span class="pre">g8</span></code>), blue (<code class="docutils literal notranslate"><span class="pre">b8</span></code>), and optionally alpha (<code class="docutils literal notranslate"><span class="pre">a8</span></code>) integer channels, each divided by <code class="docutils literal notranslate"><span class="pre">255.0</span></code> for their final value. Using <a class="reference internal" href="#class-gdscript-method-color8"><span class="std std-ref">Color8</span></a> instead of the standard <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> constructor is useful when you need to match exact color values in an <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Color8</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">             </span><span class="c1"># Same as Color(1, 0, 0).</span>
+<span class="k">var</span><span class="w"> </span><span class="n">dark_blue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Color8</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">51</span><span class="p">)</span><span class="w">        </span><span class="c1"># Same as Color(0, 0, 0.2).</span>
+<span class="k">var</span><span class="w"> </span><span class="n">my_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Color8</span><span class="p">(</span><span class="mi">306</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">102</span><span class="p">)</span><span class="w"> </span><span class="c1"># Same as Color(1.2, 1, 0, 0.4).</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Due to the lower precision of <a class="reference internal" href="#class-gdscript-method-color8"><span class="std std-ref">Color8</span></a> compared to the standard <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> constructor, a color created with <a class="reference internal" href="#class-gdscript-method-color8"><span class="std std-ref">Color8</span></a> will generally not be equal to the same color created with the standard <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> constructor. Use <a class="reference internal" href="class_color.html#class-color-method-is-equal-approx"><span class="std std-ref">Color.is_equal_approx</span></a> for comparisons to avoid issues with floating-point precision error.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-assert"><abbr title="No return value.">void</abbr> <strong>assert</strong>(condition: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, message: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Asserts that the <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>. If the <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, an error is generated. When running from the editor, the running project will also be paused until you resume it. This can be used as a stronger form of <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-push-error"><span class="std std-ref">@GlobalScope.push_error</span></a> for reporting errors to project developers or add-on users.</p>
+<p>An optional <code class="docutils literal notranslate"><span class="pre">message</span></code> can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.</p>
+<p><strong>Warning:</strong> For performance reasons, the code inside <a class="reference internal" href="#class-gdscript-method-assert"><span class="std std-ref">assert</span></a> is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an <a class="reference internal" href="#class-gdscript-method-assert"><span class="std std-ref">assert</span></a> call. Otherwise, the project will behave differently when exported in release mode.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imagine we always want speed to be between 0 and 20.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">10</span>
+<span class="nb">assert</span><span class="p">(</span><span class="n">speed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="c1"># True, the program will continue.</span>
+<span class="nb">assert</span><span class="p">(</span><span class="n">speed</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1"># False, the program will stop.</span>
+<span class="nb">assert</span><span class="p">(</span><span class="n">speed</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="c1"># You can also combine the two conditional statements in one check.</span>
+<span class="nb">assert</span><span class="p">(</span><span class="n">speed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="s2">"the speed limit is 20"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Show a message.</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-char"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>char</strong>(char: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns a single character (as a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) of the given Unicode code point (which is compatible with ASCII code).</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span><span class="w">      </span><span class="c1"># a is "A"</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">65</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">32</span><span class="p">)</span><span class="w"> </span><span class="c1"># a is "a"</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">8364</span><span class="p">)</span><span class="w">    </span><span class="c1"># a is "€"</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-convert"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>convert</strong>(what: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, type: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-type-convert"><span class="std std-ref">@GlobalScope.type_convert</span></a> instead.</p>
+<p>Converts <code class="docutils literal notranslate"><span class="pre">what</span></code> to <code class="docutils literal notranslate"><span class="pre">type</span></code> in the best way possible. The <code class="docutils literal notranslate"><span class="pre">type</span></code> uses the <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-variant-type"><span class="std std-ref">Variant.Type</span></a> values.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mf">2.5</span><span class="p">,</span><span class="w"> </span><span class="mf">1.2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">)</span><span class="w"> </span><span class="c1"># Prints true</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">convert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">TYPE_PACKED_BYTE_ARRAY</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w">          </span><span class="c1"># Prints [4, 2, 1]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="nb nb-Type">Array</span><span class="p">)</span><span class="w"> </span><span class="c1"># Prints false</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-dict-to-inst"><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> <strong>dict_to_inst</strong>(dictionary: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p>
+<p>Converts a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> (created with <a class="reference internal" href="#class-gdscript-method-inst-to-dict"><span class="std std-ref">inst_to_dict</span></a>) back to an Object instance. Can be useful for deserializing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-get-stack"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_stack</strong>()</p>
+<p>Returns an array of dictionaries representing the current call stack. See also <a class="reference internal" href="#class-gdscript-method-print-stack"><span class="std std-ref">print_stack</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">foo</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">foo</span><span class="p">():</span>
+<span class="w">    </span><span class="n">bar</span><span class="p">()</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">bar</span><span class="p">():</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nb">get_stack</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Starting from <code class="docutils literal notranslate"><span class="pre">_ready()</span></code>, <code class="docutils literal notranslate"><span class="pre">bar()</span></code> would print:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="n">function</span><span class="p">:</span><span class="n">bar</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">script</span><span class="o">.</span><span class="n">gd</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">function</span><span class="p">:</span><span class="n">foo</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">script</span><span class="o">.</span><span class="n">gd</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">function</span><span class="p">:</span><span class="n">_ready</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">script</span><span class="o">.</span><span class="n">gd</span><span class="p">}]</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> This function only works if the running instance is connected to a debugging server (i.e. an editor instance). <a class="reference internal" href="#class-gdscript-method-get-stack"><span class="std std-ref">get_stack</span></a> will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.</p>
+<p><strong>Note:</strong> Calling this function from a <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a> is not supported. Doing so will return an empty array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-inst-to-dict"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>inst_to_dict</strong>(instance: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p>
+<p>Returns the passed <code class="docutils literal notranslate"><span class="pre">instance</span></code> converted to a Dictionary. Can be useful for serializing.</p>
+<p><strong>Note:</strong> Cannot be used to serialize objects with built-in scripts attached or objects allocated within built-in scripts.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bar"</span>
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">inst_to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Prints out:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">@subpath</span><span class="p">,</span><span class="w"> </span><span class="n">@path</span><span class="p">,</span><span class="w"> </span><span class="n">foo</span><span class="p">]</span>
+<span class="p">[,</span><span class="w"> </span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">test</span><span class="o">.</span><span class="n">gd</span><span class="p">,</span><span class="w"> </span><span class="n">bar</span><span class="p">]</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-is-instance-of"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_instance_of</strong>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, type: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">value</span></code> is an instance of <code class="docutils literal notranslate"><span class="pre">type</span></code>. The <code class="docutils literal notranslate"><span class="pre">type</span></code> value must be one of the following:</p>
+<ul class="simple">
+<li><p>A constant from the <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-variant-type"><span class="std std-ref">Variant.Type</span></a> enumeration, for example <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-type-int"><span class="std std-ref">@GlobalScope.TYPE_INT</span></a>.</p></li>
+<li><p>An <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>-derived class which exists in <a class="reference internal" href="class_classdb.html#class-classdb"><span class="std std-ref">ClassDB</span></a>, for example <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>.</p></li>
+<li><p>A <a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a> (you can use any class, including inner one).</p></li>
+</ul>
+<p>Unlike the right operand of the <code class="docutils literal notranslate"><span class="pre">is</span></code> operator, <code class="docutils literal notranslate"><span class="pre">type</span></code> can be a non-constant value. The <code class="docutils literal notranslate"><span class="pre">is</span></code> operator supports more features (such as typed arrays) and is more performant. Use the operator instead of this method if you do not need dynamic type checking.</p>
+<p>Examples:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">is_instance_of</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">TYPE_INT</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_instance_of</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_instance_of</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">MyClass</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_instance_of</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">MyClass</span><span class="o">.</span><span class="n">InnerClass</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> If <code class="docutils literal notranslate"><span class="pre">value</span></code> and/or <code class="docutils literal notranslate"><span class="pre">type</span></code> are freed objects (see <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-is-instance-valid"><span class="std std-ref">@GlobalScope.is_instance_valid</span></a>), or <code class="docutils literal notranslate"><span class="pre">type</span></code> is not one of the above options, this method will raise a runtime error.</p>
+<p>See also <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-typeof"><span class="std std-ref">@GlobalScope.typeof</span></a>, <a class="reference internal" href="#class-gdscript-method-type-exists"><span class="std std-ref">type_exists</span></a>, <a class="reference internal" href="class_array.html#class-array-method-is-same-typed"><span class="std std-ref">Array.is_same_typed</span></a> (and other <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> methods).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-len"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>len</strong>(var: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Returns the length of the given Variant <code class="docutils literal notranslate"><span class="pre">var</span></code>. The length can be the character count of a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> or <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, the element count of any array type, or the size of a <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>. For every other Variant type, a run-time error is generated and execution is stopped.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns 4</span>
+
+<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hello!"</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns 6</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-load"><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>load</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns a <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> from the filesystem located at the absolute <code class="docutils literal notranslate"><span class="pre">path</span></code>. Unless it's already referenced elsewhere (such as in another script or in the scene), the resource is loaded from disk on function call, which might cause a slight delay, especially when loading large scenes. To avoid unnecessary delays when loading something multiple times, either store the resource in a variable or use <a class="reference internal" href="#class-gdscript-method-preload"><span class="std std-ref">preload</span></a>. This method is equivalent of using <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-load"><span class="std std-ref">ResourceLoader.load</span></a> with <a class="reference internal" href="class_resourceloader.html#class-resourceloader-constant-cache-mode-reuse"><span class="std std-ref">ResourceLoader.CACHE_MODE_REUSE</span></a>.</p>
+<p><strong>Note:</strong> Resource paths can be obtained by right-clicking on a resource in the FileSystem dock and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a scene called "main" located in the root of the project directory and cache it in a variable.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">load</span><span class="p">(</span><span class="s2">"res://main.tscn"</span><span class="p">)</span><span class="w"> </span><span class="c1"># main will contain a PackedScene resource.</span>
+</pre></div>
+</div>
+<p><strong>Important:</strong> The path must be absolute. A relative path will always return <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<p>This function is a simplified version of <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-load"><span class="std std-ref">ResourceLoader.load</span></a>, which can be used for more advanced scenarios.</p>
+<p><strong>Note:</strong> Files have to be imported into the engine first to load them using this function. If you want to load <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>s at run-time, you may use <a class="reference internal" href="class_image.html#class-image-method-load"><span class="std std-ref">Image.load</span></a>. If you want to import audio files, you can use the snippet described in <a class="reference internal" href="class_audiostreammp3.html#class-audiostreammp3-property-data"><span class="std std-ref">AudioStreamMP3.data</span></a>.</p>
+<p><strong>Note:</strong> If <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-editor-export-convert-text-resources-to-binary"><span class="std std-ref">ProjectSettings.editor/export/convert_text_resources_to_binary</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-gdscript-method-load"><span class="std std-ref">load</span></a> will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-editor-export-convert-text-resources-to-binary"><span class="std std-ref">ProjectSettings.editor/export/convert_text_resources_to_binary</span></a> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-preload"><a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>preload</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Returns a <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> from the filesystem located at <code class="docutils literal notranslate"><span class="pre">path</span></code>. During run-time, the resource is loaded when the script is being parsed. This function effectively acts as a reference to that resource. Note that this function requires <code class="docutils literal notranslate"><span class="pre">path</span></code> to be a constant <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>. If you want to load a resource from a dynamic/variable path, use <a class="reference internal" href="#class-gdscript-method-load"><span class="std std-ref">load</span></a>.</p>
+<p><strong>Note:</strong> Resource paths can be obtained by right-clicking on a resource in the Assets Panel and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create instance of a scene.</span>
+<span class="k">var</span><span class="w"> </span><span class="n">diamond</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">preload</span><span class="p">(</span><span class="s2">"res://diamond.tscn"</span><span class="p">)</span><span class="o">.</span><span class="n">instantiate</span><span class="p">()</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-print-debug"><abbr title="No return value.">void</abbr> <strong>print_debug</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Like <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-print"><span class="std std-ref">@GlobalScope.print</span></a>, but includes the current stack frame when running with the debugger turned on.</p>
+<p>The output in the console may look like the following:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">Test</span><span class="w"> </span><span class="nb">print</span>
+<span class="n">At</span><span class="p">:</span><span class="w"> </span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">test</span><span class="o">.</span><span class="n">gd</span><span class="p">:</span><span class="mi">15</span><span class="p">:</span><span class="n">_process</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Calling this function from a <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a> is not supported. Doing so will instead print the thread ID.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-print-stack"><abbr title="No return value.">void</abbr> <strong>print_stack</strong>()</p>
+<p>Prints a stack trace at the current code location. See also <a class="reference internal" href="#class-gdscript-method-get-stack"><span class="std std-ref">get_stack</span></a>.</p>
+<p>The output in the console may look like the following:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">Frame</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">res</span><span class="p">:</span><span class="o">//</span><span class="n">test</span><span class="o">.</span><span class="n">gd</span><span class="p">:</span><span class="mi">16</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="s1">'_process'</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> This function only works if the running instance is connected to a debugging server (i.e. an editor instance). <a class="reference internal" href="#class-gdscript-method-print-stack"><span class="std std-ref">print_stack</span></a> will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.</p>
+<p><strong>Note:</strong> Calling this function from a <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a> is not supported. Doing so will instead print the thread ID.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-range"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>range</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Returns an array with the given range. <a class="reference internal" href="#class-gdscript-method-range"><span class="std std-ref">range</span></a> can be called in three ways:</p>
+<p><code class="docutils literal notranslate"><span class="pre">range(n:</span> <span class="pre">int)</span></code>: Starts from 0, increases by steps of 1, and stops <em>before</em> <code class="docutils literal notranslate"><span class="pre">n</span></code>. The argument <code class="docutils literal notranslate"><span class="pre">n</span></code> is <strong>exclusive</strong>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">range(b:</span> <span class="pre">int,</span> <span class="pre">n:</span> <span class="pre">int)</span></code>: Starts from <code class="docutils literal notranslate"><span class="pre">b</span></code>, increases by steps of 1, and stops <em>before</em> <code class="docutils literal notranslate"><span class="pre">n</span></code>. The arguments <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are <strong>inclusive</strong> and <strong>exclusive</strong>, respectively.</p>
+<p><code class="docutils literal notranslate"><span class="pre">range(b:</span> <span class="pre">int,</span> <span class="pre">n:</span> <span class="pre">int,</span> <span class="pre">s:</span> <span class="pre">int)</span></code>: Starts from <code class="docutils literal notranslate"><span class="pre">b</span></code>, increases/decreases by steps of <code class="docutils literal notranslate"><span class="pre">s</span></code>, and stops <em>before</em> <code class="docutils literal notranslate"><span class="pre">n</span></code>. The arguments <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> are <strong>inclusive</strong> and <strong>exclusive</strong>, respectively. The argument <code class="docutils literal notranslate"><span class="pre">s</span></code> <strong>can</strong> be negative, but not <code class="docutils literal notranslate"><span class="pre">0</span></code>. If <code class="docutils literal notranslate"><span class="pre">s</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, an error message is printed.</p>
+<p><a class="reference internal" href="#class-gdscript-method-range"><span class="std std-ref">range</span></a> converts all arguments to <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> before processing.</p>
+<p><strong>Note:</strong> Returns an empty array if no value meets the value constraint (e.g. <code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">5,</span> <span class="pre">-1)</span></code> or <code class="docutils literal notranslate"><span class="pre">range(5,</span> <span class="pre">5,</span> <span class="pre">1)</span></code>).</p>
+<p>Examples:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span><span class="w">        </span><span class="c1"># Prints [0, 1, 2, 3]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w">     </span><span class="c1"># Prints [2, 3, 4]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w">  </span><span class="c1"># Prints [0, 2, 4]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="c1"># Prints [4, 3, 2]</span>
+</pre></div>
+</div>
+<p>To iterate over an <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> backwards, use:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">]</span>
+<span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">range</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="mi">9</span>
+<span class="mi">6</span>
+<span class="mi">3</span>
+</pre></div>
+</div>
+<p>To iterate over <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, convert them in the loop.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">range</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">10.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="mf">0.3</span>
+<span class="mf">0.2</span>
+<span class="mf">0.1</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gdscript-method-type-exists"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>type_exists</strong>(type: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>-derived class exists in <a class="reference internal" href="class_classdb.html#class-classdb"><span class="std std-ref">ClassDB</span></a>. Note that <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> data types are not registered in <a class="reference internal" href="class_classdb.html#class-classdb"><span class="std std-ref">ClassDB</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nb">type_exists</span><span class="p">(</span><span class="s2">"Sprite2D"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns true</span>
+<span class="nb">type_exists</span><span class="p">(</span><span class="s2">"NonExistentClass"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Returns false</span>
+</pre></div>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="index.html" rel="prev" title="All classes"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_%40globalscope.html" rel="next" title="@GlobalScope">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="FlowContainer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_flowcontainer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: HFlowContainer, VFlowContainer A container that arranges its child controls horizontally or vertically and wraps them around at ..." property="og:description"/>
+<meta content="Inherits: Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: HFlowContainer, VFlowContainer A container that arranges its child controls horizontally or vertically and wraps them around at ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) FlowContainer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_flowcontainer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_flowcontainer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_flowcontainer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_flowcontainer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_flowcontainer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_flowcontainer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_flowcontainer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_flowcontainer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_flowcontainer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_flowcontainer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_flowcontainer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_flowcontainer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_flowcontainer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_flowcontainer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_flowcontainer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_flowcontainer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_fogvolume.html" rel="next" title="FogVolume"/>
+<link href="class_filesystemdock.html" rel="prev" title="FileSystemDock"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_flowcontainer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">FlowContainer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="flowcontainer">
+<span id="class-flowcontainer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/FlowContainer¶"></a>FlowContainer<a class="headerlink" href="#flowcontainer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_container.html#class-container"><span class="std std-ref">Container</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_hflowcontainer.html#class-hflowcontainer"><span class="std std-ref">HFlowContainer</span></a>, <a class="reference internal" href="class_vflowcontainer.html#class-vflowcontainer"><span class="std std-ref">VFlowContainer</span></a></p>
+<p>A container that arranges its child controls horizontally or vertically and wraps them around at the borders.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A container that arranges its child controls horizontally or vertically and wraps them around at the borders. This is similar to how text in a book wraps around when no more words can fit on a line.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/ui/gui_containers.html"><span class="doc">Using Containers</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-property-alignment"><span class="std std-ref">alignment</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-property-reverse-fill"><span class="std std-ref">reverse_fill</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-property-vertical"><span class="std std-ref">vertical</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-method-get-line-count"><span class="std std-ref">get_line_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-theme-constant-h-separation"><span class="std std-ref">h_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-flowcontainer-theme-constant-v-separation"><span class="std std-ref">v_separation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-flowcontainer-alignmentmode">enum <strong><a class="dashAnchor" id="enumerations-AlignmentMode" name="//apple_ref/cpp/Enum/AlignmentMode"></a>AlignmentMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-flowcontainer-constant-alignment-begin"><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALIGNMENT_BEGIN" name="//apple_ref/cpp/Enum/ALIGNMENT_BEGIN"></a>ALIGNMENT_BEGIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The child controls will be arranged at the beginning of the container, i.e. top if orientation is vertical, left if orientation is horizontal (right for RTL layout).</p>
+<p class="classref-enumeration-constant" id="class-flowcontainer-constant-alignment-center"><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALIGNMENT_CENTER" name="//apple_ref/cpp/Enum/ALIGNMENT_CENTER"></a>ALIGNMENT_CENTER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The child controls will be centered in the container.</p>
+<p class="classref-enumeration-constant" id="class-flowcontainer-constant-alignment-end"><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALIGNMENT_END" name="//apple_ref/cpp/Enum/ALIGNMENT_END"></a>ALIGNMENT_END</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The child controls will be arranged at the end of the container, i.e. bottom if orientation is vertical, right if orientation is horizontal (left for RTL layout).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-flowcontainer-property-alignment"><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a> <strong>alignment</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_alignment" name="//apple_ref/cpp/Property/set_alignment"></a>set_alignment</strong>(value: <a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-flowcontainer-alignmentmode"><span class="std std-ref">AlignmentMode</span></a> <strong><a class="dashAnchor" id="properties-get_alignment" name="//apple_ref/cpp/Property/get_alignment"></a>get_alignment</strong>()</p></li>
+</ul>
+<p>The alignment of the container's children (must be one of <a class="reference internal" href="#class-flowcontainer-constant-alignment-begin"><span class="std std-ref">ALIGNMENT_BEGIN</span></a>, <a class="reference internal" href="#class-flowcontainer-constant-alignment-center"><span class="std std-ref">ALIGNMENT_CENTER</span></a>, or <a class="reference internal" href="#class-flowcontainer-constant-alignment-end"><span class="std std-ref">ALIGNMENT_END</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-flowcontainer-property-reverse-fill"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>reverse_fill</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_reverse_fill" name="//apple_ref/cpp/Property/set_reverse_fill"></a>set_reverse_fill</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_reverse_fill" name="//apple_ref/cpp/Property/is_reverse_fill"></a>is_reverse_fill</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, reverses fill direction. Horizontal <strong>FlowContainer</strong>s will fill rows bottom to top, vertical <strong>FlowContainer</strong>s will fill columns right to left.</p>
+<p>When using a vertical <strong>FlowContainer</strong> with a right to left <a class="reference internal" href="class_control.html#class-control-property-layout-direction"><span class="std std-ref">Control.layout_direction</span></a>, columns will fill left to right instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-flowcontainer-property-vertical"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>vertical</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_vertical" name="//apple_ref/cpp/Property/set_vertical"></a>set_vertical</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_vertical" name="//apple_ref/cpp/Property/is_vertical"></a>is_vertical</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>FlowContainer</strong> will arrange its children vertically, rather than horizontally.</p>
+<p>Can't be changed when using <a class="reference internal" href="class_hflowcontainer.html#class-hflowcontainer"><span class="std std-ref">HFlowContainer</span></a> and <a class="reference internal" href="class_vflowcontainer.html#class-vflowcontainer"><span class="std std-ref">VFlowContainer</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-flowcontainer-method-get-line-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_line_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current line count.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-flowcontainer-theme-constant-h-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>h_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The horizontal separation of children nodes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-flowcontainer-theme-constant-v-separation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>v_separation</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The vertical separation of children nodes.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_filesystemdock.html" rel="prev" title="FileSystemDock"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_fogvolume.html" rel="next" title="FogVolume">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Line2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_line2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object A 2D polyline that can optionally be textured. Description: This node draws a 2D polyline, i.e. a shape consisting of several points connected by segments..." property="og:description"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object A 2D polyline that can optionally be textured. Description: This node draws a 2D polyline, i.e. a shape consisting of several points connected by segments..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Line2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_line2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_line2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_line2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_line2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_line2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_line2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_line2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_line2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_line2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_line2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_line2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_line2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_line2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_line2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_line2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_line2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_lineedit.html" rel="next" title="LineEdit"/>
+<link href="class_lightoccluder2d.html" rel="prev" title="LightOccluder2D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_line2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Line2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="line2d">
+<span id="class-line2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Line2D¶"></a>Line2D<a class="headerlink" href="#line2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A 2D polyline that can optionally be textured.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This node draws a 2D polyline, i.e. a shape consisting of several points connected by segments. <strong>Line2D</strong> is not a mathematical polyline, i.e. the segments are not infinitely thin. It is intended for rendering and it can be colored and optionally textured.</p>
+<p><strong>Warning:</strong> Certain configurations may be impossible to draw nicely, such as very sharp angles. In these situations, the node uses fallback drawing logic to look decent.</p>
+<p><strong>Note:</strong> <strong>Line2D</strong> is drawn using a 2D mesh.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/584">Matrix Transform Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/583">2.5D Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-antialiased"><span class="std std-ref">antialiased</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-begin-cap-mode"><span class="std std-ref">begin_cap_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-closed"><span class="std std-ref">closed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-default-color"><span class="std std-ref">default_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-end-cap-mode"><span class="std std-ref">end_cap_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-gradient"><span class="std std-ref">gradient</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-joint-mode"><span class="std std-ref">joint_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-points"><span class="std std-ref">points</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedVector2Array()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-round-precision"><span class="std std-ref">round_precision</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-sharp-limit"><span class="std std-ref">sharp_limit</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-texture"><span class="std std-ref">texture</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-texture-mode"><span class="std std-ref">texture_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-width"><span class="std std-ref">width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-property-width-curve"><span class="std std-ref">width_curve</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-add-point"><span class="std std-ref">add_point</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-clear-points"><span class="std std-ref">clear_points</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-get-point-count"><span class="std std-ref">get_point_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-get-point-position"><span class="std std-ref">get_point_position</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-remove-point"><span class="std std-ref">remove_point</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-line2d-method-set-point-position"><span class="std std-ref">set_point_position</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-line2d-linejointmode">enum <strong><a class="dashAnchor" id="enumerations-LineJointMode" name="//apple_ref/cpp/Enum/LineJointMode"></a>LineJointMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-joint-sharp"><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_JOINT_SHARP" name="//apple_ref/cpp/Enum/LINE_JOINT_SHARP"></a>LINE_JOINT_SHARP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Makes the polyline's joints pointy, connecting the sides of the two segments by extending them until they intersect. If the rotation of a joint is too big (based on <a class="reference internal" href="#class-line2d-property-sharp-limit"><span class="std std-ref">sharp_limit</span></a>), the joint falls back to <a class="reference internal" href="#class-line2d-constant-line-joint-bevel"><span class="std std-ref">LINE_JOINT_BEVEL</span></a> to prevent very long miters.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-joint-bevel"><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_JOINT_BEVEL" name="//apple_ref/cpp/Enum/LINE_JOINT_BEVEL"></a>LINE_JOINT_BEVEL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Makes the polyline's joints bevelled/chamfered, connecting the sides of the two segments with a simple line.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-joint-round"><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_JOINT_ROUND" name="//apple_ref/cpp/Enum/LINE_JOINT_ROUND"></a>LINE_JOINT_ROUND</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Makes the polyline's joints rounded, connecting the sides of the two segments with an arc. The detail of this arc depends on <a class="reference internal" href="#class-line2d-property-round-precision"><span class="std std-ref">round_precision</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-line2d-linecapmode">enum <strong><a class="dashAnchor" id="enumerations-LineCapMode" name="//apple_ref/cpp/Enum/LineCapMode"></a>LineCapMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-cap-none"><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_CAP_NONE" name="//apple_ref/cpp/Enum/LINE_CAP_NONE"></a>LINE_CAP_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Draws no line cap.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-cap-box"><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_CAP_BOX" name="//apple_ref/cpp/Enum/LINE_CAP_BOX"></a>LINE_CAP_BOX</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Draws the line cap as a box, slightly extending the first/last segment.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-cap-round"><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_CAP_ROUND" name="//apple_ref/cpp/Enum/LINE_CAP_ROUND"></a>LINE_CAP_ROUND</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Draws the line cap as a semicircle attached to the first/last segment.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-line2d-linetexturemode">enum <strong><a class="dashAnchor" id="enumerations-LineTextureMode" name="//apple_ref/cpp/Enum/LineTextureMode"></a>LineTextureMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-texture-none"><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_TEXTURE_NONE" name="//apple_ref/cpp/Enum/LINE_TEXTURE_NONE"></a>LINE_TEXTURE_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Takes the left pixels of the texture and renders them over the whole polyline.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-texture-tile"><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_TEXTURE_TILE" name="//apple_ref/cpp/Enum/LINE_TEXTURE_TILE"></a>LINE_TEXTURE_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Tiles the texture over the polyline. <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-texture-repeat"><span class="std std-ref">CanvasItem.texture_repeat</span></a> of the <strong><a class="dashAnchor" id="enumerations-Line2D" name="//apple_ref/cpp/Enum/Line2D"></a>Line2D</strong> node must be <a class="reference internal" href="class_canvasitem.html#class-canvasitem-constant-texture-repeat-enabled"><span class="std std-ref">CanvasItem.TEXTURE_REPEAT_ENABLED</span></a> or <a class="reference internal" href="class_canvasitem.html#class-canvasitem-constant-texture-repeat-mirror"><span class="std std-ref">CanvasItem.TEXTURE_REPEAT_MIRROR</span></a> for it to work properly.</p>
+<p class="classref-enumeration-constant" id="class-line2d-constant-line-texture-stretch"><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> <strong><a class="dashAnchor" id="enumerations-LINE_TEXTURE_STRETCH" name="//apple_ref/cpp/Enum/LINE_TEXTURE_STRETCH"></a>LINE_TEXTURE_STRETCH</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Stretches the texture across the polyline. <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-texture-repeat"><span class="std std-ref">CanvasItem.texture_repeat</span></a> of the <strong><a class="dashAnchor" id="enumerations-Line2D" name="//apple_ref/cpp/Enum/Line2D"></a>Line2D</strong> node must be <a class="reference internal" href="class_canvasitem.html#class-canvasitem-constant-texture-repeat-disabled"><span class="std std-ref">CanvasItem.TEXTURE_REPEAT_DISABLED</span></a> for best results.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-line2d-property-antialiased"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>antialiased</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_antialiased" name="//apple_ref/cpp/Property/set_antialiased"></a>set_antialiased</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_antialiased" name="//apple_ref/cpp/Property/get_antialiased"></a>get_antialiased</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the polyline's border will be anti-aliased.</p>
+<p><strong>Note:</strong> <strong>Line2D</strong> is not accelerated by batching when being anti-aliased.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-begin-cap-mode"><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong>begin_cap_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_begin_cap_mode" name="//apple_ref/cpp/Property/set_begin_cap_mode"></a>set_begin_cap_mode</strong>(value: <a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong><a class="dashAnchor" id="properties-get_begin_cap_mode" name="//apple_ref/cpp/Property/get_begin_cap_mode"></a>get_begin_cap_mode</strong>()</p></li>
+</ul>
+<p>The style of the beginning of the polyline, if <a class="reference internal" href="#class-line2d-property-closed"><span class="std std-ref">closed</span></a> is <code class="docutils literal notranslate"><span class="pre">false</span></code>. Use <a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-closed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>closed</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_closed" name="//apple_ref/cpp/Property/set_closed"></a>set_closed</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_closed" name="//apple_ref/cpp/Property/is_closed"></a>is_closed</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code> and the polyline has more than 2 points, the last point and the first one will be connected by a segment.</p>
+<p><strong>Note:</strong> The shape of the closing segment is not guaranteed to be seamless if a <a class="reference internal" href="#class-line2d-property-width-curve"><span class="std std-ref">width_curve</span></a> is provided.</p>
+<p><strong>Note:</strong> The joint between the closing segment and the first segment is drawn first and it samples the <a class="reference internal" href="#class-line2d-property-gradient"><span class="std std-ref">gradient</span></a> and the <a class="reference internal" href="#class-line2d-property-width-curve"><span class="std std-ref">width_curve</span></a> at the beginning. This is an implementation detail that might change in a future version.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-default-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>default_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_default_color" name="//apple_ref/cpp/Property/set_default_color"></a>set_default_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_default_color" name="//apple_ref/cpp/Property/get_default_color"></a>get_default_color</strong>()</p></li>
+</ul>
+<p>The color of the polyline. Will not be used if a gradient is set.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-end-cap-mode"><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong>end_cap_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_end_cap_mode" name="//apple_ref/cpp/Property/set_end_cap_mode"></a>set_end_cap_mode</strong>(value: <a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> <strong><a class="dashAnchor" id="properties-get_end_cap_mode" name="//apple_ref/cpp/Property/get_end_cap_mode"></a>get_end_cap_mode</strong>()</p></li>
+</ul>
+<p>The style of the end of the polyline, if <a class="reference internal" href="#class-line2d-property-closed"><span class="std std-ref">closed</span></a> is <code class="docutils literal notranslate"><span class="pre">false</span></code>. Use <a class="reference internal" href="#enum-line2d-linecapmode"><span class="std std-ref">LineCapMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-gradient"><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong>gradient</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_gradient" name="//apple_ref/cpp/Property/set_gradient"></a>set_gradient</strong>(value: <a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong><a class="dashAnchor" id="properties-get_gradient" name="//apple_ref/cpp/Property/get_gradient"></a>get_gradient</strong>()</p></li>
+</ul>
+<p>The gradient is drawn through the whole line from start to finish. The <a class="reference internal" href="#class-line2d-property-default-color"><span class="std std-ref">default_color</span></a> will not be used if this property is set.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-joint-mode"><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> <strong>joint_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_joint_mode" name="//apple_ref/cpp/Property/set_joint_mode"></a>set_joint_mode</strong>(value: <a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> <strong><a class="dashAnchor" id="properties-get_joint_mode" name="//apple_ref/cpp/Property/get_joint_mode"></a>get_joint_mode</strong>()</p></li>
+</ul>
+<p>The style of the connections between segments of the polyline. Use <a class="reference internal" href="#enum-line2d-linejointmode"><span class="std std-ref">LineJointMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-points"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>points</strong> = <code class="docutils literal notranslate"><span class="pre">PackedVector2Array()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_points" name="//apple_ref/cpp/Property/set_points"></a>set_points</strong>(value: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong><a class="dashAnchor" id="properties-get_points" name="//apple_ref/cpp/Property/get_points"></a>get_points</strong>()</p></li>
+</ul>
+<p>The points of the polyline, interpreted in local 2D coordinates. Segments are drawn between the adjacent points in this array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-round-precision"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>round_precision</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_round_precision" name="//apple_ref/cpp/Property/set_round_precision"></a>set_round_precision</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_round_precision" name="//apple_ref/cpp/Property/get_round_precision"></a>get_round_precision</strong>()</p></li>
+</ul>
+<p>The smoothness used for rounded joints and caps. Higher values result in smoother corners, but are more demanding to render and update.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-sharp-limit"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>sharp_limit</strong> = <code class="docutils literal notranslate"><span class="pre">2.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sharp_limit" name="//apple_ref/cpp/Property/set_sharp_limit"></a>set_sharp_limit</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_sharp_limit" name="//apple_ref/cpp/Property/get_sharp_limit"></a>get_sharp_limit</strong>()</p></li>
+</ul>
+<p>Determines the miter limit of the polyline. Normally, when <a class="reference internal" href="#class-line2d-property-joint-mode"><span class="std std-ref">joint_mode</span></a> is set to <a class="reference internal" href="#class-line2d-constant-line-joint-sharp"><span class="std std-ref">LINE_JOINT_SHARP</span></a>, sharp angles fall back to using the logic of <a class="reference internal" href="#class-line2d-constant-line-joint-bevel"><span class="std std-ref">LINE_JOINT_BEVEL</span></a> joints to prevent very long miters. Higher values of this property mean that the fallback to a bevel joint will happen at sharper angles.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-texture"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>texture</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_texture" name="//apple_ref/cpp/Property/set_texture"></a>set_texture</strong>(value: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong><a class="dashAnchor" id="properties-get_texture" name="//apple_ref/cpp/Property/get_texture"></a>get_texture</strong>()</p></li>
+</ul>
+<p>The texture used for the polyline. Uses <a class="reference internal" href="#class-line2d-property-texture-mode"><span class="std std-ref">texture_mode</span></a> for drawing style.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-texture-mode"><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> <strong>texture_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_texture_mode" name="//apple_ref/cpp/Property/set_texture_mode"></a>set_texture_mode</strong>(value: <a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> <strong><a class="dashAnchor" id="properties-get_texture_mode" name="//apple_ref/cpp/Property/get_texture_mode"></a>get_texture_mode</strong>()</p></li>
+</ul>
+<p>The style to render the <a class="reference internal" href="#class-line2d-property-texture"><span class="std std-ref">texture</span></a> of the polyline. Use <a class="reference internal" href="#enum-line2d-linetexturemode"><span class="std std-ref">LineTextureMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-width"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>width</strong> = <code class="docutils literal notranslate"><span class="pre">10.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_width" name="//apple_ref/cpp/Property/set_width"></a>set_width</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_width" name="//apple_ref/cpp/Property/get_width"></a>get_width</strong>()</p></li>
+</ul>
+<p>The polyline's width.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-line2d-property-width-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>width_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_curve" name="//apple_ref/cpp/Property/set_curve"></a>set_curve</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_curve" name="//apple_ref/cpp/Property/get_curve"></a>get_curve</strong>()</p></li>
+</ul>
+<p>The polyline's width curve. The width of the polyline over its length will be equivalent to the value of the width curve over its domain.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-line2d-method-add-point"><abbr title="No return value.">void</abbr> <strong>add_point</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Adds a point with the specified <code class="docutils literal notranslate"><span class="pre">position</span></code> relative to the polyline's own position. If no <code class="docutils literal notranslate"><span class="pre">index</span></code> is provided, the new point will be added to the end of the points array.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">index</span></code> is given, the new point is inserted before the existing point identified by index <code class="docutils literal notranslate"><span class="pre">index</span></code>. The indices of the points after the new point get increased by 1. The provided <code class="docutils literal notranslate"><span class="pre">index</span></code> must not exceed the number of existing points in the polyline. See <a class="reference internal" href="#class-line2d-method-get-point-count"><span class="std std-ref">get_point_count</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-line2d-method-clear-points"><abbr title="No return value.">void</abbr> <strong>clear_points</strong>()</p>
+<p>Removes all points from the polyline, making it empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-line2d-method-get-point-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_point_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of points in the polyline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-line2d-method-get-point-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_point_position</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the position of the point at index <code class="docutils literal notranslate"><span class="pre">index</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-line2d-method-remove-point"><abbr title="No return value.">void</abbr> <strong>remove_point</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the point at index <code class="docutils literal notranslate"><span class="pre">index</span></code> from the polyline.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-line2d-method-set-point-position"><abbr title="No return value.">void</abbr> <strong>set_point_position</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Overwrites the position of the point at the given <code class="docutils literal notranslate"><span class="pre">index</span></code> with the supplied <code class="docutils literal notranslate"><span class="pre">position</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_lightoccluder2d.html" rel="prev" title="LightOccluder2D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_lineedit.html" rel="next" title="LineEdit">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

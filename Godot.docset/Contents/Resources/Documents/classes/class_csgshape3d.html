@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="CSGShape3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_csgshape3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object Inherited By: CSGCombiner3D, CSGPrimitive3D The CSG base class. Description: This is the CSG base class that provides CSG operat..." property="og:description"/>
+<meta content="Inherits: GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object Inherited By: CSGCombiner3D, CSGPrimitive3D The CSG base class. Description: This is the CSG base class that provides CSG operat..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) CSGShape3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgshape3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_csgshape3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_csgshape3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_csgshape3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_csgshape3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_csgshape3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_csgshape3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_csgshape3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_csgshape3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_csgshape3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_csgshape3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_csgshape3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_csgshape3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_csgshape3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgshape3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_csgshape3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_csgsphere3d.html" rel="next" title="CSGSphere3D"/>
+<link href="class_csgprimitive3d.html" rel="prev" title="CSGPrimitive3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_csgshape3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">CSGShape3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="csgshape3d">
+<span id="class-csgshape3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/CSGShape3D¶"></a>CSGShape3D<a class="headerlink" href="#csgshape3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_geometryinstance3d.html#class-geometryinstance3d"><span class="std std-ref">GeometryInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_csgcombiner3d.html#class-csgcombiner3d"><span class="std std-ref">CSGCombiner3D</span></a>, <a class="reference internal" href="class_csgprimitive3d.html#class-csgprimitive3d"><span class="std std-ref">CSGPrimitive3D</span></a></p>
+<p>The CSG base class.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This is the CSG base class that provides CSG operation support to the various CSG nodes in Godot.</p>
+<p><strong>Note:</strong> CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a> with a <a class="reference internal" href="class_primitivemesh.html#class-primitivemesh"><span class="std std-ref">PrimitiveMesh</span></a>. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/3d/csg_tools.html"><span class="doc">Prototyping levels with CSG</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-calculate-tangents"><span class="std std-ref">calculate_tangents</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-collision-layer"><span class="std std-ref">collision_layer</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-collision-mask"><span class="std std-ref">collision_mask</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-collision-priority"><span class="std std-ref">collision_priority</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-operation"><span class="std std-ref">operation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-snap"><span class="std std-ref">snap</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.001</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-property-use-collision"><span class="std std-ref">use_collision</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-get-collision-layer-value"><span class="std std-ref">get_collision_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-get-collision-mask-value"><span class="std std-ref">get_collision_mask_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-get-meshes"><span class="std std-ref">get_meshes</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-is-root-shape"><span class="std std-ref">is_root_shape</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-set-collision-layer-value"><span class="std std-ref">set_collision_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-csgshape3d-method-set-collision-mask-value"><span class="std std-ref">set_collision_mask_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-csgshape3d-operation">enum <strong><a class="dashAnchor" id="enumerations-Operation" name="//apple_ref/cpp/Enum/Operation"></a>Operation</strong>:</p>
+<p class="classref-enumeration-constant" id="class-csgshape3d-constant-operation-union"><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_UNION" name="//apple_ref/cpp/Enum/OPERATION_UNION"></a>OPERATION_UNION</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Geometry of both primitives is merged, intersecting geometry is removed.</p>
+<p class="classref-enumeration-constant" id="class-csgshape3d-constant-operation-intersection"><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_INTERSECTION" name="//apple_ref/cpp/Enum/OPERATION_INTERSECTION"></a>OPERATION_INTERSECTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Only intersecting geometry remains, the rest is removed.</p>
+<p class="classref-enumeration-constant" id="class-csgshape3d-constant-operation-subtraction"><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_SUBTRACTION" name="//apple_ref/cpp/Enum/OPERATION_SUBTRACTION"></a>OPERATION_SUBTRACTION</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The second shape is subtracted from the first, leaving a dent with its shape.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-csgshape3d-property-calculate-tangents"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>calculate_tangents</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_calculate_tangents" name="//apple_ref/cpp/Property/set_calculate_tangents"></a>set_calculate_tangents</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_calculating_tangents" name="//apple_ref/cpp/Property/is_calculating_tangents"></a>is_calculating_tangents</strong>()</p></li>
+</ul>
+<p>Calculate tangents for the CSG shape which allows the use of normal maps. This is only applied on the root shape, this setting is ignored on any child.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-collision-layer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>collision_layer</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_layer" name="//apple_ref/cpp/Property/set_collision_layer"></a>set_collision_layer</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_collision_layer" name="//apple_ref/cpp/Property/get_collision_layer"></a>get_collision_layer</strong>()</p></li>
+</ul>
+<p>The physics layers this area is in.</p>
+<p>Collidable objects can exist in any of 32 different layers. These layers work like a tagging system, and are not visual. A collidable can use these layers to select with which objects it can collide, using the collision_mask property.</p>
+<p>A contact is detected if object A is in any of the layers that object B scans, or object B is in any layer scanned by object A. See <a class="reference external" href="../tutorials/physics/physics_introduction.html#collision-layers-and-masks">Collision layers and masks</a> in the documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-collision-mask"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>collision_mask</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_mask" name="//apple_ref/cpp/Property/set_collision_mask"></a>set_collision_mask</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_collision_mask" name="//apple_ref/cpp/Property/get_collision_mask"></a>get_collision_mask</strong>()</p></li>
+</ul>
+<p>The physics layers this CSG shape scans for collisions. Only effective if <a class="reference internal" href="#class-csgshape3d-property-use-collision"><span class="std std-ref">use_collision</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>. See <a class="reference external" href="../tutorials/physics/physics_introduction.html#collision-layers-and-masks">Collision layers and masks</a> in the documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-collision-priority"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>collision_priority</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_priority" name="//apple_ref/cpp/Property/set_collision_priority"></a>set_collision_priority</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_collision_priority" name="//apple_ref/cpp/Property/get_collision_priority"></a>get_collision_priority</strong>()</p></li>
+</ul>
+<p>The priority used to solve colliding when occurring penetration. Only effective if <a class="reference internal" href="#class-csgshape3d-property-use-collision"><span class="std std-ref">use_collision</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-operation"><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a> <strong>operation</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_operation" name="//apple_ref/cpp/Property/set_operation"></a>set_operation</strong>(value: <a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-csgshape3d-operation"><span class="std std-ref">Operation</span></a> <strong><a class="dashAnchor" id="properties-get_operation" name="//apple_ref/cpp/Property/get_operation"></a>get_operation</strong>()</p></li>
+</ul>
+<p>The operation that is performed on this shape. This is ignored for the first CSG child node as the operation is between this node and the previous child of this nodes parent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-snap"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>snap</strong> = <code class="docutils literal notranslate"><span class="pre">0.001</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_snap" name="//apple_ref/cpp/Property/set_snap"></a>set_snap</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_snap" name="//apple_ref/cpp/Property/get_snap"></a>get_snap</strong>()</p></li>
+</ul>
+<p>Snap makes the mesh vertices snap to a given distance so that the faces of two meshes can be perfectly aligned. A lower value results in greater precision but may be harder to adjust.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-csgshape3d-property-use-collision"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>use_collision</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_collision" name="//apple_ref/cpp/Property/set_use_collision"></a>set_use_collision</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_using_collision" name="//apple_ref/cpp/Property/is_using_collision"></a>is_using_collision</strong>()</p></li>
+</ul>
+<p>Adds a collision shape to the physics engine for our CSG shape. This will always act like a static body. Note that the collision shape is still active even if the CSG shape itself is hidden. See also <a class="reference internal" href="#class-csgshape3d-property-collision-mask"><span class="std std-ref">collision_mask</span></a> and <a class="reference internal" href="#class-csgshape3d-property-collision-priority"><span class="std std-ref">collision_priority</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-csgshape3d-method-get-collision-layer-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_collision_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether or not the specified layer of the <a class="reference internal" href="#class-csgshape3d-property-collision-layer"><span class="std std-ref">collision_layer</span></a> is enabled, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-csgshape3d-method-get-collision-mask-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_collision_mask_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether or not the specified layer of the <a class="reference internal" href="#class-csgshape3d-property-collision-mask"><span class="std std-ref">collision_mask</span></a> is enabled, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-csgshape3d-method-get-meshes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_meshes</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> with two elements, the first is the <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> of this node and the second is the root <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> of this node. Only works when this node is the root shape.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-csgshape3d-method-is-root-shape"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_root_shape</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is a root shape and is thus the object that is rendered.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-csgshape3d-method-set-collision-layer-value"><abbr title="No return value.">void</abbr> <strong>set_collision_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Based on <code class="docutils literal notranslate"><span class="pre">value</span></code>, enables or disables the specified layer in the <a class="reference internal" href="#class-csgshape3d-property-collision-layer"><span class="std std-ref">collision_layer</span></a>, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-csgshape3d-method-set-collision-mask-value"><abbr title="No return value.">void</abbr> <strong>set_collision_mask_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Based on <code class="docutils literal notranslate"><span class="pre">value</span></code>, enables or disables the specified layer in the <a class="reference internal" href="#class-csgshape3d-property-collision-mask"><span class="std std-ref">collision_mask</span></a>, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_csgprimitive3d.html" rel="prev" title="CSGPrimitive3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_csgsphere3d.html" rel="next" title="CSGSphere3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

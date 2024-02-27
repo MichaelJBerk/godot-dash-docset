@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="CPUParticles3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_cpuparticles3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object A CPU-based 3D particle emitter. Description: CPU-based 3D particle node used to create a variety of particle systems and effect..." property="og:description"/>
+<meta content="Inherits: GeometryInstance3D&lt; VisualInstance3D&lt; Node3D&lt; Node&lt; Object A CPU-based 3D particle emitter. Description: CPU-based 3D particle node used to create a variety of particle systems and effect..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) CPUParticles3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_cpuparticles3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_cpuparticles3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_cpuparticles3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_cpuparticles3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_cpuparticles3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_cpuparticles3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_cpuparticles3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_cpuparticles3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_cpuparticles3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_cpuparticles3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_cpuparticles3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_cpuparticles3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_cpuparticles3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_cpuparticles3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_cpuparticles3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_cpuparticles3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_csgbox3d.html" rel="next" title="CSGBox3D"/>
+<link href="class_cpuparticles2d.html" rel="prev" title="CPUParticles2D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_cpuparticles3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">CPUParticles3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="cpuparticles3d">
+<span id="class-cpuparticles3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/CPUParticles3D¶"></a>CPUParticles3D<a class="headerlink" href="#cpuparticles3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_geometryinstance3d.html#class-geometryinstance3d"><span class="std std-ref">GeometryInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A CPU-based 3D particle emitter.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>CPU-based 3D particle node used to create a variety of particle systems and effects.</p>
+<p>See also <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a>, which provides the same functionality with hardware acceleration, but may not run on older devices.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/3d/particles/index.html"><span class="doc">Particle systems (3D)</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-amount"><span class="std std-ref">amount</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angle-curve"><span class="std std-ref">angle_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angle-max"><span class="std std-ref">angle_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angle-min"><span class="std std-ref">angle_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angular-velocity-curve"><span class="std std-ref">angular_velocity_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angular-velocity-max"><span class="std std-ref">angular_velocity_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-angular-velocity-min"><span class="std std-ref">angular_velocity_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-offset-curve"><span class="std std-ref">anim_offset_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-offset-max"><span class="std std-ref">anim_offset_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-offset-min"><span class="std std-ref">anim_offset_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-speed-curve"><span class="std std-ref">anim_speed_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-speed-max"><span class="std std-ref">anim_speed_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-anim-speed-min"><span class="std std-ref">anim_speed_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-color"><span class="std std-ref">color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-color-initial-ramp"><span class="std std-ref">color_initial_ramp</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-color-ramp"><span class="std std-ref">color_ramp</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-damping-curve"><span class="std std-ref">damping_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-damping-max"><span class="std std-ref">damping_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-damping-min"><span class="std std-ref">damping_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-direction"><span class="std std-ref">direction</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-draw-order"><span class="std std-ref">draw_order</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-box-extents"><span class="std std-ref">emission_box_extents</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-colors"><span class="std std-ref">emission_colors</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedColorArray()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-normals"><span class="std std-ref">emission_normals</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-points"><span class="std std-ref">emission_points</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-ring-axis"><span class="std std-ref">emission_ring_axis</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-ring-height"><span class="std std-ref">emission_ring_height</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-ring-inner-radius"><span class="std std-ref">emission_ring_inner_radius</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-ring-radius"><span class="std std-ref">emission_ring_radius</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-shape"><span class="std std-ref">emission_shape</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emission-sphere-radius"><span class="std std-ref">emission_sphere_radius</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-emitting"><span class="std std-ref">emitting</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-explosiveness"><span class="std std-ref">explosiveness</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-fixed-fps"><span class="std std-ref">fixed_fps</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-flatness"><span class="std std-ref">flatness</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-fract-delta"><span class="std std-ref">fract_delta</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-gravity"><span class="std std-ref">gravity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">-9.8,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-hue-variation-curve"><span class="std std-ref">hue_variation_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-hue-variation-max"><span class="std std-ref">hue_variation_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-hue-variation-min"><span class="std std-ref">hue_variation_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-initial-velocity-max"><span class="std std-ref">initial_velocity_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-initial-velocity-min"><span class="std std-ref">initial_velocity_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-lifetime"><span class="std std-ref">lifetime</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-lifetime-randomness"><span class="std std-ref">lifetime_randomness</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-linear-accel-curve"><span class="std std-ref">linear_accel_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-linear-accel-max"><span class="std std-ref">linear_accel_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-linear-accel-min"><span class="std std-ref">linear_accel_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-local-coords"><span class="std std-ref">local_coords</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-mesh"><span class="std std-ref">mesh</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-one-shot"><span class="std std-ref">one_shot</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-orbit-velocity-curve"><span class="std std-ref">orbit_velocity_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-orbit-velocity-max"><span class="std std-ref">orbit_velocity_max</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-orbit-velocity-min"><span class="std std-ref">orbit_velocity_min</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-align-y"><span class="std std-ref">particle_flag_align_y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-disable-z"><span class="std std-ref">particle_flag_disable_z</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-rotate-y"><span class="std std-ref">particle_flag_rotate_y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-preprocess"><span class="std std-ref">preprocess</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-radial-accel-curve"><span class="std std-ref">radial_accel_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-radial-accel-max"><span class="std std-ref">radial_accel_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-radial-accel-min"><span class="std std-ref">radial_accel_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-randomness"><span class="std std-ref">randomness</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-amount-curve"><span class="std std-ref">scale_amount_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-amount-max"><span class="std std-ref">scale_amount_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-amount-min"><span class="std std-ref">scale_amount_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-curve-x"><span class="std std-ref">scale_curve_x</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-curve-y"><span class="std std-ref">scale_curve_y</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-scale-curve-z"><span class="std std-ref">scale_curve_z</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-speed-scale"><span class="std std-ref">speed_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-split-scale"><span class="std std-ref">split_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-spread"><span class="std std-ref">spread</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">45.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-tangential-accel-curve"><span class="std std-ref">tangential_accel_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-tangential-accel-max"><span class="std std-ref">tangential_accel_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-tangential-accel-min"><span class="std std-ref">tangential_accel_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-property-visibility-aabb"><span class="std std-ref">visibility_aabb</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">AABB(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-convert-from-particles"><span class="std std-ref">convert_from_particles</span></a>(particles: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-get-param-curve"><span class="std std-ref">get_param_curve</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-get-param-max"><span class="std std-ref">get_param_max</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-get-param-min"><span class="std std-ref">get_param_min</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-get-particle-flag"><span class="std std-ref">get_particle_flag</span></a>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-restart"><span class="std std-ref">restart</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-cpuparticles3d-method-set-particle-flag"><span class="std std-ref">set_particle_flag</span></a>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-cpuparticles3d-signal-finished"><strong>finished</strong>()</p>
+<p>Emitted when all active particles have finished processing. When <a class="reference internal" href="#class-cpuparticles3d-property-one-shot"><span class="std std-ref">one_shot</span></a> is disabled, particles will process continuously, so this is never emitted.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-cpuparticles3d-draworder">enum <strong><a class="dashAnchor" id="enumerations-DrawOrder" name="//apple_ref/cpp/Enum/DrawOrder"></a>DrawOrder</strong>:</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-draw-order-index"><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> <strong><a class="dashAnchor" id="enumerations-DRAW_ORDER_INDEX" name="//apple_ref/cpp/Enum/DRAW_ORDER_INDEX"></a>DRAW_ORDER_INDEX</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Particles are drawn in the order emitted.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-draw-order-lifetime"><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> <strong><a class="dashAnchor" id="enumerations-DRAW_ORDER_LIFETIME" name="//apple_ref/cpp/Enum/DRAW_ORDER_LIFETIME"></a>DRAW_ORDER_LIFETIME</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Particles are drawn in order of remaining lifetime. In other words, the particle with the highest lifetime is drawn at the front.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-draw-order-view-depth"><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> <strong><a class="dashAnchor" id="enumerations-DRAW_ORDER_VIEW_DEPTH" name="//apple_ref/cpp/Enum/DRAW_ORDER_VIEW_DEPTH"></a>DRAW_ORDER_VIEW_DEPTH</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Particles are drawn in order of depth.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-cpuparticles3d-parameter">enum <strong><a class="dashAnchor" id="enumerations-Parameter" name="//apple_ref/cpp/Enum/Parameter"></a>Parameter</strong>:</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-initial-linear-velocity"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_INITIAL_LINEAR_VELOCITY" name="//apple_ref/cpp/Enum/PARAM_INITIAL_LINEAR_VELOCITY"></a>PARAM_INITIAL_LINEAR_VELOCITY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set initial velocity properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-angular-velocity"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_ANGULAR_VELOCITY" name="//apple_ref/cpp/Enum/PARAM_ANGULAR_VELOCITY"></a>PARAM_ANGULAR_VELOCITY</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set angular velocity properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-orbit-velocity"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_ORBIT_VELOCITY" name="//apple_ref/cpp/Enum/PARAM_ORBIT_VELOCITY"></a>PARAM_ORBIT_VELOCITY</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set orbital velocity properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-linear-accel"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_LINEAR_ACCEL" name="//apple_ref/cpp/Enum/PARAM_LINEAR_ACCEL"></a>PARAM_LINEAR_ACCEL</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set linear acceleration properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-radial-accel"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_RADIAL_ACCEL" name="//apple_ref/cpp/Enum/PARAM_RADIAL_ACCEL"></a>PARAM_RADIAL_ACCEL</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set radial acceleration properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-tangential-accel"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_TANGENTIAL_ACCEL" name="//apple_ref/cpp/Enum/PARAM_TANGENTIAL_ACCEL"></a>PARAM_TANGENTIAL_ACCEL</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set tangential acceleration properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-damping"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_DAMPING" name="//apple_ref/cpp/Enum/PARAM_DAMPING"></a>PARAM_DAMPING</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set damping properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-angle"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_ANGLE" name="//apple_ref/cpp/Enum/PARAM_ANGLE"></a>PARAM_ANGLE</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set angle properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-scale"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_SCALE" name="//apple_ref/cpp/Enum/PARAM_SCALE"></a>PARAM_SCALE</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set scale properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-hue-variation"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_HUE_VARIATION" name="//apple_ref/cpp/Enum/PARAM_HUE_VARIATION"></a>PARAM_HUE_VARIATION</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set hue variation properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-anim-speed"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_ANIM_SPEED" name="//apple_ref/cpp/Enum/PARAM_ANIM_SPEED"></a>PARAM_ANIM_SPEED</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set animation speed properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-anim-offset"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_ANIM_OFFSET" name="//apple_ref/cpp/Enum/PARAM_ANIM_OFFSET"></a>PARAM_ANIM_OFFSET</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-param-min"><span class="std std-ref">set_param_min</span></a>, <a class="reference internal" href="#class-cpuparticles3d-method-set-param-max"><span class="std std-ref">set_param_max</span></a>, and <a class="reference internal" href="#class-cpuparticles3d-method-set-param-curve"><span class="std std-ref">set_param_curve</span></a> to set animation offset properties.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-param-max"><a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> <strong><a class="dashAnchor" id="enumerations-PARAM_MAX" name="//apple_ref/cpp/Enum/PARAM_MAX"></a>PARAM_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-cpuparticles3d-particleflags">enum <strong><a class="dashAnchor" id="enumerations-ParticleFlags" name="//apple_ref/cpp/Enum/ParticleFlags"></a>ParticleFlags</strong>:</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-particle-flag-align-y-to-velocity"><a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> <strong><a class="dashAnchor" id="enumerations-PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY" name="//apple_ref/cpp/Enum/PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY"></a>PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-particle-flag"><span class="std std-ref">set_particle_flag</span></a> to set <a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-align-y"><span class="std std-ref">particle_flag_align_y</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-particle-flag-rotate-y"><a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> <strong><a class="dashAnchor" id="enumerations-PARTICLE_FLAG_ROTATE_Y" name="//apple_ref/cpp/Enum/PARTICLE_FLAG_ROTATE_Y"></a>PARTICLE_FLAG_ROTATE_Y</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-particle-flag"><span class="std std-ref">set_particle_flag</span></a> to set <a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-rotate-y"><span class="std std-ref">particle_flag_rotate_y</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-particle-flag-disable-z"><a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> <strong><a class="dashAnchor" id="enumerations-PARTICLE_FLAG_DISABLE_Z" name="//apple_ref/cpp/Enum/PARTICLE_FLAG_DISABLE_Z"></a>PARTICLE_FLAG_DISABLE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Use with <a class="reference internal" href="#class-cpuparticles3d-method-set-particle-flag"><span class="std std-ref">set_particle_flag</span></a> to set <a class="reference internal" href="#class-cpuparticles3d-property-particle-flag-disable-z"><span class="std std-ref">particle_flag_disable_z</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-particle-flag-max"><a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> <strong><a class="dashAnchor" id="enumerations-PARTICLE_FLAG_MAX" name="//apple_ref/cpp/Enum/PARTICLE_FLAG_MAX"></a>PARTICLE_FLAG_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-cpuparticles3d-emissionshape">enum <strong><a class="dashAnchor" id="enumerations-EmissionShape" name="//apple_ref/cpp/Enum/EmissionShape"></a>EmissionShape</strong>:</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-point"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_POINT" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_POINT"></a>EMISSION_SHAPE_POINT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>All particles will be emitted from a single point.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-sphere"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_SPHERE" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_SPHERE"></a>EMISSION_SHAPE_SPHERE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Particles will be emitted in the volume of a sphere.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-sphere-surface"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_SPHERE_SURFACE" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_SPHERE_SURFACE"></a>EMISSION_SHAPE_SPHERE_SURFACE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Particles will be emitted on the surface of a sphere.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-box"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_BOX" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_BOX"></a>EMISSION_SHAPE_BOX</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Particles will be emitted in the volume of a box.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-points"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_POINTS" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_POINTS"></a>EMISSION_SHAPE_POINTS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Particles will be emitted at a position chosen randomly among <a class="reference internal" href="#class-cpuparticles3d-property-emission-points"><span class="std std-ref">emission_points</span></a>. Particle color will be modulated by <a class="reference internal" href="#class-cpuparticles3d-property-emission-colors"><span class="std std-ref">emission_colors</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-directed-points"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_DIRECTED_POINTS" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_DIRECTED_POINTS"></a>EMISSION_SHAPE_DIRECTED_POINTS</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Particles will be emitted at a position chosen randomly among <a class="reference internal" href="#class-cpuparticles3d-property-emission-points"><span class="std std-ref">emission_points</span></a>. Particle velocity and rotation will be set based on <a class="reference internal" href="#class-cpuparticles3d-property-emission-normals"><span class="std std-ref">emission_normals</span></a>. Particle color will be modulated by <a class="reference internal" href="#class-cpuparticles3d-property-emission-colors"><span class="std std-ref">emission_colors</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-ring"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_RING" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_RING"></a>EMISSION_SHAPE_RING</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Particles will be emitted in a ring or cylinder.</p>
+<p class="classref-enumeration-constant" id="class-cpuparticles3d-constant-emission-shape-max"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="enumerations-EMISSION_SHAPE_MAX" name="//apple_ref/cpp/Enum/EMISSION_SHAPE_MAX"></a>EMISSION_SHAPE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> enum.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-cpuparticles3d-property-amount"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>amount</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_amount" name="//apple_ref/cpp/Property/set_amount"></a>set_amount</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_amount" name="//apple_ref/cpp/Property/get_amount"></a>get_amount</strong>()</p></li>
+</ul>
+<p>Number of particles emitted in one emission cycle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angle-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>angle_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's rotation will be animated along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angle-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>angle_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum angle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angle-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>angle_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum angle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angular-velocity-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>angular_velocity_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's angular velocity (rotation speed) will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> over its lifetime.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angular-velocity-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>angular_velocity_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum initial angular velocity (rotation speed) applied to each particle in <em>degrees</em> per second.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-angular-velocity-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>angular_velocity_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum initial angular velocity (rotation speed) applied to each particle in <em>degrees</em> per second.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-offset-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>anim_offset_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's animation offset will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-offset-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>anim_offset_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum animation offset.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-offset-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>anim_offset_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum animation offset.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-speed-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>anim_speed_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's animation speed will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-speed-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>anim_speed_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum particle animation speed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-anim-speed-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>anim_speed_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum particle animation speed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color" name="//apple_ref/cpp/Property/set_color"></a>set_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_color" name="//apple_ref/cpp/Property/get_color"></a>get_color</strong>()</p></li>
+</ul>
+<p>Each particle's initial color.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-cpuparticles3d-property-color"><span class="std std-ref">color</span></a> multiplies the particle mesh's vertex colors. To have a visible effect on a <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d"><span class="std std-ref">BaseMaterial3D</span></a>, <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d-property-vertex-color-use-as-albedo"><span class="std std-ref">BaseMaterial3D.vertex_color_use_as_albedo</span></a> <em>must</em> be <code class="docutils literal notranslate"><span class="pre">true</span></code>. For a <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial"><span class="std std-ref">ShaderMaterial</span></a>, <code class="docutils literal notranslate"><span class="pre">ALBEDO</span> <span class="pre">*=</span> <span class="pre">COLOR.rgb;</span></code> must be inserted in the shader's <code class="docutils literal notranslate"><span class="pre">fragment()</span></code> function. Otherwise, <a class="reference internal" href="#class-cpuparticles3d-property-color"><span class="std std-ref">color</span></a> will have no visible effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-color-initial-ramp"><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong>color_initial_ramp</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color_initial_ramp" name="//apple_ref/cpp/Property/set_color_initial_ramp"></a>set_color_initial_ramp</strong>(value: <a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong><a class="dashAnchor" id="properties-get_color_initial_ramp" name="//apple_ref/cpp/Property/get_color_initial_ramp"></a>get_color_initial_ramp</strong>()</p></li>
+</ul>
+<p>Each particle's initial color will vary along this <a class="reference internal" href="class_gradienttexture1d.html#class-gradienttexture1d"><span class="std std-ref">GradientTexture1D</span></a> (multiplied with <a class="reference internal" href="#class-cpuparticles3d-property-color"><span class="std std-ref">color</span></a>).</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-cpuparticles3d-property-color-initial-ramp"><span class="std std-ref">color_initial_ramp</span></a> multiplies the particle mesh's vertex colors. To have a visible effect on a <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d"><span class="std std-ref">BaseMaterial3D</span></a>, <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d-property-vertex-color-use-as-albedo"><span class="std std-ref">BaseMaterial3D.vertex_color_use_as_albedo</span></a> <em>must</em> be <code class="docutils literal notranslate"><span class="pre">true</span></code>. For a <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial"><span class="std std-ref">ShaderMaterial</span></a>, <code class="docutils literal notranslate"><span class="pre">ALBEDO</span> <span class="pre">*=</span> <span class="pre">COLOR.rgb;</span></code> must be inserted in the shader's <code class="docutils literal notranslate"><span class="pre">fragment()</span></code> function. Otherwise, <a class="reference internal" href="#class-cpuparticles3d-property-color-initial-ramp"><span class="std std-ref">color_initial_ramp</span></a> will have no visible effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-color-ramp"><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong>color_ramp</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color_ramp" name="//apple_ref/cpp/Property/set_color_ramp"></a>set_color_ramp</strong>(value: <a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a> <strong><a class="dashAnchor" id="properties-get_color_ramp" name="//apple_ref/cpp/Property/get_color_ramp"></a>get_color_ramp</strong>()</p></li>
+</ul>
+<p>Each particle's color will vary along this <a class="reference internal" href="class_gradienttexture1d.html#class-gradienttexture1d"><span class="std std-ref">GradientTexture1D</span></a> over its lifetime (multiplied with <a class="reference internal" href="#class-cpuparticles3d-property-color"><span class="std std-ref">color</span></a>).</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-cpuparticles3d-property-color-ramp"><span class="std std-ref">color_ramp</span></a> multiplies the particle mesh's vertex colors. To have a visible effect on a <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d"><span class="std std-ref">BaseMaterial3D</span></a>, <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d-property-vertex-color-use-as-albedo"><span class="std std-ref">BaseMaterial3D.vertex_color_use_as_albedo</span></a> <em>must</em> be <code class="docutils literal notranslate"><span class="pre">true</span></code>. For a <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial"><span class="std std-ref">ShaderMaterial</span></a>, <code class="docutils literal notranslate"><span class="pre">ALBEDO</span> <span class="pre">*=</span> <span class="pre">COLOR.rgb;</span></code> must be inserted in the shader's <code class="docutils literal notranslate"><span class="pre">fragment()</span></code> function. Otherwise, <a class="reference internal" href="#class-cpuparticles3d-property-color-ramp"><span class="std std-ref">color_ramp</span></a> will have no visible effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-damping-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>damping_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Damping will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-damping-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>damping_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum damping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-damping-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>damping_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum damping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-direction"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>direction</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_direction" name="//apple_ref/cpp/Property/set_direction"></a>set_direction</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_direction" name="//apple_ref/cpp/Property/get_direction"></a>get_direction</strong>()</p></li>
+</ul>
+<p>Unit vector specifying the particles' emission direction.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-draw-order"><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> <strong>draw_order</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_draw_order" name="//apple_ref/cpp/Property/set_draw_order"></a>set_draw_order</strong>(value: <a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> <strong><a class="dashAnchor" id="properties-get_draw_order" name="//apple_ref/cpp/Property/get_draw_order"></a>get_draw_order</strong>()</p></li>
+</ul>
+<p>Particle draw order. Uses <a class="reference internal" href="#enum-cpuparticles3d-draworder"><span class="std std-ref">DrawOrder</span></a> values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-box-extents"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>emission_box_extents</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_box_extents" name="//apple_ref/cpp/Property/set_emission_box_extents"></a>set_emission_box_extents</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_emission_box_extents" name="//apple_ref/cpp/Property/get_emission_box_extents"></a>get_emission_box_extents</strong>()</p></li>
+</ul>
+<p>The rectangle's extents if <a class="reference internal" href="#class-cpuparticles3d-property-emission-shape"><span class="std std-ref">emission_shape</span></a> is set to <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-box"><span class="std std-ref">EMISSION_SHAPE_BOX</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-colors"><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong>emission_colors</strong> = <code class="docutils literal notranslate"><span class="pre">PackedColorArray()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_colors" name="//apple_ref/cpp/Property/set_emission_colors"></a>set_emission_colors</strong>(value: <a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong><a class="dashAnchor" id="properties-get_emission_colors" name="//apple_ref/cpp/Property/get_emission_colors"></a>get_emission_colors</strong>()</p></li>
+</ul>
+<p>Sets the <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>s to modulate particles by when using <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-points"><span class="std std-ref">EMISSION_SHAPE_POINTS</span></a> or <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-directed-points"><span class="std std-ref">EMISSION_SHAPE_DIRECTED_POINTS</span></a>.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-cpuparticles3d-property-emission-colors"><span class="std std-ref">emission_colors</span></a> multiplies the particle mesh's vertex colors. To have a visible effect on a <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d"><span class="std std-ref">BaseMaterial3D</span></a>, <a class="reference internal" href="class_basematerial3d.html#class-basematerial3d-property-vertex-color-use-as-albedo"><span class="std std-ref">BaseMaterial3D.vertex_color_use_as_albedo</span></a> <em>must</em> be <code class="docutils literal notranslate"><span class="pre">true</span></code>. For a <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial"><span class="std std-ref">ShaderMaterial</span></a>, <code class="docutils literal notranslate"><span class="pre">ALBEDO</span> <span class="pre">*=</span> <span class="pre">COLOR.rgb;</span></code> must be inserted in the shader's <code class="docutils literal notranslate"><span class="pre">fragment()</span></code> function. Otherwise, <a class="reference internal" href="#class-cpuparticles3d-property-emission-colors"><span class="std std-ref">emission_colors</span></a> will have no visible effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-normals"><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a> <strong>emission_normals</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_normals" name="//apple_ref/cpp/Property/set_emission_normals"></a>set_emission_normals</strong>(value: <a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a> <strong><a class="dashAnchor" id="properties-get_emission_normals" name="//apple_ref/cpp/Property/get_emission_normals"></a>get_emission_normals</strong>()</p></li>
+</ul>
+<p>Sets the direction the particles will be emitted in when using <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-directed-points"><span class="std std-ref">EMISSION_SHAPE_DIRECTED_POINTS</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-points"><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a> <strong>emission_points</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_points" name="//apple_ref/cpp/Property/set_emission_points"></a>set_emission_points</strong>(value: <a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedvector3array.html#class-packedvector3array"><span class="std std-ref">PackedVector3Array</span></a> <strong><a class="dashAnchor" id="properties-get_emission_points" name="//apple_ref/cpp/Property/get_emission_points"></a>get_emission_points</strong>()</p></li>
+</ul>
+<p>Sets the initial positions to spawn particles when using <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-points"><span class="std std-ref">EMISSION_SHAPE_POINTS</span></a> or <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-directed-points"><span class="std std-ref">EMISSION_SHAPE_DIRECTED_POINTS</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-ring-axis"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>emission_ring_axis</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_ring_axis" name="//apple_ref/cpp/Property/set_emission_ring_axis"></a>set_emission_ring_axis</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_emission_ring_axis" name="//apple_ref/cpp/Property/get_emission_ring_axis"></a>get_emission_ring_axis</strong>()</p></li>
+</ul>
+<p>The axis of the ring when using the emitter <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-ring"><span class="std std-ref">EMISSION_SHAPE_RING</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-ring-height"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>emission_ring_height</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_ring_height" name="//apple_ref/cpp/Property/set_emission_ring_height"></a>set_emission_ring_height</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_emission_ring_height" name="//apple_ref/cpp/Property/get_emission_ring_height"></a>get_emission_ring_height</strong>()</p></li>
+</ul>
+<p>The height of the ring when using the emitter <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-ring"><span class="std std-ref">EMISSION_SHAPE_RING</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-ring-inner-radius"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>emission_ring_inner_radius</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_ring_inner_radius" name="//apple_ref/cpp/Property/set_emission_ring_inner_radius"></a>set_emission_ring_inner_radius</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_emission_ring_inner_radius" name="//apple_ref/cpp/Property/get_emission_ring_inner_radius"></a>get_emission_ring_inner_radius</strong>()</p></li>
+</ul>
+<p>The inner radius of the ring when using the emitter <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-ring"><span class="std std-ref">EMISSION_SHAPE_RING</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-ring-radius"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>emission_ring_radius</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_ring_radius" name="//apple_ref/cpp/Property/set_emission_ring_radius"></a>set_emission_ring_radius</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_emission_ring_radius" name="//apple_ref/cpp/Property/get_emission_ring_radius"></a>get_emission_ring_radius</strong>()</p></li>
+</ul>
+<p>The radius of the ring when using the emitter <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-ring"><span class="std std-ref">EMISSION_SHAPE_RING</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-shape"><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong>emission_shape</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_shape" name="//apple_ref/cpp/Property/set_emission_shape"></a>set_emission_shape</strong>(value: <a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> <strong><a class="dashAnchor" id="properties-get_emission_shape" name="//apple_ref/cpp/Property/get_emission_shape"></a>get_emission_shape</strong>()</p></li>
+</ul>
+<p>Particles will be emitted inside this region. See <a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> for possible values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emission-sphere-radius"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>emission_sphere_radius</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emission_sphere_radius" name="//apple_ref/cpp/Property/set_emission_sphere_radius"></a>set_emission_sphere_radius</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_emission_sphere_radius" name="//apple_ref/cpp/Property/get_emission_sphere_radius"></a>get_emission_sphere_radius</strong>()</p></li>
+</ul>
+<p>The sphere's radius if <a class="reference internal" href="#enum-cpuparticles3d-emissionshape"><span class="std std-ref">EmissionShape</span></a> is set to <a class="reference internal" href="#class-cpuparticles3d-constant-emission-shape-sphere"><span class="std std-ref">EMISSION_SHAPE_SPHERE</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-emitting"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>emitting</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_emitting" name="//apple_ref/cpp/Property/set_emitting"></a>set_emitting</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_emitting" name="//apple_ref/cpp/Property/is_emitting"></a>is_emitting</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, particles are being emitted. <a class="reference internal" href="#class-cpuparticles3d-property-emitting"><span class="std std-ref">emitting</span></a> can be used to start and stop particles from emitting. However, if <a class="reference internal" href="#class-cpuparticles3d-property-one-shot"><span class="std std-ref">one_shot</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code> setting <a class="reference internal" href="#class-cpuparticles3d-property-emitting"><span class="std std-ref">emitting</span></a> to <code class="docutils literal notranslate"><span class="pre">true</span></code> will not restart the emission cycle until after all active particles finish processing. You can use the <a class="reference internal" href="#class-cpuparticles3d-signal-finished"><span class="std std-ref">finished</span></a> signal to be notified once all active particles finish processing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-explosiveness"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>explosiveness</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_explosiveness_ratio" name="//apple_ref/cpp/Property/set_explosiveness_ratio"></a>set_explosiveness_ratio</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_explosiveness_ratio" name="//apple_ref/cpp/Property/get_explosiveness_ratio"></a>get_explosiveness_ratio</strong>()</p></li>
+</ul>
+<p>How rapidly particles in an emission cycle are emitted. If greater than <code class="docutils literal notranslate"><span class="pre">0</span></code>, there will be a gap in emissions before the next cycle begins.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-fixed-fps"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>fixed_fps</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fixed_fps" name="//apple_ref/cpp/Property/set_fixed_fps"></a>set_fixed_fps</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_fixed_fps" name="//apple_ref/cpp/Property/get_fixed_fps"></a>get_fixed_fps</strong>()</p></li>
+</ul>
+<p>The particle system's frame rate is fixed to a value. For example, changing the value to 2 will make the particles render at 2 frames per second. Note this does not slow down the particle system itself.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-flatness"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>flatness</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_flatness" name="//apple_ref/cpp/Property/set_flatness"></a>set_flatness</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_flatness" name="//apple_ref/cpp/Property/get_flatness"></a>get_flatness</strong>()</p></li>
+</ul>
+<p>Amount of <a class="reference internal" href="#class-cpuparticles3d-property-spread"><span class="std std-ref">spread</span></a> in Y/Z plane. A value of <code class="docutils literal notranslate"><span class="pre">1</span></code> restricts particles to X/Z plane.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-fract-delta"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>fract_delta</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractional_delta" name="//apple_ref/cpp/Property/set_fractional_delta"></a>set_fractional_delta</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_fractional_delta" name="//apple_ref/cpp/Property/get_fractional_delta"></a>get_fractional_delta</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, results in fractional delta calculation which has a smoother particles display effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-gravity"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>gravity</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">-9.8,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_gravity" name="//apple_ref/cpp/Property/set_gravity"></a>set_gravity</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_gravity" name="//apple_ref/cpp/Property/get_gravity"></a>get_gravity</strong>()</p></li>
+</ul>
+<p>Gravity applied to every particle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-hue-variation-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>hue_variation_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's hue will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-hue-variation-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>hue_variation_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum hue variation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-hue-variation-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>hue_variation_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum hue variation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-initial-velocity-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>initial_velocity_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum value of the initial velocity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-initial-velocity-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>initial_velocity_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum value of the initial velocity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-lifetime"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>lifetime</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lifetime" name="//apple_ref/cpp/Property/set_lifetime"></a>set_lifetime</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_lifetime" name="//apple_ref/cpp/Property/get_lifetime"></a>get_lifetime</strong>()</p></li>
+</ul>
+<p>Amount of time each particle will exist.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-lifetime-randomness"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>lifetime_randomness</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lifetime_randomness" name="//apple_ref/cpp/Property/set_lifetime_randomness"></a>set_lifetime_randomness</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_lifetime_randomness" name="//apple_ref/cpp/Property/get_lifetime_randomness"></a>get_lifetime_randomness</strong>()</p></li>
+</ul>
+<p>Particle lifetime randomness ratio.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-linear-accel-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>linear_accel_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's linear acceleration will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-linear-accel-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>linear_accel_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum linear acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-linear-accel-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>linear_accel_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum linear acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-local-coords"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>local_coords</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_local_coordinates" name="//apple_ref/cpp/Property/set_use_local_coordinates"></a>set_use_local_coordinates</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_use_local_coordinates" name="//apple_ref/cpp/Property/get_use_local_coordinates"></a>get_use_local_coordinates</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, particles use the parent node's coordinate space (known as local coordinates). This will cause particles to move and rotate along the <strong>CPUParticles3D</strong> node (and its parents) when it is moved or rotated. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, particles use global coordinates; they will not move or rotate along the <strong>CPUParticles3D</strong> node (and its parents) when it is moved or rotated.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-mesh"><a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> <strong>mesh</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mesh" name="//apple_ref/cpp/Property/set_mesh"></a>set_mesh</strong>(value: <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> <strong><a class="dashAnchor" id="properties-get_mesh" name="//apple_ref/cpp/Property/get_mesh"></a>get_mesh</strong>()</p></li>
+</ul>
+<p>The <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> used for each particle. If <code class="docutils literal notranslate"><span class="pre">null</span></code>, particles will be spheres.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-one-shot"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>one_shot</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_one_shot" name="//apple_ref/cpp/Property/set_one_shot"></a>set_one_shot</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_one_shot" name="//apple_ref/cpp/Property/get_one_shot"></a>get_one_shot</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, only one emission cycle occurs. If set <code class="docutils literal notranslate"><span class="pre">true</span></code> during a cycle, emission will stop at the cycle's end.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-orbit-velocity-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>orbit_velocity_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's orbital velocity will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-orbit-velocity-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>orbit_velocity_max</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum orbit velocity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-orbit-velocity-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>orbit_velocity_min</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum orbit velocity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-particle-flag-align-y"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>particle_flag_align_y</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_particle_flag" name="//apple_ref/cpp/Property/set_particle_flag"></a>set_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_particle_flag" name="//apple_ref/cpp/Property/get_particle_flag"></a>get_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Align Y axis of particle with the direction of its velocity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-particle-flag-disable-z"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>particle_flag_disable_z</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_particle_flag" name="//apple_ref/cpp/Property/set_particle_flag"></a>set_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_particle_flag" name="//apple_ref/cpp/Property/get_particle_flag"></a>get_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, particles will not move on the Z axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-particle-flag-rotate-y"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>particle_flag_rotate_y</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_particle_flag" name="//apple_ref/cpp/Property/set_particle_flag"></a>set_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_particle_flag" name="//apple_ref/cpp/Property/get_particle_flag"></a>get_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, particles rotate around Y axis by <a class="reference internal" href="#class-cpuparticles3d-property-angle-min"><span class="std std-ref">angle_min</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-preprocess"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>preprocess</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_pre_process_time" name="//apple_ref/cpp/Property/set_pre_process_time"></a>set_pre_process_time</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_pre_process_time" name="//apple_ref/cpp/Property/get_pre_process_time"></a>get_pre_process_time</strong>()</p></li>
+</ul>
+<p>Particle system starts as if it had already run for this many seconds.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-radial-accel-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>radial_accel_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's radial acceleration will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-radial-accel-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>radial_accel_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum radial acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-radial-accel-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>radial_accel_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum radial acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-randomness"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>randomness</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_randomness_ratio" name="//apple_ref/cpp/Property/set_randomness_ratio"></a>set_randomness_ratio</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_randomness_ratio" name="//apple_ref/cpp/Property/get_randomness_ratio"></a>get_randomness_ratio</strong>()</p></li>
+</ul>
+<p>Emission lifetime randomness ratio.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-amount-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>scale_amount_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's scale will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-amount-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>scale_amount_max</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum scale.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-amount-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>scale_amount_min</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum scale.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-curve-x"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>scale_curve_x</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scale_curve_x" name="//apple_ref/cpp/Property/set_scale_curve_x"></a>set_scale_curve_x</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_scale_curve_x" name="//apple_ref/cpp/Property/get_scale_curve_x"></a>get_scale_curve_x</strong>()</p></li>
+</ul>
+<p>Curve for the scale over life, along the x axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-curve-y"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>scale_curve_y</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scale_curve_y" name="//apple_ref/cpp/Property/set_scale_curve_y"></a>set_scale_curve_y</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_scale_curve_y" name="//apple_ref/cpp/Property/get_scale_curve_y"></a>get_scale_curve_y</strong>()</p></li>
+</ul>
+<p>Curve for the scale over life, along the y axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-scale-curve-z"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>scale_curve_z</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scale_curve_z" name="//apple_ref/cpp/Property/set_scale_curve_z"></a>set_scale_curve_z</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_scale_curve_z" name="//apple_ref/cpp/Property/get_scale_curve_z"></a>get_scale_curve_z</strong>()</p></li>
+</ul>
+<p>Curve for the scale over life, along the z axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-speed-scale"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>speed_scale</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_speed_scale" name="//apple_ref/cpp/Property/set_speed_scale"></a>set_speed_scale</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_speed_scale" name="//apple_ref/cpp/Property/get_speed_scale"></a>get_speed_scale</strong>()</p></li>
+</ul>
+<p>Particle system's running speed scaling ratio. A value of <code class="docutils literal notranslate"><span class="pre">0</span></code> can be used to pause the particles.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-split-scale"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>split_scale</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_split_scale" name="//apple_ref/cpp/Property/set_split_scale"></a>set_split_scale</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_split_scale" name="//apple_ref/cpp/Property/get_split_scale"></a>get_split_scale</strong>()</p></li>
+</ul>
+<p>If set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, three different scale curves can be specified, one per scale axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-spread"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>spread</strong> = <code class="docutils literal notranslate"><span class="pre">45.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_spread" name="//apple_ref/cpp/Property/set_spread"></a>set_spread</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_spread" name="//apple_ref/cpp/Property/get_spread"></a>get_spread</strong>()</p></li>
+</ul>
+<p>Each particle's initial direction range from <code class="docutils literal notranslate"><span class="pre">+spread</span></code> to <code class="docutils literal notranslate"><span class="pre">-spread</span></code> degrees. Applied to X/Z plane and Y/Z planes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-tangential-accel-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>tangential_accel_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_curve" name="//apple_ref/cpp/Property/set_param_curve"></a>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_param_curve" name="//apple_ref/cpp/Property/get_param_curve"></a>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Each particle's tangential acceleration will vary along this <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-tangential-accel-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>tangential_accel_max</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_max" name="//apple_ref/cpp/Property/set_param_max"></a>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_max" name="//apple_ref/cpp/Property/get_param_max"></a>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Maximum tangent acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-tangential-accel-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>tangential_accel_min</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_param_min" name="//apple_ref/cpp/Property/set_param_min"></a>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_param_min" name="//apple_ref/cpp/Property/get_param_min"></a>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></li>
+</ul>
+<p>Minimum tangent acceleration.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-cpuparticles3d-property-visibility-aabb"><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> <strong>visibility_aabb</strong> = <code class="docutils literal notranslate"><span class="pre">AABB(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_aabb" name="//apple_ref/cpp/Property/set_visibility_aabb"></a>set_visibility_aabb</strong>(value: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_aabb" name="//apple_ref/cpp/Property/get_visibility_aabb"></a>get_visibility_aabb</strong>()</p></li>
+</ul>
+<p>The <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> that determines the node's region which needs to be visible on screen for the particle system to be active.</p>
+<p>Grow the box if particles suddenly appear/disappear when the node enters/exits the screen. The <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> can be grown via code or with the <strong>Particles → Generate AABB</strong> editor tool.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-cpuparticles3d-method-convert-from-particles"><abbr title="No return value.">void</abbr> <strong>convert_from_particles</strong>(particles: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p>Sets this node's properties to match a given <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a> node with an assigned <a class="reference internal" href="class_particleprocessmaterial.html#class-particleprocessmaterial"><span class="std std-ref">ParticleProcessMaterial</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-get-param-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>get_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> of the parameter specified by <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-get-param-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the maximum value range for the given parameter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-get-param-min"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the minimum value range for the given parameter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-get-particle-flag"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the enabled state of the given particle flag (see <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> for options).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-restart"><abbr title="No return value.">void</abbr> <strong>restart</strong>()</p>
+<p>Restarts the particle emitter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-set-param-curve"><abbr title="No return value.">void</abbr> <strong>set_param_curve</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, curve: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p>
+<p>Sets the <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> of the parameter specified by <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-set-param-max"><abbr title="No return value.">void</abbr> <strong>set_param_max</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the maximum value for the given parameter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-set-param-min"><abbr title="No return value.">void</abbr> <strong>set_param_min</strong>(param: <a class="reference internal" href="#enum-cpuparticles3d-parameter"><span class="std std-ref">Parameter</span></a>, value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the minimum value for the given parameter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-cpuparticles3d-method-set-particle-flag"><abbr title="No return value.">void</abbr> <strong>set_particle_flag</strong>(particle_flag: <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a>, enable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Enables or disables the given particle flag (see <a class="reference internal" href="#enum-cpuparticles3d-particleflags"><span class="std std-ref">ParticleFlags</span></a> for options).</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_cpuparticles2d.html" rel="prev" title="CPUParticles2D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_csgbox3d.html" rel="next" title="CSGBox3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

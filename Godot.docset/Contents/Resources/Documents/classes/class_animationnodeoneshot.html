@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AnimationNodeOneShot" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_animationnodeoneshot.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: AnimationNodeSync&lt; AnimationNode&lt; Resource&lt; RefCounted&lt; Object Plays an animation once in an AnimationNodeBlendTree. Description: A resource to add to an AnimationNodeBlendTree. This anim..." property="og:description"/>
+<meta content="Inherits: AnimationNodeSync&lt; AnimationNode&lt; Resource&lt; RefCounted&lt; Object Plays an animation once in an AnimationNodeBlendTree. Description: A resource to add to an AnimationNodeBlendTree. This anim..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AnimationNodeOneShot — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeoneshot.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_animationnodeoneshot.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_animationnodeoneshot.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_animationnodeoneshot.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_animationnodeoneshot.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_animationnodeoneshot.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_animationnodeoneshot.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_animationnodeoneshot.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_animationnodeoneshot.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_animationnodeoneshot.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_animationnodeoneshot.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_animationnodeoneshot.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_animationnodeoneshot.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_animationnodeoneshot.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeoneshot.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeoneshot.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_animationnodeoutput.html" rel="next" title="AnimationNodeOutput"/>
+<link href="class_animationnodeblendtree.html" rel="prev" title="AnimationNodeBlendTree"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_animationnodeoneshot" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AnimationNodeOneShot</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="animationnodeoneshot">
+<span id="class-animationnodeoneshot"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AnimationNodeOneShot¶"></a>AnimationNodeOneShot<a class="headerlink" href="#animationnodeoneshot" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_animationnodesync.html#class-animationnodesync"><span class="std std-ref">AnimationNodeSync</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_animationnode.html#class-animationnode"><span class="std std-ref">AnimationNode</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Plays an animation once in an <a class="reference internal" href="class_animationnodeblendtree.html#class-animationnodeblendtree"><span class="std std-ref">AnimationNodeBlendTree</span></a>.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A resource to add to an <a class="reference internal" href="class_animationnodeblendtree.html#class-animationnodeblendtree"><span class="std std-ref">AnimationNodeBlendTree</span></a>. This animation node will execute a sub-animation and return once it finishes. Blend times for fading in and out can be customized, as well as filters.</p>
+<p>After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its <code class="docutils literal notranslate"><span class="pre">request</span></code> value to <a class="reference internal" href="#class-animationnodeoneshot-constant-one-shot-request-none"><span class="std std-ref">ONE_SHOT_REQUEST_NONE</span></a>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># Play child animation connected to "shot" port.</span>
+<span class="n">animation_tree</span><span class="o">.</span><span class="k">set</span><span class="p">(</span><span class="s2">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_FIRE</span><span class="p">)</span>
+<span class="c1"># Alternative syntax (same result as above).</span>
+<span class="n">animation_tree</span><span class="p">[</span><span class="s2">"parameters/OneShot/request"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_FIRE</span>
+
+<span class="c1"># Abort child animation connected to "shot" port.</span>
+<span class="n">animation_tree</span><span class="o">.</span><span class="k">set</span><span class="p">(</span><span class="s2">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_ABORT</span><span class="p">)</span>
+<span class="c1"># Alternative syntax (same result as above).</span>
+<span class="n">animation_tree</span><span class="p">[</span><span class="s2">"parameters/OneShot/request"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_ABORT</span>
+
+<span class="c1"># Abort child animation with fading out connected to "shot" port.</span>
+<span class="n">animation_tree</span><span class="o">.</span><span class="k">set</span><span class="p">(</span><span class="s2">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_FADE_OUT</span><span class="p">)</span>
+<span class="c1"># Alternative syntax (same result as above).</span>
+<span class="n">animation_tree</span><span class="p">[</span><span class="s2">"parameters/OneShot/request"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AnimationNodeOneShot</span><span class="o">.</span><span class="n">ONE_SHOT_REQUEST_FADE_OUT</span>
+
+<span class="c1"># Get current state (read-only).</span>
+<span class="n">animation_tree</span><span class="o">.</span><span class="k">get</span><span class="p">(</span><span class="s2">"parameters/OneShot/active"</span><span class="p">)</span>
+<span class="c1"># Alternative syntax (same result as above).</span>
+<span class="n">animation_tree</span><span class="p">[</span><span class="s2">"parameters/OneShot/active"</span><span class="p">]</span>
+
+<span class="c1"># Get current internal state (read-only).</span>
+<span class="n">animation_tree</span><span class="o">.</span><span class="k">get</span><span class="p">(</span><span class="s2">"parameters/OneShot/internal_active"</span><span class="p">)</span>
+<span class="c1"># Alternative syntax (same result as above).</span>
+<span class="n">animation_tree</span><span class="p">[</span><span class="s2">"parameters/OneShot/internal_active"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Play child animation connected to "shot" port.</span>
+<span class="n">animationTree</span><span class="p">.</span><span class="n">Set</span><span class="p">(</span><span class="s">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">AnimationNodeOneShot</span><span class="p">.</span><span class="n">OneShotRequest</span><span class="p">.</span><span class="n">Fire</span><span class="p">);</span>
+
+<span class="c1">// Abort child animation connected to "shot" port.</span>
+<span class="n">animationTree</span><span class="p">.</span><span class="n">Set</span><span class="p">(</span><span class="s">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">AnimationNodeOneShot</span><span class="p">.</span><span class="n">OneShotRequest</span><span class="p">.</span><span class="n">Abort</span><span class="p">);</span>
+
+<span class="c1">// Abort child animation with fading out connected to "shot" port.</span>
+<span class="n">animationTree</span><span class="p">.</span><span class="n">Set</span><span class="p">(</span><span class="s">"parameters/OneShot/request"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">AnimationNodeOneShot</span><span class="p">.</span><span class="n">OneShotRequest</span><span class="p">.</span><span class="n">FadeOut</span><span class="p">);</span>
+
+<span class="c1">// Get current state (read-only).</span>
+<span class="n">animationTree</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="s">"parameters/OneShot/active"</span><span class="p">);</span>
+
+<span class="c1">// Get current internal state (read-only).</span>
+<span class="n">animationTree</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="s">"parameters/OneShot/internal_active"</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/animation/animation_tree.html"><span class="doc">Using AnimationTree</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/678">Third Person Shooter Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-autorestart"><span class="std std-ref">autorestart</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-autorestart-delay"><span class="std std-ref">autorestart_delay</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-autorestart-random-delay"><span class="std std-ref">autorestart_random_delay</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-fadein-curve"><span class="std std-ref">fadein_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-fadein-time"><span class="std std-ref">fadein_time</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-fadeout-curve"><span class="std std-ref">fadeout_curve</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-fadeout-time"><span class="std std-ref">fadeout_time</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeoneshot-property-mix-mode"><span class="std std-ref">mix_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-animationnodeoneshot-oneshotrequest">enum <strong><a class="dashAnchor" id="enumerations-OneShotRequest" name="//apple_ref/cpp/Enum/OneShotRequest"></a>OneShotRequest</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-one-shot-request-none"><a class="reference internal" href="#enum-animationnodeoneshot-oneshotrequest"><span class="std std-ref">OneShotRequest</span></a> <strong><a class="dashAnchor" id="enumerations-ONE_SHOT_REQUEST_NONE" name="//apple_ref/cpp/Enum/ONE_SHOT_REQUEST_NONE"></a>ONE_SHOT_REQUEST_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The default state of the request. Nothing is done.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-one-shot-request-fire"><a class="reference internal" href="#enum-animationnodeoneshot-oneshotrequest"><span class="std std-ref">OneShotRequest</span></a> <strong><a class="dashAnchor" id="enumerations-ONE_SHOT_REQUEST_FIRE" name="//apple_ref/cpp/Enum/ONE_SHOT_REQUEST_FIRE"></a>ONE_SHOT_REQUEST_FIRE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The request to play the animation connected to "shot" port.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-one-shot-request-abort"><a class="reference internal" href="#enum-animationnodeoneshot-oneshotrequest"><span class="std std-ref">OneShotRequest</span></a> <strong><a class="dashAnchor" id="enumerations-ONE_SHOT_REQUEST_ABORT" name="//apple_ref/cpp/Enum/ONE_SHOT_REQUEST_ABORT"></a>ONE_SHOT_REQUEST_ABORT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The request to stop the animation connected to "shot" port.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-one-shot-request-fade-out"><a class="reference internal" href="#enum-animationnodeoneshot-oneshotrequest"><span class="std std-ref">OneShotRequest</span></a> <strong><a class="dashAnchor" id="enumerations-ONE_SHOT_REQUEST_FADE_OUT" name="//apple_ref/cpp/Enum/ONE_SHOT_REQUEST_FADE_OUT"></a>ONE_SHOT_REQUEST_FADE_OUT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The request to fade out the animation connected to "shot" port.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-animationnodeoneshot-mixmode">enum <strong><a class="dashAnchor" id="enumerations-MixMode" name="//apple_ref/cpp/Enum/MixMode"></a>MixMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-mix-mode-blend"><a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a> <strong><a class="dashAnchor" id="enumerations-MIX_MODE_BLEND" name="//apple_ref/cpp/Enum/MIX_MODE_BLEND"></a>MIX_MODE_BLEND</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Blends two animations. See also <a class="reference internal" href="class_animationnodeblend2.html#class-animationnodeblend2"><span class="std std-ref">AnimationNodeBlend2</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeoneshot-constant-mix-mode-add"><a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a> <strong><a class="dashAnchor" id="enumerations-MIX_MODE_ADD" name="//apple_ref/cpp/Enum/MIX_MODE_ADD"></a>MIX_MODE_ADD</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Blends two animations additively. See also <a class="reference internal" href="class_animationnodeadd2.html#class-animationnodeadd2"><span class="std std-ref">AnimationNodeAdd2</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-animationnodeoneshot-property-autorestart"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>autorestart</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autorestart" name="//apple_ref/cpp/Property/set_autorestart"></a>set_autorestart</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-has_autorestart" name="//apple_ref/cpp/Property/has_autorestart"></a>has_autorestart</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the sub-animation will restart automatically after finishing.</p>
+<p>In other words, to start auto restarting, the animation must be played once with the <a class="reference internal" href="#class-animationnodeoneshot-constant-one-shot-request-fire"><span class="std std-ref">ONE_SHOT_REQUEST_FIRE</span></a> request. The <a class="reference internal" href="#class-animationnodeoneshot-constant-one-shot-request-abort"><span class="std std-ref">ONE_SHOT_REQUEST_ABORT</span></a> request stops the auto restarting, but it does not disable the <a class="reference internal" href="#class-animationnodeoneshot-property-autorestart"><span class="std std-ref">autorestart</span></a> itself. So, the <a class="reference internal" href="#class-animationnodeoneshot-constant-one-shot-request-fire"><span class="std std-ref">ONE_SHOT_REQUEST_FIRE</span></a> request will start auto restarting again.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-autorestart-delay"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>autorestart_delay</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autorestart_delay" name="//apple_ref/cpp/Property/set_autorestart_delay"></a>set_autorestart_delay</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_autorestart_delay" name="//apple_ref/cpp/Property/get_autorestart_delay"></a>get_autorestart_delay</strong>()</p></li>
+</ul>
+<p>The delay after which the automatic restart is triggered, in seconds.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-autorestart-random-delay"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>autorestart_random_delay</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_autorestart_random_delay" name="//apple_ref/cpp/Property/set_autorestart_random_delay"></a>set_autorestart_random_delay</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_autorestart_random_delay" name="//apple_ref/cpp/Property/get_autorestart_random_delay"></a>get_autorestart_random_delay</strong>()</p></li>
+</ul>
+<p>If <a class="reference internal" href="#class-animationnodeoneshot-property-autorestart"><span class="std std-ref">autorestart</span></a> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, a random additional delay (in seconds) between 0 and this value will be added to <a class="reference internal" href="#class-animationnodeoneshot-property-autorestart-delay"><span class="std std-ref">autorestart_delay</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-fadein-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>fadein_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fadein_curve" name="//apple_ref/cpp/Property/set_fadein_curve"></a>set_fadein_curve</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_fadein_curve" name="//apple_ref/cpp/Property/get_fadein_curve"></a>get_fadein_curve</strong>()</p></li>
+</ul>
+<p>Determines how cross-fading between animations is eased. If empty, the transition will be linear.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-fadein-time"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fadein_time</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fadein_time" name="//apple_ref/cpp/Property/set_fadein_time"></a>set_fadein_time</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fadein_time" name="//apple_ref/cpp/Property/get_fadein_time"></a>get_fadein_time</strong>()</p></li>
+</ul>
+<p>The fade-in duration. For example, setting this to <code class="docutils literal notranslate"><span class="pre">1.0</span></code> for a 5 second length animation will produce a cross-fade that starts at 0 second and ends at 1 second during the animation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-fadeout-curve"><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong>fadeout_curve</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fadeout_curve" name="//apple_ref/cpp/Property/set_fadeout_curve"></a>set_fadeout_curve</strong>(value: <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> <strong><a class="dashAnchor" id="properties-get_fadeout_curve" name="//apple_ref/cpp/Property/get_fadeout_curve"></a>get_fadeout_curve</strong>()</p></li>
+</ul>
+<p>Determines how cross-fading between animations is eased. If empty, the transition will be linear.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-fadeout-time"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fadeout_time</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fadeout_time" name="//apple_ref/cpp/Property/set_fadeout_time"></a>set_fadeout_time</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fadeout_time" name="//apple_ref/cpp/Property/get_fadeout_time"></a>get_fadeout_time</strong>()</p></li>
+</ul>
+<p>The fade-out duration. For example, setting this to <code class="docutils literal notranslate"><span class="pre">1.0</span></code> for a 5 second length animation will produce a cross-fade that starts at 4 second and ends at 5 second during the animation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeoneshot-property-mix-mode"><a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a> <strong>mix_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mix_mode" name="//apple_ref/cpp/Property/set_mix_mode"></a>set_mix_mode</strong>(value: <a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-animationnodeoneshot-mixmode"><span class="std std-ref">MixMode</span></a> <strong><a class="dashAnchor" id="properties-get_mix_mode" name="//apple_ref/cpp/Property/get_mix_mode"></a>get_mix_mode</strong>()</p></li>
+</ul>
+<p>The blend type.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_animationnodeblendtree.html" rel="prev" title="AnimationNodeBlendTree"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_animationnodeoutput.html" rel="next" title="AnimationNodeOutput">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

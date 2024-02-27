@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Resource" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_resource.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: Animation, AnimationLibrary, AnimationNode, AnimationNodeStateMachinePlayback, AnimationNodeStateMachineTransition, AudioBusLayout, AudioEffect, AudioStre..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: Animation, AnimationLibrary, AnimationNode, AnimationNodeStateMachinePlayback, AnimationNodeStateMachineTransition, AudioBusLayout, AudioEffect, AudioStre..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Resource — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resource.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_resource.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_resource.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_resource.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_resource.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_resource.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_resource.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_resource.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_resource.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_resource.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_resource.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_resource.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_resource.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_resource.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resource.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_resource.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_animatedtexture.html" rel="next" title="AnimatedTexture"/>
+<link href="class_xrorigin3d.html" rel="prev" title="XROrigin3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_resource" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Resource</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="resource">
+<span id="class-resource"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Resource¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Resource¶"></a>Resource<a class="headerlink" href="#resource" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>, <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a>, <a class="reference internal" href="class_animationnode.html#class-animationnode"><span class="std std-ref">AnimationNode</span></a>, <a class="reference internal" href="class_animationnodestatemachineplayback.html#class-animationnodestatemachineplayback"><span class="std std-ref">AnimationNodeStateMachinePlayback</span></a>, <a class="reference internal" href="class_animationnodestatemachinetransition.html#class-animationnodestatemachinetransition"><span class="std std-ref">AnimationNodeStateMachineTransition</span></a>, <a class="reference internal" href="class_audiobuslayout.html#class-audiobuslayout"><span class="std std-ref">AudioBusLayout</span></a>, <a class="reference internal" href="class_audioeffect.html#class-audioeffect"><span class="std std-ref">AudioEffect</span></a>, <a class="reference internal" href="class_audiostream.html#class-audiostream"><span class="std std-ref">AudioStream</span></a>, <a class="reference internal" href="class_bitmap.html#class-bitmap"><span class="std std-ref">BitMap</span></a>, <a class="reference internal" href="class_bonemap.html#class-bonemap"><span class="std std-ref">BoneMap</span></a>, <a class="reference internal" href="class_buttongroup.html#class-buttongroup"><span class="std std-ref">ButtonGroup</span></a>, <a class="reference internal" href="class_cameraattributes.html#class-cameraattributes"><span class="std std-ref">CameraAttributes</span></a>, <a class="reference internal" href="class_compositor.html#class-compositor"><span class="std std-ref">Compositor</span></a>, <a class="reference internal" href="class_compositoreffect.html#class-compositoreffect"><span class="std std-ref">CompositorEffect</span></a>, <a class="reference internal" href="class_cryptokey.html#class-cryptokey"><span class="std std-ref">CryptoKey</span></a>, <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a>, <a class="reference internal" href="class_curve2d.html#class-curve2d"><span class="std std-ref">Curve2D</span></a>, <a class="reference internal" href="class_curve3d.html#class-curve3d"><span class="std std-ref">Curve3D</span></a>, <a class="reference internal" href="class_editornode3dgizmoplugin.html#class-editornode3dgizmoplugin"><span class="std std-ref">EditorNode3DGizmoPlugin</span></a>, <a class="reference internal" href="class_editorsettings.html#class-editorsettings"><span class="std std-ref">EditorSettings</span></a>, <a class="reference internal" href="class_environment.html#class-environment"><span class="std std-ref">Environment</span></a>, <a class="reference internal" href="class_font.html#class-font"><span class="std std-ref">Font</span></a>, <a class="reference internal" href="class_gdextension.html#class-gdextension"><span class="std std-ref">GDExtension</span></a>, <a class="reference internal" href="class_gltfaccessor.html#class-gltfaccessor"><span class="std std-ref">GLTFAccessor</span></a>, <a class="reference internal" href="class_gltfanimation.html#class-gltfanimation"><span class="std std-ref">GLTFAnimation</span></a>, <a class="reference internal" href="class_gltfbufferview.html#class-gltfbufferview"><span class="std std-ref">GLTFBufferView</span></a>, <a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a>, <a class="reference internal" href="class_gltfdocument.html#class-gltfdocument"><span class="std std-ref">GLTFDocument</span></a>, <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a>, <a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a>, <a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a>, <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>, <a class="reference internal" href="class_gltfphysicsbody.html#class-gltfphysicsbody"><span class="std std-ref">GLTFPhysicsBody</span></a>, <a class="reference internal" href="class_gltfphysicsshape.html#class-gltfphysicsshape"><span class="std std-ref">GLTFPhysicsShape</span></a>, <a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a>, <a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a>, <a class="reference internal" href="class_gltfspecgloss.html#class-gltfspecgloss"><span class="std std-ref">GLTFSpecGloss</span></a>, <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, <a class="reference internal" href="class_gltftexture.html#class-gltftexture"><span class="std std-ref">GLTFTexture</span></a>, <a class="reference internal" href="class_gltftexturesampler.html#class-gltftexturesampler"><span class="std std-ref">GLTFTextureSampler</span></a>, <a class="reference internal" href="class_gradient.html#class-gradient"><span class="std std-ref">Gradient</span></a>, <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>, <a class="reference internal" href="class_importermesh.html#class-importermesh"><span class="std std-ref">ImporterMesh</span></a>, <a class="reference internal" href="class_inputevent.html#class-inputevent"><span class="std std-ref">InputEvent</span></a>, <a class="reference internal" href="class_json.html#class-json"><span class="std std-ref">JSON</span></a>, <a class="reference internal" href="class_labelsettings.html#class-labelsettings"><span class="std std-ref">LabelSettings</span></a>, <a class="reference internal" href="class_lightmapgidata.html#class-lightmapgidata"><span class="std std-ref">LightmapGIData</span></a>, <a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>, <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a>, <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>, <a class="reference internal" href="class_missingresource.html#class-missingresource"><span class="std std-ref">MissingResource</span></a>, <a class="reference internal" href="class_multimesh.html#class-multimesh"><span class="std std-ref">MultiMesh</span></a>, <a class="reference internal" href="class_navigationmesh.html#class-navigationmesh"><span class="std std-ref">NavigationMesh</span></a>, <a class="reference internal" href="class_navigationmeshsourcegeometrydata2d.html#class-navigationmeshsourcegeometrydata2d"><span class="std std-ref">NavigationMeshSourceGeometryData2D</span></a>, <a class="reference internal" href="class_navigationmeshsourcegeometrydata3d.html#class-navigationmeshsourcegeometrydata3d"><span class="std std-ref">NavigationMeshSourceGeometryData3D</span></a>, <a class="reference internal" href="class_navigationpolygon.html#class-navigationpolygon"><span class="std std-ref">NavigationPolygon</span></a>, <a class="reference internal" href="class_noise.html#class-noise"><span class="std std-ref">Noise</span></a>, <a class="reference internal" href="class_occluder3d.html#class-occluder3d"><span class="std std-ref">Occluder3D</span></a>, <a class="reference internal" href="class_occluderpolygon2d.html#class-occluderpolygon2d"><span class="std std-ref">OccluderPolygon2D</span></a>, <a class="reference internal" href="class_oggpacketsequence.html#class-oggpacketsequence"><span class="std std-ref">OggPacketSequence</span></a>, <a class="reference internal" href="class_openxraction.html#class-openxraction"><span class="std std-ref">OpenXRAction</span></a>, <a class="reference internal" href="class_openxractionmap.html#class-openxractionmap"><span class="std std-ref">OpenXRActionMap</span></a>, <a class="reference internal" href="class_openxractionset.html#class-openxractionset"><span class="std std-ref">OpenXRActionSet</span></a>, <a class="reference internal" href="class_openxrinteractionprofile.html#class-openxrinteractionprofile"><span class="std std-ref">OpenXRInteractionProfile</span></a>, <a class="reference internal" href="class_openxripbinding.html#class-openxripbinding"><span class="std std-ref">OpenXRIPBinding</span></a>, <a class="reference internal" href="class_packeddatacontainer.html#class-packeddatacontainer"><span class="std std-ref">PackedDataContainer</span></a>, <a class="reference internal" href="class_packedscene.html#class-packedscene"><span class="std std-ref">PackedScene</span></a>, <a class="reference internal" href="class_physicsmaterial.html#class-physicsmaterial"><span class="std std-ref">PhysicsMaterial</span></a>, <a class="reference internal" href="class_polygonpathfinder.html#class-polygonpathfinder"><span class="std std-ref">PolygonPathFinder</span></a>, <a class="reference internal" href="class_rdshaderfile.html#class-rdshaderfile"><span class="std std-ref">RDShaderFile</span></a>, <a class="reference internal" href="class_rdshaderspirv.html#class-rdshaderspirv"><span class="std std-ref">RDShaderSPIRV</span></a>, <a class="reference internal" href="class_richtexteffect.html#class-richtexteffect"><span class="std std-ref">RichTextEffect</span></a>, <a class="reference internal" href="class_scenereplicationconfig.html#class-scenereplicationconfig"><span class="std std-ref">SceneReplicationConfig</span></a>, <a class="reference internal" href="class_script.html#class-script"><span class="std std-ref">Script</span></a>, <a class="reference internal" href="class_shader.html#class-shader"><span class="std std-ref">Shader</span></a>, <a class="reference internal" href="class_shaderinclude.html#class-shaderinclude"><span class="std std-ref">ShaderInclude</span></a>, <a class="reference internal" href="class_shape2d.html#class-shape2d"><span class="std std-ref">Shape2D</span></a>, <a class="reference internal" href="class_shape3d.html#class-shape3d"><span class="std std-ref">Shape3D</span></a>, <a class="reference internal" href="class_shortcut.html#class-shortcut"><span class="std std-ref">Shortcut</span></a>, <a class="reference internal" href="class_skeletonmodification2d.html#class-skeletonmodification2d"><span class="std std-ref">SkeletonModification2D</span></a>, <a class="reference internal" href="class_skeletonmodificationstack2d.html#class-skeletonmodificationstack2d"><span class="std std-ref">SkeletonModificationStack2D</span></a>, <a class="reference internal" href="class_skeletonprofile.html#class-skeletonprofile"><span class="std std-ref">SkeletonProfile</span></a>, <a class="reference internal" href="class_skin.html#class-skin"><span class="std std-ref">Skin</span></a>, <a class="reference internal" href="class_sky.html#class-sky"><span class="std std-ref">Sky</span></a>, <a class="reference internal" href="class_spriteframes.html#class-spriteframes"><span class="std std-ref">SpriteFrames</span></a>, <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a>, <a class="reference internal" href="class_syntaxhighlighter.html#class-syntaxhighlighter"><span class="std std-ref">SyntaxHighlighter</span></a>, <a class="reference internal" href="class_texture.html#class-texture"><span class="std std-ref">Texture</span></a>, <a class="reference internal" href="class_theme.html#class-theme"><span class="std std-ref">Theme</span></a>, <a class="reference internal" href="class_tilemappattern.html#class-tilemappattern"><span class="std std-ref">TileMapPattern</span></a>, <a class="reference internal" href="class_tileset.html#class-tileset"><span class="std std-ref">TileSet</span></a>, <a class="reference internal" href="class_tilesetsource.html#class-tilesetsource"><span class="std std-ref">TileSetSource</span></a>, <a class="reference internal" href="class_translation.html#class-translation"><span class="std std-ref">Translation</span></a>, <a class="reference internal" href="class_videostream.html#class-videostream"><span class="std std-ref">VideoStream</span></a>, <a class="reference internal" href="class_videostreamplayback.html#class-videostreamplayback"><span class="std std-ref">VideoStreamPlayback</span></a>, <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>, <a class="reference internal" href="class_voxelgidata.html#class-voxelgidata"><span class="std std-ref">VoxelGIData</span></a>, <a class="reference internal" href="class_world2d.html#class-world2d"><span class="std std-ref">World2D</span></a>, <a class="reference internal" href="class_world3d.html#class-world3d"><span class="std std-ref">World3D</span></a>, <a class="reference internal" href="class_x509certificate.html#class-x509certificate"><span class="std std-ref">X509Certificate</span></a></p>
+<p>Base class for serializable objects.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Resource is the base class for all Godot-specific resource types, serving primarily as data containers. Since they inherit from <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a>, resources are reference-counted and freed when no longer in use. They can also be nested within other resources, and saved on disk. <a class="reference internal" href="class_packedscene.html#class-packedscene"><span class="std std-ref">PackedScene</span></a>, one of the most common <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>s in a Godot project, is also a resource, uniquely capable of storing and instantiating the <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>s it contains as many times as desired.</p>
+<p>In GDScript, resources can loaded from disk by their <a class="reference internal" href="#class-resource-property-resource-path"><span class="std std-ref">resource_path</span></a> using <a class="reference internal" href="class_%40gdscript.html#class-gdscript-method-load"><span class="std std-ref">@GDScript.load</span></a> or <a class="reference internal" href="class_%40gdscript.html#class-gdscript-method-preload"><span class="std std-ref">@GDScript.preload</span></a>.</p>
+<p>The engine keeps a global cache of all loaded resources, referenced by paths (see <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-has-cached"><span class="std std-ref">ResourceLoader.has_cached</span></a>). A resource will be cached when loaded for the first time and removed from cache once all references are released. When a resource is cached, subsequent loads using its path will return the cached reference.</p>
+<p><strong>Note:</strong> In C#, resources will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free resources that are no longer in use. This means that unused resources will linger on for a while before being removed.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/scripting/resources.html"><span class="doc">Resources</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/best_practices/node_alternatives.html"><span class="doc">When and how to avoid using nodes for everything</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-property-resource-local-to-scene"><span class="std std-ref">resource_local_to_scene</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-property-resource-name"><span class="std std-ref">resource_name</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-property-resource-path"><span class="std std-ref">resource_path</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-private-method-get-rid"><span class="std std-ref">_get_rid</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resource-private-method-setup-local-to-scene"><span class="std std-ref">_setup_local_to_scene</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-resource"><span class="std std-ref">Resource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-duplicate"><span class="std std-ref">duplicate</span></a>(subresources: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-emit-changed"><span class="std std-ref">emit_changed</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-get-local-scene"><span class="std std-ref">get_local_scene</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-get-rid"><span class="std std-ref">get_rid</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-setup-local-to-scene"><span class="std std-ref">setup_local_to_scene</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-resource-method-take-over-path"><span class="std std-ref">take_over_path</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-resource-signal-changed"><strong>changed</strong>()</p>
+<p>Emitted when the resource changes, usually when one of its properties is modified. See also <a class="reference internal" href="#class-resource-method-emit-changed"><span class="std std-ref">emit_changed</span></a>.</p>
+<p><strong>Note:</strong> This signal is not emitted automatically for properties of custom resources. If necessary, a setter needs to be created to emit the signal.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-resource-signal-setup-local-to-scene-requested"><strong>setup_local_to_scene_requested</strong>()</p>
+<p><strong>Deprecated:</strong> This signal is only emitted when the resource is created. Override <a class="reference internal" href="#class-resource-private-method-setup-local-to-scene"><span class="std std-ref">_setup_local_to_scene</span></a> instead.</p>
+<p>Emitted by a newly duplicated resource with <a class="reference internal" href="#class-resource-property-resource-local-to-scene"><span class="std std-ref">resource_local_to_scene</span></a> set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-resource-property-resource-local-to-scene"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>resource_local_to_scene</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_local_to_scene" name="//apple_ref/cpp/Property/set_local_to_scene"></a><a class="dashAnchor" id="properties-set_local_to_scene" name="//apple_ref/cpp/Property/set_local_to_scene"></a>set_local_to_scene</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_local_to_scene" name="//apple_ref/cpp/Property/is_local_to_scene"></a><a class="dashAnchor" id="properties-is_local_to_scene" name="//apple_ref/cpp/Property/is_local_to_scene"></a>is_local_to_scene</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the resource is duplicated for each instance of all scenes using it. At run-time, the resource can be modified in one scene without affecting other instances (see <a class="reference internal" href="class_packedscene.html#class-packedscene-method-instantiate"><span class="std std-ref">PackedScene.instantiate</span></a>).</p>
+<p><strong>Note:</strong> Changing this property at run-time has no effect on already created duplicate resources.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resource-property-resource-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>resource_name</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_name" name="//apple_ref/cpp/Property/set_name"></a><a class="dashAnchor" id="properties-set_name" name="//apple_ref/cpp/Property/set_name"></a>set_name</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_name" name="//apple_ref/cpp/Property/get_name"></a><a class="dashAnchor" id="properties-get_name" name="//apple_ref/cpp/Property/get_name"></a>get_name</strong>()</p></li>
+</ul>
+<p>An optional name for this resource. When defined, its value is displayed to represent the resource in the Inspector dock. For built-in scripts, the name is displayed as part of the tab name in the script editor.</p>
+<p><strong>Note:</strong> Some resource formats do not support resource names. You can still set the name in the editor or via code, but it will be lost when the resource is reloaded. For example, only built-in scripts can have a resource name, while scripts stored in separate files cannot.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-resource-property-resource-path"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>resource_path</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_path" name="//apple_ref/cpp/Property/set_path"></a><a class="dashAnchor" id="properties-set_path" name="//apple_ref/cpp/Property/set_path"></a>set_path</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_path" name="//apple_ref/cpp/Property/get_path"></a><a class="dashAnchor" id="properties-get_path" name="//apple_ref/cpp/Property/get_path"></a>get_path</strong>()</p></li>
+</ul>
+<p>The unique path to this resource. If it has been saved to disk, the value will be its filepath. If the resource is exclusively contained within a scene, the value will be the <a class="reference internal" href="class_packedscene.html#class-packedscene"><span class="std std-ref">PackedScene</span></a>'s filepath, followed by a unique identifier.</p>
+<p><strong>Note:</strong> Setting this property manually may fail if a resource with the same path has already been previously loaded. If necessary, use <a class="reference internal" href="#class-resource-method-take-over-path"><span class="std std-ref">take_over_path</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-resource-private-method-get-rid"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>_get_rid</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override this method to return a custom <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> when <a class="reference internal" href="#class-resource-method-get-rid"><span class="std std-ref">get_rid</span></a> is called.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-private-method-setup-local-to-scene"><abbr title="No return value.">void</abbr> <strong>_setup_local_to_scene</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override this method to customize the newly duplicated resource created from <a class="reference internal" href="class_packedscene.html#class-packedscene-method-instantiate"><span class="std std-ref">PackedScene.instantiate</span></a>, if the original's <a class="reference internal" href="#class-resource-property-resource-local-to-scene"><span class="std std-ref">resource_local_to_scene</span></a> is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p><strong>Example:</strong> Set a random <code class="docutils literal notranslate"><span class="pre">damage</span></code> value to every local resource from an instantiated scene.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Resource</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_setup_local_to_scene</span><span class="p">():</span>
+<span class="w">    </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">randi_range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-duplicate"><a class="reference internal" href="#class-resource"><span class="std std-ref">Resource</span></a> <strong>duplicate</strong>(subresources: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Duplicates this resource, returning a new resource with its <code class="docutils literal notranslate"><span class="pre">export</span></code>ed or <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-storage"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_STORAGE</span></a> properties copied from the original.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">subresources</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, a shallow copy is returned; nested resources within subresources are not duplicated and are shared from the original resource. If <code class="docutils literal notranslate"><span class="pre">subresources</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, a deep copy is returned; nested subresources will be duplicated and are not shared.</p>
+<p>Subresource properties with the <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-always-duplicate"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE</span></a> flag are always duplicated even with <code class="docutils literal notranslate"><span class="pre">subresources</span></code> set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, and properties with the <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-property-usage-never-duplicate"><span class="std std-ref">@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE</span></a> flag are never duplicated even with <code class="docutils literal notranslate"><span class="pre">subresources</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p><strong>Note:</strong> For custom resources, this method will fail if <a class="reference internal" href="class_object.html#class-object-private-method-init"><span class="std std-ref">Object._init</span></a> has been defined with required parameters.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-emit-changed"><abbr title="No return value.">void</abbr> <strong>emit_changed</strong>()</p>
+<p>Emits the <a class="reference internal" href="#class-resource-signal-changed"><span class="std std-ref">changed</span></a> signal. This method is called automatically for some built-in resources.</p>
+<p><strong>Note:</strong> For custom resources, it's recommended to call this method whenever a meaningful change occurs, such as a modified property. This ensures that custom <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>s depending on the resource are properly updated.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">damage</span><span class="p">:</span>
+<span class="w">    </span><span class="k">set</span><span class="p">(</span><span class="n">new_value</span><span class="p">):</span>
+<span class="w">        </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">new_value</span><span class="p">:</span>
+<span class="w">            </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new_value</span>
+<span class="w">            </span><span class="n">emit_changed</span><span class="p">()</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-get-local-scene"><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>get_local_scene</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>If <a class="reference internal" href="#class-resource-property-resource-local-to-scene"><span class="std std-ref">resource_local_to_scene</span></a> is set to <code class="docutils literal notranslate"><span class="pre">true</span></code> and the resource has been loaded from a <a class="reference internal" href="class_packedscene.html#class-packedscene"><span class="std std-ref">PackedScene</span></a> instantiation, returns the root <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> of the scene where this resource is used. Otherwise, returns <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-get-rid"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>get_rid</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> of this resource (or an empty RID). Many resources (such as <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>, <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a>, and so on) are high-level abstractions of resources stored in a specialized server (<a class="reference internal" href="class_displayserver.html#class-displayserver"><span class="std std-ref">DisplayServer</span></a>, <a class="reference internal" href="class_renderingserver.html#class-renderingserver"><span class="std std-ref">RenderingServer</span></a>, etc.), so this function will return the original <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-setup-local-to-scene"><abbr title="No return value.">void</abbr> <strong>setup_local_to_scene</strong>()</p>
+<p><strong>Deprecated:</strong> This method should only be called internally.</p>
+<p>Calls <a class="reference internal" href="#class-resource-private-method-setup-local-to-scene"><span class="std std-ref">_setup_local_to_scene</span></a>. If <a class="reference internal" href="#class-resource-property-resource-local-to-scene"><span class="std std-ref">resource_local_to_scene</span></a> is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, this method is automatically called from <a class="reference internal" href="class_packedscene.html#class-packedscene-method-instantiate"><span class="std std-ref">PackedScene.instantiate</span></a> by the newly duplicated resource within the scene instance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-resource-method-take-over-path"><abbr title="No return value.">void</abbr> <strong>take_over_path</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Sets the <a class="reference internal" href="#class-resource-property-resource-path"><span class="std std-ref">resource_path</span></a> to <code class="docutils literal notranslate"><span class="pre">path</span></code>, potentially overriding an existing cache entry for this path. Further attempts to load an overridden resource by path will instead return this resource.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_xrorigin3d.html" rel="prev" title="XROrigin3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_animatedtexture.html" rel="next" title="AnimatedTexture">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

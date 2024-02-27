@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="OpenXRInterface" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_openxrinterface.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: XRInterface&lt; RefCounted&lt; Object Our OpenXR interface. Description: The OpenXR interface allows Godot to interact with OpenXR runtimes and make it possible to create XR experiences and gam..." property="og:description"/>
+<meta content="Inherits: XRInterface&lt; RefCounted&lt; Object Our OpenXR interface. Description: The OpenXR interface allows Godot to interact with OpenXR runtimes and make it possible to create XR experiences and gam..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) OpenXRInterface — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrinterface.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_openxrinterface.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_openxrinterface.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_openxrinterface.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_openxrinterface.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_openxrinterface.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_openxrinterface.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_openxrinterface.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_openxrinterface.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_openxrinterface.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_openxrinterface.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_openxrinterface.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_openxrinterface.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_openxrinterface.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrinterface.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrinterface.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_os.html" rel="next" title="OS"/>
+<link href="class_openxrinteractionprofilemetadata.html" rel="prev" title="OpenXRInteractionProfileMetadata"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_openxrinterface" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">OpenXRInterface</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="openxrinterface">
+<span id="class-openxrinterface"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/OpenXRInterface¶"></a>OpenXRInterface<a class="headerlink" href="#openxrinterface" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_xrinterface.html#class-xrinterface"><span class="std std-ref">XRInterface</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Our OpenXR interface.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The OpenXR interface allows Godot to interact with OpenXR runtimes and make it possible to create XR experiences and games.</p>
+<p>Due to the needs of OpenXR this interface works slightly different than other plugin based XR interfaces. It needs to be initialized when Godot starts. You need to enable OpenXR, settings for this can be found in your games project settings under the XR heading. You do need to mark a viewport for use with XR in order for Godot to know which render result should be output to the headset.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/xr/setting_up_xr.html"><span class="doc">Setting up XR</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-property-display-refresh-rate"><span class="std std-ref">display_refresh_rate</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-property-foveation-dynamic"><span class="std std-ref">foveation_dynamic</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-property-foveation-level"><span class="std std-ref">foveation_level</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-property-render-target-size-multiplier"><span class="std std-ref">render_target_size_multiplier</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-action-sets"><span class="std std-ref">get_action_sets</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-available-display-refresh-rates"><span class="std std-ref">get_available_display_refresh_rates</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-angular-velocity"><span class="std std-ref">get_hand_joint_angular_velocity</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-flags"><span class="std std-ref">get_hand_joint_flags</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-linear-velocity"><span class="std std-ref">get_hand_joint_linear_velocity</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-position"><span class="std std-ref">get_hand_joint_position</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-radius"><span class="std std-ref">get_hand_joint_radius</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-joint-rotation"><span class="std std-ref">get_hand_joint_rotation</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-hand-tracking-source"><span class="std std-ref">get_hand_tracking_source</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-get-motion-range"><span class="std std-ref">get_motion_range</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-is-action-set-active"><span class="std std-ref">is_action_set_active</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-is-eye-gaze-interaction-supported"><span class="std std-ref">is_eye_gaze_interaction_supported</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-is-foveation-supported"><span class="std std-ref">is_foveation_supported</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-is-hand-tracking-supported"><span class="std std-ref">is_hand_tracking_supported</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-set-action-set-active"><span class="std std-ref">set_action_set_active</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, active: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrinterface-method-set-motion-range"><span class="std std-ref">set_motion_range</span></a>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, motion_range: <a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-openxrinterface-signal-pose-recentered"><strong>pose_recentered</strong>()</p>
+<p>Informs the user queued a recenter of the player position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-openxrinterface-signal-session-begun"><strong>session_begun</strong>()</p>
+<p>Informs our OpenXR session has been started.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-openxrinterface-signal-session-focussed"><strong>session_focussed</strong>()</p>
+<p>Informs our OpenXR session now has focus.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-openxrinterface-signal-session-stopping"><strong>session_stopping</strong>()</p>
+<p>Informs our OpenXR session is stopping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-openxrinterface-signal-session-visible"><strong>session_visible</strong>()</p>
+<p>Informs our OpenXR session is now visible (output is being sent to the HMD).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-openxrinterface-hand">enum <strong><a class="dashAnchor" id="enumerations-Hand" name="//apple_ref/cpp/Enum/Hand"></a>Hand</strong>:</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-left"><a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_LEFT" name="//apple_ref/cpp/Enum/HAND_LEFT"></a>HAND_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Left hand.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-right"><a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_RIGHT" name="//apple_ref/cpp/Enum/HAND_RIGHT"></a>HAND_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Right hand.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-max"><a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_MAX" name="//apple_ref/cpp/Enum/HAND_MAX"></a>HAND_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Maximum value for the hand enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-openxrinterface-handmotionrange">enum <strong><a class="dashAnchor" id="enumerations-HandMotionRange" name="//apple_ref/cpp/Enum/HandMotionRange"></a>HandMotionRange</strong>:</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-motion-range-unobstructed"><a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_MOTION_RANGE_UNOBSTRUCTED" name="//apple_ref/cpp/Enum/HAND_MOTION_RANGE_UNOBSTRUCTED"></a>HAND_MOTION_RANGE_UNOBSTRUCTED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Full hand range, if user closes their hands, we make a full fist.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-motion-range-conform-to-controller"><a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_MOTION_RANGE_CONFORM_TO_CONTROLLER" name="//apple_ref/cpp/Enum/HAND_MOTION_RANGE_CONFORM_TO_CONTROLLER"></a>HAND_MOTION_RANGE_CONFORM_TO_CONTROLLER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Conform to controller, if user closes their hands, the tracked data conforms to the shape of the controller.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-motion-range-max"><a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_MOTION_RANGE_MAX" name="//apple_ref/cpp/Enum/HAND_MOTION_RANGE_MAX"></a>HAND_MOTION_RANGE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Maximum value for the motion range enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-openxrinterface-handtrackedsource">enum <strong><a class="dashAnchor" id="enumerations-HandTrackedSource" name="//apple_ref/cpp/Enum/HandTrackedSource"></a>HandTrackedSource</strong>:</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-tracked-source-unknown"><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_TRACKED_SOURCE_UNKNOWN" name="//apple_ref/cpp/Enum/HAND_TRACKED_SOURCE_UNKNOWN"></a>HAND_TRACKED_SOURCE_UNKNOWN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The source of hand tracking data is unknown (the extension is likely unsupported).</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-tracked-source-unobstructed"><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_TRACKED_SOURCE_UNOBSTRUCTED" name="//apple_ref/cpp/Enum/HAND_TRACKED_SOURCE_UNOBSTRUCTED"></a>HAND_TRACKED_SOURCE_UNOBSTRUCTED</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The source of hand tracking is unobstructed, this means that an accurate method of hand tracking is used, e.g. optical hand tracking, data gloves, etc.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-tracked-source-controller"><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_TRACKED_SOURCE_CONTROLLER" name="//apple_ref/cpp/Enum/HAND_TRACKED_SOURCE_CONTROLLER"></a>HAND_TRACKED_SOURCE_CONTROLLER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The source of hand tracking is a controller, bone positions are inferred from controller inputs.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-tracked-source-max"><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_TRACKED_SOURCE_MAX" name="//apple_ref/cpp/Enum/HAND_TRACKED_SOURCE_MAX"></a>HAND_TRACKED_SOURCE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Maximum value for the hand tracked source enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-openxrinterface-handjoints">enum <strong><a class="dashAnchor" id="enumerations-HandJoints" name="//apple_ref/cpp/Enum/HandJoints"></a>HandJoints</strong>:</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-palm"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_PALM" name="//apple_ref/cpp/Enum/HAND_JOINT_PALM"></a>HAND_JOINT_PALM</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Palm joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-wrist"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_WRIST" name="//apple_ref/cpp/Enum/HAND_JOINT_WRIST"></a>HAND_JOINT_WRIST</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Wrist joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-thumb-metacarpal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_THUMB_METACARPAL" name="//apple_ref/cpp/Enum/HAND_JOINT_THUMB_METACARPAL"></a>HAND_JOINT_THUMB_METACARPAL</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Thumb metacarpal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-thumb-proximal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_THUMB_PROXIMAL" name="//apple_ref/cpp/Enum/HAND_JOINT_THUMB_PROXIMAL"></a>HAND_JOINT_THUMB_PROXIMAL</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Thumb proximal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-thumb-distal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_THUMB_DISTAL" name="//apple_ref/cpp/Enum/HAND_JOINT_THUMB_DISTAL"></a>HAND_JOINT_THUMB_DISTAL</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Thumb distal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-thumb-tip"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_THUMB_TIP" name="//apple_ref/cpp/Enum/HAND_JOINT_THUMB_TIP"></a>HAND_JOINT_THUMB_TIP</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Thumb tip joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-index-metacarpal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_INDEX_METACARPAL" name="//apple_ref/cpp/Enum/HAND_JOINT_INDEX_METACARPAL"></a>HAND_JOINT_INDEX_METACARPAL</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Index metacarpal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-index-proximal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_INDEX_PROXIMAL" name="//apple_ref/cpp/Enum/HAND_JOINT_INDEX_PROXIMAL"></a>HAND_JOINT_INDEX_PROXIMAL</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Index proximal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-index-intermediate"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_INDEX_INTERMEDIATE" name="//apple_ref/cpp/Enum/HAND_JOINT_INDEX_INTERMEDIATE"></a>HAND_JOINT_INDEX_INTERMEDIATE</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Index intermediate joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-index-distal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_INDEX_DISTAL" name="//apple_ref/cpp/Enum/HAND_JOINT_INDEX_DISTAL"></a>HAND_JOINT_INDEX_DISTAL</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>Index distal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-index-tip"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_INDEX_TIP" name="//apple_ref/cpp/Enum/HAND_JOINT_INDEX_TIP"></a>HAND_JOINT_INDEX_TIP</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>Index tip joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-middle-metacarpal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MIDDLE_METACARPAL" name="//apple_ref/cpp/Enum/HAND_JOINT_MIDDLE_METACARPAL"></a>HAND_JOINT_MIDDLE_METACARPAL</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p>Middle metacarpal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-middle-proximal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MIDDLE_PROXIMAL" name="//apple_ref/cpp/Enum/HAND_JOINT_MIDDLE_PROXIMAL"></a>HAND_JOINT_MIDDLE_PROXIMAL</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>Middle proximal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-middle-intermediate"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MIDDLE_INTERMEDIATE" name="//apple_ref/cpp/Enum/HAND_JOINT_MIDDLE_INTERMEDIATE"></a>HAND_JOINT_MIDDLE_INTERMEDIATE</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p>Middle intermediate joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-middle-distal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MIDDLE_DISTAL" name="//apple_ref/cpp/Enum/HAND_JOINT_MIDDLE_DISTAL"></a>HAND_JOINT_MIDDLE_DISTAL</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p>Middle distal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-middle-tip"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MIDDLE_TIP" name="//apple_ref/cpp/Enum/HAND_JOINT_MIDDLE_TIP"></a>HAND_JOINT_MIDDLE_TIP</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p>Middle tip joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-ring-metacarpal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_RING_METACARPAL" name="//apple_ref/cpp/Enum/HAND_JOINT_RING_METACARPAL"></a>HAND_JOINT_RING_METACARPAL</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>Ring metacarpal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-ring-proximal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_RING_PROXIMAL" name="//apple_ref/cpp/Enum/HAND_JOINT_RING_PROXIMAL"></a>HAND_JOINT_RING_PROXIMAL</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p>Ring proximal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-ring-intermediate"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_RING_INTERMEDIATE" name="//apple_ref/cpp/Enum/HAND_JOINT_RING_INTERMEDIATE"></a>HAND_JOINT_RING_INTERMEDIATE</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p>Ring intermediate joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-ring-distal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_RING_DISTAL" name="//apple_ref/cpp/Enum/HAND_JOINT_RING_DISTAL"></a>HAND_JOINT_RING_DISTAL</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p>Ring distal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-ring-tip"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_RING_TIP" name="//apple_ref/cpp/Enum/HAND_JOINT_RING_TIP"></a>HAND_JOINT_RING_TIP</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p>Ring tip joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-little-metacarpal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LITTLE_METACARPAL" name="//apple_ref/cpp/Enum/HAND_JOINT_LITTLE_METACARPAL"></a>HAND_JOINT_LITTLE_METACARPAL</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p>Little metacarpal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-little-proximal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LITTLE_PROXIMAL" name="//apple_ref/cpp/Enum/HAND_JOINT_LITTLE_PROXIMAL"></a>HAND_JOINT_LITTLE_PROXIMAL</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p>Little proximal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-little-intermediate"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LITTLE_INTERMEDIATE" name="//apple_ref/cpp/Enum/HAND_JOINT_LITTLE_INTERMEDIATE"></a>HAND_JOINT_LITTLE_INTERMEDIATE</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p>Little intermediate joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-little-distal"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LITTLE_DISTAL" name="//apple_ref/cpp/Enum/HAND_JOINT_LITTLE_DISTAL"></a>HAND_JOINT_LITTLE_DISTAL</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p>Little distal joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-little-tip"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LITTLE_TIP" name="//apple_ref/cpp/Enum/HAND_JOINT_LITTLE_TIP"></a>HAND_JOINT_LITTLE_TIP</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p>Little tip joint.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-max"><a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_MAX" name="//apple_ref/cpp/Enum/HAND_JOINT_MAX"></a>HAND_JOINT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p>Maximum value for the hand joint enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-openxrinterface-handjointflags">flags <strong><a class="dashAnchor" id="enumerations-HandJointFlags" name="//apple_ref/cpp/Enum/HandJointFlags"></a>HandJointFlags</strong>:</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-none"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_NONE" name="//apple_ref/cpp/Enum/HAND_JOINT_NONE"></a>HAND_JOINT_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No flags are set.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-orientation-valid"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_ORIENTATION_VALID" name="//apple_ref/cpp/Enum/HAND_JOINT_ORIENTATION_VALID"></a>HAND_JOINT_ORIENTATION_VALID</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>If set, the orientation data is valid, otherwise, the orientation data is unreliable and should not be used.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-orientation-tracked"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_ORIENTATION_TRACKED" name="//apple_ref/cpp/Enum/HAND_JOINT_ORIENTATION_TRACKED"></a>HAND_JOINT_ORIENTATION_TRACKED</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>If set, the orientation data comes from tracking data, otherwise, the orientation data contains predicted data.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-position-valid"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_POSITION_VALID" name="//apple_ref/cpp/Enum/HAND_JOINT_POSITION_VALID"></a>HAND_JOINT_POSITION_VALID</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>If set, the positional data is valid, otherwise, the positional data is unreliable and should not be used.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-position-tracked"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_POSITION_TRACKED" name="//apple_ref/cpp/Enum/HAND_JOINT_POSITION_TRACKED"></a>HAND_JOINT_POSITION_TRACKED</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>If set, the positional data comes from tracking data, otherwise, the positional data contains predicted data.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-linear-velocity-valid"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_LINEAR_VELOCITY_VALID" name="//apple_ref/cpp/Enum/HAND_JOINT_LINEAR_VELOCITY_VALID"></a>HAND_JOINT_LINEAR_VELOCITY_VALID</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>If set, our linear velocity data is valid, otherwise, the linear velocity data is unreliable and should not be used.</p>
+<p class="classref-enumeration-constant" id="class-openxrinterface-constant-hand-joint-angular-velocity-valid"><a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a> <strong><a class="dashAnchor" id="enumerations-HAND_JOINT_ANGULAR_VELOCITY_VALID" name="//apple_ref/cpp/Enum/HAND_JOINT_ANGULAR_VELOCITY_VALID"></a>HAND_JOINT_ANGULAR_VELOCITY_VALID</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p>If set, our angular velocity data is valid, otherwise, the angular velocity data is unreliable and should not be used.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-openxrinterface-property-display-refresh-rate"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>display_refresh_rate</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_display_refresh_rate" name="//apple_ref/cpp/Property/set_display_refresh_rate"></a>set_display_refresh_rate</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_display_refresh_rate" name="//apple_ref/cpp/Property/get_display_refresh_rate"></a>get_display_refresh_rate</strong>()</p></li>
+</ul>
+<p>The display refresh rate for the current HMD. Only functional if this feature is supported by the OpenXR runtime and after the interface has been initialized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-openxrinterface-property-foveation-dynamic"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>foveation_dynamic</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_foveation_dynamic" name="//apple_ref/cpp/Property/set_foveation_dynamic"></a>set_foveation_dynamic</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_foveation_dynamic" name="//apple_ref/cpp/Property/get_foveation_dynamic"></a>get_foveation_dynamic</strong>()</p></li>
+</ul>
+<p>Enable dynamic foveation adjustment, the interface must be initialized before this is accessible. If enabled foveation will automatically adjusted between low and <a class="reference internal" href="#class-openxrinterface-property-foveation-level"><span class="std std-ref">foveation_level</span></a>.</p>
+<p><strong>Note:</strong> Only works on compatibility renderer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-openxrinterface-property-foveation-level"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>foveation_level</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_foveation_level" name="//apple_ref/cpp/Property/set_foveation_level"></a>set_foveation_level</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_foveation_level" name="//apple_ref/cpp/Property/get_foveation_level"></a>get_foveation_level</strong>()</p></li>
+</ul>
+<p>Set foveation level from 0 (off) to 3 (high), the interface must be initialized before this is accessible.</p>
+<p><strong>Note:</strong> Only works on compatibility renderer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-openxrinterface-property-render-target-size-multiplier"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>render_target_size_multiplier</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_render_target_size_multiplier" name="//apple_ref/cpp/Property/set_render_target_size_multiplier"></a>set_render_target_size_multiplier</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_render_target_size_multiplier" name="//apple_ref/cpp/Property/get_render_target_size_multiplier"></a>get_render_target_size_multiplier</strong>()</p></li>
+</ul>
+<p>The render size multiplier for the current HMD. Must be set before the interface has been initialized.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-openxrinterface-method-get-action-sets"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_action_sets</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a list of action sets registered with Godot (loaded from the action map at runtime).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-available-display-refresh-rates"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_available_display_refresh_rates</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns display refresh rates supported by the current HMD. Only returned if this feature is supported by the OpenXR runtime and after the interface has been initialized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-angular-velocity"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_hand_joint_angular_velocity</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-angular-velocity"><span class="std std-ref">XRHandTracker.get_hand_joint_angular_velocity</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns the angular velocity of a joint (<code class="docutils literal notranslate"><span class="pre">joint</span></code>) of a hand (<code class="docutils literal notranslate"><span class="pre">hand</span></code>) as provided by OpenXR. This is relative to <a class="reference internal" href="class_xrorigin3d.html#class-xrorigin3d"><span class="std std-ref">XROrigin3D</span></a>!</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-flags"><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="#enum-openxrinterface-handjointflags"><span class="std std-ref">HandJointFlags</span></a>] <strong>get_hand_joint_flags</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-flags"><span class="std std-ref">XRHandTracker.get_hand_joint_flags</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns flags that inform us of the validity of the tracking data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-linear-velocity"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_hand_joint_linear_velocity</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-linear-velocity"><span class="std std-ref">XRHandTracker.get_hand_joint_linear_velocity</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns the linear velocity of a joint (<code class="docutils literal notranslate"><span class="pre">joint</span></code>) of a hand (<code class="docutils literal notranslate"><span class="pre">hand</span></code>) as provided by OpenXR. This is relative to <a class="reference internal" href="class_xrorigin3d.html#class-xrorigin3d"><span class="std std-ref">XROrigin3D</span></a> without worldscale applied!</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-position"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_hand_joint_position</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-transform"><span class="std std-ref">XRHandTracker.get_hand_joint_transform</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns the position of a joint (<code class="docutils literal notranslate"><span class="pre">joint</span></code>) of a hand (<code class="docutils literal notranslate"><span class="pre">hand</span></code>) as provided by OpenXR. This is relative to <a class="reference internal" href="class_xrorigin3d.html#class-xrorigin3d"><span class="std std-ref">XROrigin3D</span></a> without worldscale applied!</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-radius"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_hand_joint_radius</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-radius"><span class="std std-ref">XRHandTracker.get_hand_joint_radius</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns the radius of a joint (<code class="docutils literal notranslate"><span class="pre">joint</span></code>) of a hand (<code class="docutils literal notranslate"><span class="pre">hand</span></code>) as provided by OpenXR. This is without worldscale applied!</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-joint-rotation"><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong>get_hand_joint_rotation</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, joint: <a class="reference internal" href="#enum-openxrinterface-handjoints"><span class="std std-ref">HandJoints</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-method-get-hand-joint-transform"><span class="std std-ref">XRHandTracker.get_hand_joint_transform</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled, returns the rotation of a joint (<code class="docutils literal notranslate"><span class="pre">joint</span></code>) of a hand (<code class="docutils literal notranslate"><span class="pre">hand</span></code>) as provided by OpenXR.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-hand-tracking-source"><a class="reference internal" href="#enum-openxrinterface-handtrackedsource"><span class="std std-ref">HandTrackedSource</span></a> <strong>get_hand_tracking_source</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_xrhandtracker.html#class-xrhandtracker-property-hand-tracking-source"><span class="std std-ref">XRHandTracker.hand_tracking_source</span></a> obtained from <a class="reference internal" href="class_xrserver.html#class-xrserver-method-get-hand-tracker"><span class="std std-ref">XRServer.get_hand_tracker</span></a> instead.</p>
+<p>If handtracking is enabled and hand tracking source is supported, gets the source of the hand tracking data for <code class="docutils literal notranslate"><span class="pre">hand</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-get-motion-range"><a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a> <strong>get_motion_range</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>If handtracking is enabled and motion range is supported, gets the currently configured motion range for <code class="docutils literal notranslate"><span class="pre">hand</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-is-action-set-active"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_action_set_active</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given action set is active.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-is-eye-gaze-interaction-supported"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_eye_gaze_interaction_supported</strong>()</p>
+<p>Returns the capabilities of the eye gaze interaction extension.</p>
+<p><strong>Note:</strong> This only returns a valid value after OpenXR has been initialized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-is-foveation-supported"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_foveation_supported</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if OpenXR's foveation extension is supported, the interface must be initialized before this returns a valid value.</p>
+<p><strong>Note:</strong> This feature is only available on the compatibility renderer and currently only available on some stand alone headsets. For Vulkan set <a class="reference internal" href="class_viewport.html#class-viewport-property-vrs-mode"><span class="std std-ref">Viewport.vrs_mode</span></a> to <code class="docutils literal notranslate"><span class="pre">VRS_XR</span></code> on desktop.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-is-hand-tracking-supported"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_hand_tracking_supported</strong>()</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if OpenXR's hand tracking is supported and enabled.</p>
+<p><strong>Note:</strong> This only returns a valid value after OpenXR has been initialized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-set-action-set-active"><abbr title="No return value.">void</abbr> <strong>set_action_set_active</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, active: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Sets the given action set as active or inactive.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrinterface-method-set-motion-range"><abbr title="No return value.">void</abbr> <strong>set_motion_range</strong>(hand: <a class="reference internal" href="#enum-openxrinterface-hand"><span class="std std-ref">Hand</span></a>, motion_range: <a class="reference internal" href="#enum-openxrinterface-handmotionrange"><span class="std std-ref">HandMotionRange</span></a>)</p>
+<p>If handtracking is enabled and motion range is supported, sets the currently configured motion range for <code class="docutils literal notranslate"><span class="pre">hand</span></code> to <code class="docutils literal notranslate"><span class="pre">motion_range</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_openxrinteractionprofilemetadata.html" rel="prev" title="OpenXRInteractionProfileMetadata"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_os.html" rel="next" title="OS">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="InputEventMIDI" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_inputeventmidi.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: InputEvent&lt; Resource&lt; RefCounted&lt; Object Represents a MIDI message from a MIDI device, such as a musical keyboard. Description: InputEventMIDI stores information about messages from MIDI(..." property="og:description"/>
+<meta content="Inherits: InputEvent&lt; Resource&lt; RefCounted&lt; Object Represents a MIDI message from a MIDI device, such as a musical keyboard. Description: InputEventMIDI stores information about messages from MIDI(..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) InputEventMIDI — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputeventmidi.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_inputeventmidi.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_inputeventmidi.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_inputeventmidi.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_inputeventmidi.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_inputeventmidi.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_inputeventmidi.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_inputeventmidi.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_inputeventmidi.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_inputeventmidi.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_inputeventmidi.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_inputeventmidi.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_inputeventmidi.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_inputeventmidi.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputeventmidi.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputeventmidi.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_inputeventmouse.html" rel="next" title="InputEventMouse"/>
+<link href="class_inputeventmagnifygesture.html" rel="prev" title="InputEventMagnifyGesture"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_inputeventmidi" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">InputEventMIDI</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="inputeventmidi">
+<span id="class-inputeventmidi"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/InputEventMIDI¶"></a>InputEventMIDI<a class="headerlink" href="#inputeventmidi" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_inputevent.html#class-inputevent"><span class="std std-ref">InputEvent</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Represents a MIDI message from a MIDI device, such as a musical keyboard.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>InputEventMIDI stores information about messages from <a class="reference external" href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> (Musical Instrument Digital Interface) devices. These may include musical keyboards, synthesizers, and drum machines.</p>
+<p>MIDI messages can be received over a 5-pin MIDI connector or over USB. If your device supports both be sure to check the settings in the device to see which output it is using.</p>
+<p>By default, Godot does not detect MIDI devices. You need to call <a class="reference internal" href="class_os.html#class-os-method-open-midi-inputs"><span class="std std-ref">OS.open_midi_inputs</span></a>, first. You can check which devices are detected with <a class="reference internal" href="class_os.html#class-os-method-get-connected-midi-inputs"><span class="std std-ref">OS.get_connected_midi_inputs</span></a>, and close the connection with <a class="reference internal" href="class_os.html#class-os-method-close-midi-inputs"><span class="std std-ref">OS.close_midi_inputs</span></a>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">OS</span><span class="o">.</span><span class="n">open_midi_inputs</span><span class="p">()</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">OS</span><span class="o">.</span><span class="n">get_connected_midi_inputs</span><span class="p">())</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_input</span><span class="p">(</span><span class="n">input_event</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">input_event</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">InputEventMIDI</span><span class="p">:</span>
+<span class="w">        </span><span class="n">_print_midi_info</span><span class="p">(</span><span class="n">input_event</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_print_midi_info</span><span class="p">(</span><span class="n">midi_event</span><span class="p">):</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">midi_event</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Channel "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">channel</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Message "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Pitch "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">pitch</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Velocity "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">velocity</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Instrument "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">instrument</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Pressure "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">pressure</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Controller number: "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">controller_number</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Controller value: "</span><span class="p">,</span><span class="w"> </span><span class="n">midi_event</span><span class="o">.</span><span class="n">controller_value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">OS</span><span class="p">.</span><span class="n">OpenMidiInputs</span><span class="p">();</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">OS</span><span class="p">.</span><span class="n">GetConnectedMidiInputs</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Input</span><span class="p">(</span><span class="n">InputEvent</span><span class="w"> </span><span class="n">inputEvent</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inputEvent</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">InputEventMIDI</span><span class="w"> </span><span class="n">midiEvent</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">PrintMIDIInfo</span><span class="p">(</span><span class="n">midiEvent</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">PrintMIDIInfo</span><span class="p">(</span><span class="n">InputEventMIDI</span><span class="w"> </span><span class="n">midiEvent</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="n">midiEvent</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Channel {midiEvent.Channel}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Message {midiEvent.Message}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Pitch {midiEvent.Pitch}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Velocity {midiEvent.Velocity}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Instrument {midiEvent.Instrument}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Pressure {midiEvent.Pressure}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Controller number: {midiEvent.ControllerNumber}"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">(</span><span class="s">$"Controller value: {midiEvent.ControllerValue}"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> Godot does not support MIDI output, so there is no way to emit MIDI messages from Godot. Only MIDI input is supported.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes">MIDI Message Status Byte List</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/General_MIDI#Program_change_events">Wikipedia General MIDI Instrument List</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Piano_key_frequencies#List">Wikipedia Piano Key Frequencies List</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-channel"><span class="std std-ref">channel</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-controller-number"><span class="std std-ref">controller_number</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-controller-value"><span class="std std-ref">controller_value</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-instrument"><span class="std std-ref">instrument</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-midimessage"><span class="std std-ref">MIDIMessage</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-message"><span class="std std-ref">message</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-pitch"><span class="std std-ref">pitch</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-pressure"><span class="std std-ref">pressure</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputeventmidi-property-velocity"><span class="std std-ref">velocity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-inputeventmidi-property-channel"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>channel</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_channel" name="//apple_ref/cpp/Property/set_channel"></a>set_channel</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_channel" name="//apple_ref/cpp/Property/get_channel"></a>get_channel</strong>()</p></li>
+</ul>
+<p>The MIDI channel of this message, ranging from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">15</span></code>. MIDI channel <code class="docutils literal notranslate"><span class="pre">9</span></code> is reserved for percussion instruments.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-controller-number"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>controller_number</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_controller_number" name="//apple_ref/cpp/Property/set_controller_number"></a>set_controller_number</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_controller_number" name="//apple_ref/cpp/Property/get_controller_number"></a>get_controller_number</strong>()</p></li>
+</ul>
+<p>The unique number of the controller, if <a class="reference internal" href="#class-inputeventmidi-property-message"><span class="std std-ref">message</span></a> is <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-midi-message-control-change"><span class="std std-ref">@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE</span></a>, otherwise this is <code class="docutils literal notranslate"><span class="pre">0</span></code>. This value can be used to identify sliders for volume, balance, and panning, as well as switches and pedals on the MIDI device. See the <a class="reference external" href="https://en.wikipedia.org/wiki/General_MIDI#Controller_events">General MIDI specification</a> for a small list.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-controller-value"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>controller_value</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_controller_value" name="//apple_ref/cpp/Property/set_controller_value"></a>set_controller_value</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_controller_value" name="//apple_ref/cpp/Property/get_controller_value"></a>get_controller_value</strong>()</p></li>
+</ul>
+<p>The value applied to the controller. If <a class="reference internal" href="#class-inputeventmidi-property-message"><span class="std std-ref">message</span></a> is <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-midi-message-control-change"><span class="std std-ref">@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE</span></a>, this value ranges from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">127</span></code>, otherwise it is <code class="docutils literal notranslate"><span class="pre">0</span></code>. See also <a class="reference internal" href="#class-inputeventmidi-property-controller-value"><span class="std std-ref">controller_value</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-instrument"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>instrument</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_instrument" name="//apple_ref/cpp/Property/set_instrument"></a>set_instrument</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_instrument" name="//apple_ref/cpp/Property/get_instrument"></a>get_instrument</strong>()</p></li>
+</ul>
+<p>The instrument (also called <em>program</em> or <em>preset</em>) used on this MIDI message. This value ranges from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">127</span></code>.</p>
+<p>To see what each value means, refer to the <a class="reference external" href="https://en.wikipedia.org/wiki/General_MIDI#Program_change_events">General MIDI's instrument list</a>. Keep in mind that the list is off by 1 because it does not begin from 0. A value of <code class="docutils literal notranslate"><span class="pre">0</span></code> corresponds to the acoustic grand piano.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-message"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-midimessage"><span class="std std-ref">MIDIMessage</span></a> <strong>message</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_message" name="//apple_ref/cpp/Property/set_message"></a>set_message</strong>(value: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-midimessage"><span class="std std-ref">MIDIMessage</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-midimessage"><span class="std std-ref">MIDIMessage</span></a> <strong><a class="dashAnchor" id="properties-get_message" name="//apple_ref/cpp/Property/get_message"></a>get_message</strong>()</p></li>
+</ul>
+<p>Represents the type of MIDI message (see the <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-midimessage"><span class="std std-ref">MIDIMessage</span></a> enum).</p>
+<p>For more information, see the <a class="reference external" href="https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes">MIDI message status byte list chart</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-pitch"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>pitch</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_pitch" name="//apple_ref/cpp/Property/set_pitch"></a>set_pitch</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_pitch" name="//apple_ref/cpp/Property/get_pitch"></a>get_pitch</strong>()</p></li>
+</ul>
+<p>The pitch index number of this MIDI message. This value ranges from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">127</span></code>.</p>
+<p>On a piano, the <strong>middle C</strong> is <code class="docutils literal notranslate"><span class="pre">60</span></code>, followed by a <strong>C-sharp</strong> (<code class="docutils literal notranslate"><span class="pre">61</span></code>), then a <strong>D</strong> (<code class="docutils literal notranslate"><span class="pre">62</span></code>), and so on. Each octave is split in offsets of 12. See the "MIDI note number" column of the <a class="reference external" href="https://en.wikipedia.org/wiki/Piano_key_frequencies">piano key frequency chart</a> a full list.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-pressure"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>pressure</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_pressure" name="//apple_ref/cpp/Property/set_pressure"></a>set_pressure</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_pressure" name="//apple_ref/cpp/Property/get_pressure"></a>get_pressure</strong>()</p></li>
+</ul>
+<p>The strength of the key being pressed. This value ranges from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">127</span></code>.</p>
+<p><strong>Note:</strong> For many devices, this value is always <code class="docutils literal notranslate"><span class="pre">0</span></code>. Other devices such as musical keyboards may simulate pressure by changing the <a class="reference internal" href="#class-inputeventmidi-property-velocity"><span class="std std-ref">velocity</span></a>, instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-inputeventmidi-property-velocity"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>velocity</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_velocity" name="//apple_ref/cpp/Property/set_velocity"></a>set_velocity</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_velocity" name="//apple_ref/cpp/Property/get_velocity"></a>get_velocity</strong>()</p></li>
+</ul>
+<p>The velocity of the MIDI message. This value ranges from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">127</span></code>. For a musical keyboard, this corresponds to how quickly the key was pressed, and is rarely above <code class="docutils literal notranslate"><span class="pre">110</span></code> in practice.</p>
+<p><strong>Note:</strong> Some MIDI devices may send a <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-midi-message-note-on"><span class="std std-ref">@GlobalScope.MIDI_MESSAGE_NOTE_ON</span></a> message with <code class="docutils literal notranslate"><span class="pre">0</span></code> velocity and expect it to be treated the same as a <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-midi-message-note-off"><span class="std std-ref">@GlobalScope.MIDI_MESSAGE_NOTE_OFF</span></a> message. If necessary, this can be handled with a few lines of code:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_input</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">InputEventMIDI</span><span class="p">:</span>
+<span class="w">        </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">event</span><span class="o">.</span><span class="n">message</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">MIDI_MESSAGE_NOTE_ON</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">event</span><span class="o">.</span><span class="n">velocity</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<span class="w">            </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Note pressed!"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_inputeventmagnifygesture.html" rel="prev" title="InputEventMagnifyGesture"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_inputeventmouse.html" rel="next" title="InputEventMouse">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

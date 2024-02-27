@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorUndoRedoManager" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorundoredomanager.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object Manages undo history of scenes opened in the editor. Description: EditorUndoRedoManager is a manager for UndoRedo objects associated with edited scenes. Each scene has its own undo..." property="og:description"/>
+<meta content="Inherits: Object Manages undo history of scenes opened in the editor. Description: EditorUndoRedoManager is a manager for UndoRedo objects associated with edited scenes. Each scene has its own undo..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorUndoRedoManager — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorundoredomanager.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorundoredomanager.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorundoredomanager.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorundoredomanager.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorundoredomanager.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorundoredomanager.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorundoredomanager.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorundoredomanager.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorundoredomanager.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorundoredomanager.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorundoredomanager.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorundoredomanager.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorundoredomanager.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorvcsinterface.html" rel="next" title="EditorVCSInterface"/>
+<link href="class_editortranslationparserplugin.html" rel="prev" title="EditorTranslationParserPlugin"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorundoredomanager" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorUndoRedoManager</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorundoredomanager">
+<span id="class-editorundoredomanager"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorUndoRedoManager¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorUndoRedoManager¶"></a>EditorUndoRedoManager<a class="headerlink" href="#editorundoredomanager" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Manages undo history of scenes opened in the editor.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>EditorUndoRedoManager</strong> is a manager for <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> objects associated with edited scenes. Each scene has its own undo history and <strong>EditorUndoRedoManager</strong> ensures that each action performed in the editor gets associated with a proper scene. For actions not related to scenes (<a class="reference internal" href="class_projectsettings.html#class-projectsettings"><span class="std std-ref">ProjectSettings</span></a> edits, external resources, etc.), a separate global history is used.</p>
+<p>The usage is mostly the same as <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a>. You create and commit actions and the manager automatically decides under-the-hood what scenes it belongs to. The scene is deduced based on the first operation in an action, using the object from the operation. The rules are as follows:</p>
+<ul class="simple">
+<li><p>If the object is a <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, use the currently edited scene;</p></li>
+<li><p>If the object is a built-in resource, use the scene from its path;</p></li>
+<li><p>If the object is external resource or anything else, use global history.</p></li>
+</ul>
+<p>This guessing can sometimes yield false results, so you can provide a custom context object when creating an action.</p>
+<p><strong>EditorUndoRedoManager</strong> is intended to be used by Godot editor plugins. You can obtain it using <a class="reference internal" href="class_editorplugin.html#class-editorplugin-method-get-undo-redo"><span class="std std-ref">EditorPlugin.get_undo_redo</span></a>. For non-editor uses or plugins that don't need to integrate with the editor's undo history, use <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> instead.</p>
+<p>The manager's API is mostly the same as in <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a>, so you can refer to its documentation for more examples. The main difference is that <strong>EditorUndoRedoManager</strong> uses object + method name for actions, instead of <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-do-method"><span class="std std-ref">add_do_method</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-do-property"><span class="std std-ref">add_do_property</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-do-reference"><span class="std std-ref">add_do_reference</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-undo-method"><span class="std std-ref">add_undo_method</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-undo-property"><span class="std std-ref">add_undo_property</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-add-undo-reference"><span class="std std-ref">add_undo_reference</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-commit-action"><span class="std std-ref">commit_action</span></a>(execute: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-create-action"><span class="std std-ref">create_action</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, merge_mode: <a class="reference internal" href="class_undoredo.html#enum-undoredo-mergemode"><span class="std std-ref">MergeMode</span></a> = 0, custom_context: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> = null, backward_undo_ops: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-get-history-undo-redo"><span class="std std-ref">get_history_undo_redo</span></a>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-get-object-history-id"><span class="std std-ref">get_object_history_id</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorundoredomanager-method-is-committing-action"><span class="std std-ref">is_committing_action</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-editorundoredomanager-signal-history-changed"><strong>history_changed</strong>()</p>
+<p>Emitted when the list of actions in any history has changed, either when an action is committed or a history is cleared.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-editorundoredomanager-signal-version-changed"><strong>version_changed</strong>()</p>
+<p>Emitted when the version of any history has changed as a result of undo or redo call.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-editorundoredomanager-specialhistory">enum <strong><a class="dashAnchor" id="enumerations-SpecialHistory" name="//apple_ref/cpp/Enum/SpecialHistory"></a><a class="dashAnchor" id="enumerations-SpecialHistory" name="//apple_ref/cpp/Enum/SpecialHistory"></a>SpecialHistory</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorundoredomanager-constant-global-history"><a class="reference internal" href="#enum-editorundoredomanager-specialhistory"><span class="std std-ref">SpecialHistory</span></a> <strong><a class="dashAnchor" id="enumerations-GLOBAL_HISTORY" name="//apple_ref/cpp/Enum/GLOBAL_HISTORY"></a><a class="dashAnchor" id="enumerations-GLOBAL_HISTORY" name="//apple_ref/cpp/Enum/GLOBAL_HISTORY"></a>GLOBAL_HISTORY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Global history not associated with any scene, but with external resources etc.</p>
+<p class="classref-enumeration-constant" id="class-editorundoredomanager-constant-remote-history"><a class="reference internal" href="#enum-editorundoredomanager-specialhistory"><span class="std std-ref">SpecialHistory</span></a> <strong><a class="dashAnchor" id="enumerations-REMOTE_HISTORY" name="//apple_ref/cpp/Enum/REMOTE_HISTORY"></a><a class="dashAnchor" id="enumerations-REMOTE_HISTORY" name="//apple_ref/cpp/Enum/REMOTE_HISTORY"></a>REMOTE_HISTORY</strong> = <code class="docutils literal notranslate"><span class="pre">-9</span></code></p>
+<p>History associated with remote inspector. Used when live editing a running project.</p>
+<p class="classref-enumeration-constant" id="class-editorundoredomanager-constant-invalid-history"><a class="reference internal" href="#enum-editorundoredomanager-specialhistory"><span class="std std-ref">SpecialHistory</span></a> <strong><a class="dashAnchor" id="enumerations-INVALID_HISTORY" name="//apple_ref/cpp/Enum/INVALID_HISTORY"></a><a class="dashAnchor" id="enumerations-INVALID_HISTORY" name="//apple_ref/cpp/Enum/INVALID_HISTORY"></a>INVALID_HISTORY</strong> = <code class="docutils literal notranslate"><span class="pre">-99</span></code></p>
+<p>Invalid "null" history. It's a special value, not associated with any object.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editorundoredomanager-method-add-do-method"><abbr title="No return value.">void</abbr> <strong>add_do_method</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Register a method that will be called when the action is committed (i.e. the "do" action).</p>
+<p>If this is the first operation, the <code class="docutils literal notranslate"><span class="pre">object</span></code> will be used to deduce target undo history.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-add-do-property"><abbr title="No return value.">void</abbr> <strong>add_do_property</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Register a property value change for "do".</p>
+<p>If this is the first operation, the <code class="docutils literal notranslate"><span class="pre">object</span></code> will be used to deduce target undo history.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-add-do-reference"><abbr title="No return value.">void</abbr> <strong>add_do_reference</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p>
+<p>Register a reference for "do" that will be erased if the "do" history is lost. This is useful mostly for new nodes created for the "do" call. Do not use for resources.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-add-undo-method"><abbr title="No return value.">void</abbr> <strong>add_undo_method</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr></p>
+<p>Register a method that will be called when the action is undone (i.e. the "undo" action).</p>
+<p>If this is the first operation, the <code class="docutils literal notranslate"><span class="pre">object</span></code> will be used to deduce target undo history.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-add-undo-property"><abbr title="No return value.">void</abbr> <strong>add_undo_property</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Register a property value change for "undo".</p>
+<p>If this is the first operation, the <code class="docutils literal notranslate"><span class="pre">object</span></code> will be used to deduce target undo history.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-add-undo-reference"><abbr title="No return value.">void</abbr> <strong>add_undo_reference</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>)</p>
+<p>Register a reference for "undo" that will be erased if the "undo" history is lost. This is useful mostly for nodes removed with the "do" call (not the "undo" call!).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-commit-action"><abbr title="No return value.">void</abbr> <strong>commit_action</strong>(execute: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p>
+<p>Commit the action. If <code class="docutils literal notranslate"><span class="pre">execute</span></code> is true (default), all "do" methods/properties are called/set when this function is called.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-create-action"><abbr title="No return value.">void</abbr> <strong>create_action</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, merge_mode: <a class="reference internal" href="class_undoredo.html#enum-undoredo-mergemode"><span class="std std-ref">MergeMode</span></a> = 0, custom_context: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> = null, backward_undo_ops: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Create a new action. After this is called, do all your calls to <a class="reference internal" href="#class-editorundoredomanager-method-add-do-method"><span class="std std-ref">add_do_method</span></a>, <a class="reference internal" href="#class-editorundoredomanager-method-add-undo-method"><span class="std std-ref">add_undo_method</span></a>, <a class="reference internal" href="#class-editorundoredomanager-method-add-do-property"><span class="std std-ref">add_do_property</span></a>, and <a class="reference internal" href="#class-editorundoredomanager-method-add-undo-property"><span class="std std-ref">add_undo_property</span></a>, then commit the action with <a class="reference internal" href="#class-editorundoredomanager-method-commit-action"><span class="std std-ref">commit_action</span></a>.</p>
+<p>The way actions are merged is dictated by the <code class="docutils literal notranslate"><span class="pre">merge_mode</span></code> argument. See <a class="reference internal" href="class_undoredo.html#enum-undoredo-mergemode"><span class="std std-ref">MergeMode</span></a> for details.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">custom_context</span></code> object is provided, it will be used for deducing target history (instead of using the first operation).</p>
+<p>The way undo operation are ordered in actions is dictated by <code class="docutils literal notranslate"><span class="pre">backward_undo_ops</span></code>. When <code class="docutils literal notranslate"><span class="pre">backward_undo_ops</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code> undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-get-history-undo-redo"><a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> <strong>get_history_undo_redo</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> object associated with the given history <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">id</span></code> above <code class="docutils literal notranslate"><span class="pre">0</span></code> are mapped to the opened scene tabs (but it doesn't match their order). <code class="docutils literal notranslate"><span class="pre">id</span></code> of <code class="docutils literal notranslate"><span class="pre">0</span></code> or lower have special meaning (see <a class="reference internal" href="#enum-editorundoredomanager-specialhistory"><span class="std std-ref">SpecialHistory</span></a>).</p>
+<p>Best used with <a class="reference internal" href="#class-editorundoredomanager-method-get-object-history-id"><span class="std std-ref">get_object_history_id</span></a>. This method is only provided in case you need some more advanced methods of <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> (but keep in mind that directly operating on the <a class="reference internal" href="class_undoredo.html#class-undoredo"><span class="std std-ref">UndoRedo</span></a> object might affect editor's stability).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-get-object-history-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_object_history_id</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the history ID deduced from the given <code class="docutils literal notranslate"><span class="pre">object</span></code>. It can be used with <a class="reference internal" href="#class-editorundoredomanager-method-get-history-undo-redo"><span class="std std-ref">get_history_undo_redo</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorundoredomanager-method-is-committing-action"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_committing_action</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the <strong>EditorUndoRedoManager</strong> is currently committing the action, i.e. running its "do" method or property change (see <a class="reference internal" href="#class-editorundoredomanager-method-commit-action"><span class="std std-ref">commit_action</span></a>).</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editortranslationparserplugin.html" rel="prev" title="EditorTranslationParserPlugin"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorvcsinterface.html" rel="next" title="EditorVCSInterface">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

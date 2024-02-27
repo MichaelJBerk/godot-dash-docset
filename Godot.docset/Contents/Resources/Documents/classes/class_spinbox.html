@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="number, numeric, input" name="keywords"/>
+<meta content="SpinBox" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_spinbox.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Range&lt; Control&lt; CanvasItem&lt; Node&lt; Object An input field for numbers. Description: SpinBox is a numerical input text field. It allows entering integers and floating point numbers. Example:..." property="og:description"/>
+<meta content="Inherits: Range&lt; Control&lt; CanvasItem&lt; Node&lt; Object An input field for numbers. Description: SpinBox is a numerical input text field. It allows entering integers and floating point numbers. Example:..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) SpinBox — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_spinbox.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_spinbox.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_spinbox.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_spinbox.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_spinbox.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_spinbox.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_spinbox.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_spinbox.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_spinbox.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_spinbox.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_spinbox.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_spinbox.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_spinbox.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_spinbox.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_spinbox.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_spinbox.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_splitcontainer.html" rel="next" title="SplitContainer"/>
+<link href="class_softbody3d.html" rel="prev" title="SoftBody3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_spinbox" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">SpinBox</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="spinbox">
+<span id="class-spinbox"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/SpinBox¶"></a>SpinBox<a class="headerlink" href="#spinbox" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_range.html#class-range"><span class="std std-ref">Range</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>An input field for numbers.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>SpinBox</strong> is a numerical input text field. It allows entering integers and floating point numbers.</p>
+<p><strong>Example:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">spin_box</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SpinBox</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">add_child</span><span class="p">(</span><span class="n">spin_box</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">line_edit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spin_box</span><span class="o">.</span><span class="n">get_line_edit</span><span class="p">()</span>
+<span class="n">line_edit</span><span class="o">.</span><span class="n">context_menu_enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">false</span>
+<span class="n">spin_box</span><span class="o">.</span><span class="n">horizontal_alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LineEdit</span><span class="o">.</span><span class="n">HORIZONTAL_ALIGNMENT_RIGHT</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">spinBox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SpinBox</span><span class="p">();</span>
+<span class="n">AddChild</span><span class="p">(</span><span class="n">spinBox</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">lineEdit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spinBox</span><span class="p">.</span><span class="n">GetLineEdit</span><span class="p">();</span>
+<span class="n">lineEdit</span><span class="p">.</span><span class="n">ContextMenuEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<span class="n">spinBox</span><span class="p">.</span><span class="n">AlignHorizontal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LineEdit</span><span class="p">.</span><span class="n">HorizontalAlignEnum</span><span class="p">.</span><span class="n">Right</span><span class="p">;</span>
+</pre></div>
+</div>
+</div></div>
+<p>The above code will create a <strong>SpinBox</strong>, disable context menu on it and set the text alignment to right.</p>
+<p>See <a class="reference internal" href="class_range.html#class-range"><span class="std std-ref">Range</span></a> class for more options over the <strong>SpinBox</strong>.</p>
+<p><strong>Note:</strong> With the <strong>SpinBox</strong>'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.</p>
+<p><strong>Note:</strong> <strong>SpinBox</strong> relies on an underlying <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> node. To theme a <strong>SpinBox</strong>'s background, add theme items for <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> and customize them.</p>
+<p><strong>Note:</strong> If you want to implement drag and drop for the underlying <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a>, you can use <a class="reference internal" href="class_control.html#class-control-method-set-drag-forwarding"><span class="std std-ref">Control.set_drag_forwarding</span></a> on the node returned by <a class="reference internal" href="#class-spinbox-method-get-line-edit"><span class="std std-ref">get_line_edit</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-alignment"><span class="std std-ref">alignment</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-custom-arrow-step"><span class="std std-ref">custom_arrow_step</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-editable"><span class="std std-ref">editable</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-prefix"><span class="std std-ref">prefix</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-select-all-on-focus"><span class="std std-ref">select_all_on_focus</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This value is an integer composed as a bitmask of the following flags.">BitField</abbr>[<a class="reference internal" href="class_control.html#enum-control-sizeflags"><span class="std std-ref">SizeFlags</span></a>]</p></td>
+<td><p>size_flags_vertical</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-size-flags-vertical"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p>step</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code> (overrides <a class="reference internal" href="class_range.html#class-range-property-step"><span class="std std-ref">Range</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-suffix"><span class="std std-ref">suffix</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-property-update-on-text-changed"><span class="std std-ref">update_on_text_changed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-method-apply"><span class="std std-ref">apply</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-method-get-line-edit"><span class="std std-ref">get_line_edit</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-spinbox-theme-icon-updown"><span class="std std-ref">updown</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-spinbox-property-alignment"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> <strong>alignment</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_horizontal_alignment" name="//apple_ref/cpp/Property/set_horizontal_alignment"></a>set_horizontal_alignment</strong>(value: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-horizontalalignment"><span class="std std-ref">HorizontalAlignment</span></a> <strong><a class="dashAnchor" id="properties-get_horizontal_alignment" name="//apple_ref/cpp/Property/get_horizontal_alignment"></a>get_horizontal_alignment</strong>()</p></li>
+</ul>
+<p>Changes the alignment of the underlying <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-custom-arrow-step"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>custom_arrow_step</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_custom_arrow_step" name="//apple_ref/cpp/Property/set_custom_arrow_step"></a>set_custom_arrow_step</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_custom_arrow_step" name="//apple_ref/cpp/Property/get_custom_arrow_step"></a>get_custom_arrow_step</strong>()</p></li>
+</ul>
+<p>If not <code class="docutils literal notranslate"><span class="pre">0</span></code>, <a class="reference internal" href="class_range.html#class-range-property-value"><span class="std std-ref">Range.value</span></a> will always be rounded to a multiple of <a class="reference internal" href="#class-spinbox-property-custom-arrow-step"><span class="std std-ref">custom_arrow_step</span></a> when interacting with the arrow buttons of the <strong>SpinBox</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-editable"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>editable</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_editable" name="//apple_ref/cpp/Property/set_editable"></a>set_editable</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_editable" name="//apple_ref/cpp/Property/is_editable"></a>is_editable</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>SpinBox</strong> will be editable. Otherwise, it will be read only.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-prefix"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>prefix</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_prefix" name="//apple_ref/cpp/Property/set_prefix"></a>set_prefix</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_prefix" name="//apple_ref/cpp/Property/get_prefix"></a>get_prefix</strong>()</p></li>
+</ul>
+<p>Adds the specified prefix string before the numerical value of the <strong>SpinBox</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-select-all-on-focus"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>select_all_on_focus</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_select_all_on_focus" name="//apple_ref/cpp/Property/set_select_all_on_focus"></a>set_select_all_on_focus</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_select_all_on_focus" name="//apple_ref/cpp/Property/is_select_all_on_focus"></a>is_select_all_on_focus</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>SpinBox</strong> will select the whole text when the <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> gains focus. Clicking the up and down arrows won't trigger this behavior.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-suffix"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>suffix</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_suffix" name="//apple_ref/cpp/Property/set_suffix"></a>set_suffix</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_suffix" name="//apple_ref/cpp/Property/get_suffix"></a>get_suffix</strong>()</p></li>
+</ul>
+<p>Adds the specified suffix string after the numerical value of the <strong>SpinBox</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-spinbox-property-update-on-text-changed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>update_on_text_changed</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_update_on_text_changed" name="//apple_ref/cpp/Property/set_update_on_text_changed"></a>set_update_on_text_changed</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_update_on_text_changed" name="//apple_ref/cpp/Property/get_update_on_text_changed"></a>get_update_on_text_changed</strong>()</p></li>
+</ul>
+<p>Sets the value of the <a class="reference internal" href="class_range.html#class-range"><span class="std std-ref">Range</span></a> for this <strong>SpinBox</strong> when the <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> text is <em>changed</em> instead of <em>submitted</em>. See <a class="reference internal" href="class_lineedit.html#class-lineedit-signal-text-changed"><span class="std std-ref">LineEdit.text_changed</span></a> and <a class="reference internal" href="class_lineedit.html#class-lineedit-signal-text-submitted"><span class="std std-ref">LineEdit.text_submitted</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-spinbox-method-apply"><abbr title="No return value.">void</abbr> <strong>apply</strong>()</p>
+<p>Applies the current value of this <strong>SpinBox</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-spinbox-method-get-line-edit"><a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> <strong>get_line_edit</strong>()</p>
+<p>Returns the <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a> instance from this <strong>SpinBox</strong>. You can use it to access properties and methods of <a class="reference internal" href="class_lineedit.html#class-lineedit"><span class="std std-ref">LineEdit</span></a>.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-visible"><span class="std std-ref">CanvasItem.visible</span></a> property.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-spinbox-theme-icon-updown"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>updown</strong></p>
+<p>Sets a custom <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> for up and down arrows of the <strong>SpinBox</strong>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_softbody3d.html" rel="prev" title="SoftBody3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_splitcontainer.html" rel="next" title="SplitContainer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

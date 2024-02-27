@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GeometryInstance3D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_geometryinstance3d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: VisualInstance3D&lt; Node3D&lt; Node&lt; Object Inherited By: CPUParticles3D, CSGShape3D, GPUParticles3D, Label3D, MeshInstance3D, MultiMeshInstance3D, SpriteBase3D Base node for geometry-based vi..." property="og:description"/>
+<meta content="Inherits: VisualInstance3D&lt; Node3D&lt; Node&lt; Object Inherited By: CPUParticles3D, CSGShape3D, GPUParticles3D, Label3D, MeshInstance3D, MultiMeshInstance3D, SpriteBase3D Base node for geometry-based vi..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GeometryInstance3D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometryinstance3d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_geometryinstance3d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_geometryinstance3d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_geometryinstance3d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_geometryinstance3d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_geometryinstance3d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_geometryinstance3d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_geometryinstance3d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_geometryinstance3d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_geometryinstance3d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_geometryinstance3d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_geometryinstance3d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_geometryinstance3d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_geometryinstance3d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometryinstance3d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometryinstance3d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gpuparticles2d.html" rel="next" title="GPUParticles2D"/>
+<link href="class_generic6dofjoint3d.html" rel="prev" title="Generic6DOFJoint3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_geometryinstance3d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GeometryInstance3D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="geometryinstance3d">
+<span id="class-geometryinstance3d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GeometryInstance3D¶"></a>GeometryInstance3D<a class="headerlink" href="#geometryinstance3d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_cpuparticles3d.html#class-cpuparticles3d"><span class="std std-ref">CPUParticles3D</span></a>, <a class="reference internal" href="class_csgshape3d.html#class-csgshape3d"><span class="std std-ref">CSGShape3D</span></a>, <a class="reference internal" href="class_gpuparticles3d.html#class-gpuparticles3d"><span class="std std-ref">GPUParticles3D</span></a>, <a class="reference internal" href="class_label3d.html#class-label3d"><span class="std std-ref">Label3D</span></a>, <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a>, <a class="reference internal" href="class_multimeshinstance3d.html#class-multimeshinstance3d"><span class="std std-ref">MultiMeshInstance3D</span></a>, <a class="reference internal" href="class_spritebase3d.html#class-spritebase3d"><span class="std std-ref">SpriteBase3D</span></a></p>
+<p>Base node for geometry-based visual instances.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base node for geometry-based visual instances. Shares some common functionality like visibility and custom materials.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/3d/visibility_ranges.html"><span class="doc">Visibility ranges (HLOD)</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-cast-shadow"><span class="std std-ref">cast_shadow</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-custom-aabb"><span class="std std-ref">custom_aabb</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">AABB(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-extra-cull-margin"><span class="std std-ref">extra_cull_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-gi-lightmap-scale"><span class="std std-ref">gi_lightmap_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-gi-mode"><span class="std std-ref">gi_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-ignore-occlusion-culling"><span class="std std-ref">ignore_occlusion_culling</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-lod-bias"><span class="std std-ref">lod_bias</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-material-overlay"><span class="std std-ref">material_overlay</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-material-override"><span class="std std-ref">material_override</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-transparency"><span class="std std-ref">transparency</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin"><span class="std std-ref">visibility_range_begin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin-margin"><span class="std std-ref">visibility_range_begin_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end"><span class="std std-ref">visibility_range_end</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end-margin"><span class="std std-ref">visibility_range_end_margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-fade-mode"><span class="std std-ref">visibility_range_fade_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-method-get-instance-shader-parameter"><span class="std std-ref">get_instance_shader_parameter</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-geometryinstance3d-method-set-instance-shader-parameter"><span class="std std-ref">set_instance_shader_parameter</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-geometryinstance3d-shadowcastingsetting">enum <strong><a class="dashAnchor" id="enumerations-ShadowCastingSetting" name="//apple_ref/cpp/Enum/ShadowCastingSetting"></a>ShadowCastingSetting</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-shadow-casting-setting-off"><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_CASTING_SETTING_OFF" name="//apple_ref/cpp/Enum/SHADOW_CASTING_SETTING_OFF"></a>SHADOW_CASTING_SETTING_OFF</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Will not cast any shadows. Use this to improve performance for small geometry that is unlikely to cast noticeable shadows (such as debris).</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-shadow-casting-setting-on"><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_CASTING_SETTING_ON" name="//apple_ref/cpp/Enum/SHADOW_CASTING_SETTING_ON"></a>SHADOW_CASTING_SETTING_ON</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Will cast shadows from all visible faces in the GeometryInstance3D.</p>
+<p>Will take culling into account, so faces not being rendered will not be taken into account when shadow casting.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-shadow-casting-setting-double-sided"><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_CASTING_SETTING_DOUBLE_SIDED" name="//apple_ref/cpp/Enum/SHADOW_CASTING_SETTING_DOUBLE_SIDED"></a>SHADOW_CASTING_SETTING_DOUBLE_SIDED</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Will cast shadows from all visible faces in the GeometryInstance3D.</p>
+<p>Will not take culling into account, so all faces will be taken into account when shadow casting.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-shadow-casting-setting-shadows-only"><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_CASTING_SETTING_SHADOWS_ONLY" name="//apple_ref/cpp/Enum/SHADOW_CASTING_SETTING_SHADOWS_ONLY"></a>SHADOW_CASTING_SETTING_SHADOWS_ONLY</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Will only show the shadows casted from this object.</p>
+<p>In other words, the actual mesh will not be visible, only the shadows casted from the mesh will be.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-geometryinstance3d-gimode">enum <strong><a class="dashAnchor" id="enumerations-GIMode" name="//apple_ref/cpp/Enum/GIMode"></a>GIMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-gi-mode-disabled"><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a> <strong><a class="dashAnchor" id="enumerations-GI_MODE_DISABLED" name="//apple_ref/cpp/Enum/GI_MODE_DISABLED"></a>GI_MODE_DISABLED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Disabled global illumination mode. Use for dynamic objects that do not contribute to global illumination (such as characters). When using <a class="reference internal" href="class_voxelgi.html#class-voxelgi"><span class="std std-ref">VoxelGI</span></a> and SDFGI, the geometry will <em>receive</em> indirect lighting and reflections but the geometry will not be considered in GI baking. When using <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>, the object will receive indirect lighting using lightmap probes instead of using the baked lightmap texture.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-gi-mode-static"><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a> <strong><a class="dashAnchor" id="enumerations-GI_MODE_STATIC" name="//apple_ref/cpp/Enum/GI_MODE_STATIC"></a>GI_MODE_STATIC</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Baked global illumination mode. Use for static objects that contribute to global illumination (such as level geometry). This GI mode is effective when using <a class="reference internal" href="class_voxelgi.html#class-voxelgi"><span class="std std-ref">VoxelGI</span></a>, SDFGI and <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-gi-mode-dynamic"><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a> <strong><a class="dashAnchor" id="enumerations-GI_MODE_DYNAMIC" name="//apple_ref/cpp/Enum/GI_MODE_DYNAMIC"></a>GI_MODE_DYNAMIC</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Dynamic global illumination mode. Use for dynamic objects that contribute to global illumination. This GI mode is only effective when using <a class="reference internal" href="class_voxelgi.html#class-voxelgi"><span class="std std-ref">VoxelGI</span></a>, but it has a higher performance impact than <a class="reference internal" href="#class-geometryinstance3d-constant-gi-mode-static"><span class="std std-ref">GI_MODE_STATIC</span></a>. When using other GI methods, this will act the same as <a class="reference internal" href="#class-geometryinstance3d-constant-gi-mode-disabled"><span class="std std-ref">GI_MODE_DISABLED</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-geometryinstance3d-lightmapscale">enum <strong><a class="dashAnchor" id="enumerations-LightmapScale" name="//apple_ref/cpp/Enum/LightmapScale"></a>LightmapScale</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-lightmap-scale-1x"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="enumerations-LIGHTMAP_SCALE_1X" name="//apple_ref/cpp/Enum/LIGHTMAP_SCALE_1X"></a>LIGHTMAP_SCALE_1X</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The standard texel density for lightmapping with <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-lightmap-scale-2x"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="enumerations-LIGHTMAP_SCALE_2X" name="//apple_ref/cpp/Enum/LIGHTMAP_SCALE_2X"></a>LIGHTMAP_SCALE_2X</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Multiplies texel density by 2× for lightmapping with <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>. To ensure consistency in texel density, use this when scaling a mesh by a factor between 1.5 and 3.0.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-lightmap-scale-4x"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="enumerations-LIGHTMAP_SCALE_4X" name="//apple_ref/cpp/Enum/LIGHTMAP_SCALE_4X"></a>LIGHTMAP_SCALE_4X</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Multiplies texel density by 4× for lightmapping with <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>. To ensure consistency in texel density, use this when scaling a mesh by a factor between 3.0 and 6.0.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-lightmap-scale-8x"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="enumerations-LIGHTMAP_SCALE_8X" name="//apple_ref/cpp/Enum/LIGHTMAP_SCALE_8X"></a>LIGHTMAP_SCALE_8X</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Multiplies texel density by 8× for lightmapping with <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>. To ensure consistency in texel density, use this when scaling a mesh by a factor greater than 6.0.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-lightmap-scale-max"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="enumerations-LIGHTMAP_SCALE_MAX" name="//apple_ref/cpp/Enum/LIGHTMAP_SCALE_MAX"></a>LIGHTMAP_SCALE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-geometryinstance3d-visibilityrangefademode">enum <strong><a class="dashAnchor" id="enumerations-VisibilityRangeFadeMode" name="//apple_ref/cpp/Enum/VisibilityRangeFadeMode"></a>VisibilityRangeFadeMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-visibility-range-fade-disabled"><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> <strong><a class="dashAnchor" id="enumerations-VISIBILITY_RANGE_FADE_DISABLED" name="//apple_ref/cpp/Enum/VISIBILITY_RANGE_FADE_DISABLED"></a>VISIBILITY_RANGE_FADE_DISABLED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Will not fade itself nor its visibility dependencies, hysteresis will be used instead. This is the fastest approach to manual LOD, but it can result in noticeable LOD transitions depending on how the LOD meshes are authored. See <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin"><span class="std std-ref">visibility_range_begin</span></a> and <a class="reference internal" href="class_node3d.html#class-node3d-property-visibility-parent"><span class="std std-ref">Node3D.visibility_parent</span></a> for more information.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-visibility-range-fade-self"><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> <strong><a class="dashAnchor" id="enumerations-VISIBILITY_RANGE_FADE_SELF" name="//apple_ref/cpp/Enum/VISIBILITY_RANGE_FADE_SELF"></a>VISIBILITY_RANGE_FADE_SELF</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Will fade-out itself when reaching the limits of its own visibility range. This is slower than <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-disabled"><span class="std std-ref">VISIBILITY_RANGE_FADE_DISABLED</span></a>, but it can provide smoother transitions. The fading range is determined by <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin-margin"><span class="std std-ref">visibility_range_begin_margin</span></a> and <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end-margin"><span class="std std-ref">visibility_range_end_margin</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-geometryinstance3d-constant-visibility-range-fade-dependencies"><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> <strong><a class="dashAnchor" id="enumerations-VISIBILITY_RANGE_FADE_DEPENDENCIES" name="//apple_ref/cpp/Enum/VISIBILITY_RANGE_FADE_DEPENDENCIES"></a>VISIBILITY_RANGE_FADE_DEPENDENCIES</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Will fade-in its visibility dependencies (see <a class="reference internal" href="class_node3d.html#class-node3d-property-visibility-parent"><span class="std std-ref">Node3D.visibility_parent</span></a>) when reaching the limits of its own visibility range. This is slower than <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-disabled"><span class="std std-ref">VISIBILITY_RANGE_FADE_DISABLED</span></a>, but it can provide smoother transitions. The fading range is determined by <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin-margin"><span class="std std-ref">visibility_range_begin_margin</span></a> and <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end-margin"><span class="std std-ref">visibility_range_end_margin</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-geometryinstance3d-property-cast-shadow"><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong>cast_shadow</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cast_shadows_setting" name="//apple_ref/cpp/Property/set_cast_shadows_setting"></a>set_cast_shadows_setting</strong>(value: <a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> <strong><a class="dashAnchor" id="properties-get_cast_shadows_setting" name="//apple_ref/cpp/Property/get_cast_shadows_setting"></a>get_cast_shadows_setting</strong>()</p></li>
+</ul>
+<p>The selected shadow casting flag. See <a class="reference internal" href="#enum-geometryinstance3d-shadowcastingsetting"><span class="std std-ref">ShadowCastingSetting</span></a> for possible values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-custom-aabb"><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> <strong>custom_aabb</strong> = <code class="docutils literal notranslate"><span class="pre">AABB(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_custom_aabb" name="//apple_ref/cpp/Property/set_custom_aabb"></a>set_custom_aabb</strong>(value: <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> <strong><a class="dashAnchor" id="properties-get_custom_aabb" name="//apple_ref/cpp/Property/get_custom_aabb"></a>get_custom_aabb</strong>()</p></li>
+</ul>
+<p>Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> recalculation that happens when a skeleton is used with a <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a> or to have precise control over the <a class="reference internal" href="class_meshinstance3d.html#class-meshinstance3d"><span class="std std-ref">MeshInstance3D</span></a>'s bounding box. To use the default AABB, set value to an <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a> with all fields set to <code class="docutils literal notranslate"><span class="pre">0.0</span></code>. To avoid frustum culling, set <a class="reference internal" href="#class-geometryinstance3d-property-custom-aabb"><span class="std std-ref">custom_aabb</span></a> to a very large AABB that covers your entire game world such as <code class="docutils literal notranslate"><span class="pre">AABB(-10000,</span> <span class="pre">-10000,</span> <span class="pre">-10000,</span> <span class="pre">20000,</span> <span class="pre">20000,</span> <span class="pre">20000)</span></code>. To disable all forms of culling (including occlusion culling), call <a class="reference internal" href="class_renderingserver.html#class-renderingserver-method-instance-set-ignore-culling"><span class="std std-ref">RenderingServer.instance_set_ignore_culling</span></a> on the <strong>GeometryInstance3D</strong>'s <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-extra-cull-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>extra_cull_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_extra_cull_margin" name="//apple_ref/cpp/Property/set_extra_cull_margin"></a>set_extra_cull_margin</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_extra_cull_margin" name="//apple_ref/cpp/Property/get_extra_cull_margin"></a>get_extra_cull_margin</strong>()</p></li>
+</ul>
+<p>The extra distance added to the GeometryInstance3D's bounding box (<a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>) to increase its cull box.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-gi-lightmap-scale"><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong>gi_lightmap_scale</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lightmap_scale" name="//apple_ref/cpp/Property/set_lightmap_scale"></a>set_lightmap_scale</strong>(value: <a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-geometryinstance3d-lightmapscale"><span class="std std-ref">LightmapScale</span></a> <strong><a class="dashAnchor" id="properties-get_lightmap_scale" name="//apple_ref/cpp/Property/get_lightmap_scale"></a>get_lightmap_scale</strong>()</p></li>
+</ul>
+<p>The texel density to use for lightmapping in <a class="reference internal" href="class_lightmapgi.html#class-lightmapgi"><span class="std std-ref">LightmapGI</span></a>. Greater scale values provide higher resolution in the lightmap, which can result in sharper shadows for lights that have both direct and indirect light baked. However, greater scale values will also increase the space taken by the mesh in the lightmap texture, which increases the memory, storage, and bake time requirements. When using a single mesh at different scales, consider adjusting this value to keep the lightmap texel density consistent across meshes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-gi-mode"><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a> <strong>gi_mode</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_gi_mode" name="//apple_ref/cpp/Property/set_gi_mode"></a>set_gi_mode</strong>(value: <a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-geometryinstance3d-gimode"><span class="std std-ref">GIMode</span></a> <strong><a class="dashAnchor" id="properties-get_gi_mode" name="//apple_ref/cpp/Property/get_gi_mode"></a>get_gi_mode</strong>()</p></li>
+</ul>
+<p>The global illumination mode to use for the whole geometry. To avoid inconsistent results, use a mode that matches the purpose of the mesh during gameplay (static/dynamic).</p>
+<p><strong>Note:</strong> Lights' bake mode will also affect the global illumination rendering. See <a class="reference internal" href="class_light3d.html#class-light3d-property-light-bake-mode"><span class="std std-ref">Light3D.light_bake_mode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-ignore-occlusion-culling"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>ignore_occlusion_culling</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ignore_occlusion_culling" name="//apple_ref/cpp/Property/set_ignore_occlusion_culling"></a>set_ignore_occlusion_culling</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_ignoring_occlusion_culling" name="//apple_ref/cpp/Property/is_ignoring_occlusion_culling"></a>is_ignoring_occlusion_culling</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables occlusion culling for this instance. Useful for gizmos that must be rendered even when occlusion culling is in use.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-geometryinstance3d-property-ignore-occlusion-culling"><span class="std std-ref">ignore_occlusion_culling</span></a> does not affect frustum culling (which is what happens when an object is not visible given the camera's angle). To avoid frustum culling, set <a class="reference internal" href="#class-geometryinstance3d-property-custom-aabb"><span class="std std-ref">custom_aabb</span></a> to a very large AABB that covers your entire game world such as <code class="docutils literal notranslate"><span class="pre">AABB(-10000,</span> <span class="pre">-10000,</span> <span class="pre">-10000,</span> <span class="pre">20000,</span> <span class="pre">20000,</span> <span class="pre">20000)</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-lod-bias"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>lod_bias</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lod_bias" name="//apple_ref/cpp/Property/set_lod_bias"></a>set_lod_bias</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_lod_bias" name="//apple_ref/cpp/Property/get_lod_bias"></a>get_lod_bias</strong>()</p></li>
+</ul>
+<p>Changes how quickly the mesh transitions to a lower level of detail. A value of 0 will force the mesh to its lowest level of detail, a value of 1 will use the default settings, and larger values will keep the mesh in a higher level of detail at farther distances.</p>
+<p>Useful for testing level of detail transitions in the editor.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-material-overlay"><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong>material_overlay</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_material_overlay" name="//apple_ref/cpp/Property/set_material_overlay"></a>set_material_overlay</strong>(value: <a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong><a class="dashAnchor" id="properties-get_material_overlay" name="//apple_ref/cpp/Property/get_material_overlay"></a>get_material_overlay</strong>()</p></li>
+</ul>
+<p>The material overlay for the whole geometry.</p>
+<p>If a material is assigned to this property, it will be rendered on top of any other active material for all the surfaces.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-material-override"><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong>material_override</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_material_override" name="//apple_ref/cpp/Property/set_material_override"></a>set_material_override</strong>(value: <a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong><a class="dashAnchor" id="properties-get_material_override" name="//apple_ref/cpp/Property/get_material_override"></a>get_material_override</strong>()</p></li>
+</ul>
+<p>The material override for the whole geometry.</p>
+<p>If a material is assigned to this property, it will be used instead of any material set in any material slot of the mesh.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-transparency"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>transparency</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_transparency" name="//apple_ref/cpp/Property/set_transparency"></a>set_transparency</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_transparency" name="//apple_ref/cpp/Property/get_transparency"></a>get_transparency</strong>()</p></li>
+</ul>
+<p>The transparency applied to the whole geometry (as a multiplier of the materials' existing transparency). <code class="docutils literal notranslate"><span class="pre">0.0</span></code> is fully opaque, while <code class="docutils literal notranslate"><span class="pre">1.0</span></code> is fully transparent. Values greater than <code class="docutils literal notranslate"><span class="pre">0.0</span></code> (exclusive) will force the geometry's materials to go through the transparent pipeline, which is slower to render and can exhibit rendering issues due to incorrect transparency sorting. However, unlike using a transparent material, setting <a class="reference internal" href="#class-geometryinstance3d-property-transparency"><span class="std std-ref">transparency</span></a> to a value greater than <code class="docutils literal notranslate"><span class="pre">0.0</span></code> (exclusive) will <em>not</em> disable shadow rendering.</p>
+<p>In spatial shaders, <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">-</span> <span class="pre">transparency</span></code> is set as the default value of the <code class="docutils literal notranslate"><span class="pre">ALPHA</span></code> built-in.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-geometryinstance3d-property-transparency"><span class="std std-ref">transparency</span></a> is clamped between <code class="docutils literal notranslate"><span class="pre">0.0</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, so this property cannot be used to make transparent materials more opaque than they originally are.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-visibility-range-begin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visibility_range_begin</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_range_begin" name="//apple_ref/cpp/Property/set_visibility_range_begin"></a>set_visibility_range_begin</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_range_begin" name="//apple_ref/cpp/Property/get_visibility_range_begin"></a>get_visibility_range_begin</strong>()</p></li>
+</ul>
+<p>Starting distance from which the GeometryInstance3D will be visible, taking <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin-margin"><span class="std std-ref">visibility_range_begin_margin</span></a> into account as well. The default value of 0 is used to disable the range check.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-visibility-range-begin-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visibility_range_begin_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_range_begin_margin" name="//apple_ref/cpp/Property/set_visibility_range_begin_margin"></a>set_visibility_range_begin_margin</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_range_begin_margin" name="//apple_ref/cpp/Property/get_visibility_range_begin_margin"></a>get_visibility_range_begin_margin</strong>()</p></li>
+</ul>
+<p>Margin for the <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin"><span class="std std-ref">visibility_range_begin</span></a> threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-begin"><span class="std std-ref">visibility_range_begin</span></a> threshold by this amount.</p>
+<p>If <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-fade-mode"><span class="std std-ref">visibility_range_fade_mode</span></a> is <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-disabled"><span class="std std-ref">VISIBILITY_RANGE_FADE_DISABLED</span></a>, this acts as a hysteresis distance. If <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-fade-mode"><span class="std std-ref">visibility_range_fade_mode</span></a> is <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-self"><span class="std std-ref">VISIBILITY_RANGE_FADE_SELF</span></a> or <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-dependencies"><span class="std std-ref">VISIBILITY_RANGE_FADE_DEPENDENCIES</span></a>, this acts as a fade transition distance and must be set to a value greater than <code class="docutils literal notranslate"><span class="pre">0.0</span></code> for the effect to be noticeable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-visibility-range-end"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visibility_range_end</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_range_end" name="//apple_ref/cpp/Property/set_visibility_range_end"></a>set_visibility_range_end</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_range_end" name="//apple_ref/cpp/Property/get_visibility_range_end"></a>get_visibility_range_end</strong>()</p></li>
+</ul>
+<p>Distance from which the GeometryInstance3D will be hidden, taking <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end-margin"><span class="std std-ref">visibility_range_end_margin</span></a> into account as well. The default value of 0 is used to disable the range check.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-visibility-range-end-margin"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>visibility_range_end_margin</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_range_end_margin" name="//apple_ref/cpp/Property/set_visibility_range_end_margin"></a>set_visibility_range_end_margin</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_range_end_margin" name="//apple_ref/cpp/Property/get_visibility_range_end_margin"></a>get_visibility_range_end_margin</strong>()</p></li>
+</ul>
+<p>Margin for the <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end"><span class="std std-ref">visibility_range_end</span></a> threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-end"><span class="std std-ref">visibility_range_end</span></a> threshold by this amount.</p>
+<p>If <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-fade-mode"><span class="std std-ref">visibility_range_fade_mode</span></a> is <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-disabled"><span class="std std-ref">VISIBILITY_RANGE_FADE_DISABLED</span></a>, this acts as a hysteresis distance. If <a class="reference internal" href="#class-geometryinstance3d-property-visibility-range-fade-mode"><span class="std std-ref">visibility_range_fade_mode</span></a> is <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-self"><span class="std std-ref">VISIBILITY_RANGE_FADE_SELF</span></a> or <a class="reference internal" href="#class-geometryinstance3d-constant-visibility-range-fade-dependencies"><span class="std std-ref">VISIBILITY_RANGE_FADE_DEPENDENCIES</span></a>, this acts as a fade transition distance and must be set to a value greater than <code class="docutils literal notranslate"><span class="pre">0.0</span></code> for the effect to be noticeable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-geometryinstance3d-property-visibility-range-fade-mode"><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> <strong>visibility_range_fade_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_visibility_range_fade_mode" name="//apple_ref/cpp/Property/set_visibility_range_fade_mode"></a>set_visibility_range_fade_mode</strong>(value: <a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> <strong><a class="dashAnchor" id="properties-get_visibility_range_fade_mode" name="//apple_ref/cpp/Property/get_visibility_range_fade_mode"></a>get_visibility_range_fade_mode</strong>()</p></li>
+</ul>
+<p>Controls which instances will be faded when approaching the limits of the visibility range. See <a class="reference internal" href="#enum-geometryinstance3d-visibilityrangefademode"><span class="std std-ref">VisibilityRangeFadeMode</span></a> for possible values.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-geometryinstance3d-method-get-instance-shader-parameter"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_instance_shader_parameter</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Get the value of a shader parameter as set on this instance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometryinstance3d-method-set-instance-shader-parameter"><abbr title="No return value.">void</abbr> <strong>set_instance_shader_parameter</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Set the value of a shader uniform for this instance only (<a class="reference external" href="../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms">per-instance uniform</a>). See also <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial-method-set-shader-parameter"><span class="std std-ref">ShaderMaterial.set_shader_parameter</span></a> to assign a uniform on all instances using the same <a class="reference internal" href="class_shadermaterial.html#class-shadermaterial"><span class="std std-ref">ShaderMaterial</span></a>.</p>
+<p><strong>Note:</strong> For a shader uniform to be assignable on a per-instance basis, it <em>must</em> be defined with <code class="docutils literal notranslate"><span class="pre">instance</span> <span class="pre">uniform</span> <span class="pre">...</span></code> rather than <code class="docutils literal notranslate"><span class="pre">uniform</span> <span class="pre">...</span></code> in the shader code.</p>
+<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">name</span></code> is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).</p>
+<p><strong>Note:</strong> Per-instance shader uniforms are currently only available in 3D, so there is no 2D equivalent of this method.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_generic6dofjoint3d.html" rel="prev" title="Generic6DOFJoint3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gpuparticles2d.html" rel="next" title="GPUParticles2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

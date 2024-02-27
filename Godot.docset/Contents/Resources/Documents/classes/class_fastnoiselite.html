@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="FastNoiseLite" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_fastnoiselite.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Noise&lt; Resource&lt; RefCounted&lt; Object Generates noise using the FastNoiseLite library. Description: This class generates noise using the FastNoiseLite library, which is a collection of seve..." property="og:description"/>
+<meta content="Inherits: Noise&lt; Resource&lt; RefCounted&lt; Object Generates noise using the FastNoiseLite library. Description: This class generates noise using the FastNoiseLite library, which is a collection of seve..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) FastNoiseLite — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_fastnoiselite.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_fastnoiselite.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_fastnoiselite.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_fastnoiselite.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_fastnoiselite.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_fastnoiselite.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_fastnoiselite.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_fastnoiselite.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_fastnoiselite.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_fastnoiselite.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_fastnoiselite.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_fastnoiselite.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_fastnoiselite.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_fastnoiselite.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_fastnoiselite.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_fastnoiselite.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_fbxdocument.html" rel="next" title="FBXDocument"/>
+<link href="class_environment.html" rel="prev" title="Environment"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_fastnoiselite" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">FastNoiseLite</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="fastnoiselite">
+<span id="class-fastnoiselite"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/FastNoiseLite¶"></a>FastNoiseLite<a class="headerlink" href="#fastnoiselite" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_noise.html#class-noise"><span class="std std-ref">Noise</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Generates noise using the FastNoiseLite library.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class generates noise using the FastNoiseLite library, which is a collection of several noise algorithms including Cellular, Perlin, Value, and more.</p>
+<p>Most generated noise values are in the range of <code class="docutils literal notranslate"><span class="pre">[-1,</span> <span class="pre">1]</span></code>, but not always. Some of the cellular noise algorithms return results above <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-cellular-distance-function"><span class="std std-ref">cellular_distance_function</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-cellular-jitter"><span class="std std-ref">cellular_jitter</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-cellular-return-type"><span class="std std-ref">cellular_return_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-amplitude"><span class="std std-ref">domain_warp_amplitude</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">30.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-enabled"><span class="std std-ref">domain_warp_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-fractal-gain"><span class="std std-ref">domain_warp_fractal_gain</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.5</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-fractal-lacunarity"><span class="std std-ref">domain_warp_fractal_lacunarity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">6.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-fractal-octaves"><span class="std std-ref">domain_warp_fractal_octaves</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-fractal-type"><span class="std std-ref">domain_warp_fractal_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-frequency"><span class="std std-ref">domain_warp_frequency</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.05</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-domain-warp-type"><span class="std std-ref">domain_warp_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-gain"><span class="std std-ref">fractal_gain</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.5</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-lacunarity"><span class="std std-ref">fractal_lacunarity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-octaves"><span class="std std-ref">fractal_octaves</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-ping-pong-strength"><span class="std std-ref">fractal_ping_pong_strength</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-type"><span class="std std-ref">fractal_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-fractal-weighted-strength"><span class="std std-ref">fractal_weighted_strength</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-frequency"><span class="std std-ref">frequency</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.01</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-noise-type"><span class="std std-ref">noise_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-offset"><span class="std std-ref">offset</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-fastnoiselite-property-seed"><span class="std std-ref">seed</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-fastnoiselite-noisetype">enum <strong><a class="dashAnchor" id="enumerations-NoiseType" name="//apple_ref/cpp/Enum/NoiseType"></a>NoiseType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-value"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_VALUE" name="//apple_ref/cpp/Enum/TYPE_VALUE"></a>TYPE_VALUE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>A lattice of points are assigned random values then interpolated based on neighboring values.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-value-cubic"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_VALUE_CUBIC" name="//apple_ref/cpp/Enum/TYPE_VALUE_CUBIC"></a>TYPE_VALUE_CUBIC</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Similar to Value noise, but slower. Has more variance in peaks and valleys.</p>
+<p>Cubic noise can be used to avoid certain artifacts when using value noise to create a bumpmap. In general, you should always use this mode if the value noise is being used for a heightmap or bumpmap.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-perlin"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_PERLIN" name="//apple_ref/cpp/Enum/TYPE_PERLIN"></a>TYPE_PERLIN</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>A lattice of random gradients. Their dot products are interpolated to obtain values in between the lattices.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-cellular"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_CELLULAR" name="//apple_ref/cpp/Enum/TYPE_CELLULAR"></a>TYPE_CELLULAR</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Cellular includes both Worley noise and Voronoi diagrams which creates various regions of the same value.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-simplex"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_SIMPLEX" name="//apple_ref/cpp/Enum/TYPE_SIMPLEX"></a>TYPE_SIMPLEX</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>As opposed to <a class="reference internal" href="#class-fastnoiselite-constant-type-perlin"><span class="std std-ref">TYPE_PERLIN</span></a>, gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-type-simplex-smooth"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_SIMPLEX_SMOOTH" name="//apple_ref/cpp/Enum/TYPE_SIMPLEX_SMOOTH"></a>TYPE_SIMPLEX_SMOOTH</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Modified, higher quality version of <a class="reference internal" href="#class-fastnoiselite-constant-type-simplex"><span class="std std-ref">TYPE_SIMPLEX</span></a>, but slower.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-fastnoiselite-fractaltype">enum <strong><a class="dashAnchor" id="enumerations-FractalType" name="//apple_ref/cpp/Enum/FractalType"></a>FractalType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-fractal-none"><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong><a class="dashAnchor" id="enumerations-FRACTAL_NONE" name="//apple_ref/cpp/Enum/FRACTAL_NONE"></a>FRACTAL_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No fractal noise.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-fractal-fbm"><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong><a class="dashAnchor" id="enumerations-FRACTAL_FBM" name="//apple_ref/cpp/Enum/FRACTAL_FBM"></a>FRACTAL_FBM</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Method using Fractional Brownian Motion to combine octaves into a fractal.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-fractal-ridged"><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong><a class="dashAnchor" id="enumerations-FRACTAL_RIDGED" name="//apple_ref/cpp/Enum/FRACTAL_RIDGED"></a>FRACTAL_RIDGED</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Method of combining octaves into a fractal resulting in a "ridged" look.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-fractal-ping-pong"><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong><a class="dashAnchor" id="enumerations-FRACTAL_PING_PONG" name="//apple_ref/cpp/Enum/FRACTAL_PING_PONG"></a>FRACTAL_PING_PONG</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Method of combining octaves into a fractal with a ping pong effect.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-fastnoiselite-cellulardistancefunction">enum <strong><a class="dashAnchor" id="enumerations-CellularDistanceFunction" name="//apple_ref/cpp/Enum/CellularDistanceFunction"></a>CellularDistanceFunction</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-distance-euclidean"><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong><a class="dashAnchor" id="enumerations-DISTANCE_EUCLIDEAN" name="//apple_ref/cpp/Enum/DISTANCE_EUCLIDEAN"></a>DISTANCE_EUCLIDEAN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Euclidean distance to the nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-distance-euclidean-squared"><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong><a class="dashAnchor" id="enumerations-DISTANCE_EUCLIDEAN_SQUARED" name="//apple_ref/cpp/Enum/DISTANCE_EUCLIDEAN_SQUARED"></a>DISTANCE_EUCLIDEAN_SQUARED</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Squared Euclidean distance to the nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-distance-manhattan"><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong><a class="dashAnchor" id="enumerations-DISTANCE_MANHATTAN" name="//apple_ref/cpp/Enum/DISTANCE_MANHATTAN"></a>DISTANCE_MANHATTAN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Manhattan distance (taxicab metric) to the nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-distance-hybrid"><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong><a class="dashAnchor" id="enumerations-DISTANCE_HYBRID" name="//apple_ref/cpp/Enum/DISTANCE_HYBRID"></a>DISTANCE_HYBRID</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Blend of <a class="reference internal" href="#class-fastnoiselite-constant-distance-euclidean"><span class="std std-ref">DISTANCE_EUCLIDEAN</span></a> and <a class="reference internal" href="#class-fastnoiselite-constant-distance-manhattan"><span class="std std-ref">DISTANCE_MANHATTAN</span></a> to give curved cell boundaries</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-fastnoiselite-cellularreturntype">enum <strong><a class="dashAnchor" id="enumerations-CellularReturnType" name="//apple_ref/cpp/Enum/CellularReturnType"></a>CellularReturnType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-cell-value"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_CELL_VALUE" name="//apple_ref/cpp/Enum/RETURN_CELL_VALUE"></a>RETURN_CELL_VALUE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The cellular distance function will return the same value for all points within a cell.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE" name="//apple_ref/cpp/Enum/RETURN_DISTANCE"></a>RETURN_DISTANCE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The cellular distance function will return a value determined by the distance to the nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance2"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE2" name="//apple_ref/cpp/Enum/RETURN_DISTANCE2"></a>RETURN_DISTANCE2</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The cellular distance function returns the distance to the second-nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance2-add"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE2_ADD" name="//apple_ref/cpp/Enum/RETURN_DISTANCE2_ADD"></a>RETURN_DISTANCE2_ADD</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The distance to the nearest point is added to the distance to the second-nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance2-sub"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE2_SUB" name="//apple_ref/cpp/Enum/RETURN_DISTANCE2_SUB"></a>RETURN_DISTANCE2_SUB</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The distance to the nearest point is subtracted from the distance to the second-nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance2-mul"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE2_MUL" name="//apple_ref/cpp/Enum/RETURN_DISTANCE2_MUL"></a>RETURN_DISTANCE2_MUL</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>The distance to the nearest point is multiplied with the distance to the second-nearest point.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-return-distance2-div"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="enumerations-RETURN_DISTANCE2_DIV" name="//apple_ref/cpp/Enum/RETURN_DISTANCE2_DIV"></a>RETURN_DISTANCE2_DIV</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>The distance to the nearest point is divided by the distance to the second-nearest point.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-fastnoiselite-domainwarptype">enum <strong><a class="dashAnchor" id="enumerations-DomainWarpType" name="//apple_ref/cpp/Enum/DomainWarpType"></a>DomainWarpType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-simplex"><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_SIMPLEX" name="//apple_ref/cpp/Enum/DOMAIN_WARP_SIMPLEX"></a>DOMAIN_WARP_SIMPLEX</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The domain is warped using the simplex noise algorithm.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-simplex-reduced"><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_SIMPLEX_REDUCED" name="//apple_ref/cpp/Enum/DOMAIN_WARP_SIMPLEX_REDUCED"></a>DOMAIN_WARP_SIMPLEX_REDUCED</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The domain is warped using a simplified version of the simplex noise algorithm.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-basic-grid"><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_BASIC_GRID" name="//apple_ref/cpp/Enum/DOMAIN_WARP_BASIC_GRID"></a>DOMAIN_WARP_BASIC_GRID</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The domain is warped using a simple noise grid (not as smooth as the other methods, but more performant).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-fastnoiselite-domainwarpfractaltype">enum <strong><a class="dashAnchor" id="enumerations-DomainWarpFractalType" name="//apple_ref/cpp/Enum/DomainWarpFractalType"></a>DomainWarpFractalType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-fractal-none"><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_FRACTAL_NONE" name="//apple_ref/cpp/Enum/DOMAIN_WARP_FRACTAL_NONE"></a>DOMAIN_WARP_FRACTAL_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No fractal noise for warping the space.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-fractal-progressive"><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_FRACTAL_PROGRESSIVE" name="//apple_ref/cpp/Enum/DOMAIN_WARP_FRACTAL_PROGRESSIVE"></a>DOMAIN_WARP_FRACTAL_PROGRESSIVE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Warping the space progressively, octave for octave, resulting in a more "liquified" distortion.</p>
+<p class="classref-enumeration-constant" id="class-fastnoiselite-constant-domain-warp-fractal-independent"><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a> <strong><a class="dashAnchor" id="enumerations-DOMAIN_WARP_FRACTAL_INDEPENDENT" name="//apple_ref/cpp/Enum/DOMAIN_WARP_FRACTAL_INDEPENDENT"></a>DOMAIN_WARP_FRACTAL_INDEPENDENT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Warping the space independently for each octave, resulting in a more chaotic distortion.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-fastnoiselite-property-cellular-distance-function"><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong>cellular_distance_function</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cellular_distance_function" name="//apple_ref/cpp/Property/set_cellular_distance_function"></a>set_cellular_distance_function</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> <strong><a class="dashAnchor" id="properties-get_cellular_distance_function" name="//apple_ref/cpp/Property/get_cellular_distance_function"></a>get_cellular_distance_function</strong>()</p></li>
+</ul>
+<p>Determines how the distance to the nearest/second-nearest point is computed. See <a class="reference internal" href="#enum-fastnoiselite-cellulardistancefunction"><span class="std std-ref">CellularDistanceFunction</span></a> for options.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-cellular-jitter"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>cellular_jitter</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cellular_jitter" name="//apple_ref/cpp/Property/set_cellular_jitter"></a>set_cellular_jitter</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_cellular_jitter" name="//apple_ref/cpp/Property/get_cellular_jitter"></a>get_cellular_jitter</strong>()</p></li>
+</ul>
+<p>Maximum distance a point can move off of its grid position. Set to <code class="docutils literal notranslate"><span class="pre">0</span></code> for an even grid.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-cellular-return-type"><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong>cellular_return_type</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cellular_return_type" name="//apple_ref/cpp/Property/set_cellular_return_type"></a>set_cellular_return_type</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a> <strong><a class="dashAnchor" id="properties-get_cellular_return_type" name="//apple_ref/cpp/Property/get_cellular_return_type"></a>get_cellular_return_type</strong>()</p></li>
+</ul>
+<p>Return type from cellular noise calculations. See <a class="reference internal" href="#enum-fastnoiselite-cellularreturntype"><span class="std std-ref">CellularReturnType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-amplitude"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>domain_warp_amplitude</strong> = <code class="docutils literal notranslate"><span class="pre">30.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_amplitude" name="//apple_ref/cpp/Property/set_domain_warp_amplitude"></a>set_domain_warp_amplitude</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_amplitude" name="//apple_ref/cpp/Property/get_domain_warp_amplitude"></a>get_domain_warp_amplitude</strong>()</p></li>
+</ul>
+<p>Sets the maximum warp distance from the origin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>domain_warp_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_enabled" name="//apple_ref/cpp/Property/set_domain_warp_enabled"></a>set_domain_warp_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_domain_warp_enabled" name="//apple_ref/cpp/Property/is_domain_warp_enabled"></a>is_domain_warp_enabled</strong>()</p></li>
+</ul>
+<p>If enabled, another FastNoiseLite instance is used to warp the space, resulting in a distortion of the noise.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-fractal-gain"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>domain_warp_fractal_gain</strong> = <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_fractal_gain" name="//apple_ref/cpp/Property/set_domain_warp_fractal_gain"></a>set_domain_warp_fractal_gain</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_fractal_gain" name="//apple_ref/cpp/Property/get_domain_warp_fractal_gain"></a>get_domain_warp_fractal_gain</strong>()</p></li>
+</ul>
+<p>Determines the strength of each subsequent layer of the noise which is used to warp the space.</p>
+<p>A low value places more emphasis on the lower frequency base layers, while a high value puts more emphasis on the higher frequency layers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-fractal-lacunarity"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>domain_warp_fractal_lacunarity</strong> = <code class="docutils literal notranslate"><span class="pre">6.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_fractal_lacunarity" name="//apple_ref/cpp/Property/set_domain_warp_fractal_lacunarity"></a>set_domain_warp_fractal_lacunarity</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_fractal_lacunarity" name="//apple_ref/cpp/Property/get_domain_warp_fractal_lacunarity"></a>get_domain_warp_fractal_lacunarity</strong>()</p></li>
+</ul>
+<p>Octave lacunarity of the fractal noise which warps the space. Increasing this value results in higher octaves producing noise with finer details and a rougher appearance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-fractal-octaves"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>domain_warp_fractal_octaves</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_fractal_octaves" name="//apple_ref/cpp/Property/set_domain_warp_fractal_octaves"></a>set_domain_warp_fractal_octaves</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_fractal_octaves" name="//apple_ref/cpp/Property/get_domain_warp_fractal_octaves"></a>get_domain_warp_fractal_octaves</strong>()</p></li>
+</ul>
+<p>The number of noise layers that are sampled to get the final value for the fractal noise which warps the space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-fractal-type"><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a> <strong>domain_warp_fractal_type</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_fractal_type" name="//apple_ref/cpp/Property/set_domain_warp_fractal_type"></a>set_domain_warp_fractal_type</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_fractal_type" name="//apple_ref/cpp/Property/get_domain_warp_fractal_type"></a>get_domain_warp_fractal_type</strong>()</p></li>
+</ul>
+<p>The method for combining octaves into a fractal which is used to warp the space. See <a class="reference internal" href="#enum-fastnoiselite-domainwarpfractaltype"><span class="std std-ref">DomainWarpFractalType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-frequency"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>domain_warp_frequency</strong> = <code class="docutils literal notranslate"><span class="pre">0.05</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_frequency" name="//apple_ref/cpp/Property/set_domain_warp_frequency"></a>set_domain_warp_frequency</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_frequency" name="//apple_ref/cpp/Property/get_domain_warp_frequency"></a>get_domain_warp_frequency</strong>()</p></li>
+</ul>
+<p>Frequency of the noise which warps the space. Low frequency results in smooth noise while high frequency results in rougher, more granular noise.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-domain-warp-type"><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a> <strong>domain_warp_type</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_domain_warp_type" name="//apple_ref/cpp/Property/set_domain_warp_type"></a>set_domain_warp_type</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a> <strong><a class="dashAnchor" id="properties-get_domain_warp_type" name="//apple_ref/cpp/Property/get_domain_warp_type"></a>get_domain_warp_type</strong>()</p></li>
+</ul>
+<p>Sets the warp algorithm. See <a class="reference internal" href="#enum-fastnoiselite-domainwarptype"><span class="std std-ref">DomainWarpType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-gain"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fractal_gain</strong> = <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_gain" name="//apple_ref/cpp/Property/set_fractal_gain"></a>set_fractal_gain</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_gain" name="//apple_ref/cpp/Property/get_fractal_gain"></a>get_fractal_gain</strong>()</p></li>
+</ul>
+<p>Determines the strength of each subsequent layer of noise in fractal noise.</p>
+<p>A low value places more emphasis on the lower frequency base layers, while a high value puts more emphasis on the higher frequency layers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-lacunarity"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fractal_lacunarity</strong> = <code class="docutils literal notranslate"><span class="pre">2.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_lacunarity" name="//apple_ref/cpp/Property/set_fractal_lacunarity"></a>set_fractal_lacunarity</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_lacunarity" name="//apple_ref/cpp/Property/get_fractal_lacunarity"></a>get_fractal_lacunarity</strong>()</p></li>
+</ul>
+<p>Frequency multiplier between subsequent octaves. Increasing this value results in higher octaves producing noise with finer details and a rougher appearance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-octaves"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>fractal_octaves</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_octaves" name="//apple_ref/cpp/Property/set_fractal_octaves"></a>set_fractal_octaves</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_octaves" name="//apple_ref/cpp/Property/get_fractal_octaves"></a>get_fractal_octaves</strong>()</p></li>
+</ul>
+<p>The number of noise layers that are sampled to get the final value for fractal noise types.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-ping-pong-strength"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fractal_ping_pong_strength</strong> = <code class="docutils literal notranslate"><span class="pre">2.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_ping_pong_strength" name="//apple_ref/cpp/Property/set_fractal_ping_pong_strength"></a>set_fractal_ping_pong_strength</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_ping_pong_strength" name="//apple_ref/cpp/Property/get_fractal_ping_pong_strength"></a>get_fractal_ping_pong_strength</strong>()</p></li>
+</ul>
+<p>Sets the strength of the fractal ping pong type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-type"><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong>fractal_type</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_type" name="//apple_ref/cpp/Property/set_fractal_type"></a>set_fractal_type</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_type" name="//apple_ref/cpp/Property/get_fractal_type"></a>get_fractal_type</strong>()</p></li>
+</ul>
+<p>The method for combining octaves into a fractal. See <a class="reference internal" href="#enum-fastnoiselite-fractaltype"><span class="std std-ref">FractalType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-fractal-weighted-strength"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>fractal_weighted_strength</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_fractal_weighted_strength" name="//apple_ref/cpp/Property/set_fractal_weighted_strength"></a>set_fractal_weighted_strength</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_fractal_weighted_strength" name="//apple_ref/cpp/Property/get_fractal_weighted_strength"></a>get_fractal_weighted_strength</strong>()</p></li>
+</ul>
+<p>Higher weighting means higher octaves have less impact if lower octaves have a large impact.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-frequency"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>frequency</strong> = <code class="docutils literal notranslate"><span class="pre">0.01</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_frequency" name="//apple_ref/cpp/Property/set_frequency"></a>set_frequency</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_frequency" name="//apple_ref/cpp/Property/get_frequency"></a>get_frequency</strong>()</p></li>
+</ul>
+<p>The frequency for all noise types. Low frequency results in smooth noise while high frequency results in rougher, more granular noise.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-noise-type"><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong>noise_type</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_noise_type" name="//apple_ref/cpp/Property/set_noise_type"></a>set_noise_type</strong>(value: <a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a> <strong><a class="dashAnchor" id="properties-get_noise_type" name="//apple_ref/cpp/Property/get_noise_type"></a>get_noise_type</strong>()</p></li>
+</ul>
+<p>The noise algorithm used. See <a class="reference internal" href="#enum-fastnoiselite-noisetype"><span class="std std-ref">NoiseType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-offset"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>offset</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_offset" name="//apple_ref/cpp/Property/set_offset"></a>set_offset</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_offset" name="//apple_ref/cpp/Property/get_offset"></a>get_offset</strong>()</p></li>
+</ul>
+<p>Translate the noise input coordinates by the given <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-fastnoiselite-property-seed"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>seed</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_seed" name="//apple_ref/cpp/Property/set_seed"></a>set_seed</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_seed" name="//apple_ref/cpp/Property/get_seed"></a>get_seed</strong>()</p></li>
+</ul>
+<p>The random number seed for all noise types.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_environment.html" rel="prev" title="Environment"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_fbxdocument.html" rel="next" title="FBXDocument">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

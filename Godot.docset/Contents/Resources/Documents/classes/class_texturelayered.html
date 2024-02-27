@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="TextureLayered" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_texturelayered.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Texture&lt; Resource&lt; RefCounted&lt; Object Inherited By: CompressedTextureLayered, ImageTextureLayered, PlaceholderTextureLayered, TextureLayeredRD Base class for texture types which contain t..." property="og:description"/>
+<meta content="Inherits: Texture&lt; Resource&lt; RefCounted&lt; Object Inherited By: CompressedTextureLayered, ImageTextureLayered, PlaceholderTextureLayered, TextureLayeredRD Base class for texture types which contain t..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) TextureLayered — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_texturelayered.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_texturelayered.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_texturelayered.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_texturelayered.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_texturelayered.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_texturelayered.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_texturelayered.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_texturelayered.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_texturelayered.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_texturelayered.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_texturelayered.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_texturelayered.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_texturelayered.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_texturelayered.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_texturelayered.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_texturelayered.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_texturelayeredrd.html" rel="next" title="TextureLayeredRD"/>
+<link href="class_texturecubemaprd.html" rel="prev" title="TextureCubemapRD"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_texturelayered" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">TextureLayered</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="texturelayered">
+<span id="class-texturelayered"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/TextureLayered¶"></a>TextureLayered<a class="headerlink" href="#texturelayered" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_texture.html#class-texture"><span class="std std-ref">Texture</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_compressedtexturelayered.html#class-compressedtexturelayered"><span class="std std-ref">CompressedTextureLayered</span></a>, <a class="reference internal" href="class_imagetexturelayered.html#class-imagetexturelayered"><span class="std std-ref">ImageTextureLayered</span></a>, <a class="reference internal" href="class_placeholdertexturelayered.html#class-placeholdertexturelayered"><span class="std std-ref">PlaceholderTextureLayered</span></a>, <a class="reference internal" href="class_texturelayeredrd.html#class-texturelayeredrd"><span class="std std-ref">TextureLayeredRD</span></a></p>
+<p>Base class for texture types which contain the data of multiple <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>s. Each image is of the same size and format.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base class for <a class="reference internal" href="class_imagetexturelayered.html#class-imagetexturelayered"><span class="std std-ref">ImageTextureLayered</span></a> and <a class="reference internal" href="class_compressedtexturelayered.html#class-compressedtexturelayered"><span class="std std-ref">CompressedTextureLayered</span></a>. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types. See also <a class="reference internal" href="class_texture3d.html#class-texture3d"><span class="std std-ref">Texture3D</span></a>.</p>
+<p>Data is set on a per-layer basis. For <a class="reference internal" href="class_texture2darray.html#class-texture2darray"><span class="std std-ref">Texture2DArray</span></a>s, the layer specifies the array layer.</p>
+<p>All images need to have the same width, height and number of mipmap levels.</p>
+<p>A <strong>TextureLayered</strong> can be loaded with <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-load"><span class="std std-ref">ResourceLoader.load</span></a>.</p>
+<p>Internally, Godot maps these files to their respective counterparts in the target rendering driver (Vulkan, OpenGL3).</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_image.html#enum-image-format"><span class="std std-ref">Format</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-format"><span class="std std-ref">_get_format</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-height"><span class="std std-ref">_get_height</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-layer-data"><span class="std std-ref">_get_layer_data</span></a>(layer_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-layered-type"><span class="std std-ref">_get_layered_type</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-layers"><span class="std std-ref">_get_layers</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-get-width"><span class="std std-ref">_get_width</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-private-method-has-mipmaps"><span class="std std-ref">_has_mipmaps</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_image.html#enum-image-format"><span class="std std-ref">Format</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-format"><span class="std std-ref">get_format</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-height"><span class="std std-ref">get_height</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-layer-data"><span class="std std-ref">get_layer_data</span></a>(layer: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-texturelayered-layeredtype"><span class="std std-ref">LayeredType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-layered-type"><span class="std std-ref">get_layered_type</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-layers"><span class="std std-ref">get_layers</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-get-width"><span class="std std-ref">get_width</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-texturelayered-method-has-mipmaps"><span class="std std-ref">has_mipmaps</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-texturelayered-layeredtype">enum <strong><a class="dashAnchor" id="enumerations-LayeredType" name="//apple_ref/cpp/Enum/LayeredType"></a>LayeredType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-texturelayered-constant-layered-type-2d-array"><a class="reference internal" href="#enum-texturelayered-layeredtype"><span class="std std-ref">LayeredType</span></a> <strong><a class="dashAnchor" id="enumerations-LAYERED_TYPE_2D_ARRAY" name="//apple_ref/cpp/Enum/LAYERED_TYPE_2D_ARRAY"></a>LAYERED_TYPE_2D_ARRAY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Texture is a generic <a class="reference internal" href="class_texture2darray.html#class-texture2darray"><span class="std std-ref">Texture2DArray</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-texturelayered-constant-layered-type-cubemap"><a class="reference internal" href="#enum-texturelayered-layeredtype"><span class="std std-ref">LayeredType</span></a> <strong><a class="dashAnchor" id="enumerations-LAYERED_TYPE_CUBEMAP" name="//apple_ref/cpp/Enum/LAYERED_TYPE_CUBEMAP"></a>LAYERED_TYPE_CUBEMAP</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Texture is a <a class="reference internal" href="class_cubemap.html#class-cubemap"><span class="std std-ref">Cubemap</span></a>, with each side in its own layer (6 in total).</p>
+<p class="classref-enumeration-constant" id="class-texturelayered-constant-layered-type-cubemap-array"><a class="reference internal" href="#enum-texturelayered-layeredtype"><span class="std std-ref">LayeredType</span></a> <strong><a class="dashAnchor" id="enumerations-LAYERED_TYPE_CUBEMAP_ARRAY" name="//apple_ref/cpp/Enum/LAYERED_TYPE_CUBEMAP_ARRAY"></a>LAYERED_TYPE_CUBEMAP_ARRAY</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Texture is a <a class="reference internal" href="class_cubemaparray.html#class-cubemaparray"><span class="std std-ref">CubemapArray</span></a>, with each cubemap being made of 6 layers.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-texturelayered-private-method-get-format"><a class="reference internal" href="class_image.html#enum-image-format"><span class="std std-ref">Format</span></a> <strong>_get_format</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the <strong>TextureLayered</strong>'s format is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-get-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_height</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the <strong>TextureLayered</strong>'s height is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-get-layer-data"><a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a> <strong>_get_layer_data</strong>(layer_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the data for a layer in the <strong>TextureLayered</strong> is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-get-layered-type"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_layered_type</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the layers' type in the <strong>TextureLayered</strong> is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-get-layers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_layers</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the number of layers in the <strong>TextureLayered</strong> is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-get-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_width</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the <strong>TextureLayered</strong>'s width queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-private-method-has-mipmaps"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_has_mipmaps</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Called when the presence of mipmaps in the <strong>TextureLayered</strong> is queried.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-format"><a class="reference internal" href="class_image.html#enum-image-format"><span class="std std-ref">Format</span></a> <strong>get_format</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the current format being used by this texture. See <a class="reference internal" href="class_image.html#enum-image-format"><span class="std std-ref">Format</span></a> for details.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_height</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the height of the texture in pixels. Height is typically represented by the Y axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-layer-data"><a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a> <strong>get_layer_data</strong>(layer: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a> resource with the data from specified <code class="docutils literal notranslate"><span class="pre">layer</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-layered-type"><a class="reference internal" href="#enum-texturelayered-layeredtype"><span class="std std-ref">LayeredType</span></a> <strong>get_layered_type</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <strong>TextureLayered</strong>'s type. The type determines how the data is accessed, with cubemaps having special types.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-layers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_layers</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of referenced <a class="reference internal" href="class_image.html#class-image"><span class="std std-ref">Image</span></a>s.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-get-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_width</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the width of the texture in pixels. Width is typically represented by the X axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-texturelayered-method-has-mipmaps"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_mipmaps</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the layers have generated mipmaps.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_texturecubemaprd.html" rel="prev" title="TextureCubemapRD"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_texturelayeredrd.html" rel="next" title="TextureLayeredRD">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

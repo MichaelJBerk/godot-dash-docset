@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Transform2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_transform2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="A 2×3 matrix representing a 2D transformation. Description: A 2×3 matrix (2 rows, 3 columns) used for 2D linear transformations. It can represent transformations such as translation, rotation, and ..." property="og:description"/>
+<meta content="A 2×3 matrix representing a 2D transformation. Description: A 2×3 matrix (2 rows, 3 columns) used for 2D linear transformations. It can represent transformations such as translation, rotation, and ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Transform2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_transform2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_transform2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_transform2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_transform2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_transform2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_transform2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_transform2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_transform2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_transform2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_transform2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_transform2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_transform2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_transform2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_transform2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_transform2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_transform2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_transform3d.html" rel="next" title="Transform3D"/>
+<link href="class_stringname.html" rel="prev" title="StringName"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_transform2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Transform2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="transform2d">
+<span id="class-transform2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Transform2D¶"></a>Transform2D<a class="headerlink" href="#transform2d" title="Permalink to this headline">¶</a></h1>
+<p>A 2×3 matrix representing a 2D transformation.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A 2×3 matrix (2 rows, 3 columns) used for 2D linear transformations. It can represent transformations such as translation, rotation, and scaling. It consists of three <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> values: <a class="reference internal" href="#class-transform2d-property-x"><span class="std std-ref">x</span></a>, <a class="reference internal" href="#class-transform2d-property-y"><span class="std std-ref">y</span></a>, and the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a>.</p>
+<p>For a general introduction, see the <a class="reference internal" href="../tutorials/math/matrices_and_transforms.html"><span class="doc">Matrices and transforms</span></a> tutorial.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are notable differences when using this API with C#. See <a class="reference internal" href="../tutorials/scripting/c_sharp/c_sharp_differences.html#doc-c-sharp-differences"><span class="std std-ref">C# API differences to GDScript</span></a> for more information.</p>
+</div>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/math/index.html"><span class="doc">Math documentation index</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/math/matrices_and_transforms.html"><span class="doc">Matrices and transforms</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/584">Matrix Transform Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/583">2.5D Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-property-x"><span class="std std-ref">x</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-property-y"><span class="std std-ref">y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-constructor-transform2d"><span class="std std-ref">Transform2D</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-constructor-transform2d"><span class="std std-ref">Transform2D</span></a>(from: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-constructor-transform2d"><span class="std std-ref">Transform2D</span></a>(rotation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-constructor-transform2d"><span class="std std-ref">Transform2D</span></a>(rotation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, skew: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-constructor-transform2d"><span class="std std-ref">Transform2D</span></a>(x_axis: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, y_axis: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, origin: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-affine-inverse"><span class="std std-ref">affine_inverse</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-basis-xform"><span class="std std-ref">basis_xform</span></a>(v: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-basis-xform-inv"><span class="std std-ref">basis_xform_inv</span></a>(v: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-determinant"><span class="std std-ref">determinant</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-get-origin"><span class="std std-ref">get_origin</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-get-rotation"><span class="std std-ref">get_rotation</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-get-scale"><span class="std std-ref">get_scale</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-get-skew"><span class="std std-ref">get_skew</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-interpolate-with"><span class="std std-ref">interpolate_with</span></a>(xform: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>, weight: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-inverse"><span class="std std-ref">inverse</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-is-conformal"><span class="std std-ref">is_conformal</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a>(xform: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-is-finite"><span class="std std-ref">is_finite</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-looking-at"><span class="std std-ref">looking_at</span></a>(target: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> = Vector2(0, 0)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-orthonormalized"><span class="std std-ref">orthonormalized</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-rotated"><span class="std std-ref">rotated</span></a>(angle: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-rotated-local"><span class="std std-ref">rotated_local</span></a>(angle: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-scaled"><span class="std std-ref">scaled</span></a>(scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-scaled-local"><span class="std std-ref">scaled_local</span></a>(scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-translated"><span class="std std-ref">translated</span></a>(offset: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-method-translated-local"><span class="std std-ref">translated_local</span></a>(offset: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-neq-transform2d"><span class="std std-ref">operator !=</span></a>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-packedvector2array"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-rect2"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-transform2d"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-vector2"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-float"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-mul-int"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-div-float"><span class="std std-ref">operator /</span></a>(right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-div-int"><span class="std std-ref">operator /</span></a>(right: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-eq-transform2d"><span class="std std-ref">operator ==</span></a>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-transform2d-operator-idx-int"><span class="std std-ref">operator []</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-transform2d-constant-identity"><strong>IDENTITY</strong> = <code class="docutils literal notranslate"><span class="pre">Transform2D(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The identity <strong>Transform2D</strong> with no translation, rotation or scaling applied. When applied to other data structures, <a class="reference internal" href="#class-transform2d-constant-identity"><span class="std std-ref">IDENTITY</span></a> performs no transformation.</p>
+<p class="classref-constant" id="class-transform2d-constant-flip-x"><strong>FLIP_X</strong> = <code class="docutils literal notranslate"><span class="pre">Transform2D(-1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The <strong>Transform2D</strong> that will flip something along the X axis.</p>
+<p class="classref-constant" id="class-transform2d-constant-flip-y"><strong>FLIP_Y</strong> = <code class="docutils literal notranslate"><span class="pre">Transform2D(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">-1,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<p>The <strong>Transform2D</strong> that will flip something along the Y axis.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-transform2d-property-origin"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>origin</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<p>The origin vector (column 2, the third column). Equivalent to array index <code class="docutils literal notranslate"><span class="pre">2</span></code>. The origin vector represents translation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-transform2d-property-x"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>x</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">0)</span></code></p>
+<p>The basis matrix's X vector (column 0). Equivalent to array index <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-transform2d-property-y"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>y</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">1)</span></code></p>
+<p>The basis matrix's Y vector (column 1). Equivalent to array index <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-transform2d-constructor-transform2d"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>Transform2D</strong>()</p>
+<p>Constructs a default-initialized <strong>Transform2D</strong> set to <a class="reference internal" href="#class-transform2d-constant-identity"><span class="std std-ref">IDENTITY</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>Transform2D</strong>(from: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p>
+<p>Constructs a <strong>Transform2D</strong> as a copy of the given <strong>Transform2D</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>Transform2D</strong>(rotation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Constructs the transform from a given angle (in radians) and position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>Transform2D</strong>(rotation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, skew: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Constructs the transform from a given angle (in radians), scale, skew (in radians) and position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>Transform2D</strong>(x_axis: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, y_axis: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, origin: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Constructs the transform from 3 <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> values representing <a class="reference internal" href="#class-transform2d-property-x"><span class="std std-ref">x</span></a>, <a class="reference internal" href="#class-transform2d-property-y"><span class="std std-ref">y</span></a>, and the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> (the three column vectors).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-transform2d-method-affine-inverse"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>affine_inverse</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the inverse of the transform, under the assumption that the basis is invertible (must have non-zero determinant).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-basis-xform"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>basis_xform</strong>(v: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a vector transformed (multiplied) by the basis matrix.</p>
+<p>This method does not account for translation (the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-basis-xform-inv"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>basis_xform_inv</strong>(v: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a vector transformed (multiplied) by the inverse basis matrix, under the assumption that the basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).</p>
+<p>This method does not account for translation (the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector).</p>
+<p><code class="docutils literal notranslate"><span class="pre">transform.basis_xform_inv(vector)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">transform.inverse().basis_xform(vector)</span></code>. See <a class="reference internal" href="#class-transform2d-method-inverse"><span class="std std-ref">inverse</span></a>.</p>
+<p>For non-orthonormal transforms (e.g. with scaling) <code class="docutils literal notranslate"><span class="pre">transform.affine_inverse().basis_xform(vector)</span></code> can be used instead. See <a class="reference internal" href="#class-transform2d-method-affine-inverse"><span class="std std-ref">affine_inverse</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-determinant"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>determinant</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the determinant of the basis matrix. If the basis is uniformly scaled, then its determinant equals the square of the scale factor.</p>
+<p>A negative determinant means the basis was flipped, so one part of the scale is negative. A zero determinant means the basis isn't invertible, and is usually considered invalid.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-get-origin"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_origin</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the transform's origin (translation).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-get-rotation"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_rotation</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the transform's rotation (in radians).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-get-scale"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_scale</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the scale.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-get-skew"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_skew</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the transform's skew (in radians).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-interpolate-with"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>interpolate_with</strong>(xform: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>, weight: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a transform interpolated between this transform and another by a given <code class="docutils literal notranslate"><span class="pre">weight</span></code> (on the range of 0.0 to 1.0).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-inverse"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>inverse</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the inverse of the transform, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not). Use <a class="reference internal" href="#class-transform2d-method-affine-inverse"><span class="std std-ref">affine_inverse</span></a> for non-orthonormal transforms (e.g. with scaling).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-is-conformal"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_conformal</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the transform's basis is conformal, meaning it preserves angles and distance ratios, and may only be composed of rotation and uniform scale. Returns <code class="docutils literal notranslate"><span class="pre">false</span></code> if the transform's basis has non-uniform scale or shear/skew. This can be used to validate if the transform is non-distorted, which is important for physics and other use cases.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-is-equal-approx"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_equal_approx</strong>(xform: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this transform and <code class="docutils literal notranslate"><span class="pre">xform</span></code> are approximately equal, by running <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-is-equal-approx"><span class="std std-ref">@GlobalScope.is_equal_approx</span></a> on each component.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-is-finite"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_finite</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this transform is finite, by calling <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-is-finite"><span class="std std-ref">@GlobalScope.is_finite</span></a> on each component.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-looking-at"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>looking_at</strong>(target: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> = Vector2(0, 0)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform rotated such that the rotated X-axis points towards the <code class="docutils literal notranslate"><span class="pre">target</span></code> position.</p>
+<p>Operations take place in global space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-orthonormalized"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>orthonormalized</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the transform with the basis orthogonal (90 degrees), and normalized axis vectors (scale of 1 or -1).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-rotated"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>rotated</strong>(angle: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform rotated by the given <code class="docutils literal notranslate"><span class="pre">angle</span></code> (in radians).</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding rotation transform <code class="docutils literal notranslate"><span class="pre">R</span></code> from the left, i.e., <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">*</span> <span class="pre">X</span></code>.</p>
+<p>This can be seen as transforming with respect to the global/parent frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-rotated-local"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>rotated_local</strong>(angle: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform rotated by the given <code class="docutils literal notranslate"><span class="pre">angle</span></code> (in radians).</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding rotation transform <code class="docutils literal notranslate"><span class="pre">R</span></code> from the right, i.e., <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">*</span> <span class="pre">R</span></code>.</p>
+<p>This can be seen as transforming with respect to the local frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-scaled"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>scaled</strong>(scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform scaled by the given <code class="docutils literal notranslate"><span class="pre">scale</span></code> factor.</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding scaling transform <code class="docutils literal notranslate"><span class="pre">S</span></code> from the left, i.e., <code class="docutils literal notranslate"><span class="pre">S</span> <span class="pre">*</span> <span class="pre">X</span></code>.</p>
+<p>This can be seen as transforming with respect to the global/parent frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-scaled-local"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>scaled_local</strong>(scale: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform scaled by the given <code class="docutils literal notranslate"><span class="pre">scale</span></code> factor.</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding scaling transform <code class="docutils literal notranslate"><span class="pre">S</span></code> from the right, i.e., <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">*</span> <span class="pre">S</span></code>.</p>
+<p>This can be seen as transforming with respect to the local frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-translated"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>translated</strong>(offset: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform translated by the given <code class="docutils literal notranslate"><span class="pre">offset</span></code>.</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding translation transform <code class="docutils literal notranslate"><span class="pre">T</span></code> from the left, i.e., <code class="docutils literal notranslate"><span class="pre">T</span> <span class="pre">*</span> <span class="pre">X</span></code>.</p>
+<p>This can be seen as transforming with respect to the global/parent frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-transform2d-method-translated-local"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>translated_local</strong>(offset: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the transform translated by the given <code class="docutils literal notranslate"><span class="pre">offset</span></code>.</p>
+<p>This method is an optimized version of multiplying the given transform <code class="docutils literal notranslate"><span class="pre">X</span></code> with a corresponding translation transform <code class="docutils literal notranslate"><span class="pre">T</span></code> from the right, i.e., <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">*</span> <span class="pre">T</span></code>.</p>
+<p>This can be seen as transforming with respect to the local frame.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="operator-descriptions">
+<h2>Operator Descriptions<a class="headerlink" href="#operator-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-operator" id="class-transform2d-operator-neq-transform2d"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator !=</strong>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the transforms are not equal.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-transform2d-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-packedvector2array"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Transforms (multiplies) each element of the <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> array by the given <strong>Transform2D</strong> matrix.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-rect2"><a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a>)</p>
+<p>Transforms (multiplies) the <a class="reference internal" href="class_rect2.html#class-rect2"><span class="std std-ref">Rect2</span></a> by the given <strong>Transform2D</strong> matrix.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-transform2d"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p>
+<p>Composes these two transformation matrices by multiplying them together. This has the effect of transforming the second transform (the child) by the first transform (the parent).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-vector2"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Transforms (multiplies) the <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> by the given <strong>Transform2D</strong> matrix.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-float"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>This operator multiplies all components of the <strong>Transform2D</strong>, including the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector, which scales it uniformly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-mul-int"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>This operator multiplies all components of the <strong>Transform2D</strong>, including the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector, which scales it uniformly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-div-float"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>operator /</strong>(right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>This operator divides all components of the <strong>Transform2D</strong>, including the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector, which inversely scales it uniformly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-div-int"><a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a> <strong>operator /</strong>(right: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>This operator divides all components of the <strong>Transform2D</strong>, including the <a class="reference internal" href="#class-transform2d-property-origin"><span class="std std-ref">origin</span></a> vector, which inversely scales it uniformly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-eq-transform2d"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator ==</strong>(right: <a class="reference internal" href="#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the transforms are exactly equal.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-transform2d-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-transform2d-operator-idx-int"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>operator []</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Access transform components using their index. <code class="docutils literal notranslate"><span class="pre">t[0]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">t.x</span></code>, <code class="docutils literal notranslate"><span class="pre">t[1]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">t.y</span></code>, and <code class="docutils literal notranslate"><span class="pre">t[2]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">t.origin</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_stringname.html" rel="prev" title="StringName"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_transform3d.html" rel="next" title="Transform3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

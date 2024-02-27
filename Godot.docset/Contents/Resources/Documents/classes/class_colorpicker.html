@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ColorPicker" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_colorpicker.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: VBoxContainer&lt; BoxContainer&lt; Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object A widget that provides an interface for selecting or modifying a color. Description: A widget that provides an in..." property="og:description"/>
+<meta content="Inherits: VBoxContainer&lt; BoxContainer&lt; Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object A widget that provides an interface for selecting or modifying a color. Description: A widget that provides an in..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ColorPicker — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_colorpicker.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_colorpicker.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_colorpicker.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_colorpicker.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_colorpicker.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_colorpicker.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_colorpicker.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_colorpicker.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_colorpicker.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_colorpicker.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_colorpicker.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_colorpicker.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_colorpicker.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_colorpicker.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_colorpicker.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_colorpicker.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_colorpickerbutton.html" rel="next" title="ColorPickerButton"/>
+<link href="class_collisionshape3d.html" rel="prev" title="CollisionShape3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_colorpicker" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ColorPicker</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="colorpicker">
+<span id="class-colorpicker"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ColorPicker¶"></a>ColorPicker<a class="headerlink" href="#colorpicker" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_vboxcontainer.html#class-vboxcontainer"><span class="std std-ref">VBoxContainer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_boxcontainer.html#class-boxcontainer"><span class="std std-ref">BoxContainer</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_container.html#class-container"><span class="std std-ref">Container</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A widget that provides an interface for selecting or modifying a color.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A widget that provides an interface for selecting or modifying a color. It can optionally provide functionalities like a color sampler (eyedropper), color modes, and presets.</p>
+<p><strong>Note:</strong> This control is the color picker widget itself. You can use a <a class="reference internal" href="class_colorpickerbutton.html#class-colorpickerbutton"><span class="std std-ref">ColorPickerButton</span></a> instead if you need a button that brings up a <strong>ColorPicker</strong> in a popup.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/146">Tween Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-can-add-swatches"><span class="std std-ref">can_add_swatches</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-color"><span class="std std-ref">color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-color-mode"><span class="std std-ref">color_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-color-modes-visible"><span class="std std-ref">color_modes_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-deferred-mode"><span class="std std-ref">deferred_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-edit-alpha"><span class="std std-ref">edit_alpha</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-hex-visible"><span class="std std-ref">hex_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-picker-shape"><span class="std std-ref">picker_shape</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-presets-visible"><span class="std std-ref">presets_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-sampler-visible"><span class="std std-ref">sampler_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-property-sliders-visible"><span class="std std-ref">sliders_visible</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-add-preset"><span class="std std-ref">add_preset</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-add-recent-preset"><span class="std std-ref">add_recent_preset</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-erase-preset"><span class="std std-ref">erase_preset</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-erase-recent-preset"><span class="std std-ref">erase_recent_preset</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-get-presets"><span class="std std-ref">get_presets</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-method-get-recent-presets"><span class="std std-ref">get_recent_presets</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-center-slider-grabbers"><span class="std std-ref">center_slider_grabbers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-h-width"><span class="std std-ref">h_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">30</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-label-width"><span class="std std-ref">label_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-margin"><span class="std std-ref">margin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-sv-height"><span class="std std-ref">sv_height</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">256</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-constant-sv-width"><span class="std std-ref">sv_width</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">256</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-add-preset"><span class="std std-ref">add_preset</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-bar-arrow"><span class="std std-ref">bar_arrow</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-color-hue"><span class="std std-ref">color_hue</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-color-okhsl-hue"><span class="std std-ref">color_okhsl_hue</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-expanded-arrow"><span class="std std-ref">expanded_arrow</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-folded-arrow"><span class="std std-ref">folded_arrow</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-overbright-indicator"><span class="std std-ref">overbright_indicator</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-picker-cursor"><span class="std std-ref">picker_cursor</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-sample-bg"><span class="std std-ref">sample_bg</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-sample-revert"><span class="std std-ref">sample_revert</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-screen-picker"><span class="std std-ref">screen_picker</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-shape-circle"><span class="std std-ref">shape_circle</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-shape-rect"><span class="std std-ref">shape_rect</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-colorpicker-theme-icon-shape-rect-wheel"><span class="std std-ref">shape_rect_wheel</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-colorpicker-signal-color-changed"><strong>color_changed</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Emitted when the color is changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-colorpicker-signal-preset-added"><strong>preset_added</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Emitted when a preset is added.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-colorpicker-signal-preset-removed"><strong>preset_removed</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Emitted when a preset is removed.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-colorpicker-colormodetype">enum <strong><a class="dashAnchor" id="enumerations-ColorModeType" name="//apple_ref/cpp/Enum/ColorModeType"></a>ColorModeType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-mode-rgb"><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_RGB" name="//apple_ref/cpp/Enum/MODE_RGB"></a>MODE_RGB</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Allows editing the color with Red/Green/Blue sliders.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-mode-hsv"><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_HSV" name="//apple_ref/cpp/Enum/MODE_HSV"></a>MODE_HSV</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Allows editing the color with Hue/Saturation/Value sliders.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-mode-raw"><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_RAW" name="//apple_ref/cpp/Enum/MODE_RAW"></a>MODE_RAW</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Allows the color R, G, B component values to go beyond 1.0, which can be used for certain special operations that require it (like tinting without darkening or rendering sprites in HDR).</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-mode-okhsl"><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong><a class="dashAnchor" id="enumerations-MODE_OKHSL" name="//apple_ref/cpp/Enum/MODE_OKHSL"></a>MODE_OKHSL</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Allows editing the color with Hue/Saturation/Lightness sliders.</p>
+<p>OKHSL is a new color space similar to HSL but that better match perception by leveraging the Oklab color space which is designed to be simple to use, while doing a good job at predicting perceived lightness, chroma and hue.</p>
+<p><a class="reference external" href="https://bottosson.github.io/posts/colorpicker/">Okhsv and Okhsl color spaces</a></p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-colorpicker-pickershapetype">enum <strong><a class="dashAnchor" id="enumerations-PickerShapeType" name="//apple_ref/cpp/Enum/PickerShapeType"></a>PickerShapeType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-shape-hsv-rectangle"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="enumerations-SHAPE_HSV_RECTANGLE" name="//apple_ref/cpp/Enum/SHAPE_HSV_RECTANGLE"></a>SHAPE_HSV_RECTANGLE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>HSV Color Model rectangle color space.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-shape-hsv-wheel"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="enumerations-SHAPE_HSV_WHEEL" name="//apple_ref/cpp/Enum/SHAPE_HSV_WHEEL"></a>SHAPE_HSV_WHEEL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>HSV Color Model rectangle color space with a wheel.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-shape-vhs-circle"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="enumerations-SHAPE_VHS_CIRCLE" name="//apple_ref/cpp/Enum/SHAPE_VHS_CIRCLE"></a>SHAPE_VHS_CIRCLE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>HSV Color Model circle color space. Use Saturation as a radius.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-shape-okhsl-circle"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="enumerations-SHAPE_OKHSL_CIRCLE" name="//apple_ref/cpp/Enum/SHAPE_OKHSL_CIRCLE"></a>SHAPE_OKHSL_CIRCLE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>HSL OK Color Model circle color space.</p>
+<p class="classref-enumeration-constant" id="class-colorpicker-constant-shape-none"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="enumerations-SHAPE_NONE" name="//apple_ref/cpp/Enum/SHAPE_NONE"></a>SHAPE_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The color space shape and the shape select button are hidden. Can't be selected from the shapes popup.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-colorpicker-property-can-add-swatches"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>can_add_swatches</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_can_add_swatches" name="//apple_ref/cpp/Property/set_can_add_swatches"></a>set_can_add_swatches</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-are_swatches_enabled" name="//apple_ref/cpp/Property/are_swatches_enabled"></a>are_swatches_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, it's possible to add presets under Swatches. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, the button to add presets is disabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_pick_color" name="//apple_ref/cpp/Property/set_pick_color"></a>set_pick_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_pick_color" name="//apple_ref/cpp/Property/get_pick_color"></a>get_pick_color</strong>()</p></li>
+</ul>
+<p>The currently selected color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-color-mode"><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong>color_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color_mode" name="//apple_ref/cpp/Property/set_color_mode"></a>set_color_mode</strong>(value: <a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a> <strong><a class="dashAnchor" id="properties-get_color_mode" name="//apple_ref/cpp/Property/get_color_mode"></a>get_color_mode</strong>()</p></li>
+</ul>
+<p>The currently selected color mode. See <a class="reference internal" href="#enum-colorpicker-colormodetype"><span class="std std-ref">ColorModeType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-color-modes-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>color_modes_visible</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_modes_visible" name="//apple_ref/cpp/Property/set_modes_visible"></a>set_modes_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-are_modes_visible" name="//apple_ref/cpp/Property/are_modes_visible"></a>are_modes_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the color mode buttons are visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-deferred-mode"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>deferred_mode</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_deferred_mode" name="//apple_ref/cpp/Property/set_deferred_mode"></a>set_deferred_mode</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_deferred_mode" name="//apple_ref/cpp/Property/is_deferred_mode"></a>is_deferred_mode</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the color will apply only after the user releases the mouse button, otherwise it will apply immediately even in mouse motion event (which can cause performance issues).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-edit-alpha"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>edit_alpha</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_edit_alpha" name="//apple_ref/cpp/Property/set_edit_alpha"></a>set_edit_alpha</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_editing_alpha" name="//apple_ref/cpp/Property/is_editing_alpha"></a>is_editing_alpha</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, shows an alpha channel slider (opacity).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-hex-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>hex_visible</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_hex_visible" name="//apple_ref/cpp/Property/set_hex_visible"></a>set_hex_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_hex_visible" name="//apple_ref/cpp/Property/is_hex_visible"></a>is_hex_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the hex color code input field is visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-picker-shape"><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong>picker_shape</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_picker_shape" name="//apple_ref/cpp/Property/set_picker_shape"></a>set_picker_shape</strong>(value: <a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a> <strong><a class="dashAnchor" id="properties-get_picker_shape" name="//apple_ref/cpp/Property/get_picker_shape"></a>get_picker_shape</strong>()</p></li>
+</ul>
+<p>The shape of the color space view. See <a class="reference internal" href="#enum-colorpicker-pickershapetype"><span class="std std-ref">PickerShapeType</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-presets-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>presets_visible</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_presets_visible" name="//apple_ref/cpp/Property/set_presets_visible"></a>set_presets_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-are_presets_visible" name="//apple_ref/cpp/Property/are_presets_visible"></a>are_presets_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the Swatches and Recent Colors presets are visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-sampler-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>sampler_visible</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sampler_visible" name="//apple_ref/cpp/Property/set_sampler_visible"></a>set_sampler_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_sampler_visible" name="//apple_ref/cpp/Property/is_sampler_visible"></a>is_sampler_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the color sampler and color preview are visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-colorpicker-property-sliders-visible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>sliders_visible</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sliders_visible" name="//apple_ref/cpp/Property/set_sliders_visible"></a>set_sliders_visible</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-are_sliders_visible" name="//apple_ref/cpp/Property/are_sliders_visible"></a>are_sliders_visible</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the color sliders are visible.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-colorpicker-method-add-preset"><abbr title="No return value.">void</abbr> <strong>add_preset</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds the given color to a list of color presets. The presets are displayed in the color picker and the user will be able to select them.</p>
+<p><strong>Note:</strong> The presets list is only for <em>this</em> color picker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-colorpicker-method-add-recent-preset"><abbr title="No return value.">void</abbr> <strong>add_recent_preset</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds the given color to a list of color recent presets so that it can be picked later. Recent presets are the colors that were picked recently, a new preset is automatically created and added to recent presets when you pick a new color.</p>
+<p><strong>Note:</strong> The recent presets list is only for <em>this</em> color picker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-colorpicker-method-erase-preset"><abbr title="No return value.">void</abbr> <strong>erase_preset</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Removes the given color from the list of color presets of this color picker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-colorpicker-method-erase-recent-preset"><abbr title="No return value.">void</abbr> <strong>erase_recent_preset</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Removes the given color from the list of color recent presets of this color picker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-colorpicker-method-get-presets"><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong>get_presets</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of colors in the presets of the color picker.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-colorpicker-method-get-recent-presets"><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong>get_recent_presets</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of colors in the recent presets of the color picker.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-center-slider-grabbers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>center_slider_grabbers</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Overrides the <a class="reference internal" href="class_slider.html#class-slider-theme-constant-center-grabber"><span class="std std-ref">Slider.center_grabber</span></a> theme property of the sliders.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-h-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>h_width</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p>The width of the hue selection slider.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-label-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>label_width</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>The minimum width of the color labels next to sliders.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-margin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>margin</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The margin around the <strong>ColorPicker</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-sv-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>sv_height</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p>The height of the saturation-value selection box.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-constant-sv-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>sv_width</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p>The width of the saturation-value selection box.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-add-preset"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>add_preset</strong></p>
+<p>The icon for the "Add Preset" button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-bar-arrow"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>bar_arrow</strong></p>
+<p>The texture for the arrow grabber.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-color-hue"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>color_hue</strong></p>
+<p>Custom texture for the hue selection slider on the right.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-color-okhsl-hue"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>color_okhsl_hue</strong></p>
+<p>Custom texture for the H slider in the OKHSL color mode.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-expanded-arrow"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>expanded_arrow</strong></p>
+<p>The icon for color preset drop down menu when expanded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-folded-arrow"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>folded_arrow</strong></p>
+<p>The icon for color preset drop down menu when folded.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-overbright-indicator"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>overbright_indicator</strong></p>
+<p>The indicator used to signalize that the color value is outside the 0-1 range.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-picker-cursor"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>picker_cursor</strong></p>
+<p>The image displayed over the color box/circle (depending on the <a class="reference internal" href="#class-colorpicker-property-picker-shape"><span class="std std-ref">picker_shape</span></a>), marking the currently selected color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-sample-bg"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>sample_bg</strong></p>
+<p>Background panel for the color preview box (visible when the color is translucent).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-sample-revert"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>sample_revert</strong></p>
+<p>The icon for the revert button (visible on the middle of the "old" color when it differs from the currently selected color). This icon is modulated with a dark color if the "old" color is bright enough, so the icon should be bright to ensure visibility in both scenarios.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-screen-picker"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>screen_picker</strong></p>
+<p>The icon for the screen color picker button.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-shape-circle"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>shape_circle</strong></p>
+<p>The icon for circular picker shapes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-shape-rect"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>shape_rect</strong></p>
+<p>The icon for rectangular picker shapes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-themeproperty" id="class-colorpicker-theme-icon-shape-rect-wheel"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>shape_rect_wheel</strong></p>
+<p>The icon for rectangular wheel picker shapes.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_collisionshape3d.html" rel="prev" title="CollisionShape3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_colorpickerbutton.html" rel="next" title="ColorPickerButton">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

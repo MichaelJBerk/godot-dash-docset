@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GLTFNode" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gltfnode.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object GLTF node class. Description: Represents a GLTF node. GLTF nodes may have names, transforms, children (other GLTF nodes), and more specialized properties (rep..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object GLTF node class. Description: Represents a GLTF node. GLTF nodes may have names, transforms, children (other GLTF nodes), and more specialized properties (rep..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GLTFNode — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfnode.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gltfnode.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gltfnode.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gltfnode.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gltfnode.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gltfnode.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gltfnode.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gltfnode.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gltfnode.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gltfnode.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gltfnode.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gltfnode.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gltfnode.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gltfnode.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfnode.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfnode.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gltfphysicsbody.html" rel="next" title="GLTFPhysicsBody"/>
+<link href="class_gltfmesh.html" rel="prev" title="GLTFMesh"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gltfnode" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GLTFNode</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gltfnode">
+<span id="class-gltfnode"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GLTFNode¶"></a>GLTFNode<a class="headerlink" href="#gltfnode" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>GLTF node class.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Represents a GLTF node. GLTF nodes may have names, transforms, children (other GLTF nodes), and more specialized properties (represented by their own classes).</p>
+<p>GLTF nodes generally exist inside of <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> which represents all data of a GLTF file. Most of GLTFNode's properties are indices of other data in the GLTF file. You can extend a GLTF node with additional properties by using <a class="reference internal" href="#class-gltfnode-method-get-additional-data"><span class="std std-ref">get_additional_data</span></a> and <a class="reference internal" href="#class-gltfnode-method-set-additional-data"><span class="std std-ref">set_additional_data</span></a>.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/io/runtime_file_loading_and_saving.html"><span class="doc">Runtime file loading and saving</span></a></p></li>
+<li><p><a class="reference external" href='https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_004_ScenesNodes.md"'>GLTF scene and node spec</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-camera"><span class="std std-ref">camera</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-children"><span class="std std-ref">children</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedInt32Array()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-height"><span class="std std-ref">height</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-light"><span class="std std-ref">light</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-mesh"><span class="std std-ref">mesh</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-original-name"><span class="std std-ref">original_name</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">""</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-parent"><span class="std std-ref">parent</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-position"><span class="std std-ref">position</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-rotation"><span class="std std-ref">rotation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-scale"><span class="std std-ref">scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-skeleton"><span class="std std-ref">skeleton</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-skin"><span class="std std-ref">skin</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-property-xform"><span class="std std-ref">xform</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Transform3D(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-method-get-additional-data"><span class="std std-ref">get_additional_data</span></a>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfnode-method-set-additional-data"><span class="std std-ref">set_additional_data</span></a>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, additional_data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gltfnode-property-camera"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>camera</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_camera" name="//apple_ref/cpp/Property/set_camera"></a>set_camera</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_camera" name="//apple_ref/cpp/Property/get_camera"></a>get_camera</strong>()</p></li>
+</ul>
+<p>If this GLTF node is a camera, the index of the <a class="reference internal" href="class_gltfcamera.html#class-gltfcamera"><span class="std std-ref">GLTFCamera</span></a> in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> that describes the camera's properties. If -1, this node is not a camera.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-children"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>children</strong> = <code class="docutils literal notranslate"><span class="pre">PackedInt32Array()</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_children" name="//apple_ref/cpp/Property/set_children"></a>set_children</strong>(value: <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong><a class="dashAnchor" id="properties-get_children" name="//apple_ref/cpp/Property/get_children"></a>get_children</strong>()</p></li>
+</ul>
+<p>The indices of the children nodes in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>. If this GLTF node has no children, this will be an empty array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>height</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_height" name="//apple_ref/cpp/Property/set_height"></a>set_height</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_height" name="//apple_ref/cpp/Property/get_height"></a>get_height</strong>()</p></li>
+</ul>
+<p>How deep into the node hierarchy this node is. A root node will have a height of 0, its children will have a height of 1, and so on. If -1, the height has not been calculated.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-light"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>light</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_light" name="//apple_ref/cpp/Property/set_light"></a>set_light</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_light" name="//apple_ref/cpp/Property/get_light"></a>get_light</strong>()</p></li>
+</ul>
+<p>If this GLTF node is a light, the index of the <a class="reference internal" href="class_gltflight.html#class-gltflight"><span class="std std-ref">GLTFLight</span></a> in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> that describes the light's properties. If -1, this node is not a light.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-mesh"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>mesh</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mesh" name="//apple_ref/cpp/Property/set_mesh"></a>set_mesh</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_mesh" name="//apple_ref/cpp/Property/get_mesh"></a>get_mesh</strong>()</p></li>
+</ul>
+<p>If this GLTF node is a mesh, the index of the <a class="reference internal" href="class_gltfmesh.html#class-gltfmesh"><span class="std std-ref">GLTFMesh</span></a> in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> that describes the mesh's properties. If -1, this node is not a mesh.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-original-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>original_name</strong> = <code class="docutils literal notranslate"><span class="pre">""</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_original_name" name="//apple_ref/cpp/Property/set_original_name"></a>set_original_name</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_original_name" name="//apple_ref/cpp/Property/get_original_name"></a>get_original_name</strong>()</p></li>
+</ul>
+<p>The original name of the node.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-parent"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>parent</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_parent" name="//apple_ref/cpp/Property/set_parent"></a>set_parent</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_parent" name="//apple_ref/cpp/Property/get_parent"></a>get_parent</strong>()</p></li>
+</ul>
+<p>The index of the parent node in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>. If -1, this node is a root node.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-position"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>position</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_position" name="//apple_ref/cpp/Property/set_position"></a>set_position</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_position" name="//apple_ref/cpp/Property/get_position"></a>get_position</strong>()</p></li>
+</ul>
+<p>The position of the GLTF node relative to its parent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-rotation"><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong>rotation</strong> = <code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_rotation" name="//apple_ref/cpp/Property/set_rotation"></a>set_rotation</strong>(value: <a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong><a class="dashAnchor" id="properties-get_rotation" name="//apple_ref/cpp/Property/get_rotation"></a>get_rotation</strong>()</p></li>
+</ul>
+<p>The rotation of the GLTF node relative to its parent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-scale"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>scale</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_scale" name="//apple_ref/cpp/Property/set_scale"></a>set_scale</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_scale" name="//apple_ref/cpp/Property/get_scale"></a>get_scale</strong>()</p></li>
+</ul>
+<p>The scale of the GLTF node relative to its parent.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-skeleton"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>skeleton</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_skeleton" name="//apple_ref/cpp/Property/set_skeleton"></a>set_skeleton</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_skeleton" name="//apple_ref/cpp/Property/get_skeleton"></a>get_skeleton</strong>()</p></li>
+</ul>
+<p>If this GLTF node has a skeleton, the index of the <a class="reference internal" href="class_gltfskeleton.html#class-gltfskeleton"><span class="std std-ref">GLTFSkeleton</span></a> in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> that describes the skeleton's properties. If -1, this node does not have a skeleton.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-skin"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>skin</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_skin" name="//apple_ref/cpp/Property/set_skin"></a>set_skin</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_skin" name="//apple_ref/cpp/Property/get_skin"></a>get_skin</strong>()</p></li>
+</ul>
+<p>If this GLTF node has a skin, the index of the <a class="reference internal" href="class_gltfskin.html#class-gltfskin"><span class="std std-ref">GLTFSkin</span></a> in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> that describes the skin's properties. If -1, this node does not have a skin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfnode-property-xform"><a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> <strong>xform</strong> = <code class="docutils literal notranslate"><span class="pre">Transform3D(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_xform" name="//apple_ref/cpp/Property/set_xform"></a>set_xform</strong>(value: <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> <strong><a class="dashAnchor" id="properties-get_xform" name="//apple_ref/cpp/Property/get_xform"></a>get_xform</strong>()</p></li>
+</ul>
+<p>The transform of the GLTF node relative to its parent. This property is usually unused since the position, rotation, and scale properties are preferred.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gltfnode-method-get-additional-data"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_additional_data</strong>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Gets additional arbitrary data in this <strong>GLTFNode</strong> instance. This can be used to keep per-node state data in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes, which is important because they are stateless.</p>
+<p>The argument should be the <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfnode-method-set-additional-data"><abbr title="No return value.">void</abbr> <strong>set_additional_data</strong>(extension_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, additional_data: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Sets additional arbitrary data in this <strong>GLTFNode</strong> instance. This can be used to keep per-node state data in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes, which is important because they are stateless.</p>
+<p>The first argument should be the <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gltfmesh.html" rel="prev" title="GLTFMesh"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gltfphysicsbody.html" rel="next" title="GLTFPhysicsBody">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

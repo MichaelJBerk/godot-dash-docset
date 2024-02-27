@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ProceduralSkyMaterial" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_proceduralskymaterial.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Material&lt; Resource&lt; RefCounted&lt; Object A material that defines a simple sky for a Sky resource. Description: ProceduralSkyMaterial provides a way to create an effective background quickly..." property="og:description"/>
+<meta content="Inherits: Material&lt; Resource&lt; RefCounted&lt; Object A material that defines a simple sky for a Sky resource. Description: ProceduralSkyMaterial provides a way to create an effective background quickly..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ProceduralSkyMaterial — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_proceduralskymaterial.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_proceduralskymaterial.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_proceduralskymaterial.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_proceduralskymaterial.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_proceduralskymaterial.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_proceduralskymaterial.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_proceduralskymaterial.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_proceduralskymaterial.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_proceduralskymaterial.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_proceduralskymaterial.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_proceduralskymaterial.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_proceduralskymaterial.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_proceduralskymaterial.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_proceduralskymaterial.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_proceduralskymaterial.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_proceduralskymaterial.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_quadmesh.html" rel="next" title="QuadMesh"/>
+<link href="class_prismmesh.html" rel="prev" title="PrismMesh"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_proceduralskymaterial" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ProceduralSkyMaterial</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="proceduralskymaterial">
+<span id="class-proceduralskymaterial"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ProceduralSkyMaterial¶"></a>ProceduralSkyMaterial<a class="headerlink" href="#proceduralskymaterial" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_material.html#class-material"><span class="std std-ref">Material</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A material that defines a simple sky for a <a class="reference internal" href="class_sky.html#class-sky"><span class="std std-ref">Sky</span></a> resource.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>ProceduralSkyMaterial</strong> provides a way to create an effective background quickly by defining procedural parameters for the sun, the sky and the ground. The sky and ground are defined by a main color, a color at the horizon, and an easing curve to interpolate between them. Suns are described by a position in the sky, a color, and a max angle from the sun at which the easing curve ends. The max angle therefore defines the size of the sun in the sky.</p>
+<p><strong>ProceduralSkyMaterial</strong> supports up to 4 suns, using the color, and energy, direction, and angular distance of the first four <a class="reference internal" href="class_directionallight3d.html#class-directionallight3d"><span class="std std-ref">DirectionalLight3D</span></a> nodes in the scene. This means that the suns are defined individually by the properties of their corresponding <a class="reference internal" href="class_directionallight3d.html#class-directionallight3d"><span class="std std-ref">DirectionalLight3D</span></a>s and globally by <a class="reference internal" href="#class-proceduralskymaterial-property-sun-angle-max"><span class="std std-ref">sun_angle_max</span></a> and <a class="reference internal" href="#class-proceduralskymaterial-property-sun-curve"><span class="std std-ref">sun_curve</span></a>.</p>
+<p><strong>ProceduralSkyMaterial</strong> uses a lightweight shader to draw the sky and is therefore suited for real-time updates. This makes it a great option for a sky that is simple and computationally cheap, but unrealistic. If you need a more realistic procedural option, use <a class="reference internal" href="class_physicalskymaterial.html#class-physicalskymaterial"><span class="std std-ref">PhysicalSkyMaterial</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-energy-multiplier"><span class="std std-ref">energy_multiplier</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-ground-bottom-color"><span class="std std-ref">ground_bottom_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.2,</span> <span class="pre">0.169,</span> <span class="pre">0.133,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-ground-curve"><span class="std std-ref">ground_curve</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.02</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-ground-energy-multiplier"><span class="std std-ref">ground_energy_multiplier</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-ground-horizon-color"><span class="std std-ref">ground_horizon_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.6463,</span> <span class="pre">0.6558,</span> <span class="pre">0.6708,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-cover"><span class="std std-ref">sky_cover</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-cover-modulate"><span class="std std-ref">sky_cover_modulate</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-curve"><span class="std std-ref">sky_curve</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.15</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-energy-multiplier"><span class="std std-ref">sky_energy_multiplier</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-horizon-color"><span class="std std-ref">sky_horizon_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.6463,</span> <span class="pre">0.6558,</span> <span class="pre">0.6708,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sky-top-color"><span class="std std-ref">sky_top_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0.385,</span> <span class="pre">0.454,</span> <span class="pre">0.55,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sun-angle-max"><span class="std std-ref">sun_angle_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">30.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-sun-curve"><span class="std std-ref">sun_curve</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.15</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-proceduralskymaterial-property-use-debanding"><span class="std std-ref">use_debanding</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-proceduralskymaterial-property-energy-multiplier"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>energy_multiplier</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_energy_multiplier" name="//apple_ref/cpp/Property/set_energy_multiplier"></a>set_energy_multiplier</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_energy_multiplier" name="//apple_ref/cpp/Property/get_energy_multiplier"></a>get_energy_multiplier</strong>()</p></li>
+</ul>
+<p>The sky's overall brightness multiplier. Higher values result in a brighter sky.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-ground-bottom-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>ground_bottom_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.2,</span> <span class="pre">0.169,</span> <span class="pre">0.133,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ground_bottom_color" name="//apple_ref/cpp/Property/set_ground_bottom_color"></a>set_ground_bottom_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_ground_bottom_color" name="//apple_ref/cpp/Property/get_ground_bottom_color"></a>get_ground_bottom_color</strong>()</p></li>
+</ul>
+<p>Color of the ground at the bottom. Blends with <a class="reference internal" href="#class-proceduralskymaterial-property-ground-horizon-color"><span class="std std-ref">ground_horizon_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-ground-curve"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>ground_curve</strong> = <code class="docutils literal notranslate"><span class="pre">0.02</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ground_curve" name="//apple_ref/cpp/Property/set_ground_curve"></a>set_ground_curve</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_ground_curve" name="//apple_ref/cpp/Property/get_ground_curve"></a>get_ground_curve</strong>()</p></li>
+</ul>
+<p>How quickly the <a class="reference internal" href="#class-proceduralskymaterial-property-ground-horizon-color"><span class="std std-ref">ground_horizon_color</span></a> fades into the <a class="reference internal" href="#class-proceduralskymaterial-property-ground-bottom-color"><span class="std std-ref">ground_bottom_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-ground-energy-multiplier"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>ground_energy_multiplier</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ground_energy_multiplier" name="//apple_ref/cpp/Property/set_ground_energy_multiplier"></a>set_ground_energy_multiplier</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_ground_energy_multiplier" name="//apple_ref/cpp/Property/get_ground_energy_multiplier"></a>get_ground_energy_multiplier</strong>()</p></li>
+</ul>
+<p>Multiplier for ground color. A higher value will make the ground brighter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-ground-horizon-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>ground_horizon_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.6463,</span> <span class="pre">0.6558,</span> <span class="pre">0.6708,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_ground_horizon_color" name="//apple_ref/cpp/Property/set_ground_horizon_color"></a>set_ground_horizon_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_ground_horizon_color" name="//apple_ref/cpp/Property/get_ground_horizon_color"></a>get_ground_horizon_color</strong>()</p></li>
+</ul>
+<p>Color of the ground at the horizon. Blends with <a class="reference internal" href="#class-proceduralskymaterial-property-ground-bottom-color"><span class="std std-ref">ground_bottom_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-cover"><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong>sky_cover</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_cover" name="//apple_ref/cpp/Property/set_sky_cover"></a>set_sky_cover</strong>(value: <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> <strong><a class="dashAnchor" id="properties-get_sky_cover" name="//apple_ref/cpp/Property/get_sky_cover"></a>get_sky_cover</strong>()</p></li>
+</ul>
+<p>The sky cover texture to use. This texture must use an equirectangular projection (similar to <a class="reference internal" href="class_panoramaskymaterial.html#class-panoramaskymaterial"><span class="std std-ref">PanoramaSkyMaterial</span></a>). The texture's colors will be <em>added</em> to the existing sky color, and will be multiplied by <a class="reference internal" href="#class-proceduralskymaterial-property-sky-energy-multiplier"><span class="std std-ref">sky_energy_multiplier</span></a> and <a class="reference internal" href="#class-proceduralskymaterial-property-sky-cover-modulate"><span class="std std-ref">sky_cover_modulate</span></a>. This is mainly suited to displaying stars at night, but it can also be used to display clouds at day or night (with a non-physically-accurate look).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-cover-modulate"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>sky_cover_modulate</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_cover_modulate" name="//apple_ref/cpp/Property/set_sky_cover_modulate"></a>set_sky_cover_modulate</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_sky_cover_modulate" name="//apple_ref/cpp/Property/get_sky_cover_modulate"></a>get_sky_cover_modulate</strong>()</p></li>
+</ul>
+<p>The tint to apply to the <a class="reference internal" href="#class-proceduralskymaterial-property-sky-cover"><span class="std std-ref">sky_cover</span></a> texture. This can be used to change the sky cover's colors or opacity independently of the sky energy, which is useful for day/night or weather transitions. Only effective if a texture is defined in <a class="reference internal" href="#class-proceduralskymaterial-property-sky-cover"><span class="std std-ref">sky_cover</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-curve"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>sky_curve</strong> = <code class="docutils literal notranslate"><span class="pre">0.15</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_curve" name="//apple_ref/cpp/Property/set_sky_curve"></a>set_sky_curve</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_sky_curve" name="//apple_ref/cpp/Property/get_sky_curve"></a>get_sky_curve</strong>()</p></li>
+</ul>
+<p>How quickly the <a class="reference internal" href="#class-proceduralskymaterial-property-sky-horizon-color"><span class="std std-ref">sky_horizon_color</span></a> fades into the <a class="reference internal" href="#class-proceduralskymaterial-property-sky-top-color"><span class="std std-ref">sky_top_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-energy-multiplier"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>sky_energy_multiplier</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_energy_multiplier" name="//apple_ref/cpp/Property/set_sky_energy_multiplier"></a>set_sky_energy_multiplier</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_sky_energy_multiplier" name="//apple_ref/cpp/Property/get_sky_energy_multiplier"></a>get_sky_energy_multiplier</strong>()</p></li>
+</ul>
+<p>Multiplier for sky color. A higher value will make the sky brighter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-horizon-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>sky_horizon_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.6463,</span> <span class="pre">0.6558,</span> <span class="pre">0.6708,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_horizon_color" name="//apple_ref/cpp/Property/set_sky_horizon_color"></a>set_sky_horizon_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_sky_horizon_color" name="//apple_ref/cpp/Property/get_sky_horizon_color"></a>get_sky_horizon_color</strong>()</p></li>
+</ul>
+<p>Color of the sky at the horizon. Blends with <a class="reference internal" href="#class-proceduralskymaterial-property-sky-top-color"><span class="std std-ref">sky_top_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sky-top-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>sky_top_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0.385,</span> <span class="pre">0.454,</span> <span class="pre">0.55,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sky_top_color" name="//apple_ref/cpp/Property/set_sky_top_color"></a>set_sky_top_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_sky_top_color" name="//apple_ref/cpp/Property/get_sky_top_color"></a>get_sky_top_color</strong>()</p></li>
+</ul>
+<p>Color of the sky at the top. Blends with <a class="reference internal" href="#class-proceduralskymaterial-property-sky-horizon-color"><span class="std std-ref">sky_horizon_color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sun-angle-max"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>sun_angle_max</strong> = <code class="docutils literal notranslate"><span class="pre">30.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sun_angle_max" name="//apple_ref/cpp/Property/set_sun_angle_max"></a>set_sun_angle_max</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_sun_angle_max" name="//apple_ref/cpp/Property/get_sun_angle_max"></a>get_sun_angle_max</strong>()</p></li>
+</ul>
+<p>Distance from center of sun where it fades out completely.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-sun-curve"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>sun_curve</strong> = <code class="docutils literal notranslate"><span class="pre">0.15</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_sun_curve" name="//apple_ref/cpp/Property/set_sun_curve"></a>set_sun_curve</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_sun_curve" name="//apple_ref/cpp/Property/get_sun_curve"></a>get_sun_curve</strong>()</p></li>
+</ul>
+<p>How quickly the sun fades away between the edge of the sun disk and <a class="reference internal" href="#class-proceduralskymaterial-property-sun-angle-max"><span class="std std-ref">sun_angle_max</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-proceduralskymaterial-property-use-debanding"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>use_debanding</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_debanding" name="//apple_ref/cpp/Property/set_use_debanding"></a>set_use_debanding</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_use_debanding" name="//apple_ref/cpp/Property/get_use_debanding"></a>get_use_debanding</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, enables debanding. Debanding adds a small amount of noise which helps reduce banding that appears from the smooth changes in color in the sky.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_prismmesh.html" rel="prev" title="PrismMesh"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_quadmesh.html" rel="next" title="QuadMesh">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

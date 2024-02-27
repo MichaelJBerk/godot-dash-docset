@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Geometry2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_geometry2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object Provides methods for some common 2D geometric operations. Description: Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and proc..." property="og:description"/>
+<meta content="Inherits: Object Provides methods for some common 2D geometric operations. Description: Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and proc..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Geometry2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometry2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_geometry2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_geometry2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_geometry2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_geometry2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_geometry2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_geometry2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_geometry2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_geometry2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_geometry2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_geometry2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_geometry2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_geometry2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_geometry2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometry2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_geometry2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_geometry3d.html" rel="next" title="Geometry3D"/>
+<link href="class_gdextensionmanager.html" rel="prev" title="GDExtensionManager"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_geometry2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Geometry2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="geometry2d">
+<span id="class-geometry2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Geometry2D¶"></a>Geometry2D<a class="headerlink" href="#geometry2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Provides methods for some common 2D geometric operations.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and process various other geometric operations in 2D.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-clip-polygons"><span class="std std-ref">clip_polygons</span></a>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-clip-polyline-with-polygon"><span class="std std-ref">clip_polyline_with_polygon</span></a>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-convex-hull"><span class="std std-ref">convex_hull</span></a>(points: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-decompose-polygon-in-convex"><span class="std std-ref">decompose_polygon_in_convex</span></a>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-exclude-polygons"><span class="std std-ref">exclude_polygons</span></a>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-get-closest-point-to-segment"><span class="std std-ref">get_closest_point_to_segment</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-get-closest-point-to-segment-uncapped"><span class="std std-ref">get_closest_point_to_segment_uncapped</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-get-closest-points-between-segments"><span class="std std-ref">get_closest_points_between_segments</span></a>(p1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, q1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, p2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, q2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-intersect-polygons"><span class="std std-ref">intersect_polygons</span></a>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-intersect-polyline-with-polygon"><span class="std std-ref">intersect_polyline_with_polygon</span></a>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-is-point-in-circle"><span class="std std-ref">is_point_in_circle</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_radius: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-is-point-in-polygon"><span class="std std-ref">is_point_in_polygon</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-line-intersects-line"><span class="std std-ref">line_intersects_line</span></a>(from_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, dir_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, from_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, dir_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-make-atlas"><span class="std std-ref">make_atlas</span></a>(sizes: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-merge-polygons"><span class="std std-ref">merge_polygons</span></a>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-offset-polygon"><span class="std std-ref">offset_polygon</span></a>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, join_type: <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-offset-polyline"><span class="std std-ref">offset_polyline</span></a>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, join_type: <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> = 0, end_type: <a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> = 3)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-point-is-inside-triangle"><span class="std std-ref">point_is_inside_triangle</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, c: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-segment-intersects-circle"><span class="std std-ref">segment_intersects_circle</span></a>(segment_from: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, segment_to: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_radius: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-segment-intersects-segment"><span class="std std-ref">segment_intersects_segment</span></a>(from_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, to_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, from_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, to_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-triangulate-delaunay"><span class="std std-ref">triangulate_delaunay</span></a>(points: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-geometry2d-method-triangulate-polygon"><span class="std std-ref">triangulate_polygon</span></a>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-geometry2d-polybooleanoperation">enum <strong><a class="dashAnchor" id="enumerations-PolyBooleanOperation" name="//apple_ref/cpp/Enum/PolyBooleanOperation"></a>PolyBooleanOperation</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-operation-union"><a class="reference internal" href="#enum-geometry2d-polybooleanoperation"><span class="std std-ref">PolyBooleanOperation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_UNION" name="//apple_ref/cpp/Enum/OPERATION_UNION"></a>OPERATION_UNION</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Create regions where either subject or clip polygons (or both) are filled.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-operation-difference"><a class="reference internal" href="#enum-geometry2d-polybooleanoperation"><span class="std std-ref">PolyBooleanOperation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_DIFFERENCE" name="//apple_ref/cpp/Enum/OPERATION_DIFFERENCE"></a>OPERATION_DIFFERENCE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Create regions where subject polygons are filled except where clip polygons are filled.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-operation-intersection"><a class="reference internal" href="#enum-geometry2d-polybooleanoperation"><span class="std std-ref">PolyBooleanOperation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_INTERSECTION" name="//apple_ref/cpp/Enum/OPERATION_INTERSECTION"></a>OPERATION_INTERSECTION</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Create regions where both subject and clip polygons are filled.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-operation-xor"><a class="reference internal" href="#enum-geometry2d-polybooleanoperation"><span class="std std-ref">PolyBooleanOperation</span></a> <strong><a class="dashAnchor" id="enumerations-OPERATION_XOR" name="//apple_ref/cpp/Enum/OPERATION_XOR"></a>OPERATION_XOR</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Create regions where either subject or clip polygons are filled but not where both are filled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-geometry2d-polyjointype">enum <strong><a class="dashAnchor" id="enumerations-PolyJoinType" name="//apple_ref/cpp/Enum/PolyJoinType"></a>PolyJoinType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-join-square"><a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> <strong><a class="dashAnchor" id="enumerations-JOIN_SQUARE" name="//apple_ref/cpp/Enum/JOIN_SQUARE"></a>JOIN_SQUARE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Squaring is applied uniformally at all convex edge joins at <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">*</span> <span class="pre">delta</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-join-round"><a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> <strong><a class="dashAnchor" id="enumerations-JOIN_ROUND" name="//apple_ref/cpp/Enum/JOIN_ROUND"></a>JOIN_ROUND</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>While flattened paths can never perfectly trace an arc, they are approximated by a series of arc chords.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-join-miter"><a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> <strong><a class="dashAnchor" id="enumerations-JOIN_MITER" name="//apple_ref/cpp/Enum/JOIN_MITER"></a>JOIN_MITER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>There's a necessary limit to mitered joins since offsetting edges that join at very acute angles will produce excessively long and narrow "spikes". For any given edge join, when miter offsetting would exceed that maximum distance, "square" joining is applied.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-geometry2d-polyendtype">enum <strong><a class="dashAnchor" id="enumerations-PolyEndType" name="//apple_ref/cpp/Enum/PolyEndType"></a>PolyEndType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-end-polygon"><a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> <strong><a class="dashAnchor" id="enumerations-END_POLYGON" name="//apple_ref/cpp/Enum/END_POLYGON"></a>END_POLYGON</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Endpoints are joined using the <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> value and the path filled as a polygon.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-end-joined"><a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> <strong><a class="dashAnchor" id="enumerations-END_JOINED" name="//apple_ref/cpp/Enum/END_JOINED"></a>END_JOINED</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Endpoints are joined using the <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> value and the path filled as a polyline.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-end-butt"><a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> <strong><a class="dashAnchor" id="enumerations-END_BUTT" name="//apple_ref/cpp/Enum/END_BUTT"></a>END_BUTT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Endpoints are squared off with no extension.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-end-square"><a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> <strong><a class="dashAnchor" id="enumerations-END_SQUARE" name="//apple_ref/cpp/Enum/END_SQUARE"></a>END_SQUARE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Endpoints are squared off and extended by <code class="docutils literal notranslate"><span class="pre">delta</span></code> units.</p>
+<p class="classref-enumeration-constant" id="class-geometry2d-constant-end-round"><a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> <strong><a class="dashAnchor" id="enumerations-END_ROUND" name="//apple_ref/cpp/Enum/END_ROUND"></a>END_ROUND</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Endpoints are rounded off and extended by <code class="docutils literal notranslate"><span class="pre">delta</span></code> units.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-geometry2d-method-clip-polygons"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>clip_polygons</strong>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Clips <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code> against <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> and returns an array of clipped polygons. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-difference"><span class="std std-ref">OPERATION_DIFFERENCE</span></a> between polygons. Returns an empty array if <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> completely overlaps <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> is enclosed by <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code>, returns an outer polygon (boundary) and inner polygon (hole) which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-clip-polyline-with-polygon"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>clip_polyline_with_polygon</strong>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Clips <code class="docutils literal notranslate"><span class="pre">polyline</span></code> against <code class="docutils literal notranslate"><span class="pre">polygon</span></code> and returns an array of clipped polylines. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-difference"><span class="std std-ref">OPERATION_DIFFERENCE</span></a> between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-convex-hull"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>convex_hull</strong>(points: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Given an array of <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>s, returns the convex hull as a list of points in counterclockwise order. The last point is the same as the first one.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-decompose-polygon-in-convex"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>decompose_polygon_in_convex</strong>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Decomposes the <code class="docutils literal notranslate"><span class="pre">polygon</span></code> into multiple convex hulls and returns an array of <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-exclude-polygons"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>exclude_polygons</strong>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Mutually excludes common area defined by intersection of <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code> and <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> (see <a class="reference internal" href="#class-geometry2d-method-intersect-polygons"><span class="std std-ref">intersect_polygons</span></a>) and returns an array of excluded polygons. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-xor"><span class="std std-ref">OPERATION_XOR</span></a> between polygons. In other words, returns all but common area between polygons.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-get-closest-point-to-segment"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_closest_point_to_segment</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Returns the 2D point on the 2D segment (<code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code>) that is closest to <code class="docutils literal notranslate"><span class="pre">point</span></code>. The returned point will always be inside the specified segment.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-get-closest-point-to-segment-uncapped"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_closest_point_to_segment_uncapped</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, s2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Returns the 2D point on the 2D line defined by (<code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code>) that is closest to <code class="docutils literal notranslate"><span class="pre">point</span></code>. The returned point can be inside the segment (<code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code>) or outside of it, i.e. somewhere on the line extending from the segment.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-get-closest-points-between-segments"><a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> <strong>get_closest_points_between_segments</strong>(p1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, q1: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, p2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, q2: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Given the two 2D segments (<code class="docutils literal notranslate"><span class="pre">p1</span></code>, <code class="docutils literal notranslate"><span class="pre">q1</span></code>) and (<code class="docutils literal notranslate"><span class="pre">p2</span></code>, <code class="docutils literal notranslate"><span class="pre">q2</span></code>), finds those two points on the two segments that are closest to each other. Returns a <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> that contains this point on (<code class="docutils literal notranslate"><span class="pre">p1</span></code>, <code class="docutils literal notranslate"><span class="pre">q1</span></code>) as well the accompanying point on (<code class="docutils literal notranslate"><span class="pre">p2</span></code>, <code class="docutils literal notranslate"><span class="pre">q2</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-intersect-polygons"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>intersect_polygons</strong>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Intersects <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code> with <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> and returns an array of intersected polygons. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-intersection"><span class="std std-ref">OPERATION_INTERSECTION</span></a> between polygons. In other words, returns common area shared by polygons. Returns an empty array if no intersection occurs.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-intersect-polyline-with-polygon"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>intersect_polyline_with_polygon</strong>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Intersects <code class="docutils literal notranslate"><span class="pre">polyline</span></code> with <code class="docutils literal notranslate"><span class="pre">polygon</span></code> and returns an array of intersected polylines. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-intersection"><span class="std std-ref">OPERATION_INTERSECTION</span></a> between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-is-point-in-circle"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_point_in_circle</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_radius: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">point</span></code> is inside the circle or if it's located exactly <em>on</em> the circle's boundary, otherwise returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-is-point-in-polygon"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_point_in_polygon</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">point</span></code> is inside <code class="docutils literal notranslate"><span class="pre">polygon</span></code> or if it's located exactly <em>on</em> polygon's boundary, otherwise returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-is-polygon-clockwise"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_polygon_clockwise</strong>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">polygon</span></code>'s vertices are ordered in clockwise order, otherwise returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-line-intersects-line"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>line_intersects_line</strong>(from_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, dir_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, from_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, dir_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Checks if the two lines (<code class="docutils literal notranslate"><span class="pre">from_a</span></code>, <code class="docutils literal notranslate"><span class="pre">dir_a</span></code>) and (<code class="docutils literal notranslate"><span class="pre">from_b</span></code>, <code class="docutils literal notranslate"><span class="pre">dir_b</span></code>) intersect. If yes, return the point of intersection as <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>. If no intersection takes place, returns <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<p><strong>Note:</strong> The lines are specified using direction vectors, not end points.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-make-atlas"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>make_atlas</strong>(sizes: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Given an array of <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>s representing tiles, builds an atlas. The returned dictionary has two keys: <code class="docutils literal notranslate"><span class="pre">points</span></code> is a <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a> that specifies the positions of each tile, <code class="docutils literal notranslate"><span class="pre">size</span></code> contains the overall size of the whole atlas as <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-merge-polygons"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>merge_polygons</strong>(polygon_a: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, polygon_b: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Merges (combines) <code class="docutils literal notranslate"><span class="pre">polygon_a</span></code> and <code class="docutils literal notranslate"><span class="pre">polygon_b</span></code> and returns an array of merged polygons. This performs <a class="reference internal" href="#class-geometry2d-constant-operation-union"><span class="std std-ref">OPERATION_UNION</span></a> between polygons.</p>
+<p>The operation may result in an outer polygon (boundary) and multiple inner polygons (holes) produced which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-offset-polygon"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>offset_polygon</strong>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, join_type: <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> = 0)</p>
+<p>Inflates or deflates <code class="docutils literal notranslate"><span class="pre">polygon</span></code> by <code class="docutils literal notranslate"><span class="pre">delta</span></code> units (pixels). If <code class="docutils literal notranslate"><span class="pre">delta</span></code> is positive, makes the polygon grow outward. If <code class="docutils literal notranslate"><span class="pre">delta</span></code> is negative, shrinks the polygon inward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. Returns an empty array if <code class="docutils literal notranslate"><span class="pre">delta</span></code> is negative and the absolute value of it approximately exceeds the minimum bounding rectangle dimensions of the polygon.</p>
+<p>Each polygon's vertices will be rounded as determined by <code class="docutils literal notranslate"><span class="pre">join_type</span></code>, see <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a>.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<p><strong>Note:</strong> To translate the polygon's vertices specifically, multiply them to a <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">polygon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">PackedVector2Array</span><span class="p">([</span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">)])</span>
+<span class="k">var</span><span class="w"> </span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span>
+<span class="n">polygon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Transform2D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">polygon</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span><span class="w"> </span><span class="c1"># prints [(50, 50), (150, 50), (150, 150), (50, 150)]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">polygon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">};</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">);</span>
+<span class="n">polygon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Transform2D</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">polygon</span><span class="p">;</span>
+<span class="n">GD</span><span class="p">.</span><span class="n">Print</span><span class="p">((</span><span class="n">Variant</span><span class="p">)</span><span class="n">polygon</span><span class="p">);</span><span class="w"> </span><span class="c1">// prints [(50, 50), (150, 50), (150, 150), (50, 150)]</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-offset-polyline"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>] <strong>offset_polyline</strong>(polyline: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>, delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, join_type: <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a> = 0, end_type: <a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a> = 3)</p>
+<p>Inflates or deflates <code class="docutils literal notranslate"><span class="pre">polyline</span></code> by <code class="docutils literal notranslate"><span class="pre">delta</span></code> units (pixels), producing polygons. If <code class="docutils literal notranslate"><span class="pre">delta</span></code> is positive, makes the polyline grow outward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. If <code class="docutils literal notranslate"><span class="pre">delta</span></code> is negative, returns an empty array.</p>
+<p>Each polygon's vertices will be rounded as determined by <code class="docutils literal notranslate"><span class="pre">join_type</span></code>, see <a class="reference internal" href="#enum-geometry2d-polyjointype"><span class="std std-ref">PolyJoinType</span></a>.</p>
+<p>Each polygon's endpoints will be rounded as determined by <code class="docutils literal notranslate"><span class="pre">end_type</span></code>, see <a class="reference internal" href="#enum-geometry2d-polyendtype"><span class="std std-ref">PolyEndType</span></a>.</p>
+<p>The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling <a class="reference internal" href="#class-geometry2d-method-is-polygon-clockwise"><span class="std std-ref">is_polygon_clockwise</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-point-is-inside-triangle"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>point_is_inside_triangle</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, c: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns if <code class="docutils literal notranslate"><span class="pre">point</span></code> is inside the triangle specified by <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-segment-intersects-circle"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>segment_intersects_circle</strong>(segment_from: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, segment_to: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, circle_radius: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Given the 2D segment (<code class="docutils literal notranslate"><span class="pre">segment_from</span></code>, <code class="docutils literal notranslate"><span class="pre">segment_to</span></code>), returns the position on the segment (as a number between 0 and 1) at which the segment hits the circle that is located at position <code class="docutils literal notranslate"><span class="pre">circle_position</span></code> and has radius <code class="docutils literal notranslate"><span class="pre">circle_radius</span></code>. If the segment does not intersect the circle, -1 is returned (this is also the case if the line extending the segment would intersect the circle, but the segment does not).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-segment-intersects-segment"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>segment_intersects_segment</strong>(from_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, to_a: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, from_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, to_b: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Checks if the two segments (<code class="docutils literal notranslate"><span class="pre">from_a</span></code>, <code class="docutils literal notranslate"><span class="pre">to_a</span></code>) and (<code class="docutils literal notranslate"><span class="pre">from_b</span></code>, <code class="docutils literal notranslate"><span class="pre">to_b</span></code>) intersect. If yes, return the point of intersection as <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>. If no intersection takes place, returns <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-triangulate-delaunay"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>triangulate_delaunay</strong>(points: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Triangulates the area specified by discrete set of <code class="docutils literal notranslate"><span class="pre">points</span></code> such that no point is inside the circumcircle of any resulting triangle. Returns a <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> where each triangle consists of three consecutive point indices into <code class="docutils literal notranslate"><span class="pre">points</span></code> (i.e. the returned array will have <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">*</span> <span class="pre">3</span></code> elements, with <code class="docutils literal notranslate"><span class="pre">n</span></code> being the number of found triangles). If the triangulation did not succeed, an empty <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> is returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-geometry2d-method-triangulate-polygon"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>triangulate_polygon</strong>(polygon: <a class="reference internal" href="class_packedvector2array.html#class-packedvector2array"><span class="std std-ref">PackedVector2Array</span></a>)</p>
+<p>Triangulates the polygon specified by the points in <code class="docutils literal notranslate"><span class="pre">polygon</span></code>. Returns a <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> where each triangle consists of three consecutive point indices into <code class="docutils literal notranslate"><span class="pre">polygon</span></code> (i.e. the returned array will have <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">*</span> <span class="pre">3</span></code> elements, with <code class="docutils literal notranslate"><span class="pre">n</span></code> being the number of found triangles). Output triangles will always be counter clockwise, and the contour will be flipped if it's clockwise. If the triangulation did not succeed, an empty <a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> is returned.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gdextensionmanager.html" rel="prev" title="GDExtensionManager"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_geometry3d.html" rel="next" title="Geometry3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

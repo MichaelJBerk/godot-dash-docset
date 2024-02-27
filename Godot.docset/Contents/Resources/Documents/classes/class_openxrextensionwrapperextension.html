@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="OpenXRExtensionWrapperExtension" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_openxrextensionwrapperextension.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Object Allows clients to implement OpenXR extensions with GDExtension. Description: OpenXRExtensionWrapperExtension allows clients to implement OpenXR extensions with GDExtension. The ext..." property="og:description"/>
+<meta content="Inherits: Object Allows clients to implement OpenXR extensions with GDExtension. Description: OpenXRExtensionWrapperExtension allows clients to implement OpenXR extensions with GDExtension. The ext..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) OpenXRExtensionWrapperExtension — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrextensionwrapperextension.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_openxrextensionwrapperextension.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_openxrextensionwrapperextension.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_openxrextensionwrapperextension.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_openxrextensionwrapperextension.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_openxrextensionwrapperextension.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_openxrextensionwrapperextension.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_openxrextensionwrapperextension.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_openxrextensionwrapperextension.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_openxrextensionwrapperextension.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_openxrextensionwrapperextension.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_openxrextensionwrapperextension.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_openxrextensionwrapperextension.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_openxrextensionwrapperextension.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrextensionwrapperextension.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_openxrextensionwrapperextension.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_openxrinteractionprofilemetadata.html" rel="next" title="OpenXRInteractionProfileMetadata"/>
+<link href="class_openxrapiextension.html" rel="prev" title="OpenXRAPIExtension"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_openxrextensionwrapperextension" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">OpenXRExtensionWrapperExtension</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="openxrextensionwrapperextension">
+<span id="class-openxrextensionwrapperextension"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/OpenXRExtensionWrapperExtension¶"></a>OpenXRExtensionWrapperExtension<a class="headerlink" href="#openxrextensionwrapperextension" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Allows clients to implement OpenXR extensions with GDExtension.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>OpenXRExtensionWrapperExtension</strong> allows clients to implement OpenXR extensions with GDExtension. The extension should be registered with <a class="reference internal" href="#class-openxrextensionwrapperextension-method-register-extension-wrapper"><span class="std std-ref">register_extension_wrapper</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-get-composition-layer"><span class="std std-ref">_get_composition_layer</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-get-requested-extensions"><span class="std std-ref">_get_requested_extensions</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-get-suggested-tracker-names"><span class="std std-ref">_get_suggested_tracker_names</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-before-instance-created"><span class="std std-ref">_on_before_instance_created</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-event-polled"><span class="std std-ref">_on_event_polled</span></a>(event: <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-instance-created"><span class="std std-ref">_on_instance_created</span></a>(instance: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-instance-destroyed"><span class="std std-ref">_on_instance_destroyed</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-pre-render"><span class="std std-ref">_on_pre_render</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-process"><span class="std std-ref">_on_process</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-register-metadata"><span class="std std-ref">_on_register_metadata</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-session-created"><span class="std std-ref">_on_session_created</span></a>(session: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-session-destroyed"><span class="std std-ref">_on_session_destroyed</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-exiting"><span class="std std-ref">_on_state_exiting</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-focused"><span class="std std-ref">_on_state_focused</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-idle"><span class="std std-ref">_on_state_idle</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-loss-pending"><span class="std std-ref">_on_state_loss_pending</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-ready"><span class="std std-ref">_on_state_ready</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-stopping"><span class="std std-ref">_on_state_stopping</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-synchronized"><span class="std std-ref">_on_state_synchronized</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-on-state-visible"><span class="std std-ref">_on_state_visible</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-set-hand-joint-locations-and-get-next-pointer"><span class="std std-ref">_set_hand_joint_locations_and_get_next_pointer</span></a>(hand_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-set-instance-create-info-and-get-next-pointer"><span class="std std-ref">_set_instance_create_info_and_get_next_pointer</span></a>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-set-session-create-and-get-next-pointer"><span class="std std-ref">_set_session_create_and_get_next_pointer</span></a>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-set-swapchain-create-info-and-get-next-pointer"><span class="std std-ref">_set_swapchain_create_info_and_get_next_pointer</span></a>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-private-method-set-system-properties-and-get-next-pointer"><span class="std std-ref">_set_system_properties_and_get_next_pointer</span></a>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_openxrapiextension.html#class-openxrapiextension"><span class="std std-ref">OpenXRAPIExtension</span></a></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-method-get-openxr-api"><span class="std std-ref">get_openxr_api</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-openxrextensionwrapperextension-method-register-extension-wrapper"><span class="std std-ref">register_extension_wrapper</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-get-composition-layer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_get_composition_layer</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Returns a pointer to a <code class="docutils literal notranslate"><span class="pre">XrCompositionLayerBaseHeader</span></code> struct to provide a composition layer. This will only be called if the extension previously registered itself with <a class="reference internal" href="class_openxrapiextension.html#class-openxrapiextension-method-register-composition-layer-provider"><span class="std std-ref">OpenXRAPIExtension.register_composition_layer_provider</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-get-requested-extensions"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>_get_requested_extensions</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Returns a <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> of OpenXR extensions related to this extension. The <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> should contain the name of the extension, mapped to a <code class="docutils literal notranslate"><span class="pre">bool</span> <span class="pre">*</span></code> cast to an integer:</p>
+<ul class="simple">
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">bool</span> <span class="pre">*</span></code> is a <code class="docutils literal notranslate"><span class="pre">nullptr</span></code> this extension is mandatory.</p></li>
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">bool</span> <span class="pre">*</span></code> points to a boolean, the boolean will be updated to <code class="docutils literal notranslate"><span class="pre">true</span></code> if the extension is enabled.</p></li>
+</ul>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-get-suggested-tracker-names"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>_get_suggested_tracker_names</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Returns a <a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> of positional tracker names that are used within the extension wrapper.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-before-instance-created"><abbr title="No return value.">void</abbr> <strong>_on_before_instance_created</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called before the OpenXR instance is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-event-polled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_on_event_polled</strong>(event: <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when there is an OpenXR event to process. When implementing, return <code class="docutils literal notranslate"><span class="pre">true</span></code> if the event was handled, return <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-instance-created"><abbr title="No return value.">void</abbr> <strong>_on_instance_created</strong>(instance: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called right after the OpenXR instance is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-instance-destroyed"><abbr title="No return value.">void</abbr> <strong>_on_instance_destroyed</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called right before the OpenXR instance is destroyed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-pre-render"><abbr title="No return value.">void</abbr> <strong>_on_pre_render</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called right before the XR viewports begin their rendering step.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-process"><abbr title="No return value.">void</abbr> <strong>_on_process</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called as part of the OpenXR process handling. This happens right before general and physics processing steps of the main loop. During this step controller data is queried and made available to game logic.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-register-metadata"><abbr title="No return value.">void</abbr> <strong>_on_register_metadata</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Allows extensions to register additional controller metadata. This function is called even when the OpenXR API is not constructed as the metadata needs to be available to the editor.</p>
+<p>Extensions should also provide metadata regardless of whether they are supported on the host system. The controller data is used to setup action maps for users who may have access to the relevant hardware.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-session-created"><abbr title="No return value.">void</abbr> <strong>_on_session_created</strong>(session: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called right after the OpenXR session is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-session-destroyed"><abbr title="No return value.">void</abbr> <strong>_on_session_destroyed</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called right before the OpenXR session is destroyed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-exiting"><abbr title="No return value.">void</abbr> <strong>_on_state_exiting</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to exiting.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-focused"><abbr title="No return value.">void</abbr> <strong>_on_state_focused</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to focused. This state is the active state when the game runs.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-idle"><abbr title="No return value.">void</abbr> <strong>_on_state_idle</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to idle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-loss-pending"><abbr title="No return value.">void</abbr> <strong>_on_state_loss_pending</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to loss pending.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-ready"><abbr title="No return value.">void</abbr> <strong>_on_state_ready</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to ready. This means OpenXR is ready to set up the session.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-stopping"><abbr title="No return value.">void</abbr> <strong>_on_state_stopping</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to stopping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-synchronized"><abbr title="No return value.">void</abbr> <strong>_on_state_synchronized</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to synchronized. OpenXR also returns to this state when the application loses focus.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-on-state-visible"><abbr title="No return value.">void</abbr> <strong>_on_state_visible</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Called when the OpenXR session state is changed to visible. This means OpenXR is now ready to receive frames.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-set-hand-joint-locations-and-get-next-pointer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_set_hand_joint_locations_and_get_next_pointer</strong>(hand_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Adds additional data structures when each hand tracker is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-set-instance-create-info-and-get-next-pointer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_set_instance_create_info_and_get_next_pointer</strong>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Adds additional data structures when the OpenXR instance is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-set-session-create-and-get-next-pointer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_set_session_create_and_get_next_pointer</strong>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Adds additional data structures when the OpenXR session is created.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-set-swapchain-create-info-and-get-next-pointer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_set_swapchain_create_info_and_get_next_pointer</strong>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Adds additional data structures when creating OpenXR swapchains.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-private-method-set-system-properties-and-get-next-pointer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>_set_system_properties_and_get_next_pointer</strong>(next_pointer: <code class="docutils literal notranslate"><span class="pre">void*</span></code>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Adds additional data structures when interogating OpenXR system abilities.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-method-get-openxr-api"><a class="reference internal" href="class_openxrapiextension.html#class-openxrapiextension"><span class="std std-ref">OpenXRAPIExtension</span></a> <strong>get_openxr_api</strong>()</p>
+<p>Returns the created <a class="reference internal" href="class_openxrapiextension.html#class-openxrapiextension"><span class="std std-ref">OpenXRAPIExtension</span></a>, which can be used to access the OpenXR API.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-openxrextensionwrapperextension-method-register-extension-wrapper"><abbr title="No return value.">void</abbr> <strong>register_extension_wrapper</strong>()</p>
+<p>Registers the extension. This should happen at core module initialization level.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_openxrapiextension.html" rel="prev" title="OpenXRAPIExtension"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_openxrinteractionprofilemetadata.html" rel="next" title="OpenXRInteractionProfileMetadata">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

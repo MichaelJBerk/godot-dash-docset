@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="NavigationLink2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_navigationlink2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Experimental: This class may be changed or removed in future versions. Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object A link between two positions on NavigationRegion2D s that agents can be routed thro..." property="og:description"/>
+<meta content="Experimental: This class may be changed or removed in future versions. Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object A link between two positions on NavigationRegion2D s that agents can be routed thro..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) NavigationLink2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationlink2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_navigationlink2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_navigationlink2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_navigationlink2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_navigationlink2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_navigationlink2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_navigationlink2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_navigationlink2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_navigationlink2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_navigationlink2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_navigationlink2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_navigationlink2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_navigationlink2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_navigationlink2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationlink2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_navigationlink2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_navigationlink3d.html" rel="next" title="NavigationLink3D"/>
+<link href="class_navigationagent3d.html" rel="prev" title="NavigationAgent3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_navigationlink2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">NavigationLink2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="navigationlink2d">
+<span id="class-navigationlink2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/NavigationLink2D¶"></a>NavigationLink2D<a class="headerlink" href="#navigationlink2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Experimental:</strong> This class may be changed or removed in future versions.</p>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A link between two positions on <a class="reference internal" href="class_navigationregion2d.html#class-navigationregion2d"><span class="std std-ref">NavigationRegion2D</span></a>s that agents can be routed through.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A link between two positions on <a class="reference internal" href="class_navigationregion2d.html#class-navigationregion2d"><span class="std std-ref">NavigationRegion2D</span></a>s that agents can be routed through. These positions can be on the same <a class="reference internal" href="class_navigationregion2d.html#class-navigationregion2d"><span class="std std-ref">NavigationRegion2D</span></a> or on two different ones. Links are useful to express navigation methods other than traveling along the surface of the navigation polygon, such as ziplines, teleporters, or gaps that can be jumped across.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/navigation/navigation_using_navigationlinks.html"><span class="doc">Using NavigationLinks</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-bidirectional"><span class="std std-ref">bidirectional</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-enabled"><span class="std std-ref">enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-end-position"><span class="std std-ref">end_position</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-enter-cost"><span class="std std-ref">enter_cost</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-navigation-layers"><span class="std std-ref">navigation_layers</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-start-position"><span class="std std-ref">start_position</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-property-travel-cost"><span class="std std-ref">travel_cost</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-get-global-end-position"><span class="std std-ref">get_global_end_position</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-get-global-start-position"><span class="std std-ref">get_global_start_position</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-get-navigation-layer-value"><span class="std std-ref">get_navigation_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-get-rid"><span class="std std-ref">get_rid</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-set-global-end-position"><span class="std std-ref">set_global_end_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-set-global-start-position"><span class="std std-ref">set_global_start_position</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-navigationlink2d-method-set-navigation-layer-value"><span class="std std-ref">set_navigation_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-navigationlink2d-property-bidirectional"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>bidirectional</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_bidirectional" name="//apple_ref/cpp/Property/set_bidirectional"></a>set_bidirectional</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_bidirectional" name="//apple_ref/cpp/Property/is_bidirectional"></a>is_bidirectional</strong>()</p></li>
+</ul>
+<p>Whether this link can be traveled in both directions or only from <a class="reference internal" href="#class-navigationlink2d-property-start-position"><span class="std std-ref">start_position</span></a> to <a class="reference internal" href="#class-navigationlink2d-property-end-position"><span class="std std-ref">end_position</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_enabled" name="//apple_ref/cpp/Property/set_enabled"></a>set_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_enabled" name="//apple_ref/cpp/Property/is_enabled"></a>is_enabled</strong>()</p></li>
+</ul>
+<p>Whether this link is currently active. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, <a class="reference internal" href="class_navigationserver2d.html#class-navigationserver2d-method-map-get-path"><span class="std std-ref">NavigationServer2D.map_get_path</span></a> will ignore this link.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-end-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>end_position</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_end_position" name="//apple_ref/cpp/Property/set_end_position"></a>set_end_position</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_end_position" name="//apple_ref/cpp/Property/get_end_position"></a>get_end_position</strong>()</p></li>
+</ul>
+<p>Ending position of the link.</p>
+<p>This position will search out the nearest polygon in the navigation mesh to attach to.</p>
+<p>The distance the link will search is controlled by <a class="reference internal" href="class_navigationserver2d.html#class-navigationserver2d-method-map-set-link-connection-radius"><span class="std std-ref">NavigationServer2D.map_set_link_connection_radius</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-enter-cost"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>enter_cost</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_enter_cost" name="//apple_ref/cpp/Property/set_enter_cost"></a>set_enter_cost</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_enter_cost" name="//apple_ref/cpp/Property/get_enter_cost"></a>get_enter_cost</strong>()</p></li>
+</ul>
+<p>When pathfinding enters this link from another regions navigation mesh the <a class="reference internal" href="#class-navigationlink2d-property-enter-cost"><span class="std std-ref">enter_cost</span></a> value is added to the path distance for determining the shortest path.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-navigation-layers"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>navigation_layers</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_navigation_layers" name="//apple_ref/cpp/Property/set_navigation_layers"></a>set_navigation_layers</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_navigation_layers" name="//apple_ref/cpp/Property/get_navigation_layers"></a>get_navigation_layers</strong>()</p></li>
+</ul>
+<p>A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with <a class="reference internal" href="class_navigationserver2d.html#class-navigationserver2d-method-map-get-path"><span class="std std-ref">NavigationServer2D.map_get_path</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-start-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>start_position</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_start_position" name="//apple_ref/cpp/Property/set_start_position"></a>set_start_position</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_start_position" name="//apple_ref/cpp/Property/get_start_position"></a>get_start_position</strong>()</p></li>
+</ul>
+<p>Starting position of the link.</p>
+<p>This position will search out the nearest polygon in the navigation mesh to attach to.</p>
+<p>The distance the link will search is controlled by <a class="reference internal" href="class_navigationserver2d.html#class-navigationserver2d-method-map-set-link-connection-radius"><span class="std std-ref">NavigationServer2D.map_set_link_connection_radius</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-navigationlink2d-property-travel-cost"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>travel_cost</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_travel_cost" name="//apple_ref/cpp/Property/set_travel_cost"></a>set_travel_cost</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_travel_cost" name="//apple_ref/cpp/Property/get_travel_cost"></a>get_travel_cost</strong>()</p></li>
+</ul>
+<p>When pathfinding moves along the link the traveled distance is multiplied with <a class="reference internal" href="#class-navigationlink2d-property-travel-cost"><span class="std std-ref">travel_cost</span></a> for determining the shortest path.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-navigationlink2d-method-get-global-end-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_global_end_position</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="#class-navigationlink2d-property-end-position"><span class="std std-ref">end_position</span></a> that is relative to the link as a global position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-get-global-start-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_global_start_position</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="#class-navigationlink2d-property-start-position"><span class="std std-ref">start_position</span></a> that is relative to the link as a global position.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-get-navigation-layer-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_navigation_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether or not the specified layer of the <a class="reference internal" href="#class-navigationlink2d-property-navigation-layers"><span class="std std-ref">navigation_layers</span></a> bitmask is enabled, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-get-rid"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>get_rid</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> of this link on the <a class="reference internal" href="class_navigationserver2d.html#class-navigationserver2d"><span class="std std-ref">NavigationServer2D</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-set-global-end-position"><abbr title="No return value.">void</abbr> <strong>set_global_end_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Sets the <a class="reference internal" href="#class-navigationlink2d-property-end-position"><span class="std std-ref">end_position</span></a> that is relative to the link from a global <code class="docutils literal notranslate"><span class="pre">position</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-set-global-start-position"><abbr title="No return value.">void</abbr> <strong>set_global_start_position</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Sets the <a class="reference internal" href="#class-navigationlink2d-property-start-position"><span class="std std-ref">start_position</span></a> that is relative to the link from a global <code class="docutils literal notranslate"><span class="pre">position</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-navigationlink2d-method-set-navigation-layer-value"><abbr title="No return value.">void</abbr> <strong>set_navigation_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Based on <code class="docutils literal notranslate"><span class="pre">value</span></code>, enables or disables the specified layer in the <a class="reference internal" href="#class-navigationlink2d-property-navigation-layers"><span class="std std-ref">navigation_layers</span></a> bitmask, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_navigationagent3d.html" rel="prev" title="NavigationAgent3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_navigationlink3d.html" rel="next" title="NavigationLink3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

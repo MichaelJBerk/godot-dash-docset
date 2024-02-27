@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AnimationMixer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_animationmixer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Node&lt; Object Inherited By: AnimationPlayer, AnimationTree Base class for AnimationPlayer and AnimationTree. Description: Base class for AnimationPlayer and AnimationTree to manage animati..." property="og:description"/>
+<meta content="Inherits: Node&lt; Object Inherited By: AnimationPlayer, AnimationTree Base class for AnimationPlayer and AnimationTree. Description: Base class for AnimationPlayer and AnimationTree to manage animati..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AnimationMixer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationmixer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_animationmixer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_animationmixer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_animationmixer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_animationmixer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_animationmixer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_animationmixer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_animationmixer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_animationmixer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_animationmixer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_animationmixer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_animationmixer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_animationmixer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_animationmixer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationmixer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationmixer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_animationplayer.html" rel="next" title="AnimationPlayer"/>
+<link href="class_animatedsprite3d.html" rel="prev" title="AnimatedSprite3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_animationmixer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AnimationMixer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="animationmixer">
+<span id="class-animationmixer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AnimationMixer¶"></a>AnimationMixer<a class="headerlink" href="#animationmixer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a>, <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a></p>
+<p>Base class for <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> and <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a>.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base class for <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> and <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a> to manage animation lists. It also has general properties and methods for playback and blending.</p>
+<p>After instantiating the playback information data within the extended class, the blending is processed by the <strong>AnimationMixer</strong>.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-active"><span class="std std-ref">active</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-audio-max-polyphony"><span class="std std-ref">audio_max_polyphony</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">32</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-callback-mode-discrete"><span class="std std-ref">callback_mode_discrete</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-callback-mode-method"><span class="std std-ref">callback_mode_method</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-callback-mode-process"><span class="std std-ref">callback_mode_process</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-deterministic"><span class="std std-ref">deterministic</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-reset-on-save"><span class="std std-ref">reset_on_save</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NodePath("")</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-property-root-node"><span class="std std-ref">root_node</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">NodePath("..")</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-private-method-post-process-key-value"><span class="std std-ref">_post_process_key_value</span></a>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>, track: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, object_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, object_sub_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-add-animation-library"><span class="std std-ref">add_animation_library</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, library: <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-advance"><span class="std std-ref">advance</span></a>(delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-capture"><span class="std std-ref">capture</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, duration: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, trans_type: <a class="reference internal" href="class_tween.html#enum-tween-transitiontype"><span class="std std-ref">TransitionType</span></a> = 0, ease_type: <a class="reference internal" href="class_tween.html#enum-tween-easetype"><span class="std std-ref">EaseType</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-clear-caches"><span class="std std-ref">clear_caches</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-find-animation"><span class="std std-ref">find_animation</span></a>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-find-animation-library"><span class="std std-ref">find_animation_library</span></a>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-animation"><span class="std std-ref">get_animation</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-animation-library"><span class="std std-ref">get_animation_library</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-animation-library-list"><span class="std std-ref">get_animation_library_list</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-animation-list"><span class="std std-ref">get_animation_list</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-position"><span class="std std-ref">get_root_motion_position</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-position-accumulator"><span class="std std-ref">get_root_motion_position_accumulator</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-rotation"><span class="std std-ref">get_root_motion_rotation</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-rotation-accumulator"><span class="std std-ref">get_root_motion_rotation_accumulator</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-scale"><span class="std std-ref">get_root_motion_scale</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-get-root-motion-scale-accumulator"><span class="std std-ref">get_root_motion_scale_accumulator</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-has-animation"><span class="std std-ref">has_animation</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-has-animation-library"><span class="std std-ref">has_animation_library</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-remove-animation-library"><span class="std std-ref">remove_animation_library</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationmixer-method-rename-animation-library"><span class="std std-ref">rename_animation_library</span></a>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, newname: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-animationmixer-signal-animation-finished"><strong>animation_finished</strong>(anim_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Notifies when an animation finished playing.</p>
+<p><strong>Note:</strong> This signal is not emitted if an animation is looping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animationmixer-signal-animation-libraries-updated"><strong>animation_libraries_updated</strong>()</p>
+<p>Notifies when the animation libraries have changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animationmixer-signal-animation-list-changed"><strong>animation_list_changed</strong>()</p>
+<p>Notifies when an animation list is changed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animationmixer-signal-animation-started"><strong>animation_started</strong>(anim_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Notifies when an animation starts playing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animationmixer-signal-caches-cleared"><strong>caches_cleared</strong>()</p>
+<p>Notifies when the caches have been cleared, either automatically, or manually via <a class="reference internal" href="#class-animationmixer-method-clear-caches"><span class="std std-ref">clear_caches</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-animationmixer-signal-mixer-updated"><strong>mixer_updated</strong>()</p>
+<p>Editor only. Notifies when the property have been updated to update dummy <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> in animation player editor.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-animationmixer-animationcallbackmodeprocess">enum <strong><a class="dashAnchor" id="enumerations-AnimationCallbackModeProcess" name="//apple_ref/cpp/Enum/AnimationCallbackModeProcess"></a>AnimationCallbackModeProcess</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-process-physics"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS"></a>ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Process animation during physics frames (see <a class="reference internal" href="class_node.html#class-node-constant-notification-internal-physics-process"><span class="std std-ref">Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS</span></a>). This is especially useful when animating physics bodies.</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-process-idle"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_PROCESS_IDLE" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_PROCESS_IDLE"></a>ANIMATION_CALLBACK_MODE_PROCESS_IDLE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Process animation during process frames (see <a class="reference internal" href="class_node.html#class-node-constant-notification-internal-process"><span class="std std-ref">Node.NOTIFICATION_INTERNAL_PROCESS</span></a>).</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-process-manual"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_PROCESS_MANUAL" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_PROCESS_MANUAL"></a>ANIMATION_CALLBACK_MODE_PROCESS_MANUAL</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Do not process animation. Use <a class="reference internal" href="#class-animationmixer-method-advance"><span class="std std-ref">advance</span></a> to process the animation manually.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-animationmixer-animationcallbackmodemethod">enum <strong><a class="dashAnchor" id="enumerations-AnimationCallbackModeMethod" name="//apple_ref/cpp/Enum/AnimationCallbackModeMethod"></a>AnimationCallbackModeMethod</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-method-deferred"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_METHOD_DEFERRED" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_METHOD_DEFERRED"></a>ANIMATION_CALLBACK_MODE_METHOD_DEFERRED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Batch method calls during the animation process, then do the calls after events are processed. This avoids bugs involving deleting nodes or modifying the AnimationPlayer while playing.</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-method-immediate"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE"></a>ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Make method calls immediately when reached in the animation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-animationmixer-animationcallbackmodediscrete">enum <strong><a class="dashAnchor" id="enumerations-AnimationCallbackModeDiscrete" name="//apple_ref/cpp/Enum/AnimationCallbackModeDiscrete"></a>AnimationCallbackModeDiscrete</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-discrete-dominant"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT"></a>ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>An <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a> track value takes precedence when blending <a class="reference internal" href="class_animation.html#class-animation-constant-update-continuous"><span class="std std-ref">Animation.UPDATE_CONTINUOUS</span></a> or <a class="reference internal" href="class_animation.html#class-animation-constant-update-capture"><span class="std std-ref">Animation.UPDATE_CAPTURE</span></a> track values and <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a> track values. This is the default behavior for <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a>.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> If a value track has non-numeric type key values, it is internally converted to use <a class="reference internal" href="#class-animationmixer-constant-animation-callback-mode-discrete-dominant"><span class="std std-ref">ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT</span></a> with <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-discrete-recessive"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE"></a>ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>An <a class="reference internal" href="class_animation.html#class-animation-constant-update-continuous"><span class="std std-ref">Animation.UPDATE_CONTINUOUS</span></a> or <a class="reference internal" href="class_animation.html#class-animation-constant-update-capture"><span class="std std-ref">Animation.UPDATE_CAPTURE</span></a> track value takes precedence when blending the <a class="reference internal" href="class_animation.html#class-animation-constant-update-continuous"><span class="std std-ref">Animation.UPDATE_CONTINUOUS</span></a> or <a class="reference internal" href="class_animation.html#class-animation-constant-update-capture"><span class="std std-ref">Animation.UPDATE_CAPTURE</span></a> track values and the <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a> track values.</p>
+<p class="classref-enumeration-constant" id="class-animationmixer-constant-animation-callback-mode-discrete-force-continuous"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a> <strong><a class="dashAnchor" id="enumerations-ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS" name="//apple_ref/cpp/Enum/ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS"></a>ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Always treat the <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a> track value as <a class="reference internal" href="class_animation.html#class-animation-constant-update-continuous"><span class="std std-ref">Animation.UPDATE_CONTINUOUS</span></a> with <a class="reference internal" href="class_animation.html#class-animation-constant-interpolation-nearest"><span class="std std-ref">Animation.INTERPOLATION_NEAREST</span></a>. This is the default behavior for <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-animationmixer-property-active"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>active</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_active" name="//apple_ref/cpp/Property/set_active"></a>set_active</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_active" name="//apple_ref/cpp/Property/is_active"></a>is_active</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the <strong>AnimationMixer</strong> will be processing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-audio-max-polyphony"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>audio_max_polyphony</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_audio_max_polyphony" name="//apple_ref/cpp/Property/set_audio_max_polyphony"></a>set_audio_max_polyphony</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_audio_max_polyphony" name="//apple_ref/cpp/Property/get_audio_max_polyphony"></a>get_audio_max_polyphony</strong>()</p></li>
+</ul>
+<p>The number of possible simultaneous sounds for each of the assigned AudioStreamPlayers.</p>
+<p>For example, if this value is <code class="docutils literal notranslate"><span class="pre">32</span></code> and the animation has two audio tracks, the two <a class="reference internal" href="class_audiostreamplayer.html#class-audiostreamplayer"><span class="std std-ref">AudioStreamPlayer</span></a>s assigned can play simultaneously up to <code class="docutils literal notranslate"><span class="pre">32</span></code> voices each.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-callback-mode-discrete"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a> <strong>callback_mode_discrete</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_callback_mode_discrete" name="//apple_ref/cpp/Property/set_callback_mode_discrete"></a>set_callback_mode_discrete</strong>(value: <a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a> <strong><a class="dashAnchor" id="properties-get_callback_mode_discrete" name="//apple_ref/cpp/Property/get_callback_mode_discrete"></a>get_callback_mode_discrete</strong>()</p></li>
+</ul>
+<p>Ordinarily, tracks can be set to <a class="reference internal" href="class_animation.html#class-animation-constant-update-discrete"><span class="std std-ref">Animation.UPDATE_DISCRETE</span></a> to update infrequently, usually when using nearest interpolation.</p>
+<p>However, when blending with <a class="reference internal" href="class_animation.html#class-animation-constant-update-continuous"><span class="std std-ref">Animation.UPDATE_CONTINUOUS</span></a> several results are considered. The <a class="reference internal" href="#class-animationmixer-property-callback-mode-discrete"><span class="std std-ref">callback_mode_discrete</span></a> specify it explicitly. See also <a class="reference internal" href="#enum-animationmixer-animationcallbackmodediscrete"><span class="std std-ref">AnimationCallbackModeDiscrete</span></a>.</p>
+<p>To make the blended results look good, it is recommended to set this to <a class="reference internal" href="#class-animationmixer-constant-animation-callback-mode-discrete-force-continuous"><span class="std std-ref">ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS</span></a> to update every frame during blending. Other values exist for compatibility and they are fine if there is no blending, but not so, may produce artifacts.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-callback-mode-method"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a> <strong>callback_mode_method</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_callback_mode_method" name="//apple_ref/cpp/Property/set_callback_mode_method"></a>set_callback_mode_method</strong>(value: <a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodemethod"><span class="std std-ref">AnimationCallbackModeMethod</span></a> <strong><a class="dashAnchor" id="properties-get_callback_mode_method" name="//apple_ref/cpp/Property/get_callback_mode_method"></a>get_callback_mode_method</strong>()</p></li>
+</ul>
+<p>The call mode used for "Call Method" tracks.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-callback-mode-process"><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a> <strong>callback_mode_process</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_callback_mode_process" name="//apple_ref/cpp/Property/set_callback_mode_process"></a>set_callback_mode_process</strong>(value: <a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-animationmixer-animationcallbackmodeprocess"><span class="std std-ref">AnimationCallbackModeProcess</span></a> <strong><a class="dashAnchor" id="properties-get_callback_mode_process" name="//apple_ref/cpp/Property/get_callback_mode_process"></a>get_callback_mode_process</strong>()</p></li>
+</ul>
+<p>The process notification in which to update animations.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-deterministic"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>deterministic</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_deterministic" name="//apple_ref/cpp/Property/set_deterministic"></a>set_deterministic</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_deterministic" name="//apple_ref/cpp/Property/is_deterministic"></a>is_deterministic</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the blending uses the deterministic algorithm. The total weight is not normalized and the result is accumulated with an initial value (<code class="docutils literal notranslate"><span class="pre">0</span></code> or a <code class="docutils literal notranslate"><span class="pre">"RESET"</span></code> animation if present).</p>
+<p>This means that if the total amount of blending is <code class="docutils literal notranslate"><span class="pre">0.0</span></code>, the result is equal to the <code class="docutils literal notranslate"><span class="pre">"RESET"</span></code> animation.</p>
+<p>If the number of tracks between the blended animations is different, the animation with the missing track is treated as if it had the initial value.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">false</span></code>, The blend does not use the deterministic algorithm. The total weight is normalized and always <code class="docutils literal notranslate"><span class="pre">1.0</span></code>. If the number of tracks between the blended animations is different, nothing is done about the animation that is missing a track.</p>
+<p><strong>Note:</strong> In <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a>, the blending with <a class="reference internal" href="class_animationnodeadd2.html#class-animationnodeadd2"><span class="std std-ref">AnimationNodeAdd2</span></a>, <a class="reference internal" href="class_animationnodeadd3.html#class-animationnodeadd3"><span class="std std-ref">AnimationNodeAdd3</span></a>, <a class="reference internal" href="class_animationnodesub2.html#class-animationnodesub2"><span class="std std-ref">AnimationNodeSub2</span></a> or the weight greater than <code class="docutils literal notranslate"><span class="pre">1.0</span></code> may produce unexpected results.</p>
+<p>For example, if <a class="reference internal" href="class_animationnodeadd2.html#class-animationnodeadd2"><span class="std std-ref">AnimationNodeAdd2</span></a> blends two nodes with the amount <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, then total weight is <code class="docutils literal notranslate"><span class="pre">2.0</span></code> but it will be normalized to make the total amount <code class="docutils literal notranslate"><span class="pre">1.0</span></code> and the result will be equal to <a class="reference internal" href="class_animationnodeblend2.html#class-animationnodeblend2"><span class="std std-ref">AnimationNodeBlend2</span></a> with the amount <code class="docutils literal notranslate"><span class="pre">0.5</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-reset-on-save"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>reset_on_save</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_reset_on_save_enabled" name="//apple_ref/cpp/Property/set_reset_on_save_enabled"></a>set_reset_on_save_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_reset_on_save_enabled" name="//apple_ref/cpp/Property/is_reset_on_save_enabled"></a>is_reset_on_save_enabled</strong>()</p></li>
+</ul>
+<p>This is used by the editor. If set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, the scene will be saved with the effects of the reset animation (the animation with the key <code class="docutils literal notranslate"><span class="pre">"RESET"</span></code>) applied as if it had been seeked to time 0, with the editor keeping the values that the scene had before saving.</p>
+<p>This makes it more convenient to preview and edit animations in the editor, as changes to the scene will not be saved as long as they are set in the reset animation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-root-motion-track"><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong>root_motion_track</strong> = <code class="docutils literal notranslate"><span class="pre">NodePath("")</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_root_motion_track" name="//apple_ref/cpp/Property/set_root_motion_track"></a>set_root_motion_track</strong>(value: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong><a class="dashAnchor" id="properties-get_root_motion_track" name="//apple_ref/cpp/Property/get_root_motion_track"></a>get_root_motion_track</strong>()</p></li>
+</ul>
+<p>The path to the Animation track used for root motion. Paths must be valid scene-tree paths to a node, and must be specified starting from the parent node of the node that will reproduce the animation. To specify a track that controls properties or bones, append its name after the path, separated by <code class="docutils literal notranslate"><span class="pre">":"</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">"character/skeleton:ankle"</span></code> or <code class="docutils literal notranslate"><span class="pre">"character/mesh:transform/local"</span></code>.</p>
+<p>If the track has type <a class="reference internal" href="class_animation.html#class-animation-constant-type-position-3d"><span class="std std-ref">Animation.TYPE_POSITION_3D</span></a>, <a class="reference internal" href="class_animation.html#class-animation-constant-type-rotation-3d"><span class="std std-ref">Animation.TYPE_ROTATION_3D</span></a> or <a class="reference internal" href="class_animation.html#class-animation-constant-type-scale-3d"><span class="std std-ref">Animation.TYPE_SCALE_3D</span></a> the transformation will be canceled visually, and the animation will appear to stay in place. See also <a class="reference internal" href="#class-animationmixer-method-get-root-motion-position"><span class="std std-ref">get_root_motion_position</span></a>, <a class="reference internal" href="#class-animationmixer-method-get-root-motion-rotation"><span class="std std-ref">get_root_motion_rotation</span></a>, <a class="reference internal" href="#class-animationmixer-method-get-root-motion-scale"><span class="std std-ref">get_root_motion_scale</span></a> and <a class="reference internal" href="class_rootmotionview.html#class-rootmotionview"><span class="std std-ref">RootMotionView</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationmixer-property-root-node"><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong>root_node</strong> = <code class="docutils literal notranslate"><span class="pre">NodePath("..")</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_root_node" name="//apple_ref/cpp/Property/set_root_node"></a>set_root_node</strong>(value: <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> <strong><a class="dashAnchor" id="properties-get_root_node" name="//apple_ref/cpp/Property/get_root_node"></a>get_root_node</strong>()</p></li>
+</ul>
+<p>The node which node path references will travel from.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-animationmixer-private-method-post-process-key-value"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>_post_process_key_value</strong>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>, track: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, object_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, object_sub_idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>A virtual function for processing after getting a key during playback.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-add-animation-library"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>add_animation_library</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, library: <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a>)</p>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">library</span></code> to the animation player, under the key <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-advance"><abbr title="No return value.">void</abbr> <strong>advance</strong>(delta: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Manually advance the animations by the specified time (in seconds).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-capture"><abbr title="No return value.">void</abbr> <strong>capture</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, duration: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, trans_type: <a class="reference internal" href="class_tween.html#enum-tween-transitiontype"><span class="std std-ref">TransitionType</span></a> = 0, ease_type: <a class="reference internal" href="class_tween.html#enum-tween-easetype"><span class="std std-ref">EaseType</span></a> = 0)</p>
+<p>If the animation track specified by <code class="docutils literal notranslate"><span class="pre">name</span></code> has an option <a class="reference internal" href="class_animation.html#class-animation-constant-update-capture"><span class="std std-ref">Animation.UPDATE_CAPTURE</span></a>, stores current values of the objects indicated by the track path as a cache. If there is already a captured cache, the old cache is discarded.</p>
+<p>After this it will interpolate with current animation blending result during the playback process for the time specified by <code class="docutils literal notranslate"><span class="pre">duration</span></code>, working like a crossfade.</p>
+<p>You can specify <code class="docutils literal notranslate"><span class="pre">trans_type</span></code> as the curve for the interpolation. For better results, it may be appropriate to specify <a class="reference internal" href="class_tween.html#class-tween-constant-trans-linear"><span class="std std-ref">Tween.TRANS_LINEAR</span></a> for cases where the first key of the track begins with a non-zero value or where the key value does not change, and <a class="reference internal" href="class_tween.html#class-tween-constant-trans-quad"><span class="std std-ref">Tween.TRANS_QUAD</span></a> for cases where the key value changes linearly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-clear-caches"><abbr title="No return value.">void</abbr> <strong>clear_caches</strong>()</p>
+<p><strong>AnimationMixer</strong> caches animated nodes. It may not notice if a node disappears; <a class="reference internal" href="#class-animationmixer-method-clear-caches"><span class="std std-ref">clear_caches</span></a> forces it to update the cache again.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-find-animation"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>find_animation</strong>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the key of <code class="docutils literal notranslate"><span class="pre">animation</span></code> or an empty <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> if not found.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-find-animation-library"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>find_animation_library</strong>(animation: <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the key for the <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> that contains <code class="docutils literal notranslate"><span class="pre">animation</span></code> or an empty <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> if not found.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-animation"><a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a> <strong>get_animation</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a> with the key <code class="docutils literal notranslate"><span class="pre">name</span></code>. If the animation does not exist, <code class="docutils literal notranslate"><span class="pre">null</span></code> is returned and an error is logged.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-animation-library"><a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> <strong>get_animation_library</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the first <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> with key <code class="docutils literal notranslate"><span class="pre">name</span></code> or <code class="docutils literal notranslate"><span class="pre">null</span></code> if not found.</p>
+<p>To get the <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a>'s global animation library, use <code class="docutils literal notranslate"><span class="pre">get_animation_library("")</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-animation-library-list"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>] <strong>get_animation_library_list</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of stored library keys.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-animation-list"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>get_animation_list</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of stored animation keys.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-position"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_root_motion_position</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the motion delta of position with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> that can be used elsewhere.</p>
+<p>If <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> is not a path to a track of type <a class="reference internal" href="class_animation.html#class-animation-constant-type-position-3d"><span class="std std-ref">Animation.TYPE_POSITION_3D</span></a>, returns <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code>.</p>
+<p>See also <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> and <a class="reference internal" href="class_rootmotionview.html#class-rootmotionview"><span class="std std-ref">RootMotionView</span></a>.</p>
+<p>The most basic example is applying position to <a class="reference internal" href="class_characterbody3d.html#class-characterbody3d"><span class="std std-ref">CharacterBody3D</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">current_rotation</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Quaternion</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">current_rotation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_quaternion</span><span class="p">()</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">velocity</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_rotation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_position</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">delta</span>
+<span class="w">    </span><span class="n">set_velocity</span><span class="p">(</span><span class="n">velocity</span><span class="p">)</span>
+<span class="w">    </span><span class="n">move_and_slide</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+<p>By using this in combination with <a class="reference internal" href="#class-animationmixer-method-get-root-motion-position-accumulator"><span class="std std-ref">get_root_motion_position_accumulator</span></a>, you can apply the root motion position more correctly to account for the rotation of the node.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">set_quaternion</span><span class="p">(</span><span class="n">get_quaternion</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_rotation</span><span class="p">())</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">velocity</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_rotation_accumulator</span><span class="p">()</span><span class="o">.</span><span class="n">inverse</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">get_quaternion</span><span class="p">())</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_position</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">delta</span>
+<span class="w">    </span><span class="n">set_velocity</span><span class="p">(</span><span class="n">velocity</span><span class="p">)</span>
+<span class="w">    </span><span class="n">move_and_slide</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-position-accumulator"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_root_motion_position_accumulator</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the blended value of the position tracks with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> that can be used elsewhere.</p>
+<p>This is useful in cases where you want to respect the initial key values of the animation.</p>
+<p>For example, if an animation with only one key <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code> is played in the previous frame and then an animation with only one key <code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">0,</span> <span class="pre">1)</span></code> is played in the next frame, the difference can be calculated as follows:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">prev_root_motion_position_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">current_root_motion_position_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_position_accumulator</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">difference</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_root_motion_position_accumulator</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prev_root_motion_position_accumulator</span>
+<span class="w">    </span><span class="n">prev_root_motion_position_accumulator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_root_motion_position_accumulator</span>
+<span class="w">    </span><span class="n">transform</span><span class="o">.</span><span class="n">origin</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">difference</span>
+</pre></div>
+</div>
+</div></div>
+<p>However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-rotation"><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong>get_root_motion_rotation</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the motion delta of rotation with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> that can be used elsewhere.</p>
+<p>If <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> is not a path to a track of type <a class="reference internal" href="class_animation.html#class-animation-constant-type-rotation-3d"><span class="std std-ref">Animation.TYPE_ROTATION_3D</span></a>, returns <code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code>.</p>
+<p>See also <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> and <a class="reference internal" href="class_rootmotionview.html#class-rootmotionview"><span class="std std-ref">RootMotionView</span></a>.</p>
+<p>The most basic example is applying rotation to <a class="reference internal" href="class_characterbody3d.html#class-characterbody3d"><span class="std std-ref">CharacterBody3D</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-3-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">set_quaternion</span><span class="p">(</span><span class="n">get_quaternion</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_rotation</span><span class="p">())</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-rotation-accumulator"><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong>get_root_motion_rotation_accumulator</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the blended value of the rotation tracks with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> that can be used elsewhere.</p>
+<p>This is necessary to apply the root motion position correctly, taking rotation into account. See also <a class="reference internal" href="#class-animationmixer-method-get-root-motion-position"><span class="std std-ref">get_root_motion_position</span></a>.</p>
+<p>Also, this is useful in cases where you want to respect the initial key values of the animation.</p>
+<p>For example, if an animation with only one key <code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code> is played in the previous frame and then an animation with only one key <code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0.707,</span> <span class="pre">0,</span> <span class="pre">0.707)</span></code> is played in the next frame, the difference can be calculated as follows:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-4-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-4-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">prev_root_motion_rotation_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Quaternion</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">current_root_motion_rotation_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Quaternion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_Quaternion_accumulator</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">difference</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Quaternion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prev_root_motion_rotation_accumulator</span><span class="o">.</span><span class="n">inverse</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">current_root_motion_rotation_accumulator</span>
+<span class="w">    </span><span class="n">prev_root_motion_rotation_accumulator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_root_motion_rotation_accumulator</span>
+<span class="w">    </span><span class="n">transform</span><span class="o">.</span><span class="n">basis</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">difference</span>
+</pre></div>
+</div>
+</div></div>
+<p>However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-scale"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_root_motion_scale</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the motion delta of scale with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> that can be used elsewhere.</p>
+<p>If <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> is not a path to a track of type <a class="reference internal" href="class_animation.html#class-animation-constant-type-scale-3d"><span class="std std-ref">Animation.TYPE_SCALE_3D</span></a>, returns <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code>.</p>
+<p>See also <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> and <a class="reference internal" href="class_rootmotionview.html#class-rootmotionview"><span class="std std-ref">RootMotionView</span></a>.</p>
+<p>The most basic example is applying scale to <a class="reference internal" href="class_characterbody3d.html#class-characterbody3d"><span class="std std-ref">CharacterBody3D</span></a>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-5-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-5-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-5-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-5-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">current_scale</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">scale_accum</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">current_scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_scale</span><span class="p">()</span>
+<span class="w">        </span><span class="n">scale_accum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">scale_accum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_scale</span><span class="p">()</span>
+<span class="w">    </span><span class="n">set_scale</span><span class="p">(</span><span class="n">current_scale</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">scale_accum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-get-root-motion-scale-accumulator"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>get_root_motion_scale_accumulator</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Retrieve the blended value of the scale tracks with the <a class="reference internal" href="#class-animationmixer-property-root-motion-track"><span class="std std-ref">root_motion_track</span></a> as a <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> that can be used elsewhere.</p>
+<p>For example, if an animation with only one key <code class="docutils literal notranslate"><span class="pre">Vector3(1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code> is played in the previous frame and then an animation with only one key <code class="docutils literal notranslate"><span class="pre">Vector3(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> is played in the next frame, the difference can be calculated as follows:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-6-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-6-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button></div><div aria-labelledby="tab-6-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-6-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">prev_root_motion_scale_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">"animate"</span><span class="p">):</span>
+<span class="w">        </span><span class="n">state_machine</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="s2">"Animate"</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">current_root_motion_scale_accumulator</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animation_tree</span><span class="o">.</span><span class="n">get_root_motion_scale_accumulator</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">difference</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_root_motion_scale_accumulator</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prev_root_motion_scale_accumulator</span>
+<span class="w">    </span><span class="n">prev_root_motion_scale_accumulator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_root_motion_scale_accumulator</span>
+<span class="w">    </span><span class="n">transform</span><span class="o">.</span><span class="n">basis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="o">.</span><span class="n">basis</span><span class="o">.</span><span class="n">scaled</span><span class="p">(</span><span class="n">difference</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+<p>However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-has-animation"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_animation</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> stores an <a class="reference internal" href="class_animation.html#class-animation"><span class="std std-ref">Animation</span></a> with key <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-has-animation-library"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_animation_library</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the <a class="reference internal" href="class_animationplayer.html#class-animationplayer"><span class="std std-ref">AnimationPlayer</span></a> stores an <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> with key <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-remove-animation-library"><abbr title="No return value.">void</abbr> <strong>remove_animation_library</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Removes the <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> associated with the key <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationmixer-method-rename-animation-library"><abbr title="No return value.">void</abbr> <strong>rename_animation_library</strong>(name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, newname: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Moves the <a class="reference internal" href="class_animationlibrary.html#class-animationlibrary"><span class="std std-ref">AnimationLibrary</span></a> associated with the key <code class="docutils literal notranslate"><span class="pre">name</span></code> to the key <code class="docutils literal notranslate"><span class="pre">newname</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_animatedsprite3d.html" rel="prev" title="AnimatedSprite3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_animationplayer.html" rel="next" title="AnimationPlayer">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

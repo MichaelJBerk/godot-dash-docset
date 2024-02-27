@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorTranslationParserPlugin" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editortranslationparserplugin.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Plugin for adding custom parsers to extract strings that are to be translated from custom files (.csv, .json etc.). Description: EditorTranslationParserPlugin is invoke..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Plugin for adding custom parsers to extract strings that are to be translated from custom files (.csv, .json etc.). Description: EditorTranslationParserPlugin is invoke..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorTranslationParserPlugin — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editortranslationparserplugin.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editortranslationparserplugin.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editortranslationparserplugin.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editortranslationparserplugin.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editortranslationparserplugin.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editortranslationparserplugin.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editortranslationparserplugin.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editortranslationparserplugin.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editortranslationparserplugin.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editortranslationparserplugin.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editortranslationparserplugin.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editortranslationparserplugin.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editortranslationparserplugin.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editortranslationparserplugin.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editortranslationparserplugin.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editortranslationparserplugin.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorundoredomanager.html" rel="next" title="EditorUndoRedoManager"/>
+<link href="class_editorselection.html" rel="prev" title="EditorSelection"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editortranslationparserplugin" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorTranslationParserPlugin</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editortranslationparserplugin">
+<span id="class-editortranslationparserplugin"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorTranslationParserPlugin¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorTranslationParserPlugin¶"></a>EditorTranslationParserPlugin<a class="headerlink" href="#editortranslationparserplugin" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Plugin for adding custom parsers to extract strings that are to be translated from custom files (.csv, .json etc.).</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>EditorTranslationParserPlugin</strong> is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the <a class="reference internal" href="#class-editortranslationparserplugin-private-method-parse-file"><span class="std std-ref">_parse_file</span></a> method in script.</p>
+<p>Add the extracted strings to argument <code class="docutils literal notranslate"><span class="pre">msgids</span></code> or <code class="docutils literal notranslate"><span class="pre">msgids_context_plural</span></code> if context or plural is used.</p>
+<p>When adding to <code class="docutils literal notranslate"><span class="pre">msgids_context_plural</span></code>, you must add the data using the format <code class="docutils literal notranslate"><span class="pre">["A",</span> <span class="pre">"B",</span> <span class="pre">"C"]</span></code>, where <code class="docutils literal notranslate"><span class="pre">A</span></code> represents the extracted string, <code class="docutils literal notranslate"><span class="pre">B</span></code> represents the context, and <code class="docutils literal notranslate"><span class="pre">C</span></code> represents the plural version of the extracted string. If you want to add only context but not plural, put <code class="docutils literal notranslate"><span class="pre">""</span></code> for the plural slot. The idea is the same if you only want to add plural but not context. See the code below for concrete examples.</p>
+<p>The extracted strings will be written into a POT file selected by user under "POT Generation" in "Localization" tab in "Project Settings" menu.</p>
+<p>Below shows an example of a custom parser that extracts strings from a CSV file to write into a POT.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@tool</span>
+<span class="k">extends</span><span class="w"> </span><span class="n">EditorTranslationParserPlugin</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_parse_file</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">msgids</span><span class="p">,</span><span class="w"> </span><span class="n">msgids_context_plural</span><span class="p">):</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FileAccess</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">FileAccess</span><span class="o">.</span><span class="n">READ</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="o">.</span><span class="n">get_as_text</span><span class="p">()</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">split_strs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">)</span>
+<span class="w">    </span><span class="k k-ControlFlow">for</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">split_strs</span><span class="p">:</span>
+<span class="w">        </span><span class="n">msgids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">#print("Extracted string: " + s)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_get_recognized_extensions</span><span class="p">():</span>
+<span class="w">    </span><span class="k k-ControlFlow">return</span><span class="w"> </span><span class="p">[</span><span class="s2">"csv"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">Godot</span><span class="p">;</span>
+
+<span class="na">[Tool]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">CustomParser</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EditorTranslationParserPlugin</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_ParseFile</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">msgids</span><span class="p">,</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&lt;</span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&gt;</span><span class="w"> </span><span class="n">msgidsContextPlural</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="nn">var</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FileAccess</span><span class="p">.</span><span class="n">Open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">FileAccess</span><span class="p">.</span><span class="n">ModeFlags</span><span class="p">.</span><span class="n">Read</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">.</span><span class="n">GetAsText</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">splitStrs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">.</span><span class="n">Split</span><span class="p">(</span><span class="s">","</span><span class="p">,</span><span class="w"> </span><span class="n">allowEmpty</span><span class="p">:</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="w">        </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">splitStrs</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">msgids</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+<span class="w">            </span><span class="c1">//GD.Print($"Extracted string: {s}");</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="nf">_GetRecognizedExtensions</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">"csv"</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>To add a translatable string associated with context or plural, add it to <code class="docutils literal notranslate"><span class="pre">msgids_context_plural</span></code>:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will add a message with msgid "Test 1", msgctxt "context", and msgid_plural "test 1 plurals".</span>
+<span class="n">msgids_context_plural</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">"Test 1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"context"</span><span class="p">,</span><span class="w"> </span><span class="s2">"test 1 plurals"</span><span class="p">])</span>
+<span class="c1"># This will add a message with msgid "A test without context" and msgid_plural "plurals".</span>
+<span class="n">msgids_context_plural</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">"A test without context"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="s2">"plurals"</span><span class="p">])</span>
+<span class="c1"># This will add a message with msgid "Only with context" and msgctxt "a friendly context".</span>
+<span class="n">msgids_context_plural</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">"Only with context"</span><span class="p">,</span><span class="w"> </span><span class="s2">"a friendly context"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">])</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// This will add a message with msgid "Test 1", msgctxt "context", and msgid_plural "test 1 plurals".</span>
+<span class="n">msgidsContextPlural</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="p">{</span><span class="s">"Test 1"</span><span class="p">,</span><span class="w"> </span><span class="s">"context"</span><span class="p">,</span><span class="w"> </span><span class="s">"test 1 Plurals"</span><span class="p">});</span>
+<span class="c1">// This will add a message with msgid "A test without context" and msgid_plural "plurals".</span>
+<span class="n">msgidsContextPlural</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="p">{</span><span class="s">"A test without context"</span><span class="p">,</span><span class="w"> </span><span class="s">""</span><span class="p">,</span><span class="w"> </span><span class="s">"plurals"</span><span class="p">});</span>
+<span class="c1">// This will add a message with msgid "Only with context" and msgctxt "a friendly context".</span>
+<span class="n">msgidsContextPlural</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="p">{</span><span class="s">"Only with context"</span><span class="p">,</span><span class="w"> </span><span class="s">"a friendly context"</span><span class="p">,</span><span class="w"> </span><span class="s">""</span><span class="p">});</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the <code class="docutils literal notranslate"><span class="pre">path</span></code> argument using <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-load"><span class="std std-ref">ResourceLoader.load</span></a>. This is because built-in scripts are loaded as <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> type, not <a class="reference internal" href="class_fileaccess.html#class-fileaccess"><span class="std std-ref">FileAccess</span></a> type.</p>
+<p>For example:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_parse_file</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">msgids</span><span class="p">,</span><span class="w"> </span><span class="n">msgids_context_plural</span><span class="p">):</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ResourceLoader</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="s2">"Script"</span><span class="p">)</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">res</span><span class="o">.</span><span class="n">source_code</span>
+<span class="w">    </span><span class="c1"># Parsing logic.</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_get_recognized_extensions</span><span class="p">():</span>
+<span class="w">    </span><span class="k k-ControlFlow">return</span><span class="w"> </span><span class="p">[</span><span class="s2">"gd"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_ParseFile</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">msgids</span><span class="p">,</span><span class="w"> </span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&lt;</span><span class="n">Godot</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Array</span><span class="o">&gt;</span><span class="w"> </span><span class="n">msgidsContextPlural</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ResourceLoader</span><span class="p">.</span><span class="n">Load</span><span class="o">&lt;</span><span class="n">Script</span><span class="o">&gt;</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="s">"Script"</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">res</span><span class="p">.</span><span class="n">SourceCode</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Parsing logic.</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="nf">_GetRecognizedExtensions</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">"gd"</span><span class="w"> </span><span class="p">};</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>To use <strong>EditorTranslationParserPlugin</strong>, register it using the <a class="reference internal" href="class_editorplugin.html#class-editorplugin-method-add-translation-parser-plugin"><span class="std std-ref">EditorPlugin.add_translation_parser_plugin</span></a> method first.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editortranslationparserplugin-private-method-get-recognized-extensions"><span class="std std-ref">_get_recognized_extensions</span></a>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editortranslationparserplugin-private-method-parse-file"><span class="std std-ref">_parse_file</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, msgids: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], msgids_context_plural: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>]) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editortranslationparserplugin-private-method-get-recognized-extensions"><a class="reference internal" href="class_packedstringarray.html#class-packedstringarray"><span class="std std-ref">PackedStringArray</span></a> <strong>_get_recognized_extensions</strong>() <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Gets the list of file extensions to associate with this parser, e.g. <code class="docutils literal notranslate"><span class="pre">["csv"]</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editortranslationparserplugin-private-method-parse-file"><abbr title="No return value.">void</abbr> <strong>_parse_file</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, msgids: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>], msgids_context_plural: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>]) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr></p>
+<p>Override this method to define a custom parsing logic to extract the translatable strings.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorselection.html" rel="prev" title="EditorSelection"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorundoredomanager.html" rel="next" title="EditorUndoRedoManager">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

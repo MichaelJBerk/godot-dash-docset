@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="network" name="keywords"/>
+<meta content="MultiplayerAPI" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_multiplayerapi.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: MultiplayerAPIExtension, SceneMultiplayer High-level multiplayer API interface. Description: Base class for high-level multiplayer API implementations. Se..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: MultiplayerAPIExtension, SceneMultiplayer High-level multiplayer API interface. Description: Base class for high-level multiplayer API implementations. Se..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) MultiplayerAPI — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_multiplayerapi.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_multiplayerapi.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_multiplayerapi.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_multiplayerapi.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_multiplayerapi.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_multiplayerapi.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_multiplayerapi.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_multiplayerapi.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_multiplayerapi.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_multiplayerapi.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_multiplayerapi.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_multiplayerapi.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_multiplayerapi.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_multiplayerapi.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_multiplayerapi.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_multiplayerapi.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_multiplayerapiextension.html" rel="next" title="MultiplayerAPIExtension"/>
+<link href="class_moviewriter.html" rel="prev" title="MovieWriter"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_multiplayerapi" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">MultiplayerAPI</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="multiplayerapi">
+<span id="class-multiplayerapi"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/MultiplayerAPI¶"></a>MultiplayerAPI<a class="headerlink" href="#multiplayerapi" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_multiplayerapiextension.html#class-multiplayerapiextension"><span class="std std-ref">MultiplayerAPIExtension</span></a>, <a class="reference internal" href="class_scenemultiplayer.html#class-scenemultiplayer"><span class="std std-ref">SceneMultiplayer</span></a></p>
+<p>High-level multiplayer API interface.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Base class for high-level multiplayer API implementations. See also <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a>.</p>
+<p>By default, <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> has a reference to an implementation of this class and uses it to provide multiplayer capabilities (i.e. RPCs) across the whole scene.</p>
+<p>It is possible to override the MultiplayerAPI instance used by specific tree branches by calling the <a class="reference internal" href="class_scenetree.html#class-scenetree-method-set-multiplayer"><span class="std std-ref">SceneTree.set_multiplayer</span></a> method, effectively allowing to run both client and server in the same scene.</p>
+<p>It is also possible to extend or replace the default implementation via scripting or native extensions. See <a class="reference internal" href="class_multiplayerapiextension.html#class-multiplayerapiextension"><span class="std std-ref">MultiplayerAPIExtension</span></a> for details about extensions, <a class="reference internal" href="class_scenemultiplayer.html#class-scenemultiplayer"><span class="std std-ref">SceneMultiplayer</span></a> for the details about the default implementation.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-create-default-interface"><span class="std std-ref">create_default_interface</span></a>() <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-get-default-interface"><span class="std std-ref">get_default_interface</span></a>() <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-get-peers"><span class="std std-ref">get_peers</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-get-remote-sender-id"><span class="std std-ref">get_remote_sender_id</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-get-unique-id"><span class="std std-ref">get_unique_id</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-has-multiplayer-peer"><span class="std std-ref">has_multiplayer_peer</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-is-server"><span class="std std-ref">is_server</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-object-configuration-add"><span class="std std-ref">object_configuration_add</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, configuration: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-object-configuration-remove"><span class="std std-ref">object_configuration_remove</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, configuration: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-poll"><span class="std std-ref">poll</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-rpc"><span class="std std-ref">rpc</span></a>(peer: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-multiplayerapi-method-set-default-interface"><span class="std std-ref">set_default_interface</span></a>(interface_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-multiplayerapi-signal-connected-to-server"><strong>connected_to_server</strong>()</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> successfully connected to a server. Only emitted on clients.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-multiplayerapi-signal-connection-failed"><strong>connection_failed</strong>()</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> fails to establish a connection to a server. Only emitted on clients.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-multiplayerapi-signal-peer-connected"><strong>peer_connected</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> connects with a new peer. ID is the peer ID of the new peer. Clients get notified when other clients connect to the same server. Upon connecting to a server, a client also receives this signal for the server (with ID being 1).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-multiplayerapi-signal-peer-disconnected"><strong>peer_disconnected</strong>(id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> disconnects from a peer. Clients get notified when other clients disconnect from the same server.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-multiplayerapi-signal-server-disconnected"><strong>server_disconnected</strong>()</p>
+<p>Emitted when this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> disconnects from server. Only emitted on clients.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-multiplayerapi-rpcmode">enum <strong><a class="dashAnchor" id="enumerations-RPCMode" name="//apple_ref/cpp/Enum/RPCMode"></a>RPCMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-multiplayerapi-constant-rpc-mode-disabled"><a class="reference internal" href="#enum-multiplayerapi-rpcmode"><span class="std std-ref">RPCMode</span></a> <strong><a class="dashAnchor" id="enumerations-RPC_MODE_DISABLED" name="//apple_ref/cpp/Enum/RPC_MODE_DISABLED"></a>RPC_MODE_DISABLED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Used with <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a> to disable a method or property for all RPC calls, making it unavailable. Default for all methods.</p>
+<p class="classref-enumeration-constant" id="class-multiplayerapi-constant-rpc-mode-any-peer"><a class="reference internal" href="#enum-multiplayerapi-rpcmode"><span class="std std-ref">RPCMode</span></a> <strong><a class="dashAnchor" id="enumerations-RPC_MODE_ANY_PEER" name="//apple_ref/cpp/Enum/RPC_MODE_ANY_PEER"></a>RPC_MODE_ANY_PEER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Used with <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a> to set a method to be callable remotely by any peer. Analogous to the <code class="docutils literal notranslate"><span class="pre">@rpc("any_peer")</span></code> annotation. Calls are accepted from all remote peers, no matter if they are node's authority or not.</p>
+<p class="classref-enumeration-constant" id="class-multiplayerapi-constant-rpc-mode-authority"><a class="reference internal" href="#enum-multiplayerapi-rpcmode"><span class="std std-ref">RPCMode</span></a> <strong><a class="dashAnchor" id="enumerations-RPC_MODE_AUTHORITY" name="//apple_ref/cpp/Enum/RPC_MODE_AUTHORITY"></a>RPC_MODE_AUTHORITY</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Used with <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a> to set a method to be callable remotely only by the current multiplayer authority (which is the server by default). Analogous to the <code class="docutils literal notranslate"><span class="pre">@rpc("authority")</span></code> annotation. See <a class="reference internal" href="class_node.html#class-node-method-set-multiplayer-authority"><span class="std std-ref">Node.set_multiplayer_authority</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-multiplayerapi-property-multiplayer-peer"><a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> <strong>multiplayer_peer</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_multiplayer_peer" name="//apple_ref/cpp/Property/set_multiplayer_peer"></a>set_multiplayer_peer</strong>(value: <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a> <strong><a class="dashAnchor" id="properties-get_multiplayer_peer" name="//apple_ref/cpp/Property/get_multiplayer_peer"></a>get_multiplayer_peer</strong>()</p></li>
+</ul>
+<p>The peer object to handle the RPC system (effectively enabling networking when set). Depending on the peer itself, the MultiplayerAPI will become a network server (check with <a class="reference internal" href="#class-multiplayerapi-method-is-server"><span class="std std-ref">is_server</span></a>) and will set root node's network mode to authority, or it will become a regular client peer. All child nodes are set to inherit the network mode by default. Handling of networking-related events (connection, disconnection, new clients) is done by connecting to MultiplayerAPI's signals.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-multiplayerapi-method-create-default-interface"><a class="reference internal" href="#class-multiplayerapi"><span class="std std-ref">MultiplayerAPI</span></a> <strong>create_default_interface</strong>() <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Returns a new instance of the default MultiplayerAPI.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-get-default-interface"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>get_default_interface</strong>() <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Returns the default MultiplayerAPI implementation class name. This is usually <code class="docutils literal notranslate"><span class="pre">"SceneMultiplayer"</span></code> when <a class="reference internal" href="class_scenemultiplayer.html#class-scenemultiplayer"><span class="std std-ref">SceneMultiplayer</span></a> is available. See <a class="reference internal" href="#class-multiplayerapi-method-set-default-interface"><span class="std std-ref">set_default_interface</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-get-peers"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_peers</strong>()</p>
+<p>Returns the peer IDs of all connected peers of this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-get-remote-sender-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_remote_sender_id</strong>()</p>
+<p>Returns the sender's peer ID for the RPC currently being executed.</p>
+<p><strong>Note:</strong> If not inside an RPC this method will return 0.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-get-unique-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_unique_id</strong>()</p>
+<p>Returns the unique peer ID of this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-has-multiplayer-peer"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_multiplayer_peer</strong>()</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if there is a <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> set.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-is-server"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_server</strong>()</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this MultiplayerAPI's <a class="reference internal" href="#class-multiplayerapi-property-multiplayer-peer"><span class="std std-ref">multiplayer_peer</span></a> is valid and in server mode (listening for connections).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-object-configuration-add"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>object_configuration_add</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, configuration: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Notifies the MultiplayerAPI of a new <code class="docutils literal notranslate"><span class="pre">configuration</span></code> for the given <code class="docutils literal notranslate"><span class="pre">object</span></code>. This method is used internally by <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> to configure the root path for this MultiplayerAPI (passing <code class="docutils literal notranslate"><span class="pre">null</span></code> and a valid <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> as <code class="docutils literal notranslate"><span class="pre">configuration</span></code>). This method can be further used by MultiplayerAPI implementations to provide additional features, refer to specific implementation (e.g. <a class="reference internal" href="class_scenemultiplayer.html#class-scenemultiplayer"><span class="std std-ref">SceneMultiplayer</span></a>) for details on how they use it.</p>
+<p><strong>Note:</strong> This method is mostly relevant when extending or overriding the MultiplayerAPI behavior via <a class="reference internal" href="class_multiplayerapiextension.html#class-multiplayerapiextension"><span class="std std-ref">MultiplayerAPIExtension</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-object-configuration-remove"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>object_configuration_remove</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, configuration: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Notifies the MultiplayerAPI to remove a <code class="docutils literal notranslate"><span class="pre">configuration</span></code> for the given <code class="docutils literal notranslate"><span class="pre">object</span></code>. This method is used internally by <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> to configure the root path for this MultiplayerAPI (passing <code class="docutils literal notranslate"><span class="pre">null</span></code> and an empty <a class="reference internal" href="class_nodepath.html#class-nodepath"><span class="std std-ref">NodePath</span></a> as <code class="docutils literal notranslate"><span class="pre">configuration</span></code>). This method can be further used by MultiplayerAPI implementations to provide additional features, refer to specific implementation (e.g. <a class="reference internal" href="class_scenemultiplayer.html#class-scenemultiplayer"><span class="std std-ref">SceneMultiplayer</span></a>) for details on how they use it.</p>
+<p><strong>Note:</strong> This method is mostly relevant when extending or overriding the MultiplayerAPI behavior via <a class="reference internal" href="class_multiplayerapiextension.html#class-multiplayerapiextension"><span class="std std-ref">MultiplayerAPIExtension</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-poll"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>poll</strong>()</p>
+<p>Method used for polling the MultiplayerAPI. You only need to worry about this if you set <a class="reference internal" href="class_scenetree.html#class-scenetree-property-multiplayer-poll"><span class="std std-ref">SceneTree.multiplayer_poll</span></a> to <code class="docutils literal notranslate"><span class="pre">false</span></code>. By default, <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> will poll its MultiplayerAPI(s) for you.</p>
+<p><strong>Note:</strong> This method results in RPCs being called, so they will be executed in the same context of this function (e.g. <code class="docutils literal notranslate"><span class="pre">_process</span></code>, <code class="docutils literal notranslate"><span class="pre">physics</span></code>, <a class="reference internal" href="class_thread.html#class-thread"><span class="std std-ref">Thread</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-rpc"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>rpc</strong>(peer: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> = [])</p>
+<p>Sends an RPC to the target <code class="docutils literal notranslate"><span class="pre">peer</span></code>. The given <code class="docutils literal notranslate"><span class="pre">method</span></code> will be called on the remote <code class="docutils literal notranslate"><span class="pre">object</span></code> with the provided <code class="docutils literal notranslate"><span class="pre">arguments</span></code>. The RPC may also be called locally depending on the implementation and RPC configuration. See <a class="reference internal" href="class_node.html#class-node-method-rpc"><span class="std std-ref">Node.rpc</span></a> and <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a>.</p>
+<p><strong>Note:</strong> Prefer using <a class="reference internal" href="class_node.html#class-node-method-rpc"><span class="std std-ref">Node.rpc</span></a>, <a class="reference internal" href="class_node.html#class-node-method-rpc-id"><span class="std std-ref">Node.rpc_id</span></a>, or <code class="docutils literal notranslate"><span class="pre">my_method.rpc(peer,</span> <span class="pre">arg1,</span> <span class="pre">arg2,</span> <span class="pre">...)</span></code> (in GDScript), since they are faster. This method is mostly useful in conjunction with <a class="reference internal" href="class_multiplayerapiextension.html#class-multiplayerapiextension"><span class="std std-ref">MultiplayerAPIExtension</span></a> when augmenting or replacing the multiplayer capabilities.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-multiplayerapi-method-set-default-interface"><abbr title="No return value.">void</abbr> <strong>set_default_interface</strong>(interface_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Sets the default MultiplayerAPI implementation class. This method can be used by modules and extensions to configure which implementation will be used by <a class="reference internal" href="class_scenetree.html#class-scenetree"><span class="std std-ref">SceneTree</span></a> when the engine starts.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_moviewriter.html" rel="prev" title="MovieWriter"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_multiplayerapiextension.html" rel="next" title="MultiplayerAPIExtension">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

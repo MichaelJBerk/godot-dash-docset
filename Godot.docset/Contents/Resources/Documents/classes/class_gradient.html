@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Gradient" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gradient.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object A color transition. Description: This resource describes a color transition by defining a set of colored points and how to interpolate between them. See also ..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object A color transition. Description: This resource describes a color transition by defining a set of colored points and how to interpolate between them. See also ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Gradient — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gradient.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gradient.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gradient.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gradient.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gradient.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gradient.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gradient.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gradient.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gradient.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gradient.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gradient.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gradient.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gradient.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gradient.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gradient.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gradient.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gradienttexture1d.html" rel="next" title="GradientTexture1D"/>
+<link href="class_gltftexturesampler.html" rel="prev" title="GLTFTextureSampler"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gradient" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Gradient</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gradient">
+<span id="class-gradient"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Gradient¶"></a>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A color transition.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This resource describes a color transition by defining a set of colored points and how to interpolate between them.</p>
+<p>See also <a class="reference internal" href="class_curve.html#class-curve"><span class="std std-ref">Curve</span></a> which supports more complex easing methods, but does not support colors.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-property-colors"><span class="std std-ref">colors</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedColorArray(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-property-interpolation-color-space"><span class="std std-ref">interpolation_color_space</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-property-interpolation-mode"><span class="std std-ref">interpolation_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-property-offsets"><span class="std std-ref">offsets</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PackedFloat32Array(0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-add-point"><span class="std std-ref">add_point</span></a>(offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-get-color"><span class="std std-ref">get_color</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-get-offset"><span class="std std-ref">get_offset</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-get-point-count"><span class="std std-ref">get_point_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-remove-point"><span class="std std-ref">remove_point</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-reverse"><span class="std std-ref">reverse</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-sample"><span class="std std-ref">sample</span></a>(offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-set-color"><span class="std std-ref">set_color</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gradient-method-set-offset"><span class="std std-ref">set_offset</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-gradient-interpolationmode">enum <strong><a class="dashAnchor" id="enumerations-InterpolationMode" name="//apple_ref/cpp/Enum/InterpolationMode"></a>InterpolationMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-interpolate-linear"><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_INTERPOLATE_LINEAR" name="//apple_ref/cpp/Enum/GRADIENT_INTERPOLATE_LINEAR"></a>GRADIENT_INTERPOLATE_LINEAR</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Linear interpolation.</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-interpolate-constant"><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_INTERPOLATE_CONSTANT" name="//apple_ref/cpp/Enum/GRADIENT_INTERPOLATE_CONSTANT"></a>GRADIENT_INTERPOLATE_CONSTANT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Constant interpolation, color changes abruptly at each point and stays uniform between. This might cause visible aliasing when used for a gradient texture in some cases.</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-interpolate-cubic"><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_INTERPOLATE_CUBIC" name="//apple_ref/cpp/Enum/GRADIENT_INTERPOLATE_CUBIC"></a>GRADIENT_INTERPOLATE_CUBIC</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Cubic interpolation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-gradient-colorspace">enum <strong><a class="dashAnchor" id="enumerations-ColorSpace" name="//apple_ref/cpp/Enum/ColorSpace"></a>ColorSpace</strong>:</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-color-space-srgb"><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_COLOR_SPACE_SRGB" name="//apple_ref/cpp/Enum/GRADIENT_COLOR_SPACE_SRGB"></a>GRADIENT_COLOR_SPACE_SRGB</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>sRGB color space.</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-color-space-linear-srgb"><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_COLOR_SPACE_LINEAR_SRGB" name="//apple_ref/cpp/Enum/GRADIENT_COLOR_SPACE_LINEAR_SRGB"></a>GRADIENT_COLOR_SPACE_LINEAR_SRGB</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Linear sRGB color space.</p>
+<p class="classref-enumeration-constant" id="class-gradient-constant-gradient-color-space-oklab"><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong><a class="dashAnchor" id="enumerations-GRADIENT_COLOR_SPACE_OKLAB" name="//apple_ref/cpp/Enum/GRADIENT_COLOR_SPACE_OKLAB"></a>GRADIENT_COLOR_SPACE_OKLAB</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p><a class="reference external" href="https://bottosson.github.io/posts/oklab/">Oklab</a> color space. This color space provides a smooth and uniform-looking transition between colors.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gradient-property-colors"><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong>colors</strong> = <code class="docutils literal notranslate"><span class="pre">PackedColorArray(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_colors" name="//apple_ref/cpp/Property/set_colors"></a>set_colors</strong>(value: <a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a> <strong><a class="dashAnchor" id="properties-get_colors" name="//apple_ref/cpp/Property/get_colors"></a>get_colors</strong>()</p></li>
+</ul>
+<p>Gradient's colors returned as a <a class="reference internal" href="class_packedcolorarray.html#class-packedcolorarray"><span class="std std-ref">PackedColorArray</span></a>.</p>
+<p><strong>Note:</strong> This property returns a copy, modifying the return value does not update the gradient. To update the gradient use <a class="reference internal" href="#class-gradient-method-set-color"><span class="std std-ref">set_color</span></a> method (for updating colors individually) or assign to this property directly (for bulk-updating all colors at once).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gradient-property-interpolation-color-space"><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>interpolation_color_space</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_interpolation_color_space" name="//apple_ref/cpp/Property/set_interpolation_color_space"></a>set_interpolation_color_space</strong>(value: <a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong><a class="dashAnchor" id="properties-get_interpolation_color_space" name="//apple_ref/cpp/Property/get_interpolation_color_space"></a>get_interpolation_color_space</strong>()</p></li>
+</ul>
+<p>The color space used to interpolate between points of the gradient. It does not affect the returned colors, which will always be in sRGB space. See <a class="reference internal" href="#enum-gradient-colorspace"><span class="std std-ref">ColorSpace</span></a> for available modes.</p>
+<p><strong>Note:</strong> This setting has no effect when <a class="reference internal" href="#class-gradient-property-interpolation-mode"><span class="std std-ref">interpolation_mode</span></a> is set to <a class="reference internal" href="#class-gradient-constant-gradient-interpolate-constant"><span class="std std-ref">GRADIENT_INTERPOLATE_CONSTANT</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gradient-property-interpolation-mode"><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> <strong>interpolation_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_interpolation_mode" name="//apple_ref/cpp/Property/set_interpolation_mode"></a>set_interpolation_mode</strong>(value: <a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> <strong><a class="dashAnchor" id="properties-get_interpolation_mode" name="//apple_ref/cpp/Property/get_interpolation_mode"></a>get_interpolation_mode</strong>()</p></li>
+</ul>
+<p>The algorithm used to interpolate between points of the gradient. See <a class="reference internal" href="#enum-gradient-interpolationmode"><span class="std std-ref">InterpolationMode</span></a> for available modes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gradient-property-offsets"><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> <strong>offsets</strong> = <code class="docutils literal notranslate"><span class="pre">PackedFloat32Array(0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_offsets" name="//apple_ref/cpp/Property/set_offsets"></a>set_offsets</strong>(value: <a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a> <strong><a class="dashAnchor" id="properties-get_offsets" name="//apple_ref/cpp/Property/get_offsets"></a>get_offsets</strong>()</p></li>
+</ul>
+<p>Gradient's offsets returned as a <a class="reference internal" href="class_packedfloat32array.html#class-packedfloat32array"><span class="std std-ref">PackedFloat32Array</span></a>.</p>
+<p><strong>Note:</strong> This property returns a copy, modifying the return value does not update the gradient. To update the gradient use <a class="reference internal" href="#class-gradient-method-set-offset"><span class="std std-ref">set_offset</span></a> method (for updating offsets individually) or assign to this property directly (for bulk-updating all offsets at once).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gradient-method-add-point"><abbr title="No return value.">void</abbr> <strong>add_point</strong>(offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Adds the specified color to the gradient, with the specified offset.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-get-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>get_color</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the color of the gradient color at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-get-offset"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_offset</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the offset of the gradient color at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-get-point-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_point_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of colors in the gradient.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-remove-point"><abbr title="No return value.">void</abbr> <strong>remove_point</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the color at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-reverse"><abbr title="No return value.">void</abbr> <strong>reverse</strong>()</p>
+<p>Reverses/mirrors the gradient.</p>
+<p><strong>Note:</strong> This method mirrors all points around the middle of the gradient, which may produce unexpected results when <a class="reference internal" href="#class-gradient-property-interpolation-mode"><span class="std std-ref">interpolation_mode</span></a> is set to <a class="reference internal" href="#class-gradient-constant-gradient-interpolate-constant"><span class="std std-ref">GRADIENT_INTERPOLATE_CONSTANT</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-sample"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>sample</strong>(offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Returns the interpolated color specified by <code class="docutils literal notranslate"><span class="pre">offset</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-set-color"><abbr title="No return value.">void</abbr> <strong>set_color</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets the color of the gradient color at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gradient-method-set-offset"><abbr title="No return value.">void</abbr> <strong>set_offset</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, offset: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the offset for the gradient color at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gltftexturesampler.html" rel="prev" title="GLTFTextureSampler"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gradienttexture1d.html" rel="next" title="GradientTexture1D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

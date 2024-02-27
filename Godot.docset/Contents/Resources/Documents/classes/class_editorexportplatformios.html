@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorExportPlatformIOS" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorexportplatformios.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for iOS. Tutorials: Exporting for iOS, iOS plugins documentation index. Properties:,, String, application/additional_plist_content,, Stri..." property="og:description"/>
+<meta content="Inherits: EditorExportPlatform&lt; RefCounted&lt; Object Exporter for iOS. Tutorials: Exporting for iOS, iOS plugins documentation index. Properties:,, String, application/additional_plist_content,, Stri..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorExportPlatformIOS — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformios.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorexportplatformios.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorexportplatformios.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorexportplatformios.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorexportplatformios.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorexportplatformios.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorexportplatformios.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorexportplatformios.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorexportplatformios.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorexportplatformios.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorexportplatformios.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorexportplatformios.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorexportplatformios.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorexportplatformios.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformios.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorexportplatformios.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorexportplatformlinuxbsd.html" rel="next" title="EditorExportPlatformLinuxBSD"/>
+<link href="class_editorexportplatformandroid.html" rel="prev" title="EditorExportPlatformAndroid"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorexportplatformios" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorExportPlatformIOS</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorexportplatformios">
+<span id="class-editorexportplatformios"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformIOS¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorExportPlatformIOS¶"></a>EditorExportPlatformIOS<a class="headerlink" href="#editorexportplatformios" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_editorexportplatform.html#class-editorexportplatform"><span class="std std-ref">EditorExportPlatform</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Exporter for iOS.</p>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/export/exporting_for_ios.html"><span class="doc">Exporting for iOS</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/platform/ios/index.html"><span class="doc">iOS plugins documentation index</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-additional-plist-content"><span class="std std-ref">application/additional_plist_content</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-app-store-team-id"><span class="std std-ref">application/app_store_team_id</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-bundle-identifier"><span class="std std-ref">application/bundle_identifier</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-code-sign-identity-debug"><span class="std std-ref">application/code_sign_identity_debug</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-code-sign-identity-release"><span class="std std-ref">application/code_sign_identity_release</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-export-method-debug"><span class="std std-ref">application/export_method_debug</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-export-method-release"><span class="std std-ref">application/export_method_release</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-export-project-only"><span class="std std-ref">application/export_project_only</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-icon-interpolation"><span class="std std-ref">application/icon_interpolation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-min-ios-version"><span class="std std-ref">application/min_ios_version</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-provisioning-profile-uuid-debug"><span class="std std-ref">application/provisioning_profile_uuid_debug</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-provisioning-profile-uuid-release"><span class="std std-ref">application/provisioning_profile_uuid_release</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-short-version"><span class="std std-ref">application/short_version</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-signature"><span class="std std-ref">application/signature</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-targeted-device-family"><span class="std std-ref">application/targeted_device_family</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-application-version"><span class="std std-ref">application/version</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-architectures-arm64"><span class="std std-ref">architectures/arm64</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-capabilities-access-wifi"><span class="std std-ref">capabilities/access_wifi</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-capabilities-performance-a12"><span class="std std-ref">capabilities/performance_a12</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-capabilities-performance-gaming-tier"><span class="std std-ref">capabilities/performance_gaming_tier</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-capabilities-push-notifications"><span class="std std-ref">capabilities/push_notifications</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-custom-template-debug"><span class="std std-ref">custom_template/debug</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-custom-template-release"><span class="std std-ref">custom_template/release</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-app-store-1024x1024"><span class="std std-ref">icons/app_store_1024x1024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-ipad-76x76"><span class="std std-ref">icons/ipad_76x76</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-ipad-152x152"><span class="std std-ref">icons/ipad_152x152</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-ipad-167x167"><span class="std std-ref">icons/ipad_167x167</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-iphone-120x120"><span class="std std-ref">icons/iphone_120x120</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-iphone-180x180"><span class="std std-ref">icons/iphone_180x180</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-notification-40x40"><span class="std std-ref">icons/notification_40x40</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-notification-60x60"><span class="std std-ref">icons/notification_60x60</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-settings-58x58"><span class="std std-ref">icons/settings_58x58</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-settings-87x87"><span class="std std-ref">icons/settings_87x87</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-spotlight-40x40"><span class="std std-ref">icons/spotlight_40x40</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-icons-spotlight-80x80"><span class="std std-ref">icons/spotlight_80x80</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-camera-usage-description"><span class="std std-ref">privacy/camera_usage_description</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-camera-usage-description-localized"><span class="std std-ref">privacy/camera_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-microphone-usage-description"><span class="std std-ref">privacy/microphone_usage_description</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-microphone-usage-description-localized"><span class="std std-ref">privacy/microphone_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-photolibrary-usage-description"><span class="std std-ref">privacy/photolibrary_usage_description</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-privacy-photolibrary-usage-description-localized"><span class="std std-ref">privacy/photolibrary_usage_description_localized</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-storyboard-custom-bg-color"><span class="std std-ref">storyboard/custom_bg_color</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-storyboard-custom-image-2x"><span class="std std-ref">storyboard/custom_image@2x</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-storyboard-custom-image-3x"><span class="std std-ref">storyboard/custom_image@3x</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-storyboard-image-scale-mode"><span class="std std-ref">storyboard/image_scale_mode</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-storyboard-use-custom-bg-color"><span class="std std-ref">storyboard/use_custom_bg_color</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-user-data-accessible-from-files-app"><span class="std std-ref">user_data/accessible_from_files_app</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorexportplatformios-property-user-data-accessible-from-itunes-sharing"><span class="std std-ref">user_data/accessible_from_itunes_sharing</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-editorexportplatformios-property-application-additional-plist-content"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/additional_plist_content</strong></p>
+<p>Additional data added to the root <code class="docutils literal notranslate"><span class="pre">&lt;dict&gt;</span></code> section of the <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/information_property_list">Info.plist</a> file. The value should be an XML section with pairs of key-value elements, e.g.:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">key_name</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">value</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-app-store-team-id"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/app_store_team_id</strong></p>
+<p>Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See <a class="reference external" href="https://developer.apple.com/help/account/manage-your-team/locate-your-team-id">Locate your Team ID</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-bundle-identifier"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/bundle_identifier</strong></p>
+<p>Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (<code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code>), hyphens (<code class="docutils literal notranslate"><span class="pre">-</span></code>), and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-code-sign-identity-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/code_sign_identity_debug</strong></p>
+<p>The "Full Name", "Common Name" or SHA-1 hash of the signing identity used for debug export.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-code-sign-identity-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/code_sign_identity_release</strong></p>
+<p>The "Full Name", "Common Name" or SHA-1 hash of the signing identity used for release export.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-export-method-debug"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/export_method_debug</strong></p>
+<p>Application distribution target (debug export).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-export-method-release"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/export_method_release</strong></p>
+<p>Application distribution target (release export).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-export-project-only"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>application/export_project_only</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, exports iOS project files without building an XCArchive or <code class="docutils literal notranslate"><span class="pre">.ipa</span></code> file. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, exports iOS project files and builds an XCArchive and <code class="docutils literal notranslate"><span class="pre">.ipa</span></code> file at the same time. When combining Godot with Fastlane or other build pipelines, you may want to set this to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-icon-interpolation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/icon_interpolation</strong></p>
+<p>Interpolation method used to resize application icon.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-min-ios-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/min_ios_version</strong></p>
+<p>Minimum version of iOS required for this application to run in the <code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> or <code class="docutils literal notranslate"><span class="pre">major.minor</span></code> format, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-provisioning-profile-uuid-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/provisioning_profile_uuid_debug</strong></p>
+<p>UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See <a class="reference external" href="https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles">Edit, download, or delete provisioning profiles</a>.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-provisioning-profile-uuid-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/provisioning_profile_uuid_release</strong></p>
+<p>UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See <a class="reference external" href="https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles">Edit, download, or delete provisioning profiles</a>.</p>
+<p>Can be overridden with the environment variable <code class="docutils literal notranslate"><span class="pre">GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-short-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/short_version</strong></p>
+<p>Application version visible to the user, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>). Falls back to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-version"><span class="std std-ref">ProjectSettings.application/config/version</span></a> if left empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-signature"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/signature</strong></p>
+<p>A four-character creator code that is specific to the bundle. Optional.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-targeted-device-family"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>application/targeted_device_family</strong></p>
+<p>Supported device family.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-application-version"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>application/version</strong></p>
+<p>Machine-readable application version, in the <code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> format, can only contain numeric characters (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) and periods (<code class="docutils literal notranslate"><span class="pre">.</span></code>). This must be incremented on every new release pushed to the App Store.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-architectures-arm64"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>architectures/arm64</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">arm64</span></code> binaries are included into exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-capabilities-access-wifi"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>capabilities/access_wifi</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, networking features related to Wi-Fi access are enabled. See <a class="reference external" href="https://developer.apple.com/support/required-device-capabilities/">Required Device Capabilities</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-capabilities-performance-a12"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>capabilities/performance_a12</strong></p>
+<p>Requires the graphics performance and features of the A12 Bionic and later chips (devices supporting all Vulkan renderer features).</p>
+<p>Enabling this option limits supported devices to: iPhone XS, iPhone XR, iPad Mini (5th gen.), iPad Air (3rd gen.), iPad (8th gen) and newer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-capabilities-performance-gaming-tier"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>capabilities/performance_gaming_tier</strong></p>
+<p>Requires the graphics performance and features of the A17 Pro and later chips.</p>
+<p>Enabling this option limits supported devices to: iPhone 15 Pro and newer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-capabilities-push-notifications"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>capabilities/push_notifications</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, push notifications are enabled. See <a class="reference external" href="https://developer.apple.com/support/required-device-capabilities/">Required Device Capabilities</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-custom-template-debug"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/debug</strong></p>
+<p>Path to the custom export template. If left empty, default template is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-custom-template-release"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>custom_template/release</strong></p>
+<p>Path to the custom export template. If left empty, default template is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-app-store-1024x1024"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/app_store_1024x1024</strong></p>
+<p>App Store application icon file. If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-ipad-76x76"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/ipad_76x76</strong></p>
+<p>Home screen application icon file on iPad (1x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-ipad-152x152"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/ipad_152x152</strong></p>
+<p>Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-ipad-167x167"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/ipad_167x167</strong></p>
+<p>Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-iphone-120x120"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/iphone_120x120</strong></p>
+<p>Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-iphone-180x180"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/iphone_180x180</strong></p>
+<p>Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-notification-40x40"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/notification_40x40</strong></p>
+<p>Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-notification-60x60"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/notification_60x60</strong></p>
+<p>Notification icon file on iPhone (3x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-settings-58x58"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/settings_58x58</strong></p>
+<p>Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-settings-87x87"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/settings_87x87</strong></p>
+<p>Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-spotlight-40x40"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/spotlight_40x40</strong></p>
+<p>Spotlight icon file on iPad (1x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-icons-spotlight-80x80"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>icons/spotlight_80x80</strong></p>
+<p>Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-config-icon"><span class="std std-ref">ProjectSettings.application/config/icon</span></a>. See <a class="reference external" href="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons">App icons</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-camera-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/camera_usage_description</strong></p>
+<p>A message displayed when requesting access to the device's camera (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-camera-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/camera_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the device's camera (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-microphone-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/microphone_usage_description</strong></p>
+<p>A message displayed when requesting access to the device's microphone (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-microphone-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/microphone_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the device's microphone (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-photolibrary-usage-description"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>privacy/photolibrary_usage_description</strong></p>
+<p>A message displayed when requesting access to the user's photo library (in English).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-privacy-photolibrary-usage-description-localized"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>privacy/photolibrary_usage_description_localized</strong></p>
+<p>A message displayed when requesting access to the user's photo library (localized).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-storyboard-custom-bg-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>storyboard/custom_bg_color</strong></p>
+<p>A custom background color of the storyboard launch screen.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-storyboard-custom-image-2x"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>storyboard/custom_image@2x</strong></p>
+<p>Application launch screen image file (2x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-boot-splash-image"><span class="std std-ref">ProjectSettings.application/boot_splash/image</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-storyboard-custom-image-3x"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>storyboard/custom_image@3x</strong></p>
+<p>Application launch screen image file (3x DPI). If left empty, it will fallback to <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-application-boot-splash-image"><span class="std std-ref">ProjectSettings.application/boot_splash/image</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-storyboard-image-scale-mode"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>storyboard/image_scale_mode</strong></p>
+<p>Launch screen image scaling mode.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-storyboard-use-custom-bg-color"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>storyboard/use_custom_bg_color</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, <a class="reference internal" href="#class-editorexportplatformios-property-storyboard-custom-bg-color"><span class="std std-ref">storyboard/custom_bg_color</span></a> is used as a launch screen background color, otherwise <code class="docutils literal notranslate"><span class="pre">application/boot_splash/bg_color</span></code> project setting is used.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-user-data-accessible-from-files-app"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>user_data/accessible_from_files_app</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the app "Documents" folder can be accessed via "Files" app. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace">LSSupportsOpeningDocumentsInPlace</a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-editorexportplatformios-property-user-data-accessible-from-itunes-sharing"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>user_data/accessible_from_itunes_sharing</strong></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the app "Documents" folder can be accessed via iTunes file sharing. See <a class="reference external" href="https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled">UIFileSharingEnabled</a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorexportplatformandroid.html" rel="prev" title="EditorExportPlatformAndroid"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorexportplatformlinuxbsd.html" rel="next" title="EditorExportPlatformLinuxBSD">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

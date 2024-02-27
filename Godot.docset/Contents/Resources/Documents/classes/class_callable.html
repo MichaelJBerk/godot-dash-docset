@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Callable" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_callable.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="A built-in type representing a method or a standalone function. Description: Callable is a built-in Variant type that represents a function. It can either be a method within an Object instance, or ..." property="og:description"/>
+<meta content="A built-in type representing a method or a standalone function. Description: Callable is a built-in Variant type that represents a function. It can either be a method within an Object instance, or ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Callable — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_callable.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_callable.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_callable.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_callable.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_callable.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_callable.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_callable.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_callable.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_callable.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_callable.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_callable.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_callable.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_callable.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_callable.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_callable.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_callable.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_color.html" rel="next" title="Color"/>
+<link href="class_bool.html" rel="prev" title="bool"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_callable" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Callable</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="callable">
+<span id="class-callable"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Callable¶"></a>Callable<a class="headerlink" href="#callable" title="Permalink to this headline">¶</a></h1>
+<p>A built-in type representing a method or a standalone function.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Callable</strong> is a built-in <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> type that represents a function. It can either be a method within an <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> instance, or a standalone function not related to any object, like a lambda function. Like all <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.</p>
+<p><strong>Example:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">print_args</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="n">arg3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">):</span>
+<span class="w">    </span><span class="nb">prints</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="n">arg3</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">test</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">callable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Callable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"print_args"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">callable</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span><span class="w"> </span><span class="s2">"world"</span><span class="p">)</span><span class="w">  </span><span class="c1"># Prints "hello world ".</span>
+<span class="w">    </span><span class="n">callable</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="o">.</span><span class="n">UP</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="n">callable</span><span class="p">)</span><span class="w">  </span><span class="c1"># Prints "(0, -1) 42 Node(node.gd)::print_args".</span>
+<span class="w">    </span><span class="n">callable</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"invalid"</span><span class="p">)</span><span class="w">  </span><span class="c1"># Invalid call, should have at least 2 arguments.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Default parameter values are not supported.</span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">PrintArgs</span><span class="p">(</span><span class="n">Variant</span><span class="w"> </span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">Variant</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="n">Variant</span><span class="w"> </span><span class="n">arg3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">GD</span><span class="p">.</span><span class="n">PrintS</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="n">arg3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Invalid calls fail silently.</span>
+<span class="w">    </span><span class="n">Callable</span><span class="w"> </span><span class="n">callable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Callable</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">MethodName</span><span class="p">.</span><span class="n">PrintArgs</span><span class="p">);</span>
+<span class="w">    </span><span class="n">callable</span><span class="p">.</span><span class="n">Call</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span><span class="w"> </span><span class="s">"world"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Default parameter values are not supported, should have 3 arguments.</span>
+<span class="w">    </span><span class="n">callable</span><span class="p">.</span><span class="n">Call</span><span class="p">(</span><span class="n">Vector2</span><span class="p">.</span><span class="n">Up</span><span class="p">,</span><span class="w"> </span><span class="m">42</span><span class="p">,</span><span class="w"> </span><span class="n">callable</span><span class="p">);</span><span class="w"> </span><span class="c1">// Prints "(0, -1) 42 Node(Node.cs)::PrintArgs".</span>
+<span class="w">    </span><span class="n">callable</span><span class="p">.</span><span class="n">Call</span><span class="p">(</span><span class="s">"invalid"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Invalid call, should have 3 arguments.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling <a class="reference internal" href="#class-callable-method-get-method"><span class="std std-ref">get_method</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_init</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">my_lambda</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">func</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1"># Prints Hello everyone!</span>
+<span class="w">    </span><span class="n">my_lambda</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"Hello everyone!"</span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1"># Prints "Attack!", when the button_pressed signal is emitted.</span>
+<span class="w">    </span><span class="n">button_pressed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="k">func</span><span class="p">():</span><span class="w"> </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Attack!"</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are notable differences when using this API with C#. See <a class="reference internal" href="../tutorials/scripting/c_sharp/c_sharp_differences.html#doc-c-sharp-differences"><span class="std std-ref">C# API differences to GDScript</span></a> for more information.</p>
+</div>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-constructor-callable"><span class="std std-ref">Callable</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-constructor-callable"><span class="std std-ref">Callable</span></a>(from: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-constructor-callable"><span class="std std-ref">Callable</span></a>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-bind"><span class="std std-ref">bind</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-bindv"><span class="std std-ref">bindv</span></a>(arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-call"><span class="std std-ref">call</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-call-deferred"><span class="std std-ref">call_deferred</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-callv"><span class="std std-ref">callv</span></a>(arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-get-bound-arguments"><span class="std std-ref">get_bound_arguments</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-get-bound-arguments-count"><span class="std std-ref">get_bound_arguments_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-get-method"><span class="std std-ref">get_method</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-get-object"><span class="std std-ref">get_object</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-get-object-id"><span class="std std-ref">get_object_id</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-hash"><span class="std std-ref">hash</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-is-custom"><span class="std std-ref">is_custom</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-is-null"><span class="std std-ref">is_null</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-is-standard"><span class="std std-ref">is_standard</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-is-valid"><span class="std std-ref">is_valid</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-rpc"><span class="std std-ref">rpc</span></a>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-rpc-id"><span class="std std-ref">rpc_id</span></a>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-method-unbind"><span class="std std-ref">unbind</span></a>(argcount: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-operator-neq-callable"><span class="std std-ref">operator !=</span></a>(right: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-callable-operator-eq-callable"><span class="std std-ref">operator ==</span></a>(right: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-callable-constructor-callable"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>Callable</strong>()</p>
+<p>Constructs an empty <strong>Callable</strong>, with no object nor method bound.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>Callable</strong>(from: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p>
+<p>Constructs a <strong>Callable</strong> as a copy of the given <strong>Callable</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>Callable</strong>(object: <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>, method: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Creates a new <strong>Callable</strong> for the method named <code class="docutils literal notranslate"><span class="pre">method</span></code> in the specified <code class="docutils literal notranslate"><span class="pre">object</span></code>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-callable-method-bind"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>bind</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this <strong>Callable</strong> with one or more arguments bound. When called, the bound arguments are passed <em>after</em> the arguments supplied by <a class="reference internal" href="#class-callable-method-call"><span class="std std-ref">call</span></a>. See also <a class="reference internal" href="#class-callable-method-unbind"><span class="std std-ref">unbind</span></a>.</p>
+<p><strong>Note:</strong> When this method is chained with other similar methods, the order in which the argument list is modified is read from right to left.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-bindv"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>bindv</strong>(arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>)</p>
+<p>Returns a copy of this <strong>Callable</strong> with one or more arguments bound, reading them from an array. When called, the bound arguments are passed <em>after</em> the arguments supplied by <a class="reference internal" href="#class-callable-method-call"><span class="std std-ref">call</span></a>. See also <a class="reference internal" href="#class-callable-method-unbind"><span class="std std-ref">unbind</span></a>.</p>
+<p><strong>Note:</strong> When this method is chained with other similar methods, the order in which the argument list is modified is read from right to left.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-call"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>call</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Calls the method represented by this <strong>Callable</strong>. Arguments can be passed and should match the method's signature.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-call-deferred"><abbr title="No return value.">void</abbr> <strong>call_deferred</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Calls the method represented by this <strong>Callable</strong> in deferred mode, i.e. at the end of the current frame. Arguments can be passed and should match the method's signature.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">grab_focus</span><span class="o">.</span><span class="n">call_deferred</span><span class="p">()</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Callable</span><span class="p">.</span><span class="n">From</span><span class="p">(</span><span class="n">GrabFocus</span><span class="p">).</span><span class="n">CallDeferred</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+<p>See also <a class="reference internal" href="class_object.html#class-object-method-call-deferred"><span class="std std-ref">Object.call_deferred</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-callv"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>callv</strong>(arguments: <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Calls the method represented by this <strong>Callable</strong>. Unlike <a class="reference internal" href="#class-callable-method-call"><span class="std std-ref">call</span></a>, this method expects all arguments to be contained inside the <code class="docutils literal notranslate"><span class="pre">arguments</span></code> <a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-get-bound-arguments"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_bound_arguments</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Return the bound arguments (as long as <a class="reference internal" href="#class-callable-method-get-bound-arguments-count"><span class="std std-ref">get_bound_arguments_count</span></a> is greater than zero), or empty (if <a class="reference internal" href="#class-callable-method-get-bound-arguments-count"><span class="std std-ref">get_bound_arguments_count</span></a> is less than or equal to zero).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-get-bound-arguments-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_bound_arguments_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the total amount of arguments bound (or unbound) via successive <a class="reference internal" href="#class-callable-method-bind"><span class="std std-ref">bind</span></a> or <a class="reference internal" href="#class-callable-method-unbind"><span class="std std-ref">unbind</span></a> calls. If the amount of arguments unbound is greater than the ones bound, this function returns a value less than zero.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-get-method"><a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a> <strong>get_method</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the name of the method represented by this <strong>Callable</strong>. If the callable is a GDScript lambda function, returns the function's name or <code class="docutils literal notranslate"><span class="pre">"&lt;anonymous</span> <span class="pre">lambda&gt;"</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-get-object"><a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a> <strong>get_object</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the object on which this <strong>Callable</strong> is called.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-get-object-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_object_id</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the ID of this <strong>Callable</strong>'s object (see <a class="reference internal" href="class_object.html#class-object-method-get-instance-id"><span class="std std-ref">Object.get_instance_id</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-hash"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>hash</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the 32-bit hash value of this <strong>Callable</strong>'s object.</p>
+<p><strong>Note:</strong> <strong>Callable</strong>s with equal content will always produce identical hash values. However, the reverse is not true. Returning identical hash values does <em>not</em> imply the callables are equal, because different callables can have identical hash values due to hash collisions. The engine uses a 32-bit hash algorithm for <a class="reference internal" href="#class-callable-method-hash"><span class="std std-ref">hash</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-is-custom"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_custom</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this <strong>Callable</strong> is a custom callable. Custom callables are created from <a class="reference internal" href="#class-callable-method-bind"><span class="std std-ref">bind</span></a> or <a class="reference internal" href="#class-callable-method-unbind"><span class="std std-ref">unbind</span></a>. In GDScript, lambda functions are also custom callables.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-is-null"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_null</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this <strong>Callable</strong> has no target to call the method on.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-is-standard"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_standard</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this <strong>Callable</strong> is a standard callable. This method is the opposite of <a class="reference internal" href="#class-callable-method-is-custom"><span class="std std-ref">is_custom</span></a>. Returns <code class="docutils literal notranslate"><span class="pre">false</span></code> if this callable is a lambda function.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-is-valid"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_valid</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the callable's object exists and has a valid method name assigned, or is a custom callable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-rpc"><abbr title="No return value.">void</abbr> <strong>rpc</strong>(...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Perform an RPC (Remote Procedure Call) on all connected peers. This is used for multiplayer and is normally not available, unless the function being called has been marked as <em>RPC</em> (using <a class="reference internal" href="class_%40gdscript.html#class-gdscript-annotation-rpc"><span class="std std-ref">@GDScript.@rpc</span></a> or <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a>). Calling this method on unsupported functions will result in an error. See <a class="reference internal" href="class_node.html#class-node-method-rpc"><span class="std std-ref">Node.rpc</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-rpc-id"><abbr title="No return value.">void</abbr> <strong>rpc_id</strong>(peer_id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, ...) <abbr title="This method accepts any number of arguments after the ones described here.">vararg</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Perform an RPC (Remote Procedure Call) on a specific peer ID (see multiplayer documentation for reference). This is used for multiplayer and is normally not available unless the function being called has been marked as <em>RPC</em> (using <a class="reference internal" href="class_%40gdscript.html#class-gdscript-annotation-rpc"><span class="std std-ref">@GDScript.@rpc</span></a> or <a class="reference internal" href="class_node.html#class-node-method-rpc-config"><span class="std std-ref">Node.rpc_config</span></a>). Calling this method on unsupported functions will result in an error. See <a class="reference internal" href="class_node.html#class-node-method-rpc-id"><span class="std std-ref">Node.rpc_id</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-callable-method-unbind"><a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a> <strong>unbind</strong>(argcount: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this <strong>Callable</strong> with a number of arguments unbound. In other words, when the new callable is called the last few arguments supplied by the user are ignored, according to <code class="docutils literal notranslate"><span class="pre">argcount</span></code>. The remaining arguments are passed to the callable. This allows to use the original callable in a context that attempts to pass more arguments than this callable can handle, e.g. a signal with a fixed number of arguments. See also <a class="reference internal" href="#class-callable-method-bind"><span class="std std-ref">bind</span></a>.</p>
+<p><strong>Note:</strong> When this method is chained with other similar methods, the order in which the argument list is modified is read from right to left.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">foo</span><span class="o">.</span><span class="n">unbind</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1"># Calls foo(1).</span>
+<span class="w">    </span><span class="n">foo</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">unbind</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1"># Calls foo(1, 3, 4), note that it does not change the arguments from bind.</span>
+</pre></div>
+</div>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="operator-descriptions">
+<h2>Operator Descriptions<a class="headerlink" href="#operator-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-operator" id="class-callable-operator-neq-callable"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator !=</strong>(right: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if both <strong>Callable</strong>s invoke different targets.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-callable-operator-eq-callable"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator ==</strong>(right: <a class="reference internal" href="#class-callable"><span class="std std-ref">Callable</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if both <strong>Callable</strong>s invoke the same custom target.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_bool.html" rel="prev" title="bool"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_color.html" rel="next" title="Color">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

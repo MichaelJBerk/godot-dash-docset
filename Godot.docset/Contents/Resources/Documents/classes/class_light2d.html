@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Light2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_light2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object Inherited By: DirectionalLight2D, PointLight2D Casts light in a 2D environment. Description: Casts light in a 2D environment. A light is defined as a colo..." property="og:description"/>
+<meta content="Inherits: Node2D&lt; CanvasItem&lt; Node&lt; Object Inherited By: DirectionalLight2D, PointLight2D Casts light in a 2D environment. Description: Casts light in a 2D environment. A light is defined as a colo..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Light2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_light2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_light2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_light2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_light2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_light2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_light2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_light2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_light2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_light2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_light2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_light2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_light2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_light2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_light2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_light2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_light2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_light3d.html" rel="next" title="Light3D"/>
+<link href="class_label3d.html" rel="prev" title="Label3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_light2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Light2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="light2d">
+<span id="class-light2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Light2D¶"></a>Light2D<a class="headerlink" href="#light2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_directionallight2d.html#class-directionallight2d"><span class="std std-ref">DirectionalLight2D</span></a>, <a class="reference internal" href="class_pointlight2d.html#class-pointlight2d"><span class="std std-ref">PointLight2D</span></a></p>
+<p>Casts light in a 2D environment.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Casts light in a 2D environment. A light is defined as a color, an energy value, a mode (see constants), and various other parameters (range and shadows-related).</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/2d/2d_lights_and_shadows.html"><span class="doc">2D lights and shadows</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-blend-mode"><span class="std std-ref">blend_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-color"><span class="std std-ref">color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-editor-only"><span class="std std-ref">editor_only</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-enabled"><span class="std std-ref">enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-energy"><span class="std std-ref">energy</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-range-item-cull-mask"><span class="std std-ref">range_item_cull_mask</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-range-layer-max"><span class="std std-ref">range_layer_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-range-layer-min"><span class="std std-ref">range_layer_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-range-z-max"><span class="std std-ref">range_z_max</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1024</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-range-z-min"><span class="std std-ref">range_z_min</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1024</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-shadow-color"><span class="std std-ref">shadow_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-shadow-enabled"><span class="std std-ref">shadow_enabled</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-shadow-filter"><span class="std std-ref">shadow_filter</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-shadow-filter-smooth"><span class="std std-ref">shadow_filter_smooth</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-property-shadow-item-cull-mask"><span class="std std-ref">shadow_item_cull_mask</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-light2d-method-get-height"><span class="std std-ref">get_height</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-light2d-method-set-height"><span class="std std-ref">set_height</span></a>(height: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-light2d-shadowfilter">enum <strong><a class="dashAnchor" id="enumerations-ShadowFilter" name="//apple_ref/cpp/Enum/ShadowFilter"></a>ShadowFilter</strong>:</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-shadow-filter-none"><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_FILTER_NONE" name="//apple_ref/cpp/Enum/SHADOW_FILTER_NONE"></a>SHADOW_FILTER_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>No filter applies to the shadow map. This provides hard shadow edges and is the fastest to render. See <a class="reference internal" href="#class-light2d-property-shadow-filter"><span class="std std-ref">shadow_filter</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-shadow-filter-pcf5"><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_FILTER_PCF5" name="//apple_ref/cpp/Enum/SHADOW_FILTER_PCF5"></a>SHADOW_FILTER_PCF5</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Percentage closer filtering (5 samples) applies to the shadow map. This is slower compared to hard shadow rendering. See <a class="reference internal" href="#class-light2d-property-shadow-filter"><span class="std std-ref">shadow_filter</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-shadow-filter-pcf13"><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> <strong><a class="dashAnchor" id="enumerations-SHADOW_FILTER_PCF13" name="//apple_ref/cpp/Enum/SHADOW_FILTER_PCF13"></a>SHADOW_FILTER_PCF13</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Percentage closer filtering (13 samples) applies to the shadow map. This is the slowest shadow filtering mode, and should be used sparingly. See <a class="reference internal" href="#class-light2d-property-shadow-filter"><span class="std std-ref">shadow_filter</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-light2d-blendmode">enum <strong><a class="dashAnchor" id="enumerations-BlendMode" name="//apple_ref/cpp/Enum/BlendMode"></a>BlendMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-blend-mode-add"><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_ADD" name="//apple_ref/cpp/Enum/BLEND_MODE_ADD"></a>BLEND_MODE_ADD</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Adds the value of pixels corresponding to the Light2D to the values of pixels under it. This is the common behavior of a light.</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-blend-mode-sub"><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_SUB" name="//apple_ref/cpp/Enum/BLEND_MODE_SUB"></a>BLEND_MODE_SUB</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Subtracts the value of pixels corresponding to the Light2D to the values of pixels under it, resulting in inversed light effect.</p>
+<p class="classref-enumeration-constant" id="class-light2d-constant-blend-mode-mix"><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_MIX" name="//apple_ref/cpp/Enum/BLEND_MODE_MIX"></a>BLEND_MODE_MIX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Mix the value of pixels corresponding to the Light2D to the values of pixels under it by linear interpolation.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-light2d-property-blend-mode"><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong>blend_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_blend_mode" name="//apple_ref/cpp/Property/set_blend_mode"></a>set_blend_mode</strong>(value: <a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="properties-get_blend_mode" name="//apple_ref/cpp/Property/get_blend_mode"></a>get_blend_mode</strong>()</p></li>
+</ul>
+<p>The Light2D's blend mode. See <a class="reference internal" href="#enum-light2d-blendmode"><span class="std std-ref">BlendMode</span></a> constants for values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(1,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color" name="//apple_ref/cpp/Property/set_color"></a>set_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_color" name="//apple_ref/cpp/Property/get_color"></a>get_color</strong>()</p></li>
+</ul>
+<p>The Light2D's <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-editor-only"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>editor_only</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_editor_only" name="//apple_ref/cpp/Property/set_editor_only"></a>set_editor_only</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_editor_only" name="//apple_ref/cpp/Property/is_editor_only"></a>is_editor_only</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, Light2D will only appear when editing the scene.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>enabled</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_enabled" name="//apple_ref/cpp/Property/set_enabled"></a>set_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_enabled" name="//apple_ref/cpp/Property/is_enabled"></a>is_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, Light2D will emit light.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-energy"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>energy</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_energy" name="//apple_ref/cpp/Property/set_energy"></a>set_energy</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_energy" name="//apple_ref/cpp/Property/get_energy"></a>get_energy</strong>()</p></li>
+</ul>
+<p>The Light2D's energy value. The larger the value, the stronger the light.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-range-item-cull-mask"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>range_item_cull_mask</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_item_cull_mask" name="//apple_ref/cpp/Property/set_item_cull_mask"></a>set_item_cull_mask</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_item_cull_mask" name="//apple_ref/cpp/Property/get_item_cull_mask"></a>get_item_cull_mask</strong>()</p></li>
+</ul>
+<p>The layer mask. Only objects with a matching <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-light-mask"><span class="std std-ref">CanvasItem.light_mask</span></a> will be affected by the Light2D. See also <a class="reference internal" href="#class-light2d-property-shadow-item-cull-mask"><span class="std std-ref">shadow_item_cull_mask</span></a>, which affects which objects can cast shadows.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="#class-light2d-property-range-item-cull-mask"><span class="std std-ref">range_item_cull_mask</span></a> is ignored by <a class="reference internal" href="class_directionallight2d.html#class-directionallight2d"><span class="std std-ref">DirectionalLight2D</span></a>, which will always light a 2D node regardless of the 2D node's <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-light-mask"><span class="std std-ref">CanvasItem.light_mask</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-range-layer-max"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>range_layer_max</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_layer_range_max" name="//apple_ref/cpp/Property/set_layer_range_max"></a>set_layer_range_max</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_layer_range_max" name="//apple_ref/cpp/Property/get_layer_range_max"></a>get_layer_range_max</strong>()</p></li>
+</ul>
+<p>Maximum layer value of objects that are affected by the Light2D.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-range-layer-min"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>range_layer_min</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_layer_range_min" name="//apple_ref/cpp/Property/set_layer_range_min"></a>set_layer_range_min</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_layer_range_min" name="//apple_ref/cpp/Property/get_layer_range_min"></a>get_layer_range_min</strong>()</p></li>
+</ul>
+<p>Minimum layer value of objects that are affected by the Light2D.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-range-z-max"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>range_z_max</strong> = <code class="docutils literal notranslate"><span class="pre">1024</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_z_range_max" name="//apple_ref/cpp/Property/set_z_range_max"></a>set_z_range_max</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_z_range_max" name="//apple_ref/cpp/Property/get_z_range_max"></a>get_z_range_max</strong>()</p></li>
+</ul>
+<p>Maximum <code class="docutils literal notranslate"><span class="pre">z</span></code> value of objects that are affected by the Light2D.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-range-z-min"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>range_z_min</strong> = <code class="docutils literal notranslate"><span class="pre">-1024</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_z_range_min" name="//apple_ref/cpp/Property/set_z_range_min"></a>set_z_range_min</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_z_range_min" name="//apple_ref/cpp/Property/get_z_range_min"></a>get_z_range_min</strong>()</p></li>
+</ul>
+<p>Minimum <code class="docutils literal notranslate"><span class="pre">z</span></code> value of objects that are affected by the Light2D.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-shadow-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>shadow_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_shadow_color" name="//apple_ref/cpp/Property/set_shadow_color"></a>set_shadow_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_shadow_color" name="//apple_ref/cpp/Property/get_shadow_color"></a>get_shadow_color</strong>()</p></li>
+</ul>
+<p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of shadows cast by the Light2D.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-shadow-enabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>shadow_enabled</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_shadow_enabled" name="//apple_ref/cpp/Property/set_shadow_enabled"></a>set_shadow_enabled</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_shadow_enabled" name="//apple_ref/cpp/Property/is_shadow_enabled"></a>is_shadow_enabled</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the Light2D will cast shadows.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-shadow-filter"><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> <strong>shadow_filter</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_shadow_filter" name="//apple_ref/cpp/Property/set_shadow_filter"></a>set_shadow_filter</strong>(value: <a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> <strong><a class="dashAnchor" id="properties-get_shadow_filter" name="//apple_ref/cpp/Property/get_shadow_filter"></a>get_shadow_filter</strong>()</p></li>
+</ul>
+<p>Shadow filter type. See <a class="reference internal" href="#enum-light2d-shadowfilter"><span class="std std-ref">ShadowFilter</span></a> for possible values.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-shadow-filter-smooth"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>shadow_filter_smooth</strong> = <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_shadow_smooth" name="//apple_ref/cpp/Property/set_shadow_smooth"></a>set_shadow_smooth</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_shadow_smooth" name="//apple_ref/cpp/Property/get_shadow_smooth"></a>get_shadow_smooth</strong>()</p></li>
+</ul>
+<p>Smoothing value for shadows. Higher values will result in softer shadows, at the cost of visible streaks that can appear in shadow rendering. <a class="reference internal" href="#class-light2d-property-shadow-filter-smooth"><span class="std std-ref">shadow_filter_smooth</span></a> only has an effect if <a class="reference internal" href="#class-light2d-property-shadow-filter"><span class="std std-ref">shadow_filter</span></a> is <a class="reference internal" href="#class-light2d-constant-shadow-filter-pcf5"><span class="std std-ref">SHADOW_FILTER_PCF5</span></a> or <a class="reference internal" href="#class-light2d-constant-shadow-filter-pcf13"><span class="std std-ref">SHADOW_FILTER_PCF13</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-light2d-property-shadow-item-cull-mask"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>shadow_item_cull_mask</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_item_shadow_cull_mask" name="//apple_ref/cpp/Property/set_item_shadow_cull_mask"></a>set_item_shadow_cull_mask</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_item_shadow_cull_mask" name="//apple_ref/cpp/Property/get_item_shadow_cull_mask"></a>get_item_shadow_cull_mask</strong>()</p></li>
+</ul>
+<p>The shadow mask. Used with <a class="reference internal" href="class_lightoccluder2d.html#class-lightoccluder2d"><span class="std std-ref">LightOccluder2D</span></a> to cast shadows. Only occluders with a matching <a class="reference internal" href="class_canvasitem.html#class-canvasitem-property-light-mask"><span class="std std-ref">CanvasItem.light_mask</span></a> will cast shadows. See also <a class="reference internal" href="#class-light2d-property-range-item-cull-mask"><span class="std std-ref">range_item_cull_mask</span></a>, which affects which objects can <em>receive</em> the light.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-light2d-method-get-height"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_height</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the light's height, which is used in 2D normal mapping. See <a class="reference internal" href="class_pointlight2d.html#class-pointlight2d-property-height"><span class="std std-ref">PointLight2D.height</span></a> and <a class="reference internal" href="class_directionallight2d.html#class-directionallight2d-property-height"><span class="std std-ref">DirectionalLight2D.height</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-light2d-method-set-height"><abbr title="No return value.">void</abbr> <strong>set_height</strong>(height: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the light's height, which is used in 2D normal mapping. See <a class="reference internal" href="class_pointlight2d.html#class-pointlight2d-property-height"><span class="std std-ref">PointLight2D.height</span></a> and <a class="reference internal" href="class_directionallight2d.html#class-directionallight2d-property-height"><span class="std std-ref">DirectionalLight2D.height</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_label3d.html" rel="prev" title="Label3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_light3d.html" rel="next" title="Light3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

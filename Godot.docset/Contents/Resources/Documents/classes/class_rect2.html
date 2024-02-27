@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Rect2" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_rect2.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="A 2D axis-aligned bounding box using floating-point coordinates. Description: The Rect2 built-in Variant type represents an axis-aligned rectangle in a 2D space. It is defined by its position and s..." property="og:description"/>
+<meta content="A 2D axis-aligned bounding box using floating-point coordinates. Description: The Rect2 built-in Variant type represents an axis-aligned rectangle in a 2D space. It is defined by its position and s..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Rect2 — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rect2.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_rect2.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_rect2.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_rect2.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_rect2.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_rect2.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_rect2.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_rect2.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_rect2.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_rect2.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_rect2.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_rect2.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_rect2.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_rect2.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rect2.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_rect2.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_rect2i.html" rel="next" title="Rect2i"/>
+<link href="class_quaternion.html" rel="prev" title="Quaternion"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_rect2" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Rect2</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="rect2">
+<span id="class-rect2"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Rect2¶"></a>Rect2<a class="headerlink" href="#rect2" title="Permalink to this headline">¶</a></h1>
+<p>A 2D axis-aligned bounding box using floating-point coordinates.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Rect2</strong> built-in <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> type represents an axis-aligned rectangle in a 2D space. It is defined by its <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a>, which are <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>. It is frequently used for fast overlap tests (see <a class="reference internal" href="#class-rect2-method-intersects"><span class="std std-ref">intersects</span></a>). Although <strong>Rect2</strong> itself is axis-aligned, it can be combined with <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a> to represent a rotated or skewed rectangle.</p>
+<p>For integer coordinates, use <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>. The 3D equivalent to <strong>Rect2</strong> is <a class="reference internal" href="class_aabb.html#class-aabb"><span class="std std-ref">AABB</span></a>.</p>
+<p><strong>Note:</strong> Negative values for <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> are not supported. With negative size, most <strong>Rect2</strong> methods do not work correctly. Use <a class="reference internal" href="#class-rect2-method-abs"><span class="std std-ref">abs</span></a> to get an equivalent <strong>Rect2</strong> with a non-negative size.</p>
+<p><strong>Note:</strong> In a boolean context, a <strong>Rect2</strong> evaluates to <code class="docutils literal notranslate"><span class="pre">false</span></code> if both <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> are zero (equal to <a class="reference internal" href="class_vector2.html#class-vector2-constant-zero"><span class="std std-ref">Vector2.ZERO</span></a>). Otherwise, it always evaluates to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are notable differences when using this API with C#. See <a class="reference internal" href="../tutorials/scripting/c_sharp/c_sharp_differences.html#doc-c-sharp-differences"><span class="std std-ref">C# API differences to GDScript</span></a> for more information.</p>
+</div>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/math/index.html"><span class="doc">Math documentation index</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/math/vector_math.html"><span class="doc">Vector math</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/math/vectors_advanced.html"><span class="doc">Advanced vector math</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-property-end"><span class="std std-ref">end</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-constructor-rect2"><span class="std std-ref">Rect2</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-constructor-rect2"><span class="std std-ref">Rect2</span></a>(from: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-constructor-rect2"><span class="std std-ref">Rect2</span></a>(from: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-constructor-rect2"><span class="std std-ref">Rect2</span></a>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-constructor-rect2"><span class="std std-ref">Rect2</span></a>(x: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, y: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, height: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-abs"><span class="std std-ref">abs</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-encloses"><span class="std std-ref">encloses</span></a>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-expand"><span class="std std-ref">expand</span></a>(to: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-get-area"><span class="std std-ref">get_area</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-get-center"><span class="std std-ref">get_center</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-grow"><span class="std std-ref">grow</span></a>(amount: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-grow-individual"><span class="std std-ref">grow_individual</span></a>(left: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, top: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, bottom: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-grow-side"><span class="std std-ref">grow_side</span></a>(side: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, amount: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-has-area"><span class="std std-ref">has_area</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-has-point"><span class="std std-ref">has_point</span></a>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-intersection"><span class="std std-ref">intersection</span></a>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-intersects"><span class="std std-ref">intersects</span></a>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>, include_borders: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a>(rect: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-is-finite"><span class="std std-ref">is_finite</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-method-merge"><span class="std std-ref">merge</span></a>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-operator-neq-rect2"><span class="std std-ref">operator !=</span></a>(right: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-operator-mul-transform2d"><span class="std std-ref">operator *</span></a>(right: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-rect2-operator-eq-rect2"><span class="std std-ref">operator ==</span></a>(right: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-rect2-property-end"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>end</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<p>The ending point. This is usually the bottom-right corner of the rectangle, and is equivalent to <code class="docutils literal notranslate"><span class="pre">position</span> <span class="pre">+</span> <span class="pre">size</span></code>. Setting this point affects the <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rect2-property-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>position</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<p>The origin point. This is usually the top-left corner of the rectangle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-rect2-property-size"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>size</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<p>The rectangle's width and height, starting from <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a>. Setting this value also affects the <a class="reference internal" href="#class-rect2-property-end"><span class="std std-ref">end</span></a> point.</p>
+<p><strong>Note:</strong> It's recommended setting the width and height to non-negative values, as most methods in Godot assume that the <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> is the top-left corner, and the <a class="reference internal" href="#class-rect2-property-end"><span class="std std-ref">end</span></a> is the bottom-right corner. To get an equivalent rectangle with non-negative size, use <a class="reference internal" href="#class-rect2-method-abs"><span class="std std-ref">abs</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-rect2-constructor-rect2"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>Rect2</strong>()</p>
+<p>Constructs a <strong>Rect2</strong> with its <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> set to <a class="reference internal" href="class_vector2.html#class-vector2-constant-zero"><span class="std std-ref">Vector2.ZERO</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>Rect2</strong>(from: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p>
+<p>Constructs a <strong>Rect2</strong> as a copy of the given <strong>Rect2</strong>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>Rect2</strong>(from: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>)</p>
+<p>Constructs a <strong>Rect2</strong> from a <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>Rect2</strong>(position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, size: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Constructs a <strong>Rect2</strong> by <code class="docutils literal notranslate"><span class="pre">position</span></code> and <code class="docutils literal notranslate"><span class="pre">size</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-constructor"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>Rect2</strong>(x: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, y: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, width: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, height: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Constructs a <strong>Rect2</strong> by setting its <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> to (<code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>), and its <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> to (<code class="docutils literal notranslate"><span class="pre">width</span></code>, <code class="docutils literal notranslate"><span class="pre">height</span></code>).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-rect2-method-abs"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>abs</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a <strong>Rect2</strong> equivalent to this rectangle, with its width and height modified to be non-negative values, and with its <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> being the top-left corner of the rectangle.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">50</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">absolute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="w"> </span><span class="c1"># absolute is Rect2(-75, -25, 100, 50)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">25</span><span class="p">,</span><span class="w"> </span><span class="m">25</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">50</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">absolute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="p">.</span><span class="n">Abs</span><span class="p">();</span><span class="w"> </span><span class="c1">// absolute is Rect2(-75, -25, 100, 50)</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> It's recommended to use this method when <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> is negative, as most other methods in Godot assume that the <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> is the top-left corner, and the <a class="reference internal" href="#class-rect2-property-end"><span class="std std-ref">end</span></a> is the bottom-right corner.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-encloses"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>encloses</strong>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this rectangle <em>completely</em> encloses the <code class="docutils literal notranslate"><span class="pre">b</span></code> rectangle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-expand"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>expand</strong>(to: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this rectangle expanded to align the edges with the given <code class="docutils literal notranslate"><span class="pre">to</span></code> point, if necessary.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"> </span><span class="c1"># rect is Rect2(0, 0, 10, 2)</span>
+<span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="c1"># rect is Rect2(-5, 0, 10, 5)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+
+<span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="p">.</span><span class="n">Expand</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// rect is Rect2(0, 0, 10, 2)</span>
+<span class="n">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect</span><span class="p">.</span><span class="n">Expand</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="o">-</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">));</span><span class="w"> </span><span class="c1">// rect is Rect2(-5, 0, 10, 5)</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-get-area"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_area</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the rectangle's area. This is equivalent to <code class="docutils literal notranslate"><span class="pre">size.x</span> <span class="pre">*</span> <span class="pre">size.y</span></code>. See also <a class="reference internal" href="#class-rect2-method-has-area"><span class="std std-ref">has_area</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-get-center"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_center</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the center point of the rectangle. This is the same as <code class="docutils literal notranslate"><span class="pre">position</span> <span class="pre">+</span> <span class="pre">(size</span> <span class="pre">/</span> <span class="pre">2.0)</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-grow"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>grow</strong>(amount: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this rectangle extended on all sides by the given <code class="docutils literal notranslate"><span class="pre">amount</span></code>. A negative <code class="docutils literal notranslate"><span class="pre">amount</span></code> shrinks the rectangle instead. See also <a class="reference internal" href="#class-rect2-method-grow-individual"><span class="std std-ref">grow_individual</span></a> and <a class="reference internal" href="#class-rect2-method-grow-side"><span class="std std-ref">grow_side</span></a>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-2-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">grow</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="c1"># a is Rect2(0, 0, 16, 16)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">grow</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1"># b is Rect2(-2, -2, 12, 8)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">).</span><span class="n">Grow</span><span class="p">(</span><span class="m">4</span><span class="p">);</span><span class="w"> </span><span class="c1">// a is Rect2(0, 0, 16, 16)</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">).</span><span class="n">Grow</span><span class="p">(</span><span class="m">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// b is Rect2(-2, -2, 12, 8)</span>
+</pre></div>
+</div>
+</div></div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-grow-individual"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>grow_individual</strong>(left: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, top: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, right: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, bottom: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this rectangle with its <code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">top</span></code>, <code class="docutils literal notranslate"><span class="pre">right</span></code>, and <code class="docutils literal notranslate"><span class="pre">bottom</span></code> sides extended by the given amounts. Negative values shrink the sides, instead. See also <a class="reference internal" href="#class-rect2-method-grow"><span class="std std-ref">grow</span></a> and <a class="reference internal" href="#class-rect2-method-grow-side"><span class="std std-ref">grow_side</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-grow-side"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>grow_side</strong>(side: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, amount: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of this rectangle with its <code class="docutils literal notranslate"><span class="pre">side</span></code> extended by the given <code class="docutils literal notranslate"><span class="pre">amount</span></code> (see <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-side"><span class="std std-ref">Side</span></a> constants). A negative <code class="docutils literal notranslate"><span class="pre">amount</span></code> shrinks the rectangle, instead. See also <a class="reference internal" href="#class-rect2-method-grow"><span class="std std-ref">grow</span></a> and <a class="reference internal" href="#class-rect2-method-grow-individual"><span class="std std-ref">grow_individual</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-has-area"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_area</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this rectangle has positive width and height. See also <a class="reference internal" href="#class-rect2-method-get-area"><span class="std std-ref">get_area</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-has-point"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_point</strong>(point: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the rectangle contains the given <code class="docutils literal notranslate"><span class="pre">point</span></code>. By convention, points on the right and bottom edges are <strong>not</strong> included.</p>
+<p><strong>Note:</strong> This method is not reliable for <strong>Rect2</strong> with a <em>negative</em> <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a>. Use <a class="reference internal" href="#class-rect2-method-abs"><span class="std std-ref">abs</span></a> first to get a valid rectangle.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-intersection"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>intersection</strong>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the intersection between this rectangle and <code class="docutils literal notranslate"><span class="pre">b</span></code>. If the rectangles do not intersect, returns an empty <strong>Rect2</strong>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-3-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-3-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">rect1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">rect2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Rect2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect1</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">rect2</span><span class="p">)</span><span class="w"> </span><span class="c1"># a is Rect2(2, 0, 3, 4)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">rect1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">rect2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect2</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">);</span>
+
+<span class="kt">var</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rect1</span><span class="p">.</span><span class="n">Intersection</span><span class="p">(</span><span class="n">rect2</span><span class="p">);</span><span class="w"> </span><span class="c1">// a is Rect2(2, 0, 3, 4)</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Note:</strong> If you only need to know whether two rectangles are overlapping, use <a class="reference internal" href="#class-rect2-method-intersects"><span class="std std-ref">intersects</span></a>, instead.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-intersects"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>intersects</strong>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>, include_borders: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this rectangle overlaps with the <code class="docutils literal notranslate"><span class="pre">b</span></code> rectangle. The edges of both rectangles are excluded, unless <code class="docutils literal notranslate"><span class="pre">include_borders</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-is-equal-approx"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_equal_approx</strong>(rect: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this rectangle and <code class="docutils literal notranslate"><span class="pre">rect</span></code> are approximately equal, by calling <a class="reference internal" href="class_vector2.html#class-vector2-method-is-equal-approx"><span class="std std-ref">Vector2.is_equal_approx</span></a> on the <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and the <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-is-finite"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_finite</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this rectangle's values are finite, by calling <a class="reference internal" href="class_vector2.html#class-vector2-method-is-finite"><span class="std std-ref">Vector2.is_finite</span></a> on the <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and the <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-rect2-method-merge"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>merge</strong>(b: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a <strong>Rect2</strong> that encloses both this rectangle and <code class="docutils literal notranslate"><span class="pre">b</span></code> around the edges. See also <a class="reference internal" href="#class-rect2-method-encloses"><span class="std std-ref">encloses</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="operator-descriptions">
+<h2>Operator Descriptions<a class="headerlink" href="#operator-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-operator" id="class-rect2-operator-neq-rect2"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator !=</strong>(right: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> or <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> of both rectangles are not equal.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-rect2-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-rect2-operator-mul-transform2d"><a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a> <strong>operator *</strong>(right: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>)</p>
+<p>Inversely transforms (multiplies) the <strong>Rect2</strong> by the given <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a> transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).</p>
+<p><code class="docutils literal notranslate"><span class="pre">rect</span> <span class="pre">*</span> <span class="pre">transform</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">transform.inverse()</span> <span class="pre">*</span> <span class="pre">rect</span></code>. See <a class="reference internal" href="class_transform2d.html#class-transform2d-method-inverse"><span class="std std-ref">Transform2D.inverse</span></a>.</p>
+<p>For transforming by inverse of an affine transformation (e.g. with scaling) <code class="docutils literal notranslate"><span class="pre">transform.affine_inverse()</span> <span class="pre">*</span> <span class="pre">rect</span></code> can be used instead. See <a class="reference internal" href="class_transform2d.html#class-transform2d-method-affine-inverse"><span class="std std-ref">Transform2D.affine_inverse</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-operator" id="class-rect2-operator-eq-rect2"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>operator ==</strong>(right: <a class="reference internal" href="#class-rect2"><span class="std std-ref">Rect2</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if both <a class="reference internal" href="#class-rect2-property-position"><span class="std std-ref">position</span></a> and <a class="reference internal" href="#class-rect2-property-size"><span class="std std-ref">size</span></a> of the rectangles are exactly equal, respectively.</p>
+<p><strong>Note:</strong> Due to floating-point precision errors, consider using <a class="reference internal" href="#class-rect2-method-is-equal-approx"><span class="std std-ref">is_equal_approx</span></a> instead, which is more reliable.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_quaternion.html" rel="prev" title="Quaternion"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_rect2i.html" rel="next" title="Rect2i">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

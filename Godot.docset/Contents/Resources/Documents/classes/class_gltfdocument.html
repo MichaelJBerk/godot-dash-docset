@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GLTFDocument" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gltfdocument.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FBXDocument Class for importing and exporting glTF files in and out of Godot. Description: GLTFDocument supports reading data from a glTF file, ..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: FBXDocument Class for importing and exporting glTF files in and out of Godot. Description: GLTFDocument supports reading data from a glTF file, ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GLTFDocument — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfdocument.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gltfdocument.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gltfdocument.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gltfdocument.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gltfdocument.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gltfdocument.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gltfdocument.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gltfdocument.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gltfdocument.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gltfdocument.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gltfdocument.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gltfdocument.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gltfdocument.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gltfdocument.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfdocument.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfdocument.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gltfdocumentextension.html" rel="next" title="GLTFDocumentExtension"/>
+<link href="class_gltfcamera.html" rel="prev" title="GLTFCamera"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gltfdocument" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GLTFDocument</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gltfdocument">
+<span id="class-gltfdocument"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GLTFDocument¶"></a>GLTFDocument<a class="headerlink" href="#gltfdocument" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_fbxdocument.html#class-fbxdocument"><span class="std std-ref">FBXDocument</span></a></p>
+<p>Class for importing and exporting glTF files in and out of Godot.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>GLTFDocument supports reading data from a glTF file, buffer, or Godot scene. This data can then be written to the filesystem, buffer, or used to create a Godot scene.</p>
+<p>All of the data in a GLTF scene is stored in the <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> class. GLTFDocument processes state objects, but does not contain any scene data itself. GLTFDocument has member variables to store export configuration settings such as the image format, but is otherwise stateless. Multiple scenes can be processed with the same settings using the same GLTFDocument object and different <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> objects.</p>
+<p>GLTFDocument can be extended with arbitrary functionality by extending the <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> class and registering it with GLTFDocument via <a class="reference internal" href="#class-gltfdocument-method-register-gltf-document-extension"><span class="std std-ref">register_gltf_document_extension</span></a>. This allows for custom data to be imported and exported.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/io/runtime_file_loading_and_saving.html"><span class="doc">Runtime file loading and saving</span></a></p></li>
+<li><p><a class="reference external" href="https://www.khronos.org/files/gltf20-reference-guide.pdf">glTF 'What the duck?' guide</a></p></li>
+<li><p><a class="reference external" href="https://registry.khronos.org/glTF/">Khronos glTF specification</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-property-image-format"><span class="std std-ref">image_format</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"PNG"</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-property-lossy-quality"><span class="std std-ref">lossy_quality</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.75</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-property-root-node-mode"><span class="std std-ref">root_node_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-append-from-buffer"><span class="std std-ref">append_from_buffer</span></a>(bytes: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, base_path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-append-from-file"><span class="std std-ref">append_from_file</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, base_path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-append-from-scene"><span class="std std-ref">append_from_scene</span></a>(node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-generate-buffer"><span class="std std-ref">generate_buffer</span></a>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-generate-scene"><span class="std std-ref">generate_scene</span></a>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, bake_fps: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 30, trimming: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, remove_immutable_tracks: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-register-gltf-document-extension"><span class="std std-ref">register_gltf_document_extension</span></a>(extension: <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a>, first_priority: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-unregister-gltf-document-extension"><span class="std std-ref">unregister_gltf_document_extension</span></a>(extension: <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfdocument-method-write-to-filesystem"><span class="std std-ref">write_to_filesystem</span></a>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-gltfdocument-rootnodemode">enum <strong><a class="dashAnchor" id="enumerations-RootNodeMode" name="//apple_ref/cpp/Enum/RootNodeMode"></a>RootNodeMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-gltfdocument-constant-root-node-mode-single-root"><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> <strong><a class="dashAnchor" id="enumerations-ROOT_NODE_MODE_SINGLE_ROOT" name="//apple_ref/cpp/Enum/ROOT_NODE_MODE_SINGLE_ROOT"></a>ROOT_NODE_MODE_SINGLE_ROOT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Treat the Godot scene's root node as the root node of the glTF file, and mark it as the single root node via the <code class="docutils literal notranslate"><span class="pre">GODOT_single_root</span></code> glTF extension. This will be parsed the same as <a class="reference internal" href="#class-gltfdocument-constant-root-node-mode-keep-root"><span class="std std-ref">ROOT_NODE_MODE_KEEP_ROOT</span></a> if the implementation does not support <code class="docutils literal notranslate"><span class="pre">GODOT_single_root</span></code>.</p>
+<p class="classref-enumeration-constant" id="class-gltfdocument-constant-root-node-mode-keep-root"><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> <strong><a class="dashAnchor" id="enumerations-ROOT_NODE_MODE_KEEP_ROOT" name="//apple_ref/cpp/Enum/ROOT_NODE_MODE_KEEP_ROOT"></a>ROOT_NODE_MODE_KEEP_ROOT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Treat the Godot scene's root node as the root node of the glTF file, but do not mark it as anything special. An extra root node will be generated when importing into Godot. This uses only vanilla glTF features. This is equivalent to the behavior in Godot 4.1 and earlier.</p>
+<p class="classref-enumeration-constant" id="class-gltfdocument-constant-root-node-mode-multi-root"><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> <strong><a class="dashAnchor" id="enumerations-ROOT_NODE_MODE_MULTI_ROOT" name="//apple_ref/cpp/Enum/ROOT_NODE_MODE_MULTI_ROOT"></a>ROOT_NODE_MODE_MULTI_ROOT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Treat the Godot scene's root node as the name of the glTF scene, and add all of its children as root nodes of the glTF file. This uses only vanilla glTF features. This avoids an extra root node, but only the name of the Godot scene's root node will be preserved, as it will not be saved as a node.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gltfdocument-property-image-format"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>image_format</strong> = <code class="docutils literal notranslate"><span class="pre">"PNG"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_image_format" name="//apple_ref/cpp/Property/set_image_format"></a>set_image_format</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_image_format" name="//apple_ref/cpp/Property/get_image_format"></a>get_image_format</strong>()</p></li>
+</ul>
+<p>The user-friendly name of the export image format. This is used when exporting the GLTF file, including writing to a file and writing to a byte array.</p>
+<p>By default, Godot allows the following options: "None", "PNG", "JPEG", "Lossless WebP", and "Lossy WebP". Support for more image formats can be added in <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> classes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfdocument-property-lossy-quality"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>lossy_quality</strong> = <code class="docutils literal notranslate"><span class="pre">0.75</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_lossy_quality" name="//apple_ref/cpp/Property/set_lossy_quality"></a>set_lossy_quality</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_lossy_quality" name="//apple_ref/cpp/Property/get_lossy_quality"></a>get_lossy_quality</strong>()</p></li>
+</ul>
+<p>If <a class="reference internal" href="#class-gltfdocument-property-image-format"><span class="std std-ref">image_format</span></a> is a lossy image format, this determines the lossy quality of the image. On a range of <code class="docutils literal notranslate"><span class="pre">0.0</span></code> to <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, where <code class="docutils literal notranslate"><span class="pre">0.0</span></code> is the lowest quality and <code class="docutils literal notranslate"><span class="pre">1.0</span></code> is the highest quality. A lossy quality of <code class="docutils literal notranslate"><span class="pre">1.0</span></code> is not the same as lossless.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfdocument-property-root-node-mode"><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> <strong>root_node_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_root_node_mode" name="//apple_ref/cpp/Property/set_root_node_mode"></a>set_root_node_mode</strong>(value: <a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> <strong><a class="dashAnchor" id="properties-get_root_node_mode" name="//apple_ref/cpp/Property/get_root_node_mode"></a>get_root_node_mode</strong>()</p></li>
+</ul>
+<p>How to process the root node during export. See <a class="reference internal" href="#enum-gltfdocument-rootnodemode"><span class="std std-ref">RootNodeMode</span></a> for details. The default and recommended value is <a class="reference internal" href="#class-gltfdocument-constant-root-node-mode-single-root"><span class="std std-ref">ROOT_NODE_MODE_SINGLE_ROOT</span></a>.</p>
+<p><strong>Note:</strong> Regardless of how the glTF file is exported, when importing, the root node type and name can be overridden in the scene import settings tab.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gltfdocument-method-append-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>append_from_buffer</strong>(bytes: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, base_path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Takes a <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> defining a GLTF and imports the data to the given <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter.</p>
+<p><strong>Note:</strong> The <code class="docutils literal notranslate"><span class="pre">base_path</span></code> tells <a class="reference internal" href="#class-gltfdocument-method-append-from-buffer"><span class="std std-ref">append_from_buffer</span></a> where to find dependencies and can be empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-append-from-file"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>append_from_file</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0, base_path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> = "")</p>
+<p>Takes a path to a GLTF file and imports the data at that file path to the given <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter.</p>
+<p><strong>Note:</strong> The <code class="docutils literal notranslate"><span class="pre">base_path</span></code> tells <a class="reference internal" href="#class-gltfdocument-method-append-from-file"><span class="std std-ref">append_from_file</span></a> where to find dependencies and can be empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-append-from-scene"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>append_from_scene</strong>(node: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>, state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, flags: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Takes a Godot Engine scene node and exports it and its descendants to the given <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-generate-buffer"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>generate_buffer</strong>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>)</p>
+<p>Takes a <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter and returns a GLTF <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-generate-scene"><a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>generate_scene</strong>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, bake_fps: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 30, trimming: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, remove_immutable_tracks: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true)</p>
+<p>Takes a <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter and returns a Godot Engine scene node.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-register-gltf-document-extension"><abbr title="No return value.">void</abbr> <strong>register_gltf_document_extension</strong>(extension: <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a>, first_priority: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Registers the given <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> instance with GLTFDocument. If <code class="docutils literal notranslate"><span class="pre">first_priority</span></code> is true, this extension will be run first. Otherwise, it will be run last.</p>
+<p><strong>Note:</strong> Like GLTFDocument itself, all GLTFDocumentExtension classes must be stateless in order to function properly. If you need to store data, use the <code class="docutils literal notranslate"><span class="pre">set_additional_data</span></code> and <code class="docutils literal notranslate"><span class="pre">get_additional_data</span></code> methods in <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> or <a class="reference internal" href="class_gltfnode.html#class-gltfnode"><span class="std std-ref">GLTFNode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-unregister-gltf-document-extension"><abbr title="No return value.">void</abbr> <strong>unregister_gltf_document_extension</strong>(extension: <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Unregisters the given <a class="reference internal" href="class_gltfdocumentextension.html#class-gltfdocumentextension"><span class="std std-ref">GLTFDocumentExtension</span></a> instance.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfdocument-method-write-to-filesystem"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>write_to_filesystem</strong>(state: <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a>, path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Takes a <a class="reference internal" href="class_gltfstate.html#class-gltfstate"><span class="std std-ref">GLTFState</span></a> object through the <code class="docutils literal notranslate"><span class="pre">state</span></code> parameter and writes a glTF file to the filesystem.</p>
+<p><strong>Note:</strong> The extension of the glTF file determines if it is a .glb binary file or a .gltf text file.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gltfcamera.html" rel="prev" title="GLTFCamera"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gltfdocumentextension.html" rel="next" title="GLTFDocumentExtension">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

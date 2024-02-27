@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="AnimationNodeBlendSpace2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_animationnodeblendspace2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: AnimationRootNode&lt; AnimationNode&lt; Resource&lt; RefCounted&lt; Object A set of AnimationRootNode s placed on 2D coordinates, crossfading between the three adjacent ones. Used by AnimationTree. D..." property="og:description"/>
+<meta content="Inherits: AnimationRootNode&lt; AnimationNode&lt; Resource&lt; RefCounted&lt; Object A set of AnimationRootNode s placed on 2D coordinates, crossfading between the three adjacent ones. Used by AnimationTree. D..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) AnimationNodeBlendSpace2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeblendspace2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_animationnodeblendspace2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_animationnodeblendspace2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_animationnodeblendspace2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_animationnodeblendspace2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_animationnodeblendspace2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_animationnodeblendspace2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_animationnodeblendspace2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_animationnodeblendspace2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_animationnodeblendspace2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_animationnodeblendspace2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_animationnodeblendspace2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_animationnodeblendspace2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_animationnodeblendspace2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeblendspace2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_animationnodeblendspace2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_animationnodeblendtree.html" rel="next" title="AnimationNodeBlendTree"/>
+<link href="class_animationnodeblendspace1d.html" rel="prev" title="AnimationNodeBlendSpace1D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_animationnodeblendspace2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">AnimationNodeBlendSpace2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="animationnodeblendspace2d">
+<span id="class-animationnodeblendspace2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/AnimationNodeBlendSpace2D¶"></a>AnimationNodeBlendSpace2D<a class="headerlink" href="#animationnodeblendspace2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_animationnode.html#class-animationnode"><span class="std std-ref">AnimationNode</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A set of <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>s placed on 2D coordinates, crossfading between the three adjacent ones. Used by <a class="reference internal" href="class_animationtree.html#class-animationtree"><span class="std std-ref">AnimationTree</span></a>.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A resource used by <a class="reference internal" href="class_animationnodeblendtree.html#class-animationnodeblendtree"><span class="std std-ref">AnimationNodeBlendTree</span></a>.</p>
+<p><a class="reference internal" href="class_animationnodeblendspace1d.html#class-animationnodeblendspace1d"><span class="std std-ref">AnimationNodeBlendSpace1D</span></a> represents a virtual 2D space on which <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>s are placed. Outputs the linear blend of the three adjacent animations using a <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> weight. Adjacent in this context means the three <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>s making up the triangle that contains the current value.</p>
+<p>You can add vertices to the blend space with <a class="reference internal" href="#class-animationnodeblendspace2d-method-add-blend-point"><span class="std std-ref">add_blend_point</span></a> and automatically triangulate it by setting <a class="reference internal" href="#class-animationnodeblendspace2d-property-auto-triangles"><span class="std std-ref">auto_triangles</span></a> to <code class="docutils literal notranslate"><span class="pre">true</span></code>. Otherwise, use <a class="reference internal" href="#class-animationnodeblendspace2d-method-add-triangle"><span class="std std-ref">add_triangle</span></a> and <a class="reference internal" href="#class-animationnodeblendspace2d-method-remove-triangle"><span class="std std-ref">remove_triangle</span></a> to triangulate the blend space by hand.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/animation/animation_tree.html"><span class="doc">Using AnimationTree</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/678">Third Person Shooter Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-auto-triangles"><span class="std std-ref">auto_triangles</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-blend-mode"><span class="std std-ref">blend_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-max-space"><span class="std std-ref">max_space</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-min-space"><span class="std std-ref">min_space</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(-1,</span> <span class="pre">-1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-snap"><span class="std std-ref">snap</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0.1,</span> <span class="pre">0.1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-sync"><span class="std std-ref">sync</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-x-label"><span class="std std-ref">x_label</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"x"</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-property-y-label"><span class="std std-ref">y_label</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"y"</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-add-blend-point"><span class="std std-ref">add_blend_point</span></a>(node: <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, at_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-add-triangle"><span class="std std-ref">add_triangle</span></a>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, z: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, at_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-get-blend-point-count"><span class="std std-ref">get_blend_point_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-get-blend-point-node"><span class="std std-ref">get_blend_point_node</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-get-blend-point-position"><span class="std std-ref">get_blend_point_position</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-get-triangle-count"><span class="std std-ref">get_triangle_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-get-triangle-point"><span class="std std-ref">get_triangle_point</span></a>(triangle: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-remove-blend-point"><span class="std std-ref">remove_blend_point</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-remove-triangle"><span class="std std-ref">remove_triangle</span></a>(triangle: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-set-blend-point-node"><span class="std std-ref">set_blend_point_node</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, node: <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-animationnodeblendspace2d-method-set-blend-point-position"><span class="std std-ref">set_blend_point_position</span></a>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-animationnodeblendspace2d-signal-triangles-updated"><strong>triangles_updated</strong>()</p>
+<p>Emitted every time the blend space's triangles are created, removed, or when one of their vertices changes position.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-animationnodeblendspace2d-blendmode">enum <strong><a class="dashAnchor" id="enumerations-BlendMode" name="//apple_ref/cpp/Enum/BlendMode"></a>BlendMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-animationnodeblendspace2d-constant-blend-mode-interpolated"><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_INTERPOLATED" name="//apple_ref/cpp/Enum/BLEND_MODE_INTERPOLATED"></a>BLEND_MODE_INTERPOLATED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The interpolation between animations is linear.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeblendspace2d-constant-blend-mode-discrete"><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_DISCRETE" name="//apple_ref/cpp/Enum/BLEND_MODE_DISCRETE"></a>BLEND_MODE_DISCRETE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The blend space plays the animation of the animation node which blending position is closest to. Useful for frame-by-frame 2D animations.</p>
+<p class="classref-enumeration-constant" id="class-animationnodeblendspace2d-constant-blend-mode-discrete-carry"><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="enumerations-BLEND_MODE_DISCRETE_CARRY" name="//apple_ref/cpp/Enum/BLEND_MODE_DISCRETE_CARRY"></a>BLEND_MODE_DISCRETE_CARRY</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Similar to <a class="reference internal" href="#class-animationnodeblendspace2d-constant-blend-mode-discrete"><span class="std std-ref">BLEND_MODE_DISCRETE</span></a>, but starts the new animation at the last animation's playback position.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-auto-triangles"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>auto_triangles</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_auto_triangles" name="//apple_ref/cpp/Property/set_auto_triangles"></a>set_auto_triangles</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_auto_triangles" name="//apple_ref/cpp/Property/get_auto_triangles"></a>get_auto_triangles</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the blend space is triangulated automatically. The mesh updates every time you add or remove points with <a class="reference internal" href="#class-animationnodeblendspace2d-method-add-blend-point"><span class="std std-ref">add_blend_point</span></a> and <a class="reference internal" href="#class-animationnodeblendspace2d-method-remove-blend-point"><span class="std std-ref">remove_blend_point</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-blend-mode"><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong>blend_mode</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_blend_mode" name="//apple_ref/cpp/Property/set_blend_mode"></a>set_blend_mode</strong>(value: <a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> <strong><a class="dashAnchor" id="properties-get_blend_mode" name="//apple_ref/cpp/Property/get_blend_mode"></a>get_blend_mode</strong>()</p></li>
+</ul>
+<p>Controls the interpolation between animations. See <a class="reference internal" href="#enum-animationnodeblendspace2d-blendmode"><span class="std std-ref">BlendMode</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-max-space"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>max_space</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(1,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_max_space" name="//apple_ref/cpp/Property/set_max_space"></a>set_max_space</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_max_space" name="//apple_ref/cpp/Property/get_max_space"></a>get_max_space</strong>()</p></li>
+</ul>
+<p>The blend space's X and Y axes' upper limit for the points' position. See <a class="reference internal" href="#class-animationnodeblendspace2d-method-add-blend-point"><span class="std std-ref">add_blend_point</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-min-space"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>min_space</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(-1,</span> <span class="pre">-1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_min_space" name="//apple_ref/cpp/Property/set_min_space"></a>set_min_space</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_min_space" name="//apple_ref/cpp/Property/get_min_space"></a>get_min_space</strong>()</p></li>
+</ul>
+<p>The blend space's X and Y axes' lower limit for the points' position. See <a class="reference internal" href="#class-animationnodeblendspace2d-method-add-blend-point"><span class="std std-ref">add_blend_point</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-snap"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>snap</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0.1,</span> <span class="pre">0.1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_snap" name="//apple_ref/cpp/Property/set_snap"></a>set_snap</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_snap" name="//apple_ref/cpp/Property/get_snap"></a>get_snap</strong>()</p></li>
+</ul>
+<p>Position increment to snap to when moving a point.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-sync"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>sync</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_use_sync" name="//apple_ref/cpp/Property/set_use_sync"></a>set_use_sync</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_using_sync" name="//apple_ref/cpp/Property/is_using_sync"></a>is_using_sync</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">false</span></code>, the blended animations' frame are stopped when the blend value is <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, forcing the blended animations to advance frame.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-x-label"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>x_label</strong> = <code class="docutils literal notranslate"><span class="pre">"x"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_x_label" name="//apple_ref/cpp/Property/set_x_label"></a>set_x_label</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_x_label" name="//apple_ref/cpp/Property/get_x_label"></a>get_x_label</strong>()</p></li>
+</ul>
+<p>Name of the blend space's X axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-animationnodeblendspace2d-property-y-label"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>y_label</strong> = <code class="docutils literal notranslate"><span class="pre">"y"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_y_label" name="//apple_ref/cpp/Property/set_y_label"></a>set_y_label</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_y_label" name="//apple_ref/cpp/Property/get_y_label"></a>get_y_label</strong>()</p></li>
+</ul>
+<p>Name of the blend space's Y axis.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-add-blend-point"><abbr title="No return value.">void</abbr> <strong>add_blend_point</strong>(node: <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, at_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Adds a new point that represents a <code class="docutils literal notranslate"><span class="pre">node</span></code> at the position set by <code class="docutils literal notranslate"><span class="pre">pos</span></code>. You can insert it at a specific index using the <code class="docutils literal notranslate"><span class="pre">at_index</span></code> argument. If you use the default value for <code class="docutils literal notranslate"><span class="pre">at_index</span></code>, the point is inserted at the end of the blend points array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-add-triangle"><abbr title="No return value.">void</abbr> <strong>add_triangle</strong>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, z: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, at_index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = -1)</p>
+<p>Creates a new triangle using three points <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, and <code class="docutils literal notranslate"><span class="pre">z</span></code>. Triangles can overlap. You can insert the triangle at a specific index using the <code class="docutils literal notranslate"><span class="pre">at_index</span></code> argument. If you use the default value for <code class="docutils literal notranslate"><span class="pre">at_index</span></code>, the point is inserted at the end of the blend points array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-get-blend-point-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_blend_point_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of points in the blend space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-get-blend-point-node"><a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a> <strong>get_blend_point_node</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a> referenced by the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-get-blend-point-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_blend_point_position</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the position of the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-get-triangle-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_triangle_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of triangles in the blend space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-get-triangle-point"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_triangle_point</strong>(triangle: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns the position of the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code> in the triangle of index <code class="docutils literal notranslate"><span class="pre">triangle</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-remove-blend-point"><abbr title="No return value.">void</abbr> <strong>remove_blend_point</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code> from the blend space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-remove-triangle"><abbr title="No return value.">void</abbr> <strong>remove_triangle</strong>(triangle: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the triangle at index <code class="docutils literal notranslate"><span class="pre">triangle</span></code> from the blend space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-set-blend-point-node"><abbr title="No return value.">void</abbr> <strong>set_blend_point_node</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, node: <a class="reference internal" href="class_animationrootnode.html#class-animationrootnode"><span class="std std-ref">AnimationRootNode</span></a>)</p>
+<p>Changes the <a class="reference internal" href="class_animationnode.html#class-animationnode"><span class="std std-ref">AnimationNode</span></a> referenced by the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-animationnodeblendspace2d-method-set-blend-point-position"><abbr title="No return value.">void</abbr> <strong>set_blend_point_position</strong>(point: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, pos: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Updates the position of the point at index <code class="docutils literal notranslate"><span class="pre">point</span></code> on the blend axis.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_animationnodeblendspace1d.html" rel="prev" title="AnimationNodeBlendSpace1D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_animationnodeblendtree.html" rel="next" title="AnimationNodeBlendTree">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

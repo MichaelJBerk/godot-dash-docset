@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="ScrollContainer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_scrollcontainer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: EditorInspector A container used to provide scrollbars to a child control when needed. Description: A container used to provide ..." property="og:description"/>
+<meta content="Inherits: Container&lt; Control&lt; CanvasItem&lt; Node&lt; Object Inherited By: EditorInspector A container used to provide scrollbars to a child control when needed. Description: A container used to provide ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) ScrollContainer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scrollcontainer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_scrollcontainer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_scrollcontainer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_scrollcontainer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_scrollcontainer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_scrollcontainer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_scrollcontainer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_scrollcontainer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_scrollcontainer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_scrollcontainer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_scrollcontainer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_scrollcontainer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_scrollcontainer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_scrollcontainer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scrollcontainer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_scrollcontainer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_separator.html" rel="next" title="Separator"/>
+<link href="class_scrollbar.html" rel="prev" title="ScrollBar"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_scrollcontainer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">ScrollContainer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="scrollcontainer">
+<span id="class-scrollcontainer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/ScrollContainer¶"></a>ScrollContainer<a class="headerlink" href="#scrollcontainer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_container.html#class-container"><span class="std std-ref">Container</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_editorinspector.html#class-editorinspector"><span class="std std-ref">EditorInspector</span></a></p>
+<p>A container used to provide scrollbars to a child control when needed.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>A container used to provide a child control with scrollbars when needed. Scrollbars will automatically be drawn at the right (for vertical) or bottom (for horizontal) and will enable dragging to move the viewable Control (and its children) within the ScrollContainer. Scrollbars will also automatically resize the grabber based on the <a class="reference internal" href="class_control.html#class-control-property-custom-minimum-size"><span class="std std-ref">Control.custom_minimum_size</span></a> of the Control relative to the ScrollContainer.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/ui/gui_containers.html"><span class="doc">Using Containers</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p>clip_contents</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> (overrides <a class="reference internal" href="class_control.html#class-control-property-clip-contents"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-follow-focus"><span class="std std-ref">follow_focus</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-horizontal-scroll-mode"><span class="std std-ref">horizontal_scroll_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-scroll-deadzone"><span class="std std-ref">scroll_deadzone</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-scroll-horizontal"><span class="std std-ref">scroll_horizontal</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-scroll-horizontal-custom-step"><span class="std std-ref">scroll_horizontal_custom_step</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-scroll-vertical"><span class="std std-ref">scroll_vertical</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-scroll-vertical-custom-step"><span class="std std-ref">scroll_vertical_custom_step</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-property-vertical-scroll-mode"><span class="std std-ref">vertical_scroll_mode</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-method-ensure-control-visible"><span class="std std-ref">ensure_control_visible</span></a>(control: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_hscrollbar.html#class-hscrollbar"><span class="std std-ref">HScrollBar</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-method-get-h-scroll-bar"><span class="std std-ref">get_h_scroll_bar</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vscrollbar.html#class-vscrollbar"><span class="std std-ref">VScrollBar</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-method-get-v-scroll-bar"><span class="std std-ref">get_v_scroll_bar</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="theme-properties">
+<h2>Theme Properties<a class="headerlink" href="#theme-properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a></p></td>
+<td><p><a class="reference internal" href="#class-scrollcontainer-theme-style-panel"><span class="std std-ref">panel</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-scrollcontainer-signal-scroll-ended"><strong>scroll_ended</strong>()</p>
+<p>Emitted when scrolling stops when dragging the scrollable area <em>with a touch event</em>. This signal is <em>not</em> emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.</p>
+<p><strong>Note:</strong> This signal is only emitted on Android or iOS, or on desktop/web platforms when <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-input-devices-pointing-emulate-touch-from-mouse"><span class="std std-ref">ProjectSettings.input_devices/pointing/emulate_touch_from_mouse</span></a> is enabled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-scrollcontainer-signal-scroll-started"><strong>scroll_started</strong>()</p>
+<p>Emitted when scrolling starts when dragging the scrollable area w<em>ith a touch event</em>. This signal is <em>not</em> emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.</p>
+<p><strong>Note:</strong> This signal is only emitted on Android or iOS, or on desktop/web platforms when <a class="reference internal" href="class_projectsettings.html#class-projectsettings-property-input-devices-pointing-emulate-touch-from-mouse"><span class="std std-ref">ProjectSettings.input_devices/pointing/emulate_touch_from_mouse</span></a> is enabled.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-scrollcontainer-scrollmode">enum <strong><a class="dashAnchor" id="enumerations-ScrollMode" name="//apple_ref/cpp/Enum/ScrollMode"></a>ScrollMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-scrollcontainer-constant-scroll-mode-disabled"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="enumerations-SCROLL_MODE_DISABLED" name="//apple_ref/cpp/Enum/SCROLL_MODE_DISABLED"></a>SCROLL_MODE_DISABLED</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Scrolling disabled, scrollbar will be invisible.</p>
+<p class="classref-enumeration-constant" id="class-scrollcontainer-constant-scroll-mode-auto"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="enumerations-SCROLL_MODE_AUTO" name="//apple_ref/cpp/Enum/SCROLL_MODE_AUTO"></a>SCROLL_MODE_AUTO</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Scrolling enabled, scrollbar will be visible only if necessary, i.e. container's content is bigger than the container.</p>
+<p class="classref-enumeration-constant" id="class-scrollcontainer-constant-scroll-mode-show-always"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="enumerations-SCROLL_MODE_SHOW_ALWAYS" name="//apple_ref/cpp/Enum/SCROLL_MODE_SHOW_ALWAYS"></a>SCROLL_MODE_SHOW_ALWAYS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Scrolling enabled, scrollbar will be always visible.</p>
+<p class="classref-enumeration-constant" id="class-scrollcontainer-constant-scroll-mode-show-never"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="enumerations-SCROLL_MODE_SHOW_NEVER" name="//apple_ref/cpp/Enum/SCROLL_MODE_SHOW_NEVER"></a>SCROLL_MODE_SHOW_NEVER</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Scrolling enabled, scrollbar will be hidden.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-scrollcontainer-property-follow-focus"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>follow_focus</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_follow_focus" name="//apple_ref/cpp/Property/set_follow_focus"></a>set_follow_focus</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_following_focus" name="//apple_ref/cpp/Property/is_following_focus"></a>is_following_focus</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the ScrollContainer will automatically scroll to focused children (including indirect children) to make sure they are fully visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-horizontal-scroll-mode"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong>horizontal_scroll_mode</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_horizontal_scroll_mode" name="//apple_ref/cpp/Property/set_horizontal_scroll_mode"></a>set_horizontal_scroll_mode</strong>(value: <a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="properties-get_horizontal_scroll_mode" name="//apple_ref/cpp/Property/get_horizontal_scroll_mode"></a>get_horizontal_scroll_mode</strong>()</p></li>
+</ul>
+<p>Controls whether horizontal scrollbar can be used and when it should be visible. See <a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> for options.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-scroll-deadzone"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scroll_deadzone</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_deadzone" name="//apple_ref/cpp/Property/set_deadzone"></a>set_deadzone</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_deadzone" name="//apple_ref/cpp/Property/get_deadzone"></a>get_deadzone</strong>()</p></li>
+</ul>
+<p>Deadzone for touch scrolling. Lower deadzone makes the scrolling more sensitive.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-scroll-horizontal"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scroll_horizontal</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_h_scroll" name="//apple_ref/cpp/Property/set_h_scroll"></a>set_h_scroll</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_h_scroll" name="//apple_ref/cpp/Property/get_h_scroll"></a>get_h_scroll</strong>()</p></li>
+</ul>
+<p>The current horizontal scroll value.</p>
+<p><strong>Note:</strong> If you are setting this value in the <a class="reference internal" href="class_node.html#class-node-private-method-ready"><span class="std std-ref">Node._ready</span></a> function or earlier, it needs to be wrapped with <a class="reference internal" href="class_object.html#class-object-method-set-deferred"><span class="std std-ref">Object.set_deferred</span></a>, since scroll bar's <a class="reference internal" href="class_range.html#class-range-property-max-value"><span class="std std-ref">Range.max_value</span></a> is not initialized yet.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">set_deferred</span><span class="p">(</span><span class="s2">"scroll_horizontal"</span><span class="p">,</span><span class="w"> </span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-scroll-horizontal-custom-step"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>scroll_horizontal_custom_step</strong> = <code class="docutils literal notranslate"><span class="pre">-1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_horizontal_custom_step" name="//apple_ref/cpp/Property/set_horizontal_custom_step"></a>set_horizontal_custom_step</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_horizontal_custom_step" name="//apple_ref/cpp/Property/get_horizontal_custom_step"></a>get_horizontal_custom_step</strong>()</p></li>
+</ul>
+<p>Overrides the <a class="reference internal" href="class_scrollbar.html#class-scrollbar-property-custom-step"><span class="std std-ref">ScrollBar.custom_step</span></a> used when clicking the internal scroll bar's horizontal increment and decrement buttons or when using arrow keys when the <a class="reference internal" href="class_scrollbar.html#class-scrollbar"><span class="std std-ref">ScrollBar</span></a> is focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-scroll-vertical"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>scroll_vertical</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_v_scroll" name="//apple_ref/cpp/Property/set_v_scroll"></a>set_v_scroll</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_v_scroll" name="//apple_ref/cpp/Property/get_v_scroll"></a>get_v_scroll</strong>()</p></li>
+</ul>
+<p>The current vertical scroll value.</p>
+<p><strong>Note:</strong> Setting it early needs to be deferred, just like in <a class="reference internal" href="#class-scrollcontainer-property-scroll-horizontal"><span class="std std-ref">scroll_horizontal</span></a>.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">set_deferred</span><span class="p">(</span><span class="s2">"scroll_vertical"</span><span class="p">,</span><span class="w"> </span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-scroll-vertical-custom-step"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>scroll_vertical_custom_step</strong> = <code class="docutils literal notranslate"><span class="pre">-1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_vertical_custom_step" name="//apple_ref/cpp/Property/set_vertical_custom_step"></a>set_vertical_custom_step</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_vertical_custom_step" name="//apple_ref/cpp/Property/get_vertical_custom_step"></a>get_vertical_custom_step</strong>()</p></li>
+</ul>
+<p>Overrides the <a class="reference internal" href="class_scrollbar.html#class-scrollbar-property-custom-step"><span class="std std-ref">ScrollBar.custom_step</span></a> used when clicking the internal scroll bar's vertical increment and decrement buttons or when using arrow keys when the <a class="reference internal" href="class_scrollbar.html#class-scrollbar"><span class="std std-ref">ScrollBar</span></a> is focused.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-scrollcontainer-property-vertical-scroll-mode"><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong>vertical_scroll_mode</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_vertical_scroll_mode" name="//apple_ref/cpp/Property/set_vertical_scroll_mode"></a>set_vertical_scroll_mode</strong>(value: <a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a>)</p></li>
+<li><p><a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> <strong><a class="dashAnchor" id="properties-get_vertical_scroll_mode" name="//apple_ref/cpp/Property/get_vertical_scroll_mode"></a>get_vertical_scroll_mode</strong>()</p></li>
+</ul>
+<p>Controls whether vertical scrollbar can be used and when it should be visible. See <a class="reference internal" href="#enum-scrollcontainer-scrollmode"><span class="std std-ref">ScrollMode</span></a> for options.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-scrollcontainer-method-ensure-control-visible"><abbr title="No return value.">void</abbr> <strong>ensure_control_visible</strong>(control: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>)</p>
+<p>Ensures the given <code class="docutils literal notranslate"><span class="pre">control</span></code> is visible (must be a direct or indirect child of the ScrollContainer). Used by <a class="reference internal" href="#class-scrollcontainer-property-follow-focus"><span class="std std-ref">follow_focus</span></a>.</p>
+<p><strong>Note:</strong> This will not work on a node that was just added during the same frame. If you want to scroll to a newly added child, you must wait until the next frame using <a class="reference internal" href="class_scenetree.html#class-scenetree-signal-process-frame"><span class="std std-ref">SceneTree.process_frame</span></a>:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">add_child</span><span class="p">(</span><span class="n">child_node</span><span class="p">)</span>
+<span class="k">await</span><span class="w"> </span><span class="n">get_tree</span><span class="p">()</span><span class="o">.</span><span class="n">process_frame</span>
+<span class="n">ensure_control_visible</span><span class="p">(</span><span class="n">child_node</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scrollcontainer-method-get-h-scroll-bar"><a class="reference internal" href="class_hscrollbar.html#class-hscrollbar"><span class="std std-ref">HScrollBar</span></a> <strong>get_h_scroll_bar</strong>()</p>
+<p>Returns the horizontal scrollbar <a class="reference internal" href="class_hscrollbar.html#class-hscrollbar"><span class="std std-ref">HScrollBar</span></a> of this <strong>ScrollContainer</strong>.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use <a class="reference internal" href="#class-scrollcontainer-property-horizontal-scroll-mode"><span class="std std-ref">horizontal_scroll_mode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-scrollcontainer-method-get-v-scroll-bar"><a class="reference internal" href="class_vscrollbar.html#class-vscrollbar"><span class="std std-ref">VScrollBar</span></a> <strong>get_v_scroll_bar</strong>()</p>
+<p>Returns the vertical scrollbar <a class="reference internal" href="class_vscrollbar.html#class-vscrollbar"><span class="std std-ref">VScrollBar</span></a> of this <strong>ScrollContainer</strong>.</p>
+<p><strong>Warning:</strong> This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use <a class="reference internal" href="#class-scrollcontainer-property-vertical-scroll-mode"><span class="std std-ref">vertical_scroll_mode</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="theme-property-descriptions">
+<h2>Theme Property Descriptions<a class="headerlink" href="#theme-property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-themeproperty" id="class-scrollcontainer-theme-style-panel"><a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> <strong>panel</strong></p>
+<p>The background <a class="reference internal" href="class_stylebox.html#class-stylebox"><span class="std std-ref">StyleBox</span></a> of the <strong>ScrollContainer</strong>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_scrollbar.html" rel="prev" title="ScrollBar"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_separator.html" rel="next" title="Separator">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

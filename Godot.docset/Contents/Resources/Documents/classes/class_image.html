@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="Image" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_image.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Image datatype. Description: Native image datatype. Contains image data which can be converted to an ImageTexture and provides commonly used image processing ..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Image datatype. Description: Native image datatype. Contains image data which can be converted to an ImageTexture and provides commonly used image processing ..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) Image — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/tabs.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_image.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_image.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_image.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_image.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_image.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_image.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_image.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_image.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_image.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_image.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_image.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_image.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_image.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_image.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_image.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_image.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_imagetexture.html" rel="next" title="ImageTexture"/>
+<link href="class_heightmapshape3d.html" rel="prev" title="HeightMapShape3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_image" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">Image</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="image">
+<span id="class-image"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/Image¶"></a>Image<a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Image datatype.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Native image datatype. Contains image data which can be converted to an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a> and provides commonly used <em>image processing</em> methods. The maximum width and height for an <strong>Image</strong> are <a class="reference internal" href="#class-image-constant-max-width"><span class="std std-ref">MAX_WIDTH</span></a> and <a class="reference internal" href="#class-image-constant-max-height"><span class="std std-ref">MAX_HEIGHT</span></a>.</p>
+<p>An <strong>Image</strong> cannot be assigned to a texture property of an object directly (such as <a class="reference internal" href="class_sprite2d.html#class-sprite2d-property-texture"><span class="std std-ref">Sprite2D.texture</span></a>), and has to be converted manually to an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a> first.</p>
+<p><strong>Note:</strong> The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images may fail to import.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/assets_pipeline/importing_images.html"><span class="doc">Importing images</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/io/runtime_file_loading_and_saving.html"><span class="doc">Runtime file loading and saving</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-property-data"><span class="std std-ref">data</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">"data":</span> <span class="pre">PackedByteArray(),</span> <span class="pre">"format":</span> <span class="pre">"Lum8",</span> <span class="pre">"height":</span> <span class="pre">0,</span> <span class="pre">"mipmaps":</span> <span class="pre">false,</span> <span class="pre">"width":</span> <span class="pre">0</span> <span class="pre">}</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-adjust-bcs"><span class="std std-ref">adjust_bcs</span></a>(brightness: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, contrast: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, saturation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-blend-rect"><span class="std std-ref">blend_rect</span></a>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-blend-rect-mask"><span class="std std-ref">blend_rect_mask</span></a>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, mask: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-blit-rect"><span class="std std-ref">blit_rect</span></a>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-blit-rect-mask"><span class="std std-ref">blit_rect_mask</span></a>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, mask: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-bump-map-to-normal-map"><span class="std std-ref">bump_map_to_normal_map</span></a>(bump_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-clear-mipmaps"><span class="std std-ref">clear_mipmaps</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-compress"><span class="std std-ref">compress</span></a>(mode: <a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a>, source: <a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> = 0, astc_format: <a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-compress-from-channels"><span class="std std-ref">compress_from_channels</span></a>(mode: <a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a>, channels: <a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a>, astc_format: <a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> = 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-compute-image-metrics"><span class="std std-ref">compute_image_metrics</span></a>(compared_image: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, use_luma: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-convert"><span class="std std-ref">convert</span></a>(format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-copy-from"><span class="std std-ref">copy_from</span></a>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-create"><span class="std std-ref">create</span></a>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-create-from-data"><span class="std std-ref">create_from_data</span></a>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-crop"><span class="std std-ref">crop</span></a>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-decompress"><span class="std std-ref">decompress</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#enum-image-alphamode"><span class="std std-ref">AlphaMode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-detect-alpha"><span class="std std-ref">detect_alpha</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-detect-used-channels"><span class="std std-ref">detect_used_channels</span></a>(source: <a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-fill"><span class="std std-ref">fill</span></a>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-fill-rect"><span class="std std-ref">fill_rect</span></a>(rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-fix-alpha-edges"><span class="std std-ref">fix_alpha_edges</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-flip-x"><span class="std std-ref">flip_x</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-flip-y"><span class="std std-ref">flip_y</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-generate-mipmaps"><span class="std std-ref">generate_mipmaps</span></a>(renormalize: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-data"><span class="std std-ref">get_data</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-format"><span class="std std-ref">get_format</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-height"><span class="std std-ref">get_height</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-mipmap-count"><span class="std std-ref">get_mipmap_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-mipmap-offset"><span class="std std-ref">get_mipmap_offset</span></a>(mipmap: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-pixel"><span class="std std-ref">get_pixel</span></a>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-pixelv"><span class="std std-ref">get_pixelv</span></a>(point: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-region"><span class="std std-ref">get_region</span></a>(region: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-size"><span class="std std-ref">get_size</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-used-rect"><span class="std std-ref">get_used_rect</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-get-width"><span class="std std-ref">get_width</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-has-mipmaps"><span class="std std-ref">has_mipmaps</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-is-compressed"><span class="std std-ref">is_compressed</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-is-empty"><span class="std std-ref">is_empty</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-is-invisible"><span class="std std-ref">is_invisible</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load"><span class="std std-ref">load</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-bmp-from-buffer"><span class="std std-ref">load_bmp_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-from-file"><span class="std std-ref">load_from_file</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-jpg-from-buffer"><span class="std std-ref">load_jpg_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-ktx-from-buffer"><span class="std std-ref">load_ktx_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-png-from-buffer"><span class="std std-ref">load_png_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-svg-from-buffer"><span class="std std-ref">load_svg_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-svg-from-string"><span class="std std-ref">load_svg_from_string</span></a>(svg_str: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-tga-from-buffer"><span class="std std-ref">load_tga_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-load-webp-from-buffer"><span class="std std-ref">load_webp_from_buffer</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-normal-map-to-xy"><span class="std std-ref">normal_map_to_xy</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-premultiply-alpha"><span class="std std-ref">premultiply_alpha</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-resize"><span class="std std-ref">resize</span></a>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, interpolation: <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> = 1)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-resize-to-po2"><span class="std std-ref">resize_to_po2</span></a>(square: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, interpolation: <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> = 1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-rgbe-to-srgb"><span class="std std-ref">rgbe_to_srgb</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-rotate-90"><span class="std std-ref">rotate_90</span></a>(direction: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-clockdirection"><span class="std std-ref">ClockDirection</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-rotate-180"><span class="std std-ref">rotate_180</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-exr"><span class="std std-ref">save_exr</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, grayscale: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-exr-to-buffer"><span class="std std-ref">save_exr_to_buffer</span></a>(grayscale: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-jpg"><span class="std std-ref">save_jpg</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-jpg-to-buffer"><span class="std std-ref">save_jpg_to_buffer</span></a>(quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-png"><span class="std std-ref">save_png</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-png-to-buffer"><span class="std std-ref">save_png_to_buffer</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-webp"><span class="std std-ref">save_webp</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, lossy: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-image-method-save-webp-to-buffer"><span class="std std-ref">save_webp_to_buffer</span></a>(lossy: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-set-data"><span class="std std-ref">set_data</span></a>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-set-pixel"><span class="std std-ref">set_pixel</span></a>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-set-pixelv"><span class="std std-ref">set_pixelv</span></a>(point: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-shrink-x2"><span class="std std-ref">shrink_x2</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-image-method-srgb-to-linear"><span class="std std-ref">srgb_to_linear</span></a>()</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-image-format">enum <strong><a class="dashAnchor" id="enumerations-Format" name="//apple_ref/cpp/Enum/Format"></a>Format</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-l8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_L8" name="//apple_ref/cpp/Enum/FORMAT_L8"></a>FORMAT_L8</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Texture format with a single 8-bit depth representing luminance.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-la8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_LA8" name="//apple_ref/cpp/Enum/FORMAT_LA8"></a>FORMAT_LA8</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>OpenGL texture format with two values, luminance and alpha each stored with 8 bits.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-r8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_R8" name="//apple_ref/cpp/Enum/FORMAT_R8"></a>FORMAT_R8</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RED</span></code> with a single component and a bitdepth of 8.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rg8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RG8" name="//apple_ref/cpp/Enum/FORMAT_RG8"></a>FORMAT_RG8</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RG</span></code> with two components and a bitdepth of 8 for each.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgb8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGB8" name="//apple_ref/cpp/Enum/FORMAT_RGB8"></a>FORMAT_RGB8</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RGB</span></code> with three components, each with a bitdepth of 8.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgba8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBA8" name="//apple_ref/cpp/Enum/FORMAT_RGBA8"></a>FORMAT_RGBA8</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RGBA</span></code> with four components, each with a bitdepth of 8.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgba4444"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBA4444" name="//apple_ref/cpp/Enum/FORMAT_RGBA4444"></a>FORMAT_RGBA4444</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RGBA</span></code> with four components, each with a bitdepth of 4.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgb565"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGB565" name="//apple_ref/cpp/Enum/FORMAT_RGB565"></a>FORMAT_RGB565</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">RGB</span></code> with three components. Red and blue have a bitdepth of 5, and green has a bitdepth of 6.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rf"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RF" name="//apple_ref/cpp/Enum/FORMAT_RF"></a>FORMAT_RF</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_R32F</span></code> where there's one component, a 32-bit floating-point value.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgf"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGF" name="//apple_ref/cpp/Enum/FORMAT_RGF"></a>FORMAT_RGF</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RG32F</span></code> where there are two components, each a 32-bit floating-point values.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgbf"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBF" name="//apple_ref/cpp/Enum/FORMAT_RGBF"></a>FORMAT_RGBF</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RGB32F</span></code> where there are three components, each a 32-bit floating-point values.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgbaf"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBAF" name="//apple_ref/cpp/Enum/FORMAT_RGBAF"></a>FORMAT_RGBAF</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RGBA32F</span></code> where there are four components, each a 32-bit floating-point values.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rh"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RH" name="//apple_ref/cpp/Enum/FORMAT_RH"></a>FORMAT_RH</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_R16F</span></code> where there's one component, a 16-bit "half-precision" floating-point value.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgh"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGH" name="//apple_ref/cpp/Enum/FORMAT_RGH"></a>FORMAT_RGH</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RG16F</span></code> where there are two components, each a 16-bit "half-precision" floating-point value.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgbh"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBH" name="//apple_ref/cpp/Enum/FORMAT_RGBH"></a>FORMAT_RGBH</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RGB16F</span></code> where there are three components, each a 16-bit "half-precision" floating-point value.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgbah"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBAH" name="//apple_ref/cpp/Enum/FORMAT_RGBAH"></a>FORMAT_RGBAH</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p>OpenGL texture format <code class="docutils literal notranslate"><span class="pre">GL_RGBA16F</span></code> where there are four components, each a 16-bit "half-precision" floating-point value.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgbe9995"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGBE9995" name="//apple_ref/cpp/Enum/FORMAT_RGBE9995"></a>FORMAT_RGBE9995</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p>A special OpenGL texture format where the three color components have 9 bits of precision and all three share a single 5-bit exponent.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-dxt1"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_DXT1" name="//apple_ref/cpp/Enum/FORMAT_DXT1"></a>FORMAT_DXT1</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/S3_Texture_Compression">S3TC</a> texture format that uses Block Compression 1, and is the smallest variation of S3TC, only providing 1 bit of alpha and color data being premultiplied with alpha.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-dxt3"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_DXT3" name="//apple_ref/cpp/Enum/FORMAT_DXT3"></a>FORMAT_DXT3</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/S3_Texture_Compression">S3TC</a> texture format that uses Block Compression 2, and color data is interpreted as not having been premultiplied by alpha. Well suited for images with sharp alpha transitions between translucent and opaque areas.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-dxt5"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_DXT5" name="//apple_ref/cpp/Enum/FORMAT_DXT5"></a>FORMAT_DXT5</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/S3_Texture_Compression">S3TC</a> texture format also known as Block Compression 3 or BC3 that contains 64 bits of alpha channel data followed by 64 bits of DXT1-encoded color data. Color data is not premultiplied by alpha, same as DXT3. DXT5 generally produces superior results for transparent gradients compared to DXT3.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgtc-r"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGTC_R" name="//apple_ref/cpp/Enum/FORMAT_RGTC_R"></a>FORMAT_RGTC_R</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p>Texture format that uses <a class="reference external" href="https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression">Red Green Texture Compression</a>, normalizing the red channel data using the same compression algorithm that DXT5 uses for the alpha channel.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-rgtc-rg"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_RGTC_RG" name="//apple_ref/cpp/Enum/FORMAT_RGTC_RG"></a>FORMAT_RGTC_RG</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p>Texture format that uses <a class="reference external" href="https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression">Red Green Texture Compression</a>, normalizing the red and green channel data using the same compression algorithm that DXT5 uses for the alpha channel.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-bptc-rgba"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_BPTC_RGBA" name="//apple_ref/cpp/Enum/FORMAT_BPTC_RGBA"></a>FORMAT_BPTC_RGBA</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p>Texture format that uses <a class="reference external" href="https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression">BPTC</a> compression with unsigned normalized RGBA components.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-bptc-rgbf"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_BPTC_RGBF" name="//apple_ref/cpp/Enum/FORMAT_BPTC_RGBF"></a>FORMAT_BPTC_RGBF</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p>Texture format that uses <a class="reference external" href="https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression">BPTC</a> compression with signed floating-point RGB components.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-bptc-rgbfu"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_BPTC_RGBFU" name="//apple_ref/cpp/Enum/FORMAT_BPTC_RGBFU"></a>FORMAT_BPTC_RGBFU</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p>Texture format that uses <a class="reference external" href="https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression">BPTC</a> compression with unsigned floating-point RGB components.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC" name="//apple_ref/cpp/Enum/FORMAT_ETC"></a>FORMAT_ETC</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC1">Ericsson Texture Compression format 1</a>, also referred to as "ETC1", and is part of the OpenGL ES graphics standard. This format cannot store an alpha channel.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-r11"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_R11" name="//apple_ref/cpp/Enum/FORMAT_ETC2_R11"></a>FORMAT_ETC2_R11</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">R11_EAC</span></code> variant), which provides one channel of unsigned data.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-r11s"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_R11S" name="//apple_ref/cpp/Enum/FORMAT_ETC2_R11S"></a>FORMAT_ETC2_R11S</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">SIGNED_R11_EAC</span></code> variant), which provides one channel of signed data.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-rg11"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RG11" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RG11"></a>FORMAT_ETC2_RG11</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">RG11_EAC</span></code> variant), which provides two channels of unsigned data.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-rg11s"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RG11S" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RG11S"></a>FORMAT_ETC2_RG11S</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">SIGNED_RG11_EAC</span></code> variant), which provides two channels of signed data.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-rgb8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RGB8" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RGB8"></a>FORMAT_ETC2_RGB8</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">RGB8</span></code> variant), which is a follow-up of ETC1 and compresses RGB888 data.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-rgba8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RGBA8" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RGBA8"></a>FORMAT_ETC2_RGBA8</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">RGBA8</span></code>variant), which compresses RGBA8888 data with full alpha support.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-rgb8a1"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RGB8A1" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RGB8A1"></a>FORMAT_ETC2_RGB8A1</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">RGB8_PUNCHTHROUGH_ALPHA1</span></code> variant), which compresses RGBA data to make alpha either fully transparent or fully opaque.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> When creating an <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a>, an sRGB to linear color space conversion is performed.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-etc2-ra-as-rg"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ETC2_RA_AS_RG" name="//apple_ref/cpp/Enum/FORMAT_ETC2_RA_AS_RG"></a>FORMAT_ETC2_RA_AS_RG</strong> = <code class="docutils literal notranslate"><span class="pre">33</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC">Ericsson Texture Compression format 2</a> (<code class="docutils literal notranslate"><span class="pre">RGBA8</span></code> variant), which compresses RA data and interprets it as two channels (red and green). See also <a class="reference internal" href="#class-image-constant-format-etc2-rgba8"><span class="std std-ref">FORMAT_ETC2_RGBA8</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-dxt5-ra-as-rg"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_DXT5_RA_AS_RG" name="//apple_ref/cpp/Enum/FORMAT_DXT5_RA_AS_RG"></a>FORMAT_DXT5_RA_AS_RG</strong> = <code class="docutils literal notranslate"><span class="pre">34</span></code></p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/S3_Texture_Compression">S3TC</a> texture format also known as Block Compression 3 or BC3, which compresses RA data and interprets it as two channels (red and green). See also <a class="reference internal" href="#class-image-constant-format-dxt5"><span class="std std-ref">FORMAT_DXT5</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-astc-4x4"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ASTC_4x4" name="//apple_ref/cpp/Enum/FORMAT_ASTC_4x4"></a>FORMAT_ASTC_4x4</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression">Adaptive Scalable Texture Compression</a>. This implements the 4x4 (high quality) mode.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-astc-4x4-hdr"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ASTC_4x4_HDR" name="//apple_ref/cpp/Enum/FORMAT_ASTC_4x4_HDR"></a>FORMAT_ASTC_4x4_HDR</strong> = <code class="docutils literal notranslate"><span class="pre">36</span></code></p>
+<p>Same format as <a class="reference internal" href="#class-image-constant-format-astc-4x4"><span class="std std-ref">FORMAT_ASTC_4x4</span></a>, but with the hint to let the GPU know it is used for HDR.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-astc-8x8"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ASTC_8x8" name="//apple_ref/cpp/Enum/FORMAT_ASTC_8x8"></a>FORMAT_ASTC_8x8</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression">Adaptive Scalable Texture Compression</a>. This implements the 8x8 (low quality) mode.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-astc-8x8-hdr"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_ASTC_8x8_HDR" name="//apple_ref/cpp/Enum/FORMAT_ASTC_8x8_HDR"></a>FORMAT_ASTC_8x8_HDR</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p>Same format as <a class="reference internal" href="#class-image-constant-format-astc-8x8"><span class="std std-ref">FORMAT_ASTC_8x8</span></a>, but with the hint to let the GPU know it is used for HDR.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-format-max"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong><a class="dashAnchor" id="enumerations-FORMAT_MAX" name="//apple_ref/cpp/Enum/FORMAT_MAX"></a>FORMAT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-interpolation">enum <strong><a class="dashAnchor" id="enumerations-Interpolation" name="//apple_ref/cpp/Enum/Interpolation"></a>Interpolation</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-interpolate-nearest"><a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> <strong><a class="dashAnchor" id="enumerations-INTERPOLATE_NEAREST" name="//apple_ref/cpp/Enum/INTERPOLATE_NEAREST"></a>INTERPOLATE_NEAREST</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Performs nearest-neighbor interpolation. If the image is resized, it will be pixelated.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-interpolate-bilinear"><a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> <strong><a class="dashAnchor" id="enumerations-INTERPOLATE_BILINEAR" name="//apple_ref/cpp/Enum/INTERPOLATE_BILINEAR"></a>INTERPOLATE_BILINEAR</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Performs bilinear interpolation. If the image is resized, it will be blurry. This mode is faster than <a class="reference internal" href="#class-image-constant-interpolate-cubic"><span class="std std-ref">INTERPOLATE_CUBIC</span></a>, but it results in lower quality.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-interpolate-cubic"><a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> <strong><a class="dashAnchor" id="enumerations-INTERPOLATE_CUBIC" name="//apple_ref/cpp/Enum/INTERPOLATE_CUBIC"></a>INTERPOLATE_CUBIC</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Performs cubic interpolation. If the image is resized, it will be blurry. This mode often gives better results compared to <a class="reference internal" href="#class-image-constant-interpolate-bilinear"><span class="std std-ref">INTERPOLATE_BILINEAR</span></a>, at the cost of being slower.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-interpolate-trilinear"><a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> <strong><a class="dashAnchor" id="enumerations-INTERPOLATE_TRILINEAR" name="//apple_ref/cpp/Enum/INTERPOLATE_TRILINEAR"></a>INTERPOLATE_TRILINEAR</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Performs bilinear separately on the two most-suited mipmap levels, then linearly interpolates between them.</p>
+<p>It's slower than <a class="reference internal" href="#class-image-constant-interpolate-bilinear"><span class="std std-ref">INTERPOLATE_BILINEAR</span></a>, but produces higher-quality results with far fewer aliasing artifacts.</p>
+<p>If the image does not have mipmaps, they will be generated and used internally, but no mipmaps will be generated on the resulting image.</p>
+<p><strong><a class="dashAnchor" id="enumerations-Note:" name="//apple_ref/cpp/Enum/Note:"></a>Note:</strong> If you intend to scale multiple copies of the original image, it's better to call <a class="reference internal" href="#class-image-method-generate-mipmaps"><span class="std std-ref">generate_mipmaps</span></a>] on it in advance, to avoid wasting processing power in generating them again and again.</p>
+<p>On the other hand, if the image already has mipmaps, they will be used, and a new set will be generated for the resulting image.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-interpolate-lanczos"><a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> <strong><a class="dashAnchor" id="enumerations-INTERPOLATE_LANCZOS" name="//apple_ref/cpp/Enum/INTERPOLATE_LANCZOS"></a>INTERPOLATE_LANCZOS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Performs Lanczos interpolation. This is the slowest image resizing mode, but it typically gives the best results, especially when downscaling images.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-alphamode">enum <strong><a class="dashAnchor" id="enumerations-AlphaMode" name="//apple_ref/cpp/Enum/AlphaMode"></a>AlphaMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-alpha-none"><a class="reference internal" href="#enum-image-alphamode"><span class="std std-ref">AlphaMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALPHA_NONE" name="//apple_ref/cpp/Enum/ALPHA_NONE"></a>ALPHA_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Image does not have alpha.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-alpha-bit"><a class="reference internal" href="#enum-image-alphamode"><span class="std std-ref">AlphaMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALPHA_BIT" name="//apple_ref/cpp/Enum/ALPHA_BIT"></a>ALPHA_BIT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Image stores alpha in a single bit.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-alpha-blend"><a class="reference internal" href="#enum-image-alphamode"><span class="std std-ref">AlphaMode</span></a> <strong><a class="dashAnchor" id="enumerations-ALPHA_BLEND" name="//apple_ref/cpp/Enum/ALPHA_BLEND"></a>ALPHA_BLEND</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Image uses alpha.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-compressmode">enum <strong><a class="dashAnchor" id="enumerations-CompressMode" name="//apple_ref/cpp/Enum/CompressMode"></a>CompressMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-s3tc"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_S3TC" name="//apple_ref/cpp/Enum/COMPRESS_S3TC"></a>COMPRESS_S3TC</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Use S3TC compression.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-etc"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_ETC" name="//apple_ref/cpp/Enum/COMPRESS_ETC"></a>COMPRESS_ETC</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Use ETC compression.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-etc2"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_ETC2" name="//apple_ref/cpp/Enum/COMPRESS_ETC2"></a>COMPRESS_ETC2</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Use ETC2 compression.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-bptc"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_BPTC" name="//apple_ref/cpp/Enum/COMPRESS_BPTC"></a>COMPRESS_BPTC</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Use BPTC compression.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-astc"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_ASTC" name="//apple_ref/cpp/Enum/COMPRESS_ASTC"></a>COMPRESS_ASTC</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Use ASTC compression.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-max"><a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_MAX" name="//apple_ref/cpp/Enum/COMPRESS_MAX"></a>COMPRESS_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-usedchannels">enum <strong><a class="dashAnchor" id="enumerations-UsedChannels" name="//apple_ref/cpp/Enum/UsedChannels"></a>UsedChannels</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-l"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_L" name="//apple_ref/cpp/Enum/USED_CHANNELS_L"></a>USED_CHANNELS_L</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The image only uses one channel for luminance (grayscale).</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-la"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_LA" name="//apple_ref/cpp/Enum/USED_CHANNELS_LA"></a>USED_CHANNELS_LA</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The image uses two channels for luminance and alpha, respectively.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-r"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_R" name="//apple_ref/cpp/Enum/USED_CHANNELS_R"></a>USED_CHANNELS_R</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The image only uses the red channel.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-rg"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_RG" name="//apple_ref/cpp/Enum/USED_CHANNELS_RG"></a>USED_CHANNELS_RG</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>The image uses two channels for red and green.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-rgb"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_RGB" name="//apple_ref/cpp/Enum/USED_CHANNELS_RGB"></a>USED_CHANNELS_RGB</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The image uses three channels for red, green, and blue.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-used-channels-rgba"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong><a class="dashAnchor" id="enumerations-USED_CHANNELS_RGBA" name="//apple_ref/cpp/Enum/USED_CHANNELS_RGBA"></a>USED_CHANNELS_RGBA</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>The image uses four channels for red, green, blue, and alpha.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-compresssource">enum <strong><a class="dashAnchor" id="enumerations-CompressSource" name="//apple_ref/cpp/Enum/CompressSource"></a>CompressSource</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-source-generic"><a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_SOURCE_GENERIC" name="//apple_ref/cpp/Enum/COMPRESS_SOURCE_GENERIC"></a>COMPRESS_SOURCE_GENERIC</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Source texture (before compression) is a regular texture. Default for all textures.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-source-srgb"><a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_SOURCE_SRGB" name="//apple_ref/cpp/Enum/COMPRESS_SOURCE_SRGB"></a>COMPRESS_SOURCE_SRGB</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Source texture (before compression) is in sRGB space.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-compress-source-normal"><a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> <strong><a class="dashAnchor" id="enumerations-COMPRESS_SOURCE_NORMAL" name="//apple_ref/cpp/Enum/COMPRESS_SOURCE_NORMAL"></a>COMPRESS_SOURCE_NORMAL</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Source texture (before compression) is a normal texture (e.g. it can be compressed into two channels).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-image-astcformat">enum <strong><a class="dashAnchor" id="enumerations-ASTCFormat" name="//apple_ref/cpp/Enum/ASTCFormat"></a>ASTCFormat</strong>:</p>
+<p class="classref-enumeration-constant" id="class-image-constant-astc-format-4x4"><a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> <strong><a class="dashAnchor" id="enumerations-ASTC_FORMAT_4x4" name="//apple_ref/cpp/Enum/ASTC_FORMAT_4x4"></a>ASTC_FORMAT_4x4</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Hint to indicate that the high quality 4x4 ASTC compression format should be used.</p>
+<p class="classref-enumeration-constant" id="class-image-constant-astc-format-8x8"><a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> <strong><a class="dashAnchor" id="enumerations-ASTC_FORMAT_8x8" name="//apple_ref/cpp/Enum/ASTC_FORMAT_8x8"></a>ASTC_FORMAT_8x8</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Hint to indicate that the low quality 8x8 ASTC compression format should be used.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-image-constant-max-width"><strong>MAX_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">16777216</span></code></p>
+<p>The maximal width allowed for <strong>Image</strong> resources.</p>
+<p class="classref-constant" id="class-image-constant-max-height"><strong>MAX_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">16777216</span></code></p>
+<p>The maximal height allowed for <strong>Image</strong> resources.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-image-property-data"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>data</strong> = <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">"data":</span> <span class="pre">PackedByteArray(),</span> <span class="pre">"format":</span> <span class="pre">"Lum8",</span> <span class="pre">"height":</span> <span class="pre">0,</span> <span class="pre">"mipmaps":</span> <span class="pre">false,</span> <span class="pre">"width":</span> <span class="pre">0</span> <span class="pre">}</span></code></p>
+<p>Holds all the image's color data in a given format. See <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> constants.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-image-method-adjust-bcs"><abbr title="No return value.">void</abbr> <strong>adjust_bcs</strong>(brightness: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, contrast: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>, saturation: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Adjusts this image's <code class="docutils literal notranslate"><span class="pre">brightness</span></code>, <code class="docutils literal notranslate"><span class="pre">contrast</span></code>, and <code class="docutils literal notranslate"><span class="pre">saturation</span></code> by the given values. Does not work if the image is compressed (see <a class="reference internal" href="#class-image-method-is-compressed"><span class="std std-ref">is_compressed</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-blend-rect"><abbr title="No return value.">void</abbr> <strong>blend_rect</strong>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p>
+<p>Alpha-blends <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> from <code class="docutils literal notranslate"><span class="pre">src</span></code> image to this image at coordinates <code class="docutils literal notranslate"><span class="pre">dst</span></code>, clipped accordingly to both image bounds. This image and <code class="docutils literal notranslate"><span class="pre">src</span></code> image <strong>must</strong> have the same format. <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> with non-positive size is treated as empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-blend-rect-mask"><abbr title="No return value.">void</abbr> <strong>blend_rect_mask</strong>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, mask: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p>
+<p>Alpha-blends <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> from <code class="docutils literal notranslate"><span class="pre">src</span></code> image to this image using <code class="docutils literal notranslate"><span class="pre">mask</span></code> image at coordinates <code class="docutils literal notranslate"><span class="pre">dst</span></code>, clipped accordingly to both image bounds. Alpha channels are required for both <code class="docutils literal notranslate"><span class="pre">src</span></code> and <code class="docutils literal notranslate"><span class="pre">mask</span></code>. <code class="docutils literal notranslate"><span class="pre">dst</span></code> pixels and <code class="docutils literal notranslate"><span class="pre">src</span></code> pixels will blend if the corresponding mask pixel's alpha value is not 0. This image and <code class="docutils literal notranslate"><span class="pre">src</span></code> image <strong>must</strong> have the same format. <code class="docutils literal notranslate"><span class="pre">src</span></code> image and <code class="docutils literal notranslate"><span class="pre">mask</span></code> image <strong>must</strong> have the same size (width and height) but they can have different formats. <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> with non-positive size is treated as empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-blit-rect"><abbr title="No return value.">void</abbr> <strong>blit_rect</strong>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p>
+<p>Copies <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> from <code class="docutils literal notranslate"><span class="pre">src</span></code> image to this image at coordinates <code class="docutils literal notranslate"><span class="pre">dst</span></code>, clipped accordingly to both image bounds. This image and <code class="docutils literal notranslate"><span class="pre">src</span></code> image <strong>must</strong> have the same format. <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> with non-positive size is treated as empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-blit-rect-mask"><abbr title="No return value.">void</abbr> <strong>blit_rect_mask</strong>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, mask: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, src_rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, dst: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>)</p>
+<p>Blits <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> area from <code class="docutils literal notranslate"><span class="pre">src</span></code> image to this image at the coordinates given by <code class="docutils literal notranslate"><span class="pre">dst</span></code>, clipped accordingly to both image bounds. <code class="docutils literal notranslate"><span class="pre">src</span></code> pixel is copied onto <code class="docutils literal notranslate"><span class="pre">dst</span></code> if the corresponding <code class="docutils literal notranslate"><span class="pre">mask</span></code> pixel's alpha value is not 0. This image and <code class="docutils literal notranslate"><span class="pre">src</span></code> image <strong>must</strong> have the same format. <code class="docutils literal notranslate"><span class="pre">src</span></code> image and <code class="docutils literal notranslate"><span class="pre">mask</span></code> image <strong>must</strong> have the same size (width and height) but they can have different formats. <code class="docutils literal notranslate"><span class="pre">src_rect</span></code> with non-positive size is treated as empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-bump-map-to-normal-map"><abbr title="No return value.">void</abbr> <strong>bump_map_to_normal_map</strong>(bump_scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p>
+<p>Converts a bump map to a normal map. A bump map provides a height offset per-pixel, while a normal map provides a normal direction per pixel.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-clear-mipmaps"><abbr title="No return value.">void</abbr> <strong>clear_mipmaps</strong>()</p>
+<p>Removes the image's mipmaps.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-compress"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>compress</strong>(mode: <a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a>, source: <a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> = 0, astc_format: <a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> = 0)</p>
+<p>Compresses the image to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">source</span></code> parameter helps to pick the best compression method for DXT and ETC2 formats. It is ignored for ASTC compression.</p>
+<p>For ASTC compression, the <code class="docutils literal notranslate"><span class="pre">astc_format</span></code> parameter must be supplied.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-compress-from-channels"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>compress_from_channels</strong>(mode: <a class="reference internal" href="#enum-image-compressmode"><span class="std std-ref">CompressMode</span></a>, channels: <a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a>, astc_format: <a class="reference internal" href="#enum-image-astcformat"><span class="std std-ref">ASTCFormat</span></a> = 0)</p>
+<p>Compresses the image to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.</p>
+<p>This is an alternative to <a class="reference internal" href="#class-image-method-compress"><span class="std std-ref">compress</span></a> that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.</p>
+<p>For ASTC compression, the <code class="docutils literal notranslate"><span class="pre">astc_format</span></code> parameter must be supplied.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-compute-image-metrics"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>compute_image_metrics</strong>(compared_image: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>, use_luma: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Compute image metrics on the current image and the compared image.</p>
+<p>The dictionary contains <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">mean_squared</span></code>, <code class="docutils literal notranslate"><span class="pre">root_mean_squared</span></code> and <code class="docutils literal notranslate"><span class="pre">peak_snr</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-convert"><abbr title="No return value.">void</abbr> <strong>convert</strong>(format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>)</p>
+<p>Converts the image's format. See <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-copy-from"><abbr title="No return value.">void</abbr> <strong>copy_from</strong>(src: <a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a>)</p>
+<p>Copies <code class="docutils literal notranslate"><span class="pre">src</span></code> image to this image.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-create"><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a> <strong>create</strong>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Creates an empty image of given size and format. See <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> constants. If <code class="docutils literal notranslate"><span class="pre">use_mipmaps</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, then generate mipmaps for this image. See the <a class="reference internal" href="#class-image-method-generate-mipmaps"><span class="std std-ref">generate_mipmaps</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-create-from-data"><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a> <strong>create_from_data</strong>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Creates a new image of given size and format. See <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> constants. Fills the image with the given raw data. If <code class="docutils literal notranslate"><span class="pre">use_mipmaps</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> then loads mipmaps for this image from <code class="docutils literal notranslate"><span class="pre">data</span></code>. See <a class="reference internal" href="#class-image-method-generate-mipmaps"><span class="std std-ref">generate_mipmaps</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-crop"><abbr title="No return value.">void</abbr> <strong>crop</strong>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Crops the image to the given <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code>. If the specified size is larger than the current size, the extra area is filled with black pixels.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-decompress"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>decompress</strong>()</p>
+<p>Decompresses the image if it is VRAM compressed in a supported format. Returns <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-ok"><span class="std std-ref">@GlobalScope.OK</span></a> if the format is supported, otherwise <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-unavailable"><span class="std std-ref">@GlobalScope.ERR_UNAVAILABLE</span></a>.</p>
+<p><strong>Note:</strong> The following formats can be decompressed: DXT, RGTC, BPTC. The formats ETC1 and ETC2 are not supported.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-detect-alpha"><a class="reference internal" href="#enum-image-alphamode"><span class="std std-ref">AlphaMode</span></a> <strong>detect_alpha</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <a class="reference internal" href="#class-image-constant-alpha-blend"><span class="std std-ref">ALPHA_BLEND</span></a> if the image has data for alpha values. Returns <a class="reference internal" href="#class-image-constant-alpha-bit"><span class="std std-ref">ALPHA_BIT</span></a> if all the alpha values are stored in a single bit. Returns <a class="reference internal" href="#class-image-constant-alpha-none"><span class="std std-ref">ALPHA_NONE</span></a> if no data for alpha values is found.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-detect-used-channels"><a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> <strong>detect_used_channels</strong>(source: <a class="reference internal" href="#enum-image-compresssource"><span class="std std-ref">CompressSource</span></a> = 0) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the color channels used by this image, as one of the <a class="reference internal" href="#enum-image-usedchannels"><span class="std std-ref">UsedChannels</span></a> constants. If the image is compressed, the original <code class="docutils literal notranslate"><span class="pre">source</span></code> must be specified.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-fill"><abbr title="No return value.">void</abbr> <strong>fill</strong>(color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Fills the image with <code class="docutils literal notranslate"><span class="pre">color</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-fill-rect"><abbr title="No return value.">void</abbr> <strong>fill_rect</strong>(rect: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Fills <code class="docutils literal notranslate"><span class="pre">rect</span></code> with <code class="docutils literal notranslate"><span class="pre">color</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-fix-alpha-edges"><abbr title="No return value.">void</abbr> <strong>fix_alpha_edges</strong>()</p>
+<p>Blends low-alpha pixels with nearby pixels.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-flip-x"><abbr title="No return value.">void</abbr> <strong>flip_x</strong>()</p>
+<p>Flips the image horizontally.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-flip-y"><abbr title="No return value.">void</abbr> <strong>flip_y</strong>()</p>
+<p>Flips the image vertically.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-generate-mipmaps"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>generate_mipmaps</strong>(renormalize: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is <code class="docutils literal notranslate"><span class="pre">0</span></code>. Enabling <code class="docutils literal notranslate"><span class="pre">renormalize</span></code> when generating mipmaps for normal map textures will make sure all resulting vector values are normalized.</p>
+<p>It is possible to check if the image has mipmaps by calling <a class="reference internal" href="#class-image-method-has-mipmaps"><span class="std std-ref">has_mipmaps</span></a> or <a class="reference internal" href="#class-image-method-get-mipmap-count"><span class="std std-ref">get_mipmap_count</span></a>. Calling <a class="reference internal" href="#class-image-method-generate-mipmaps"><span class="std std-ref">generate_mipmaps</span></a> on an image that already has mipmaps will replace existing mipmaps in the image.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-data"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>get_data</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the image's raw data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-format"><a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> <strong>get_format</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the image's format. See <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-height"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_height</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the image's height.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-mipmap-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_mipmap_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of mipmap levels or 0 if the image has no mipmaps. The largest main level image is not counted as a mipmap level by this method, so if you want to include it you can add 1 to this count.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-mipmap-offset"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_mipmap_offset</strong>(mipmap: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the offset where the image's mipmap with index <code class="docutils literal notranslate"><span class="pre">mipmap</span></code> is stored in the <a class="reference internal" href="#class-image-property-data"><span class="std std-ref">data</span></a> dictionary.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-pixel"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>get_pixel</strong>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the color of the pixel at <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code>.</p>
+<p>This is the same as <a class="reference internal" href="#class-image-method-get-pixelv"><span class="std std-ref">get_pixelv</span></a>, but with two integer arguments instead of a <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a> argument.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-pixelv"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>get_pixelv</strong>(point: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the color of the pixel at <code class="docutils literal notranslate"><span class="pre">point</span></code>.</p>
+<p>This is the same as <a class="reference internal" href="#class-image-method-get-pixel"><span class="std std-ref">get_pixel</span></a>, but with a <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a> argument instead of two integer arguments.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-region"><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a> <strong>get_region</strong>(region: <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a new <strong>Image</strong> that is a copy of this <strong>Image</strong>'s area specified with <code class="docutils literal notranslate"><span class="pre">region</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-size"><a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a> <strong>get_size</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the image's size (width and height).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-used-rect"><a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a> <strong>get_used_rect</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a <a class="reference internal" href="class_rect2i.html#class-rect2i"><span class="std std-ref">Rect2i</span></a> enclosing the visible portion of the image, considering each pixel with a non-zero alpha channel as visible.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-get-width"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_width</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the image's width.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-has-mipmaps"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_mipmaps</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the image has generated mipmaps.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-is-compressed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_compressed</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the image is compressed.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-is-empty"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_empty</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the image has no data.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-is-invisible"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_invisible</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if all the image's pixels have an alpha value of 0. Returns <code class="docutils literal notranslate"><span class="pre">false</span></code> if any pixel has an alpha value higher than 0.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Loads an image from file <code class="docutils literal notranslate"><span class="pre">path</span></code>. See <a class="reference external" href="../tutorials/assets_pipeline/importing_images.html#supported-image-formats">Supported image formats</a> for a list of supported image formats and limitations.</p>
+<p><strong>Warning:</strong> This method should only be used in the editor or in cases when you need to load external images at run-time, such as images located at the <code class="docutils literal notranslate"><span class="pre">user://</span></code> directory, and may not work in exported projects.</p>
+<p>See also <a class="reference internal" href="class_imagetexture.html#class-imagetexture"><span class="std std-ref">ImageTexture</span></a> description for usage examples.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-bmp-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_bmp_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a BMP file.</p>
+<p><strong>Note:</strong> Godot's BMP module doesn't support 16-bit per pixel images. Only 1-bit, 4-bit, 8-bit, 24-bit, and 32-bit per pixel images are supported.</p>
+<p><strong>Note:</strong> This method is only available in engine builds with the BMP module enabled. By default, the BMP module is enabled, but it can be disabled at build-time using the <code class="docutils literal notranslate"><span class="pre">module_bmp_enabled=no</span></code> SCons option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-from-file"><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a> <strong>load_from_file</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Creates a new <strong>Image</strong> and loads data from the specified file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-jpg-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_jpg_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a JPEG file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-ktx-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_ktx_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a <a class="reference external" href="https://github.com/KhronosGroup/KTX-Software">KTX</a> file. Unlike most image formats, KTX can store VRAM-compressed data and embed mipmaps.</p>
+<p><strong>Note:</strong> Godot's libktx implementation only supports 2D images. Cubemaps, texture arrays, and de-padding are not supported.</p>
+<p><strong>Note:</strong> This method is only available in engine builds with the KTX module enabled. By default, the KTX module is enabled, but it can be disabled at build-time using the <code class="docutils literal notranslate"><span class="pre">module_ktx_enabled=no</span></code> SCons option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-png-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_png_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a PNG file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-svg-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_svg_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>, scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p>
+<p>Loads an image from the UTF-8 binary contents of an <strong>uncompressed</strong> SVG file (<strong>.svg</strong>).</p>
+<p><strong>Note:</strong> Beware when using compressed SVG files (like <strong>.svgz</strong>), they need to be <code class="docutils literal notranslate"><span class="pre">decompressed</span></code> before loading.</p>
+<p><strong>Note:</strong> This method is only available in engine builds with the SVG module enabled. By default, the SVG module is enabled, but it can be disabled at build-time using the <code class="docutils literal notranslate"><span class="pre">module_svg_enabled=no</span></code> SCons option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-svg-from-string"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_svg_from_string</strong>(svg_str: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, scale: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 1.0)</p>
+<p>Loads an image from the string contents of a SVG file (<strong>.svg</strong>).</p>
+<p><strong>Note:</strong> This method is only available in engine builds with the SVG module enabled. By default, the SVG module is enabled, but it can be disabled at build-time using the <code class="docutils literal notranslate"><span class="pre">module_svg_enabled=no</span></code> SCons option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-tga-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_tga_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a TGA file.</p>
+<p><strong>Note:</strong> This method is only available in engine builds with the TGA module enabled. By default, the TGA module is enabled, but it can be disabled at build-time using the <code class="docutils literal notranslate"><span class="pre">module_tga_enabled=no</span></code> SCons option.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-load-webp-from-buffer"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_webp_from_buffer</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Loads an image from the binary contents of a WebP file.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-normal-map-to-xy"><abbr title="No return value.">void</abbr> <strong>normal_map_to_xy</strong>()</p>
+<p>Converts the image's data to represent coordinates on a 3D plane. This is used when the image represents a normal map. A normal map can add lots of detail to a 3D surface without increasing the polygon count.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-premultiply-alpha"><abbr title="No return value.">void</abbr> <strong>premultiply_alpha</strong>()</p>
+<p>Multiplies color values with alpha values. Resulting color values for a pixel are <code class="docutils literal notranslate"><span class="pre">(color</span> <span class="pre">*</span> <span class="pre">alpha)/256</span></code>. See also <a class="reference internal" href="class_canvasitemmaterial.html#class-canvasitemmaterial-property-blend-mode"><span class="std std-ref">CanvasItemMaterial.blend_mode</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-resize"><abbr title="No return value.">void</abbr> <strong>resize</strong>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, interpolation: <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> = 1)</p>
+<p>Resizes the image to the given <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code>. New pixels are calculated using the <code class="docutils literal notranslate"><span class="pre">interpolation</span></code> mode defined via <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-resize-to-po2"><abbr title="No return value.">void</abbr> <strong>resize_to_po2</strong>(square: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, interpolation: <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> = 1)</p>
+<p>Resizes the image to the nearest power of 2 for the width and height. If <code class="docutils literal notranslate"><span class="pre">square</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> then set width and height to be the same. New pixels are calculated using the <code class="docutils literal notranslate"><span class="pre">interpolation</span></code> mode defined via <a class="reference internal" href="#enum-image-interpolation"><span class="std std-ref">Interpolation</span></a> constants.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-rgbe-to-srgb"><a class="reference internal" href="#class-image"><span class="std std-ref">Image</span></a> <strong>rgbe_to_srgb</strong>()</p>
+<p>Converts a standard RGBE (Red Green Blue Exponent) image to an sRGB image.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-rotate-90"><abbr title="No return value.">void</abbr> <strong>rotate_90</strong>(direction: <a class="reference internal" href="class_%40globalscope.html#enum-globalscope-clockdirection"><span class="std std-ref">ClockDirection</span></a>)</p>
+<p>Rotates the image in the specified <code class="docutils literal notranslate"><span class="pre">direction</span></code> by <code class="docutils literal notranslate"><span class="pre">90</span></code> degrees. The width and height of the image must be greater than <code class="docutils literal notranslate"><span class="pre">1</span></code>. If the width and height are not equal, the image will be resized.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-rotate-180"><abbr title="No return value.">void</abbr> <strong>rotate_180</strong>()</p>
+<p>Rotates the image by <code class="docutils literal notranslate"><span class="pre">180</span></code> degrees. The width and height of the image must be greater than <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-exr"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>save_exr</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, grayscale: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as an EXR file to <code class="docutils literal notranslate"><span class="pre">path</span></code>. If <code class="docutils literal notranslate"><span class="pre">grayscale</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-unavailable"><span class="std std-ref">@GlobalScope.ERR_UNAVAILABLE</span></a> if Godot was compiled without the TinyEXR module.</p>
+<p><strong>Note:</strong> The TinyEXR module is disabled in non-editor builds, which means <a class="reference internal" href="#class-image-method-save-exr"><span class="std std-ref">save_exr</span></a> will return <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-unavailable"><span class="std std-ref">@GlobalScope.ERR_UNAVAILABLE</span></a> when it is called from an exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-exr-to-buffer"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>save_exr_to_buffer</strong>(grayscale: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as an EXR file to a byte array. If <code class="docutils literal notranslate"><span class="pre">grayscale</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return an empty byte array if Godot was compiled without the TinyEXR module.</p>
+<p><strong>Note:</strong> The TinyEXR module is disabled in non-editor builds, which means <a class="reference internal" href="#class-image-method-save-exr"><span class="std std-ref">save_exr</span></a> will return an empty byte array when it is called from an exported project.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-jpg"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>save_jpg</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a JPEG file to <code class="docutils literal notranslate"><span class="pre">path</span></code> with the specified <code class="docutils literal notranslate"><span class="pre">quality</span></code> between <code class="docutils literal notranslate"><span class="pre">0.01</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span></code> (inclusive). Higher <code class="docutils literal notranslate"><span class="pre">quality</span></code> values result in better-looking output at the cost of larger file sizes. Recommended <code class="docutils literal notranslate"><span class="pre">quality</span></code> values are between <code class="docutils literal notranslate"><span class="pre">0.75</span></code> and <code class="docutils literal notranslate"><span class="pre">0.90</span></code>. Even at quality <code class="docutils literal notranslate"><span class="pre">1.00</span></code>, JPEG compression remains lossy.</p>
+<p><strong>Note:</strong> JPEG does not save an alpha channel. If the <strong>Image</strong> contains an alpha channel, the image will still be saved, but the resulting JPEG file won't contain the alpha channel.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-jpg-to-buffer"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>save_jpg_to_buffer</strong>(quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a JPEG file to a byte array with the specified <code class="docutils literal notranslate"><span class="pre">quality</span></code> between <code class="docutils literal notranslate"><span class="pre">0.01</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span></code> (inclusive). Higher <code class="docutils literal notranslate"><span class="pre">quality</span></code> values result in better-looking output at the cost of larger byte array sizes (and therefore memory usage). Recommended <code class="docutils literal notranslate"><span class="pre">quality</span></code> values are between <code class="docutils literal notranslate"><span class="pre">0.75</span></code> and <code class="docutils literal notranslate"><span class="pre">0.90</span></code>. Even at quality <code class="docutils literal notranslate"><span class="pre">1.00</span></code>, JPEG compression remains lossy.</p>
+<p><strong>Note:</strong> JPEG does not save an alpha channel. If the <strong>Image</strong> contains an alpha channel, the image will still be saved, but the resulting byte array won't contain the alpha channel.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-png"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>save_png</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a PNG file to the file at <code class="docutils literal notranslate"><span class="pre">path</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-png-to-buffer"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>save_png_to_buffer</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a PNG file to a byte array.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-webp"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>save_webp</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, lossy: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a WebP (Web Picture) file to the file at <code class="docutils literal notranslate"><span class="pre">path</span></code>. By default it will save lossless. If <code class="docutils literal notranslate"><span class="pre">lossy</span></code> is true, the image will be saved lossy, using the <code class="docutils literal notranslate"><span class="pre">quality</span></code> setting between 0.0 and 1.0 (inclusive). Lossless WebP offers more efficient compression than PNG.</p>
+<p><strong>Note:</strong> The WebP format is limited to a size of 16383×16383 pixels, while PNG can save larger images.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-save-webp-to-buffer"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>save_webp_to_buffer</strong>(lossy: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, quality: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.75) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Saves the image as a WebP (Web Picture) file to a byte array. By default it will save lossless. If <code class="docutils literal notranslate"><span class="pre">lossy</span></code> is true, the image will be saved lossy, using the <code class="docutils literal notranslate"><span class="pre">quality</span></code> setting between 0.0 and 1.0 (inclusive). Lossless WebP offers more efficient compression than PNG.</p>
+<p><strong>Note:</strong> The WebP format is limited to a size of 16383×16383 pixels, while PNG can save larger images.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-set-data"><abbr title="No return value.">void</abbr> <strong>set_data</strong>(width: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, height: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, use_mipmaps: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>, format: <a class="reference internal" href="#enum-image-format"><span class="std std-ref">Format</span></a>, data: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Overwrites data of an existing <strong>Image</strong>. Non-static equivalent of <a class="reference internal" href="#class-image-method-create-from-data"><span class="std std-ref">create_from_data</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-set-pixel"><abbr title="No return value.">void</abbr> <strong>set_pixel</strong>(x: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, y: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets the <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the pixel at <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> to <code class="docutils literal notranslate"><span class="pre">color</span></code>.</p>
+<p><strong>Example:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-0-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">img_width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
+<span class="k">var</span><span class="w"> </span><span class="n">img_height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="k">var</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">img_width</span><span class="p">,</span><span class="w"> </span><span class="n">img_height</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">,</span><span class="w"> </span><span class="n">Image</span><span class="o">.</span><span class="n">FORMAT_RGBA8</span><span class="p">)</span>
+
+<span class="n">img</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">)</span><span class="w"> </span><span class="c1"># Sets the color at (1, 2) to red.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">imgWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">imgHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="n">imgWidth</span><span class="p">,</span><span class="w"> </span><span class="n">imgHeight</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">,</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="n">Format</span><span class="p">.</span><span class="n">Rgba8</span><span class="p">);</span>
+
+<span class="n">img</span><span class="p">.</span><span class="n">SetPixel</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">Red</span><span class="p">);</span><span class="w"> </span><span class="c1">// Sets the color at (1, 2) to red.</span>
+</pre></div>
+</div>
+</div></div>
+<p>This is the same as <a class="reference internal" href="#class-image-method-set-pixelv"><span class="std std-ref">set_pixelv</span></a>, but with a two integer arguments instead of a <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a> argument.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-set-pixelv"><abbr title="No return value.">void</abbr> <strong>set_pixelv</strong>(point: <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets the <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> of the pixel at <code class="docutils literal notranslate"><span class="pre">point</span></code> to <code class="docutils literal notranslate"><span class="pre">color</span></code>.</p>
+<p><strong>Example:</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-R0RTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tab" tabindex="0">GDScript</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button></div><div aria-labelledby="tab-1-R0RTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-R0RTY3JpcHQ=" name="R0RTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">img_width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
+<span class="k">var</span><span class="w"> </span><span class="n">img_height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="k">var</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">img_width</span><span class="p">,</span><span class="w"> </span><span class="n">img_height</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">,</span><span class="w"> </span><span class="n">Image</span><span class="o">.</span><span class="n">FORMAT_RGBA8</span><span class="p">)</span>
+
+<span class="n">img</span><span class="o">.</span><span class="n">set_pixelv</span><span class="p">(</span><span class="nb nb-Type">Vector2i</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="nb nb-Type">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">)</span><span class="w"> </span><span class="c1"># Sets the color at (1, 2) to red.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">imgWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">imgHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="n">imgWidth</span><span class="p">,</span><span class="w"> </span><span class="n">imgHeight</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">,</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="n">Format</span><span class="p">.</span><span class="n">Rgba8</span><span class="p">);</span>
+
+<span class="n">img</span><span class="p">.</span><span class="n">SetPixelv</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector2I</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">Red</span><span class="p">);</span><span class="w"> </span><span class="c1">// Sets the color at (1, 2) to red.</span>
+</pre></div>
+</div>
+</div></div>
+<p>This is the same as <a class="reference internal" href="#class-image-method-set-pixel"><span class="std std-ref">set_pixel</span></a>, but with a <a class="reference internal" href="class_vector2i.html#class-vector2i"><span class="std std-ref">Vector2i</span></a> argument instead of two integer arguments.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-shrink-x2"><abbr title="No return value.">void</abbr> <strong>shrink_x2</strong>()</p>
+<p>Shrinks the image by a factor of 2 on each axis (this divides the pixel count by 4).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-image-method-srgb-to-linear"><abbr title="No return value.">void</abbr> <strong>srgb_to_linear</strong>()</p>
+<p>Converts the raw data from the sRGB colorspace to a linear scale.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_heightmapshape3d.html" rel="prev" title="HeightMapShape3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_imagetexture.html" rel="next" title="ImageTexture">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorFeatureProfile" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorfeatureprofile.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object An editor feature profile which can be used to disable specific features. Description: An editor feature profile can be used to disable specific features of the Godot e..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object An editor feature profile which can be used to disable specific features. Description: An editor feature profile can be used to disable specific features of the Godot e..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorFeatureProfile — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfeatureprofile.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorfeatureprofile.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorfeatureprofile.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorfeatureprofile.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorfeatureprofile.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorfeatureprofile.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorfeatureprofile.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorfeatureprofile.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorfeatureprofile.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorfeatureprofile.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorfeatureprofile.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorfeatureprofile.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorfeatureprofile.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorfeatureprofile.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfeatureprofile.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorfeatureprofile.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorfilesystemdirectory.html" rel="next" title="EditorFileSystemDirectory"/>
+<link href="class_editorexportplugin.html" rel="prev" title="EditorExportPlugin"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorfeatureprofile" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorFeatureProfile</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorfeatureprofile">
+<span id="class-editorfeatureprofile"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorFeatureProfile¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorFeatureProfile¶"></a>EditorFeatureProfile<a class="headerlink" href="#editorfeatureprofile" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>An editor feature profile which can be used to disable specific features.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>An editor feature profile can be used to disable specific features of the Godot editor. When disabled, the features won't appear in the editor, which makes the editor less cluttered. This is useful in education settings to reduce confusion or when working in a team. For example, artists and level designers could use a feature profile that disables the script editor to avoid accidentally making changes to files they aren't supposed to edit.</p>
+<p>To manage editor feature profiles visually, use <strong>Editor &gt; Manage Feature Profiles...</strong> at the top of the editor window.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-get-feature-name"><span class="std std-ref">get_feature_name</span></a>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-is-class-disabled"><span class="std std-ref">is_class_disabled</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-is-class-editor-disabled"><span class="std std-ref">is_class_editor_disabled</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-is-class-property-disabled"><span class="std std-ref">is_class_property_disabled</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-is-feature-disabled"><span class="std std-ref">is_feature_disabled</span></a>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-load-from-file"><span class="std std-ref">load_from_file</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-save-to-file"><span class="std std-ref">save_to_file</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-set-disable-class"><span class="std std-ref">set_disable_class</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-set-disable-class-editor"><span class="std std-ref">set_disable_class_editor</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-set-disable-class-property"><span class="std std-ref">set_disable_class_property</span></a>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorfeatureprofile-method-set-disable-feature"><span class="std std-ref">set_disable_feature</span></a>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-editorfeatureprofile-feature">enum <strong><a class="dashAnchor" id="enumerations-Feature" name="//apple_ref/cpp/Enum/Feature"></a><a class="dashAnchor" id="enumerations-Feature" name="//apple_ref/cpp/Enum/Feature"></a>Feature</strong>:</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-3d"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_3D" name="//apple_ref/cpp/Enum/FEATURE_3D"></a><a class="dashAnchor" id="enumerations-FEATURE_3D" name="//apple_ref/cpp/Enum/FEATURE_3D"></a>FEATURE_3D</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>The 3D editor. If this feature is disabled, the 3D editor won't display but 3D nodes will still display in the Create New Node dialog.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-script"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_SCRIPT" name="//apple_ref/cpp/Enum/FEATURE_SCRIPT"></a><a class="dashAnchor" id="enumerations-FEATURE_SCRIPT" name="//apple_ref/cpp/Enum/FEATURE_SCRIPT"></a>FEATURE_SCRIPT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>The Script tab, which contains the script editor and class reference browser. If this feature is disabled, the Script tab won't display.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-asset-lib"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_ASSET_LIB" name="//apple_ref/cpp/Enum/FEATURE_ASSET_LIB"></a><a class="dashAnchor" id="enumerations-FEATURE_ASSET_LIB" name="//apple_ref/cpp/Enum/FEATURE_ASSET_LIB"></a>FEATURE_ASSET_LIB</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>The AssetLib tab. If this feature is disabled, the AssetLib tab won't display.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-scene-tree"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_SCENE_TREE" name="//apple_ref/cpp/Enum/FEATURE_SCENE_TREE"></a><a class="dashAnchor" id="enumerations-FEATURE_SCENE_TREE" name="//apple_ref/cpp/Enum/FEATURE_SCENE_TREE"></a>FEATURE_SCENE_TREE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Scene tree editing. If this feature is disabled, the Scene tree dock will still be visible but will be read-only.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-node-dock"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_NODE_DOCK" name="//apple_ref/cpp/Enum/FEATURE_NODE_DOCK"></a><a class="dashAnchor" id="enumerations-FEATURE_NODE_DOCK" name="//apple_ref/cpp/Enum/FEATURE_NODE_DOCK"></a>FEATURE_NODE_DOCK</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>The Node dock. If this feature is disabled, signals and groups won't be visible and modifiable from the editor.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-filesystem-dock"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_FILESYSTEM_DOCK" name="//apple_ref/cpp/Enum/FEATURE_FILESYSTEM_DOCK"></a><a class="dashAnchor" id="enumerations-FEATURE_FILESYSTEM_DOCK" name="//apple_ref/cpp/Enum/FEATURE_FILESYSTEM_DOCK"></a>FEATURE_FILESYSTEM_DOCK</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>The FileSystem dock. If this feature is disabled, the FileSystem dock won't be visible.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-import-dock"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_IMPORT_DOCK" name="//apple_ref/cpp/Enum/FEATURE_IMPORT_DOCK"></a><a class="dashAnchor" id="enumerations-FEATURE_IMPORT_DOCK" name="//apple_ref/cpp/Enum/FEATURE_IMPORT_DOCK"></a>FEATURE_IMPORT_DOCK</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>The Import dock. If this feature is disabled, the Import dock won't be visible.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-history-dock"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_HISTORY_DOCK" name="//apple_ref/cpp/Enum/FEATURE_HISTORY_DOCK"></a><a class="dashAnchor" id="enumerations-FEATURE_HISTORY_DOCK" name="//apple_ref/cpp/Enum/FEATURE_HISTORY_DOCK"></a>FEATURE_HISTORY_DOCK</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>The History dock. If this feature is disabled, the History dock won't be visible.</p>
+<p class="classref-enumeration-constant" id="class-editorfeatureprofile-constant-feature-max"><a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> <strong><a class="dashAnchor" id="enumerations-FEATURE_MAX" name="//apple_ref/cpp/Enum/FEATURE_MAX"></a><a class="dashAnchor" id="enumerations-FEATURE_MAX" name="//apple_ref/cpp/Enum/FEATURE_MAX"></a>FEATURE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a> enum.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editorfeatureprofile-method-get-feature-name"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>get_feature_name</strong>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>)</p>
+<p>Returns the specified <code class="docutils literal notranslate"><span class="pre">feature</span></code>'s human-readable name.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-is-class-disabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_class_disabled</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code> is disabled. When disabled, the class won't appear in the Create New Node dialog.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-is-class-editor-disabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_class_editor_disabled</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if editing for the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code> is disabled. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-is-class-property-disabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_class_property_disabled</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">property</span></code> is disabled in the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-is-feature-disabled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_feature_disabled</strong>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">feature</span></code> is disabled. When a feature is disabled, it will disappear from the editor entirely.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-load-from-file"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>load_from_file</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's <strong>Export</strong> button or the <a class="reference internal" href="#class-editorfeatureprofile-method-save-to-file"><span class="std std-ref">save_to_file</span></a> method.</p>
+<p><strong>Note:</strong> Feature profiles created via the user interface are loaded from the <code class="docutils literal notranslate"><span class="pre">feature_profiles</span></code> directory, as a file with the <code class="docutils literal notranslate"><span class="pre">.profile</span></code> extension. The editor configuration folder can be found by using <a class="reference internal" href="class_editorpaths.html#class-editorpaths-method-get-config-dir"><span class="std std-ref">EditorPaths.get_config_dir</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-save-to-file"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>save_to_file</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's <strong>Import</strong> button or the <a class="reference internal" href="#class-editorfeatureprofile-method-load-from-file"><span class="std std-ref">load_from_file</span></a> method.</p>
+<p><strong>Note:</strong> Feature profiles created via the user interface are saved in the <code class="docutils literal notranslate"><span class="pre">feature_profiles</span></code> directory, as a file with the <code class="docutils literal notranslate"><span class="pre">.profile</span></code> extension. The editor configuration folder can be found by using <a class="reference internal" href="class_editorpaths.html#class-editorpaths-method-get-config-dir"><span class="std std-ref">EditorPaths.get_config_dir</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-set-disable-class"><abbr title="No return value.">void</abbr> <strong>set_disable_class</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">disable</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>. When disabled, the class won't appear in the Create New Node dialog.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-set-disable-class-editor"><abbr title="No return value.">void</abbr> <strong>set_disable_class_editor</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">disable</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables editing for the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-set-disable-class-property"><abbr title="No return value.">void</abbr> <strong>set_disable_class_property</strong>(class_name: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, property: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">disable</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables editing for <code class="docutils literal notranslate"><span class="pre">property</span></code> in the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by <code class="docutils literal notranslate"><span class="pre">class_name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorfeatureprofile-method-set-disable-feature"><abbr title="No return value.">void</abbr> <strong>set_disable_feature</strong>(feature: <a class="reference internal" href="#enum-editorfeatureprofile-feature"><span class="std std-ref">Feature</span></a>, disable: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">disable</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables the editor feature specified in <code class="docutils literal notranslate"><span class="pre">feature</span></code>. When a feature is disabled, it will disappear from the editor entirely.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorexportplugin.html" rel="prev" title="EditorExportPlugin"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorfilesystemdirectory.html" rel="next" title="EditorFileSystemDirectory">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

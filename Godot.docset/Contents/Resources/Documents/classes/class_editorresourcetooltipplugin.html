@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="EditorResourceTooltipPlugin" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_editorresourcetooltipplugin.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object A plugin that advanced tooltip for its handled resource type. Description: Resource tooltip plugins are used by FileSystemDock to generate customized tooltips for speci..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object A plugin that advanced tooltip for its handled resource type. Description: Resource tooltip plugins are used by FileSystemDock to generate customized tooltips for speci..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) EditorResourceTooltipPlugin — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorresourcetooltipplugin.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_editorresourcetooltipplugin.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_editorresourcetooltipplugin.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_editorresourcetooltipplugin.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_editorresourcetooltipplugin.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_editorresourcetooltipplugin.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_editorresourcetooltipplugin.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_editorresourcetooltipplugin.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_editorresourcetooltipplugin.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_editorresourcetooltipplugin.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_editorresourcetooltipplugin.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_editorresourcetooltipplugin.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_editorresourcetooltipplugin.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_editorresourcetooltipplugin.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorresourcetooltipplugin.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_editorresourcetooltipplugin.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_editorsceneformatimporter.html" rel="next" title="EditorSceneFormatImporter"/>
+<link href="class_editorresourcepreviewgenerator.html" rel="prev" title="EditorResourcePreviewGenerator"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_editorresourcetooltipplugin" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">EditorResourceTooltipPlugin</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="editorresourcetooltipplugin">
+<span id="class-editorresourcetooltipplugin"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorResourceTooltipPlugin¶"></a><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/EditorResourceTooltipPlugin¶"></a>EditorResourceTooltipPlugin<a class="headerlink" href="#editorresourcetooltipplugin" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A plugin that advanced tooltip for its handled resource type.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Resource tooltip plugins are used by <a class="reference internal" href="class_filesystemdock.html#class-filesystemdock"><span class="std std-ref">FileSystemDock</span></a> to generate customized tooltips for specific resources. E.g. tooltip for a <a class="reference internal" href="class_texture2d.html#class-texture2d"><span class="std std-ref">Texture2D</span></a> displays a bigger preview and the texture's dimensions.</p>
+<p>A plugin must be first registered with <a class="reference internal" href="class_filesystemdock.html#class-filesystemdock-method-add-resource-tooltip-plugin"><span class="std std-ref">FileSystemDock.add_resource_tooltip_plugin</span></a>. When the user hovers a resource in filesystem dock which is handled by the plugin, <a class="reference internal" href="#class-editorresourcetooltipplugin-private-method-make-tooltip-for-path"><span class="std std-ref">_make_tooltip_for_path</span></a> is called to create the tooltip. It works similarly to <a class="reference internal" href="class_control.html#class-control-private-method-make-custom-tooltip"><span class="std std-ref">Control._make_custom_tooltip</span></a>.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorresourcetooltipplugin-private-method-handles"><span class="std std-ref">_handles</span></a>(type: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a></p></td>
+<td><p><a class="reference internal" href="#class-editorresourcetooltipplugin-private-method-make-tooltip-for-path"><span class="std std-ref">_make_tooltip_for_path</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, metadata: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>, base: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-editorresourcetooltipplugin-method-request-thumbnail"><span class="std std-ref">request_thumbnail</span></a>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, control: <a class="reference internal" href="class_texturerect.html#class-texturerect"><span class="std std-ref">TextureRect</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-editorresourcetooltipplugin-private-method-handles"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>_handles</strong>(type: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Return <code class="docutils literal notranslate"><span class="pre">true</span></code> if the plugin is going to handle the given <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <code class="docutils literal notranslate"><span class="pre">type</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorresourcetooltipplugin-private-method-make-tooltip-for-path"><a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a> <strong>_make_tooltip_for_path</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, metadata: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>, base: <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>) <abbr title="This method should typically be overridden by the user to have any effect.">virtual</abbr> <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Create and return a tooltip that will be displayed when the user hovers a resource under the given <code class="docutils literal notranslate"><span class="pre">path</span></code> in filesystem dock.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">metadata</span></code> dictionary is provided by preview generator (see <a class="reference internal" href="class_editorresourcepreviewgenerator.html#class-editorresourcepreviewgenerator-private-method-generate"><span class="std std-ref">EditorResourcePreviewGenerator._generate</span></a>).</p>
+<p><code class="docutils literal notranslate"><span class="pre">base</span></code> is the base default tooltip, which is a <a class="reference internal" href="class_vboxcontainer.html#class-vboxcontainer"><span class="std std-ref">VBoxContainer</span></a> with a file name, type and size labels. If another plugin handled the same file type, <code class="docutils literal notranslate"><span class="pre">base</span></code> will be output from the previous plugin. For best result, make sure the base tooltip is part of the returned <a class="reference internal" href="class_control.html#class-control"><span class="std std-ref">Control</span></a>.</p>
+<p><strong>Note:</strong> It's unadvised to use <a class="reference internal" href="class_resourceloader.html#class-resourceloader-method-load"><span class="std std-ref">ResourceLoader.load</span></a>, especially with heavy resources like models or textures, because it will make the editor unresponsive when creating the tooltip. You can use <a class="reference internal" href="#class-editorresourcetooltipplugin-method-request-thumbnail"><span class="std std-ref">request_thumbnail</span></a> if you want to display a preview in your tooltip.</p>
+<p><strong>Note:</strong> If you decide to discard the <code class="docutils literal notranslate"><span class="pre">base</span></code>, make sure to call <a class="reference internal" href="class_node.html#class-node-method-queue-free"><span class="std std-ref">Node.queue_free</span></a>, because it's not freed automatically.</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span><span class="w"> </span><span class="n">_make_tooltip_for_path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="n">base</span><span class="p">):</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">t_rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TextureRect</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="w">    </span><span class="n">request_thumbnail</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">t_rect</span><span class="p">)</span>
+<span class="w">    </span><span class="n">base</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">t_rect</span><span class="p">)</span><span class="w"> </span><span class="c1"># The TextureRect will appear at the bottom of the tooltip.</span>
+<span class="w">    </span><span class="k k-ControlFlow">return</span><span class="w"> </span><span class="n">base</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-editorresourcetooltipplugin-method-request-thumbnail"><abbr title="No return value.">void</abbr> <strong>request_thumbnail</strong>(path: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, control: <a class="reference internal" href="class_texturerect.html#class-texturerect"><span class="std std-ref">TextureRect</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Requests a thumbnail for the given <a class="reference internal" href="class_texturerect.html#class-texturerect"><span class="std std-ref">TextureRect</span></a>. The thumbnail is created asynchronously by <a class="reference internal" href="class_editorresourcepreview.html#class-editorresourcepreview"><span class="std std-ref">EditorResourcePreview</span></a> and automatically set when available.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_editorresourcepreviewgenerator.html" rel="prev" title="EditorResourcePreviewGenerator"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_editorsceneformatimporter.html" rel="next" title="EditorSceneFormatImporter">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

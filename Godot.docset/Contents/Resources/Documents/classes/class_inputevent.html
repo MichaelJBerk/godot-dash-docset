@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="InputEvent" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_inputevent.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: InputEventAction, InputEventFromWindow, InputEventJoypadButton, InputEventJoypadMotion, InputEventMIDI, InputEventShortcut Abstract base class f..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Inherited By: InputEventAction, InputEventFromWindow, InputEventJoypadButton, InputEventJoypadMotion, InputEventMIDI, InputEventShortcut Abstract base class f..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) InputEvent — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputevent.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_inputevent.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_inputevent.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_inputevent.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_inputevent.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_inputevent.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_inputevent.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_inputevent.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_inputevent.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_inputevent.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_inputevent.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_inputevent.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_inputevent.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_inputevent.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputevent.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_inputevent.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_inputeventaction.html" rel="next" title="InputEventAction"/>
+<link href="class_importermesh.html" rel="prev" title="ImporterMesh"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_inputevent" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">InputEvent</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="inputevent">
+<span id="class-inputevent"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/InputEvent¶"></a>InputEvent<a class="headerlink" href="#inputevent" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_inputeventaction.html#class-inputeventaction"><span class="std std-ref">InputEventAction</span></a>, <a class="reference internal" href="class_inputeventfromwindow.html#class-inputeventfromwindow"><span class="std std-ref">InputEventFromWindow</span></a>, <a class="reference internal" href="class_inputeventjoypadbutton.html#class-inputeventjoypadbutton"><span class="std std-ref">InputEventJoypadButton</span></a>, <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a>, <a class="reference internal" href="class_inputeventmidi.html#class-inputeventmidi"><span class="std std-ref">InputEventMIDI</span></a>, <a class="reference internal" href="class_inputeventshortcut.html#class-inputeventshortcut"><span class="std std-ref">InputEventShortcut</span></a></p>
+<p>Abstract base class for input events.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Abstract base class of all types of input events. See <a class="reference internal" href="class_node.html#class-node-private-method-input"><span class="std std-ref">Node._input</span></a>.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/inputs/inputevent.html"><span class="doc">Using InputEvent</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/2d/2d_transforms.html"><span class="doc">Viewport and canvas transforms</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/515">2D Dodge The Creeps Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/676">3D Voxel Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-property-device"><span class="std std-ref">device</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-accumulate"><span class="std std-ref">accumulate</span></a>(with_event: <a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-as-text"><span class="std std-ref">as_text</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-get-action-strength"><span class="std std-ref">get_action_strength</span></a>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-action"><span class="std std-ref">is_action</span></a>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-action-pressed"><span class="std std-ref">is_action_pressed</span></a>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, allow_echo: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-action-released"><span class="std std-ref">is_action_released</span></a>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-action-type"><span class="std std-ref">is_action_type</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-canceled"><span class="std std-ref">is_canceled</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-echo"><span class="std std-ref">is_echo</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-match"><span class="std std-ref">is_match</span></a>(event: <a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-pressed"><span class="std std-ref">is_pressed</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-is-released"><span class="std std-ref">is_released</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a></p></td>
+<td><p><a class="reference internal" href="#class-inputevent-method-xformed-by"><span class="std std-ref">xformed_by</span></a>(xform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>, local_ofs: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> = Vector2(0, 0)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-inputevent-property-device"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>device</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_device" name="//apple_ref/cpp/Property/set_device"></a>set_device</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_device" name="//apple_ref/cpp/Property/get_device"></a>get_device</strong>()</p></li>
+</ul>
+<p>The event's device ID.</p>
+<p><strong>Note:</strong> This device ID will always be <code class="docutils literal notranslate"><span class="pre">-1</span></code> for emulated mouse input from a touchscreen. This can be used to distinguish emulated mouse input from physical mouse input.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-inputevent-method-accumulate"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>accumulate</strong>(with_event: <a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a>)</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given input event and this input event can be added together (only for events of type <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a>).</p>
+<p>The given input event's position, global position and speed will be copied. The resulting <code class="docutils literal notranslate"><span class="pre">relative</span></code> is a sum of both events. Both events' modifiers have to be identical.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-as-text"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>as_text</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> representation of the event.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-get-action-strength"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>get_action_strength</strong>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a value between 0.0 and 1.0 depending on the given actions' state. Useful for getting the value of events of type <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exact_match</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it ignores additional input modifiers for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> and <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> events, and the direction for <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> events.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-action"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_action</strong>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event matches a pre-defined action of any type.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exact_match</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it ignores additional input modifiers for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> and <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> events, and the direction for <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> events.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-action-pressed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_action_pressed</strong>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, allow_echo: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given action is being pressed (and is not an echo event for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> events, unless <code class="docutils literal notranslate"><span class="pre">allow_echo</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>). Not relevant for events of type <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a> or <a class="reference internal" href="class_inputeventscreendrag.html#class-inputeventscreendrag"><span class="std std-ref">InputEventScreenDrag</span></a>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exact_match</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it ignores additional input modifiers for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> and <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> events, and the direction for <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> events.</p>
+<p><strong>Note:</strong> Due to keyboard ghosting, <a class="reference internal" href="#class-inputevent-method-is-action-pressed"><span class="std std-ref">is_action_pressed</span></a> may return <code class="docutils literal notranslate"><span class="pre">false</span></code> even if one of the action's keys is pressed. See <a class="reference external" href="../tutorials/inputs/input_examples.html#keyboard-events">Input examples</a> in the documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-action-released"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_action_released</strong>(action: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the given action is released (i.e. not pressed). Not relevant for events of type <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a> or <a class="reference internal" href="class_inputeventscreendrag.html#class-inputeventscreendrag"><span class="std std-ref">InputEventScreenDrag</span></a>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exact_match</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it ignores additional input modifiers for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> and <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> events, and the direction for <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> events.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-action-type"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_action_type</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event's type is one that can be assigned to an input action.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-canceled"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_canceled</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event has been canceled.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-echo"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_echo</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event is an echo event (only for events of type <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a>). Any other event type returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-match"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_match</strong>(event: <a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a>, exact_match: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = true) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the specified <code class="docutils literal notranslate"><span class="pre">event</span></code> matches this event. Only valid for action events i.e key (<a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a>), button (<a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> or <a class="reference internal" href="class_inputeventjoypadbutton.html#class-inputeventjoypadbutton"><span class="std std-ref">InputEventJoypadButton</span></a>), axis <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> or action (<a class="reference internal" href="class_inputeventaction.html#class-inputeventaction"><span class="std std-ref">InputEventAction</span></a>) events.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">exact_match</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it ignores additional input modifiers for <a class="reference internal" href="class_inputeventkey.html#class-inputeventkey"><span class="std std-ref">InputEventKey</span></a> and <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a> events, and the direction for <a class="reference internal" href="class_inputeventjoypadmotion.html#class-inputeventjoypadmotion"><span class="std std-ref">InputEventJoypadMotion</span></a> events.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-pressed"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_pressed</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event is pressed. Not relevant for events of type <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a> or <a class="reference internal" href="class_inputeventscreendrag.html#class-inputeventscreendrag"><span class="std std-ref">InputEventScreenDrag</span></a>.</p>
+<p><strong>Note:</strong> Due to keyboard ghosting, <a class="reference internal" href="#class-inputevent-method-is-pressed"><span class="std std-ref">is_pressed</span></a> may return <code class="docutils literal notranslate"><span class="pre">false</span></code> even if one of the action's keys is pressed. See <a class="reference external" href="../tutorials/inputs/input_examples.html#keyboard-events">Input examples</a> in the documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-is-released"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_released</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this input event is released. Not relevant for events of type <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a> or <a class="reference internal" href="class_inputeventscreendrag.html#class-inputeventscreendrag"><span class="std std-ref">InputEventScreenDrag</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-inputevent-method-xformed-by"><a class="reference internal" href="#class-inputevent"><span class="std std-ref">InputEvent</span></a> <strong>xformed_by</strong>(xform: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>, local_ofs: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> = Vector2(0, 0)) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns a copy of the given input event which has been offset by <code class="docutils literal notranslate"><span class="pre">local_ofs</span></code> and transformed by <code class="docutils literal notranslate"><span class="pre">xform</span></code>. Relevant for events of type <a class="reference internal" href="class_inputeventmousebutton.html#class-inputeventmousebutton"><span class="std std-ref">InputEventMouseButton</span></a>, <a class="reference internal" href="class_inputeventmousemotion.html#class-inputeventmousemotion"><span class="std std-ref">InputEventMouseMotion</span></a>, <a class="reference internal" href="class_inputeventscreentouch.html#class-inputeventscreentouch"><span class="std std-ref">InputEventScreenTouch</span></a>, <a class="reference internal" href="class_inputeventscreendrag.html#class-inputeventscreendrag"><span class="std std-ref">InputEventScreenDrag</span></a>, <a class="reference internal" href="class_inputeventmagnifygesture.html#class-inputeventmagnifygesture"><span class="std std-ref">InputEventMagnifyGesture</span></a> and <a class="reference internal" href="class_inputeventpangesture.html#class-inputeventpangesture"><span class="std std-ref">InputEventPanGesture</span></a>.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_importermesh.html" rel="prev" title="ImporterMesh"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_inputeventaction.html" rel="next" title="InputEventAction">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

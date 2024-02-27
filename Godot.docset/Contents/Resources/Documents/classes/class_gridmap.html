@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="tilemap" name="keywords"/>
+<meta content="GridMap" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gridmap.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Node3D&lt; Node&lt; Object Node for 3D tile-based maps. Description: GridMap lets you place meshes on a grid interactively. It works both from the editor and from scripts, which can help you cr..." property="og:description"/>
+<meta content="Inherits: Node3D&lt; Node&lt; Object Node for 3D tile-based maps. Description: GridMap lets you place meshes on a grid interactively. It works both from the editor and from scripts, which can help you cr..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GridMap — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gridmap.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gridmap.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gridmap.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gridmap.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gridmap.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gridmap.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gridmap.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gridmap.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gridmap.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gridmap.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gridmap.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gridmap.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gridmap.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gridmap.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gridmap.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gridmap.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_groovejoint2d.html" rel="next" title="GrooveJoint2D"/>
+<link href="class_gridcontainer.html" rel="prev" title="GridContainer"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gridmap" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GridMap</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gridmap">
+<span id="class-gridmap"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GridMap¶"></a>GridMap<a class="headerlink" href="#gridmap" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_node3d.html#class-node3d"><span class="std std-ref">Node3D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Node for 3D tile-based maps.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>GridMap lets you place meshes on a grid interactively. It works both from the editor and from scripts, which can help you create in-game level editors.</p>
+<p>GridMaps use a <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a> which contains a list of tiles. Each tile is a mesh with materials plus optional collision and navigation shapes.</p>
+<p>A GridMap contains a collection of cells. Each grid cell refers to a tile in the <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>. All cells in the map have the same dimensions.</p>
+<p>Internally, a GridMap is split into a sparse collection of octants for efficient rendering and physics processing. Every octant has the same dimensions and can contain several cells.</p>
+<p><strong>Note:</strong> GridMap doesn't extend <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d"><span class="std std-ref">VisualInstance3D</span></a> and therefore can't be hidden or cull masked based on <a class="reference internal" href="class_visualinstance3d.html#class-visualinstance3d-property-layers"><span class="std std-ref">VisualInstance3D.layers</span></a>. If you make a light not affect the first layer, the whole GridMap won't be lit by the light in question.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/3d/using_gridmaps.html"><span class="doc">Using gridmaps</span></a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/125">3D Platformer Demo</a></p></li>
+<li><p><a class="reference external" href="https://godotengine.org/asset-library/asset/126">3D Kinematic Character Demo</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-bake-navigation"><span class="std std-ref">bake_navigation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-center-x"><span class="std std-ref">cell_center_x</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-center-y"><span class="std std-ref">cell_center_y</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-center-z"><span class="std std-ref">cell_center_z</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-octant-size"><span class="std std-ref">cell_octant_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-scale"><span class="std std-ref">cell_scale</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-cell-size"><span class="std std-ref">cell_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-collision-layer"><span class="std std-ref">collision_layer</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-collision-mask"><span class="std std-ref">collision_mask</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-collision-priority"><span class="std std-ref">collision_priority</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-mesh-library"><span class="std std-ref">mesh_library</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_physicsmaterial.html#class-physicsmaterial"><span class="std std-ref">PhysicsMaterial</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-property-physics-material"><span class="std std-ref">physics_material</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-clear"><span class="std std-ref">clear</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-clear-baked-meshes"><span class="std std-ref">clear_baked_meshes</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-bake-mesh-instance"><span class="std std-ref">get_bake_mesh_instance</span></a>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-bake-meshes"><span class="std std-ref">get_bake_meshes</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-basis-with-orthogonal-index"><span class="std std-ref">get_basis_with_orthogonal_index</span></a>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-cell-item"><span class="std std-ref">get_cell_item</span></a>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-cell-item-basis"><span class="std std-ref">get_cell_item_basis</span></a>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-cell-item-orientation"><span class="std std-ref">get_cell_item_orientation</span></a>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-collision-layer-value"><span class="std std-ref">get_collision_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-collision-mask-value"><span class="std std-ref">get_collision_mask_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-meshes"><span class="std std-ref">get_meshes</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-navigation-map"><span class="std std-ref">get_navigation_map</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-orthogonal-index-from-basis"><span class="std std-ref">get_orthogonal_index_from_basis</span></a>(basis: <a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-used-cells"><span class="std std-ref">get_used_cells</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-get-used-cells-by-item"><span class="std std-ref">get_used_cells_by_item</span></a>(item: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-local-to-map"><span class="std std-ref">local_to_map</span></a>(local_position: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-make-baked-meshes"><span class="std std-ref">make_baked_meshes</span></a>(gen_lightmap_uv: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, lightmap_uv_texel_size: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.1)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-map-to-local"><span class="std std-ref">map_to_local</span></a>(map_position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-resource-changed"><span class="std std-ref">resource_changed</span></a>(resource: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-set-cell-item"><span class="std std-ref">set_cell_item</span></a>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>, item: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, orientation: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-set-collision-layer-value"><span class="std std-ref">set_collision_layer_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-set-collision-mask-value"><span class="std std-ref">set_collision_mask_value</span></a>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-gridmap-method-set-navigation-map"><span class="std std-ref">set_navigation_map</span></a>(navigation_map: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal" id="class-gridmap-signal-cell-size-changed"><strong>cell_size_changed</strong>(cell_size: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p>
+<p>Emitted when <a class="reference internal" href="#class-gridmap-property-cell-size"><span class="std std-ref">cell_size</span></a> changes.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-signal" id="class-gridmap-signal-changed"><strong>changed</strong>()</p>
+<p>Emitted when the <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a> of this GridMap changes.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-gridmap-constant-invalid-cell-item"><strong>INVALID_CELL_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>Invalid cell item that can be used in <a class="reference internal" href="#class-gridmap-method-set-cell-item"><span class="std std-ref">set_cell_item</span></a> to clear cells (or represent an empty cell in <a class="reference internal" href="#class-gridmap-method-get-cell-item"><span class="std std-ref">get_cell_item</span></a>).</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gridmap-property-bake-navigation"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>bake_navigation</strong> = <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_bake_navigation" name="//apple_ref/cpp/Property/set_bake_navigation"></a>set_bake_navigation</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-is_baking_navigation" name="//apple_ref/cpp/Property/is_baking_navigation"></a>is_baking_navigation</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, this GridMap creates a navigation region for each cell that uses a <a class="reference internal" href="#class-gridmap-property-mesh-library"><span class="std std-ref">mesh_library</span></a> item with a navigation mesh. The created navigation region will use the navigation layers bitmask assigned to the <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>'s item.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-center-x"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>cell_center_x</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_center_x" name="//apple_ref/cpp/Property/set_center_x"></a>set_center_x</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_center_x" name="//apple_ref/cpp/Property/get_center_x"></a>get_center_x</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, grid items are centered on the X axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-center-y"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>cell_center_y</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_center_y" name="//apple_ref/cpp/Property/set_center_y"></a>set_center_y</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_center_y" name="//apple_ref/cpp/Property/get_center_y"></a>get_center_y</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, grid items are centered on the Y axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-center-z"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>cell_center_z</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_center_z" name="//apple_ref/cpp/Property/set_center_z"></a>set_center_z</strong>(value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong><a class="dashAnchor" id="properties-get_center_z" name="//apple_ref/cpp/Property/get_center_z"></a>get_center_z</strong>()</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, grid items are centered on the Z axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-octant-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>cell_octant_size</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_octant_size" name="//apple_ref/cpp/Property/set_octant_size"></a>set_octant_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_octant_size" name="//apple_ref/cpp/Property/get_octant_size"></a>get_octant_size</strong>()</p></li>
+</ul>
+<p>The size of each octant measured in number of cells. This applies to all three axis.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-scale"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>cell_scale</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cell_scale" name="//apple_ref/cpp/Property/set_cell_scale"></a>set_cell_scale</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_cell_scale" name="//apple_ref/cpp/Property/get_cell_scale"></a>get_cell_scale</strong>()</p></li>
+</ul>
+<p>The scale of the cell items.</p>
+<p>This does not affect the size of the grid cells themselves, only the items in them. This can be used to make cell items overlap their neighbors.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-cell-size"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>cell_size</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_cell_size" name="//apple_ref/cpp/Property/set_cell_size"></a>set_cell_size</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_cell_size" name="//apple_ref/cpp/Property/get_cell_size"></a>get_cell_size</strong>()</p></li>
+</ul>
+<p>The dimensions of the grid's cells.</p>
+<p>This does not affect the size of the meshes. See <a class="reference internal" href="#class-gridmap-property-cell-scale"><span class="std std-ref">cell_scale</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-collision-layer"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>collision_layer</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_layer" name="//apple_ref/cpp/Property/set_collision_layer"></a>set_collision_layer</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_collision_layer" name="//apple_ref/cpp/Property/get_collision_layer"></a>get_collision_layer</strong>()</p></li>
+</ul>
+<p>The physics layers this GridMap is in.</p>
+<p>GridMaps act as static bodies, meaning they aren't affected by gravity or other forces. They only affect other physics bodies that collide with them.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-collision-mask"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>collision_mask</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_mask" name="//apple_ref/cpp/Property/set_collision_mask"></a>set_collision_mask</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_collision_mask" name="//apple_ref/cpp/Property/get_collision_mask"></a>get_collision_mask</strong>()</p></li>
+</ul>
+<p>The physics layers this GridMap detects collisions in. See <a class="reference external" href="../tutorials/physics/physics_introduction.html#collision-layers-and-masks">Collision layers and masks</a> in the documentation for more information.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-collision-priority"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>collision_priority</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_collision_priority" name="//apple_ref/cpp/Property/set_collision_priority"></a>set_collision_priority</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_collision_priority" name="//apple_ref/cpp/Property/get_collision_priority"></a>get_collision_priority</strong>()</p></li>
+</ul>
+<p>The priority used to solve colliding when occurring penetration. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-mesh-library"><a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a> <strong>mesh_library</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mesh_library" name="//apple_ref/cpp/Property/set_mesh_library"></a>set_mesh_library</strong>(value: <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a> <strong><a class="dashAnchor" id="properties-get_mesh_library" name="//apple_ref/cpp/Property/get_mesh_library"></a>get_mesh_library</strong>()</p></li>
+</ul>
+<p>The assigned <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gridmap-property-physics-material"><a class="reference internal" href="class_physicsmaterial.html#class-physicsmaterial"><span class="std std-ref">PhysicsMaterial</span></a> <strong>physics_material</strong></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_physics_material" name="//apple_ref/cpp/Property/set_physics_material"></a>set_physics_material</strong>(value: <a class="reference internal" href="class_physicsmaterial.html#class-physicsmaterial"><span class="std std-ref">PhysicsMaterial</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_physicsmaterial.html#class-physicsmaterial"><span class="std std-ref">PhysicsMaterial</span></a> <strong><a class="dashAnchor" id="properties-get_physics_material" name="//apple_ref/cpp/Property/get_physics_material"></a>get_physics_material</strong>()</p></li>
+</ul>
+<p>Overrides the default friction and bounce physics properties for the whole <strong>GridMap</strong>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gridmap-method-clear"><abbr title="No return value.">void</abbr> <strong>clear</strong>()</p>
+<p>Clear all cells.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-clear-baked-meshes"><abbr title="No return value.">void</abbr> <strong>clear_baked_meshes</strong>()</p>
+<p>Clears all baked meshes. See <a class="reference internal" href="#class-gridmap-method-make-baked-meshes"><span class="std std-ref">make_baked_meshes</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-bake-mesh-instance"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>get_bake_mesh_instance</strong>(idx: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Returns <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> of a baked mesh with the given <code class="docutils literal notranslate"><span class="pre">idx</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-bake-meshes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_bake_meshes</strong>()</p>
+<p>Returns an array of <a class="reference internal" href="class_arraymesh.html#class-arraymesh"><span class="std std-ref">ArrayMesh</span></a>es and <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> references of all bake meshes that exist within the current GridMap.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-basis-with-orthogonal-index"><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a> <strong>get_basis_with_orthogonal_index</strong>(index: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns one of 24 possible rotations that lie along the vectors (x,y,z) with each component being either -1, 0, or 1. For further details, refer to the Godot source code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-cell-item"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_cell_item</strong>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>The <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a> item index located at the given grid coordinates. If the cell is empty, <a class="reference internal" href="#class-gridmap-constant-invalid-cell-item"><span class="std std-ref">INVALID_CELL_ITEM</span></a> will be returned.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-cell-item-basis"><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a> <strong>get_cell_item_basis</strong>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the basis that gives the specified cell its orientation.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-cell-item-orientation"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_cell_item_orientation</strong>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>The orientation of the cell at the given grid coordinates. <code class="docutils literal notranslate"><span class="pre">-1</span></code> is returned if the cell is empty.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-collision-layer-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_collision_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether or not the specified layer of the <a class="reference internal" href="#class-gridmap-property-collision-layer"><span class="std std-ref">collision_layer</span></a> is enabled, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-collision-mask-value"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>get_collision_mask_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns whether or not the specified layer of the <a class="reference internal" href="#class-gridmap-property-collision-mask"><span class="std std-ref">collision_mask</span></a> is enabled, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-meshes"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a> <strong>get_meshes</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an array of <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a> and <a class="reference internal" href="class_mesh.html#class-mesh"><span class="std std-ref">Mesh</span></a> references corresponding to the non-empty cells in the grid. The transforms are specified in local space.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-navigation-map"><a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> <strong>get_navigation_map</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> of the navigation map this GridMap node uses for its cell baked navigation meshes.</p>
+<p>This function returns always the map set on the GridMap node and not the map on the NavigationServer. If the map is changed directly with the NavigationServer API the GridMap node will not be aware of the map change.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-orthogonal-index-from-basis"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_orthogonal_index_from_basis</strong>(basis: <a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>This function considers a discretization of rotations into 24 points on unit sphere, lying along the vectors (x,y,z) with each component being either -1, 0, or 1, and returns the index (in the range from 0 to 23) of the point best representing the orientation of the object. For further details, refer to the Godot source code.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-used-cells"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>] <strong>get_used_cells</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an array of <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> with the non-empty cell coordinates in the grid map.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-get-used-cells-by-item"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>] <strong>get_used_cells_by_item</strong>(item: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns an array of all cells with the given item index specified in <code class="docutils literal notranslate"><span class="pre">item</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-local-to-map"><a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a> <strong>local_to_map</strong>(local_position: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the map coordinates of the cell containing the given <code class="docutils literal notranslate"><span class="pre">local_position</span></code>. If <code class="docutils literal notranslate"><span class="pre">local_position</span></code> is in global coordinates, consider using <a class="reference internal" href="class_node3d.html#class-node3d-method-to-local"><span class="std std-ref">Node3D.to_local</span></a> before passing it to this method. See also <a class="reference internal" href="#class-gridmap-method-map-to-local"><span class="std std-ref">map_to_local</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-make-baked-meshes"><abbr title="No return value.">void</abbr> <strong>make_baked_meshes</strong>(gen_lightmap_uv: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, lightmap_uv_texel_size: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.1)</p>
+<p>Bakes lightmap data for all meshes in the assigned <a class="reference internal" href="class_meshlibrary.html#class-meshlibrary"><span class="std std-ref">MeshLibrary</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-map-to-local"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>map_to_local</strong>(map_position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the position of a grid cell in the GridMap's local coordinate space. To convert the returned value into global coordinates, use <a class="reference internal" href="class_node3d.html#class-node3d-method-to-global"><span class="std std-ref">Node3D.to_global</span></a>. See also <a class="reference internal" href="#class-gridmap-method-map-to-local"><span class="std std-ref">map_to_local</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-resource-changed"><abbr title="No return value.">void</abbr> <strong>resource_changed</strong>(resource: <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a>)</p>
+<p><strong>Deprecated:</strong> Use <a class="reference internal" href="class_resource.html#class-resource-signal-changed"><span class="std std-ref">Resource.changed</span></a> instead.</p>
+<p>This method does nothing.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-set-cell-item"><abbr title="No return value.">void</abbr> <strong>set_cell_item</strong>(position: <a class="reference internal" href="class_vector3i.html#class-vector3i"><span class="std std-ref">Vector3i</span></a>, item: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, orientation: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> = 0)</p>
+<p>Sets the mesh index for the cell referenced by its grid coordinates.</p>
+<p>A negative item index such as <a class="reference internal" href="#class-gridmap-constant-invalid-cell-item"><span class="std std-ref">INVALID_CELL_ITEM</span></a> will clear the cell.</p>
+<p>Optionally, the item's orientation can be passed. For valid orientation values, see <a class="reference internal" href="#class-gridmap-method-get-orthogonal-index-from-basis"><span class="std std-ref">get_orthogonal_index_from_basis</span></a>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-set-collision-layer-value"><abbr title="No return value.">void</abbr> <strong>set_collision_layer_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Based on <code class="docutils literal notranslate"><span class="pre">value</span></code>, enables or disables the specified layer in the <a class="reference internal" href="#class-gridmap-property-collision-layer"><span class="std std-ref">collision_layer</span></a>, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-set-collision-mask-value"><abbr title="No return value.">void</abbr> <strong>set_collision_mask_value</strong>(layer_number: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, value: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>)</p>
+<p>Based on <code class="docutils literal notranslate"><span class="pre">value</span></code>, enables or disables the specified layer in the <a class="reference internal" href="#class-gridmap-property-collision-mask"><span class="std std-ref">collision_mask</span></a>, given a <code class="docutils literal notranslate"><span class="pre">layer_number</span></code> between 1 and 32.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gridmap-method-set-navigation-map"><abbr title="No return value.">void</abbr> <strong>set_navigation_map</strong>(navigation_map: <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a>)</p>
+<p>Sets the <a class="reference internal" href="class_rid.html#class-rid"><span class="std std-ref">RID</span></a> of the navigation map this GridMap node should use for its cell baked navigation meshes.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gridcontainer.html" rel="prev" title="GridContainer"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_groovejoint2d.html" rel="next" title="GrooveJoint2D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

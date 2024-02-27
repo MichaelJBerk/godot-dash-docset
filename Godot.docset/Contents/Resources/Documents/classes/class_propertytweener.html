@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="PropertyTweener" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_propertytweener.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Tweener&lt; RefCounted&lt; Object Interpolates an Object's property over time. Description: PropertyTweener is used to interpolate a property in an object. See Tween.tween_property for more usa..." property="og:description"/>
+<meta content="Inherits: Tweener&lt; RefCounted&lt; Object Interpolates an Object's property over time. Description: PropertyTweener is used to interpolate a property in an object. See Tween.tween_property for more usa..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) PropertyTweener — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_propertytweener.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_propertytweener.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_propertytweener.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_propertytweener.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_propertytweener.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_propertytweener.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_propertytweener.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_propertytweener.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_propertytweener.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_propertytweener.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_propertytweener.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_propertytweener.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_propertytweener.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_propertytweener.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_propertytweener.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_propertytweener.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_randomnumbergenerator.html" rel="next" title="RandomNumberGenerator"/>
+<link href="class_projectsettings.html" rel="prev" title="ProjectSettings"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_propertytweener" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">PropertyTweener</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="propertytweener">
+<span id="class-propertytweener"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/PropertyTweener¶"></a>PropertyTweener<a class="headerlink" href="#propertytweener" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_tweener.html#class-tweener"><span class="std std-ref">Tweener</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Interpolates an <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a>'s property over time.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>PropertyTweener</strong> is used to interpolate a property in an object. See <a class="reference internal" href="class_tween.html#class-tween-method-tween-property"><span class="std std-ref">Tween.tween_property</span></a> for more usage information.</p>
+<p><strong>Note:</strong> <a class="reference internal" href="class_tween.html#class-tween-method-tween-property"><span class="std std-ref">Tween.tween_property</span></a> is the only correct way to create <strong>PropertyTweener</strong>. Any <strong>PropertyTweener</strong> created manually will not function correctly.</p>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-as-relative"><span class="std std-ref">as_relative</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-from"><span class="std std-ref">from</span></a>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-from-current"><span class="std std-ref">from_current</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-set-custom-interpolator"><span class="std std-ref">set_custom_interpolator</span></a>(interpolator_method: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-set-delay"><span class="std std-ref">set_delay</span></a>(delay: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-set-ease"><span class="std std-ref">set_ease</span></a>(ease: <a class="reference internal" href="class_tween.html#enum-tween-easetype"><span class="std std-ref">EaseType</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a></p></td>
+<td><p><a class="reference internal" href="#class-propertytweener-method-set-trans"><span class="std std-ref">set_trans</span></a>(trans: <a class="reference internal" href="class_tween.html#enum-tween-transitiontype"><span class="std std-ref">TransitionType</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-propertytweener-method-as-relative"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>as_relative</strong>()</p>
+<p>When called, the final value will be used as a relative value instead.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">tween</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_tree</span><span class="p">()</span><span class="o">.</span><span class="n">create_tween</span><span class="p">()</span>
+<span class="n">tween</span><span class="o">.</span><span class="n">tween_property</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"position"</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="o">.</span><span class="n">RIGHT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">as_relative</span><span class="p">()</span><span class="w"> </span><span class="c1">#the node will move by 100 pixels to the right</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-from"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>from</strong>(value: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>)</p>
+<p>Sets a custom initial value to the <strong>PropertyTweener</strong>.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">tween</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_tree</span><span class="p">()</span><span class="o">.</span><span class="n">create_tween</span><span class="p">()</span>
+<span class="n">tween</span><span class="o">.</span><span class="n">tween_property</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"position"</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">from</span><span class="p">(</span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">))</span><span class="w"> </span><span class="c1">#this will move the node from position (100, 100) to (200, 100)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-from-current"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>from_current</strong>()</p>
+<p>Makes the <strong>PropertyTweener</strong> use the current property value (i.e. at the time of creating this <strong>PropertyTweener</strong>) as a starting point. This is equivalent of using <a class="reference internal" href="#class-propertytweener-method-from"><span class="std std-ref">from</span></a> with the current value. These two calls will do the same:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="n">tween</span><span class="o">.</span><span class="n">tween_property</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"position"</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">from</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+<span class="n">tween</span><span class="o">.</span><span class="n">tween_property</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"position"</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">Vector2</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">from_current</span><span class="p">()</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-set-custom-interpolator"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>set_custom_interpolator</strong>(interpolator_method: <a class="reference internal" href="class_callable.html#class-callable"><span class="std std-ref">Callable</span></a>)</p>
+<p>Allows interpolating the value with a custom easing function. The provided <code class="docutils literal notranslate"><span class="pre">interpolator_method</span></code> will be called with a value ranging from <code class="docutils literal notranslate"><span class="pre">0.0</span></code> to <code class="docutils literal notranslate"><span class="pre">1.0</span></code> and is expected to return a value within the same range (values outside the range can be used for overshoot). The return value of the method is then used for interpolation between initial and final value. Note that the parameter passed to the method is still subject to the tweener's own easing.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="nd">@export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">curve</span><span class="p">:</span><span class="w"> </span><span class="n">Curve</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">_ready</span><span class="p">():</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">tween</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">create_tween</span><span class="p">()</span>
+<span class="w">    </span><span class="c1"># Interpolate the value using a custom curve.</span>
+<span class="w">    </span><span class="n">tween</span><span class="o">.</span><span class="n">tween_property</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="s2">"position:x"</span><span class="p">,</span><span class="w"> </span><span class="mi">300</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">as_relative</span><span class="p">()</span><span class="o">.</span><span class="n">set_custom_interpolator</span><span class="p">(</span><span class="n">tween_curve</span><span class="p">)</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">tween_curve</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+<span class="w">    </span><span class="k k-ControlFlow">return</span><span class="w"> </span><span class="n">curve</span><span class="o">.</span><span class="n">sample_baked</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-set-delay"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>set_delay</strong>(delay: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p>
+<p>Sets the time in seconds after which the <strong>PropertyTweener</strong> will start interpolating. By default there's no delay.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-set-ease"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>set_ease</strong>(ease: <a class="reference internal" href="class_tween.html#enum-tween-easetype"><span class="std std-ref">EaseType</span></a>)</p>
+<p>Sets the type of used easing from <a class="reference internal" href="class_tween.html#enum-tween-easetype"><span class="std std-ref">EaseType</span></a>. If not set, the default easing is used from the <a class="reference internal" href="class_tween.html#class-tween"><span class="std std-ref">Tween</span></a> that contains this Tweener.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-propertytweener-method-set-trans"><a class="reference internal" href="#class-propertytweener"><span class="std std-ref">PropertyTweener</span></a> <strong>set_trans</strong>(trans: <a class="reference internal" href="class_tween.html#enum-tween-transitiontype"><span class="std std-ref">TransitionType</span></a>)</p>
+<p>Sets the type of used transition from <a class="reference internal" href="class_tween.html#enum-tween-transitiontype"><span class="std std-ref">TransitionType</span></a>. If not set, the default transition is used from the <a class="reference internal" href="class_tween.html#class-tween"><span class="std std-ref">Tween</span></a> that contains this Tweener.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_projectsettings.html" rel="prev" title="ProjectSettings"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_randomnumbergenerator.html" rel="next" title="RandomNumberGenerator">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

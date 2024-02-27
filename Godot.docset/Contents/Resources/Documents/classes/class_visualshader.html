@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="VisualShader" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_visualshader.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Shader&lt; Resource&lt; RefCounted&lt; Object A custom shader program with a visual editor. Description: This class provides a graph-like visual editor for creating a Shader. Although VisualShader..." property="og:description"/>
+<meta content="Inherits: Shader&lt; Resource&lt; RefCounted&lt; Object A custom shader program with a visual editor. Description: This class provides a graph-like visual editor for creating a Shader. Although VisualShader..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) VisualShader — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshader.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_visualshader.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_visualshader.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_visualshader.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_visualshader.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_visualshader.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_visualshader.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_visualshader.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_visualshader.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_visualshader.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_visualshader.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_visualshader.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_visualshader.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_visualshader.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshader.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_visualshader.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_visualshadernode.html" rel="next" title="VisualShaderNode"/>
+<link href="class_viewporttexture.html" rel="prev" title="ViewportTexture"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_visualshader" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">VisualShader</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="visualshader">
+<span id="class-visualshader"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/VisualShader¶"></a>VisualShader<a class="headerlink" href="#visualshader" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_shader.html#class-shader"><span class="std std-ref">Shader</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A custom shader program with a visual editor.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This class provides a graph-like visual editor for creating a <a class="reference internal" href="class_shader.html#class-shader"><span class="std std-ref">Shader</span></a>. Although <strong>VisualShader</strong>s do not require coding, they share the same logic with script shaders. They use <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>s that can be connected to each other to control the flow of the shader. The visual shader graph is converted to a script shader behind the scenes.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/shaders/visual_shaders.html"><span class="doc">Using VisualShaders</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-property-graph-offset"><span class="std std-ref">graph_offset</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-add-node"><span class="std std-ref">add_node</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, node: <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-add-varying"><span class="std std-ref">add_varying</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, mode: <a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a>, type: <a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-can-connect-nodes"><span class="std std-ref">can_connect_nodes</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-connect-nodes"><span class="std std-ref">connect_nodes</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-connect-nodes-forced"><span class="std std-ref">connect_nodes_forced</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-disconnect-nodes"><span class="std std-ref">disconnect_nodes</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-get-node"><span class="std std-ref">get_node</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-get-node-connections"><span class="std std-ref">get_node_connections</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-get-node-list"><span class="std std-ref">get_node_list</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-get-node-position"><span class="std std-ref">get_node_position</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-get-valid-node-id"><span class="std std-ref">get_valid_node_id</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-has-varying"><span class="std std-ref">has_varying</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-is-node-connection"><span class="std std-ref">is_node_connection</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-remove-node"><span class="std std-ref">remove_node</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-remove-varying"><span class="std std-ref">remove_varying</span></a>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-replace-node"><span class="std std-ref">replace_node</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, new_class: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-set-mode"><span class="std std-ref">set_mode</span></a>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-visualshader-method-set-node-position"><span class="std std-ref">set_node_position</span></a>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Permalink to this headline">¶</a></h2>
+<p class="classref-enumeration" id="enum-visualshader-type">enum <strong><a class="dashAnchor" id="enumerations-Type" name="//apple_ref/cpp/Enum/Type"></a>Type</strong>:</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-vertex"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_VERTEX" name="//apple_ref/cpp/Enum/TYPE_VERTEX"></a>TYPE_VERTEX</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>A vertex shader, operating on vertices.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-fragment"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_FRAGMENT" name="//apple_ref/cpp/Enum/TYPE_FRAGMENT"></a>TYPE_FRAGMENT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>A fragment shader, operating on fragments (pixels).</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-light"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_LIGHT" name="//apple_ref/cpp/Enum/TYPE_LIGHT"></a>TYPE_LIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>A shader for light calculations.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-start"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_START" name="//apple_ref/cpp/Enum/TYPE_START"></a>TYPE_START</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>A function for the "start" stage of particle shader.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-process"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_PROCESS" name="//apple_ref/cpp/Enum/TYPE_PROCESS"></a>TYPE_PROCESS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>A function for the "process" stage of particle shader.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-collide"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_COLLIDE" name="//apple_ref/cpp/Enum/TYPE_COLLIDE"></a>TYPE_COLLIDE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>A function for the "collide" stage (particle collision handler) of particle shader.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-start-custom"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_START_CUSTOM" name="//apple_ref/cpp/Enum/TYPE_START_CUSTOM"></a>TYPE_START_CUSTOM</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>A function for the "start" stage of particle shader, with customized output.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-process-custom"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_PROCESS_CUSTOM" name="//apple_ref/cpp/Enum/TYPE_PROCESS_CUSTOM"></a>TYPE_PROCESS_CUSTOM</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>A function for the "process" stage of particle shader, with customized output.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-sky"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_SKY" name="//apple_ref/cpp/Enum/TYPE_SKY"></a>TYPE_SKY</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>A shader for 3D environment's sky.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-fog"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_FOG" name="//apple_ref/cpp/Enum/TYPE_FOG"></a>TYPE_FOG</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>A compute shader that runs for each froxel of the volumetric fog map.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-type-max"><a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> <strong><a class="dashAnchor" id="enumerations-TYPE_MAX" name="//apple_ref/cpp/Enum/TYPE_MAX"></a>TYPE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-visualshader-varyingmode">enum <strong><a class="dashAnchor" id="enumerations-VaryingMode" name="//apple_ref/cpp/Enum/VaryingMode"></a>VaryingMode</strong>:</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-mode-vertex-to-frag-light"><a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_MODE_VERTEX_TO_FRAG_LIGHT" name="//apple_ref/cpp/Enum/VARYING_MODE_VERTEX_TO_FRAG_LIGHT"></a>VARYING_MODE_VERTEX_TO_FRAG_LIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Varying is passed from <code class="docutils literal notranslate"><span class="pre">Vertex</span></code> function to <code class="docutils literal notranslate"><span class="pre">Fragment</span></code> and <code class="docutils literal notranslate"><span class="pre">Light</span></code> functions.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-mode-frag-to-light"><a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_MODE_FRAG_TO_LIGHT" name="//apple_ref/cpp/Enum/VARYING_MODE_FRAG_TO_LIGHT"></a>VARYING_MODE_FRAG_TO_LIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Varying is passed from <code class="docutils literal notranslate"><span class="pre">Fragment</span></code> function to <code class="docutils literal notranslate"><span class="pre">Light</span></code> function.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-mode-max"><a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_MODE_MAX" name="//apple_ref/cpp/Enum/VARYING_MODE_MAX"></a>VARYING_MODE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a> enum.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-enumeration" id="enum-visualshader-varyingtype">enum <strong><a class="dashAnchor" id="enumerations-VaryingType" name="//apple_ref/cpp/Enum/VaryingType"></a>VaryingType</strong>:</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-float"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_FLOAT" name="//apple_ref/cpp/Enum/VARYING_TYPE_FLOAT"></a>VARYING_TYPE_FLOAT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-int"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_INT" name="//apple_ref/cpp/Enum/VARYING_TYPE_INT"></a>VARYING_TYPE_INT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-uint"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_UINT" name="//apple_ref/cpp/Enum/VARYING_TYPE_UINT"></a>VARYING_TYPE_UINT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p>Varying is of type unsigned <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-vector-2d"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_VECTOR_2D" name="//apple_ref/cpp/Enum/VARYING_TYPE_VECTOR_2D"></a>VARYING_TYPE_VECTOR_2D</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-vector-3d"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_VECTOR_3D" name="//apple_ref/cpp/Enum/VARYING_TYPE_VECTOR_3D"></a>VARYING_TYPE_VECTOR_3D</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-vector-4d"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_VECTOR_4D" name="//apple_ref/cpp/Enum/VARYING_TYPE_VECTOR_4D"></a>VARYING_TYPE_VECTOR_4D</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_vector4.html#class-vector4"><span class="std std-ref">Vector4</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-boolean"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_BOOLEAN" name="//apple_ref/cpp/Enum/VARYING_TYPE_BOOLEAN"></a>VARYING_TYPE_BOOLEAN</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-transform"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_TRANSFORM" name="//apple_ref/cpp/Enum/VARYING_TYPE_TRANSFORM"></a>VARYING_TYPE_TRANSFORM</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p>Varying is of type <a class="reference internal" href="class_transform3d.html#class-transform3d"><span class="std std-ref">Transform3D</span></a>.</p>
+<p class="classref-enumeration-constant" id="class-visualshader-constant-varying-type-max"><a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> <strong><a class="dashAnchor" id="enumerations-VARYING_TYPE_MAX" name="//apple_ref/cpp/Enum/VARYING_TYPE_MAX"></a>VARYING_TYPE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p>Represents the size of the <a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a> enum.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constant" id="class-visualshader-constant-node-id-invalid"><strong>NODE_ID_INVALID</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
+<p>Denotes invalid <strong>VisualShader</strong> node.</p>
+<p class="classref-constant" id="class-visualshader-constant-node-id-output"><strong>NODE_ID_OUTPUT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p>Denotes output node of <strong>VisualShader</strong>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-visualshader-property-graph-offset"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>graph_offset</strong> = <code class="docutils literal notranslate"><span class="pre">Vector2(0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_graph_offset" name="//apple_ref/cpp/Property/set_graph_offset"></a>set_graph_offset</strong>(value: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong><a class="dashAnchor" id="properties-get_graph_offset" name="//apple_ref/cpp/Property/get_graph_offset"></a>get_graph_offset</strong>()</p></li>
+</ul>
+<p>The offset vector of the whole graph.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-visualshader-method-add-node"><abbr title="No return value.">void</abbr> <strong>add_node</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, node: <a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Adds the specified <code class="docutils literal notranslate"><span class="pre">node</span></code> to the shader.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-add-varying"><abbr title="No return value.">void</abbr> <strong>add_varying</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, mode: <a class="reference internal" href="#enum-visualshader-varyingmode"><span class="std std-ref">VaryingMode</span></a>, type: <a class="reference internal" href="#enum-visualshader-varyingtype"><span class="std std-ref">VaryingType</span></a>)</p>
+<p>Adds a new varying value node to the shader.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-can-connect-nodes"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>can_connect_nodes</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the specified nodes and ports can be connected together.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-connect-nodes"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>connect_nodes</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Connects the specified nodes and ports.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-connect-nodes-forced"><abbr title="No return value.">void</abbr> <strong>connect_nodes_forced</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Connects the specified nodes and ports, even if they can't be connected. Such connection is invalid and will not function properly.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-disconnect-nodes"><abbr title="No return value.">void</abbr> <strong>disconnect_nodes</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Connects the specified nodes and ports.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-get-node"><a class="reference internal" href="class_visualshadernode.html#class-visualshadernode"><span class="std std-ref">VisualShaderNode</span></a> <strong>get_node</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the shader node instance with specified <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">id</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-get-node-connections"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>] <strong>get_node_connections</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of connected nodes with the specified type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-get-node-list"><a class="reference internal" href="class_packedint32array.html#class-packedint32array"><span class="std std-ref">PackedInt32Array</span></a> <strong>get_node_list</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the list of all nodes in the shader with the specified type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-get-node-position"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_node_position</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the position of the specified node within the shader graph.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-get-valid-node-id"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_valid_node_id</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns next valid node ID that can be added to the shader graph.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-has-varying"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_varying</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the shader has a varying with the given <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-is-node-connection"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>is_node_connection</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, from_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, from_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_node: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, to_port: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the specified node and port connection exist.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-remove-node"><abbr title="No return value.">void</abbr> <strong>remove_node</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p>
+<p>Removes the specified node from the shader.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-remove-varying"><abbr title="No return value.">void</abbr> <strong>remove_varying</strong>(name: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes a varying value node with the given <code class="docutils literal notranslate"><span class="pre">name</span></code>. Prints an error if a node with this name is not found.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-replace-node"><abbr title="No return value.">void</abbr> <strong>replace_node</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, new_class: <a class="reference internal" href="class_stringname.html#class-stringname"><span class="std std-ref">StringName</span></a>)</p>
+<p>Replaces the specified node with a node of new class type.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-set-mode"><abbr title="No return value.">void</abbr> <strong>set_mode</strong>(mode: <a class="reference internal" href="class_shader.html#enum-shader-mode"><span class="std std-ref">Mode</span></a>)</p>
+<p>Sets the mode of this shader.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-visualshader-method-set-node-position"><abbr title="No return value.">void</abbr> <strong>set_node_position</strong>(type: <a class="reference internal" href="#enum-visualshader-type"><span class="std std-ref">Type</span></a>, id: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>, position: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>)</p>
+<p>Sets the position of the specified node.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_viewporttexture.html" rel="prev" title="ViewportTexture"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_visualshadernode.html" rel="next" title="VisualShaderNode">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

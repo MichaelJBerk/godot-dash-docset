@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="PacketPeer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_packetpeer.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: ENetPacketPeer, MultiplayerPeer, PacketPeerDTLS, PacketPeerExtension, PacketPeerStream, PacketPeerUDP, WebRTCDataChannel, WebSocketPeer Abstraction and ba..." property="og:description"/>
+<meta content="Inherits: RefCounted&lt; Object Inherited By: ENetPacketPeer, MultiplayerPeer, PacketPeerDTLS, PacketPeerExtension, PacketPeerStream, PacketPeerUDP, WebRTCDataChannel, WebSocketPeer Abstraction and ba..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) PacketPeer — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_packetpeer.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_packetpeer.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_packetpeer.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_packetpeer.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_packetpeer.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_packetpeer.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_packetpeer.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_packetpeer.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_packetpeer.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_packetpeer.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_packetpeer.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_packetpeer.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_packetpeer.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_packetpeer.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_packetpeer.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_packetpeer.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_packetpeerdtls.html" rel="next" title="PacketPeerDTLS"/>
+<link href="class_packeddatacontainerref.html" rel="prev" title="PackedDataContainerRef"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_packetpeer" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">PacketPeer</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="packetpeer">
+<span id="class-packetpeer"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/PacketPeer¶"></a>PacketPeer<a class="headerlink" href="#packetpeer" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_enetpacketpeer.html#class-enetpacketpeer"><span class="std std-ref">ENetPacketPeer</span></a>, <a class="reference internal" href="class_multiplayerpeer.html#class-multiplayerpeer"><span class="std std-ref">MultiplayerPeer</span></a>, <a class="reference internal" href="class_packetpeerdtls.html#class-packetpeerdtls"><span class="std std-ref">PacketPeerDTLS</span></a>, <a class="reference internal" href="class_packetpeerextension.html#class-packetpeerextension"><span class="std std-ref">PacketPeerExtension</span></a>, <a class="reference internal" href="class_packetpeerstream.html#class-packetpeerstream"><span class="std std-ref">PacketPeerStream</span></a>, <a class="reference internal" href="class_packetpeerudp.html#class-packetpeerudp"><span class="std std-ref">PacketPeerUDP</span></a>, <a class="reference internal" href="class_webrtcdatachannel.html#class-webrtcdatachannel"><span class="std std-ref">WebRTCDataChannel</span></a>, <a class="reference internal" href="class_websocketpeer.html#class-websocketpeer"><span class="std std-ref">WebSocketPeer</span></a></p>
+<p>Abstraction and base class for packet-based protocols.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>PacketPeer is an abstraction and base class for packet-based protocols (such as UDP). It provides an API for sending and receiving packets both as raw data or variables. This makes it easy to transfer data over a protocol, without having to encode data as low-level bytes or having to worry about network ordering.</p>
+<p><strong>Note:</strong> When exporting to Android, make sure to enable the <code class="docutils literal notranslate"><span class="pre">INTERNET</span></code> permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-property-encode-buffer-max-size"><span class="std std-ref">encode_buffer_max_size</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8388608</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-get-available-packet-count"><span class="std std-ref">get_available_packet_count</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-get-packet"><span class="std std-ref">get_packet</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-get-packet-error"><span class="std std-ref">get_packet_error</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-get-var"><span class="std std-ref">get_var</span></a>(allow_objects: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-put-packet"><span class="std std-ref">put_packet</span></a>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a></p></td>
+<td><p><a class="reference internal" href="#class-packetpeer-method-put-var"><span class="std std-ref">put_var</span></a>(var: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, full_objects: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-packetpeer-property-encode-buffer-max-size"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>encode_buffer_max_size</strong> = <code class="docutils literal notranslate"><span class="pre">8388608</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_encode_buffer_max_size" name="//apple_ref/cpp/Property/set_encode_buffer_max_size"></a>set_encode_buffer_max_size</strong>(value: <a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong><a class="dashAnchor" id="properties-get_encode_buffer_max_size" name="//apple_ref/cpp/Property/get_encode_buffer_max_size"></a>get_encode_buffer_max_size</strong>()</p></li>
+</ul>
+<p>Maximum buffer size allowed when encoding <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>s. Raise this value to support heavier memory allocations.</p>
+<p>The <a class="reference internal" href="#class-packetpeer-method-put-var"><span class="std std-ref">put_var</span></a> method allocates memory on the stack, and the buffer used will grow automatically to the closest power of two to match the size of the <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>. If the <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> is bigger than <a class="reference internal" href="#class-packetpeer-property-encode-buffer-max-size"><span class="std std-ref">encode_buffer_max_size</span></a>, the method will error out with <a class="reference internal" href="class_%40globalscope.html#class-globalscope-constant-err-out-of-memory"><span class="std std-ref">@GlobalScope.ERR_OUT_OF_MEMORY</span></a>.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-packetpeer-method-get-available-packet-count"><a class="reference internal" href="class_int.html#class-int"><span class="std std-ref">int</span></a> <strong>get_available_packet_count</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the number of packets currently available in the ring-buffer.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-packetpeer-method-get-packet"><a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a> <strong>get_packet</strong>()</p>
+<p>Gets a raw packet.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-packetpeer-method-get-packet-error"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>get_packet_error</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the error state of the last packet received (via <a class="reference internal" href="#class-packetpeer-method-get-packet"><span class="std std-ref">get_packet</span></a> and <a class="reference internal" href="#class-packetpeer-method-get-var"><span class="std std-ref">get_var</span></a>).</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-packetpeer-method-get-var"><a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> <strong>get_var</strong>(allow_objects: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Gets a Variant. If <code class="docutils literal notranslate"><span class="pre">allow_objects</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, decoding objects is allowed.</p>
+<p>Internally, this uses the same decoding mechanism as the <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-bytes-to-var"><span class="std std-ref">@GlobalScope.bytes_to_var</span></a> method.</p>
+<p><strong>Warning:</strong> Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-packetpeer-method-put-packet"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>put_packet</strong>(buffer: <a class="reference internal" href="class_packedbytearray.html#class-packedbytearray"><span class="std std-ref">PackedByteArray</span></a>)</p>
+<p>Sends a raw packet.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-packetpeer-method-put-var"><a class="reference internal" href="class_%40globalscope.html#enum-globalscope-error"><span class="std std-ref">Error</span></a> <strong>put_var</strong>(var: <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a>, full_objects: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Sends a <a class="reference internal" href="class_variant.html#class-variant"><span class="std std-ref">Variant</span></a> as a packet. If <code class="docutils literal notranslate"><span class="pre">full_objects</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, encoding objects is allowed (and can potentially include code).</p>
+<p>Internally, this uses the same encoding mechanism as the <a class="reference internal" href="class_%40globalscope.html#class-globalscope-method-var-to-bytes"><span class="std std-ref">@GlobalScope.var_to_bytes</span></a> method.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_packeddatacontainerref.html" rel="prev" title="PackedDataContainerRef"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_packetpeerdtls.html" rel="next" title="PacketPeerDTLS">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

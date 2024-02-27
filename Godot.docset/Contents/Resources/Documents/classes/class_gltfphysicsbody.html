@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="GLTFPhysicsBody" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_gltfphysicsbody.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Represents a GLTF physics body. Description: Represents a physics body as an intermediary between the OMI_physics_body GLTF data and Godot's nodes, and it's a..." property="og:description"/>
+<meta content="Inherits: Resource&lt; RefCounted&lt; Object Represents a GLTF physics body. Description: Represents a physics body as an intermediary between the OMI_physics_body GLTF data and Godot's nodes, and it's a..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) GLTFPhysicsBody — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfphysicsbody.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_gltfphysicsbody.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_gltfphysicsbody.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_gltfphysicsbody.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_gltfphysicsbody.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_gltfphysicsbody.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_gltfphysicsbody.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_gltfphysicsbody.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_gltfphysicsbody.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_gltfphysicsbody.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_gltfphysicsbody.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_gltfphysicsbody.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_gltfphysicsbody.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_gltfphysicsbody.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfphysicsbody.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_gltfphysicsbody.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_gltfphysicsshape.html" rel="next" title="GLTFPhysicsShape"/>
+<link href="class_gltfnode.html" rel="prev" title="GLTFNode"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_gltfphysicsbody" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">GLTFPhysicsBody</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="gltfphysicsbody">
+<span id="class-gltfphysicsbody"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/GLTFPhysicsBody¶"></a>GLTFPhysicsBody<a class="headerlink" href="#gltfphysicsbody" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>Represents a GLTF physics body.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Represents a physics body as an intermediary between the <code class="docutils literal notranslate"><span class="pre">OMI_physics_body</span></code> GLTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different GLTF physics extensions in the future.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/io/runtime_file_loading_and_saving.html"><span class="doc">Runtime file loading and saving</span></a></p></li>
+<li><p><a class="reference external" href="https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body">OMI_physics_body GLTF extension</a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-angular-velocity"><span class="std std-ref">angular_velocity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-body-type"><span class="std std-ref">body_type</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">"rigid"</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-center-of-mass"><span class="std std-ref">center_of_mass</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-inertia-diagonal"><span class="std std-ref">inertia_diagonal</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-inertia-orientation"><span class="std std-ref">inertia_orientation</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-inertia-tensor"><span class="std std-ref">inertia_tensor</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Basis(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-linear-velocity"><span class="std std-ref">linear_velocity</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-property-mass"><span class="std std-ref">mass</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#class-gltfphysicsbody"><span class="std std-ref">GLTFPhysicsBody</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-method-from-dictionary"><span class="std std-ref">from_dictionary</span></a>(dictionary: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#class-gltfphysicsbody"><span class="std std-ref">GLTFPhysicsBody</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-method-from-node"><span class="std std-ref">from_node</span></a>(body_node: <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-method-to-dictionary"><span class="std std-ref">to_dictionary</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-gltfphysicsbody-method-to-node"><span class="std std-ref">to_node</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-gltfphysicsbody-property-angular-velocity"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>angular_velocity</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_angular_velocity" name="//apple_ref/cpp/Property/set_angular_velocity"></a>set_angular_velocity</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_angular_velocity" name="//apple_ref/cpp/Property/get_angular_velocity"></a>get_angular_velocity</strong>()</p></li>
+</ul>
+<p>The angular velocity of the physics body, in radians per second. This is only used when the body type is "rigid" or "vehicle".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-body-type"><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong>body_type</strong> = <code class="docutils literal notranslate"><span class="pre">"rigid"</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_body_type" name="//apple_ref/cpp/Property/set_body_type"></a>set_body_type</strong>(value: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a> <strong><a class="dashAnchor" id="properties-get_body_type" name="//apple_ref/cpp/Property/get_body_type"></a>get_body_type</strong>()</p></li>
+</ul>
+<p>The type of the body. When importing, this controls what type of <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a> node Godot should generate. Valid values are "static", "animatable", "character", "rigid", "vehicle", and "trigger". When exporting, this will be squashed down to one of "static", "kinematic", or "dynamic" motion types, or the "trigger" property.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-center-of-mass"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>center_of_mass</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_center_of_mass" name="//apple_ref/cpp/Property/set_center_of_mass"></a>set_center_of_mass</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_center_of_mass" name="//apple_ref/cpp/Property/get_center_of_mass"></a>get_center_of_mass</strong>()</p></li>
+</ul>
+<p>The center of mass of the body, in meters. This is in local space relative to the body. By default, the center of the mass is the body's origin.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-inertia-diagonal"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>inertia_diagonal</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_inertia_diagonal" name="//apple_ref/cpp/Property/set_inertia_diagonal"></a>set_inertia_diagonal</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_inertia_diagonal" name="//apple_ref/cpp/Property/get_inertia_diagonal"></a>get_inertia_diagonal</strong>()</p></li>
+</ul>
+<p>The inertia strength of the physics body, in kilogram meter squared (kg⋅m²). This represents the inertia around the principle axes, the diagonal of the inertia tensor matrix. This is only used when the body type is "rigid" or "vehicle".</p>
+<p>When converted to a Godot <a class="reference internal" href="class_rigidbody3d.html#class-rigidbody3d"><span class="std std-ref">RigidBody3D</span></a> node, if this value is zero, then the inertia will be calculated automatically.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-inertia-orientation"><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong>inertia_orientation</strong> = <code class="docutils literal notranslate"><span class="pre">Quaternion(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_inertia_orientation" name="//apple_ref/cpp/Property/set_inertia_orientation"></a>set_inertia_orientation</strong>(value: <a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_quaternion.html#class-quaternion"><span class="std std-ref">Quaternion</span></a> <strong><a class="dashAnchor" id="properties-get_inertia_orientation" name="//apple_ref/cpp/Property/get_inertia_orientation"></a>get_inertia_orientation</strong>()</p></li>
+</ul>
+<p>The inertia orientation of the physics body. This defines the rotation of the inertia's principle axes relative to the object's local axes. This is only used when the body type is "rigid" or "vehicle" and <a class="reference internal" href="#class-gltfphysicsbody-property-inertia-diagonal"><span class="std std-ref">inertia_diagonal</span></a> is set to a non-zero value.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-inertia-tensor"><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a> <strong>inertia_tensor</strong> = <code class="docutils literal notranslate"><span class="pre">Basis(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_inertia_tensor" name="//apple_ref/cpp/Property/set_inertia_tensor"></a>set_inertia_tensor</strong>(value: <a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_basis.html#class-basis"><span class="std std-ref">Basis</span></a> <strong><a class="dashAnchor" id="properties-get_inertia_tensor" name="//apple_ref/cpp/Property/get_inertia_tensor"></a>get_inertia_tensor</strong>()</p></li>
+</ul>
+<p><strong>Deprecated:</strong> This property may be changed or removed in future versions.</p>
+<p>The inertia tensor of the physics body, in kilogram meter squared (kg⋅m²). This is only used when the body type is "rigid" or "vehicle".</p>
+<p>When converted to a Godot <a class="reference internal" href="class_rigidbody3d.html#class-rigidbody3d"><span class="std std-ref">RigidBody3D</span></a> node, if this value is zero, then the inertia will be calculated automatically.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-linear-velocity"><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong>linear_velocity</strong> = <code class="docutils literal notranslate"><span class="pre">Vector3(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_linear_velocity" name="//apple_ref/cpp/Property/set_linear_velocity"></a>set_linear_velocity</strong>(value: <a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_vector3.html#class-vector3"><span class="std std-ref">Vector3</span></a> <strong><a class="dashAnchor" id="properties-get_linear_velocity" name="//apple_ref/cpp/Property/get_linear_velocity"></a>get_linear_velocity</strong>()</p></li>
+</ul>
+<p>The linear velocity of the physics body, in meters per second. This is only used when the body type is "rigid" or "vehicle".</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-gltfphysicsbody-property-mass"><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong>mass</strong> = <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_mass" name="//apple_ref/cpp/Property/set_mass"></a>set_mass</strong>(value: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> <strong><a class="dashAnchor" id="properties-get_mass" name="//apple_ref/cpp/Property/get_mass"></a>get_mass</strong>()</p></li>
+</ul>
+<p>The mass of the physics body, in kilograms. This is only used when the body type is "rigid" or "vehicle".</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-gltfphysicsbody-method-from-dictionary"><a class="reference internal" href="#class-gltfphysicsbody"><span class="std std-ref">GLTFPhysicsBody</span></a> <strong>from_dictionary</strong>(dictionary: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Creates a new GLTFPhysicsBody instance by parsing the given <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> in the <code class="docutils literal notranslate"><span class="pre">OMI_physics_body</span></code> GLTF extension format.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfphysicsbody-method-from-node"><a class="reference internal" href="#class-gltfphysicsbody"><span class="std std-ref">GLTFPhysicsBody</span></a> <strong>from_node</strong>(body_node: <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a>) <abbr title="This method doesn't need an instance to be called, so it can be called directly using the class name.">static</abbr></p>
+<p>Create a new GLTFPhysicsBody instance from the given Godot <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a> node.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfphysicsbody-method-to-dictionary"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>to_dictionary</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Serializes this GLTFPhysicsBody instance into a <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>. It will be in the format expected by the <code class="docutils literal notranslate"><span class="pre">OMI_physics_body</span></code> GLTF extension.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-gltfphysicsbody-method-to-node"><a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a> <strong>to_node</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Converts this GLTFPhysicsBody instance into a Godot <a class="reference internal" href="class_collisionobject3d.html#class-collisionobject3d"><span class="std std-ref">CollisionObject3D</span></a> node.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_gltfnode.html" rel="prev" title="GLTFNode"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_gltfphysicsshape.html" rel="next" title="GLTFPhysicsShape">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

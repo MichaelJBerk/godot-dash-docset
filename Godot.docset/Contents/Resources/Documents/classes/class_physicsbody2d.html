@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="PhysicsBody2D" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_physicsbody2d.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: CollisionObject2D&lt; Node2D&lt; CanvasItem&lt; Node&lt; Object Inherited By: CharacterBody2D, RigidBody2D, StaticBody2D Abstract base class for 2D game objects affected by physics. Description: Phys..." property="og:description"/>
+<meta content="Inherits: CollisionObject2D&lt; Node2D&lt; CanvasItem&lt; Node&lt; Object Inherited By: CharacterBody2D, RigidBody2D, StaticBody2D Abstract base class for 2D game objects affected by physics. Description: Phys..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) PhysicsBody2D — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsbody2d.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_physicsbody2d.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_physicsbody2d.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_physicsbody2d.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_physicsbody2d.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_physicsbody2d.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_physicsbody2d.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_physicsbody2d.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_physicsbody2d.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_physicsbody2d.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_physicsbody2d.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_physicsbody2d.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_physicsbody2d.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_physicsbody2d.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsbody2d.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_physicsbody2d.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_physicsbody3d.html" rel="next" title="PhysicsBody3D"/>
+<link href="class_physicalbone3d.html" rel="prev" title="PhysicalBone3D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_physicsbody2d" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">PhysicsBody2D</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="physicsbody2d">
+<span id="class-physicsbody2d"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/PhysicsBody2D¶"></a>PhysicsBody2D<a class="headerlink" href="#physicsbody2d" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_collisionobject2d.html#class-collisionobject2d"><span class="std std-ref">CollisionObject2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node2d.html#class-node2d"><span class="std std-ref">Node2D</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_canvasitem.html#class-canvasitem"><span class="std std-ref">CanvasItem</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p><strong>Inherited By:</strong> <a class="reference internal" href="class_characterbody2d.html#class-characterbody2d"><span class="std std-ref">CharacterBody2D</span></a>, <a class="reference internal" href="class_rigidbody2d.html#class-rigidbody2d"><span class="std std-ref">RigidBody2D</span></a>, <a class="reference internal" href="class_staticbody2d.html#class-staticbody2d"><span class="std std-ref">StaticBody2D</span></a></p>
+<p>Abstract base class for 2D game objects affected by physics.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>PhysicsBody2D</strong> is an abstract base class for 2D game objects affected by physics. All 2D physics bodies inherit from it.</p>
+</section>
+<section class="classref-introduction-group" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/physics/physics_introduction.html"><span class="doc">Physics introduction</span></a></p></li>
+</ul>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p>input_pickable</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code> (overrides <a class="reference internal" href="class_collisionobject2d.html#class-collisionobject2d-property-input-pickable"><span class="std std-ref">CollisionObject2D</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-add-collision-exception-with"><span class="std std-ref">add_collision_exception_with</span></a>(body: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-physicsbody2d"><span class="std std-ref">PhysicsBody2D</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-get-collision-exceptions"><span class="std std-ref">get_collision_exceptions</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-get-gravity"><span class="std std-ref">get_gravity</span></a>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-move-and-collide"><span class="std std-ref">move_and_collide</span></a>(motion: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, test_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, safe_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.08, recovery_as_collision: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-remove-collision-exception-with"><span class="std std-ref">remove_collision_exception_with</span></a>(body: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-physicsbody2d-method-test-move"><span class="std std-ref">test_move</span></a>(from: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>, motion: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, collision: <a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a> = null, safe_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.08, recovery_as_collision: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-physicsbody2d-method-add-collision-exception-with"><abbr title="No return value.">void</abbr> <strong>add_collision_exception_with</strong>(body: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p>Adds a body to the list of bodies that this body can't collide with.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsbody2d-method-get-collision-exceptions"><a class="reference internal" href="class_array.html#class-array"><span class="std std-ref">Array</span></a>[<a class="reference internal" href="#class-physicsbody2d"><span class="std std-ref">PhysicsBody2D</span></a>] <strong>get_collision_exceptions</strong>()</p>
+<p>Returns an array of nodes that were added as collision exceptions for this body.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsbody2d-method-get-gravity"><a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a> <strong>get_gravity</strong>() <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the gravity vector computed from all sources that can affect the body, including all gravity overrides from <a class="reference internal" href="class_area2d.html#class-area2d"><span class="std std-ref">Area2D</span></a> nodes and the global world gravity.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsbody2d-method-move-and-collide"><a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a> <strong>move_and_collide</strong>(motion: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, test_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false, safe_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.08, recovery_as_collision: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Moves the body along the vector <code class="docutils literal notranslate"><span class="pre">motion</span></code>. In order to be frame rate independent in <a class="reference internal" href="class_node.html#class-node-private-method-physics-process"><span class="std std-ref">Node._physics_process</span></a> or <a class="reference internal" href="class_node.html#class-node-private-method-process"><span class="std std-ref">Node._process</span></a>, <code class="docutils literal notranslate"><span class="pre">motion</span></code> should be computed using <code class="docutils literal notranslate"><span class="pre">delta</span></code>.</p>
+<p>Returns a <a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a>, which contains information about the collision when stopped, or when touching another body along the motion.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">test_only</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, the body does not move but the would-be collision information is given.</p>
+<p><code class="docutils literal notranslate"><span class="pre">safe_margin</span></code> is the extra margin used for collision recovery (see <a class="reference internal" href="class_characterbody2d.html#class-characterbody2d-property-safe-margin"><span class="std std-ref">CharacterBody2D.safe_margin</span></a> for more details).</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">recovery_as_collision</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, any depenetration from the recovery phase is also reported as a collision; this is used e.g. by <a class="reference internal" href="class_characterbody2d.html#class-characterbody2d"><span class="std std-ref">CharacterBody2D</span></a> for improving floor detection during floor snapping.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsbody2d-method-remove-collision-exception-with"><abbr title="No return value.">void</abbr> <strong>remove_collision_exception_with</strong>(body: <a class="reference internal" href="class_node.html#class-node"><span class="std std-ref">Node</span></a>)</p>
+<p>Removes a body from the list of bodies that this body can't collide with.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-physicsbody2d-method-test-move"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>test_move</strong>(from: <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>, motion: <a class="reference internal" href="class_vector2.html#class-vector2"><span class="std std-ref">Vector2</span></a>, collision: <a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a> = null, safe_margin: <a class="reference internal" href="class_float.html#class-float"><span class="std std-ref">float</span></a> = 0.08, recovery_as_collision: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Checks for collisions without moving the body. In order to be frame rate independent in <a class="reference internal" href="class_node.html#class-node-private-method-physics-process"><span class="std std-ref">Node._physics_process</span></a> or <a class="reference internal" href="class_node.html#class-node-private-method-process"><span class="std std-ref">Node._process</span></a>, <code class="docutils literal notranslate"><span class="pre">motion</span></code> should be computed using <code class="docutils literal notranslate"><span class="pre">delta</span></code>.</p>
+<p>Virtually sets the node's position, scale and rotation to that of the given <a class="reference internal" href="class_transform2d.html#class-transform2d"><span class="std std-ref">Transform2D</span></a>, then tries to move the body along the vector <code class="docutils literal notranslate"><span class="pre">motion</span></code>. Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if a collision would stop the body from moving along the whole path.</p>
+<p><code class="docutils literal notranslate"><span class="pre">collision</span></code> is an optional object of type <a class="reference internal" href="class_kinematiccollision2d.html#class-kinematiccollision2d"><span class="std std-ref">KinematicCollision2D</span></a>, which contains additional information about the collision when stopped, or when touching another body along the motion.</p>
+<p><code class="docutils literal notranslate"><span class="pre">safe_margin</span></code> is the extra margin used for collision recovery (see <a class="reference internal" href="class_characterbody2d.html#class-characterbody2d-property-safe-margin"><span class="std std-ref">CharacterBody2D.safe_margin</span></a> for more details).</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">recovery_as_collision</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, any depenetration from the recovery phase is also reported as a collision; this is useful for checking whether the body would <em>touch</em> any other bodies.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_physicalbone3d.html" rel="prev" title="PhysicalBone3D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_physicsbody3d.html" rel="next" title="PhysicsBody3D">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

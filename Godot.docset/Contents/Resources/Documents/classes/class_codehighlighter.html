@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="CodeHighlighter" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="classes/class_codehighlighter.html" property="og:url"/>
+<meta content="Godot Engine documentation" property="og:site_name"/>
+<meta content="Inherits: SyntaxHighlighter&lt; Resource&lt; RefCounted&lt; Object A syntax highlighter intended for code. Description: By adjusting various properties of this resource, you can change the colors of strings..." property="og:description"/>
+<meta content="Inherits: SyntaxHighlighter&lt; Resource&lt; RefCounted&lt; Object A syntax highlighter intended for code. Description: By adjusting various properties of this resource, you can change the colors of strings..." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>(DEV) CodeHighlighter — Godot Engine (latest) documentation in English</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/algolia.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/custom.css?10" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/dev.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/custom.js?7"></script>
+<script src="../_static/js/theme.js"></script><meta content="#3d8fcc" name="theme-color"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codehighlighter.html" hreflang="en" rel="alternate"/>
+<link href="https://docs.godotengine.org/de/stable/classes/class_codehighlighter.html" hreflang="de" rel="alternate"/>
+<link href="https://docs.godotengine.org/es/stable/classes/class_codehighlighter.html" hreflang="es" rel="alternate"/>
+<link href="https://docs.godotengine.org/fr/stable/classes/class_codehighlighter.html" hreflang="fr" rel="alternate"/>
+<link href="https://docs.godotengine.org/fi/stable/classes/class_codehighlighter.html" hreflang="fi" rel="alternate"/>
+<link href="https://docs.godotengine.org/it/stable/classes/class_codehighlighter.html" hreflang="it" rel="alternate"/>
+<link href="https://docs.godotengine.org/ja/stable/classes/class_codehighlighter.html" hreflang="ja" rel="alternate"/>
+<link href="https://docs.godotengine.org/ko/stable/classes/class_codehighlighter.html" hreflang="ko" rel="alternate"/>
+<link href="https://docs.godotengine.org/pl/stable/classes/class_codehighlighter.html" hreflang="pl" rel="alternate"/>
+<link href="https://docs.godotengine.org/pt_BR/stable/classes/class_codehighlighter.html" hreflang="pt-br" rel="alternate"/>
+<link href="https://docs.godotengine.org/ru/stable/classes/class_codehighlighter.html" hreflang="ru" rel="alternate"/>
+<link href="https://docs.godotengine.org/uk/stable/classes/class_codehighlighter.html" hreflang="uk" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_CN/stable/classes/class_codehighlighter.html" hreflang="zh-cn" rel="alternate"/>
+<link href="https://docs.godotengine.org/zh_TW/stable/classes/class_codehighlighter.html" hreflang="zh-tw" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codehighlighter.html" hreflang="x-default" rel="alternate"/>
+<link href="https://docs.godotengine.org/en/stable/classes/class_codehighlighter.html" rel="canonical"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="class_compositor.html" rel="next" title="Compositor"/>
+<link href="class_circleshape2d.html" rel="prev" title="CircleShape2D"/>
+<meta content="latest" name="doc_version"/>
+<meta content="True" name="doc_is_latest"/>
+<meta content="classes/class_codehighlighter" name="doc_pagename"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">Godot Engine</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li>
+<div style="font-size: 105%;font-weight: 600;">
+		Godot Engine 4.3 documentation in English
+	</div>
+<ul class="wy-breadcrumbs">
+<li><a class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item"><a href="index.html">All classes</a></li>
+<li class="breadcrumb-item active">CodeHighlighter</li>
+</ul>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="admonition-grid">
+<div class="admonition attention latest-notice">
+<p class="first admonition-title">Attention: Here be dragons</p>
+<p>
+        This is the <code class="docutils literal notranslate"><span class="pre">latest</span></code>
+        (unstable) version of this documentation, which may document features
+        not available in or compatible with released stable versions of Godot.
+      </p>
+<p class="last latest-notice-link">
+        Checking the stable version of the documentation...
+      </p>
+</div>
+</div>
+<section id="codehighlighter">
+<span id="class-codehighlighter"></span><h1><a class="dashAnchor" id="" name="//apple_ref/cpp/Class/CodeHighlighter¶"></a>CodeHighlighter<a class="headerlink" href="#codehighlighter" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="class_syntaxhighlighter.html#class-syntaxhighlighter"><span class="std std-ref">SyntaxHighlighter</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_resource.html#class-resource"><span class="std std-ref">Resource</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_refcounted.html#class-refcounted"><span class="std std-ref">RefCounted</span></a> <strong>&lt;</strong> <a class="reference internal" href="class_object.html#class-object"><span class="std std-ref">Object</span></a></p>
+<p>A syntax highlighter intended for code.</p>
+<section class="classref-introduction-group" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>By adjusting various properties of this resource, you can change the colors of strings, comments, numbers, and other text patterns inside a <a class="reference internal" href="class_textedit.html#class-textedit"><span class="std std-ref">TextEdit</span></a> control.</p>
+</section>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-color-regions"><span class="std std-ref">color_regions</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-function-color"><span class="std std-ref">function_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-keyword-colors"><span class="std std-ref">keyword_colors</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-member-keyword-colors"><span class="std std-ref">member_keyword_colors</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-member-variable-color"><span class="std std-ref">member_variable_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-number-color"><span class="std std-ref">number_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-property-symbol-color"><span class="std std-ref">symbol_color</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-add-color-region"><span class="std std-ref">add_color_region</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-add-keyword-color"><span class="std std-ref">add_keyword_color</span></a>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-add-member-keyword-color"><span class="std std-ref">add_member_keyword_color</span></a>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-clear-color-regions"><span class="std std-ref">clear_color_regions</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-clear-keyword-colors"><span class="std std-ref">clear_keyword_colors</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-clear-member-keyword-colors"><span class="std std-ref">clear_member_keyword_colors</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-get-keyword-color"><span class="std std-ref">get_keyword_color</span></a>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-get-member-keyword-color"><span class="std std-ref">get_member_keyword_color</span></a>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-has-color-region"><span class="std std-ref">has_color_region</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-has-keyword-color"><span class="std std-ref">has_keyword_color</span></a>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-has-member-keyword-color"><span class="std std-ref">has_member_keyword_color</span></a>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-remove-color-region"><span class="std std-ref">remove_color_region</span></a>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-remove-keyword-color"><span class="std std-ref">remove_keyword_color</span></a>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-codehighlighter-method-remove-member-keyword-color"><span class="std std-ref">remove_member_keyword_color</span></a>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-codehighlighter-property-color-regions"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>color_regions</strong> = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_color_regions" name="//apple_ref/cpp/Property/set_color_regions"></a>set_color_regions</strong>(value: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong><a class="dashAnchor" id="properties-get_color_regions" name="//apple_ref/cpp/Property/get_color_regions"></a>get_color_regions</strong>()</p></li>
+</ul>
+<p>Sets the color regions. All existing regions will be removed. The <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> key is the region start and end key, separated by a space. The value is the region color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-function-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>function_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_function_color" name="//apple_ref/cpp/Property/set_function_color"></a>set_function_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_function_color" name="//apple_ref/cpp/Property/get_function_color"></a>get_function_color</strong>()</p></li>
+</ul>
+<p>Sets color for functions. A function is a non-keyword string followed by a '('.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-keyword-colors"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>keyword_colors</strong> = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_keyword_colors" name="//apple_ref/cpp/Property/set_keyword_colors"></a>set_keyword_colors</strong>(value: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong><a class="dashAnchor" id="properties-get_keyword_colors" name="//apple_ref/cpp/Property/get_keyword_colors"></a>get_keyword_colors</strong>()</p></li>
+</ul>
+<p>Sets the keyword colors. All existing keywords will be removed. The <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> key is the keyword. The value is the keyword color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-member-keyword-colors"><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong>member_keyword_colors</strong> = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_member_keyword_colors" name="//apple_ref/cpp/Property/set_member_keyword_colors"></a>set_member_keyword_colors</strong>(value: <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> <strong><a class="dashAnchor" id="properties-get_member_keyword_colors" name="//apple_ref/cpp/Property/get_member_keyword_colors"></a>get_member_keyword_colors</strong>()</p></li>
+</ul>
+<p>Sets the member keyword colors. All existing member keyword will be removed. The <a class="reference internal" href="class_dictionary.html#class-dictionary"><span class="std std-ref">Dictionary</span></a> key is the member keyword. The value is the member keyword color.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-member-variable-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>member_variable_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_member_variable_color" name="//apple_ref/cpp/Property/set_member_variable_color"></a>set_member_variable_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_member_variable_color" name="//apple_ref/cpp/Property/get_member_variable_color"></a>get_member_variable_color</strong>()</p></li>
+</ul>
+<p>Sets color for member variables. A member variable is non-keyword, non-function string proceeded with a '.'.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-number-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>number_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_number_color" name="//apple_ref/cpp/Property/set_number_color"></a>set_number_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_number_color" name="//apple_ref/cpp/Property/get_number_color"></a>get_number_color</strong>()</p></li>
+</ul>
+<p>Sets the color for numbers.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-property" id="class-codehighlighter-property-symbol-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>symbol_color</strong> = <code class="docutils literal notranslate"><span class="pre">Color(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code></p>
+<ul class="classref-property-setget simple">
+<li><p><abbr title="No return value.">void</abbr> <strong><a class="dashAnchor" id="properties-set_symbol_color" name="//apple_ref/cpp/Property/set_symbol_color"></a>set_symbol_color</strong>(value: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p></li>
+<li><p><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong><a class="dashAnchor" id="properties-get_symbol_color" name="//apple_ref/cpp/Property/get_symbol_color"></a>get_symbol_color</strong>()</p></li>
+</ul>
+<p>Sets the color for symbols.</p>
+</section>
+<hr class="classref-section-separator docutils"/>
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-codehighlighter-method-add-color-region"><abbr title="No return value.">void</abbr> <strong>add_color_region</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, end_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>, line_only: <a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> = false)</p>
+<p>Adds a color region such as comments or strings.</p>
+<p>Both the start and end keys must be symbols. Only the start key has to be unique.</p>
+<p><code class="docutils literal notranslate"><span class="pre">line_only</span></code> denotes if the region should continue until the end of the line or carry over on to the next line. If the end key is blank this is automatically set to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-add-keyword-color"><abbr title="No return value.">void</abbr> <strong>add_keyword_color</strong>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets the color for a keyword.</p>
+<p>The keyword cannot contain any symbols except '_'.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-add-member-keyword-color"><abbr title="No return value.">void</abbr> <strong>add_member_keyword_color</strong>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>, color: <a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a>)</p>
+<p>Sets the color for a member keyword.</p>
+<p>The member keyword cannot contain any symbols except '_'.</p>
+<p>It will not be highlighted if preceded by a '.'.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-clear-color-regions"><abbr title="No return value.">void</abbr> <strong>clear_color_regions</strong>()</p>
+<p>Removes all color regions.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-clear-keyword-colors"><abbr title="No return value.">void</abbr> <strong>clear_keyword_colors</strong>()</p>
+<p>Removes all keywords.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-clear-member-keyword-colors"><abbr title="No return value.">void</abbr> <strong>clear_member_keyword_colors</strong>()</p>
+<p>Removes all member keywords.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-get-keyword-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>get_keyword_color</strong>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the color for a keyword.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-get-member-keyword-color"><a class="reference internal" href="class_color.html#class-color"><span class="std std-ref">Color</span></a> <strong>get_member_keyword_color</strong>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns the color for a member keyword.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-has-color-region"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_color_region</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the start key exists, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-has-keyword-color"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_keyword_color</strong>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the keyword exists, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-has-member-keyword-color"><a class="reference internal" href="class_bool.html#class-bool"><span class="std std-ref">bool</span></a> <strong>has_member_keyword_color</strong>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>) <abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr></p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the member keyword exists, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-remove-color-region"><abbr title="No return value.">void</abbr> <strong>remove_color_region</strong>(start_key: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes the color region that uses that start key.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-remove-keyword-color"><abbr title="No return value.">void</abbr> <strong>remove_keyword_color</strong>(keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes the keyword.</p>
+<hr class="classref-item-separator docutils"/>
+<p class="classref-method" id="class-codehighlighter-method-remove-member-keyword-color"><abbr title="No return value.">void</abbr> <strong>remove_member_keyword_color</strong>(member_keyword: <a class="reference internal" href="class_string.html#class-string"><span class="std std-ref">String</span></a>)</p>
+<p>Removes the member keyword.</p>
+</section>
+</section>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="class_circleshape2d.html" rel="prev" title="CircleShape2D"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="class_compositor.html" rel="next" title="Compositor">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0).</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</div></section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: latest (4.3)
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="#">en</a></dd>
+<dd><a href="#">de</a></dd>
+<dd><a href="#">es</a></dd>
+<dd><a href="#">fr</a></dd>
+</dl>
+<dl>
+<dt>Versions</dt>
+<dd><a href="#">stable</a></dd>
+<dd><a href="#">latest</a></dd>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="///projects/">Project Home</a>
+</dd>
+<dd>
+<a href="///projects//builds/">Builds</a>
+</dd>
+<dd>
+<a href="///projects//downloads/">Downloads</a>
+</dd>
+</dl>
+<hr/>
+<small>
+<span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
+<span> · </span>
+<a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+</small>
+</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
