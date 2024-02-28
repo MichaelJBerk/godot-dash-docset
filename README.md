@@ -5,7 +5,9 @@ This is a fork of [poga/godot-dash-docset](https://github.com/poga/godot-dash-do
 A script for converting [godot](https://docs.godotengine.org/en/stable/)'s official doc into [Dash](https://kapeli.com/dash)'s docset.
 
 ## Usage 
+You should be able to download the repo and double-click `Godot.docset` to install it. 
 
+To update the docset, do the following:
 1. Clone this repo, using `--recurse-submodules` to get the submodule containing godot's documentation
 2. run `generate-docset.sh`
 3. Double-click `Godot.docset` to install
